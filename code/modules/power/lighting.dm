@@ -223,6 +223,7 @@
 	use_power = USE_POWER_IDLE
 	active_power_usage = 0
 	brightness = 8
+	light_system = HYBRID_LIGHT
 /obj/structure/machinery/light/dropship/has_power()
 	return TRUE
 /obj/structure/machinery/light/dropship/set_pixel_location()
