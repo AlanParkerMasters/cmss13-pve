@@ -121,6 +121,7 @@
 	soundscape_interval = 30
 	is_landing_zone = TRUE
 	ceiling = CEILING_REINFORCED_METAL
+	base_lighting_alpha = 0
 
 /area/shuttle/midway/Enter(atom/movable/O, atom/oldloc)
 	if(istype(O, /obj/structure/barricade))
