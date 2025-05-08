@@ -3206,9 +3206,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /obj/item/trash/cigbutt/ucigbutt,
-/turf/open/floor/prison/blue{
-	dir = 8
-	},
+/turf/open/floor/prison/blue/west,
 /area/taipei/club)
 "cGq" = (
 /obj/structure/prop/turbine,
@@ -4577,9 +4575,7 @@
 	pixel_x = 4;
 	light_power = 0.5
 	},
-/turf/open/floor/prison/blue{
-	dir = 8
-	},
+/turf/open/floor/prison/blue/west,
 /area/taipei/club)
 "dPm" = (
 /obj/structure/machinery/light{
@@ -4633,9 +4629,7 @@
 	pixel_x = 4
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/open/floor/prison/blue{
-	dir = 8
-	},
+/turf/open/floor/prison/blue/west,
 /area/taipei/club)
 "dSv" = (
 /obj/structure/surface/rack{
@@ -7103,9 +7097,7 @@
 	pixel_x = 4
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/open/floor/prison/blue{
-	dir = 8
-	},
+/turf/open/floor/prison/blue/west,
 /area/taipei/club)
 "gak" = (
 /obj/structure/barricade/handrail/kutjevo{
@@ -15577,9 +15569,7 @@
 /area/taipei/hangar)
 "nVM" = (
 /obj/effect/decal/cleanable/dirt,
-/turf/open/floor/prison/blue{
-	dir = 8
-	},
+/turf/open/floor/prison/blue/west,
 /area/taipei/club)
 "nWA" = (
 /obj/effect/decal/cleanable/dirt,
@@ -18436,9 +18426,7 @@
 /turf/open/floor/bar,
 /area/taipei/atrium/restaurant)
 "qpE" = (
-/turf/open/floor/prison/blue{
-	dir = 8
-	},
+/turf/open/floor/prison/blue/west,
 /area/taipei/club)
 "qpY" = (
 /obj/effect/decal/cleanable/dirt,
@@ -20233,9 +20221,7 @@
 	pixel_x = 4
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/open/floor/prison/blue{
-	dir = 8
-	},
+/turf/open/floor/prison/blue/west,
 /area/taipei/club)
 "rLX" = (
 /obj/structure/prop/invuln/overhead_pipe{
@@ -20903,9 +20889,7 @@
 "smV" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/turf/open/floor/prison/blue{
-	dir = 8
-	},
+/turf/open/floor/prison/blue/west,
 /area/taipei/club)
 "snK" = (
 /turf/open/floor/kutjevo/colors/cyan/edge,
@@ -21254,9 +21238,7 @@
 	pixel_x = 4
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/open/floor/prison/blue{
-	dir = 8
-	},
+/turf/open/floor/prison/blue/west,
 /area/taipei/club)
 "sFd" = (
 /obj/effect/decal/cleanable/dirt,
@@ -24313,9 +24295,7 @@
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/open/floor/prison/blue{
-	dir = 8
-	},
+/turf/open/floor/prison/blue/west,
 /area/taipei/club)
 "vtK" = (
 /obj/structure/platform{
