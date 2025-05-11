@@ -15,7 +15,7 @@
 	knock_down_reduction = 0.5
 	stun_reduction = 0.5
 	tail = "chimptail"
-	gibbed_anim = "gibbed-m"
+	gibbed_anim = "monkey"
 	dusted_anim = "dust-m"
 	inherent_verbs = list(
 		/mob/living/proc/ventcrawl,

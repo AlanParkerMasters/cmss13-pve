@@ -38,7 +38,7 @@
 	var/insulated  // Immune to electrocution and glass shards to the feet.
 
 	// Some species-specific gibbing data.
-	var/gibbed_anim = "gibbed-h"
+	var/gibbed_anim
 	var/dusted_anim = "dust-h"
 	var/remains_type = /obj/effect/decal/remains/xeno
 	var/bloodsplatter_type = /obj/effect/temp_visual/dir_setting/bloodsplatter/human
