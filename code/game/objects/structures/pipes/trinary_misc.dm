@@ -56,7 +56,7 @@
 	dir = SOUTH
 	valid_directions = list(SOUTH, NORTH, EAST)
 
-/obj/structure/pipes/trinary/filter/m_filter/update_icon()
+/obj/structure/pipes/trinary/filter/update_icon()
 	if(length(connected_to))
 		icon_state = "mon"
 	else
@@ -132,13 +132,12 @@
 		if(WEST)
 			valid_directions = list(WEST, NORTH, SOUTH)
 
-
 /obj/structure/pipes/trinary/mixer/m_mixer
 	icon_state = "mmap"
 	dir = SOUTH
 	valid_directions = list(SOUTH, NORTH, EAST)
 
-/obj/structure/pipes/trinary/mixer/m_mixer/update_icon()
+/obj/structure/pipes/trinary/mixer/t_mixer/update_icon()
 	if(length(connected_to))
 		icon_state = "mon"
 	else

@@ -282,7 +282,18 @@ Buildable meters
 	..()
 	setDir(old_dir) // Retain old dir since these rotate in hand
 
+/obj/item/pipe/pickup(mob/user, silent)
+	var/old_dir = dir
+	..()
+	setDir(old_dir) // Retain old dir since these rotate in hand
+
+/obj/item/pipe/equipped(mob/user, slot, silent)
+	var/old_dir = dir
+	..()
+	setDir(old_dir) // Retain old dir since these rotate in hand
+
 // rotate the pipe item clockwise
+
 /obj/item/pipe/verb/rotate()
 	set category = "Object"
 	set name = "Rotate Pipe"

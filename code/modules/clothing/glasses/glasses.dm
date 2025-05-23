@@ -30,13 +30,6 @@
 	if(prescription)
 		AddElement(/datum/element/poor_eyesight_correction)
 
-/obj/item/clothing/glasses/get_icon_state(mob/user_mob, slot)
-	var/item_state_slot_state = LAZYACCESS(item_state_slots, slot)
-	if(item_state_slot_state)
-		return item_state_slot_state
-	else
-		return icon_state
-
 /obj/item/clothing/glasses/update_clothing_icon()
 	if(ismob(src.loc))
 		var/mob/M = src.loc
@@ -686,7 +679,7 @@
 	name = "\improper BiMex polarized shades"
 	desc = "Sleek, angular shades designed for the modern operator. BiMex's latest 'TactOptix' line comes with advanced polarization and lightweight ballistic lenses capable of shrugging off small shrapnel impacts. A favorite among frontline operators and deep-space scouts, these shades are marketed as 'combat-tested and action-approved.' Rumors abound of lucky users surviving close-range laser shots thanks to the multi-reflective lens coating, though BiMex's official stance is to 'Stop standing in front of lasers.'"
 	icon_state = "bimex_black"
-	item_state = "bimex_black"
+	item_state = "sunglasses"
 	eye_protection = EYE_PROTECTION_FLASH
 	clothing_traits = list(TRAIT_BIMEX)
 	flags_equip_slot = SLOT_EYES|SLOT_FACE
@@ -701,7 +694,7 @@
 	name = "aviator shades"
 	desc = "A pair of tan tinted sunglasses. You can faintly hear 80's music playing while wearing these."
 	icon_state = "aviator"
-	item_state = "aviator"
+	item_state = "sunglasses"
 	flags_equip_slot = SLOT_EYES|SLOT_FACE
 
 /obj/item/clothing/glasses/sunglasses/sechud
@@ -721,7 +714,7 @@
 	gender = NEUTER
 	desc = "A standard eyepiece, but modified to display security information to the user visually. This makes it commonplace among military police, though other models exist."
 	icon_state = "securityhud"
-	item_state = "securityhud"
+	item_icons = list(WEAR_FACE = 'icons/mob/humans/onmob/eyes.dmi')
 	eye_protection = EYE_PROTECTION_FLASH
 
 
