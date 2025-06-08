@@ -453,6 +453,8 @@
 
 	var/datum/action/item_action/activation
 	var/obj/item/attached_item
+	var/message_up = "You push the goggles up."
+	var/message_down = "You pull the goggles down."
 	garbage = FALSE
 
 /obj/item/clothing/glasses/mgoggles/prescription
@@ -580,6 +582,16 @@
 	name = "prescription UPP ballistic goggles"
 	prescription = TRUE
 
+/obj/item/clothing/glasses/mgoggles/clf_riot_shield
+	name = "\improper custom made riot shield"
+	desc = "A RC6 riot shield that has been heavily modified, painted over over with a darker color scheme and reinforced with extra metal plates to protect the user."
+	icon_state = "riot_shield_clf"
+	active_icon_state = "riot_shield_clf"
+	inactive_icon_state = "riot_shield_clf"
+	activated = TRUE
+	message_up = "You swipe the visor in a upwards manner."
+	message_down = "You swipe the visor in a downwards manner."
+	flags_equip_slot = null
 
 //welding goggles
 

@@ -69,6 +69,13 @@ endmap
 map lv759_hybrisa_prospera_repaired
 endmap
 
+map navalis_platform_13
+endmap
+
+map navalis_platform_13_singlez
+	disabled
+endmap
+
 map new_varadero
 endmap
 

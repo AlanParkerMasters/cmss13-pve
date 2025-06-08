@@ -144,6 +144,12 @@
 	html_link = "images/9/94/New_Varadero.png"
 	color = "red"
 
+/obj/item/map/navalis
+	name = "\improper Navalis Platform 13 map"
+	desc = "A blueprint of Navalis Platform 13"
+	html_link = "images/6/67/Navalis_platform_13_ic.png"
+	color = "cyan"
+
 /obj/item/map/almayer
 	name = "\improper USS Almayer map"
 	desc = "A labeled blueprint of the USS Almayer"
@@ -186,6 +192,7 @@ GLOBAL_LIST_INIT_TYPED(map_type_list, /obj/item/map, setup_all_maps())
 		MAP_CANYON_32B = new /obj/item/map/canyon_32b(),
 		MAP_CALLIOPE_HIGHWAY = new /obj/item/map/big_red_map(),
 		MAP_CALLIOPE_DESERT_BUS = new /obj/item/map/big_red_map(),
+		MAP_NAVALIS_SINGLE = new /obj/item/map/navalis()
 	)
 
 //used by marine equipment machines to spawn the correct map.
