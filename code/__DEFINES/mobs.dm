@@ -401,3 +401,4 @@ GLOBAL_LIST_INIT(default_xeno_onmob_icons, list(
 #define MOB_WATER_SLOWDOWN 1.75
 ///Slowdown for xenos moving through liquid
 #define XENO_WATER_SLOWDOWN 1.3
+
