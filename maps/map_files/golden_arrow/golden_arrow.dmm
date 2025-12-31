@@ -435,12 +435,14 @@
 /turf/open/floor/almayer,
 /area/golden_arrow/motor_pool)
 "aaP" = (
-/obj/structure/disposalpipe/down/almayer{
-	id = "rubbish";
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
+	},
+/obj/structure/bed/chair/comfy{
 	dir = 1
 	},
-/turf/open/space/basic,
-/area/space)
+/turf/open/floor/almayer,
+/area/golden_arrow/cryo_cells)
 "aaQ" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "door_warning";
@@ -462,9 +464,10 @@
 /turf/open/floor/almayer/edge/smooth,
 /area/golden_arrow/hangar)
 "aaS" = (
-/obj/structure/disposalpipe/segment,
-/turf/closed/wall/almayer/outer,
-/area/golden_arrow/dorms)
+/obj/structure/surface/table/almayer,
+/obj/item/pizzabox/mystery/stack,
+/turf/open/floor/almayer,
+/area/golden_arrow/cryo_cells)
 "aaT" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "door_warning"
@@ -503,19 +506,18 @@
 /turf/open/floor/almayer,
 /area/golden_arrow/platoonprep)
 "aaX" = (
-/obj/structure/disposalpipe/segment{
-	dir = 1;
-	icon_state = "pipe-c"
+/obj/structure/surface/table/almayer,
+/obj/item/reagent_container/food/drinks/coffeecup{
+	pixel_x = -6
 	},
-/turf/closed/wall/almayer,
-/area/golden_arrow/hangar)
+/turf/open/floor/almayer,
+/area/golden_arrow/cryo_cells)
 "aaY" = (
-/obj/structure/disposalpipe/segment{
-	dir = 8;
-	icon_state = "pipe-c"
+/obj/structure/bed/chair/comfy{
+	dir = 4
 	},
-/turf/closed/wall/almayer/outer,
-/area/golden_arrow/hangar)
+/turf/open/floor/almayer,
+/area/golden_arrow/cryo_cells)
 "aaZ" = (
 /obj/structure/pipes/standard/simple/hidden/supply{
 	dir = 6
@@ -523,46 +525,40 @@
 /turf/open/floor/almayer/plate,
 /area/golden_arrow/hangar)
 "aba" = (
-/obj/structure/disposalpipe/segment{
-	dir = 2;
-	icon_state = "pipe-c"
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
 	},
-/turf/closed/wall/almayer/outer,
-/area/golden_arrow/hangar)
+/obj/structure/bed/chair/comfy,
+/turf/open/floor/almayer,
+/area/golden_arrow/cryo_cells)
 "abb" = (
 /obj/effect/decal/cleanable/blood/oil,
 /turf/open/floor/almayer,
 /area/golden_arrow/engineering)
 "abc" = (
-/obj/structure/pipes/standard/simple/hidden/supply{
-	dir = 8
-	},
+/obj/structure/disposalpipe/segment,
+/obj/structure/pipes/standard/simple/hidden/supply,
 /obj/structure/cable/heavyduty{
-	icon_state = "4-8"
+	icon_state = "1-2"
 	},
-/obj/structure/disposalpipe/junction{
-	dir = 8
-	},
-/turf/open/floor/plating/plating_catwalk,
-/area/golden_arrow/prep_hallway)
-"abd" = (
-/obj/structure/pipes/standard/simple/hidden/supply{
-	dir = 8
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/turf/open/floor/almayer/edge/smooth/east,
-/area/golden_arrow/cryo_cells)
-"abe" = (
-/obj/effect/decal/cleanable/dirt{
-	layer = 2.52
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 1
-	},
+/obj/structure/bed/chair/comfy,
 /turf/open/floor/almayer,
 /area/golden_arrow/cryo_cells)
+"abd" = (
+/turf/open/floor/almayer,
+/area/golden_arrow/platoonprep)
+"abe" = (
+/obj/structure/machinery/door/poddoor/shutters/almayer{
+	dir = 4;
+	id = "squadarmory";
+	name = "\improper Gear Lockers"
+	},
+/obj/structure/machinery/cm_vending/sorted/uniform_supply/squad_prep{
+	req_one_access_txt = "8;12;39;40";
+	req_access = list()
+	},
+/turf/open/floor/almayer/edge/smooth/east,
+/area/golden_arrow/platoonprep)
 "abf" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "SE-out";
@@ -571,11 +567,17 @@
 /turf/open/floor/almayer/edge/smooth/corner/east,
 /area/golden_arrow/hangar)
 "abg" = (
-/obj/structure/disposalpipe/segment{
-	dir = 1
+/obj/structure/machinery/door/poddoor/shutters/almayer{
+	dir = 4;
+	id = "squadarmory";
+	name = "\improper Gear Lockers"
 	},
-/turf/open/floor/almayer,
-/area/golden_arrow/cryo_cells)
+/obj/structure/machinery/cm_vending/sorted/uniform_supply/squad_prep{
+	req_one_access_txt = "8;12;39;40";
+	req_access = list()
+	},
+/turf/open/floor/almayer/edge/smooth/west,
+/area/golden_arrow/platoonprep)
 "abh" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "S"
@@ -604,48 +606,50 @@
 /turf/open/floor/almayer/edge,
 /area/golden_arrow/cryo_cells)
 "abj" = (
-/obj/structure/disposalpipe/segment{
-	dir = 2;
-	icon_state = "pipe-c"
+/obj/structure/machinery/door/poddoor/shutters/almayer{
+	dir = 4;
+	id = "squadarmory";
+	name = "\improper Gear Lockers"
 	},
-/turf/open/floor/almayer/mono,
-/area/golden_arrow/cryo_cells)
+/obj/structure/machinery/cm_vending/sorted/cargo_guns/squad{
+	req_one_access_txt = "8;12;39;40";
+	req_one_access = list()
+	},
+/turf/open/floor/almayer/edge/smooth/east,
+/area/golden_arrow/platoonprep)
 "abk" = (
 /turf/closed/wall/almayer,
 /area/golden_arrow/platoonarmory)
 "abl" = (
-/obj/effect/decal/cleanable/dirt{
-	layer = 2.52
+/obj/structure/machinery/door/poddoor/shutters/almayer{
+	dir = 4;
+	id = "squadarmory";
+	name = "\improper Gear Lockers"
 	},
-/obj/structure/disposalpipe/segment{
-	dir = 1;
-	icon_state = "pipe-c"
+/obj/structure/machinery/cm_vending/sorted/cargo_guns/squad{
+	req_one_access_txt = "8;12;39;40";
+	req_one_access = list()
 	},
 /turf/open/floor/almayer/edge/smooth/west,
 /area/golden_arrow/platoonprep)
 "abm" = (
-/obj/effect/decal/cleanable/dirt{
-	layer = 2.52
+/obj/structure/machinery/cm_vending/sorted/cargo_guns/squad{
+	req_one_access_txt = "8;12;39;40";
+	req_one_access = list()
 	},
-/obj/structure/disposalpipe/segment{
-	dir = 1
+/obj/structure/machinery/door/poddoor/shutters/almayer{
+	dir = 4;
+	id = "squadarmory";
+	name = "\improper Gear Lockers"
 	},
-/turf/open/floor/almayer/edge/smooth/west,
+/turf/closed/wall/almayer/outer,
 /area/golden_arrow/platoonprep)
 "abn" = (
-/obj/effect/decal/cleanable/dirt{
-	layer = 2.52
+/obj/structure/machinery/cm_vending/sorted/cargo_guns/squad{
+	req_one_access_txt = "8;12;39;40";
+	req_one_access = list()
 	},
-/obj/structure/pipes/standard/simple/hidden/supply{
-	dir = 8
-	},
-/obj/structure/cable/heavyduty{
-	icon_state = "4-8"
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/turf/open/floor/plating/plating_catwalk,
+/turf/closed/wall/almayer/outer,
 /area/golden_arrow/platoonprep)
 "abo" = (
 /obj/effect/decal/cleanable/dirt{
@@ -665,19 +669,16 @@
 /turf/open/floor/almayer,
 /area/golden_arrow/dorms)
 "abq" = (
-/obj/structure/disposalpipe/junction{
-	dir = 2;
-	icon_state = "pipe-j2"
+/obj/structure/disposalpipe/down/almayer{
+	id = "rubbish";
+	dir = 1
 	},
 /turf/open/space/basic,
 /area/space)
 "abr" = (
-/obj/structure/disposalpipe/up/almayer{
-	id = "rubbish";
-	dir = 8
-	},
-/turf/open/space/basic,
-/area/space)
+/obj/structure/disposalpipe/segment,
+/turf/closed/wall/almayer/outer,
+/area/golden_arrow/dorms)
 "abs" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "SE-out";
@@ -714,6 +715,13 @@
 	},
 /turf/open/floor/almayer,
 /area/golden_arrow/motor_pool)
+"abv" = (
+/obj/structure/disposalpipe/segment{
+	dir = 1;
+	icon_state = "pipe-c"
+	},
+/turf/closed/wall/almayer,
+/area/golden_arrow/hangar)
 "abw" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "E";
@@ -755,6 +763,13 @@
 	},
 /turf/open/floor/almayer,
 /area/golden_arrow/hangar)
+"abB" = (
+/obj/structure/disposalpipe/segment{
+	dir = 8;
+	icon_state = "pipe-c"
+	},
+/turf/closed/wall/almayer/outer,
+/area/golden_arrow/hangar)
 "abC" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "N";
@@ -769,6 +784,34 @@
 	},
 /turf/open/floor/plating/plating_catwalk,
 /area/golden_arrow/motor_pool)
+"abE" = (
+/obj/structure/disposalpipe/segment{
+	dir = 2;
+	icon_state = "pipe-c"
+	},
+/turf/closed/wall/almayer/outer,
+/area/golden_arrow/hangar)
+"abF" = (
+/obj/structure/pipes/standard/simple/hidden/supply{
+	dir = 8
+	},
+/obj/structure/cable/heavyduty{
+	icon_state = "4-8"
+	},
+/obj/structure/disposalpipe/junction{
+	dir = 8
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/golden_arrow/prep_hallway)
+"abG" = (
+/obj/structure/pipes/standard/simple/hidden/supply{
+	dir = 8
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/turf/open/floor/almayer/edge/smooth/east,
+/area/golden_arrow/cryo_cells)
 "abH" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "S";
@@ -779,6 +822,15 @@
 	},
 /turf/open/floor/almayer/cargo_arrow/north,
 /area/golden_arrow/hangar)
+"abI" = (
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 1
+	},
+/turf/open/floor/almayer,
+/area/golden_arrow/cryo_cells)
 "abJ" = (
 /turf/open/floor/almayer/edge/smooth/corner/east,
 /area/golden_arrow/hangar)
@@ -809,6 +861,12 @@
 	},
 /turf/open/floor/almayer/test_floor4,
 /area/golden_arrow/hangar)
+"abN" = (
+/obj/structure/disposalpipe/segment{
+	dir = 1
+	},
+/turf/open/floor/almayer,
+/area/golden_arrow/cryo_cells)
 "abO" = (
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
@@ -821,6 +879,13 @@
 	},
 /turf/open/floor/almayer,
 /area/golden_arrow/motor_pool)
+"abP" = (
+/obj/structure/disposalpipe/segment{
+	dir = 2;
+	icon_state = "pipe-c"
+	},
+/turf/open/floor/almayer/mono,
+/area/golden_arrow/cryo_cells)
 "abQ" = (
 /obj/effect/decal/cleanable/blood/oil,
 /turf/open/floor/almayer/cargo,
@@ -847,6 +912,16 @@
 /obj/structure/machinery/landinglight/ds1/delaytwo,
 /turf/open/floor/almayer/plate,
 /area/golden_arrow/hangar)
+"abU" = (
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 1;
+	icon_state = "pipe-c"
+	},
+/turf/open/floor/almayer/edge/smooth/west,
+/area/golden_arrow/platoonprep)
 "abV" = (
 /turf/open/floor/almayer/uscm/directional/up_down/northwest,
 /area/golden_arrow/hangar)
@@ -885,6 +960,15 @@
 	},
 /turf/open/floor/almayer/cargo_arrow/east,
 /area/golden_arrow/hangar)
+"abZ" = (
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 1
+	},
+/turf/open/floor/almayer/edge/smooth/west,
+/area/golden_arrow/platoonprep)
 "aca" = (
 /obj/structure/pipes/standard/simple/hidden/supply{
 	dir = 8
@@ -904,6 +988,28 @@
 	},
 /turf/open/floor/almayer/plate,
 /area/golden_arrow/cryo_cells)
+"acc" = (
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
+	},
+/obj/structure/pipes/standard/simple/hidden/supply{
+	dir = 8
+	},
+/obj/structure/cable/heavyduty{
+	icon_state = "4-8"
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/golden_arrow/platoonprep)
+"acd" = (
+/obj/structure/disposalpipe/junction{
+	dir = 2;
+	icon_state = "pipe-j2"
+	},
+/turf/open/space/basic,
+/area/space)
 "ace" = (
 /obj/structure/surface/table/almayer,
 /obj/item/clothing/mask/cigarette/cigar{
@@ -939,6 +1045,13 @@
 	},
 /turf/open/floor/almayer,
 /area/golden_arrow/platoonprep)
+"acf" = (
+/obj/structure/disposalpipe/up/almayer{
+	id = "rubbish";
+	dir = 8
+	},
+/turf/open/space/basic,
+/area/space)
 "ach" = (
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
@@ -2099,6 +2212,125 @@
 /area/golden_arrow/platoonarmory)
 "aga" = (
 /obj/structure/surface/table/reinforced/almayer_B,
+/obj/item/attachable/scope/pve{
+	pixel_x = 3;
+	pixel_y = -5
+	},
+/obj/item/attachable/suppressor{
+	pixel_y = 8
+	},
+/obj/item/attachable/suppressor{
+	pixel_y = 8
+	},
+/obj/item/attachable/suppressor{
+	pixel_y = 8
+	},
+/obj/item/attachable/suppressor{
+	pixel_y = 8
+	},
+/obj/item/attachable/suppressor{
+	pixel_y = 8
+	},
+/obj/item/attachable/suppressor{
+	pixel_y = 8
+	},
+/obj/item/attachable/suppressor{
+	pixel_y = 8
+	},
+/obj/item/attachable/suppressor{
+	pixel_y = 8
+	},
+/obj/item/attachable/suppressor{
+	pixel_y = 8
+	},
+/obj/item/attachable/suppressor{
+	pixel_y = 8
+	},
+/obj/item/attachable/suppressor{
+	pixel_y = 8
+	},
+/obj/item/attachable/suppressor{
+	pixel_y = 8
+	},
+/obj/item/attachable/suppressor{
+	pixel_y = 8
+	},
+/obj/item/attachable/suppressor{
+	pixel_y = 8
+	},
+/obj/item/attachable/suppressor{
+	pixel_y = 8
+	},
+/obj/item/attachable/suppressor{
+	pixel_y = 8
+	},
+/obj/item/attachable/suppressor{
+	pixel_y = 8
+	},
+/obj/item/attachable/scope/pve{
+	pixel_x = 3;
+	pixel_y = -5
+	},
+/obj/item/attachable/scope/pve{
+	pixel_x = 3;
+	pixel_y = -5
+	},
+/obj/item/attachable/scope/pve{
+	pixel_x = 3;
+	pixel_y = -5
+	},
+/obj/item/attachable/scope/pve{
+	pixel_x = 3;
+	pixel_y = -5
+	},
+/obj/item/attachable/scope/pve{
+	pixel_x = 3;
+	pixel_y = -5
+	},
+/obj/item/attachable/scope/pve{
+	pixel_x = 3;
+	pixel_y = -5
+	},
+/obj/item/attachable/scope/pve{
+	pixel_x = 3;
+	pixel_y = -5
+	},
+/obj/item/attachable/scope/pve{
+	pixel_x = 3;
+	pixel_y = -5
+	},
+/obj/item/attachable/scope/pve{
+	pixel_x = 3;
+	pixel_y = -5
+	},
+/obj/item/attachable/scope/pve{
+	pixel_x = 3;
+	pixel_y = -5
+	},
+/obj/item/attachable/scope/pve{
+	pixel_x = 3;
+	pixel_y = -5
+	},
+/obj/item/attachable/scope/pve{
+	pixel_x = 3;
+	pixel_y = -5
+	},
+/obj/item/attachable/scope/pve{
+	pixel_x = 3;
+	pixel_y = -5
+	},
+/obj/item/attachable/scope/pve{
+	pixel_x = 3;
+	pixel_y = -5
+	},
+/obj/item/attachable/scope/pve{
+	pixel_x = 3;
+	pixel_y = -5
+	},
+/obj/item/attachable/scope/pve{
+	pixel_x = 3;
+	pixel_y = -5
+	},
 /turf/open/floor/almayer/mono,
 /area/golden_arrow/platoonarmory)
 "agb" = (
@@ -2511,13 +2743,6 @@
 	},
 /turf/open/floor/plating,
 /area/golden_arrow/hangar)
-"aht" = (
-/obj/structure/bed/chair/comfy,
-/obj/effect/decal/cleanable/dirt{
-	layer = 2.52
-	},
-/turf/open/floor/almayer,
-/area/golden_arrow/cryo_cells)
 "ahw" = (
 /obj/structure/disposalpipe/segment,
 /obj/structure/pipes/standard/simple/hidden/supply,
@@ -5135,6 +5360,10 @@
 	id = "squadarmory";
 	name = "\improper Gear Lockers"
 	},
+/obj/structure/machinery/cm_vending/sorted/uniform_supply/squad_prep{
+	req_one_access_txt = "8;12;39;40";
+	req_access = list()
+	},
 /turf/open/floor/almayer/edge/smooth/endcap_right/west,
 /area/golden_arrow/platoonprep)
 "aqD" = (
@@ -6471,11 +6700,14 @@
 /turf/open/floor/almayer/plate,
 /area/golden_arrow/lower_cargo)
 "avE" = (
+/obj/structure/disposalpipe/segment,
 /obj/structure/pipes/standard/simple/hidden/supply,
 /obj/structure/cable/heavyduty{
 	icon_state = "1-2"
 	},
-/obj/structure/disposalpipe/segment,
+/obj/structure/bed/chair/comfy{
+	dir = 1
+	},
 /turf/open/floor/almayer,
 /area/golden_arrow/cryo_cells)
 "avH" = (
@@ -6567,14 +6799,13 @@
 /turf/open/floor/almayer/edge/smooth,
 /area/golden_arrow/hangar)
 "avW" = (
+/obj/structure/disposalpipe/segment,
 /obj/structure/pipes/standard/simple/hidden/supply,
 /obj/structure/cable/heavyduty{
 	icon_state = "1-2"
 	},
-/obj/structure/bed/chair/comfy{
-	dir = 4
-	},
-/obj/structure/disposalpipe/segment,
+/obj/structure/surface/table/almayer,
+/obj/item/pizzabox/mystery/stack,
 /turf/open/floor/almayer/mono,
 /area/golden_arrow/cryo_cells)
 "avY" = (
@@ -7859,9 +8090,9 @@
 	icon_state = "E";
 	pixel_x = 1
 	},
-/obj/structure/sign/safety/coffee{
-	pixel_x = 13;
-	pixel_y = 29
+/obj/structure/machinery/vending/cola{
+	pixel_y = 22;
+	wrenchable = 0
 	},
 /turf/open/floor/almayer/plate,
 /area/golden_arrow/cryo_cells)
@@ -8144,6 +8375,10 @@
 	dir = 4;
 	id = "squadarmory";
 	name = "\improper Gear Lockers"
+	},
+/obj/structure/machinery/cm_vending/sorted/uniform_supply/squad_prep{
+	req_one_access_txt = "8;12;39;40";
+	req_access = list()
 	},
 /turf/open/floor/almayer/edge/smooth/endcap_left/east,
 /area/golden_arrow/platoonprep)
@@ -8840,6 +9075,14 @@
 /obj/structure/surface/table/almayer,
 /obj/structure/pipes/standard/simple/hidden/supply{
 	dir = 8
+	},
+/obj/item/reagent_container/food/condiment/peppermill{
+	pixel_x = -11;
+	pixel_y = 5
+	},
+/obj/item/reagent_container/food/condiment/saltshaker{
+	pixel_x = -7;
+	pixel_y = 13
 	},
 /turf/open/floor/almayer,
 /area/golden_arrow/cryo_cells)
@@ -9963,6 +10206,14 @@
 /obj/item/storage/box/guncase/heavy/m49a_pve{
 	pixel_y = 10
 	},
+/obj/structure/surface/table/reinforced/almayer_B,
+/obj/item/storage/box/guncase/heavy/m49a_pve{
+	pixel_y = 21;
+	pixel_x = 0
+	},
+/obj/item/storage/box/spec/sniper{
+	pixel_y = 6
+	},
 /turf/open/floor/almayer,
 /area/golden_arrow/platoonarmory)
 "aGo" = (
@@ -11080,14 +11331,13 @@
 /turf/open/floor/almayer,
 /area/golden_arrow/lower_cargo)
 "aKd" = (
+/obj/structure/disposalpipe/segment,
 /obj/structure/pipes/standard/simple/hidden/supply,
 /obj/structure/cable/heavyduty{
 	icon_state = "1-2"
 	},
-/obj/structure/bed/chair/comfy{
-	dir = 4
-	},
-/obj/structure/disposalpipe/segment,
+/obj/structure/surface/table/almayer,
+/obj/item/pizzabox/mystery/stack,
 /turf/open/floor/almayer,
 /area/golden_arrow/cryo_cells)
 "aKi" = (
@@ -11390,6 +11640,59 @@
 /obj/structure/pipes/vents/pump{
 	dir = 4
 	},
+/obj/item/parachute,
+/obj/item/parachute,
+/obj/item/parachute,
+/obj/item/parachute,
+/obj/item/parachute,
+/obj/item/parachute,
+/obj/structure/surface/table/reinforced/almayer_B,
+/obj/item/parachute,
+/obj/item/parachute,
+/obj/item/parachute,
+/obj/item/parachute,
+/obj/item/parachute,
+/obj/item/parachute,
+/obj/item/parachute,
+/obj/item/parachute,
+/obj/item/parachute,
+/obj/item/parachute,
+/obj/item/parachute,
+/obj/item/parachute,
+/obj/item/parachute,
+/obj/item/parachute,
+/obj/item/parachute,
+/obj/item/parachute,
+/obj/item/parachute,
+/obj/item/parachute,
+/obj/item/parachute,
+/obj/item/parachute,
+/obj/item/parachute,
+/obj/item/parachute,
+/obj/item/parachute,
+/obj/item/parachute,
+/obj/item/parachute,
+/obj/item/parachute,
+/obj/item/parachute,
+/obj/item/parachute,
+/obj/item/parachute,
+/obj/item/parachute,
+/obj/item/parachute,
+/obj/item/parachute,
+/obj/item/parachute,
+/obj/item/parachute,
+/obj/item/parachute,
+/obj/item/parachute,
+/obj/item/parachute,
+/obj/item/parachute,
+/obj/item/parachute,
+/obj/item/parachute,
+/obj/item/parachute,
+/obj/item/parachute,
+/obj/item/parachute,
+/obj/item/parachute,
+/obj/item/parachute,
+/obj/item/parachute,
 /turf/open/floor/almayer/edge/west,
 /area/golden_arrow/platoonarmory)
 "aLs" = (
@@ -11424,11 +11727,11 @@
 /turf/open/floor/almayer/mono,
 /area/golden_arrow/motor_pool)
 "aLw" = (
-/obj/structure/bed/chair/comfy{
-	dir = 1
-	},
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
+	},
+/obj/structure/bed/chair/comfy{
+	dir = 4
 	},
 /turf/open/floor/almayer,
 /area/golden_arrow/cryo_cells)
@@ -11944,12 +12247,6 @@
 	},
 /turf/open/floor/almayer/edge/smooth/north,
 /area/golden_arrow/supply)
-"aNn" = (
-/obj/structure/bed/chair/comfy{
-	dir = 1
-	},
-/turf/open/floor/almayer/mono,
-/area/golden_arrow/cryo_cells)
 "aNp" = (
 /obj/structure/pipes/vents/scrubber,
 /turf/open/floor/almayer,
@@ -12682,6 +12979,19 @@
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
 	},
+/obj/structure/closet/crate/secure/explosives,
+/obj/item/explosive/plastic,
+/obj/item/explosive/plastic,
+/obj/item/explosive/plastic,
+/obj/item/explosive/plastic,
+/obj/item/explosive/plastic,
+/obj/item/explosive/plastic,
+/obj/item/explosive/plastic,
+/obj/item/explosive/plastic,
+/obj/item/explosive/plastic,
+/obj/item/explosive/plastic,
+/obj/item/explosive/plastic,
+/obj/item/explosive/plastic,
 /turf/open/floor/plating/plating_catwalk,
 /area/golden_arrow/platoonarmory)
 "aQf" = (
@@ -12943,18 +13253,6 @@
 	},
 /turf/open/floor/almayer/mono,
 /area/golden_arrow/hangar)
-"aRo" = (
-/obj/structure/surface/table/almayer,
-/obj/item/reagent_container/food/condiment/saltshaker{
-	pixel_x = -7;
-	pixel_y = 13
-	},
-/obj/item/reagent_container/food/condiment/peppermill{
-	pixel_x = -11;
-	pixel_y = 5
-	},
-/turf/open/floor/almayer,
-/area/golden_arrow/cryo_cells)
 "aRp" = (
 /obj/structure/pipes/standard/simple/hidden/supply{
 	dir = 5
@@ -13332,6 +13630,19 @@
 /obj/item/storage/box/guncase/heavy/motiondetectors{
 	pixel_y = 2;
 	pixel_x = -3
+	},
+/obj/item/ammo_box/magazine/mk1/large/heap,
+/obj/item/ammo_box/magazine/mk1/large/heap,
+/obj/item/ammo_box/magazine/mk1/large/heap,
+/obj/item/ammo_box/magazine/nade_box{
+	pixel_y = 15;
+	layer = 3.2;
+	pixel_x = -4
+	},
+/obj/item/ammo_box/magazine/nade_box{
+	pixel_y = 15;
+	layer = 3.2;
+	pixel_x = -4
 	},
 /turf/open/floor/almayer,
 /area/golden_arrow/platoonarmory)
@@ -14495,16 +14806,15 @@
 /turf/open/floor/almayer/edge/smooth,
 /area/golden_arrow/hangar)
 "aWH" = (
+/obj/structure/disposalpipe/segment,
 /obj/structure/pipes/standard/manifold/hidden/supply{
 	dir = 8
 	},
 /obj/structure/cable/heavyduty{
 	icon_state = "1-2"
 	},
-/obj/structure/bed/chair/comfy{
-	dir = 4
-	},
-/obj/structure/disposalpipe/segment,
+/obj/structure/surface/table/almayer,
+/mob/living/simple_animal/cat/kitten,
 /turf/open/floor/almayer,
 /area/golden_arrow/cryo_cells)
 "aWI" = (
@@ -25347,11 +25657,11 @@ aWh
 awS
 alP
 atN
-abe
-abg
+abI
+abN
 axN
-abe
-abe
+abI
+abI
 apV
 atM
 aBk
@@ -25530,7 +25840,7 @@ aFK
 aTS
 aQd
 ase
-abd
+abG
 aqd
 abx
 aeL
@@ -25699,7 +26009,7 @@ aEG
 aEG
 aWh
 aog
-abj
+abP
 anC
 aQr
 aog
@@ -25896,8 +26206,8 @@ alw
 aMQ
 aHk
 aWM
-aaS
-aaP
+abr
+abq
 aEG
 aEG
 aEG
@@ -27118,9 +27428,9 @@ aog
 aog
 aFX
 aBk
-aht
-aRo
-aQm
+aLz
+aBk
+aBk
 aQr
 aBw
 atm
@@ -27295,9 +27605,9 @@ aog
 fSy
 azv
 aNp
-aKk
-ahK
-aNn
+aBk
+aBk
+aQr
 aAs
 agh
 aUh
@@ -27472,8 +27782,8 @@ aog
 ajq
 asL
 aBk
-aKk
-ahK
+aaY
+aaY
 aLw
 aBk
 aBw
@@ -27648,11 +27958,11 @@ aWh
 aWh
 aIQ
 asS
-aBk
-aht
+aKk
+arj
 aCB
+aaS
 aQm
-aBk
 aaH
 aog
 aaG
@@ -27825,11 +28135,11 @@ aEG
 aWh
 arr
 asS
-aLz
-aKk
-aCB
+aba
+aaS
+aZr
+aaX
 aQm
-aBk
 aBd
 aog
 aog
@@ -28002,11 +28312,11 @@ aEG
 aWh
 aBD
 asS
-aLz
-aLz
-aBk
-aBk
-aLz
+aba
+arj
+ahK
+aaS
+aaP
 axK
 aOM
 aog
@@ -28179,7 +28489,7 @@ aEG
 aWh
 ouD
 aqB
-avE
+abc
 aKd
 aWH
 avW
@@ -28356,11 +28666,11 @@ aEG
 aWh
 arr
 alD
-aBk
+aKk
 aaf
 aZr
 arj
-aBk
+aQm
 aBk
 ama
 aJB
@@ -28719,7 +29029,7 @@ aLz
 aDS
 azx
 aQb
-abc
+abF
 aCm
 acs
 aIR
@@ -28838,7 +29148,7 @@ aUO
 tNi
 aaw
 aOK
-abq
+acd
 aTv
 aNx
 aPh
@@ -29015,7 +29325,7 @@ qRO
 aVX
 aXB
 aEG
-abr
+acf
 aDh
 aPh
 aPh
@@ -30298,8 +30608,8 @@ ahl
 ahl
 ahl
 aMS
-abm
-abl
+abZ
+abU
 alW
 aun
 agE
@@ -30489,7 +30799,7 @@ aVC
 auU
 aiq
 ayw
-abc
+abF
 aCm
 aEo
 aEo
@@ -30654,10 +30964,10 @@ azW
 aXt
 abL
 aYp
-aDQ
+abm
 avU
-aSk
-aSk
+abj
+abe
 aSk
 aAr
 aDQ
@@ -30831,11 +31141,11 @@ tNo
 aHV
 aPv
 aYI
-aDQ
-aQF
+abn
+abd
 afO
 aQF
-afO
+abd
 aQF
 aDQ
 ace
@@ -31006,12 +31316,12 @@ gry
 bfK
 azW
 aXt
-abn
+acc
 aoq
-aDQ
+abm
 aiD
-aRC
-aRC
+abl
+abg
 aRC
 aqC
 aDQ
@@ -32084,7 +32394,7 @@ aeW
 aZm
 aEt
 aoz
-aaX
+abv
 akb
 akb
 akb
@@ -32260,8 +32570,8 @@ arP
 aTD
 adz
 adz
-aba
-aaY
+abE
+abB
 akb
 akb
 akb
