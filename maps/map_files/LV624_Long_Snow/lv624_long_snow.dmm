@@ -228,6 +228,115 @@
 	},
 /turf/open/auto_turf/strata_grass/layer0_mud_alt,
 /area/lv624/ground/jungle/north_jungle)
+"aaL" = (
+/turf/closed/shuttle/ert{
+	icon_state = "upp1"
+	},
+/area/lv624/lazarus/sleep_male)
+"aaM" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "N";
+	pixel_y = 1;
+	pixel_x = -1
+	},
+/obj/structure/machinery/door/airlock/multi_tile/almayer/dropshiprear/upp{
+	id = "aft_door"
+	},
+/turf/open/floor/strata/floor3/east,
+/area/lv624/lazarus/sleep_male)
+"aaN" = (
+/turf/open/floor/strata/floor3/east,
+/area/lv624/lazarus/sleep_male)
+"aaO" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "N";
+	pixel_y = 1
+	},
+/turf/open/floor/strata/floor3/east,
+/area/lv624/lazarus/sleep_male)
+"aaP" = (
+/turf/closed/shuttle/ert{
+	icon_state = "upp3"
+	},
+/area/lv624/lazarus/sleep_male)
+"aaQ" = (
+/turf/closed/shuttle/ert{
+	icon_state = "upp4"
+	},
+/area/lv624/lazarus/sleep_male)
+"aaR" = (
+/obj/structure/bed/chair/vehicle{
+	dir = 4;
+	pixel_x = -9
+	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "E"
+	},
+/turf/open/floor/plating/plating_catwalk/strata,
+/area/lv624/lazarus/sleep_male)
+"aaS" = (
+/turf/open/floor/strata/multi_tiles/west,
+/area/lv624/lazarus/sleep_male)
+"aaT" = (
+/obj/structure/bed/chair/vehicle{
+	pixel_x = 9;
+	dir = 8
+	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "W"
+	},
+/turf/open/floor/plating/plating_catwalk/strata,
+/area/lv624/lazarus/sleep_male)
+"aaU" = (
+/turf/closed/shuttle/ert{
+	icon_state = "upp5"
+	},
+/area/lv624/lazarus/sleep_male)
+"aaV" = (
+/obj/structure/machinery/light{
+	dir = 8;
+	pixel_x = -14
+	},
+/obj/structure/bed/chair/vehicle{
+	dir = 4;
+	pixel_x = -9
+	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "E"
+	},
+/turf/open/floor/plating/plating_catwalk/strata,
+/area/lv624/lazarus/sleep_male)
+"aaW" = (
+/obj/structure/machinery/light{
+	dir = 4;
+	pixel_x = 14
+	},
+/obj/structure/bed/chair/vehicle{
+	pixel_x = 9;
+	dir = 8
+	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "W"
+	},
+/turf/open/floor/plating/plating_catwalk/strata,
+/area/lv624/lazarus/sleep_male)
+"aaX" = (
+/turf/closed/shuttle/ert{
+	icon_state = "upp_leftengine"
+	},
+/area/lv624/lazarus/sleep_male)
+"aaY" = (
+/turf/closed/shuttle/ert{
+	icon_state = "upp8"
+	},
+/area/lv624/lazarus/sleep_male)
+"aaZ" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "S";
+	pixel_x = -1
+	},
+/turf/open/floor/strata/multi_tiles/west,
+/area/lv624/lazarus/sleep_male)
 "aba" = (
 /obj/structure/bed/chair{
 	dir = 4
@@ -237,6 +346,80 @@
 	},
 /turf/open/floor/bar,
 /area/lv624/lazarus/canteen)
+"abb" = (
+/obj/effect/attach_point/crew_weapon/midway{
+	attach_id = 7;
+	ship_tag = "dropship_upp"
+	},
+/turf/open/floor/strata/multi_tiles/southwest,
+/area/lv624/lazarus/sleep_male)
+"abc" = (
+/turf/closed/shuttle/ert{
+	icon_state = "upp9"
+	},
+/area/lv624/lazarus/sleep_male)
+"abd" = (
+/turf/closed/shuttle/ert{
+	icon_state = "upp_rightengine"
+	},
+/area/lv624/lazarus/sleep_male)
+"abe" = (
+/obj/structure/stairs{
+	layer = 2.1
+	},
+/turf/open/floor/strata/floor3/east,
+/area/lv624/lazarus/sleep_male)
+"abf" = (
+/obj/structure/platform/mineral{
+	dir = 1;
+	color = "#464847"
+	},
+/turf/open/floor/strata/floor3/east,
+/area/lv624/lazarus/sleep_male)
+"abg" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "S";
+	layer = 2
+	},
+/turf/open/floor/strata/floor3/east,
+/area/lv624/lazarus/sleep_male)
+"abh" = (
+/obj/structure/barricade/handrail/strata{
+	can_buckle = 1
+	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "S"
+	},
+/turf/open/floor/strata/multi_tiles/west,
+/area/lv624/lazarus/sleep_male)
+"abi" = (
+/obj/effect/attach_point/crew_weapon/midway{
+	attach_id = 7;
+	ship_tag = "dropship_upp"
+	},
+/obj/structure/barricade/handrail/strata{
+	can_buckle = 1
+	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "S"
+	},
+/turf/open/floor/strata/multi_tiles/southwest,
+/area/lv624/lazarus/sleep_male)
+"abj" = (
+/obj/structure/barricade/handrail/strata{
+	dir = 8;
+	can_buckle = 1
+	},
+/turf/open/floor/plating/plating_catwalk/strata,
+/area/lv624/lazarus/sleep_male)
+"abk" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "S";
+	pixel_x = -13;
+	pixel_y = 29
+	},
+/turf/open/floor/strata/multi_tiles/west,
+/area/lv624/lazarus/sleep_male)
 "abl" = (
 /obj/structure/platform/mineral/sandstone/runed{
 	dir = 1
@@ -248,6 +431,25 @@
 	},
 /turf/open/auto_turf/snow/layer0,
 /area/lv624/ground/jungle/north_jungle)
+"abm" = (
+/obj/structure/barricade/handrail/strata{
+	dir = 4;
+	can_buckle = 1
+	},
+/turf/open/floor/plating/plating_catwalk/strata,
+/area/lv624/lazarus/sleep_male)
+"abn" = (
+/obj/structure/barricade/handrail/strata{
+	dir = 8;
+	can_buckle = 1
+	},
+/obj/structure/machinery/cm_vending/sorted/medical/wall_med/limited{
+	name = "\improper MinZdrav dispenser";
+	desc = "A wall-mounted medical equipment dispenser. Provided by Ministry of Health of UPP, it contains a small quantity of emergency supplies.";
+	pixel_x = -30
+	},
+/turf/open/floor/plating/plating_catwalk/strata,
+/area/lv624/lazarus/sleep_male)
 "abo" = (
 /obj/item/reagent_container/food/snacks/grown/mushroom/glowshroom{
 	light_on = 1;
@@ -258,12 +460,165 @@
 	},
 /turf/open/auto_turf/snow/layer3,
 /area/lv624/ground/caves/east_caves)
+"abp" = (
+/obj/structure/bed/chair/vehicle{
+	pixel_x = 9;
+	dir = 8
+	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "E";
+	pixel_x = -15
+	},
+/turf/open/floor/strata/multi_tiles/west,
+/area/lv624/lazarus/sleep_male)
+"abq" = (
+/turf/closed/shuttle/ert{
+	icon_state = "uppwall"
+	},
+/area/lv624/lazarus/sleep_male)
+"abr" = (
+/obj/structure/bed/chair/vehicle{
+	dir = 4;
+	pixel_x = -9
+	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "E";
+	pixel_x = -12
+	},
+/turf/open/floor/strata/multi_tiles/west,
+/area/lv624/lazarus/sleep_male)
+"abs" = (
+/obj/structure/barricade/handrail/strata{
+	dir = 4;
+	can_buckle = 1
+	},
+/obj/structure/machinery/cm_vending/sorted/medical/wall_med/limited{
+	name = "\improper MinZdrav dispenser";
+	desc = "A wall-mounted medical equipment dispenser. Provided by Ministry of Health of UPP, it contains a small quantity of emergency supplies.";
+	pixel_x = 30
+	},
+/turf/open/floor/plating/plating_catwalk/strata,
+/area/lv624/lazarus/sleep_male)
+"abt" = (
+/obj/structure/machinery/light{
+	dir = 8;
+	pixel_x = -14
+	},
+/obj/structure/barricade/handrail/strata{
+	dir = 8;
+	can_buckle = 1
+	},
+/turf/open/floor/plating/plating_catwalk/strata,
+/area/lv624/lazarus/sleep_male)
+"abu" = (
+/obj/structure/machinery/light{
+	dir = 4;
+	pixel_x = 14
+	},
+/obj/structure/barricade/handrail/strata{
+	dir = 4;
+	can_buckle = 1
+	},
+/turf/open/floor/plating/plating_catwalk/strata,
+/area/lv624/lazarus/sleep_male)
+"abv" = (
+/turf/open/floor/plating/plating_catwalk/strata,
+/area/lv624/lazarus/sleep_male)
+"abw" = (
+/obj/structure/machinery/door/airlock/dropship_hatch/upp{
+	id = "port_door"
+	},
+/turf/open/floor/strata/floor3/east,
+/area/lv624/lazarus/sleep_male)
+"abx" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "W";
+	pixel_x = -1
+	},
+/turf/open/floor/strata/multi_tiles/west,
+/area/lv624/lazarus/sleep_male)
+"aby" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "S";
+	pixel_x = 12
+	},
+/turf/open/floor/strata/floor3/east,
+/area/lv624/lazarus/sleep_male)
+"abz" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "S";
+	pixel_x = 19
+	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "S";
+	pixel_x = -5
+	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "N";
+	pixel_y = 1
+	},
+/turf/open/floor/plating/plating_catwalk/strata,
+/area/lv624/lazarus/sleep_male)
+"abA" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "E";
+	pixel_x = 1
+	},
+/turf/open/floor/strata/multi_tiles/west,
+/area/lv624/lazarus/sleep_male)
 "abB" = (
 /obj/structure/flora/jungle/vines{
 	color = "#64b1fa"
 	},
 /turf/open/floor/plating/wood,
 /area/lv624/ground/jungle/north_jungle)
+"abC" = (
+/obj/effect/attach_point/crew_weapon/midway{
+	attach_id = 8;
+	ship_tag = "dropship_upp"
+	},
+/turf/open/floor/strata/multi_tiles/southwest,
+/area/lv624/lazarus/sleep_male)
+"abD" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "E";
+	pixel_x = 1
+	},
+/turf/open/floor/strata/floor3/east,
+/area/lv624/lazarus/sleep_male)
+"abE" = (
+/obj/structure/bed/chair/vehicle{
+	pixel_x = -8;
+	pixel_y = 7
+	},
+/obj/structure/bed/chair/vehicle{
+	pixel_x = 8;
+	pixel_y = 7
+	},
+/turf/open/floor/strata/floor3/east,
+/area/lv624/lazarus/sleep_male)
+"abF" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "W";
+	pixel_x = -1
+	},
+/turf/open/floor/strata/floor3/east,
+/area/lv624/lazarus/sleep_male)
+"abG" = (
+/obj/effect/attach_point/crew_weapon/midway{
+	attach_id = 9;
+	ship_tag = "dropship_upp"
+	},
+/turf/open/floor/strata/multi_tiles/southwest,
+/area/lv624/lazarus/sleep_male)
+"abH" = (
+/obj/effect/attach_point/weapon/midway/left_wing{
+	ship_tag = "dropship_upp"
+	},
+/turf/closed/shuttle/ert{
+	icon_state = "upp201"
+	},
+/area/lv624/lazarus/sleep_male)
 "abI" = (
 /obj/structure/machinery/door/airlock/almayer/command/colony{
 	name = "\improper Nexus Dome Command Quarter";
@@ -271,6 +626,94 @@
 	},
 /turf/open/floor/plating,
 /area/lv624/lazarus/hop)
+"abJ" = (
+/turf/closed/shuttle/ert{
+	icon_state = "upp22"
+	},
+/area/lv624/lazarus/sleep_male)
+"abK" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "S";
+	pixel_y = -1
+	},
+/turf/open/floor/plating/plating_catwalk/strata,
+/area/lv624/lazarus/sleep_male)
+"abL" = (
+/turf/closed/shuttle/ert{
+	icon_state = "upp23"
+	},
+/area/lv624/lazarus/sleep_male)
+"abM" = (
+/obj/effect/attach_point/weapon/midway/right_wing{
+	ship_tag = "dropship_upp"
+	},
+/turf/closed/shuttle/ert{
+	icon_state = "upp251"
+	},
+/area/lv624/lazarus/sleep_male)
+"abN" = (
+/turf/closed/shuttle/ert{
+	icon_state = "upp201"
+	},
+/area/lv624/lazarus/sleep_male)
+"abO" = (
+/turf/closed/shuttle/ert{
+	icon_state = "upp21"
+	},
+/area/lv624/lazarus/sleep_male)
+"abP" = (
+/turf/closed/shuttle/dropship1/transparent{
+	name = "wall";
+	icon = 'icons/turf/ert_shuttle.dmi';
+	icon_state = "upp27"
+	},
+/area/lv624/lazarus/sleep_male)
+"abQ" = (
+/obj/structure/machinery/door/airlock/hatch/cockpit/upp,
+/turf/open/floor/strata/floor3/east,
+/area/lv624/lazarus/sleep_male)
+"abR" = (
+/turf/closed/shuttle/ert{
+	icon_state = "upp251"
+	},
+/area/lv624/lazarus/sleep_male)
+"abS" = (
+/obj/structure/machinery/computer/cameras/dropship/midway{
+	network = list("Akademia Nauk","Laser Targets");
+	name = "\improper 'Akademia Nauk' camera controls"
+	},
+/obj/structure/blocker/invisible_wall,
+/obj/structure/phone_base{
+	pixel_y = 32;
+	name = "Akademia Nauk Telephone";
+	phone_category = "Dropship";
+	phone_id = "Akademia Nauk";
+	networks_receive = list("UPP");
+	networks_transmit = list("UPP")
+	},
+/turf/open/floor/strata/floor3/east,
+/area/lv624/lazarus/sleep_male)
+"abT" = (
+/obj/structure/machinery/computer/shuttle/dropship/flight,
+/obj/structure/blocker/invisible_wall,
+/obj/item/frame/camera{
+	pixel_x = 12;
+	pixel_y = 17;
+	name = "broken dashcam";
+	desc = "Welp, no more funny crash vids..."
+	},
+/turf/open/floor/strata/floor3/east,
+/area/lv624/lazarus/sleep_male)
+"abU" = (
+/obj/structure/machinery/computer/dropship_weapons/midway{
+	name = "\improper 'Akademia Nauk' weapons controls";
+	shuttle_tag = "dropship_upp";
+	faction = "UPP";
+	req_one_access = list(230, 235,240)
+	},
+/obj/structure/blocker/invisible_wall,
+/turf/open/floor/strata/floor3/east,
+/area/lv624/lazarus/sleep_male)
 "acf" = (
 /obj/structure/surface/table/woodentable/fancy,
 /obj/item/trash/cigbutt/cigarbutt,
@@ -747,7 +1190,7 @@
 	icon_state = "upp16";
 	name = "Fulcrum"
 	},
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male)
 "azH" = (
 /turf/open/floor/wood/wood_broken2,
 /area/lv624/ground/jungle/north_jungle)
@@ -1145,7 +1588,7 @@
 	},
 /obj/structure/machinery/door/airlock/multi_tile/almayer/dropshiprear/upp,
 /turf/open/shuttle/dropship/can_surgery/medium_grey_single_wide_left_to_right,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male)
 "aYG" = (
 /obj/structure/disposalpipe/junction,
 /obj/structure/grille,
@@ -1213,7 +1656,7 @@
 /obj/structure/bed/bedroll,
 /obj/item/trash/cheesie,
 /turf/open/shuttle/dropship/can_surgery/light_grey_top_right,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male)
 "bea" = (
 /turf/open/auto_turf/snow/layer3,
 /area/lv624/ground/caves/south_east_caves)
@@ -1489,7 +1932,7 @@
 	pixel_y = -5
 	},
 /turf/open/shuttle/dropship/can_surgery/light_grey_top_right,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male)
 "bvK" = (
 /turf/open/auto_turf/ice/layer0,
 /area/lv624/ground/caves/east_caves)
@@ -2169,7 +2612,7 @@
 /turf/closed/shuttle/ert{
 	icon_state = "upp2"
 	},
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male)
 "crE" = (
 /obj/item/device/flashlight/on,
 /obj/effect/decal/cleanable/blood/drip,
@@ -2395,7 +2838,7 @@
 	pixel_y = 21
 	},
 /turf/open/shuttle/dropship/can_surgery/medium_grey_single_wide_up_to_down,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male)
 "cII" = (
 /obj/structure/machinery/light{
 	dir = 8
@@ -2535,7 +2978,7 @@
 	icon_state = "upp5";
 	name = "Fulcrum"
 	},
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male)
 "cRK" = (
 /obj/effect/decal/cleanable/blood/oil,
 /turf/open/floor/plating/warnplate/west,
@@ -2857,7 +3300,7 @@
 	pixel_y = -5
 	},
 /turf/open/shuttle/dropship/can_surgery/light_grey_single_wide_up_to_down,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male)
 "dlU" = (
 /obj/structure/surface/rack,
 /obj/item/stack/sheet/mineral/tritium{
@@ -2953,7 +3396,7 @@
 "dpX" = (
 /obj/item/prop/almayer/flight_recorder/colony,
 /turf/open/shuttle/dropship/can_surgery/light_grey_single_wide_up_to_down,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male)
 "dqg" = (
 /obj/structure/flora/jungle/vines{
 	color = "#64b1fa"
@@ -3837,7 +4280,7 @@
 	pixel_y = 13
 	},
 /turf/open/floor/plating/plating_catwalk/strata,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male)
 "esW" = (
 /obj/structure/flora/bush/ausbushes/lavendergrass,
 /turf/open/auto_turf/snow/layer0,
@@ -4066,7 +4509,7 @@
 	bullet_amount = 0
 	},
 /turf/open/shuttle/dropship/can_surgery/light_grey_bottom_left,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male)
 "eIQ" = (
 /turf/open/floor/plating/platebotc,
 /area/lv624/lazarus/quartstorage)
@@ -4097,7 +4540,7 @@
 	name = "Fulcrum";
 	opacity = 0
 	},
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male)
 "eKe" = (
 /obj/structure/platform/mineral/sandstone/runed{
 	dir = 1
@@ -4352,7 +4795,7 @@
 	icon_state = "upp5";
 	name = "Fulcrum"
 	},
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male)
 "eXh" = (
 /obj/structure/grille{
 	density = 0;
@@ -5406,7 +5849,7 @@
 	current_rounds = 0
 	},
 /turf/open/shuttle/dropship/can_surgery/medium_grey_single_wide_up_to_down,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male)
 "guv" = (
 /obj/structure/prop/brazier/campfire{
 	fuel_stage_time = 0.00001
@@ -5972,7 +6415,7 @@
 "hjX" = (
 /obj/item/trash/used_stasis_bag,
 /turf/open/shuttle/dropship/can_surgery/light_grey_single_wide_left_to_right,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male)
 "hkc" = (
 /obj/structure/prop/ice_colony/hula_girl{
 	pixel_x = -10;
@@ -6192,7 +6635,7 @@
 	item_state = "paper_words"
 	},
 /turf/open/shuttle/dropship/can_surgery/medium_grey_single_wide_up_to_down,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male)
 "hwE" = (
 /obj/structure/machinery/newscaster{
 	pixel_y = 30
@@ -6490,7 +6933,7 @@
 	name = "\improper Fulcrum Airlock"
 	},
 /turf/open/shuttle/dropship/can_surgery/light_grey_single_wide_up_to_down,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male)
 "hQM" = (
 /obj/structure/coatrack,
 /turf/open/floor/grimy,
@@ -6620,7 +7063,7 @@
 	pixel_x = -1
 	},
 /turf/open/floor/strata/multi_tiles/southwest,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male)
 "hXV" = (
 /obj/structure/closet/secure_closet/hydroponics,
 /turf/open/floor/whitepurplecorner/east,
@@ -6807,7 +7250,7 @@
 /obj/structure/bed/chair/dropship/passenger,
 /obj/item/storage/belt/medical/lifesaver/upp,
 /turf/open/shuttle/dropship/can_surgery/medium_grey_single_wide_up_to_down,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male)
 "ikc" = (
 /obj/structure/flora/bush/snow{
 	icon_state = "snowgrassall_3"
@@ -6986,7 +7429,7 @@
 	pixel_x = -9
 	},
 /turf/open/shuttle/dropship/can_surgery/medium_grey_single_wide_up_to_down,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male)
 "iza" = (
 /obj/structure/flora/jungle/vines/heavy{
 	color = "#64b1fa";
@@ -7089,7 +7532,7 @@
 	pixel_y = 5
 	},
 /turf/open/shuttle/dropship/can_surgery/medium_grey_single_wide_up_to_down,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male)
 "iFd" = (
 /turf/open/floor/whiteblue/north,
 /area/lv624/lazarus/medbay)
@@ -7411,7 +7854,7 @@
 	dir = 1
 	},
 /turf/open/shuttle/dropship/can_surgery/light_grey_single_wide_left_to_right,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male)
 "jby" = (
 /obj/structure/sign/safety/analysis_lab{
 	pixel_x = 8;
@@ -7587,7 +8030,7 @@
 	can_buckle = 1
 	},
 /turf/open/floor/plating/plating_catwalk/strata,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male)
 "jkY" = (
 /obj/structure/surface/table,
 /obj/item/clothing/suit/chef/classic,
@@ -8342,7 +8785,7 @@
 	icon_state = "upp5";
 	name = "Fulcrum"
 	},
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male)
 "jZO" = (
 /obj/effect/decal/mecha_wreckage/ripley{
 	anchored = 1;
@@ -8425,7 +8868,7 @@
 	dir = 8
 	},
 /turf/open/shuttle/dropship/can_surgery/light_grey_single_wide_up_to_down,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male)
 "keC" = (
 /obj/structure/machinery/mecha_part_fabricator,
 /turf/open/floor/vault2/west,
@@ -8654,7 +9097,7 @@
 	icon_state = "upp20";
 	name = "Fulcrum"
 	},
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male)
 "kqw" = (
 /obj/structure/machinery/light{
 	dir = 1;
@@ -8675,7 +9118,7 @@
 	layer = 2.9
 	},
 /turf/open/floor/plating/plating_catwalk/strata,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male)
 "ksM" = (
 /obj/structure/foamed_metal,
 /turf/open/auto_turf/snow/layer0,
@@ -8908,7 +9351,7 @@
 "kHc" = (
 /obj/item/tool/wrench,
 /turf/open/shuttle/dropship/can_surgery/light_grey_single_wide_up_to_down,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male)
 "kHt" = (
 /obj/structure/cargo_container/grant/rightmid,
 /turf/open/floor,
@@ -8927,7 +9370,7 @@
 	icon_state = "upp21";
 	name = "Fulcrum"
 	},
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male)
 "kJd" = (
 /obj/structure/machinery/door/airlock/hatch/cockpit/upp,
 /turf/open/floor/strata/floor3/east,
@@ -9170,7 +9613,7 @@
 	},
 /obj/effect/spawner/gibspawner/human,
 /turf/open/shuttle/dropship/can_surgery/light_grey_top_left,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male)
 "laj" = (
 /obj/structure/pipes/standard/simple/hidden/green{
 	dir = 4
@@ -10322,7 +10765,6 @@
 /area/lv624/ground/caves/sand_temple)
 "mxp" = (
 /obj/structure/surface/rack,
-/obj/item/ammo_magazine/rifle/nsg23/extended,
 /obj/item/weapon/gun/rifle/nsg23/no_lock,
 /turf/open/shuttle/bright_red,
 /area/lv624/lazarus/crashed_ship_containers)
@@ -10341,7 +10783,7 @@
 	icon_state = "upp1";
 	name = "Fulcrum"
 	},
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male)
 "mzA" = (
 /turf/open/floor/plating/asteroidwarning/southeast,
 /area/lv624/ground/jungle/north_jungle)
@@ -10660,7 +11102,7 @@
 /area/lv624/ground/caves/east_caves)
 "mXp" = (
 /turf/open/shuttle/dropship/can_surgery/light_grey_single_wide_left_to_right,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male)
 "mXJ" = (
 /obj/structure/machinery/status_display{
 	pixel_y = 30
@@ -10801,7 +11243,7 @@
 	icon_state = "upp4";
 	name = "Fulcrum"
 	},
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male)
 "nel" = (
 /obj/effect/decal/cleanable/blood/drip,
 /turf/open/floor/whiteyellowcorner/west,
@@ -11081,7 +11523,7 @@
 	dir = 8
 	},
 /turf/open/shuttle/dropship/can_surgery/light_grey_single_wide_left_to_right,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male)
 "nxN" = (
 /obj/structure/flora/bush/snow{
 	icon_state = "snowgrassall_1"
@@ -11219,7 +11661,7 @@
 	icon = 'icons/obj/items/weapons/guns/guns_by_faction/upp.dmi'
 	},
 /turf/open/shuttle/dropship/can_surgery/medium_grey_single_wide_up_to_down,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male)
 "nGV" = (
 /obj/structure/prop/invuln/fire{
 	icon_state = "dynamic_4"
@@ -12219,7 +12661,7 @@
 "paO" = (
 /obj/item/trash/semki,
 /turf/open/shuttle/dropship/can_surgery,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male)
 "paW" = (
 /obj/structure/stairs/perspective{
 	color = "#6b675e";
@@ -12949,7 +13391,7 @@
 /area/lv624/lazarus/corporate_dome)
 "pZk" = (
 /turf/open/shuttle/dropship/can_surgery/light_grey_single_wide_up_to_down,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male)
 "qaj" = (
 /obj/item/ammo_magazine/smg/mp5,
 /turf/open/floor/white,
@@ -13961,7 +14403,7 @@
 "rpm" = (
 /obj/item/prop/almayer/comp_closed,
 /turf/open/shuttle/dropship/can_surgery/light_grey_single_wide_up_to_down,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male)
 "rqv" = (
 /obj/structure/machinery/landinglight/ds2/delaytwo{
 	dir = 1
@@ -14121,7 +14563,7 @@
 	icon_state = "S"
 	},
 /turf/open/floor/strata/multi_tiles/west,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male)
 "rzh" = (
 /obj/structure/prop/invuln/fire{
 	icon_state = "dynamic_4"
@@ -14136,7 +14578,7 @@
 /obj/structure/bed/bedroll,
 /obj/item/bedsheet/brown,
 /turf/open/shuttle/dropship/can_surgery/light_grey_single_wide_up_to_down,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male)
 "rzY" = (
 /turf/open/auto_turf/snow/layer3,
 /area/lv624/ground/caves/south_west_caves)
@@ -14416,7 +14858,7 @@
 	pixel_x = 1
 	},
 /turf/open/floor/strata/multi_tiles/southwest,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male)
 "rWp" = (
 /turf/closed/wall/sulaco,
 /area/lv624/lazarus/crashed_ship_containers)
@@ -14621,7 +15063,7 @@
 /obj/item/ammo_magazine/handful/shotgun/heavy/buckshot,
 /obj/item/ammo_box/magazine/misc/flares,
 /turf/open/shuttle/dropship/can_surgery/medium_grey_single_wide_up_to_down,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male)
 "shN" = (
 /obj/structure/machinery/door/airlock/almayer/secure/colony{
 	locked = 1;
@@ -14681,7 +15123,7 @@
 	icon_state = "upp3";
 	name = "Fulcrum"
 	},
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male)
 "soR" = (
 /obj/structure/closet,
 /obj/structure/window/reinforced/tinted{
@@ -14720,7 +15162,7 @@
 	icon_state = "upp5";
 	name = "Fulcrum"
 	},
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male)
 "ssY" = (
 /obj/structure/surface/table/reinforced/prison,
 /obj/item/storage/firstaid/adv{
@@ -14851,7 +15293,7 @@
 	icon_state = "upp25";
 	name = "Fulcrum"
 	},
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male)
 "sDI" = (
 /obj/structure/flora/bush/snow{
 	icon_state = "snowgrassgb_2"
@@ -16259,7 +16701,7 @@
 	pixel_y = 29
 	},
 /turf/open/floor/strata/multi_tiles/west,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male)
 "uxK" = (
 /obj/structure/fence,
 /turf/open/floor/warning/east,
@@ -16331,7 +16773,7 @@
 	icon_state = "upp5";
 	name = "Fulcrum"
 	},
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male)
 "uCY" = (
 /turf/open/floor/vault2/west,
 /area/lv624/lazarus/quartstorage)
@@ -16340,7 +16782,7 @@
 	icon_state = "S-corner"
 	},
 /turf/open/shuttle/dropship/can_surgery/medium_grey_single_wide_left_to_right,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male)
 "uDN" = (
 /obj/structure/flora/bush/ausbushes/grassybush{
 	color = "#64b1fa"
@@ -16534,7 +16976,7 @@
 	current_rounds = 0
 	},
 /turf/open/shuttle/dropship/can_surgery,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male)
 "uQC" = (
 /obj/structure/flora/bush/ausbushes/var3/brflowers,
 /obj/structure/flora/jungle/vines{
@@ -17146,7 +17588,7 @@
 "vGt" = (
 /obj/item/storage/belt/utility,
 /turf/open/shuttle/dropship/can_surgery/light_grey_single_wide_up_to_down,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male)
 "vGN" = (
 /turf/open/auto_turf/ice/layer0,
 /area/lv624/ground/caves/south_west_caves)
@@ -17192,7 +17634,7 @@
 	dir = 8
 	},
 /turf/open/shuttle/dropship/can_surgery/medium_grey_single_wide_up_to_down,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male)
 "vJA" = (
 /obj/structure/lattice{
 	layer = 2.9
@@ -17525,7 +17967,7 @@
 	name = "secured military crates"
 	},
 /turf/open/shuttle/dropship/can_surgery/light_grey_bottom_right,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male)
 "whc" = (
 /obj/effect/attach_point/weapon/midway/left_fore,
 /obj/effect/attach_point/weapon/midway/right_fore{
@@ -17620,7 +18062,7 @@
 	},
 /obj/item/explosive/plastic,
 /turf/open/shuttle/dropship/can_surgery/light_grey_single_wide_up_to_down,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male)
 "wmA" = (
 /obj/structure/machinery/landinglight/ds1{
 	dir = 8
@@ -17929,7 +18371,7 @@
 	current_rounds = 0
 	},
 /turf/open/shuttle/dropship/can_surgery/light_grey_single_wide_up_to_down,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male)
 "wHD" = (
 /obj/structure/closet/crate/hydroponics/prespawned,
 /turf/open/floor/green/northwest,
@@ -18540,7 +18982,7 @@
 "xvq" = (
 /obj/item/roller,
 /turf/open/shuttle/dropship/can_surgery/light_grey_single_wide_up_to_down,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male)
 "xwL" = (
 /obj/structure/flora/bush/ausbushes/palebush{
 	color = "#64b1fa"
@@ -52480,10 +52922,10 @@ tHl
 tHl
 tHl
 tHl
-hYq
-qzK
-qzK
-kQm
+abH
+abw
+abw
+aaX
 lhS
 oZs
 xbj
@@ -52924,18 +53366,18 @@ tHl
 tHl
 tHl
 uLI
-fKQ
-maN
-ggE
-ggE
-oky
-qWL
-qWL
-qWL
-qWL
-qWL
-qWL
-kQm
+abN
+abJ
+abx
+abx
+aaY
+aaQ
+aaQ
+aaQ
+aaQ
+aaQ
+aaQ
+aaX
 lhS
 muL
 oZs
@@ -53366,24 +53808,24 @@ dzV
 qXT
 tHl
 tHl
-fKQ
-qWL
-qWL
-wCb
+abN
+aaQ
+aaQ
+abO
 jkU
-vbo
-eSw
-wee
-kCq
-blN
-ktj
-kCq
-cik
-aRB
-oky
-qWL
-qWL
-qxK
+abC
+aaN
+abv
+abj
+abt
+abn
+abj
+abg
+abe
+aaY
+aaQ
+aaQ
+aaL
 tHl
 tHl
 kXJ
@@ -53811,24 +54253,24 @@ qpn
 dEK
 tHl
 myq
-wCb
-xKM
+abO
+abS
 rVY
-dme
-lUr
-uSO
-gCU
-izF
-izF
-izF
-izF
+abP
+aaS
+abD
+aby
+abp
+abp
+abp
+abp
 uxD
-gPB
-vQx
-lXi
-iTB
-wsS
-gdZ
+abh
+abf
+aaZ
+aaV
+aaR
+aaM
 tHl
 udH
 udH
@@ -54256,24 +54698,24 @@ qpn
 dEK
 tHl
 tHl
-dme
-jwy
-lUr
-kJd
-wxP
-qCL
-aCm
-cfb
-cfb
-cfb
-cfb
+abP
+abT
+aaS
+abQ
+abK
+abE
+abz
+abq
+abq
+abq
+abq
 esI
-uRG
-vQx
-bWZ
-lUr
-lUr
-eSw
+abi
+abf
+abb
+aaS
+aaS
+aaN
 tHl
 udH
 udH
@@ -54701,24 +55143,24 @@ adT
 qXT
 tHl
 tHl
-wCb
-nfL
+abO
+abU
 hXI
-dme
-lUr
-mpi
-eSw
-rim
-rim
-rim
-rim
-czr
-gPB
-vQx
+abP
+aaS
+abF
+aaN
+abr
+abr
+abr
+abr
+abk
+abh
+abf
 rzd
-tEg
-vpY
-oCW
+aaW
+aaT
+aaO
 tHl
 tHl
 udH
@@ -55146,24 +55588,24 @@ adT
 qXT
 man
 tHl
-seU
-kob
-kob
-wCb
+abR
+aaU
+aaU
+abO
 kqw
-woM
-eSw
-wee
-wfi
-iAd
-dBE
-wfi
-cik
-aRB
-tYZ
-kob
-kob
-jGW
+abG
+aaN
+abv
+abm
+abu
+abs
+abm
+abg
+abe
+abc
+aaU
+aaU
+aaP
 kXJ
 tHl
 tHl
@@ -55594,18 +56036,18 @@ tHl
 tHl
 tHl
 whc
-seU
-mjg
-gmD
-gmD
-tYZ
-kob
-kob
-kob
-kob
-kob
-kob
-uPV
+abR
+abL
+abA
+abA
+abc
+aaU
+aaU
+aaU
+aaU
+aaU
+aaU
+abd
 heG
 edU
 qEu
@@ -56040,10 +56482,10 @@ tHl
 tHl
 tHl
 tHl
-wLC
-qzK
-qzK
-uPV
+abM
+abw
+abw
+abd
 heG
 qEu
 xbj
