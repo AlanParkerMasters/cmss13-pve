@@ -28,11 +28,15 @@
 	},
 /obj/structure/blocker/invisible_wall,
 /turf/open/floor/strata/multi_tiles/southwest,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "aad" = (
 /obj/structure/blocker/invisible_wall,
 /turf/open/floor/strata/multi_tiles/west,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "aae" = (
 /obj/structure/machinery/light{
 	dir = 4;
@@ -48,7 +52,9 @@
 	},
 /obj/structure/blocker/invisible_wall,
 /turf/open/floor/strata/multi_tiles/southwest,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "aaf" = (
 /obj/structure/barricade/sandbags/wired,
 /turf/open/auto_turf/snow/brown_base/layer1,
@@ -228,115 +234,6 @@
 	},
 /turf/open/auto_turf/strata_grass/layer0_mud_alt,
 /area/lv624/ground/jungle/north_jungle)
-"aaL" = (
-/turf/closed/shuttle/ert{
-	icon_state = "upp1"
-	},
-/area/lv624/lazarus/sleep_male)
-"aaM" = (
-/obj/effect/decal/warning_stripes{
-	icon_state = "N";
-	pixel_y = 1;
-	pixel_x = -1
-	},
-/obj/structure/machinery/door/airlock/multi_tile/almayer/dropshiprear/upp{
-	id = "aft_door"
-	},
-/turf/open/floor/strata/floor3/east,
-/area/lv624/lazarus/sleep_male)
-"aaN" = (
-/turf/open/floor/strata/floor3/east,
-/area/lv624/lazarus/sleep_male)
-"aaO" = (
-/obj/effect/decal/warning_stripes{
-	icon_state = "N";
-	pixel_y = 1
-	},
-/turf/open/floor/strata/floor3/east,
-/area/lv624/lazarus/sleep_male)
-"aaP" = (
-/turf/closed/shuttle/ert{
-	icon_state = "upp3"
-	},
-/area/lv624/lazarus/sleep_male)
-"aaQ" = (
-/turf/closed/shuttle/ert{
-	icon_state = "upp4"
-	},
-/area/lv624/lazarus/sleep_male)
-"aaR" = (
-/obj/structure/bed/chair/vehicle{
-	dir = 4;
-	pixel_x = -9
-	},
-/obj/effect/decal/warning_stripes{
-	icon_state = "E"
-	},
-/turf/open/floor/plating/plating_catwalk/strata,
-/area/lv624/lazarus/sleep_male)
-"aaS" = (
-/turf/open/floor/strata/multi_tiles/west,
-/area/lv624/lazarus/sleep_male)
-"aaT" = (
-/obj/structure/bed/chair/vehicle{
-	pixel_x = 9;
-	dir = 8
-	},
-/obj/effect/decal/warning_stripes{
-	icon_state = "W"
-	},
-/turf/open/floor/plating/plating_catwalk/strata,
-/area/lv624/lazarus/sleep_male)
-"aaU" = (
-/turf/closed/shuttle/ert{
-	icon_state = "upp5"
-	},
-/area/lv624/lazarus/sleep_male)
-"aaV" = (
-/obj/structure/machinery/light{
-	dir = 8;
-	pixel_x = -14
-	},
-/obj/structure/bed/chair/vehicle{
-	dir = 4;
-	pixel_x = -9
-	},
-/obj/effect/decal/warning_stripes{
-	icon_state = "E"
-	},
-/turf/open/floor/plating/plating_catwalk/strata,
-/area/lv624/lazarus/sleep_male)
-"aaW" = (
-/obj/structure/machinery/light{
-	dir = 4;
-	pixel_x = 14
-	},
-/obj/structure/bed/chair/vehicle{
-	pixel_x = 9;
-	dir = 8
-	},
-/obj/effect/decal/warning_stripes{
-	icon_state = "W"
-	},
-/turf/open/floor/plating/plating_catwalk/strata,
-/area/lv624/lazarus/sleep_male)
-"aaX" = (
-/turf/closed/shuttle/ert{
-	icon_state = "upp_leftengine"
-	},
-/area/lv624/lazarus/sleep_male)
-"aaY" = (
-/turf/closed/shuttle/ert{
-	icon_state = "upp8"
-	},
-/area/lv624/lazarus/sleep_male)
-"aaZ" = (
-/obj/effect/decal/warning_stripes{
-	icon_state = "S";
-	pixel_x = -1
-	},
-/turf/open/floor/strata/multi_tiles/west,
-/area/lv624/lazarus/sleep_male)
 "aba" = (
 /obj/structure/bed/chair{
 	dir = 4
@@ -346,80 +243,6 @@
 	},
 /turf/open/floor/bar,
 /area/lv624/lazarus/canteen)
-"abb" = (
-/obj/effect/attach_point/crew_weapon/midway{
-	attach_id = 7;
-	ship_tag = "dropship_upp"
-	},
-/turf/open/floor/strata/multi_tiles/southwest,
-/area/lv624/lazarus/sleep_male)
-"abc" = (
-/turf/closed/shuttle/ert{
-	icon_state = "upp9"
-	},
-/area/lv624/lazarus/sleep_male)
-"abd" = (
-/turf/closed/shuttle/ert{
-	icon_state = "upp_rightengine"
-	},
-/area/lv624/lazarus/sleep_male)
-"abe" = (
-/obj/structure/stairs{
-	layer = 2.1
-	},
-/turf/open/floor/strata/floor3/east,
-/area/lv624/lazarus/sleep_male)
-"abf" = (
-/obj/structure/platform/mineral{
-	dir = 1;
-	color = "#464847"
-	},
-/turf/open/floor/strata/floor3/east,
-/area/lv624/lazarus/sleep_male)
-"abg" = (
-/obj/effect/decal/warning_stripes{
-	icon_state = "S";
-	layer = 2
-	},
-/turf/open/floor/strata/floor3/east,
-/area/lv624/lazarus/sleep_male)
-"abh" = (
-/obj/structure/barricade/handrail/strata{
-	can_buckle = 1
-	},
-/obj/effect/decal/warning_stripes{
-	icon_state = "S"
-	},
-/turf/open/floor/strata/multi_tiles/west,
-/area/lv624/lazarus/sleep_male)
-"abi" = (
-/obj/effect/attach_point/crew_weapon/midway{
-	attach_id = 7;
-	ship_tag = "dropship_upp"
-	},
-/obj/structure/barricade/handrail/strata{
-	can_buckle = 1
-	},
-/obj/effect/decal/warning_stripes{
-	icon_state = "S"
-	},
-/turf/open/floor/strata/multi_tiles/southwest,
-/area/lv624/lazarus/sleep_male)
-"abj" = (
-/obj/structure/barricade/handrail/strata{
-	dir = 8;
-	can_buckle = 1
-	},
-/turf/open/floor/plating/plating_catwalk/strata,
-/area/lv624/lazarus/sleep_male)
-"abk" = (
-/obj/effect/decal/warning_stripes{
-	icon_state = "S";
-	pixel_x = -13;
-	pixel_y = 29
-	},
-/turf/open/floor/strata/multi_tiles/west,
-/area/lv624/lazarus/sleep_male)
 "abl" = (
 /obj/structure/platform/mineral/sandstone/runed{
 	dir = 1
@@ -431,25 +254,6 @@
 	},
 /turf/open/auto_turf/snow/layer0,
 /area/lv624/ground/jungle/north_jungle)
-"abm" = (
-/obj/structure/barricade/handrail/strata{
-	dir = 4;
-	can_buckle = 1
-	},
-/turf/open/floor/plating/plating_catwalk/strata,
-/area/lv624/lazarus/sleep_male)
-"abn" = (
-/obj/structure/barricade/handrail/strata{
-	dir = 8;
-	can_buckle = 1
-	},
-/obj/structure/machinery/cm_vending/sorted/medical/wall_med/limited{
-	name = "\improper MinZdrav dispenser";
-	desc = "A wall-mounted medical equipment dispenser. Provided by Ministry of Health of UPP, it contains a small quantity of emergency supplies.";
-	pixel_x = -30
-	},
-/turf/open/floor/plating/plating_catwalk/strata,
-/area/lv624/lazarus/sleep_male)
 "abo" = (
 /obj/item/reagent_container/food/snacks/grown/mushroom/glowshroom{
 	light_on = 1;
@@ -460,165 +264,14 @@
 	},
 /turf/open/auto_turf/snow/layer3,
 /area/lv624/ground/caves/east_caves)
-"abp" = (
-/obj/structure/bed/chair/vehicle{
-	pixel_x = 9;
-	dir = 8
-	},
-/obj/effect/decal/warning_stripes{
-	icon_state = "E";
-	pixel_x = -15
-	},
-/turf/open/floor/strata/multi_tiles/west,
-/area/lv624/lazarus/sleep_male)
-"abq" = (
-/turf/closed/shuttle/ert{
-	icon_state = "uppwall"
-	},
-/area/lv624/lazarus/sleep_male)
-"abr" = (
-/obj/structure/bed/chair/vehicle{
-	dir = 4;
-	pixel_x = -9
-	},
-/obj/effect/decal/warning_stripes{
-	icon_state = "E";
-	pixel_x = -12
-	},
-/turf/open/floor/strata/multi_tiles/west,
-/area/lv624/lazarus/sleep_male)
-"abs" = (
-/obj/structure/barricade/handrail/strata{
-	dir = 4;
-	can_buckle = 1
-	},
-/obj/structure/machinery/cm_vending/sorted/medical/wall_med/limited{
-	name = "\improper MinZdrav dispenser";
-	desc = "A wall-mounted medical equipment dispenser. Provided by Ministry of Health of UPP, it contains a small quantity of emergency supplies.";
-	pixel_x = 30
-	},
-/turf/open/floor/plating/plating_catwalk/strata,
-/area/lv624/lazarus/sleep_male)
-"abt" = (
-/obj/structure/machinery/light{
-	dir = 8;
-	pixel_x = -14
-	},
-/obj/structure/barricade/handrail/strata{
-	dir = 8;
-	can_buckle = 1
-	},
-/turf/open/floor/plating/plating_catwalk/strata,
-/area/lv624/lazarus/sleep_male)
-"abu" = (
-/obj/structure/machinery/light{
-	dir = 4;
-	pixel_x = 14
-	},
-/obj/structure/barricade/handrail/strata{
-	dir = 4;
-	can_buckle = 1
-	},
-/turf/open/floor/plating/plating_catwalk/strata,
-/area/lv624/lazarus/sleep_male)
-"abv" = (
-/turf/open/floor/plating/plating_catwalk/strata,
-/area/lv624/lazarus/sleep_male)
-"abw" = (
-/obj/structure/machinery/door/airlock/dropship_hatch/upp{
-	id = "port_door"
-	},
-/turf/open/floor/strata/floor3/east,
-/area/lv624/lazarus/sleep_male)
-"abx" = (
-/obj/effect/decal/warning_stripes{
-	icon_state = "W";
-	pixel_x = -1
-	},
-/turf/open/floor/strata/multi_tiles/west,
-/area/lv624/lazarus/sleep_male)
-"aby" = (
-/obj/effect/decal/warning_stripes{
-	icon_state = "S";
-	pixel_x = 12
-	},
-/turf/open/floor/strata/floor3/east,
-/area/lv624/lazarus/sleep_male)
-"abz" = (
-/obj/effect/decal/warning_stripes{
-	icon_state = "S";
-	pixel_x = 19
-	},
-/obj/effect/decal/warning_stripes{
-	icon_state = "S";
-	pixel_x = -5
-	},
-/obj/effect/decal/warning_stripes{
-	icon_state = "N";
-	pixel_y = 1
-	},
-/turf/open/floor/plating/plating_catwalk/strata,
-/area/lv624/lazarus/sleep_male)
-"abA" = (
-/obj/effect/decal/warning_stripes{
-	icon_state = "E";
-	pixel_x = 1
-	},
-/turf/open/floor/strata/multi_tiles/west,
-/area/lv624/lazarus/sleep_male)
 "abB" = (
 /obj/structure/flora/jungle/vines{
 	color = "#64b1fa"
 	},
 /turf/open/floor/plating/wood,
-/area/lv624/ground/jungle/north_jungle)
-"abC" = (
-/obj/effect/attach_point/crew_weapon/midway{
-	attach_id = 8;
-	ship_tag = "dropship_upp"
-	},
-/turf/open/floor/strata/multi_tiles/southwest,
-/area/lv624/lazarus/sleep_male)
-"abD" = (
-/obj/effect/decal/warning_stripes{
-	icon_state = "E";
-	pixel_x = 1
-	},
-/turf/open/floor/strata/floor3/east,
-/area/lv624/lazarus/sleep_male)
-"abE" = (
-/obj/structure/bed/chair/vehicle{
-	pixel_x = -8;
-	pixel_y = 7
-	},
-/obj/structure/bed/chair/vehicle{
-	pixel_x = 8;
-	pixel_y = 7
-	},
-/turf/open/floor/strata/floor3/east,
-/area/lv624/lazarus/sleep_male)
-"abF" = (
-/obj/effect/decal/warning_stripes{
-	icon_state = "W";
-	pixel_x = -1
-	},
-/turf/open/floor/strata/floor3/east,
-/area/lv624/lazarus/sleep_male)
-"abG" = (
-/obj/effect/attach_point/crew_weapon/midway{
-	attach_id = 9;
-	ship_tag = "dropship_upp"
-	},
-/turf/open/floor/strata/multi_tiles/southwest,
-/area/lv624/lazarus/sleep_male)
-"abH" = (
-/obj/effect/attach_point/weapon/midway/left_wing{
-	ship_tag = "dropship_upp"
-	},
-/turf/closed/shuttle/ert{
-	icon_state = "upp201"
-	},
-/area/lv624/lazarus/sleep_male)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "abI" = (
 /obj/structure/machinery/door/airlock/almayer/command/colony{
 	name = "\improper Nexus Dome Command Quarter";
@@ -626,94 +279,65 @@
 	},
 /turf/open/floor/plating,
 /area/lv624/lazarus/hop)
-"abJ" = (
+"abV" = (
+/obj/structure/machinery/camera/autoname,
+/turf/open/floor/greengrid,
+/area/lv624/lazarus/secure_storage)
+"abW" = (
+/obj/structure/machinery/camera/autoname{
+	dir = 1
+	},
+/turf/open/floor/plating/asteroidwarning,
+/area/lv624/ground/jungle/north_jungle)
+"abX" = (
 /turf/closed/shuttle/ert{
-	icon_state = "upp22"
+	icon_state = "upp_leftengine"
 	},
-/area/lv624/lazarus/sleep_male)
-"abK" = (
-/obj/effect/decal/warning_stripes{
-	icon_state = "S";
-	pixel_y = -1
-	},
-/turf/open/floor/plating/plating_catwalk/strata,
-/area/lv624/lazarus/sleep_male)
-"abL" = (
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
+"abY" = (
 /turf/closed/shuttle/ert{
-	icon_state = "upp23"
+	icon_state = "upp_rightengine"
 	},
-/area/lv624/lazarus/sleep_male)
-"abM" = (
-/obj/effect/attach_point/weapon/midway/right_wing{
-	ship_tag = "dropship_upp"
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
+"abZ" = (
+/obj/structure/flora/pottedplant,
+/obj/structure/machinery/camera/autoname{
+	dir = 8
 	},
-/turf/closed/shuttle/ert{
-	icon_state = "upp251"
+/turf/open/floor/white,
+/area/lv624/lazarus/main_hall)
+"aca" = (
+/obj/structure/machinery/camera/autoname{
+	dir = 8
 	},
-/area/lv624/lazarus/sleep_male)
-"abN" = (
-/turf/closed/shuttle/ert{
-	icon_state = "upp201"
+/turf/open/auto_turf/snow/layer3,
+/area/lv624/ground/jungle/north_jungle)
+"acb" = (
+/obj/item/stack/sheet/wood,
+/obj/structure/machinery/camera/autoname{
+	dir = 8
 	},
-/area/lv624/lazarus/sleep_male)
-"abO" = (
-/turf/closed/shuttle/ert{
-	icon_state = "upp21"
+/turf/open/floor/white,
+/area/lv624/lazarus/main_hall)
+"acc" = (
+/obj/structure/machinery/camera/autoname,
+/turf/open/floor/barber/west,
+/area/lv624/lazarus/fitness)
+"acd" = (
+/obj/effect/landmark/crap_item,
+/obj/structure/machinery/camera/autoname{
+	dir = 8
 	},
-/area/lv624/lazarus/sleep_male)
-"abP" = (
-/turf/closed/shuttle/dropship1/transparent{
-	name = "wall";
-	icon = 'icons/turf/ert_shuttle.dmi';
-	icon_state = "upp27"
-	},
-/area/lv624/lazarus/sleep_male)
-"abQ" = (
-/obj/structure/machinery/door/airlock/hatch/cockpit/upp,
-/turf/open/floor/strata/floor3/east,
-/area/lv624/lazarus/sleep_male)
-"abR" = (
-/turf/closed/shuttle/ert{
-	icon_state = "upp251"
-	},
-/area/lv624/lazarus/sleep_male)
-"abS" = (
-/obj/structure/machinery/computer/cameras/dropship/midway{
-	network = list("Akademia Nauk","Laser Targets");
-	name = "\improper 'Akademia Nauk' camera controls"
-	},
-/obj/structure/blocker/invisible_wall,
-/obj/structure/phone_base{
-	pixel_y = 32;
-	name = "Akademia Nauk Telephone";
-	phone_category = "Dropship";
-	phone_id = "Akademia Nauk";
-	networks_receive = list("UPP");
-	networks_transmit = list("UPP")
-	},
-/turf/open/floor/strata/floor3/east,
-/area/lv624/lazarus/sleep_male)
-"abT" = (
-/obj/structure/machinery/computer/shuttle/dropship/flight,
-/obj/structure/blocker/invisible_wall,
-/obj/item/frame/camera{
-	pixel_x = 12;
-	pixel_y = 17;
-	name = "broken dashcam";
-	desc = "Welp, no more funny crash vids..."
-	},
-/turf/open/floor/strata/floor3/east,
-/area/lv624/lazarus/sleep_male)
-"abU" = (
-/obj/structure/machinery/computer/dropship_weapons/midway{
-	name = "\improper 'Akademia Nauk' weapons controls";
-	shuttle_tag = "dropship_upp";
-	faction = "UPP";
-	req_one_access = list(230, 235,240)
-	},
-/obj/structure/blocker/invisible_wall,
-/turf/open/floor/strata/floor3/east,
-/area/lv624/lazarus/sleep_male)
+/turf/open/floor/dark,
+/area/lv624/lazarus/quartstorage)
+"ace" = (
+/obj/structure/machinery/camera/autoname,
+/turf/open/floor/whiteblue/north,
+/area/lv624/lazarus/medbay)
 "acf" = (
 /obj/structure/surface/table/woodentable/fancy,
 /obj/item/trash/cigbutt/cigarbutt,
@@ -722,6 +346,170 @@
 /obj/effect/landmark/item_pool_spawner/survivor_ammo/buckshot,
 /turf/open/floor/wood,
 /area/lv624/lazarus/hop)
+"acg" = (
+/turf/open/floor/plating/warnplate/southwest,
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
+"ach" = (
+/turf/open/floor/plating/warnplate/southeast,
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
+"aci" = (
+/turf/open/floor/plating,
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
+"acj" = (
+/obj/structure/machinery/constructable_frame{
+	icon_state = "box_1"
+	},
+/turf/open/floor/plating/warnplate/north,
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
+"ack" = (
+/obj/structure/machinery/camera/autoname{
+	dir = 1
+	},
+/turf/open/auto_turf/snow/layer0,
+/area/lv624/ground/jungle/north_jungle)
+"acl" = (
+/turf/open/shuttle/dropship/light_grey_single_wide_up_to_down,
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
+"acm" = (
+/turf/open/shuttle/dropship/medium_grey_single_wide_up_to_down,
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
+"acn" = (
+/turf/closed/shuttle/dropship3/tornado{
+	icon_state = "31"
+	},
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
+"aco" = (
+/obj/structure/machinery/camera/autoname,
+/turf/open/floor,
+/area/lv624/ground/jungle/north_jungle)
+"acp" = (
+/obj/structure/bed/chair/vehicle{
+	dir = 1;
+	pixel_x = -8
+	},
+/turf/open/shuttle/dropship/medium_grey_single_wide_up_to_down,
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
+"acq" = (
+/obj/structure/flora/bush/snow{
+	icon_state = "snowgrassbb_1"
+	},
+/obj/structure/machinery/camera/autoname{
+	dir = 8
+	},
+/turf/open/auto_turf/snow/layer3,
+/area/lv624/ground/jungle/north_jungle)
+"acr" = (
+/obj/structure/bed/chair/vehicle{
+	pixel_x = 8
+	},
+/turf/open/shuttle/dropship/medium_grey_single_wide_up_to_down,
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
+"acs" = (
+/obj/effect/attach_point/crew_weapon/tornado,
+/turf/open/shuttle/dropship/medium_grey_single_wide_up_to_down,
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
+"act" = (
+/turf/open/shuttle/dropship{
+	icon_state = "rasputin15"
+	},
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
+"acu" = (
+/obj/structure/bed/chair/vehicle{
+	pixel_x = -8
+	},
+/obj/structure/bed/chair/vehicle{
+	pixel_x = 8
+	},
+/obj/structure/machinery/camera/autoname,
+/turf/open/shuttle/dropship/medium_grey_single_wide_up_to_down,
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
+"acv" = (
+/turf/closed/wall/wood,
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
+"acw" = (
+/turf/open/floor/plating/wood_broken4,
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
+"acx" = (
+/turf/open/floor/plating/wood_broken6,
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
+"acy" = (
+/turf/open/floor/plating/wood_broken5,
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
+"acz" = (
+/obj/structure/window_frame/wood,
+/turf/open/floor/plating/wood,
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
+"acA" = (
+/obj/structure/machinery/camera/autoname,
+/turf/open/auto_turf/snow/layer3,
+/area/lv624/ground/jungle/north_jungle)
+"acB" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/machinery/camera/autoname,
+/turf/open/floor/plating/wood_broken5,
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
+"acC" = (
+/obj/structure/machinery/camera/autoname{
+	dir = 8
+	},
+/turf/open/floor/plating/wood_broken3,
+/area/lv624/ground/jungle/north_jungle)
+"acD" = (
+/obj/structure/machinery/camera/autoname{
+	dir = 1
+	},
+/turf/open/auto_turf/snow/brown_base/layer3,
+/area/lv624/ground/jungle/north_jungle)
+"acE" = (
+/obj/structure/flora/jungle/vines{
+	color = "#64b1fa"
+	},
+/obj/structure/machinery/camera/autoname{
+	dir = 8
+	},
+/turf/open/auto_turf/snow/layer3,
+/area/lv624/ground/jungle/north_jungle)
+"acF" = (
+/turf/open/floor/plating/wood_broken3,
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "acG" = (
 /obj/structure/machinery/door/airlock/almayer/research/colony{
 	name = "\improper Research Dome";
@@ -729,31 +517,808 @@
 	},
 /turf/open/floor/white,
 /area/lv624/lazarus/research)
+"acH" = (
+/turf/closed/shuttle/dropship1{
+	icon_state = "42"
+	},
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
+"acI" = (
+/obj/effect/decal/cleanable/blood/gibs,
+/turf/open/shuttle/dropship{
+	icon_state = "rasputin15"
+	},
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "acJ" = (
 /turf/open/ice,
 /area/lv624/ground/jungle/north_jungle)
+"acK" = (
+/turf/open/shuttle/dropship{
+	icon_state = "rasputin3"
+	},
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
+"acL" = (
+/obj/effect/attach_point/crew_weapon/dropship1,
+/turf/open/shuttle/dropship{
+	icon_state = "rasputin15"
+	},
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
+"acM" = (
+/obj/effect/decal/cleanable/blood,
+/turf/open/shuttle/dropship{
+	icon_state = "rasputin15"
+	},
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
+"acN" = (
+/turf/closed/shuttle/dropship1{
+	icon_state = "43"
+	},
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
+"acO" = (
+/obj/structure/platform{
+	dir = 1
+	},
+/turf/open/shuttle/dropship{
+	icon_state = "rasputin3"
+	},
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
+"acP" = (
+/obj/structure/bed/chair/vehicle{
+	dir = 1;
+	pixel_x = 8
+	},
+/obj/structure/bed/chair/vehicle{
+	dir = 1;
+	pixel_x = -8
+	},
+/turf/open/shuttle/dropship{
+	icon_state = "rasputin15"
+	},
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
+"acQ" = (
+/obj/structure/bed/chair/vehicle{
+	pixel_x = -8
+	},
+/obj/structure/bed/chair/vehicle{
+	pixel_x = 8
+	},
+/turf/open/shuttle/dropship{
+	icon_state = "rasputin15"
+	},
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
+"acR" = (
+/obj/effect/decal/cleanable/blood/splatter,
+/obj/structure/machinery/camera/autoname{
+	dir = 8
+	},
+/turf/open/shuttle/dropship{
+	icon_state = "rasputin15"
+	},
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
+"acS" = (
+/turf/closed/shuttle/dropship1{
+	icon_state = "54"
+	},
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
+"acT" = (
+/obj/structure/flora/jungle/vines{
+	color = "#64b1fa"
+	},
+/obj/structure/machinery/camera/autoname,
+/turf/open/auto_turf/snow/layer3,
+/area/lv624/ground/jungle/north_jungle)
+"acU" = (
+/obj/structure/machinery/camera/autoname,
+/turf/open/auto_turf/snow/layer0,
+/area/lv624/ground/caves/south_west_caves)
+"acV" = (
+/turf/open/floor/dark,
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
+"acW" = (
+/obj/structure/machinery/camera/autoname,
+/turf/open/auto_turf/snow/layer3,
+/area/lv624/ground/caves/south_central_caves)
+"acX" = (
+/obj/structure/machinery/camera/autoname{
+	dir = 4
+	},
+/turf/open/auto_turf/snow/layer0,
+/area/lv624/ground/caves/central_caves)
+"acY" = (
+/obj/item/device/flashlight/flare/on{
+	fuel_rate = 0.0001;
+	pixel_x = 8
+	},
+/turf/open/auto_turf/snow/layer0,
+/area/lv624/ground/caves/central_caves)
+"acZ" = (
+/obj/structure/machinery/camera/autoname,
+/turf/open/auto_turf/snow/layer3,
+/area/lv624/ground/caves/central_caves)
+"ada" = (
+/obj/structure/machinery/camera/autoname,
+/turf/open/auto_turf/snow/layer0,
+/area/lv624/ground/caves/east_caves)
+"adb" = (
+/obj/structure/machinery/camera/autoname,
+/turf/open/auto_turf/snow/layer0,
+/area/lv624/ground/caves/central_caves)
+"adc" = (
+/obj/structure/machinery/camera/autoname{
+	dir = 8
+	},
+/turf/open/auto_turf/snow/layer0,
+/area/lv624/ground/caves/west_caves)
+"add" = (
+/obj/structure/flora/bush/ausbushes/var3/ywflowers{
+	icon_state = "ywflowers_3"
+	},
+/turf/open/auto_turf/snow/layer3,
+/area/lv624/ground/jungle/north_jungle)
+"ade" = (
+/obj/structure/machinery/camera/autoname{
+	dir = 4
+	},
+/turf/open/auto_turf/snow/layer0,
+/area/lv624/ground/jungle/north_jungle)
+"adf" = (
+/obj/structure/machinery/camera/autoname,
+/turf/open/auto_turf/snow/layer0,
+/area/lv624/ground/caves/north_west_caves)
+"adg" = (
+/obj/structure/machinery/camera/autoname{
+	dir = 1
+	},
+/turf/open/floor,
+/area/lv624/ground/jungle/north_jungle)
+"adh" = (
+/obj/structure/machinery/camera/autoname,
+/turf/open/auto_turf/snow/layer0,
+/area/lv624/ground/caves/north_east_caves)
+"adi" = (
+/turf/open/auto_turf/snow/layer0,
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
+"adj" = (
+/obj/structure/flora/bush/ausbushes/var3/ywflowers{
+	icon_state = "ywflowers_4"
+	},
+/turf/open/auto_turf/snow/layer3,
+/area/lv624/ground/jungle/north_jungle)
+"adk" = (
+/obj/structure/machinery/camera/autoname,
+/turf/open/auto_turf/snow/layer1,
+/area/lv624/ground/jungle/north_jungle)
+"adl" = (
+/obj/item/device/flashlight/flare/on{
+	fuel_rate = 0.0001;
+	pixel_x = 8
+	},
+/turf/open/auto_turf/snow/layer0,
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
+"adm" = (
+/obj/structure/largecrate/black_market/clf_supplies,
+/obj/structure/machinery/camera/autoname,
+/turf/open/auto_turf/snow/layer0,
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
+"adn" = (
+/obj/effect/vehicle_spawner/uppvan/prisoner/decrepit,
+/turf/open/auto_turf/snow/brown_base/layer1,
+/area/lv624/ground/jungle/north_jungle)
+"ado" = (
+/turf/open/floor/wood/wood_broken3,
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
+"adp" = (
+/turf/open/floor/wood/wood_broken6,
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
+"adq" = (
+/turf/open/floor/wood/wood_broken,
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
+"adr" = (
+/obj/item/device/flashlight/flare/on{
+	fuel_rate = 0.0001;
+	pixel_x = 8
+	},
+/turf/open/floor/wood/wood_broken,
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
+"ads" = (
+/obj/item/reagent_container/glass/bucket/mopbucket{
+	pixel_x = -8;
+	desc = "Gross. A larger bucket, typically used with a mop. Holds 240 units"
+	},
+/turf/open/floor/freezerfloor,
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
+"adt" = (
+/obj/structure/kitchenspike,
+/obj/effect/decal/cleanable/blood,
+/obj/structure/machinery/light/small{
+	light_color = "#C02526";
+	color = "#C02526";
+	pixel_y = -9
+	},
+/turf/open/floor/freezerfloor,
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
+"adu" = (
+/obj/structure/bed/stool,
+/obj/item/trash/cigbutt{
+	pixel_x = -7;
+	pixel_y = 13
+	},
+/obj/item/trash/cigbutt{
+	pixel_x = 9;
+	pixel_y = 10
+	},
+/obj/item/trash/cigbutt{
+	pixel_y = 5;
+	pixel_x = 4
+	},
+/turf/open/floor/freezerfloor,
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
+"adv" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/item/clothing/under/marine{
+	pixel_y = 6
+	},
+/obj/item/clothing/under/marine{
+	pixel_x = 7;
+	pixel_y = -2
+	},
+/obj/item/clothing/under/marine{
+	pixel_x = -7;
+	pixel_y = -9
+	},
+/obj/item/clothing/under/marine{
+	pixel_x = -12;
+	pixel_y = -4
+	},
+/obj/item/clothing/under/marine{
+	pixel_x = 13;
+	pixel_y = 4
+	},
+/obj/item/clothing/under/marine{
+	pixel_x = 8;
+	pixel_y = -10
+	},
+/obj/item/clothing/under/marine{
+	pixel_x = -2;
+	pixel_y = -7
+	},
+/obj/item/clothing/under/marine{
+	pixel_x = -7;
+	pixel_y = 5
+	},
+/obj/effect/decal/cleanable/blood,
+/obj/item/weapon/gun/pistol/holdout{
+	pixel_x = 6;
+	pixel_y = -4
+	},
+/turf/open/floor/freezerfloor,
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
+"adw" = (
+/obj/structure/kitchenspike,
+/obj/effect/decal/cleanable/blood,
+/turf/open/floor/freezerfloor,
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
+"adx" = (
+/obj/effect/decal/cleanable/blood/gibs/core,
+/turf/open/floor/freezerfloor,
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
+"ady" = (
+/obj/structure/closet/secure_closet/freezer/meat,
+/obj/item/storage/fancy/egg_box,
+/obj/item/storage/fancy/egg_box,
+/turf/open/floor/freezerfloor,
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "adz" = (
 /obj/item/storage/firstaid/toxin,
 /turf/open/floor/whiteblue/southwest,
 /area/lv624/lazarus/medbay)
+"adA" = (
+/obj/item/trash/buritto{
+	pixel_x = 10
+	},
+/obj/effect/decal/cleanable/blood/gibs/body,
+/obj/structure/machinery/light/small{
+	light_color = "#C02526";
+	color = "#C02526";
+	pixel_y = -9
+	},
+/mob/living/simple_animal/mouse,
+/turf/open/floor/freezerfloor,
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
+"adB" = (
+/obj/structure/closet/crate/freezer/rations{
+	anchored = 1
+	},
+/obj/item/reagent_container/food/snacks/microwavable/packaged_burrito,
+/obj/item/reagent_container/food/snacks/microwavable/packaged_burrito,
+/obj/item/reagent_container/food/snacks/microwavable/packaged_burrito,
+/obj/item/reagent_container/food/snacks/microwavable/packaged_burrito,
+/obj/item/reagent_container/food/snacks/microwavable/packaged_burrito,
+/obj/item/reagent_container/food/snacks/microwavable/packaged_burrito,
+/obj/item/reagent_container/food/snacks/microwavable/packaged_burrito,
+/obj/item/reagent_container/food/snacks/microwavable/packaged_burrito,
+/obj/item/reagent_container/food/snacks/chips,
+/obj/item/reagent_container/food/snacks/chips,
+/obj/item/reagent_container/food/snacks/chips,
+/obj/item/reagent_container/food/snacks/chips,
+/turf/open/floor/freezerfloor,
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
+"adC" = (
+/obj/item/explosive/plastic,
+/turf/open/floor/wood,
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "adD" = (
 /obj/structure/barricade/wooden{
 	dir = 8
 	},
 /turf/open/floor/purple/northwest,
 /area/lv624/lazarus/sleep_female)
+"adE" = (
+/obj/item/device/flashlight/flare/on{
+	fuel_rate = 0.0001;
+	pixel_x = 8
+	},
+/turf/open/floor/wood,
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
+"adF" = (
+/obj/effect/landmark/crap_item,
+/turf/open/floor/wood,
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
+"adG" = (
+/obj/structure/bed/bedroll{
+	pixel_y = -4;
+	color = "#333333";
+	name = "gym mat";
+	buckle_lying = null;
+	can_buckle = 0;
+	foldabletype = null;
+	desc = "A black gym mat, useful if you don't want to use the cold hard floor for exercise."
+	},
+/turf/open/floor/freezerfloor,
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
+"adH" = (
+/turf/open/floor/freezerfloor,
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
+"adI" = (
+/obj/item/weapon/twohanded/folded_metal_chair,
+/turf/open/floor/freezerfloor,
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
+"adJ" = (
+/obj/effect/decal/cleanable/blood,
+/turf/open/floor/freezerfloor,
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
+"adK" = (
+/obj/effect/decal/cleanable/blood/drip,
+/turf/open/floor/freezerfloor,
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
+"adL" = (
+/obj/structure/closet/crate/freezer/cooler{
+	anchored = 1
+	},
+/obj/item/storage/beer_pack,
+/obj/item/storage/beer_pack,
+/turf/open/floor/freezerfloor,
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
+"adM" = (
+/obj/effect/decal/cleanable/blood,
+/obj/structure/largecrate/random/secure{
+	anchored = 1
+	},
+/obj/structure/machinery/light/small{
+	light_color = "#C02526";
+	color = "#C02526";
+	pixel_y = -9
+	},
+/obj/structure/reagent_dispensers/beerkeg{
+	pixel_y = 11;
+	anchored = 1;
+	layer = 5
+	},
+/turf/open/floor/freezerfloor,
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
+"adN" = (
+/obj/structure/closet/crate/freezer/rations{
+	anchored = 1
+	},
+/turf/open/floor/freezerfloor,
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "adO" = (
 /obj/effect/landmark/monkey_spawn,
 /turf/open/auto_turf/snow/layer0,
 /area/lv624/ground/caves/east_caves)
+"adP" = (
+/obj/structure/bed/bedroll{
+	pixel_y = 6;
+	color = "#333333";
+	name = "gym mat";
+	buckle_lying = null;
+	can_buckle = 0;
+	foldabletype = null;
+	desc = "A black gym mat, useful if you don't want to use the cold hard floor for exercise."
+	},
+/turf/open/floor/freezerfloor,
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
+"adQ" = (
+/obj/item/paper/prison_station/chapel_program{
+	name = "USS Kuala prisoner note";
+	info = "many of us managed to survive the crash, the other two I was captured with froze to death in this meat locker <BR>\n<BR>\n we managed to figure out that we're far north, we just need to hold out until rescue arrives... <BR>\n<BR>\n my prayers are often answered somehow in this coffin of a freezer, but if our rescue doesn't arrive, I fear the worst <BR>\n<BR>\nwe can hear so many of those UPP bastards outside... maybe it would be best to not try and escape, it may be the death of us all...";
+	icon_state = "paper_words";
+	color = "light_red"
+	},
+/turf/open/floor/freezerfloor,
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
+"adR" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/freezerfloor,
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
+"adS" = (
+/obj/structure/surface/table/woodentable/poor,
+/obj/structure/machinery/microwave{
+	pixel_x = 2;
+	pixel_y = 3
+	},
+/turf/open/floor/wood,
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "adT" = (
 /obj/structure/barricade/sandbags/wired,
 /turf/open/floor/wood,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
+"adU" = (
+/obj/structure/surface/table/woodentable/poor,
+/obj/item/tool/kitchen/knife/butcher,
+/obj/item/tool/kitchen/knife/butcher{
+	pixel_x = -7
+	},
+/turf/open/floor/wood,
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
+"adV" = (
+/obj/effect/landmark/crap_item,
+/obj/structure/surface/table/woodentable/poor,
+/turf/open/floor/wood,
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
+"adW" = (
+/turf/open/floor/wood/wood_broken4,
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
+"adX" = (
+/obj/item/paper/prison_station/chapel_program{
+	name = "Chapel service program'";
+	icon_state = "paper_p_words"
+	},
+/turf/open/floor/freezerfloor,
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
+"adY" = (
+/obj/item/weapon/twohanded/folded_metal_chair{
+	pixel_x = 8
+	},
+/turf/open/floor/freezerfloor,
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
+"adZ" = (
+/obj/structure/machinery/camera/autoname{
+	dir = 8
+	},
+/turf/open/floor/freezerfloor,
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
+"aea" = (
+/obj/item/paper/crumpled{
+	pixel_y = -5;
+	pixel_x = 10
+	},
+/obj/item/paper/crumpled{
+	layer = 2.7;
+	pixel_y = -9
+	},
+/obj/item/paper/crumpled{
+	pixel_y = 17;
+	pixel_x = 10
+	},
+/obj/item/paper{
+	pixel_x = -8
+	},
+/obj/item/paper{
+	pixel_x = -3;
+	pixel_y = 3
+	},
+/obj/item/tool/pen,
+/obj/item/paper/crumpled/bloody{
+	pixel_x = 16
+	},
+/turf/open/floor/freezerfloor,
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
+"aeb" = (
+/obj/effect/decal/cleanable/blood,
+/obj/structure/sink{
+	pixel_y = 24
+	},
+/turf/open/floor/freezerfloor,
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
+"aec" = (
+/obj/structure/surface/table/woodentable/poor,
+/obj/item/tool/soap{
+	pixel_x = -6;
+	pixel_y = -6
+	},
+/obj/item/trash/plate{
+	pixel_x = 6;
+	pixel_y = 13
+	},
+/obj/item/trash/plate{
+	pixel_x = 6;
+	pixel_y = 16
+	},
+/obj/item/trash/plate{
+	pixel_x = 6;
+	pixel_y = 19
+	},
+/obj/item/tool/candle{
+	pixel_x = 5;
+	pixel_y = -2
+	},
+/turf/open/floor/freezerfloor,
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
+"aed" = (
+/obj/structure/surface/table/woodentable/poor,
+/obj/item/reagent_container/food/snacks/meat/human{
+	pixel_y = 8;
+	pixel_x = 6
+	},
+/obj/item/reagent_container/food/snacks/meat/human{
+	pixel_y = 10;
+	pixel_x = 6
+	},
+/turf/open/floor/freezerfloor,
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
+"aee" = (
+/obj/structure/surface/table/woodentable/poor,
+/obj/item/reagent_container/food/snacks/meat/human{
+	pixel_y = -2;
+	pixel_x = -5
+	},
+/obj/item/reagent_container/food/snacks/meat/human{
+	pixel_y = 12;
+	pixel_x = 6
+	},
+/obj/item/reagent_container/food/snacks/meat/human{
+	pixel_y = 14;
+	pixel_x = 6
+	},
+/obj/item/reagent_container/food/snacks/meat/human{
+	pixel_y = 16;
+	pixel_x = 6
+	},
+/turf/open/floor/freezerfloor,
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "aef" = (
 /obj/item/tank/oxygen/yellow,
 /turf/open/auto_turf/snow/layer0,
 /area/lv624/ground/caves/sand_temple)
+"aeg" = (
+/obj/effect/decal/cleanable/blood,
+/obj/item/device/radio/headset/almayer/marine,
+/turf/open/floor/freezerfloor,
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
+"aeh" = (
+/obj/structure/surface/table/woodentable/poor,
+/obj/structure/machinery/computer/cameras/wooden_tv{
+	pixel_y = 11;
+	pixel_x = -2;
+	desc = "An old TV connected to a nearby outlet. It appears to be picking up camera networks in the region. How kind of them to let you watch the chaos unfold out there.";
+	name = "old TV"
+	},
+/obj/item/frame/camera{
+	pixel_x = 8
+	},
+/turf/open/floor/freezerfloor,
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
+"aei" = (
+/obj/structure/bed/chair,
+/obj/item/reagent_container/food/drinks/flask/canteen/empty{
+	pixel_x = -11;
+	pixel_y = -13
+	},
+/turf/open/floor/freezerfloor,
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
+"aej" = (
+/obj/effect/decal/cleanable/blood,
+/obj/structure/stairs/perspective/kutjevo{
+	dir = 8
+	},
+/turf/open/floor/wood,
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
+"aek" = (
+/obj/structure/curtain/red,
+/obj/structure/machinery/door/airlock/almayer/medical/glass/colony{
+	name = "meat locker";
+	req_access_txt = "100";
+	req_one_access = null;
+	desc = "It opens and closes. It's made of really strong material."
+	},
+/turf/open/floor/wood,
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
+"ael" = (
+/obj/structure/largecrate/supply/ammo/shotgun,
+/turf/open/floor/wood,
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
+"aem" = (
+/obj/structure/machinery/light/small{
+	light_color = "#C02526";
+	color = "#C02526";
+	dir = 1;
+	pixel_y = -17
+	},
+/turf/closed/wall/wood,
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
+"aen" = (
+/obj/structure/surface/table/woodentable/poor,
+/turf/open/floor/wood,
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
+"aeo" = (
+/obj/structure/surface/table/woodentable/poor,
+/obj/structure/machinery/light/blue{
+	dir = 1;
+	pixel_y = 11
+	},
+/turf/open/floor/wood,
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
+"aep" = (
+/obj/structure/closet/crate,
+/obj/item/clothing/shoes/marine,
+/obj/item/clothing/shoes/marine,
+/obj/item/clothing/shoes/marine,
+/obj/item/clothing/shoes/marine,
+/obj/item/clothing/shoes/marine,
+/obj/item/clothing/shoes/marine,
+/obj/item/clothing/shoes/marine,
+/obj/item/clothing/shoes/marine,
+/obj/item/clothing/shoes/marine,
+/obj/item/clothing/shoes/marine,
+/obj/item/clothing/shoes/marine,
+/obj/item/clothing/shoes/marine,
+/obj/item/clothing/shoes/marine,
+/obj/item/clothing/shoes/marine,
+/obj/item/clothing/shoes/marine,
+/obj/item/clothing/shoes/marine,
+/obj/item/clothing/shoes/marine,
+/obj/item/clothing/shoes/marine,
+/obj/item/clothing/shoes/marine,
+/obj/item/clothing/shoes/marine,
+/obj/item/clothing/shoes/marine,
+/turf/open/floor/wood,
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
+"aeq" = (
+/obj/structure/machinery/camera/autoname,
+/turf/open/floor/wood/wood_broken3,
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "aer" = (
 /obj/item/device/radio/intercom{
 	freerange = 1;
@@ -771,6 +1336,44 @@
 	},
 /turf/open/floor/freezerfloor,
 /area/lv624/lazarus/toilet)
+"aet" = (
+/obj/structure/prop/invuln/static_corpse/afric_zimmer{
+	desc = "The corpse of a USS Kuala soldier. There's no dogtag to collect unfortunately. Poor bastard.!'";
+	name = "USS Kuala soldier";
+	layer = 3;
+	pixel_x = -9
+	},
+/turf/open/floor/wood,
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
+"aeu" = (
+/obj/structure/largecrate/supply/ammo/shotgun{
+	pixel_x = 7
+	},
+/obj/structure/largecrate/supply/ammo/shotgun{
+	pixel_y = 8;
+	pixel_x = 7
+	},
+/turf/open/floor/wood,
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
+"aev" = (
+/obj/structure/machinery/light/blue{
+	dir = 1;
+	pixel_y = 11
+	},
+/turf/open/floor/wood/wood_broken,
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
+"aew" = (
+/obj/effect/decal/cleanable/blood/splatter,
+/turf/open/floor/wood,
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "aeH" = (
 /obj/structure/stairs/perspective{
 	color = "#b29082";
@@ -779,10 +1382,6 @@
 	},
 /turf/open/floor/sandstone/runed,
 /area/lv624/ground/caves/sand_temple)
-"aeI" = (
-/obj/structure/largecrate/supply/ammo/shotgun,
-/turf/open/floor/wood,
-/area/lv624/ground/jungle/north_jungle)
 "aeY" = (
 /obj/structure/flora/bush/snow{
 	icon_state = "snowgrassall_1"
@@ -932,7 +1531,9 @@
 "alg" = (
 /obj/structure/girder/reinforced,
 /turf/open/auto_turf/snow/layer3,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "alz" = (
 /obj/structure/girder,
 /turf/open/floor/plating/platingdmg3,
@@ -975,7 +1576,7 @@
 /turf/open/auto_turf/snow/brown_base/layer1,
 /area/lv624/ground/jungle/north_jungle)
 "anI" = (
-/obj/structure/lz_sign/lazarus_sign/damaged{
+/obj/structure/lz_sign/lazarus_sign{
 	layer = 4
 	},
 /turf/open/auto_turf/snow/brown_base/layer1,
@@ -993,7 +1594,9 @@
 /obj/structure/surface/table/woodentable/poor,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating/wood_broken4,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "aoS" = (
 /obj/structure/machinery/door/airlock/multi_tile/almayer/dropshiprear/ds1{
 	id = "aft_door"
@@ -1001,7 +1604,9 @@
 /turf/open/shuttle/dropship{
 	icon_state = "rasputin15"
 	},
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "aoY" = (
 /obj/item/reagent_container/food/snacks/grown/mushroom/glowshroom{
 	light_on = 1;
@@ -1055,7 +1660,9 @@
 "aqI" = (
 /obj/structure/tent/big,
 /turf/open/auto_turf/snow/layer0,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "aqR" = (
 /obj/structure/surface/rack,
 /obj/item/device/multitool,
@@ -1125,7 +1732,9 @@
 "aum" = (
 /obj/structure/surface/table/woodentable/poor,
 /turf/open/floor/plating/wood,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "avc" = (
 /obj/structure/surface/table/reinforced/prison,
 /obj/item/ammo_magazine/smg/mp5,
@@ -1153,7 +1762,9 @@
 /turf/open/shuttle/dropship{
 	icon_state = "rasputin15"
 	},
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "awx" = (
 /turf/closed/wall/r_wall,
 /area/lv624/lazarus/secure_storage)
@@ -1190,7 +1801,9 @@
 	icon_state = "upp16";
 	name = "Fulcrum"
 	},
-/area/lv624/lazarus/sleep_male)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "azH" = (
 /turf/open/floor/wood/wood_broken2,
 /area/lv624/ground/jungle/north_jungle)
@@ -1221,8 +1834,14 @@
 "aCc" = (
 /obj/structure/kitchenspike,
 /obj/effect/decal/cleanable/blood,
-/turf/open/floor/wood,
-/area/lv624/ground/jungle/north_jungle)
+/obj/item/reagent_container/food/snacks/meat/human{
+	pixel_y = -2;
+	pixel_x = -5
+	},
+/turf/open/floor/freezerfloor,
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "aCi" = (
 /obj/structure/flora/bush/ausbushes/var3/ywflowers,
 /obj/structure/flora/jungle/vines/light_3{
@@ -1245,7 +1864,9 @@
 	pixel_y = 1
 	},
 /turf/open/floor/plating/plating_catwalk/strata,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "aCZ" = (
 /obj/effect/landmark/hunter_primary,
 /turf/open/auto_turf/ice/layer0,
@@ -1254,12 +1875,16 @@
 /obj/structure/bed,
 /obj/item/bedsheet/brown,
 /turf/open/floor/bluecorner,
-/area/lv624/lazarus/sleep_male)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "aDw" = (
 /obj/structure/surface/table/woodentable/poor,
 /obj/item/ammo_magazine/shotgun/buckshot,
 /turf/open/floor/carpet/bcarpet02,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "aDy" = (
 /obj/structure/surface/rack,
 /obj/item/stack/sheet/glass{
@@ -1271,10 +1896,6 @@
 /obj/structure/flora/bush/ausbushes/var3/stalkybush,
 /turf/open/auto_turf/snow/layer3,
 /area/lv624/ground/caves/south_central_caves)
-"aDL" = (
-/obj/effect/landmark/xeno_spawn,
-/turf/open/auto_turf/ice/layer0,
-/area/lv624/ground/caves/central_caves)
 "aDR" = (
 /obj/structure/flora/bush/ausbushes/ppflowers,
 /turf/open/auto_turf/snow/layer0,
@@ -1429,7 +2050,9 @@
 	amount = 2
 	},
 /turf/open/floor/vault2/west,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "aQe" = (
 /obj/structure/bed/chair/wood/wings{
 	dir = 4
@@ -1459,7 +2082,9 @@
 	layer = 2.1
 	},
 /turf/open/floor/strata/floor3/east,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "aRW" = (
 /obj/structure/surface/table,
 /obj/item/device/mmi/radio_enabled,
@@ -1549,7 +2174,9 @@
 	},
 /obj/structure/girder/reinforced,
 /turf/open/auto_turf/snow/layer3,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "aWd" = (
 /obj/structure/bed/chair/office/light,
 /turf/open/floor/redfull/northwest,
@@ -1565,7 +2192,9 @@
 "aWB" = (
 /obj/structure/closet/cabinet,
 /turf/open/floor/wood/wood_broken,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "aWE" = (
 /obj/structure/machinery/landinglight/ds2{
 	dir = 8
@@ -1588,7 +2217,9 @@
 	},
 /obj/structure/machinery/door/airlock/multi_tile/almayer/dropshiprear/upp,
 /turf/open/shuttle/dropship/can_surgery/medium_grey_single_wide_left_to_right,
-/area/lv624/lazarus/sleep_male)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "aYG" = (
 /obj/structure/disposalpipe/junction,
 /obj/structure/grille,
@@ -1621,7 +2252,9 @@
 	},
 /obj/structure/closet/crate/ammo,
 /turf/open/floor/plating/plating_catwalk/strata,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "aZd" = (
 /obj/effect/landmark/good_item,
 /turf/open/floor/white,
@@ -1656,7 +2289,9 @@
 /obj/structure/bed/bedroll,
 /obj/item/trash/cheesie,
 /turf/open/shuttle/dropship/can_surgery/light_grey_top_right,
-/area/lv624/lazarus/sleep_male)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "bea" = (
 /turf/open/auto_turf/snow/layer3,
 /area/lv624/ground/caves/south_east_caves)
@@ -1677,7 +2312,9 @@
 /turf/closed/shuttle/dropship3/tornado{
 	icon_state = "72"
 	},
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "bhl" = (
 /obj/structure/flora/bush/snow{
 	icon_state = "snowgrassall_3"
@@ -1688,13 +2325,17 @@
 /obj/effect/landmark/crap_item,
 /obj/effect/decal/cleanable/blood/drip,
 /turf/open/floor/wood/wood_broken3,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "biw" = (
 /obj/structure/barricade/sandbags/wired{
 	dir = 4
 	},
 /turf/open/floor/wood,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "bjh" = (
 /obj/structure/machinery/shower{
 	dir = 8
@@ -1742,7 +2383,9 @@
 "bkD" = (
 /obj/structure/window/framed/colony,
 /turf/open/floor/platebot,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "bkR" = (
 /obj/structure/window/framed/colony,
 /turf/open/floor/bar,
@@ -1765,7 +2408,9 @@
 	can_buckle = 1
 	},
 /turf/open/floor/plating/plating_catwalk/strata,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "blT" = (
 /obj/item/reagent_container/food/snacks/grown/mushroom/amanita,
 /turf/open/auto_turf/snow/layer3,
@@ -1800,7 +2445,9 @@
 /obj/effect/decal/cleanable/blood,
 /obj/structure/pipes/standard/simple/hidden/cyan,
 /turf/open/floor/bluecorner,
-/area/lv624/lazarus/sleep_male)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "bnw" = (
 /obj/structure/girder/displaced,
 /turf/open/floor/plating/platebotc,
@@ -1823,7 +2470,9 @@
 	},
 /obj/item/clothing/under/colonist/boilersuit/cyan,
 /turf/open/floor/bluecorner,
-/area/lv624/lazarus/sleep_male)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "boQ" = (
 /obj/structure/machinery/bioprinter{
 	stored_metal = 1000
@@ -1873,7 +2522,9 @@
 /turf/closed/shuttle/dropship1/transparent{
 	icon_state = "89"
 	},
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "bto" = (
 /obj/item/trash/popcorn,
 /turf/open/floor/wood,
@@ -1893,12 +2544,6 @@
 /obj/structure/pipes/standard/simple/hidden/cyan,
 /turf/open/floor/grass,
 /area/lv624/lazarus/main_hall)
-"bus" = (
-/obj/item/device/flashlight/flare/on{
-	fuel_rate = 0.0001
-	},
-/turf/open/auto_turf/snow/layer0,
-/area/lv624/ground/caves/central_caves)
 "buF" = (
 /obj/structure/tunnel{
 	id = "hole2"
@@ -1913,7 +2558,9 @@
 "buX" = (
 /obj/structure/closet/crate/ammo,
 /turf/open/auto_turf/snow/layer0,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "bva" = (
 /obj/structure/bed/chair/wood/wings{
 	dir = 4
@@ -1925,14 +2572,18 @@
 	pixel_x = -30
 	},
 /turf/open/floor/bluecorner,
-/area/lv624/lazarus/sleep_male)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "bvm" = (
 /obj/structure/machinery/light/double{
 	dir = 4;
 	pixel_y = -5
 	},
 /turf/open/shuttle/dropship/can_surgery/light_grey_top_right,
-/area/lv624/lazarus/sleep_male)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "bvK" = (
 /turf/open/auto_turf/ice/layer0,
 /area/lv624/ground/caves/east_caves)
@@ -2035,7 +2686,9 @@
 	pixel_y = 7
 	},
 /turf/open/shuttle/dropship/medium_grey_single_wide_up_to_down,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "bFo" = (
 /obj/structure/largecrate/random/barrel/green,
 /turf/open/auto_turf/snow/brown_base/layer1,
@@ -2089,7 +2742,9 @@
 /turf/open/shuttle/dropship{
 	icon_state = "rasputin15"
 	},
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "bIP" = (
 /obj/item/reagent_container/food/snacks/grown/mushroom/plumphelmet{
 	pixel_x = 8
@@ -2166,7 +2821,9 @@
 	pixel_x = -6
 	},
 /turf/open/floor/vault2/west,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "bNl" = (
 /obj/structure/barricade/wooden,
 /turf/open/floor/wood,
@@ -2213,7 +2870,9 @@
 /obj/item/clothing/glasses/regular/hipster,
 /obj/effect/landmark/item_pool_spawner/survivor_ammo/buckshot,
 /turf/open/floor/bluecorner,
-/area/lv624/lazarus/sleep_male)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "bQX" = (
 /obj/structure/bed,
 /obj/item/bedsheet/purple,
@@ -2249,7 +2908,9 @@
 	dir = 1
 	},
 /turf/open/floor/plating/wood,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "bSu" = (
 /obj/structure/girder/displaced,
 /obj/effect/decal/cleanable/blood/oil,
@@ -2266,7 +2927,9 @@
 	ship_tag = "dropship_upp"
 	},
 /turf/open/floor/strata/multi_tiles/southwest,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "bYb" = (
 /obj/structure/surface/rack,
 /obj/item/clothing/mask/gas,
@@ -2281,7 +2944,9 @@
 	},
 /obj/item/explosive/plastic,
 /turf/open/floor/carpet/bcarpet08,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "bYA" = (
 /obj/effect/decal/cleanable/blood{
 	pixel_y = 12
@@ -2315,7 +2980,9 @@
 "bZr" = (
 /obj/structure/shuttle/part/tornado/gunpod_prop,
 /turf/open/auto_turf/snow/layer3,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "bZJ" = (
 /obj/structure/girder/displaced,
 /obj/structure/shuttle/engine/propulsion,
@@ -2333,7 +3000,9 @@
 	icon_state = "dynamic_4"
 	},
 /turf/open/shuttle/dropship/light_grey_single_wide_up_to_down,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "bZY" = (
 /obj/structure/flora/tree/jungle/bigtreeTR{
 	color = "#64b1fa"
@@ -2382,11 +3051,15 @@
 "cdo" = (
 /obj/structure/barricade/sandbags/wired,
 /turf/open/floor/wood/wood_broken,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "cdu" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating/wood_broken2,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "cdN" = (
 /obj/item/clothing/mask/gas,
 /turf/open/floor/vault2,
@@ -2400,7 +3073,9 @@
 	icon_state = "89a";
 	opacity = 0
 	},
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "cek" = (
 /obj/structure/stairs/perspective{
 	color = "#b29082";
@@ -2413,7 +3088,9 @@
 /turf/closed/shuttle/ert{
 	icon_state = "uppwall"
 	},
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "cfd" = (
 /obj/structure/pipes/standard/simple/hidden/cyan{
 	dir = 4
@@ -2448,7 +3125,9 @@
 "chk" = (
 /obj/structure/filingcabinet,
 /turf/open/floor/plating/warnplate/north,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "chI" = (
 /obj/structure/flora/jungle/vines/light_3{
 	desc = "A frozen mass of twisted vines.";
@@ -2462,7 +3141,9 @@
 	layer = 2
 	},
 /turf/open/floor/strata/floor3/east,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "ciG" = (
 /obj/effect/spawner/random/powercell,
 /obj/effect/decal/cleanable/dirt,
@@ -2511,7 +3192,9 @@
 	dir = 4
 	},
 /turf/open/floor/wood,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "clc" = (
 /obj/structure/filingcabinet,
 /turf/open/floor/whiteyellow/southwest,
@@ -2612,7 +3295,9 @@
 /turf/closed/shuttle/ert{
 	icon_state = "upp2"
 	},
-/area/lv624/lazarus/sleep_male)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "crE" = (
 /obj/item/device/flashlight/on,
 /obj/effect/decal/cleanable/blood/drip,
@@ -2703,7 +3388,9 @@
 	pixel_y = 29
 	},
 /turf/open/floor/strata/multi_tiles/west,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "czu" = (
 /obj/structure/flora/grass/tallgrass/ice/corner{
 	dir = 10
@@ -2717,7 +3404,9 @@
 /turf/closed/shuttle/dropship1{
 	icon_state = "53"
 	},
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "czD" = (
 /mob/living/simple_animal/bat,
 /turf/open/auto_turf/snow/layer3,
@@ -2773,7 +3462,9 @@
 /turf/open/shuttle/dropship{
 	icon_state = "rasputin15"
 	},
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "cBX" = (
 /obj/structure/closet/cabinet,
 /turf/open/floor/whitepurplecorner/east,
@@ -2826,7 +3517,9 @@
 /obj/effect/landmark/item_pool_spawner/survivor_ammo/buckshot,
 /obj/structure/machinery/power/apc/no_power/north,
 /turf/open/floor/bluecorner,
-/area/lv624/lazarus/sleep_male)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "cGt" = (
 /obj/structure/bed/chair/dropship/pilot{
 	dir = 1
@@ -2838,7 +3531,9 @@
 	pixel_y = 21
 	},
 /turf/open/shuttle/dropship/can_surgery/medium_grey_single_wide_up_to_down,
-/area/lv624/lazarus/sleep_male)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "cII" = (
 /obj/structure/machinery/light{
 	dir = 8
@@ -2978,7 +3673,9 @@
 	icon_state = "upp5";
 	name = "Fulcrum"
 	},
-/area/lv624/lazarus/sleep_male)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "cRK" = (
 /obj/effect/decal/cleanable/blood/oil,
 /turf/open/floor/plating/warnplate/west,
@@ -2994,7 +3691,9 @@
 /turf/open/shuttle/dropship{
 	icon_state = "rasputin15"
 	},
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "cSF" = (
 /obj/effect/decal/cleanable/blood/gibs/robot,
 /turf/open/auto_turf/strata_grass/layer0_mud_alt,
@@ -3011,7 +3710,9 @@
 /turf/closed/shuttle/dropship1{
 	icon_state = "62"
 	},
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "cTd" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/warning_stripes{
@@ -3083,7 +3784,9 @@
 	layer = 3.01
 	},
 /turf/open/shuttle/dropship/medium_grey_single_wide_up_to_down,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "cXh" = (
 /obj/structure/stairs/perspective{
 	color = "#b29082";
@@ -3135,7 +3838,9 @@
 	dir = 8
 	},
 /turf/open/shuttle/dropship/medium_grey_single_wide_up_to_down,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "dbe" = (
 /turf/open/floor/whiteblue/west,
 /area/lv624/lazarus/medbay)
@@ -3235,7 +3940,9 @@
 "dhb" = (
 /obj/structure/bed/chair/wheelchair,
 /turf/open/floor/bluecorner,
-/area/lv624/lazarus/sleep_male)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "dhH" = (
 /obj/structure/flora/bush/ausbushes/var3/ywflowers,
 /obj/structure/flora/grass/tallgrass/ice,
@@ -3246,7 +3953,9 @@
 /turf/open/shuttle/dropship{
 	icon_state = "rasputin15"
 	},
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "dhW" = (
 /obj/structure/bookcase,
 /obj/item/book/manual/research_and_development,
@@ -3300,14 +4009,18 @@
 	pixel_y = -5
 	},
 /turf/open/shuttle/dropship/can_surgery/light_grey_single_wide_up_to_down,
-/area/lv624/lazarus/sleep_male)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "dlU" = (
 /obj/structure/surface/rack,
 /obj/item/stack/sheet/mineral/tritium{
 	pixel_x = -4
 	},
 /turf/open/floor/vault2/west,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "dlX" = (
 /obj/structure/surface/rack,
 /obj/effect/landmark/item_pool_spawner/survivor_ammo/buckshot,
@@ -3325,7 +4038,9 @@
 	icon = 'icons/turf/ert_shuttle.dmi';
 	icon_state = "upp27"
 	},
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "dml" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "S";
@@ -3333,7 +4048,9 @@
 	pixel_y = 29
 	},
 /turf/open/floor/plating/plating_catwalk/strata,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "dmD" = (
 /obj/effect/landmark/good_item,
 /turf/open/floor/greengrid,
@@ -3396,7 +4113,9 @@
 "dpX" = (
 /obj/item/prop/almayer/flight_recorder/colony,
 /turf/open/shuttle/dropship/can_surgery/light_grey_single_wide_up_to_down,
-/area/lv624/lazarus/sleep_male)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "dqg" = (
 /obj/structure/flora/jungle/vines{
 	color = "#64b1fa"
@@ -3420,7 +4139,9 @@
 /turf/open/shuttle/dropship{
 	icon_state = "rasputin5"
 	},
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "dsO" = (
 /obj/structure/flora/jungle/vines/heavy{
 	color = "#64b1fa";
@@ -3457,7 +4178,9 @@
 /area/lv624/lazarus/corporate_dome)
 "dur" = (
 /turf/open/shuttle/dropship/light_grey_top_left,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "duA" = (
 /obj/effect/landmark/crap_item,
 /obj/structure/machinery/vending/cigarette/koorlander,
@@ -3545,7 +4268,9 @@
 "dzV" = (
 /obj/structure/barricade/sandbags/wired,
 /turf/open/floor/wood/wood_broken3,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "dAx" = (
 /obj/effect/landmark/survivor_spawner,
 /turf/open/floor/freezerfloor,
@@ -3581,11 +4306,31 @@
 	pixel_x = 30
 	},
 /turf/open/floor/plating/plating_catwalk/strata,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "dBX" = (
-/obj/structure/closet/crate,
-/turf/open/floor/wood,
-/area/lv624/ground/jungle/north_jungle)
+/obj/structure/closet/crate{
+	anchored = 1
+	},
+/obj/item/toy/deck/uno,
+/obj/item/storage/fancy/candle_box,
+/obj/item/storage/firstaid,
+/obj/item/storage/box/bodybags,
+/obj/item/device/walkman,
+/obj/item/device/cassette_tape/pop1,
+/obj/item/device/cassette_tape/pop2,
+/obj/item/device/cassette_tape/pop3,
+/obj/item/device/cassette_tape/pop4,
+/obj/item/storage/pouch/cassette{
+	pixel_x = 6;
+	pixel_y = 13
+	},
+/obj/item/device/flashlight/flare/upp,
+/turf/open/floor/freezerfloor,
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "dCu" = (
 /obj/item/reagent_container/food/snacks/grown/mushroom/angel,
 /turf/open/auto_turf/snow/layer3,
@@ -3696,12 +4441,16 @@
 	pixel_y = -1
 	},
 /turf/open/shuttle/dropship/medium_grey_single_wide_left_to_right,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "dJl" = (
 /obj/structure/surface/table/woodentable/poor,
 /obj/item/ammo_magazine/shotgun/buckshot,
 /turf/open/floor/carpet/bcarpet07,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "dJP" = (
 /obj/effect/decal/prints{
 	name = "boot prints";
@@ -3731,7 +4480,9 @@
 	color = "#64b1fa"
 	},
 /turf/open/floor/plating/wood,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "dNE" = (
 /obj/structure/disposalpipe/segment,
 /obj/structure/grille{
@@ -3865,7 +4616,9 @@
 "dTB" = (
 /obj/effect/decal/cleanable/blood/oil,
 /turf/open/shuttle/dropship/medium_grey_single_wide_up_to_down,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "dTF" = (
 /obj/structure/flora/jungle/vines/light_2{
 	color = "#64b1fa";
@@ -3970,7 +4723,8 @@
 /area/lv624/lazarus/captain)
 "dYX" = (
 /obj/item/device/flashlight/flare/on{
-	fuel_rate = 0.0001
+	fuel_rate = 0.0001;
+	pixel_x = 8
 	},
 /turf/open/auto_turf/snow/layer3,
 /area/lv624/ground/jungle/north_jungle)
@@ -3992,7 +4746,9 @@
 /obj/item/ammo_magazine/shotgun/incendiary,
 /obj/item/ammo_magazine/shotgun/incendiary,
 /turf/open/floor/wood,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "eax" = (
 /obj/structure/flora/bush/ausbushes/var3/sunnybush{
 	color = "#64b1fa"
@@ -4064,7 +4820,9 @@
 	amount = 20
 	},
 /turf/open/floor/vault2/west,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "eeo" = (
 /obj/structure/pipes/standard/simple/hidden/cyan{
 	dir = 4
@@ -4116,7 +4874,9 @@
 /turf/closed/shuttle/dropship1/transparent{
 	icon_state = "98"
 	},
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "eih" = (
 /obj/item/ammo_magazine/smg/mp5,
 /obj/item/weapon/gun/smg/mp5,
@@ -4157,7 +4917,7 @@
 /area/lv624/ground/jungle/north_jungle)
 "ekP" = (
 /obj/structure/prop/brazier/campfire{
-	fuel_stage_time = 0.00001
+	remaining_fuel = 99999999
 	},
 /turf/open/auto_turf/snow/layer3,
 /area/lv624/ground/jungle/north_jungle)
@@ -4192,7 +4952,9 @@
 "enF" = (
 /obj/effect/spawner/random/tech_supply,
 /turf/open/floor/plating,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "eop" = (
 /obj/structure/cargo_container/wy/right,
 /turf/open/floor/plating/platebotc,
@@ -4234,7 +4996,9 @@
 	dir = 4
 	},
 /turf/open/floor/plating/wood_broken5,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "erb" = (
 /obj/effect/landmark/lv624/xeno_tunnel,
 /turf/open/auto_turf/snow/layer3,
@@ -4280,7 +5044,9 @@
 	pixel_y = 13
 	},
 /turf/open/floor/plating/plating_catwalk/strata,
-/area/lv624/lazarus/sleep_male)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "esW" = (
 /obj/structure/flora/bush/ausbushes/lavendergrass,
 /turf/open/auto_turf/snow/layer0,
@@ -4391,7 +5157,9 @@
 /turf/closed/shuttle/dropship3/tornado{
 	icon_state = "69"
 	},
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "eAL" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating/platingdmg1,
@@ -4466,7 +5234,8 @@
 /area/lv624/lazarus/secure_storage)
 "eFj" = (
 /obj/item/device/flashlight/flare/on{
-	fuel_rate = 0.0001
+	fuel_rate = 0.0001;
+	pixel_x = 8
 	},
 /turf/open/auto_turf/snow/layer0,
 /area/lv624/ground/caves/north_west_caves)
@@ -4478,6 +5247,10 @@
 /obj/structure/ship_ammo/rocket/keeper{
 	pixel_x = -21;
 	pixel_y = 17
+	},
+/obj/structure/ship_ammo/rocket/keeper{
+	pixel_x = 9;
+	pixel_y = 7
 	},
 /turf/open/auto_turf/ice,
 /area/lv624/ground/jungle/north_jungle)
@@ -4492,7 +5265,9 @@
 /turf/open/shuttle/dropship{
 	icon_state = "rasputin3"
 	},
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "eGT" = (
 /obj/structure/machinery/door/airlock/multi_tile/almayer/generic{
 	name = "\improper Nexus Dome Canteen";
@@ -4509,7 +5284,9 @@
 	bullet_amount = 0
 	},
 /turf/open/shuttle/dropship/can_surgery/light_grey_bottom_left,
-/area/lv624/lazarus/sleep_male)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "eIQ" = (
 /turf/open/floor/plating/platebotc,
 /area/lv624/lazarus/quartstorage)
@@ -4540,7 +5317,9 @@
 	name = "Fulcrum";
 	opacity = 0
 	},
-/area/lv624/lazarus/sleep_male)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "eKe" = (
 /obj/structure/platform/mineral/sandstone/runed{
 	dir = 1
@@ -4560,7 +5339,9 @@
 "eKr" = (
 /obj/item/frame/apc,
 /turf/open/floor/plating/warnplate/north,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "eKv" = (
 /obj/structure/stairs/perspective{
 	color = "#b29082";
@@ -4673,7 +5454,9 @@
 /area/lv624/ground/jungle/north_jungle)
 "eSw" = (
 /turf/open/floor/strata/floor3/east,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "eSy" = (
 /turf/open/floor/whiteyellowcorner/east,
 /area/lv624/lazarus/main_hall)
@@ -4766,7 +5549,9 @@
 	},
 /obj/effect/landmark/item_pool_spawner/survivor_ammo/buckshot,
 /turf/open/floor/bluecorner,
-/area/lv624/lazarus/sleep_male)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "eVF" = (
 /obj/structure/machinery/landinglight/ds2/delaytwo,
 /turf/open/floor/plating,
@@ -4795,7 +5580,9 @@
 	icon_state = "upp5";
 	name = "Fulcrum"
 	},
-/area/lv624/lazarus/sleep_male)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "eXh" = (
 /obj/structure/grille{
 	density = 0;
@@ -4983,8 +5770,11 @@
 "flU" = (
 /obj/structure/kitchenspike,
 /obj/effect/decal/cleanable/blood,
-/turf/open/floor/wood/wood_broken,
-/area/lv624/ground/jungle/north_jungle)
+/obj/effect/decal/cleanable/blood/gibs/limb,
+/turf/open/floor/freezerfloor,
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "fme" = (
 /obj/structure/girder,
 /turf/open/auto_turf/snow/brown_base/layer1,
@@ -5045,7 +5835,9 @@
 	pixel_y = 32
 	},
 /turf/open/floor/wood,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "fqx" = (
 /obj/structure/machinery/constructable_frame{
 	icon_state = "box_1"
@@ -5069,17 +5861,18 @@
 /area/lv624/lazarus/quartstorage)
 "fsy" = (
 /obj/structure/surface/table/woodentable/poor,
-/obj/item/device/flashlight/lantern{
-	pixel_x = 1;
-	pixel_y = 9
-	},
+/obj/item/weapon/gun/rifle/mar40,
 /turf/open/floor/carpet/bcarpet09,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "fsG" = (
 /obj/item/storage/firstaid,
 /obj/effect/decal/cleanable/blood/drip,
 /turf/open/floor/wood,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "fts" = (
 /obj/structure/flora/bush/snow{
 	icon_state = "snowgrassbb_1"
@@ -5112,11 +5905,15 @@
 "fuG" = (
 /obj/structure/largecrate/black_market/clf_supplies,
 /turf/open/auto_turf/snow/layer0,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "fuI" = (
 /obj/structure/window/framed/wood,
 /turf/open/floor/interior/wood/alt,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "fuL" = (
 /obj/structure/surface/rack,
 /obj/item/fishing_pole,
@@ -5165,7 +5962,9 @@
 	color = "#64b1fa"
 	},
 /turf/open/floor/plating/wood,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "fvV" = (
 /obj/structure/flora/grass/tallgrass/ice/corner{
 	dir = 5
@@ -5203,7 +6002,9 @@
 	pixel_y = 4
 	},
 /turf/open/floor/wood,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "fyD" = (
 /obj/effect/decal/cleanable/blood,
 /turf/open/shuttle/dropship{
@@ -5282,6 +6083,10 @@
 	pixel_x = -19;
 	pixel_y = 13
 	},
+/obj/structure/ship_ammo/rocket/keeper{
+	pixel_x = 2;
+	pixel_y = 4
+	},
 /turf/open/auto_turf/ice,
 /area/lv624/ground/jungle/north_jungle)
 "fCF" = (
@@ -5294,7 +6099,9 @@
 "fCZ" = (
 /obj/effect/decal/cleanable/blood,
 /turf/open/floor/bluecorner,
-/area/lv624/lazarus/sleep_male)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "fDa" = (
 /turf/open/floor/wood/wood_broken4,
 /area/lv624/ground/jungle/north_jungle)
@@ -5341,7 +6148,9 @@
 	icon_state = "89b";
 	opacity = 0
 	},
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "fFy" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "NW-out";
@@ -5371,7 +6180,9 @@
 /area/lv624/lazarus/crashed_ship_containers)
 "fIx" = (
 /turf/open/floor/plating/warnplate/north,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "fIS" = (
 /obj/structure/stairs/perspective{
 	icon_state = "p_stair_full";
@@ -5381,7 +6192,9 @@
 	dir = 4
 	},
 /turf/open/shuttle/dropship/medium_grey_single_wide_up_to_down,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "fJf" = (
 /obj/effect/landmark/crap_item,
 /turf/open/floor/airless/asteroidfloor/northeast,
@@ -5434,7 +6247,9 @@
 /turf/closed/shuttle/ert{
 	icon_state = "upp201"
 	},
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "fLC" = (
 /obj/structure/largecrate/random,
 /turf/open/floor/greengrid,
@@ -5547,7 +6362,9 @@
 "fVw" = (
 /obj/structure/surface/table,
 /turf/open/floor/bluecorner,
-/area/lv624/lazarus/sleep_male)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "fVx" = (
 /obj/structure/barricade/metal/wired,
 /turf/open/floor/whiteblue/southwest,
@@ -5566,7 +6383,9 @@
 "fWy" = (
 /obj/effect/decal/cleanable/blood,
 /turf/open/floor/wood,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "fWG" = (
 /turf/closed/wall/cult,
 /area/lv624/ground/caves/east_caves)
@@ -5651,7 +6470,9 @@
 /turf/open/shuttle/dropship{
 	icon_state = "rasputin3"
 	},
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "gdY" = (
 /obj/structure/sign/safety/analysis_lab{
 	pixel_x = 7;
@@ -5670,7 +6491,9 @@
 	id = "aft_door"
 	},
 /turf/open/floor/strata/floor3/east,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "gem" = (
 /obj/structure/flora/bush/snow{
 	icon_state = "snowgrassall_3"
@@ -5703,7 +6526,9 @@
 	pixel_x = -1
 	},
 /turf/open/floor/strata/multi_tiles/west,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "ghB" = (
 /obj/effect/landmark/hunter_primary,
 /turf/open/auto_turf/ice,
@@ -5765,7 +6590,9 @@
 	pixel_x = 1
 	},
 /turf/open/floor/strata/multi_tiles/west,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "gnY" = (
 /obj/structure/surface/table/reinforced/prison,
 /obj/item/paper_bin/wy{
@@ -5786,7 +6613,9 @@
 "goy" = (
 /obj/structure/window/framed/colony,
 /turf/open/floor/vault2/west,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "goM" = (
 /obj/effect/landmark/crap_item,
 /turf/open/auto_turf/snow/layer0,
@@ -5849,10 +6678,12 @@
 	current_rounds = 0
 	},
 /turf/open/shuttle/dropship/can_surgery/medium_grey_single_wide_up_to_down,
-/area/lv624/lazarus/sleep_male)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "guv" = (
 /obj/structure/prop/brazier/campfire{
-	fuel_stage_time = 0.00001
+	remaining_fuel = 99999999
 	},
 /turf/open/auto_turf/snow/brown_base/layer1,
 /area/lv624/ground/jungle/north_jungle)
@@ -5889,7 +6720,9 @@
 /area/lv624/lazarus/crashed_ship_containers)
 "gzc" = (
 /turf/open/shuttle/dropship/light_grey_bottom_right,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "gAO" = (
 /turf/open/auto_turf/snow/layer0,
 /area/lv624/ground/caves/central_caves)
@@ -5909,7 +6742,9 @@
 	pixel_x = 12
 	},
 /turf/open/floor/strata/floor3/east,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "gCX" = (
 /obj/structure/bed,
 /obj/item/bedsheet/yellow,
@@ -5960,7 +6795,9 @@
 "gFr" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating/wood_broken5,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "gFU" = (
 /turf/closed/wall/r_wall,
 /area/lv624/lazarus/research)
@@ -6076,7 +6913,9 @@
 	icon_state = "S"
 	},
 /turf/open/floor/strata/multi_tiles/west,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "gPJ" = (
 /obj/item/toy/inflatable_duck,
 /turf/open/auto_turf/ice,
@@ -6205,7 +7044,9 @@
 /turf/open/shuttle/dropship{
 	icon_state = "rasputin5"
 	},
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "gZA" = (
 /obj/structure/bed/chair/dropship/pilot,
 /turf/open/shuttle/bright_red,
@@ -6373,10 +7214,13 @@
 /area/lv624/ground/caves/sand_temple)
 "him" = (
 /obj/item/prop/helmetgarb/helmet_nvg/marsoc,
+/obj/effect/decal/cleanable/blood/splatter,
 /turf/open/shuttle/dropship{
 	icon_state = "rasputin3"
 	},
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "hiu" = (
 /obj/structure/machinery/computer/telecomms/server{
 	pixel_y = 16
@@ -6414,8 +7258,11 @@
 /area/lv624/ground/caves/south_central_caves)
 "hjX" = (
 /obj/item/trash/used_stasis_bag,
+/obj/structure/machinery/camera/autoname,
 /turf/open/shuttle/dropship/can_surgery/light_grey_single_wide_left_to_right,
-/area/lv624/lazarus/sleep_male)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "hkc" = (
 /obj/structure/prop/ice_colony/hula_girl{
 	pixel_x = -10;
@@ -6426,7 +7273,9 @@
 /turf/open/shuttle/dropship{
 	icon_state = "rasputin15"
 	},
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "hkE" = (
 /obj/structure/flora/jungle/vines/light_3{
 	desc = "A frozen mass of twisted vines.";
@@ -6481,7 +7330,9 @@
 /obj/item/clothing/gloves/yellow,
 /obj/item/stack/medical/bruise_pack,
 /turf/open/floor/bluecorner,
-/area/lv624/lazarus/sleep_male)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "hnm" = (
 /obj/structure/platform/mineral/sandstone/runed,
 /turf/open/auto_turf/snow/layer3,
@@ -6494,7 +7345,9 @@
 /turf/closed/shuttle/dropship1{
 	icon_state = "81"
 	},
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "hnW" = (
 /obj/structure/flora/bush/ausbushes/var3/sparsegrass,
 /obj/structure/flora/jungle/vines/light_1{
@@ -6512,7 +7365,9 @@
 "hoM" = (
 /obj/structure/window/framed/wood,
 /turf/open/floor/plating/wood_broken4,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "hph" = (
 /obj/structure/largecrate/lisa,
 /turf/open/floor/greengrid,
@@ -6560,7 +7415,9 @@
 	pixel_y = 4
 	},
 /turf/open/floor/carpet/bcarpet01,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "htw" = (
 /obj/structure/machinery/power/apc/no_power/east,
 /turf/open/floor/purple/northwest,
@@ -6621,7 +7478,9 @@
 /turf/closed/shuttle/dropship1{
 	icon_state = "67"
 	},
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "hwp" = (
 /obj/structure/surface/table/almayer,
 /obj/item/clothing/accessory/patch/upp{
@@ -6635,7 +7494,9 @@
 	item_state = "paper_words"
 	},
 /turf/open/shuttle/dropship/can_surgery/medium_grey_single_wide_up_to_down,
-/area/lv624/lazarus/sleep_male)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "hwE" = (
 /obj/structure/machinery/newscaster{
 	pixel_y = 30
@@ -6659,7 +7520,9 @@
 /obj/structure/bed/alien,
 /obj/item/bedsheet/brown,
 /turf/open/floor/plating/wood,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "hxc" = (
 /obj/item/bananapeel,
 /turf/open/floor/whitepurple/northeast,
@@ -6918,7 +7781,9 @@
 /turf/closed/shuttle/dropship1{
 	icon_state = "64"
 	},
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "hOX" = (
 /obj/structure/surface/rack,
 /obj/effect/landmark/item_pool_spawner/survivor_ammo/buckshot,
@@ -6933,7 +7798,9 @@
 	name = "\improper Fulcrum Airlock"
 	},
 /turf/open/shuttle/dropship/can_surgery/light_grey_single_wide_up_to_down,
-/area/lv624/lazarus/sleep_male)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "hQM" = (
 /obj/structure/coatrack,
 /turf/open/floor/grimy,
@@ -6975,6 +7842,9 @@
 	name = "General Listening Channel";
 	pixel_x = -30
 	},
+/obj/structure/machinery/camera/autoname{
+	dir = 4
+	},
 /turf/open/floor/warning/west,
 /area/lv624/ground/jungle/north_jungle)
 "hSX" = (
@@ -6987,7 +7857,9 @@
 	pixel_y = 10
 	},
 /turf/open/shuttle/dropship/medium_grey_single_wide_up_to_down,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "hTy" = (
 /obj/structure/machinery/light{
 	dir = 1
@@ -7019,8 +7891,11 @@
 /obj/item/reagent_container/food/snacks/meat/human{
 	pixel_y = 10
 	},
-/turf/open/floor/wood,
-/area/lv624/ground/jungle/north_jungle)
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/freezerfloor,
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "hVr" = (
 /obj/structure/flora/bush/ausbushes/var3/sunnybush{
 	color = "#64b1fa"
@@ -7063,7 +7938,9 @@
 	pixel_x = -1
 	},
 /turf/open/floor/strata/multi_tiles/southwest,
-/area/lv624/lazarus/sleep_male)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "hXV" = (
 /obj/structure/closet/secure_closet/hydroponics,
 /turf/open/floor/whitepurplecorner/east,
@@ -7075,7 +7952,9 @@
 /turf/closed/shuttle/ert{
 	icon_state = "upp201"
 	},
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "hZm" = (
 /turf/open/floor/plating/warnplate/southeast,
 /area/lv624/ground/jungle/north_jungle)
@@ -7118,14 +7997,18 @@
 	icon_state = "102"
 	},
 /turf/open/auto_turf/snow/layer3,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "idA" = (
 /obj/structure/disposalpipe/junction{
 	dir = 8;
 	icon_state = "pipe-j2"
 	},
 /turf/open/floor/plating/warnplate,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "idO" = (
 /obj/structure/prop/mech/drill,
 /turf/open/floor/greengrid,
@@ -7145,15 +8028,20 @@
 /area/lv624/ground/jungle/north_jungle)
 "ieD" = (
 /obj/structure/surface/table/woodentable/poor,
-/obj/item/reagent_container/food/snacks/tomatomeat,
-/obj/item/reagent_container/food/snacks/tomatomeat{
-	pixel_y = 4
+/obj/item/device/taperecorder{
+	pixel_x = -4
 	},
-/obj/item/reagent_container/food/snacks/tomatomeat{
-	pixel_y = 8
+/obj/item/prop/magazine/book/communistmanifesto{
+	pixel_x = 13
 	},
-/turf/open/floor/wood,
-/area/lv624/ground/jungle/north_jungle)
+/obj/item/reagent_container/food/drinks/bottle/whiskey{
+	pixel_x = 8;
+	pixel_y = 19
+	},
+/turf/open/floor/freezerfloor,
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "ieU" = (
 /obj/structure/machinery/cm_vending/sorted/medical/wall_med/limited{
 	pixel_x = 29
@@ -7200,7 +8088,9 @@
 /turf/closed/shuttle/dropship1{
 	icon_state = "83"
 	},
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "iim" = (
 /obj/structure/stairs/perspective{
 	color = "#6b675e";
@@ -7250,7 +8140,9 @@
 /obj/structure/bed/chair/dropship/passenger,
 /obj/item/storage/belt/medical/lifesaver/upp,
 /turf/open/shuttle/dropship/can_surgery/medium_grey_single_wide_up_to_down,
-/area/lv624/lazarus/sleep_male)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "ikc" = (
 /obj/structure/flora/bush/snow{
 	icon_state = "snowgrassall_3"
@@ -7295,7 +8187,9 @@
 /turf/open/shuttle/dropship{
 	icon_state = "rasputin15"
 	},
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "inJ" = (
 /obj/structure/shuttle/part/dropship1/transparent/engine_left_cap,
 /turf/open/auto_turf/strata_grass/layer0_mud_alt,
@@ -7331,7 +8225,9 @@
 /turf/closed/shuttle/dropship3/tornado{
 	icon_state = "47"
 	},
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "iqk" = (
 /obj/structure/flora/bush/ausbushes/grassybush{
 	color = "#64b1fa"
@@ -7429,7 +8325,9 @@
 	pixel_x = -9
 	},
 /turf/open/shuttle/dropship/can_surgery/medium_grey_single_wide_up_to_down,
-/area/lv624/lazarus/sleep_male)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "iza" = (
 /obj/structure/flora/jungle/vines/heavy{
 	color = "#64b1fa";
@@ -7469,7 +8367,9 @@
 	pixel_x = -15
 	},
 /turf/open/floor/strata/multi_tiles/west,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "iAd" = (
 /obj/structure/machinery/light{
 	dir = 4;
@@ -7480,7 +8380,9 @@
 	can_buckle = 1
 	},
 /turf/open/floor/plating/plating_catwalk/strata,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "iAx" = (
 /obj/structure/tunnel{
 	id = "hole4"
@@ -7497,7 +8399,9 @@
 /obj/structure/bed/alien,
 /obj/structure/barricade/sandbags/wired,
 /turf/open/floor/wood,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "iBI" = (
 /obj/structure/surface/table,
 /obj/structure/mirror{
@@ -7532,7 +8436,9 @@
 	pixel_y = 5
 	},
 /turf/open/shuttle/dropship/can_surgery/medium_grey_single_wide_up_to_down,
-/area/lv624/lazarus/sleep_male)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "iFd" = (
 /turf/open/floor/whiteblue/north,
 /area/lv624/lazarus/medbay)
@@ -7544,7 +8450,9 @@
 	dir = 1
 	},
 /turf/open/auto_turf/snow/layer0,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "iFr" = (
 /obj/structure/machinery/sleep_console,
 /obj/structure/extinguisher_cabinet{
@@ -7697,7 +8605,9 @@
 "iQY" = (
 /obj/effect/decal/cleanable/blood/drip,
 /turf/open/floor/wood,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "iRu" = (
 /obj/effect/vehicle_spawner/van/decrepit,
 /obj/effect/decal/cleanable/blood/oil,
@@ -7710,7 +8620,9 @@
 "iSm" = (
 /obj/structure/curtain/red,
 /turf/open/floor/wood,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "iSx" = (
 /obj/structure/flora/bush/ausbushes/ausbush{
 	color = "#64b1fa"
@@ -7744,7 +8656,9 @@
 	icon_state = "E"
 	},
 /turf/open/floor/plating/plating_catwalk/strata,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "iUh" = (
 /obj/structure/surface/rack,
 /obj/item/clothing/mask/gas,
@@ -7767,7 +8681,9 @@
 /turf/open/shuttle/dropship{
 	icon_state = "rasputin15"
 	},
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "iVD" = (
 /obj/structure/girder/displaced,
 /turf/open/auto_turf/snow/brown_base/layer1,
@@ -7820,7 +8736,9 @@
 "iYX" = (
 /obj/effect/landmark/crap_item,
 /turf/open/floor/wood/wood_broken6,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "iZr" = (
 /obj/structure/machinery/vending/coffee,
 /turf/open/floor/vault2,
@@ -7848,13 +8766,17 @@
 	pixel_y = 30
 	},
 /turf/open/floor/plating/warnplate/north,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "jbp" = (
 /obj/item/prop/colony/usedbandage{
 	dir = 1
 	},
 /turf/open/shuttle/dropship/can_surgery/light_grey_single_wide_left_to_right,
-/area/lv624/lazarus/sleep_male)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "jby" = (
 /obj/structure/sign/safety/analysis_lab{
 	pixel_x = 8;
@@ -7898,7 +8820,9 @@
 /turf/closed/shuttle/dropship1{
 	icon_state = "77"
 	},
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "jcP" = (
 /obj/structure/disposalpipe/segment{
 	dir = 2;
@@ -7950,7 +8874,9 @@
 /turf/open/shuttle/dropship{
 	icon_state = "rasputin15"
 	},
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "jhd" = (
 /turf/closed/shuttle/ert{
 	icon_state = "T11";
@@ -7995,11 +8921,15 @@
 	layer = 4.2
 	},
 /turf/open/auto_turf/snow/layer3,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "jjf" = (
 /obj/structure/bed/chair/wood/normal,
 /turf/open/floor/wood,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "jjs" = (
 /obj/effect/landmark/hunter_primary,
 /turf/open/auto_turf/snow/layer0,
@@ -8030,7 +8960,9 @@
 	can_buckle = 1
 	},
 /turf/open/floor/plating/plating_catwalk/strata,
-/area/lv624/lazarus/sleep_male)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "jkY" = (
 /obj/structure/surface/table,
 /obj/item/clothing/suit/chef/classic,
@@ -8045,7 +8977,9 @@
 	dir = 4
 	},
 /turf/open/auto_turf/snow/layer0,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "jmk" = (
 /obj/structure/surface/table/reinforced/prison,
 /obj/item/device/flashlight/lamp{
@@ -8099,7 +9033,9 @@
 	icon_state = "pipe-c"
 	},
 /turf/open/floor/plating/warnplate,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "jof" = (
 /turf/open/floor/whiteblue/southwest,
 /area/lv624/lazarus/medbay)
@@ -8285,7 +9221,9 @@
 /turf/closed/shuttle/dropship1/transparent{
 	icon_state = "97"
 	},
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "jwq" = (
 /obj/structure/flora/jungle/vines/light_1{
 	desc = "A frosted mass of twisted vines.";
@@ -8309,7 +9247,9 @@
 	desc = "Welp, no more funny crash vids..."
 	},
 /turf/open/floor/strata/floor3/east,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "jxw" = (
 /obj/structure/machinery/vending/snack,
 /turf/open/floor/whiteblue/northeast,
@@ -8339,7 +9279,9 @@
 "jAm" = (
 /obj/structure/curtain/red,
 /turf/open/floor/plating/wood_broken3,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "jAz" = (
 /obj/effect/landmark/hunter_secondary,
 /turf/open/auto_turf/ice,
@@ -8401,7 +9343,9 @@
 /turf/open/shuttle/dropship{
 	icon_state = "rasputin15"
 	},
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "jEd" = (
 /obj/structure/bed/chair/vehicle{
 	dir = 1;
@@ -8425,7 +9369,9 @@
 /turf/open/shuttle/dropship{
 	icon_state = "rasputin3"
 	},
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "jFh" = (
 /obj/structure/machinery/light{
 	dir = 1;
@@ -8435,8 +9381,11 @@
 	dir = 4;
 	can_buckle = 1
 	},
+/obj/structure/machinery/camera/autoname,
 /turf/open/floor/plating/plating_catwalk/strata,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "jFi" = (
 /obj/effect/landmark/hunter_secondary,
 /turf/open/auto_turf/snow/brown_base/layer1,
@@ -8449,7 +9398,9 @@
 /turf/closed/shuttle/ert{
 	icon_state = "upp3"
 	},
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "jGX" = (
 /obj/structure/barricade/wooden,
 /turf/open/floor/dark,
@@ -8464,7 +9415,9 @@
 	pixel_y = 6
 	},
 /turf/open/auto_turf/snow/layer3,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "jHL" = (
 /obj/structure/machinery/vending/coffee,
 /obj/structure/foamed_metal,
@@ -8485,13 +9438,13 @@
 /area/lv624/ground/jungle/north_jungle)
 "jIo" = (
 /obj/structure/machinery/door/airlock/almayer/secure/colony{
-	icon_state = "door_locked";
-	locked = 1;
 	name = "Mining Storage";
 	req_access_txt = "100"
 	},
 /turf/open/floor/dark,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "jJr" = (
 /obj/structure/filingcabinet/chestdrawer{
 	density = 0;
@@ -8614,7 +9567,8 @@
 /area/lv624/ground/caves/sand_temple)
 "jSh" = (
 /obj/item/device/flashlight/flare/on{
-	fuel_rate = 0.0001
+	fuel_rate = 0.0001;
+	pixel_x = 8
 	},
 /turf/open/auto_turf/snow/layer0,
 /area/lv624/ground/caves/west_caves)
@@ -8657,7 +9611,9 @@
 /turf/open/shuttle/dropship{
 	icon_state = "rasputin15"
 	},
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "jUW" = (
 /turf/open/floor/whiteyellowfull/east,
 /area/lv624/lazarus/quart)
@@ -8677,7 +9633,9 @@
 /turf/closed/shuttle/dropship1/transparent{
 	icon_state = "86"
 	},
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "jVr" = (
 /obj/structure/surface/table,
 /obj/structure/machinery/light,
@@ -8725,9 +9683,15 @@
 /area/lv624/ground/jungle/north_jungle)
 "jWQ" = (
 /obj/structure/surface/table/woodentable/poor,
-/obj/item/tool/candle,
+/obj/item/tool/candle{
+	pixel_y = 11;
+	pixel_x = 7
+	},
+/obj/item/weapon/gun/shotgun/pump/dual_tube/cmb,
 /turf/open/floor/carpet/bcarpet03,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "jWU" = (
 /obj/structure/machinery/cm_vending/sorted/medical/wall_med{
 	pixel_x = 30
@@ -8735,7 +9699,9 @@
 /turf/open/shuttle/dropship{
 	icon_state = "rasputin15"
 	},
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "jWV" = (
 /obj/structure/window/framed/colony,
 /turf/open/floor/plating,
@@ -8785,7 +9751,9 @@
 	icon_state = "upp5";
 	name = "Fulcrum"
 	},
-/area/lv624/lazarus/sleep_male)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "jZO" = (
 /obj/effect/decal/mecha_wreckage/ripley{
 	anchored = 1;
@@ -8797,7 +9765,9 @@
 /obj/structure/closet,
 /obj/item/storage/fancy/cigarettes/wypacket,
 /turf/open/floor/bluecorner,
-/area/lv624/lazarus/sleep_male)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "kbq" = (
 /obj/structure/machinery/landinglight/ds1/delaythree,
 /turf/open/floor/plating,
@@ -8868,7 +9838,9 @@
 	dir = 8
 	},
 /turf/open/shuttle/dropship/can_surgery/light_grey_single_wide_up_to_down,
-/area/lv624/lazarus/sleep_male)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "keC" = (
 /obj/structure/machinery/mecha_part_fabricator,
 /turf/open/floor/vault2/west,
@@ -8891,7 +9863,9 @@
 	amount = 30
 	},
 /turf/open/floor/vault2/west,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "kfs" = (
 /obj/effect/spawner/random/toolbox,
 /obj/structure/surface/table/reinforced/prison,
@@ -8906,7 +9880,9 @@
 "kgi" = (
 /obj/structure/window_frame/wood,
 /turf/open/floor/plating/wood_broken6,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "kgs" = (
 /obj/structure/machinery/recharge_station,
 /obj/structure/window/reinforced{
@@ -9004,7 +9980,9 @@
 /obj/structure/surface/table/woodentable/poor,
 /obj/item/device/flashlight/lantern,
 /turf/open/floor/wood,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "kkJ" = (
 /turf/closed/wall,
 /area/lv624/lazarus/kitchen)
@@ -9029,7 +10007,9 @@
 	pixel_x = -30
 	},
 /turf/open/floor/bluecorner,
-/area/lv624/lazarus/sleep_male)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "klt" = (
 /turf/open/floor/plating/warnplate/east,
 /area/lv624/lazarus/robotics)
@@ -9038,12 +10018,16 @@
 	dir = 4
 	},
 /turf/open/floor/plating/warnplate,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "kob" = (
 /turf/closed/shuttle/ert{
 	icon_state = "upp5"
 	},
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "koA" = (
 /obj/structure/flora/grass/tallgrass/ice/corner{
 	dir = 6
@@ -9091,13 +10075,17 @@
 /obj/item/ammo_magazine/rifle/mar40/extended,
 /obj/item/ammo_magazine/rifle/mar40/extended,
 /turf/open/floor/dark,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "kql" = (
 /turf/closed/shuttle/ert{
 	icon_state = "upp20";
 	name = "Fulcrum"
 	},
-/area/lv624/lazarus/sleep_male)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "kqw" = (
 /obj/structure/machinery/light{
 	dir = 1;
@@ -9117,8 +10105,11 @@
 	pixel_y = 7;
 	layer = 2.9
 	},
+/obj/structure/machinery/camera/autoname,
 /turf/open/floor/plating/plating_catwalk/strata,
-/area/lv624/lazarus/sleep_male)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "ksM" = (
 /obj/structure/foamed_metal,
 /turf/open/auto_turf/snow/layer0,
@@ -9134,7 +10125,9 @@
 	pixel_x = -30
 	},
 /turf/open/floor/plating/plating_catwalk/strata,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "ktl" = (
 /obj/structure/barricade/wooden{
 	dir = 8
@@ -9173,7 +10166,9 @@
 "kvm" = (
 /obj/structure/window_frame/wood,
 /turf/open/floor/plating/wood_broken4,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "kwN" = (
 /obj/item/lightstick/red/variant/planted,
 /turf/open/auto_turf/snow/layer3,
@@ -9184,7 +10179,9 @@
 	},
 /obj/effect/spawner/random/tech_supply,
 /turf/open/floor/plating/warnplate,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "kxi" = (
 /obj/structure/bed/sofa/vert/grey,
 /turf/open/floor/whiteyellow/east,
@@ -9242,7 +10239,9 @@
 /turf/closed/shuttle/dropship3/tornado{
 	icon_state = "30"
 	},
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "kBc" = (
 /obj/structure/flora/jungle/vines/heavy{
 	color = "#64b1fa";
@@ -9285,14 +10284,18 @@
 	can_buckle = 1
 	},
 /turf/open/floor/plating/plating_catwalk/strata,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "kCs" = (
 /obj/structure/machinery/light/small,
 /turf/open/floor/dark,
 /area/lv624/lazarus/quartstorage)
 "kCv" = (
 /turf/open/floor/plating/wood,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "kCE" = (
 /obj/item/reagent_container/food/snacks/grown/mushroom/glowshroom{
 	light_on = 1;
@@ -9322,7 +10325,9 @@
 	},
 /obj/effect/landmark/good_item,
 /turf/open/floor/bluecorner,
-/area/lv624/lazarus/sleep_male)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "kEN" = (
 /obj/structure/machinery/light/small,
 /turf/open/floor/vault,
@@ -9340,7 +10345,8 @@
 /area/lv624/lazarus/medbay)
 "kFC" = (
 /obj/item/device/flashlight/flare/on{
-	fuel_rate = 0.0001
+	fuel_rate = 0.0001;
+	pixel_x = 8
 	},
 /turf/open/auto_turf/snow/layer0,
 /area/lv624/ground/caves/north_east_caves)
@@ -9351,7 +10357,9 @@
 "kHc" = (
 /obj/item/tool/wrench,
 /turf/open/shuttle/dropship/can_surgery/light_grey_single_wide_up_to_down,
-/area/lv624/lazarus/sleep_male)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "kHt" = (
 /obj/structure/cargo_container/grant/rightmid,
 /turf/open/floor,
@@ -9370,11 +10378,15 @@
 	icon_state = "upp21";
 	name = "Fulcrum"
 	},
-/area/lv624/lazarus/sleep_male)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "kJd" = (
 /obj/structure/machinery/door/airlock/hatch/cockpit/upp,
 /turf/open/floor/strata/floor3/east,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "kJB" = (
 /obj/structure/flora/bush/ausbushes/lavendergrass,
 /turf/open/auto_turf/snow/layer3,
@@ -9428,7 +10440,9 @@
 	icon_state = "dynamic_4"
 	},
 /turf/open/auto_turf/snow/layer3,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "kMp" = (
 /obj/structure/flora/bush/snow{
 	icon_state = "snowgrassall_3"
@@ -9438,10 +10452,6 @@
 "kNi" = (
 /turf/open/floor/plating/wood_broken6,
 /area/lv624/ground/jungle/north_jungle)
-"kNl" = (
-/obj/effect/landmark/xeno_spawn,
-/turf/open/auto_turf/snow/layer0,
-/area/lv624/ground/caves/central_caves)
 "kOA" = (
 /obj/structure/flora/jungle/vines/light_3{
 	desc = "A frozen mass of twisted vines.";
@@ -9465,7 +10475,9 @@
 "kQv" = (
 /obj/effect/landmark/crap_item,
 /turf/open/floor/bluecorner,
-/area/lv624/lazarus/sleep_male)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "kQY" = (
 /obj/effect/landmark/hunter_secondary,
 /turf/open/auto_turf/snow/layer3,
@@ -9542,7 +10554,9 @@
 	dir = 1
 	},
 /turf/open/floor/bluecorner,
-/area/lv624/lazarus/sleep_male)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "kVn" = (
 /obj/item/shard,
 /obj/item/stack/rods,
@@ -9613,7 +10627,9 @@
 	},
 /obj/effect/spawner/gibspawner/human,
 /turf/open/shuttle/dropship/can_surgery/light_grey_top_left,
-/area/lv624/lazarus/sleep_male)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "laj" = (
 /obj/structure/pipes/standard/simple/hidden/green{
 	dir = 4
@@ -9718,7 +10734,9 @@
 /obj/item/stack/flag/red,
 /obj/item/weapon/gun/pistol/holdout,
 /turf/open/floor/plating/warnplate/north,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "lhS" = (
 /turf/closed/shuttle/ert{
 	icon_state = "leftengine_3";
@@ -9735,7 +10753,9 @@
 	dir = 4
 	},
 /turf/open/floor/vault2/west,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "lid" = (
 /obj/item/stack/sheet/wood{
 	amount = 2
@@ -9906,7 +10926,9 @@
 	layer = 3.01
 	},
 /turf/open/shuttle/dropship/medium_grey_single_wide_up_to_down,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "lvo" = (
 /obj/structure/girder,
 /obj/structure/foamed_metal,
@@ -9996,7 +11018,9 @@
 	icon_state = "dynamic_4"
 	},
 /turf/open/shuttle/dropship/medium_grey_single_wide_up_to_down,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "lAV" = (
 /obj/structure/disposalpipe/broken{
 	dir = 1
@@ -10124,7 +11148,9 @@
 	pixel_y = -3
 	},
 /turf/open/floor/vault2/west,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "lGD" = (
 /obj/structure/holohoop,
 /turf/open/floor/warnwhite/north,
@@ -10134,15 +11160,20 @@
 	dir = 1
 	},
 /turf/open/floor/bluecorner,
-/area/lv624/lazarus/sleep_male)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "lHw" = (
 /obj/structure/surface/table/woodentable/poor,
-/obj/structure/machinery/microwave{
-	pixel_x = 2;
-	pixel_y = 3
+/obj/item/reagent_container/food/snacks/meat/human{
+	pixel_y = -2;
+	pixel_x = -5
 	},
-/turf/open/floor/wood/wood_broken6,
-/area/lv624/ground/jungle/north_jungle)
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/freezerfloor,
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "lHM" = (
 /obj/structure/largecrate/random,
 /turf/open/auto_turf/snow/layer3,
@@ -10169,10 +11200,13 @@
 	color = "#64b1fa"
 	},
 /turf/open/floor/plating/wood,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "lLg" = (
 /obj/item/device/flashlight/flare/on{
-	fuel_rate = 0.0001
+	fuel_rate = 0.0001;
+	pixel_x = 8
 	},
 /turf/open/auto_turf/snow/layer0,
 /area/lv624/ground/caves/south_central_caves)
@@ -10183,7 +11217,9 @@
 /obj/structure/surface/table,
 /obj/effect/landmark/item_pool_spawner/survivor_ammo/buckshot,
 /turf/open/floor/bluecorner,
-/area/lv624/lazarus/sleep_male)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "lLp" = (
 /obj/structure/prop/brazier/torch,
 /turf/closed/wall/strata_ice/dirty,
@@ -10234,7 +11270,9 @@
 /obj/structure/surface/table,
 /obj/effect/landmark/item_pool_spawner/survivor_ammo/buckshot,
 /turf/open/floor/bluecorner,
-/area/lv624/lazarus/sleep_male)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "lPu" = (
 /obj/structure/barricade/sandbags/wired,
 /obj/structure/barricade/sandbags/wired{
@@ -10278,7 +11316,8 @@
 /area/lv624/ground/jungle/north_jungle)
 "lTt" = (
 /obj/item/device/flashlight/flare/on{
-	fuel_rate = 0.0001
+	fuel_rate = 0.0001;
+	pixel_x = 8
 	},
 /turf/open/auto_turf/ice/layer0,
 /area/lv624/ground/caves/central_caves)
@@ -10295,7 +11334,9 @@
 /area/lv624/lazarus/robotics)
 "lUr" = (
 /turf/open/floor/strata/multi_tiles/west,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "lVg" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "NE-out";
@@ -10317,7 +11358,9 @@
 	pixel_x = -1
 	},
 /turf/open/floor/strata/multi_tiles/west,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "lXu" = (
 /obj/structure/flora/bush/snow{
 	icon_state = "snowgrassbb_1"
@@ -10392,7 +11435,9 @@
 /turf/closed/shuttle/ert{
 	icon_state = "upp22"
 	},
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "mcc" = (
 /obj/structure/flora/grass/tallgrass/ice/corner{
 	dir = 9
@@ -10429,7 +11474,9 @@
 /turf/open/shuttle/dropship{
 	icon_state = "rasputin3"
 	},
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "met" = (
 /obj/structure/stairs/perspective{
 	color = "#6b675e";
@@ -10475,7 +11522,9 @@
 /obj/item/stack/cable_coil/random,
 /obj/effect/spawner/random/tech_supply,
 /turf/open/floor/plating/warnplate/northeast,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "mgK" = (
 /obj/structure/machinery/status_display{
 	pixel_y = -32
@@ -10510,7 +11559,9 @@
 /turf/closed/shuttle/ert{
 	icon_state = "upp23"
 	},
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "mjn" = (
 /obj/structure/flora/bush/ausbushes/var3/stalkybush,
 /turf/open/auto_turf/snow/layer3,
@@ -10564,7 +11615,9 @@
 /turf/open/shuttle/dropship{
 	icon_state = "rasputin15"
 	},
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "mma" = (
 /obj/structure/surface/rack,
 /obj/item/stack/sandbags/large_stack{
@@ -10587,7 +11640,9 @@
 /turf/open/shuttle/dropship{
 	icon_state = "rasputin7"
 	},
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "mnz" = (
 /obj/structure/stairs/perspective{
 	color = "#6b675e";
@@ -10618,7 +11673,9 @@
 	pixel_x = -1
 	},
 /turf/open/floor/strata/floor3/east,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "mpx" = (
 /obj/effect/decal/cleanable/blood/splatter,
 /turf/open/floor/whitepurple/northeast,
@@ -10783,7 +11840,9 @@
 	icon_state = "upp1";
 	name = "Fulcrum"
 	},
-/area/lv624/lazarus/sleep_male)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "mzA" = (
 /turf/open/floor/plating/asteroidwarning/southeast,
 /area/lv624/ground/jungle/north_jungle)
@@ -10887,7 +11946,9 @@
 	icon_state = "100"
 	},
 /turf/open/auto_turf/snow/layer3,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "mGp" = (
 /obj/structure/ship_ammo/rocket/keeper{
 	pixel_x = -19;
@@ -10992,18 +12053,14 @@
 /obj/structure/barricade/sandbags/wired,
 /obj/item/weapon/baseballbat/metal,
 /turf/open/floor/wood/wood_broken6,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "mPa" = (
 /obj/structure/grille,
 /obj/effect/decal/cleanable/blood/oil,
 /turf/open/floor/plating,
 /area/lv624/ground/jungle/north_jungle)
-"mQi" = (
-/obj/structure/barricade/wooden{
-	dir = 4
-	},
-/turf/open/auto_turf/snow/brown_base/layer1,
-/area/lv624/lazarus/crashed_ship_containers)
 "mQC" = (
 /obj/effect/attach_point/fuel/dropship1{
 	pixel_x = -32
@@ -11029,7 +12086,9 @@
 /turf/closed/shuttle/dropship3/tornado{
 	icon_state = "67"
 	},
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "mTn" = (
 /obj/structure/flora/bush/ausbushes/palebush{
 	color = "#64b1fa"
@@ -11102,7 +12161,9 @@
 /area/lv624/ground/caves/east_caves)
 "mXp" = (
 /turf/open/shuttle/dropship/can_surgery/light_grey_single_wide_left_to_right,
-/area/lv624/lazarus/sleep_male)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "mXJ" = (
 /obj/structure/machinery/status_display{
 	pixel_y = 30
@@ -11227,7 +12288,9 @@
 /obj/structure/curtain/red,
 /obj/effect/decal/cleanable/blood/drip,
 /turf/open/floor/wood,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "ndz" = (
 /obj/structure/machinery/constructable_frame{
 	icon_state = "box_1"
@@ -11243,7 +12306,9 @@
 	icon_state = "upp4";
 	name = "Fulcrum"
 	},
-/area/lv624/lazarus/sleep_male)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "nel" = (
 /obj/effect/decal/cleanable/blood/drip,
 /turf/open/floor/whiteyellowcorner/west,
@@ -11276,7 +12341,9 @@
 	},
 /obj/structure/blocker/invisible_wall,
 /turf/open/floor/strata/floor3/east,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "ngb" = (
 /obj/structure/fence,
 /turf/open/auto_turf/snow/layer3,
@@ -11291,7 +12358,9 @@
 /turf/closed/shuttle/dropship1{
 	icon_state = "68"
 	},
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "ngx" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/brown/northwest,
@@ -11321,7 +12390,9 @@
 "nib" = (
 /obj/structure/machinery/computer3,
 /turf/open/floor/plating/warnplate/north,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "nii" = (
 /obj/effect/landmark/crap_item,
 /turf/open/floor/whitepurplecorner/east,
@@ -11353,7 +12424,9 @@
 /obj/structure/surface/table,
 /obj/item/device/flashlight/lamp,
 /turf/open/floor/plating/warnplate/north,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "nkW" = (
 /obj/structure/platform_decoration,
 /turf/open/floor/brown/northwest,
@@ -11493,7 +12566,9 @@
 	can_block_movement = 0
 	},
 /turf/open/shuttle/dropship/light_grey_single_wide_up_to_down,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "nva" = (
 /turf/open/floor/plating/platebot,
 /area/lv624/lazarus/robotics)
@@ -11511,7 +12586,9 @@
 /turf/closed/shuttle/dropship3/tornado{
 	icon_state = "48"
 	},
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "nwM" = (
 /obj/structure/platform/mineral/sandstone/runed{
 	dir = 1
@@ -11523,7 +12600,9 @@
 	dir = 8
 	},
 /turf/open/shuttle/dropship/can_surgery/light_grey_single_wide_left_to_right,
-/area/lv624/lazarus/sleep_male)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "nxN" = (
 /obj/structure/flora/bush/snow{
 	icon_state = "snowgrassall_1"
@@ -11541,7 +12620,9 @@
 /obj/structure/bed/roller,
 /obj/structure/machinery/light,
 /turf/open/floor/bluecorner,
-/area/lv624/lazarus/sleep_male)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "nzv" = (
 /obj/structure/surface/table/reinforced/prison,
 /obj/item/ashtray/bronze,
@@ -11601,12 +12682,6 @@
 	},
 /turf/open/auto_turf/snow/layer3,
 /area/lv624/ground/jungle/north_jungle)
-"nCU" = (
-/obj/effect/landmark/nightmare{
-	insert_tag = "crashed-ship"
-	},
-/turf/open/auto_turf/snow/layer3,
-/area/lv624/ground/jungle/north_jungle)
 "nDu" = (
 /obj/item/device/analyzer,
 /turf/open/auto_turf/snow/brown_base/layer1,
@@ -11636,7 +12711,9 @@
 /obj/structure/machinery/portable_atmospherics/hydroponics,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating/wood,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "nGk" = (
 /obj/structure/shuttle/part/tornado/transparent{
 	icon_state = "33"
@@ -11661,7 +12738,9 @@
 	icon = 'icons/obj/items/weapons/guns/guns_by_faction/upp.dmi'
 	},
 /turf/open/shuttle/dropship/can_surgery/medium_grey_single_wide_up_to_down,
-/area/lv624/lazarus/sleep_male)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "nGV" = (
 /obj/structure/prop/invuln/fire{
 	icon_state = "dynamic_4"
@@ -11669,7 +12748,9 @@
 /turf/closed/shuttle/dropship3/tornado{
 	icon_state = "77"
 	},
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "nHZ" = (
 /obj/structure/surface/table,
 /obj/item/reagent_container/food/snacks/pie,
@@ -11733,7 +12814,9 @@
 	pixel_x = 8
 	},
 /turf/open/shuttle/dropship/medium_grey_single_wide_up_to_down,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "nNw" = (
 /obj/structure/disposalpipe/segment,
 /obj/structure/grille,
@@ -11807,7 +12890,9 @@
 	},
 /obj/item/clothing/under/colonist/boilersuit/cyan,
 /turf/open/floor/bluecorner,
-/area/lv624/lazarus/sleep_male)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "nUH" = (
 /obj/structure/prop/mech/tesla_energy_relay{
 	layer = 2.5
@@ -11830,7 +12915,9 @@
 "nVo" = (
 /obj/structure/surface/table/woodentable/poor,
 /turf/open/floor/plating/wood_broken5,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "nVy" = (
 /obj/structure/flora/bush/ausbushes/ausbush{
 	color = "#64b1fa"
@@ -11869,7 +12956,9 @@
 	icon_state = "86b";
 	opacity = 0
 	},
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "nYN" = (
 /turf/open/floor/plating/asteroidfloor/north,
 /area/lv624/lazarus/corporate_dome)
@@ -11893,7 +12982,9 @@
 	req_access_txt = "100"
 	},
 /turf/open/floor/vault2/west,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "oay" = (
 /obj/structure/largecrate,
 /turf/open/floor/bot/north,
@@ -11951,7 +13042,9 @@
 "odq" = (
 /obj/structure/surface/table/woodentable/poor,
 /turf/open/floor/plating/wood_broken4,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "odr" = (
 /turf/open/floor/plating,
 /area/lv624/lazarus/chapel)
@@ -11995,7 +13088,9 @@
 /obj/effect/decal/cleanable/blood,
 /obj/structure/pipes/standard/simple/hidden/cyan,
 /turf/open/floor/bluecorner,
-/area/lv624/lazarus/sleep_male)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "ofF" = (
 /obj/effect/landmark/good_item,
 /turf/open/floor/dark,
@@ -12017,7 +13112,9 @@
 /turf/open/shuttle/dropship{
 	icon_state = "rasputin8"
 	},
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "ogm" = (
 /obj/structure/machinery/door/window/westleft,
 /turf/open/floor/whiteyellowfull/east,
@@ -12050,7 +13147,9 @@
 /turf/closed/shuttle/ert{
 	icon_state = "upp8"
 	},
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "oln" = (
 /obj/structure/prop/invuln/fire{
 	icon_state = "dynamic_4";
@@ -12059,7 +13158,9 @@
 /turf/closed/shuttle/dropship3/tornado{
 	icon_state = "77"
 	},
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "omJ" = (
 /obj/structure/inflatable/popped/door,
 /turf/open/auto_turf/snow/layer0,
@@ -12101,15 +13202,6 @@
 	},
 /turf/open/floor/green/northwest,
 /area/lv624/lazarus/fitness)
-"opi" = (
-/obj/effect/landmark/nightmare{
-	insert_tag = "lv-skylight"
-	},
-/turf/closed/wall/strata_ice/jungle{
-	color = "#64b1fa";
-	desc = "Exceptionally dense vegetation that you can't see through. It's frozen over."
-	},
-/area/lv624/ground/jungle/north_jungle)
 "opM" = (
 /obj/structure/grille{
 	density = 0;
@@ -12157,7 +13249,9 @@
 "ost" = (
 /obj/structure/bed/chair/wood/normal,
 /turf/open/floor/plating/wood_broken3,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "oth" = (
 /obj/item/stack/sheet/metal{
 	amount = 3
@@ -12197,7 +13291,9 @@
 	icon_state = "97a";
 	opacity = 0
 	},
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "ouJ" = (
 /obj/effect/landmark/crap_item,
 /turf/open/floor/white,
@@ -12232,18 +13328,13 @@
 "owy" = (
 /turf/open/floor/plating/asteroidwarning/northeast,
 /area/lv624/ground/jungle/north_jungle)
-"oxz" = (
-/obj/structure/barricade/wooden{
-	dir = 4
-	},
-/obj/structure/barricade/wooden,
-/turf/open/auto_turf/snow/layer0,
-/area/lv624/lazarus/crashed_ship_containers)
 "oxR" = (
 /obj/structure/bed,
 /obj/item/bedsheet/blue,
 /turf/open/floor/bluecorner,
-/area/lv624/lazarus/sleep_male)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "oya" = (
 /obj/structure/flora/bush/snow{
 	icon_state = "snowgrassall_3"
@@ -12352,7 +13443,9 @@
 	pixel_y = 1
 	},
 /turf/open/floor/strata/floor3/east,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "oDw" = (
 /obj/structure/surface/rack,
 /obj/item/tool/crowbar,
@@ -12362,7 +13455,9 @@
 /obj/effect/landmark/crap_item,
 /obj/effect/decal/cleanable/blood/drip,
 /turf/open/floor/wood,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "oDU" = (
 /turf/closed/shuttle/dropship1/transparent{
 	icon_state = "38"
@@ -12397,15 +13492,6 @@
 "oGh" = (
 /turf/open/floor/green/northwest,
 /area/lv624/lazarus/fitness)
-"oHI" = (
-/obj/structure/surface/table/woodentable/poor,
-/obj/item/stack/sheet/metal{
-	amount = 30;
-	pixel_x = 4;
-	pixel_y = 4
-	},
-/turf/open/floor/wood,
-/area/lv624/ground/jungle/north_jungle)
 "oHX" = (
 /obj/structure/surface/table,
 /obj/item/clothing/glasses/hud/health,
@@ -12630,7 +13716,9 @@
 	pixel_y = 30
 	},
 /turf/open/floor/plating/warnplate/north,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "oXG" = (
 /obj/effect/landmark/crap_item,
 /turf/open/auto_turf/snow/layer3,
@@ -12661,7 +13749,9 @@
 "paO" = (
 /obj/item/trash/semki,
 /turf/open/shuttle/dropship/can_surgery,
-/area/lv624/lazarus/sleep_male)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "paW" = (
 /obj/structure/stairs/perspective{
 	color = "#6b675e";
@@ -12686,7 +13776,9 @@
 	icon_state = "dynamic_4"
 	},
 /turf/open/shuttle/dropship/light_grey_single_wide_left_to_right,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "pbE" = (
 /obj/structure/window/reinforced/tinted,
 /obj/structure/machinery/door/window{
@@ -12702,7 +13794,9 @@
 	dir = 4
 	},
 /turf/open/shuttle/dropship/medium_grey_single_wide_up_to_down,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "pbI" = (
 /obj/structure/foamed_metal{
 	layer = 3.1
@@ -12720,7 +13814,9 @@
 /turf/closed/shuttle/dropship3/tornado{
 	icon_state = "103"
 	},
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "pdh" = (
 /turf/open/floor/whitepurplecorner/east,
 /area/lv624/lazarus/fitness)
@@ -12730,7 +13826,9 @@
 /obj/structure/window/reinforced/tinted,
 /obj/item/stack/medical/advanced/bruise_pack,
 /turf/open/floor/bluecorner,
-/area/lv624/lazarus/sleep_male)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "peA" = (
 /obj/structure/barricade/wooden{
 	dir = 1;
@@ -12825,10 +13923,6 @@
 "pny" = (
 /turf/open/floor/plating/asteroidwarning/east,
 /area/lv624/ground/jungle/north_jungle)
-"pnF" = (
-/obj/effect/landmark/queen_spawn,
-/turf/open/auto_turf/snow/layer0,
-/area/lv624/ground/caves/central_caves)
 "pnG" = (
 /obj/structure/flora/tree/dead/tree_2,
 /turf/open/auto_turf/snow/layer1,
@@ -12871,7 +13965,9 @@
 /turf/closed/shuttle/dropship1{
 	icon_state = "24"
 	},
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "prc" = (
 /obj/effect/decal/cleanable/blood/oil,
 /turf/open/auto_turf/snow/brown_base/layer1,
@@ -12940,7 +14036,9 @@
 /obj/structure/curtain/red,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating/wood_broken3,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "pvV" = (
 /obj/structure/surface/table/reinforced/prison,
 /obj/item/tool/crowbar,
@@ -12957,7 +14055,9 @@
 /turf/closed/shuttle/dropship1{
 	icon_state = "48"
 	},
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "pxd" = (
 /turf/closed/wall/r_wall,
 /area/lv624/lazarus/toilet)
@@ -12973,7 +14073,9 @@
 "pyz" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating/wood,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "pyE" = (
 /obj/structure/surface/table/reinforced/prison{
 	color = "#6b675e"
@@ -13117,6 +14219,9 @@
 	density = 0;
 	icon_state = "brokengrille"
 	},
+/obj/structure/machinery/camera/autoname{
+	dir = 4
+	},
 /turf/open/floor/plating/warnplate/east,
 /area/lv624/ground/jungle/north_jungle)
 "pHF" = (
@@ -13129,7 +14234,9 @@
 /turf/open/shuttle/dropship{
 	icon_state = "rasputin15"
 	},
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "pIC" = (
 /turf/closed/wall/r_wall/unmeltable,
 /area/lv624/ground/jungle/north_jungle)
@@ -13146,10 +14253,19 @@
 /turf/open/auto_turf/snow/layer3,
 /area/lv624/ground/caves/east_caves)
 "pLr" = (
-/obj/structure/surface/table/woodentable/poor,
-/obj/item/explosive/plastic,
-/turf/open/floor/wood,
-/area/lv624/ground/jungle/north_jungle)
+/obj/effect/decal/cleanable/blood,
+/obj/structure/machinery/door/airlock/almayer/medical/glass/colony{
+	name = "meat locker";
+	req_access_txt = "100";
+	req_one_access = null;
+	desc = "It opens and closes. It's made of really strong material. It opens from a button on the outside.";
+	locked = 1;
+	indestructible = 1
+	},
+/turf/open/floor/plating,
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "pLy" = (
 /obj/structure/largecrate/random,
 /turf/open/floor,
@@ -13157,7 +14273,9 @@
 "pMb" = (
 /obj/structure/window/framed/wood,
 /turf/open/floor/plating/wood,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "pMn" = (
 /obj/structure/pipes/standard/simple/hidden/cyan{
 	dir = 4
@@ -13182,7 +14300,9 @@
 /obj/item/trash/cheesie,
 /obj/structure/pipes/vents/pump,
 /turf/open/floor/bluecorner,
-/area/lv624/lazarus/sleep_male)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "pOa" = (
 /obj/structure/machinery/light{
 	dir = 8
@@ -13196,7 +14316,9 @@
 /turf/closed/shuttle/dropship1{
 	icon_state = "10"
 	},
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "pOp" = (
 /obj/item/reagent_container/glass/bucket/mopbucket,
 /turf/open/auto_turf/snow/layer3,
@@ -13235,7 +14357,9 @@
 	dir = 1
 	},
 /turf/open/floor/wood,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "pQT" = (
 /obj/structure/ship_ammo/rocket/keeper{
 	pixel_x = -19;
@@ -13245,7 +14369,9 @@
 /area/lv624/ground/jungle/north_jungle)
 "pRB" = (
 /turf/open/shuttle/dropship/light_grey_single_wide_left_to_right,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "pRC" = (
 /obj/item/stack/sheet/wood{
 	amount = 2
@@ -13266,7 +14392,9 @@
 	},
 /obj/structure/girder/displaced,
 /turf/open/auto_turf/snow/layer3,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "pTp" = (
 /turf/open/floor/redfull/northwest,
 /area/lv624/lazarus/security)
@@ -13277,11 +14405,15 @@
 /turf/closed/shuttle/dropship3/tornado{
 	icon_state = "30"
 	},
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "pUw" = (
 /obj/structure/window/framed/colony/reinforced,
 /turf/open/floor/plating,
-/area/lv624/lazarus/sleep_male)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "pUO" = (
 /obj/structure/machinery/door/airlock/almayer/medical/glass/colony{
 	name = "\improper Nexus Dome Canteen";
@@ -13328,7 +14460,9 @@
 	},
 /obj/structure/machinery/door/airlock/multi_tile/almayer/dropshiprear/ds3,
 /turf/open/shuttle/dropship/medium_grey_single_wide_left_to_right,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "pXp" = (
 /obj/structure/surface/table,
 /obj/structure/machinery/light{
@@ -13391,7 +14525,9 @@
 /area/lv624/lazarus/corporate_dome)
 "pZk" = (
 /turf/open/shuttle/dropship/can_surgery/light_grey_single_wide_up_to_down,
-/area/lv624/lazarus/sleep_male)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "qaj" = (
 /obj/item/ammo_magazine/smg/mp5,
 /turf/open/floor/white,
@@ -13418,7 +14554,9 @@
 /turf/closed/shuttle/dropship1{
 	icon_state = "30"
 	},
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "qco" = (
 /obj/structure/pipes/standard/simple/hidden/green{
 	dir = 4
@@ -13488,7 +14626,9 @@
 "qfX" = (
 /obj/structure/prop/invuln/fire,
 /turf/open/shuttle/dropship/light_grey_top_right,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "qgs" = (
 /obj/structure/flora/bush/ausbushes/var3/ywflowers,
 /obj/effect/landmark/lizard_spawn,
@@ -13514,11 +14654,15 @@
 /turf/closed/shuttle/dropship3/tornado{
 	icon_state = "24"
 	},
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "qiu" = (
 /obj/item/trash/candle,
 /turf/open/floor/plating/wood_broken3,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "qix" = (
 /obj/structure/surface/table/reinforced/prison{
 	color = "#6b675e"
@@ -13604,7 +14748,9 @@
 	layer = 3.01
 	},
 /turf/open/shuttle/dropship/medium_grey_single_wide_up_to_down,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "qnD" = (
 /obj/structure/closet/cabinet,
 /obj/item/reagent_container/food/snacks/syndicake{
@@ -13650,7 +14796,9 @@
 /area/lv624/ground/caves/sand_temple)
 "qpn" = (
 /turf/open/floor/wood,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "qpw" = (
 /obj/structure/bed,
 /obj/structure/machinery/light,
@@ -13754,12 +14902,16 @@
 /turf/closed/shuttle/ert{
 	icon_state = "upp1"
 	},
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "qyo" = (
 /turf/closed/shuttle/dropship3/tornado{
 	icon_state = "25"
 	},
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "qyr" = (
 /obj/structure/barricade/handrail/strata{
 	dir = 1
@@ -13773,7 +14925,9 @@
 /obj/structure/machinery/constructable_frame,
 /obj/effect/spawner/random/bomb_supply,
 /turf/open/floor/plating/warnplate/northwest,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "qyG" = (
 /obj/structure/window/framed/colony/reinforced,
 /turf/open/floor/plating/platebotc,
@@ -13790,7 +14944,9 @@
 	id = "port_door"
 	},
 /turf/open/floor/strata/floor3/east,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "qAu" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/barricade/sandbags/wired,
@@ -13834,7 +14990,9 @@
 	icon_state = "86a";
 	opacity = 0
 	},
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "qCL" = (
 /obj/structure/bed/chair/vehicle{
 	pixel_x = -8;
@@ -13845,7 +15003,9 @@
 	pixel_y = 7
 	},
 /turf/open/floor/strata/floor3/east,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "qDb" = (
 /obj/structure/flora/bush/ausbushes/var3/ywflowers,
 /obj/structure/flora/jungle/vines{
@@ -13985,7 +15145,9 @@
 /turf/open/shuttle/dropship{
 	icon_state = "rasputin3"
 	},
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "qOi" = (
 /obj/structure/window/framed/colony,
 /turf/open/floor/bar,
@@ -14013,8 +15175,11 @@
 /area/lv624/ground/jungle/north_jungle)
 "qPd" = (
 /obj/effect/landmark/crap_item,
+/obj/structure/machinery/camera/autoname,
 /turf/open/floor/wood,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "qPy" = (
 /obj/structure/flora/bush/ausbushes/palebush{
 	color = "#64b1fa"
@@ -14100,7 +15265,9 @@
 /turf/closed/shuttle/dropship1{
 	icon_state = "63"
 	},
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "qUR" = (
 /turf/open/floor/dark,
 /area/lv624/lazarus/engineering)
@@ -14120,11 +15287,15 @@
 /turf/closed/shuttle/ert{
 	icon_state = "upp4"
 	},
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "qXT" = (
 /obj/structure/window_frame/wood,
 /turf/open/floor/wood,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "qYt" = (
 /obj/structure/largecrate/random/barrel/yellow,
 /turf/open/shuttle/bright_red,
@@ -14215,7 +15386,9 @@
 	color = "#64b1fa"
 	},
 /turf/open/floor/plating/wood,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "rff" = (
 /obj/structure/flora/jungle/vines/light_1{
 	desc = "A frosted mass of twisted vines.";
@@ -14258,7 +15431,9 @@
 /turf/closed/shuttle/dropship1{
 	icon_state = "94"
 	},
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "rhl" = (
 /obj/structure/flora/jungle/vines/heavy{
 	color = "#64b1fa";
@@ -14307,7 +15482,9 @@
 	pixel_x = -12
 	},
 /turf/open/floor/strata/multi_tiles/west,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "riL" = (
 /obj/structure/phone_base/colony_net{
 	phone_category = "Lazarus Landing";
@@ -14338,7 +15515,9 @@
 "rjS" = (
 /obj/structure/closet/coffin/woodencrate,
 /turf/open/floor/plating/wood,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "rjY" = (
 /obj/structure/surface/table/reinforced/prison,
 /obj/item/folder/black_random,
@@ -14403,7 +15582,9 @@
 "rpm" = (
 /obj/item/prop/almayer/comp_closed,
 /turf/open/shuttle/dropship/can_surgery/light_grey_single_wide_up_to_down,
-/area/lv624/lazarus/sleep_male)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "rqv" = (
 /obj/structure/machinery/landinglight/ds2/delaytwo{
 	dir = 1
@@ -14487,7 +15668,9 @@
 /turf/closed/shuttle/dropship1{
 	icon_state = "14"
 	},
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "ruF" = (
 /obj/item/folder/red,
 /turf/open/floor/redfull/northwest,
@@ -14505,7 +15688,9 @@
 	pixel_x = -30
 	},
 /turf/open/floor/bluecorner,
-/area/lv624/lazarus/sleep_male)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "rvK" = (
 /obj/structure/flora/bush/ausbushes/var3/ywflowers,
 /obj/effect/landmark/lizard_spawn,
@@ -14538,7 +15723,9 @@
 /turf/closed/shuttle/dropship3/tornado{
 	icon_state = "73"
 	},
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "ryC" = (
 /obj/structure/stairs/perspective{
 	color = "#b29082";
@@ -14563,7 +15750,9 @@
 	icon_state = "S"
 	},
 /turf/open/floor/strata/multi_tiles/west,
-/area/lv624/lazarus/sleep_male)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "rzh" = (
 /obj/structure/prop/invuln/fire{
 	icon_state = "dynamic_4"
@@ -14573,12 +15762,16 @@
 "rzk" = (
 /obj/structure/shuttle/part/dropship1/bottom_right_wall,
 /turf/open/auto_turf/snow/brown_base/layer0,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "rzF" = (
 /obj/structure/bed/bedroll,
 /obj/item/bedsheet/brown,
 /turf/open/shuttle/dropship/can_surgery/light_grey_single_wide_up_to_down,
-/area/lv624/lazarus/sleep_male)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "rzY" = (
 /turf/open/auto_turf/snow/layer3,
 /area/lv624/ground/caves/south_west_caves)
@@ -14619,11 +15812,15 @@
 /turf/open/shuttle/dropship{
 	icon_state = "rasputin3"
 	},
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "rEs" = (
 /obj/structure/surface/table/woodentable/poor,
 /turf/open/floor/plating/wood_broken3,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "rEw" = (
 /obj/structure/flora/bush/ausbushes/grassybush{
 	color = "#64b1fa"
@@ -14647,10 +15844,12 @@
 "rFc" = (
 /obj/structure/closet,
 /turf/open/floor/bluecorner,
-/area/lv624/lazarus/sleep_male)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "rFo" = (
 /obj/structure/prop/brazier/campfire{
-	fuel_stage_time = 0.00001
+	remaining_fuel = 99999999
 	},
 /turf/open/auto_turf/snow/brown_base/layer0,
 /area/lv624/ground/jungle/north_jungle)
@@ -14658,14 +15857,9 @@
 /turf/closed/shuttle/dropship1/transparent{
 	icon_state = "80"
 	},
-/area/lv624/ground/jungle/north_jungle)
-"rGv" = (
-/obj/structure/largecrate/supply/ammo/shotgun,
-/obj/structure/largecrate/supply/ammo/shotgun{
-	pixel_y = 8
-	},
-/turf/open/floor/wood/wood_broken,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "rHW" = (
 /obj/structure/stairs/perspective{
 	color = "#b29082";
@@ -14705,7 +15899,9 @@
 /obj/structure/surface/table,
 /obj/item/trash/cheesie,
 /turf/open/floor/bluecorner,
-/area/lv624/lazarus/sleep_male)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "rKp" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/bed/chair/office/light{
@@ -14834,8 +16030,10 @@
 /area/lv624/ground/jungle/north_jungle)
 "rUL" = (
 /obj/structure/closet/secure_closet/freezer/meat,
-/turf/open/floor/wood/wood_broken3,
-/area/lv624/ground/jungle/north_jungle)
+/turf/open/floor/freezerfloor,
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "rVA" = (
 /obj/structure/surface/table/reinforced/prison,
 /obj/item/restraint/adjustable/cable/white{
@@ -14858,7 +16056,9 @@
 	pixel_x = 1
 	},
 /turf/open/floor/strata/multi_tiles/southwest,
-/area/lv624/lazarus/sleep_male)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "rWp" = (
 /turf/closed/wall/sulaco,
 /area/lv624/lazarus/crashed_ship_containers)
@@ -14917,7 +16117,9 @@
 /area/lv624/lazarus/crashed_ship_containers)
 "rZd" = (
 /turf/open/floor/plating/warnplate,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "rZm" = (
 /obj/structure/machinery/power/apc/no_power/west,
 /turf/open/floor/grimy,
@@ -14932,14 +16134,18 @@
 "rZV" = (
 /obj/structure/shuttle/part/dropship1/nose_front_left,
 /turf/open/auto_turf/strata_grass/layer0_mud_alt,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "sad" = (
 /turf/open/floor/whitebluecorner/west,
 /area/lv624/lazarus/medbay)
 "sah" = (
 /obj/item/stack/medical/advanced/bruise_pack,
 /turf/open/floor/bluecorner,
-/area/lv624/lazarus/sleep_male)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "sar" = (
 /obj/structure/machinery/requests_console{
 	pixel_x = 30
@@ -14962,7 +16168,9 @@
 /turf/open/shuttle/dropship{
 	icon_state = "rasputin15"
 	},
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "sba" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/machinery/power/apc/no_power/north,
@@ -14977,7 +16185,9 @@
 	pixel_y = 6
 	},
 /turf/open/auto_turf/snow/layer3,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "sdi" = (
 /obj/effect/landmark/survivor_spawner,
 /turf/open/auto_turf/snow/brown_base/layer1,
@@ -14999,7 +16209,9 @@
 /obj/structure/largecrate/random,
 /obj/item/tool/crowbar/red,
 /turf/open/floor/plating/warnplate/northwest,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "seg" = (
 /obj/structure/machinery/door/airlock/multi_tile/almayer/generic{
 	locked = 1;
@@ -15012,13 +16224,17 @@
 /turf/closed/shuttle/ert{
 	icon_state = "upp251"
 	},
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "seY" = (
 /obj/structure/bed/chair/wood/normal{
 	dir = 8
 	},
 /turf/open/floor/plating/wood,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "sfk" = (
 /obj/structure/machinery/autolathe,
 /turf/open/floor/vault2/west,
@@ -15030,7 +16246,9 @@
 	layer = 4.2
 	},
 /turf/open/auto_turf/snow/layer3,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "sfR" = (
 /obj/structure/window_frame/colony/reinforced,
 /obj/structure/machinery/door/poddoor/almayer{
@@ -15048,6 +16266,7 @@
 	icon_state = "W";
 	pixel_x = -1
 	},
+/obj/structure/machinery/camera/autoname,
 /turf/open/floor/dark,
 /area/lv624/lazarus/engineering)
 "sgN" = (
@@ -15063,7 +16282,9 @@
 /obj/item/ammo_magazine/handful/shotgun/heavy/buckshot,
 /obj/item/ammo_box/magazine/misc/flares,
 /turf/open/shuttle/dropship/can_surgery/medium_grey_single_wide_up_to_down,
-/area/lv624/lazarus/sleep_male)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "shN" = (
 /obj/structure/machinery/door/airlock/almayer/secure/colony{
 	locked = 1;
@@ -15123,7 +16344,9 @@
 	icon_state = "upp3";
 	name = "Fulcrum"
 	},
-/area/lv624/lazarus/sleep_male)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "soR" = (
 /obj/structure/closet,
 /obj/structure/window/reinforced/tinted{
@@ -15140,7 +16363,9 @@
 "spU" = (
 /obj/effect/attach_point/crew_weapon/tornado,
 /turf/open/shuttle/dropship/light_grey_single_wide_up_to_down,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "sqK" = (
 /obj/structure/platform{
 	dir = 1
@@ -15162,7 +16387,9 @@
 	icon_state = "upp5";
 	name = "Fulcrum"
 	},
-/area/lv624/lazarus/sleep_male)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "ssY" = (
 /obj/structure/surface/table/reinforced/prison,
 /obj/item/storage/firstaid/adv{
@@ -15223,7 +16450,9 @@
 	color = "#64b1fa"
 	},
 /turf/open/floor/plating/wood,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "sxo" = (
 /turf/closed/wall,
 /area/lv624/lazarus/fitness)
@@ -15274,7 +16503,9 @@
 	icon_state = "pipe-c"
 	},
 /turf/open/floor/plating/warnplate,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "sAg" = (
 /obj/structure/window/framed/colony/reinforced,
 /turf/open/floor/plating,
@@ -15293,7 +16524,9 @@
 	icon_state = "upp25";
 	name = "Fulcrum"
 	},
-/area/lv624/lazarus/sleep_male)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "sDI" = (
 /obj/structure/flora/bush/snow{
 	icon_state = "snowgrassgb_2"
@@ -15372,7 +16605,9 @@
 /obj/structure/disposalpipe/segment,
 /obj/structure/window/framed/colony,
 /turf/open/floor/plating/warnplate,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "sIr" = (
 /obj/effect/landmark/crap_item,
 /turf/open/auto_turf/snow/layer3,
@@ -15400,7 +16635,9 @@
 /area/lv624/lazarus/engineering)
 "sJD" = (
 /turf/closed/wall,
-/area/lv624/lazarus/sleep_male)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "sJE" = (
 /obj/structure/shuttle/part/dropship1/left_inner_wing_connector,
 /obj/structure/prop/invuln/fire,
@@ -15541,7 +16778,9 @@
 /turf/closed/shuttle/dropship1{
 	icon_state = "69"
 	},
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "sWv" = (
 /obj/structure/machinery/atm{
 	name = "Automatic Teller Machine";
@@ -15625,7 +16864,9 @@
 "tcg" = (
 /obj/structure/shuttle/part/dropship1/bottom_left_wall,
 /turf/open/auto_turf/snow/brown_base/layer0,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "tcH" = (
 /obj/item/xenos_claw,
 /turf/open/auto_turf/snow/layer3,
@@ -15639,11 +16880,6 @@
 /obj/structure/machinery/power/apc/no_power/north,
 /turf/open/floor/whitepurple/northeast,
 /area/lv624/lazarus/research)
-"tdN" = (
-/obj/structure/surface/table/woodentable/poor,
-/obj/item/weapon/gun/shotgun/pump/dual_tube/cmb,
-/turf/open/floor/wood,
-/area/lv624/ground/jungle/north_jungle)
 "ted" = (
 /obj/structure/machinery/door/airlock/almayer/engineering/colony{
 	density = 0;
@@ -15725,7 +16961,9 @@
 "tir" = (
 /obj/effect/spawner/random/tech_supply,
 /turf/open/floor/plating/warnplate/north,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "tiO" = (
 /obj/structure/flora/bush/snow{
 	icon_state = "snowbush_3";
@@ -15826,7 +17064,9 @@
 /turf/closed/shuttle/dropship1/transparent{
 	icon_state = "96"
 	},
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "tqF" = (
 /obj/structure/machinery/light{
 	dir = 1
@@ -15977,7 +17217,9 @@
 /turf/closed/shuttle/dropship3/tornado{
 	icon_state = "76"
 	},
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "tzf" = (
 /obj/structure/machinery/defenses/sentry/upp,
 /turf/open/auto_turf/snow/layer3,
@@ -16019,7 +17261,9 @@
 	icon_state = "95a"
 	},
 /turf/open/auto_turf/snow/layer3,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "tCE" = (
 /obj/item/device/radio/intercom/alamo{
 	pixel_y = 24
@@ -16057,7 +17301,9 @@
 	icon_state = "W"
 	},
 /turf/open/floor/plating/plating_catwalk/strata,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "tGl" = (
 /obj/structure/flora/bush/snow{
 	icon_state = "snowbush_2";
@@ -16141,7 +17387,9 @@
 	pixel_y = 6
 	},
 /turf/open/auto_turf/snow/layer3,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "tMQ" = (
 /obj/structure/surface/table,
 /obj/item/trash/cheesie,
@@ -16155,7 +17403,9 @@
 	opened = 1
 	},
 /turf/open/floor/bluecorner,
-/area/lv624/lazarus/sleep_male)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "tNX" = (
 /obj/structure/blocker/forcefield/multitile_vehicles,
 /turf/open/auto_turf/snow/layer0,
@@ -16197,7 +17447,9 @@
 /turf/open/shuttle/dropship{
 	icon_state = "rasputin3"
 	},
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "tPK" = (
 /obj/structure/surface/table,
 /obj/item/stack/rods{
@@ -16205,7 +17457,9 @@
 	},
 /obj/effect/spawner/random/tech_supply,
 /turf/open/floor/plating/warnplate/north,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "tPQ" = (
 /obj/structure/machinery/door/airlock/multi_tile/almayer/engidoor/glass/colony{
 	name = "\improper Communications Dome";
@@ -16270,7 +17524,9 @@
 	pixel_y = 9
 	},
 /turf/open/floor/plating/wood,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "tWl" = (
 /obj/structure/flora/jungle/vines/light_1{
 	desc = "A frosted mass of twisted vines.";
@@ -16304,7 +17560,9 @@
 /turf/closed/shuttle/ert{
 	icon_state = "upp9"
 	},
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "tZp" = (
 /obj/structure/stairs/perspective{
 	color = "#b29082";
@@ -16382,8 +17640,8 @@
 /turf/open/floor,
 /area/lv624/ground/jungle/north_jungle)
 "ucc" = (
-/obj/structure/lz_sign/lazarus_sign/damaged{
-	density = 0
+/obj/structure/lz_sign/lazarus_sign{
+	layer = 4
 	},
 /turf/open/auto_turf/snow/layer3,
 /area/lv624/ground/jungle/north_jungle)
@@ -16412,7 +17670,9 @@
 "ufz" = (
 /obj/structure/machinery/portable_atmospherics/powered/scrubber,
 /turf/open/floor/plating/warnplate/north,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "ufK" = (
 /obj/structure/surface/table/reinforced/prison,
 /obj/item/stack/sheet/metal{
@@ -16445,12 +17705,16 @@
 	pixel_x = 8
 	},
 /turf/open/shuttle/dropship/medium_grey_single_wide_up_to_down,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "uhw" = (
 /obj/structure/surface/rack,
 /obj/item/weapon/gun/rifle/lmg,
 /turf/open/floor/vault2/west,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "uhN" = (
 /obj/structure/prop/invuln/overhead_pipe{
 	pixel_x = 3
@@ -16470,7 +17734,9 @@
 /obj/item/stack/medical/ointment,
 /obj/effect/spawner/random/toolbox,
 /turf/open/floor/plating/warnplate/east,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "uiX" = (
 /obj/effect/landmark/lv624/xeno_tunnel,
 /obj/structure/flora/jungle/vines/heavy{
@@ -16491,7 +17757,9 @@
 /turf/open/shuttle/dropship{
 	icon_state = "rasputin15"
 	},
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "ujS" = (
 /obj/structure/machinery/light{
 	dir = 1
@@ -16501,6 +17769,7 @@
 	pixel_x = 1
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/machinery/camera/autoname,
 /turf/open/floor/brown/northwest,
 /area/lv624/lazarus/comms)
 "uln" = (
@@ -16559,7 +17828,9 @@
 /turf/open/shuttle/dropship{
 	icon_state = "rasputin15"
 	},
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "uon" = (
 /turf/open/floor/warning/northwest,
 /area/lv624/ground/jungle/north_jungle)
@@ -16567,7 +17838,9 @@
 /obj/structure/surface/rack,
 /obj/item/tool/pickaxe,
 /turf/open/floor/vault2/west,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "uqR" = (
 /obj/structure/flora/jungle/vines/heavy{
 	color = "#64b1fa";
@@ -16581,7 +17854,9 @@
 "urg" = (
 /obj/structure/shuttle/part/dropship1/nose_front_right,
 /turf/open/auto_turf/strata_grass/layer0_mud_alt,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "usl" = (
 /obj/item/weapon/twohanded/fireaxe,
 /obj/effect/decal/cleanable/blood,
@@ -16614,7 +17889,9 @@
 /turf/open/shuttle/dropship{
 	icon_state = "rasputin15"
 	},
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "utG" = (
 /obj/structure/flora/jungle/vines/light_3{
 	desc = "A frozen mass of twisted vines.";
@@ -16683,7 +17960,9 @@
 /turf/closed/shuttle/dropship1{
 	icon_state = "92"
 	},
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "uxq" = (
 /turf/closed/shuttle/ert{
 	icon_state = "T61"
@@ -16701,7 +17980,9 @@
 	pixel_y = 29
 	},
 /turf/open/floor/strata/multi_tiles/west,
-/area/lv624/lazarus/sleep_male)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "uxK" = (
 /obj/structure/fence,
 /turf/open/floor/warning/east,
@@ -16773,7 +18054,9 @@
 	icon_state = "upp5";
 	name = "Fulcrum"
 	},
-/area/lv624/lazarus/sleep_male)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "uCY" = (
 /turf/open/floor/vault2/west,
 /area/lv624/lazarus/quartstorage)
@@ -16782,7 +18065,9 @@
 	icon_state = "S-corner"
 	},
 /turf/open/shuttle/dropship/can_surgery/medium_grey_single_wide_left_to_right,
-/area/lv624/lazarus/sleep_male)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "uDN" = (
 /obj/structure/flora/bush/ausbushes/grassybush{
 	color = "#64b1fa"
@@ -16817,14 +18102,18 @@
 	pixel_x = -6
 	},
 /turf/open/floor/vault2/west,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "uHF" = (
 /obj/structure/prop/invuln/fire{
 	pixel_x = 8;
 	pixel_y = 10
 	},
 /turf/open/shuttle/dropship/light_grey_single_wide_up_to_down,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "uIK" = (
 /obj/effect/landmark/nightmare{
 	insert_tag = "lv-bridge-east"
@@ -16879,7 +18168,9 @@
 /obj/effect/decal/cleanable/blood,
 /obj/item/weapon/twohanded/fireaxe,
 /turf/open/floor/wood,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "uLw" = (
 /obj/item/stack/rods,
 /turf/open/auto_turf/snow/brown_base/layer1,
@@ -16941,7 +18232,9 @@
 "uOX" = (
 /obj/structure/curtain/red,
 /turf/open/floor/plating/wood_broken4,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "uPA" = (
 /obj/structure/flora/bush/ausbushes/var3/ywflowers,
 /obj/structure/flora/grass/tallgrass/ice,
@@ -16976,7 +18269,9 @@
 	current_rounds = 0
 	},
 /turf/open/shuttle/dropship/can_surgery,
-/area/lv624/lazarus/sleep_male)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "uQC" = (
 /obj/structure/flora/bush/ausbushes/var3/brflowers,
 /obj/structure/flora/jungle/vines{
@@ -17013,7 +18308,9 @@
 	icon_state = "S"
 	},
 /turf/open/floor/strata/multi_tiles/southwest,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "uRN" = (
 /obj/structure/bed,
 /obj/item/bedsheet/purple,
@@ -17045,7 +18342,9 @@
 	pixel_x = 1
 	},
 /turf/open/floor/strata/floor3/east,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "uSU" = (
 /obj/structure/flora/bush/snow{
 	icon_state = "snowbush_3";
@@ -17064,7 +18363,9 @@
 "uUy" = (
 /obj/structure/closet/crate/ammo,
 /turf/open/floor/wood,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "uVo" = (
 /obj/structure/machinery/light{
 	dir = 8
@@ -17121,7 +18422,9 @@
 "uZz" = (
 /obj/effect/decal/cleanable/blood/gibs/robot,
 /turf/open/shuttle/dropship/light_grey_single_wide_up_to_down,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "uZU" = (
 /obj/structure/surface/table/reinforced/prison{
 	color = "#6b675e"
@@ -17159,11 +18462,9 @@
 	ship_tag = "dropship_upp"
 	},
 /turf/open/floor/strata/multi_tiles/southwest,
-/area/lv624/ground/jungle/north_jungle)
-"vbt" = (
-/obj/effect/landmark/structure_spawner/xvx_hive/xeno_core,
-/turf/open/auto_turf/snow/layer0,
-/area/lv624/ground/caves/central_caves)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "vbO" = (
 /obj/structure/flora/bush/snow{
 	icon_state = "snowgrassall_3"
@@ -17286,12 +18587,16 @@
 	},
 /obj/structure/closet/crate/ammo,
 /turf/open/floor/strata/multi_tiles/west,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "vif" = (
 /obj/structure/surface/table/woodentable/poor,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating/wood,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "viF" = (
 /obj/structure/shuttle/part/tornado/transparent{
 	icon_state = "99a"
@@ -17301,7 +18606,9 @@
 	layer = 3.01
 	},
 /turf/open/auto_turf/snow/layer3,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "vjb" = (
 /obj/structure/flora/bush/ausbushes/var3/brflowers,
 /turf/open/auto_turf/snow/layer3,
@@ -17321,7 +18628,9 @@
 /turf/closed/shuttle/dropship3/tornado{
 	icon_state = "83"
 	},
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "vlh" = (
 /obj/structure/bed/chair/comfy/black{
 	dir = 8
@@ -17350,7 +18659,9 @@
 	dir = 4
 	},
 /turf/open/floor/plating/warnplate,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "voD" = (
 /obj/structure/cargo_container/seegson/left,
 /turf/open/floor/plating/platebotc,
@@ -17367,7 +18678,9 @@
 	icon_state = "W"
 	},
 /turf/open/floor/plating/plating_catwalk/strata,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "vqe" = (
 /obj/structure/flora/bush/ausbushes/var3/stalkybush,
 /obj/structure/pipes/standard/simple/hidden/cyan,
@@ -17568,11 +18881,9 @@
 	},
 /obj/effect/landmark/survivor_spawner,
 /turf/open/floor/bluecorner,
-/area/lv624/lazarus/sleep_male)
-"vGe" = (
-/obj/structure/barricade/wooden,
-/turf/open/shuttle/bright_red,
-/area/lv624/lazarus/crashed_ship_containers)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "vGj" = (
 /obj/structure/surface/table/woodentable/fancy,
 /obj/item/storage/bible,
@@ -17588,7 +18899,9 @@
 "vGt" = (
 /obj/item/storage/belt/utility,
 /turf/open/shuttle/dropship/can_surgery/light_grey_single_wide_up_to_down,
-/area/lv624/lazarus/sleep_male)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "vGN" = (
 /turf/open/auto_turf/ice/layer0,
 /area/lv624/ground/caves/south_west_caves)
@@ -17596,7 +18909,9 @@
 /obj/structure/bed/stool,
 /obj/item/storage/backpack,
 /turf/open/floor/plating,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "vHA" = (
 /turf/open/floor/white,
 /area/lv624/lazarus/medbay)
@@ -17617,13 +18932,17 @@
 /obj/structure/window_frame/wood,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating/wood,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "vIM" = (
 /obj/structure/bed,
 /obj/item/bedsheet/blue,
 /obj/structure/machinery/light,
 /turf/open/floor/bluecorner,
-/area/lv624/lazarus/sleep_male)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "vIW" = (
 /obj/structure/girder/reinforced,
 /turf/open/floor/plating,
@@ -17634,7 +18953,9 @@
 	dir = 8
 	},
 /turf/open/shuttle/dropship/can_surgery/medium_grey_single_wide_up_to_down,
-/area/lv624/lazarus/sleep_male)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "vJA" = (
 /obj/structure/lattice{
 	layer = 2.9
@@ -17682,7 +19003,9 @@
 "vMy" = (
 /obj/structure/bed,
 /turf/open/floor/bluecorner,
-/area/lv624/lazarus/sleep_male)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "vML" = (
 /obj/structure/blocker/forcefield/multitile_vehicles,
 /turf/open/floor/cult,
@@ -17721,7 +19044,9 @@
 /turf/closed/shuttle/dropship1/transparent{
 	icon_state = "78"
 	},
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "vOX" = (
 /obj/structure/pipes/standard/simple/hidden/cyan{
 	dir = 4
@@ -17768,7 +19093,9 @@
 	color = "#464847"
 	},
 /turf/open/floor/strata/floor3/east,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "vQE" = (
 /obj/structure/girder/displaced,
 /turf/open/auto_turf/snow/layer3,
@@ -17797,7 +19124,9 @@
 "vTp" = (
 /obj/structure/bed/chair/wheelchair,
 /turf/open/floor/wood,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "vTx" = (
 /obj/item/reagent_container/food/snacks/grown/mushroom/glowshroom{
 	light_on = 1;
@@ -17831,7 +19160,9 @@
 /turf/closed/shuttle/dropship3/tornado{
 	icon_state = "69"
 	},
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "vVH" = (
 /obj/effect/landmark/nightmare{
 	insert_tag = "nexuscenter_barricaded"
@@ -17846,7 +19177,9 @@
 /turf/closed/shuttle/dropship1{
 	icon_state = "73"
 	},
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "vXr" = (
 /obj/structure/machinery/shower{
 	dir = 8
@@ -17873,15 +19206,13 @@
 	opacity = 0
 	},
 /area/lv624/ground/jungle/north_jungle)
-"was" = (
-/obj/structure/closet/crate/freezer/rations,
-/turf/open/floor/wood,
-/area/lv624/ground/jungle/north_jungle)
 "wav" = (
 /obj/structure/closet,
 /obj/item/clothing/glasses/sunglasses,
 /turf/open/floor/bluecorner,
-/area/lv624/lazarus/sleep_male)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "wcv" = (
 /obj/structure/cargo_container/lockmart/mid,
 /turf/open/floor,
@@ -17930,7 +19261,9 @@
 /area/lv624/lazarus/crashed_ship_containers)
 "wee" = (
 /turf/open/floor/plating/plating_catwalk/strata,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "weI" = (
 /obj/item/device/radio/intercom{
 	freerange = 1;
@@ -17947,7 +19280,9 @@
 	can_buckle = 1
 	},
 /turf/open/floor/plating/plating_catwalk/strata,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "wfs" = (
 /obj/structure/flora/bush/ausbushes/ppflowers,
 /turf/open/auto_turf/snow/layer3,
@@ -17967,7 +19302,9 @@
 	name = "secured military crates"
 	},
 /turf/open/shuttle/dropship/can_surgery/light_grey_bottom_right,
-/area/lv624/lazarus/sleep_male)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "whc" = (
 /obj/effect/attach_point/weapon/midway/left_fore,
 /obj/effect/attach_point/weapon/midway/right_fore{
@@ -17981,7 +19318,9 @@
 	},
 /obj/structure/closet/crate/ammo,
 /turf/open/floor/strata/multi_tiles/west,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "whU" = (
 /obj/structure/flora/jungle/vines/light_3{
 	desc = "A frozen mass of twisted vines.";
@@ -18020,7 +19359,9 @@
 /turf/open/shuttle/dropship{
 	icon_state = "floor8"
 	},
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "wjV" = (
 /obj/structure/flora/jungle/vines/light_1{
 	desc = "A frosted mass of twisted vines.";
@@ -18031,7 +19372,9 @@
 "wkf" = (
 /obj/effect/decal/cleanable/blood/drip,
 /turf/open/floor/wood/wood_broken6,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "wkl" = (
 /obj/structure/surface/table,
 /obj/structure/machinery/computer/shuttle/dropship/flight/lz2,
@@ -18042,6 +19385,9 @@
 /obj/effect/landmark/crap_item,
 /obj/structure/machinery/light{
 	dir = 4
+	},
+/obj/structure/machinery/camera/autoname{
+	dir = 8
 	},
 /turf/open/floor/green/northwest,
 /area/lv624/lazarus/fitness)
@@ -18062,7 +19408,9 @@
 	},
 /obj/item/explosive/plastic,
 /turf/open/shuttle/dropship/can_surgery/light_grey_single_wide_up_to_down,
-/area/lv624/lazarus/sleep_male)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "wmA" = (
 /obj/structure/machinery/landinglight/ds1{
 	dir = 8
@@ -18076,7 +19424,9 @@
 "wmK" = (
 /obj/structure/machinery/portable_atmospherics/hydroponics,
 /turf/open/floor/plating/wood_broken2,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "wmQ" = (
 /obj/structure/largecrate/random,
 /obj/structure/machinery/light/small{
@@ -18106,7 +19456,9 @@
 	ship_tag = "dropship_upp"
 	},
 /turf/open/floor/strata/multi_tiles/southwest,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "woO" = (
 /obj/structure/flora/jungle/vines/heavy{
 	color = "#64b1fa";
@@ -18120,7 +19472,9 @@
 /obj/structure/surface/table/woodentable/poor,
 /obj/item/trash/candle,
 /turf/open/floor/plating/wood,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "wqP" = (
 /turf/closed/wall/strata_ice/dirty,
 /area/lv624/ground/caves/south_central_caves)
@@ -18154,7 +19508,9 @@
 	icon_state = "E"
 	},
 /turf/open/floor/plating/plating_catwalk/strata,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "wtp" = (
 /obj/structure/flora/bush/ausbushes/ausbush{
 	color = "#64b1fa"
@@ -18217,7 +19573,9 @@
 	pixel_y = -1
 	},
 /turf/open/floor/plating/plating_catwalk/strata,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "wxT" = (
 /obj/structure/target,
 /turf/open/floor/red/northwest,
@@ -18258,7 +19616,9 @@
 /obj/structure/surface/rack,
 /obj/item/tool/shovel,
 /turf/open/floor/vault2/west,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "wAQ" = (
 /obj/structure/machinery/landinglight/ds2/delayone{
 	dir = 1
@@ -18289,7 +19649,9 @@
 /turf/closed/shuttle/ert{
 	icon_state = "upp21"
 	},
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "wDw" = (
 /obj/structure/window_frame/colony,
 /obj/item/shard,
@@ -18371,7 +19733,9 @@
 	current_rounds = 0
 	},
 /turf/open/shuttle/dropship/can_surgery/light_grey_single_wide_up_to_down,
-/area/lv624/lazarus/sleep_male)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "wHD" = (
 /obj/structure/closet/crate/hydroponics/prespawned,
 /turf/open/floor/green/northwest,
@@ -18387,7 +19751,9 @@
 "wJX" = (
 /obj/structure/bed/alien,
 /turf/open/floor/wood,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "wKi" = (
 /obj/structure/surface/table,
 /obj/item/reagent_container/food/snacks/grown/tomato,
@@ -18409,7 +19775,9 @@
 /turf/closed/shuttle/ert{
 	icon_state = "upp251"
 	},
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "wMa" = (
 /obj/structure/cargo_container/lockmart/left,
 /turf/open/floor,
@@ -18478,7 +19846,9 @@
 "wQF" = (
 /obj/structure/machinery/portable_atmospherics/powered/scrubber,
 /turf/open/floor/plating/warnplate,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "wQH" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -18506,7 +19876,8 @@
 /area/lv624/ground/jungle/north_jungle)
 "wSZ" = (
 /obj/item/device/flashlight/flare/on{
-	fuel_rate = 0.0001
+	fuel_rate = 0.0001;
+	pixel_x = 8
 	},
 /turf/open/auto_turf/snow/layer0,
 /area/lv624/ground/caves/east_caves)
@@ -18523,11 +19894,6 @@
 /obj/item/clothing/gloves/botanic_leather,
 /turf/open/floor/green/northwest,
 /area/lv624/lazarus/fitness)
-"wUc" = (
-/obj/structure/surface/table/woodentable/poor,
-/obj/item/weapon/gun/rifle/mar40,
-/turf/open/floor/wood,
-/area/lv624/ground/jungle/north_jungle)
 "wUe" = (
 /obj/effect/landmark/crap_item,
 /turf/open/floor/warnwhite/east,
@@ -18537,7 +19903,9 @@
 /turf/closed/shuttle/dropship1{
 	icon_state = "43"
 	},
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "wUT" = (
 /obj/effect/landmark/crap_item,
 /turf/open/auto_turf/snow/layer0,
@@ -18561,11 +19929,15 @@
 /obj/structure/surface/table/woodentable/poor,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating/wood_broken2,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "wWm" = (
 /obj/item/weapon/butterfly/switchblade,
 /turf/open/floor/plating,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "wWD" = (
 /obj/structure/closet{
 	density = 0;
@@ -18690,7 +20062,9 @@
 /area/lv624/ground/jungle/north_jungle)
 "xfw" = (
 /turf/closed/wall/r_wall,
-/area/lv624/lazarus/sleep_male)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "xfE" = (
 /obj/structure/window_frame/colony/reinforced,
 /turf/open/floor/plating,
@@ -18698,7 +20072,9 @@
 "xhe" = (
 /obj/structure/bed/chair/wood/normal,
 /turf/open/floor/plating/wood_broken4,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "xhm" = (
 /obj/structure/flora/tree/dead/tree_5,
 /turf/open/auto_turf/ice,
@@ -18744,13 +20120,22 @@
 /area/lv624/ground/jungle/north_jungle)
 "xje" = (
 /obj/structure/surface/table/woodentable/poor,
-/obj/item/tool/kitchen/knife/butcher{
-	pixel_x = -7
-	},
-/obj/item/tool/kitchen/knife/butcher,
 /obj/effect/decal/cleanable/blood,
-/turf/open/floor/wood/wood_broken4,
-/area/lv624/ground/jungle/north_jungle)
+/obj/item/storage/box/matches{
+	pixel_x = 3
+	},
+/obj/item/storage/fancy/cigarettes/kpack{
+	pixel_x = -11;
+	pixel_y = 10
+	},
+/obj/item/tool/candle{
+	pixel_y = 10;
+	pixel_x = 8
+	},
+/turf/open/floor/freezerfloor,
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "xjU" = (
 /obj/structure/disposalpipe/broken{
 	dir = 1
@@ -18869,7 +20254,9 @@
 	dir = 4
 	},
 /turf/open/floor/bluecorner,
-/area/lv624/lazarus/sleep_male)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "xnV" = (
 /obj/structure/blocker/forcefield/multitile_vehicles,
 /turf/open/auto_turf/snow/layer0,
@@ -18903,7 +20290,9 @@
 "xpW" = (
 /obj/structure/machinery/portable_atmospherics/hydroponics,
 /turf/open/floor/plating/wood,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "xqI" = (
 /turf/open/floor/warning/east,
 /area/lv624/ground/jungle/north_jungle)
@@ -18939,7 +20328,9 @@
 /turf/closed/shuttle/dropship3/tornado{
 	icon_state = "24"
 	},
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "xtU" = (
 /obj/structure/flora/jungle/vines/light_3{
 	desc = "A frozen mass of twisted vines.";
@@ -18982,7 +20373,9 @@
 "xvq" = (
 /obj/item/roller,
 /turf/open/shuttle/dropship/can_surgery/light_grey_single_wide_up_to_down,
-/area/lv624/lazarus/sleep_male)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "xwL" = (
 /obj/structure/flora/bush/ausbushes/palebush{
 	color = "#64b1fa"
@@ -19005,7 +20398,9 @@
 	req_access_txt = "100"
 	},
 /turf/open/floor/bluecorner,
-/area/lv624/lazarus/sleep_male)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "xxT" = (
 /obj/structure/prop/rock{
 	icon_state = "uppcrate_stackedalt";
@@ -19099,7 +20494,9 @@
 	pixel_y = 24
 	},
 /turf/open/shuttle/dropship/light_grey_bottom_left,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "xDU" = (
 /obj/structure/stairs/perspective{
 	color = "#b29082";
@@ -19140,7 +20537,9 @@
 /turf/closed/shuttle/dropship1{
 	icon_state = "76"
 	},
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "xGU" = (
 /obj/effect/decal/cleanable/blood/oil/streak,
 /obj/structure/machinery/door_control{
@@ -19207,7 +20606,9 @@
 	networks_transmit = list("UPP")
 	},
 /turf/open/floor/strata/floor3/east,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "xKT" = (
 /obj/item/reagent_container/food/snacks/grown/mushroom/plumphelmet{
 	pixel_x = 8
@@ -19358,7 +20759,9 @@
 /turf/closed/shuttle/dropship3/tornado{
 	icon_state = "104"
 	},
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "xZs" = (
 /obj/structure/pipes/standard/simple/hidden/cyan,
 /obj/effect/landmark/xeno_hive_spawn,
@@ -19411,7 +20814,9 @@
 /obj/item/trash/cheesie,
 /obj/structure/pipes/standard/simple/hidden/cyan,
 /turf/open/floor/bluecorner,
-/area/lv624/lazarus/sleep_male)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "ydE" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/closed/shuttle/ert{
@@ -19445,7 +20850,9 @@
 /area/lv624/ground/jungle/north_jungle)
 "yeQ" = (
 /turf/open/floor/bluecorner,
-/area/lv624/lazarus/sleep_male)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "yfl" = (
 /obj/item/device/sentry_computer{
 	pixel_y = 5
@@ -19507,7 +20914,9 @@
 "ykC" = (
 /obj/structure/bed/stool,
 /turf/open/floor/plating,
-/area/lv624/ground/jungle/north_jungle)
+/area/lv624/lazarus/sleep_male{
+	name = "\improper unknown"
+	})
 "ylN" = (
 /obj/structure/surface/table,
 /obj/item/clothing/head/chefhat,
@@ -32242,7 +33651,7 @@ sOa
 sOa
 sOa
 sOa
-sOa
+acE
 sOa
 sOa
 sOa
@@ -34192,7 +35601,7 @@ kXJ
 kXJ
 awx
 awx
-hMr
+abV
 hMr
 nnO
 hMr
@@ -36658,7 +38067,7 @@ sOa
 sOa
 phR
 phR
-kXJ
+acA
 dNJ
 dNJ
 kXJ
@@ -36738,10 +38147,10 @@ qTT
 kXJ
 sOa
 sOa
-dEK
-dEK
-dEK
-dEK
+acv
+acv
+acv
+acv
 dNJ
 kXJ
 kXJ
@@ -36852,7 +38261,7 @@ eTr
 eTr
 lPK
 eTr
-gKD
+abW
 der
 der
 rij
@@ -37183,11 +38592,11 @@ kXJ
 sOa
 phR
 tOU
-dEK
+acv
 dNz
 lKX
-dEK
-dEK
+acv
+acv
 dNJ
 kXJ
 phR
@@ -37632,8 +39041,8 @@ swi
 fvD
 abB
 dFp
-dEK
-dEK
+acv
+acv
 dNJ
 sOa
 kXJ
@@ -38517,10 +39926,10 @@ phR
 kXJ
 sOa
 sOa
-dEK
-dEK
+acv
+acv
 abB
-oid
+acw
 oid
 dNJ
 aKo
@@ -38961,8 +40370,8 @@ phR
 phR
 kXJ
 dNJ
-dEK
-dEK
+acv
+acv
 rjS
 gFr
 kCv
@@ -39405,12 +40814,12 @@ kXJ
 dNJ
 dNJ
 dNJ
-dEK
-dEK
-dEK
+acv
+acv
+acv
 rjS
-kNi
-kNi
+acx
+acx
 dNJ
 dNJ
 dNJ
@@ -39848,14 +41257,14 @@ kXJ
 pAG
 dNJ
 dNJ
-dEK
-dEK
-dEK
-dEK
-dEK
+acv
+acv
+acv
+acv
+acv
 rjS
 qiu
-qbl
+acy
 dNJ
 dNJ
 dNJ
@@ -40293,17 +41702,17 @@ kGQ
 kXJ
 dNJ
 dNJ
-sEC
+acz
 nGf
-oid
+acw
 rjS
-dEK
-gFr
+acv
+acB
 kCv
-kNi
-oid
+acx
+acw
 cdu
-dEK
+acv
 dNJ
 phR
 phR
@@ -40738,13 +42147,13 @@ kXJ
 kXJ
 lXu
 dNJ
-sEC
+acz
 xpW
-qbl
+acy
 cdu
 uOX
-kNi
-oid
+acx
+acw
 kCv
 xhe
 wpe
@@ -40839,7 +42248,7 @@ mLU
 kXJ
 kXJ
 fgJ
-kXJ
+aca
 kXJ
 kXJ
 ngb
@@ -41183,15 +42592,15 @@ kXJ
 kXJ
 dNJ
 dNJ
-sEC
+acz
 wmK
 xpW
 xpW
-dEK
+acv
 kCv
-qbl
+acy
 pyz
-kNi
+acx
 tVi
 pMb
 dNJ
@@ -41372,7 +42781,7 @@ kXJ
 kXJ
 ojY
 ojY
-oUY
+adf
 oUY
 oUY
 oUY
@@ -41628,17 +43037,17 @@ kXJ
 qTT
 kXJ
 kXJ
-dEK
+acv
 fuI
 fuI
-dEK
-dEK
-dEK
-dEK
+acv
+acv
+acv
+acv
 jAm
-dEK
-dEK
-dEK
+acv
+acv
+acv
 dNJ
 kXJ
 kXJ
@@ -41912,7 +43321,7 @@ phR
 phR
 phR
 phR
-sOa
+acT
 sOa
 sOa
 kXJ
@@ -42076,7 +43485,7 @@ kXJ
 kXJ
 dNJ
 dNJ
-dEK
+acv
 wpe
 eqe
 kCv
@@ -42275,7 +43684,7 @@ oUY
 oUY
 nhE
 nhE
-nhE
+adc
 nhE
 nhE
 nhE
@@ -42521,7 +43930,7 @@ kXJ
 kXJ
 dNJ
 dNJ
-dEK
+acv
 rEs
 vif
 aum
@@ -42966,12 +44375,12 @@ kXJ
 kXJ
 kXJ
 kXJ
-dEK
-sEC
-sEC
-sEC
+acv
+acz
+acz
+acz
 hoM
-dEK
+acv
 kXJ
 kXJ
 kXJ
@@ -43137,7 +44546,7 @@ kXJ
 kXJ
 kXJ
 kXJ
-kXJ
+adj
 kXJ
 kXJ
 kXJ
@@ -43562,13 +44971,13 @@ thY
 jqS
 clG
 clG
-clG
-clG
-clG
-clG
-clG
-clG
-clG
+acv
+acv
+acv
+acv
+acv
+acv
+acv
 clG
 clG
 clG
@@ -44007,13 +45416,13 @@ thY
 jqS
 clG
 clG
-clG
-clG
-clG
-clG
-clG
-clG
-clG
+acv
+aea
+adG
+adP
+adG
+ads
+acv
 clG
 clG
 clG
@@ -44022,7 +45431,7 @@ clG
 clG
 clG
 kXJ
-kXJ
+dNJ
 kXJ
 kXJ
 kXJ
@@ -44452,13 +45861,13 @@ thY
 jqS
 clG
 clG
-clG
-clG
-clG
-clG
-clG
-clG
-clG
+aem
+adw
+adH
+adH
+adH
+adt
+acv
 clG
 clG
 clG
@@ -44466,8 +45875,8 @@ phR
 kXJ
 kXJ
 kXJ
-kXJ
-kXJ
+dNJ
+dNJ
 kXJ
 kXJ
 kXJ
@@ -44556,7 +45965,7 @@ wqP
 wqP
 wqP
 wzt
-stK
+acU
 stK
 stK
 dGk
@@ -44897,13 +46306,13 @@ thY
 jqS
 clG
 clG
-clG
-clG
-clG
-clG
-clG
-clG
-clG
+acv
+aeb
+adH
+adQ
+adH
+adu
+acv
 clG
 clG
 phR
@@ -44911,7 +46320,7 @@ phR
 kXJ
 kXJ
 kXJ
-kXJ
+dNJ
 kXJ
 kXJ
 kXJ
@@ -45342,22 +46751,22 @@ thY
 jqS
 clG
 clG
-clG
-clG
-clG
-clG
-clG
-clG
-clG
+acv
+aec
+adH
+adH
+adI
+adv
+acv
 clG
 phR
 phR
 kXJ
 kXJ
 kXJ
-kXJ
-kXJ
-kXJ
+dNJ
+dNJ
+dNJ
 kXJ
 kXJ
 kXJ
@@ -45787,21 +47196,21 @@ thY
 jqS
 clG
 clG
-clG
-clG
-clG
-clG
-clG
-clG
-clG
+acv
+aed
+adX
+adH
+adH
+adw
+acv
 phR
 phR
 phR
 kXJ
 kXJ
-kXJ
-kXJ
-kXJ
+dNJ
+dNJ
+dNJ
 kXJ
 oKo
 kXJ
@@ -46232,19 +47641,19 @@ thY
 jqS
 clG
 clG
-clG
-clG
-clG
-clG
-clG
-clG
+acv
+aee
+adY
+adH
+adJ
+adx
+acv
 phR
 phR
-phR
 kXJ
 kXJ
-kXJ
-kXJ
+dNJ
+dNJ
 kXJ
 kXJ
 kXJ
@@ -46677,19 +48086,19 @@ thY
 jqS
 clG
 clG
-clG
-clG
-clG
-clG
-clG
+acv
+aeg
+adH
+adH
+adH
+ady
+acv
 phR
-phR
-phR
-kXJ
-kXJ
-kXJ
+dNJ
+dNJ
+adn
+dNJ
 xUJ
-kXJ
 kwN
 kXJ
 kXJ
@@ -46945,7 +48354,7 @@ kXJ
 kXJ
 dNJ
 dEK
-eTD
+acC
 oid
 kNi
 eTD
@@ -47122,18 +48531,18 @@ thY
 jqS
 clG
 clG
-clG
-clG
-clG
-clG
-clG
+aem
+aeh
+adH
+adH
+adK
+adA
+acv
 phR
-phR
-phR
-kXJ
-kXJ
-kXJ
-kXJ
+dNJ
+dNJ
+dNJ
+dNJ
 kXJ
 kXJ
 kXJ
@@ -47567,15 +48976,15 @@ thY
 jqS
 clG
 clG
-dEK
-dEK
-dEK
-dEK
-dEK
-dEK
-dEK
+acv
+aei
+adH
+adH
+adH
+adB
+acv
 phR
-opi
+phR
 kXJ
 kXJ
 kXJ
@@ -48012,13 +49421,13 @@ thY
 jqS
 clG
 clG
-dEK
+acv
 aCc
-kpH
-qpn
-qpn
+adH
+adH
+adH
 flU
-dEK
+acv
 phR
 phR
 phR
@@ -48051,7 +49460,7 @@ kXJ
 lKw
 kXJ
 kXJ
-kXJ
+add
 kXJ
 clG
 wsI
@@ -48457,13 +49866,13 @@ thY
 jqS
 clG
 clG
-dEK
+acv
 xje
-qPd
-qpn
-qpn
+adH
+adH
+adH
 ieD
-dEK
+acv
 phR
 phR
 phR
@@ -48902,13 +50311,13 @@ thY
 jqS
 clG
 clG
-dEK
+acv
 hUv
-qpn
-fDa
-qpn
+adH
+adH
+adJ
 lHw
-dEK
+acv
 phR
 phR
 kXJ
@@ -49347,16 +50756,16 @@ thY
 jqS
 clG
 clG
-dEK
+acv
 rUL
-qpn
-kpH
-qpn
-oHI
-dEK
-dEK
-dEK
-kXJ
+adH
+adH
+adL
+acv
+acv
+acv
+acv
+acA
 kXJ
 uAR
 tHl
@@ -49792,15 +51201,15 @@ thY
 jqS
 clG
 clG
-dEK
+aem
 dBX
+adJ
+adH
+adM
+acv
 qpn
-kcI
 qpn
-qpn
-qpn
-qpn
-dEK
+acv
 kXJ
 kXJ
 kXJ
@@ -50237,16 +51646,16 @@ thY
 jqS
 clG
 clG
-dEK
-tdN
-fDa
-qpn
-qPd
-qpn
-kpH
+acv
+adJ
+adZ
+adR
+adN
+acv
+ado
 adT
-dEK
-kXJ
+acv
+dYX
 kXJ
 tHl
 tHl
@@ -50681,13 +52090,13 @@ thY
 (71,1,1) = {"
 jqS
 clG
-dEK
-dEK
+clG
+acv
 pLr
-wUc
-qpn
-qpn
-fDa
+acv
+acv
+acv
+acv
 qPd
 adT
 qXT
@@ -51126,14 +52535,14 @@ thY
 (72,1,1) = {"
 jqS
 clG
-dEK
-rGv
-qpn
-kpH
-qpn
+acv
+acv
+aej
+acv
+adS
 fWy
 qpn
-kcI
+adp
 adT
 qXT
 tHl
@@ -51571,16 +52980,16 @@ thY
 (73,1,1) = {"
 jqS
 clG
-dEK
-aeI
-qpn
-qpn
-qpn
+acv
+adU
+adE
+acv
+adU
 wkf
 fsG
 qpn
 qpn
-dEK
+acv
 tHl
 man
 tHl
@@ -51632,7 +53041,7 @@ gAO
 tei
 tei
 gAO
-gAO
+acY
 gAO
 gAO
 gAO
@@ -52016,14 +53425,14 @@ thY
 (74,1,1) = {"
 jqS
 clG
-dEK
-was
-kcI
+acv
+acv
+aek
+acv
+adV
 qpn
-qPd
 qpn
-qpn
-qen
+adq
 qpn
 iSm
 tHl
@@ -52088,7 +53497,7 @@ gAO
 gAO
 gAO
 gAO
-gAO
+acX
 gAO
 gAO
 gAO
@@ -52461,16 +53870,16 @@ thY
 (75,1,1) = {"
 jqS
 clG
-dEK
+acv
+aen
 qpn
 qpn
-qpn
-kpH
+ado
 ead
 qpn
 qpn
 qpn
-dEK
+acv
 tHl
 tHl
 tHl
@@ -52496,7 +53905,7 @@ kXJ
 kXJ
 kXJ
 kXJ
-kXJ
+qTT
 kXJ
 kXJ
 kXJ
@@ -52906,8 +54315,8 @@ thY
 (76,1,1) = {"
 jqS
 clG
-dEK
-qpn
+acv
+aeo
 qpn
 jjf
 hrU
@@ -52922,10 +54331,10 @@ tHl
 tHl
 tHl
 tHl
-abH
-abw
-abw
-aaX
+hYq
+qzK
+qzK
+abX
 lhS
 oZs
 xbj
@@ -52961,7 +54370,7 @@ tei
 tei
 tei
 gAO
-aDL
+tei
 gAO
 gAO
 gAO
@@ -53214,7 +54623,7 @@ bFe
 dTB
 glr
 cJZ
-glr
+acp
 ufY
 ipv
 alg
@@ -53351,9 +54760,9 @@ thY
 (77,1,1) = {"
 jqS
 clG
-dEK
-qpn
-qen
+acv
+aep
+adr
 jjf
 aDw
 bYt
@@ -53366,18 +54775,18 @@ tHl
 tHl
 tHl
 uLI
-abN
-abJ
-abx
-abx
-aaY
-aaQ
-aaQ
-aaQ
-aaQ
-aaQ
-aaQ
-aaX
+fKQ
+maN
+ggE
+ggE
+oky
+qWL
+qWL
+qWL
+qWL
+qWL
+qWL
+abX
 lhS
 muL
 oZs
@@ -53401,7 +54810,7 @@ wsI
 tei
 wsI
 tei
-gAO
+acY
 tei
 tei
 tei
@@ -53516,17 +54925,17 @@ kXJ
 qrS
 aUn
 jgP
-qtR
+acI
 iXu
 aKr
 dyC
 jEd
 qei
 uQv
-uQv
+acH
 qcm
 pqp
-uQv
+acH
 tcg
 vAc
 hdl
@@ -53569,7 +54978,7 @@ kXJ
 kXJ
 dNJ
 kXJ
-kXJ
+aca
 phR
 phR
 kXJ
@@ -53663,7 +55072,7 @@ jBY
 xDI
 daL
 pbG
-cJZ
+acm
 luY
 pWR
 vej
@@ -53796,9 +55205,9 @@ thY
 (78,1,1) = {"
 jqS
 clG
-dEK
-kpH
-qPd
+acv
+aeq
+adF
 jjf
 jWQ
 fsy
@@ -53808,24 +55217,24 @@ dzV
 qXT
 tHl
 tHl
-abN
-aaQ
-aaQ
-abO
+fKQ
+qWL
+qWL
+wCb
 jkU
-abC
-aaN
-abv
-abj
-abt
-abn
-abj
-abg
-abe
-aaY
-aaQ
-aaQ
-aaL
+vbo
+eSw
+wee
+kCq
+blN
+ktj
+kCq
+cik
+aRB
+oky
+qWL
+qWL
+qxK
 tHl
 tHl
 kXJ
@@ -53851,10 +55260,10 @@ tei
 tei
 tei
 tei
-aDL
 tei
 tei
-pnF
+tei
+gAO
 tei
 tei
 tei
@@ -53960,7 +55369,7 @@ uxj
 jVm
 hnO
 tCE
-rvL
+acK
 tPp
 eFM
 rvL
@@ -53968,10 +55377,10 @@ rvL
 pgF
 cEZ
 npy
-aKr
-aKr
-iXu
-qtR
+act
+act
+acM
+acI
 pOb
 sJE
 pPC
@@ -54100,16 +55509,16 @@ cWm
 nNt
 hSX
 pRB
-csY
-cJZ
+acs
+acm
 exT
 cJZ
 csY
 pbu
 nuU
-jBY
+acl
 spU
-jBY
+acl
 dIL
 kXJ
 kXJ
@@ -54241,36 +55650,36 @@ thY
 (79,1,1) = {"
 jqS
 clG
-dEK
+acv
+aet
+qpn
+ado
+qpn
+adq
 qpn
 qpn
-kpH
 qpn
-qen
-qpn
-qpn
-qpn
-dEK
+acv
 tHl
 myq
-abO
-abS
+wCb
+xKM
 rVY
-abP
-aaS
-abD
-aby
-abp
-abp
-abp
-abp
+dme
+lUr
+uSO
+gCU
+izF
+izF
+izF
+izF
 uxD
-abh
-abf
-aaZ
-aaV
-aaR
-aaM
+gPB
+vQx
+lXi
+iTB
+wsS
+gdZ
 tHl
 udH
 udH
@@ -54405,18 +55814,18 @@ hkc
 utl
 vOg
 vwx
-aKr
+act
 iVb
 jDO
-jEd
+acP
 dyC
 cYh
 sqK
 rvL
 uwP
-rvL
-rvL
-rvL
+acK
+acK
+acK
 aoS
 vAc
 pZb
@@ -54546,15 +55955,15 @@ cea
 nGV
 qfX
 bZP
-jBY
+acl
 jBY
 bCv
 jBY
 gzc
 fIS
 qmN
-cJZ
-cJZ
+acm
+acm
 dIL
 aYU
 kXJ
@@ -54686,36 +56095,36 @@ thY
 (80,1,1) = {"
 jqS
 clG
-dEK
-qpn
+acv
+aeu
 qpn
 iQY
 uLs
 qpn
+adC
+adp
 qpn
-kcI
-qpn
-dEK
+acv
 tHl
 tHl
-abP
-abT
-aaS
-abQ
-abK
-abE
-abz
-abq
-abq
-abq
-abq
+dme
+jwy
+lUr
+kJd
+wxP
+qCL
+aCm
+cfb
+cfb
+cfb
+cfb
 esI
-abi
-abf
-abb
-aaS
-aaS
-aaN
+uRG
+vQx
+bWZ
+lUr
+lUr
+eSw
 tHl
 udH
 udH
@@ -54741,7 +56150,7 @@ tei
 gAO
 gAO
 gAO
-kNl
+gAO
 gAO
 tei
 gAO
@@ -54857,12 +56266,12 @@ qUj
 czC
 drX
 bIO
-juQ
+acL
 iXu
 juQ
-aKr
-juQ
-aKr
+act
+acL
+act
 dQz
 vAc
 dNJ
@@ -54989,16 +56398,16 @@ kXJ
 kXJ
 uKe
 tyV
-ufY
-aKr
-obG
+acu
+act
+acr
 glr
 obG
 akZ
 ufY
 nww
 pTg
-hrc
+acn
 qyo
 xYl
 dTo
@@ -55131,9 +56540,9 @@ thY
 (81,1,1) = {"
 jqS
 clG
-dEK
+acv
 fpX
-qen
+adq
 qpn
 iQY
 bhQ
@@ -55143,24 +56552,24 @@ adT
 qXT
 tHl
 tHl
-abO
-abU
+wCb
+nfL
 hXI
-abP
-aaS
-abF
-aaN
-abr
-abr
-abr
-abr
-abk
-abh
-abf
+dme
+lUr
+mpi
+eSw
+rim
+rim
+rim
+rim
+czr
+gPB
+vQx
 rzd
-aaW
-aaT
-aaO
+tEg
+vpY
+oCW
 tHl
 tHl
 udH
@@ -55219,7 +56628,7 @@ wqP
 wqP
 wqP
 wqP
-jry
+acW
 ait
 ait
 wqP
@@ -55298,16 +56707,16 @@ gYj
 dhR
 dhR
 avI
-jEd
-dyC
+acP
+acQ
 drX
-sqK
+acO
 jEK
 rvL
 rvL
 fyD
-rvL
-aKr
+acK
+act
 dQz
 ouT
 kXJ
@@ -55576,36 +56985,36 @@ thY
 (82,1,1) = {"
 jqS
 clG
-dEK
-qen
+acv
+aev
 qpn
 vTp
-qen
+adq
 qpn
-qpn
+adE
 uUy
 adT
 qXT
 man
 tHl
-abR
-aaU
-aaU
-abO
+seU
+kob
+kob
+wCb
 kqw
-abG
-aaN
-abv
-abm
-abu
-abs
-abm
-abg
-abe
-abc
-aaU
-aaU
-aaP
+woM
+eSw
+wee
+wfi
+iAd
+dBE
+wfi
+cik
+aRB
+tYZ
+kob
+kob
+jGW
 kXJ
 tHl
 tHl
@@ -55632,19 +57041,19 @@ gAO
 gAO
 gAO
 gAO
-vbt
-gAO
-tei
-tei
-tei
-tei
-tei
-tei
-tei
-tei
 gAO
 gAO
-bus
+tei
+tei
+tei
+tei
+tei
+tei
+tei
+tei
+gAO
+gAO
+acY
 gAO
 gAO
 gAO
@@ -55751,7 +57160,7 @@ jWU
 huX
 qtR
 iYW
-iXu
+acM
 ruB
 bGY
 fkq
@@ -55874,7 +57283,7 @@ dNJ
 dNJ
 dEK
 dEK
-kXJ
+acA
 kXJ
 jRe
 kXJ
@@ -56021,9 +57430,9 @@ thY
 (83,1,1) = {"
 jqS
 clG
-dEK
-qpn
-qpn
+acv
+aew
+ael
 qpn
 qpn
 qpn
@@ -56036,18 +57445,18 @@ tHl
 tHl
 tHl
 whc
-abR
-abL
-abA
-abA
-abc
-aaU
-aaU
-aaU
-aaU
-aaU
-aaU
-abd
+seU
+mjg
+gmD
+gmD
+tYZ
+kob
+kob
+kob
+kob
+kob
+kob
+abY
 heG
 edU
 qEu
@@ -56187,12 +57596,12 @@ xGq
 mlg
 saT
 ujo
-aKr
-aKr
-dyC
-jEd
+acR
+act
+acQ
+acP
 pwH
-fWe
+acN
 fWe
 fki
 lio
@@ -56380,7 +57789,7 @@ kXJ
 kXJ
 cNP
 cNP
-iFd
+ace
 vHA
 vHA
 vHA
@@ -56466,26 +57875,26 @@ thY
 (84,1,1) = {"
 jqS
 clG
-dEK
-dEK
-dEK
-dEK
+acv
+acv
+acv
+acv
 ndo
-dEK
+acv
 ndo
-dEK
-dEK
-dEK
+acv
+acv
+acv
 tHl
 xKL
 tHl
 tHl
 tHl
 tHl
-abM
-abw
-abw
-abd
+wLC
+qzK
+qzK
+abY
 heG
 qEu
 xbj
@@ -56632,7 +58041,7 @@ iij
 vXj
 sWd
 hOQ
-hpu
+acS
 hpu
 fum
 uWr
@@ -56912,12 +58321,12 @@ thY
 jqS
 clG
 clG
-dEK
+acv
 wJX
 qpn
-fDa
-dEK
-kpH
+adW
+acv
+ado
 qpn
 iAM
 qXT
@@ -56946,7 +58355,7 @@ kXJ
 kXJ
 kXJ
 hPc
-jdV
+adg
 der
 phR
 clG
@@ -57097,7 +58506,7 @@ kXJ
 kXJ
 kXJ
 phR
-sOa
+acE
 sOa
 sOa
 phR
@@ -57357,12 +58766,12 @@ thY
 jqS
 clG
 clG
-dEK
+acv
 aWB
-qpn
+adE
 fxT
-dEK
-qPd
+acv
+adF
 qpn
 mOu
 qXT
@@ -57802,13 +59211,13 @@ thY
 jqS
 clG
 clG
-dEK
+acv
 wJX
 qpn
 iYX
-dEK
+acv
 qpn
-qen
+adr
 iAM
 qXT
 tHl
@@ -57854,7 +59263,7 @@ wsI
 wsI
 gAO
 gAO
-bus
+acY
 gAO
 tei
 tei
@@ -58247,7 +59656,7 @@ thY
 jqS
 clG
 clG
-dEK
+acv
 kkI
 biw
 biw
@@ -58255,7 +59664,7 @@ iSm
 biw
 biw
 clb
-dEK
+acv
 kXJ
 kXJ
 kXJ
@@ -58692,16 +60101,16 @@ thY
 jqS
 clG
 clG
-dEK
-dEK
+acv
+acv
 qXT
 qXT
-dEK
+acv
 qXT
 qXT
-dEK
-dEK
-kXJ
+acv
+acv
+acA
 kXJ
 kXJ
 udH
@@ -59199,7 +60608,7 @@ gAO
 gAO
 gAO
 gAO
-gAO
+acY
 gAO
 gAO
 gAO
@@ -60477,7 +61886,7 @@ clG
 clG
 clG
 kXJ
-kXJ
+add
 kXJ
 kXJ
 kXJ
@@ -60937,7 +62346,7 @@ nNr
 uXe
 jju
 lQX
-udH
+adk
 udH
 udH
 udH
@@ -61845,7 +63254,7 @@ phR
 kXJ
 kXJ
 kXJ
-tHl
+ade
 tHl
 clG
 wsI
@@ -62182,7 +63591,7 @@ dNJ
 dNJ
 sxo
 sxo
-wdS
+acc
 jtT
 vTD
 jtT
@@ -62768,7 +64177,7 @@ gAO
 gAO
 tei
 tei
-gAO
+acY
 wsI
 wsI
 wqP
@@ -63404,7 +64813,7 @@ dNJ
 dQz
 dQz
 aai
-aag
+acD
 phR
 phR
 phR
@@ -63601,8 +65010,8 @@ wSU
 udH
 udH
 fuG
-tHl
-tHl
+adi
+adi
 udH
 xxT
 udH
@@ -63778,9 +65187,9 @@ kXJ
 phR
 phR
 phR
-dEK
-dEK
-dEK
+acv
+acv
+acv
 phR
 phR
 phR
@@ -64046,8 +65455,8 @@ uXe
 dNJ
 udH
 iFq
-tHl
-tHl
+adi
+adi
 udH
 udH
 udH
@@ -64222,11 +65631,11 @@ phR
 kXJ
 phR
 phR
-dEK
+acv
 odq
 aoE
-kNi
-dEK
+acx
+acv
 kXJ
 kXJ
 phR
@@ -64519,7 +65928,7 @@ tHl
 clG
 clG
 wsI
-bus
+acY
 gAO
 gAO
 gAO
@@ -64667,10 +66076,10 @@ phR
 kXJ
 kXJ
 phR
-dEK
+acv
 wWb
 seY
-eTD
+acF
 pvp
 kXJ
 qTT
@@ -64935,15 +66344,15 @@ dNJ
 lQX
 dNJ
 udH
-tHl
-tHl
-tHl
+adl
+adi
+adi
 udH
 udH
 udH
-tHl
-tHl
-tHl
+adl
+adi
+adi
 dQz
 lfm
 qbk
@@ -65112,11 +66521,11 @@ fir
 kXJ
 phR
 phR
-dEK
-oid
-qbl
+acv
+acw
+acy
 cdu
-dEK
+acv
 phR
 kXJ
 kXJ
@@ -65382,13 +66791,13 @@ udH
 udH
 iFq
 iFq
-tHl
+adi
 udH
 udH
 udH
 iFq
 buX
-tHl
+adi
 dQz
 dQz
 tHl
@@ -65557,11 +66966,11 @@ umK
 fir
 phR
 phR
-dEK
+acv
 cdu
-oid
+acw
 nVo
-dEK
+acv
 phR
 phR
 kXJ
@@ -65823,7 +67232,7 @@ kXJ
 udH
 udH
 lQX
-udH
+adk
 udH
 udH
 udH
@@ -66002,11 +67411,11 @@ umK
 phR
 phR
 phR
-dEK
-qbl
+acv
+acy
 ost
 aum
-dEK
+acv
 phR
 phR
 kXJ
@@ -66262,7 +67671,7 @@ clG
 clG
 clG
 kXJ
-kXJ
+add
 kXJ
 kXJ
 udH
@@ -66276,9 +67685,9 @@ udH
 udH
 udH
 udH
-fuG
-tHl
-tHl
+adm
+adi
+adi
 rFo
 dQz
 tHl
@@ -66723,7 +68132,7 @@ udH
 udH
 fuG
 fuG
-tHl
+adi
 dXM
 dQz
 tHl
@@ -67604,8 +69013,8 @@ udH
 udH
 wSU
 fuG
-tHl
-tHl
+adi
+adi
 udH
 udH
 udH
@@ -67677,7 +69086,7 @@ kXJ
 kXJ
 kXJ
 kXJ
-kXJ
+aca
 kXJ
 dNJ
 kXJ
@@ -67903,7 +69312,7 @@ kXJ
 kXJ
 phR
 aMy
-jdV
+aco
 iFj
 jdV
 jdV
@@ -68048,9 +69457,9 @@ kXJ
 udH
 udH
 wSU
-tHl
-tHl
-tHl
+adl
+adi
+adi
 udH
 udH
 udH
@@ -68122,12 +69531,12 @@ kXJ
 kXJ
 kXJ
 kXJ
-fGB
-fGB
+sJD
+sJD
 jIo
-fGB
-fGB
-fGB
+sJD
+sJD
+sJD
 dNJ
 kXJ
 phR
@@ -68553,7 +69962,7 @@ cBo
 eUX
 wsI
 wsI
-cBo
+acZ
 ixR
 eUX
 eUX
@@ -68567,12 +69976,12 @@ phR
 sIr
 kXJ
 kXJ
-fGB
+sJD
 uFO
-hal
-hal
+acV
+acV
 dlU
-fGB
+sJD
 czD
 dNJ
 sOa
@@ -69012,12 +70421,12 @@ phR
 fEs
 kXJ
 kXJ
-fGB
+sJD
 aPR
-hal
-hal
+acV
+acV
 eeb
-fGB
+sJD
 kXJ
 dNJ
 sOa
@@ -69048,7 +70457,7 @@ kXJ
 sOa
 phR
 phR
-sOa
+acT
 kXJ
 kXJ
 kXJ
@@ -69424,7 +70833,7 @@ gAO
 tei
 tei
 tei
-bus
+acY
 gAO
 gAO
 gAO
@@ -69457,12 +70866,12 @@ kXJ
 kXJ
 kXJ
 kXJ
-fGB
+sJD
 keF
-hal
-hal
+acV
+acV
 lGt
-fGB
+sJD
 kXJ
 dNJ
 sOa
@@ -69902,12 +71311,12 @@ kXJ
 kXJ
 kXJ
 kXJ
-fGB
+sJD
 uhw
-hal
-hal
+acV
+acV
 uoo
-fGB
+sJD
 kXJ
 dNJ
 sOa
@@ -70150,11 +71559,11 @@ udH
 udH
 udH
 tHl
-tHl
-fGB
-fGB
+ack
+sJD
+sJD
 oad
-fGB
+sJD
 tHl
 xbj
 xbj
@@ -70347,12 +71756,12 @@ kXJ
 kXJ
 kXJ
 kXJ
-fGB
+sJD
 wAk
 lhY
 bMr
 kpZ
-fGB
+sJD
 kXJ
 dNJ
 phR
@@ -70596,10 +72005,10 @@ udH
 udH
 udH
 tHl
-fGB
+sJD
 qyB
-dmZ
-fGB
+acg
+sJD
 tHl
 xbj
 xbj
@@ -70792,12 +72201,12 @@ kXJ
 kXJ
 kXJ
 kXJ
-fGB
-fGB
-fGB
-fGB
-fGB
-fGB
+sJD
+sJD
+sJD
+sJD
+sJD
+sJD
 kXJ
 dNJ
 kXJ
@@ -71201,7 +72610,7 @@ wsI
 wsI
 wsI
 wsI
-gAO
+adb
 tei
 tei
 wsI
@@ -71625,7 +73034,7 @@ kXJ
 kXJ
 kXJ
 kXJ
-kXJ
+qTT
 kXJ
 kXJ
 clG
@@ -72133,7 +73542,7 @@ dNJ
 kXJ
 kXJ
 kXJ
-nCU
+kXJ
 dNJ
 kXJ
 kXJ
@@ -72376,10 +73785,10 @@ dNJ
 dNJ
 dNJ
 dNJ
-fGB
+sJD
 oWX
 knT
-fGB
+sJD
 luB
 xbj
 xbj
@@ -72821,10 +74230,10 @@ dNJ
 dNJ
 dNJ
 dNJ
-fGB
+sJD
 tir
 knT
-fGB
+sJD
 tHl
 xbj
 xbj
@@ -73265,8 +74674,8 @@ dNJ
 dNJ
 dNJ
 dNJ
-fGB
-fGB
+sJD
+sJD
 jav
 knT
 goy
@@ -73457,7 +74866,7 @@ ydB
 oSF
 jtc
 fkx
-oxz
+vpL
 rZc
 nSB
 lFb
@@ -73710,9 +75119,9 @@ dNJ
 dNJ
 inR
 dNJ
-fGB
+sJD
 sdS
-eTr
+aci
 kwR
 goy
 tHl
@@ -73763,7 +75172,7 @@ ngb
 kXJ
 dft
 xrL
-pKP
+acb
 dfE
 wMb
 wMb
@@ -73901,7 +75310,7 @@ qAI
 yeH
 tPj
 paN
-vGe
+fkx
 fHd
 omJ
 eUk
@@ -74349,7 +75758,7 @@ gZJ
 crE
 rSt
 tSR
-mQi
+eUk
 tQK
 dNJ
 oBf
@@ -74668,7 +76077,7 @@ jUW
 uVo
 eUE
 jxw
-mAx
+abZ
 wMb
 lQH
 lQH
@@ -74792,7 +76201,7 @@ wzy
 xAE
 vHE
 gCt
-vGe
+fkx
 gTY
 rWp
 rWp
@@ -75047,9 +76456,9 @@ dNJ
 dNJ
 goy
 nkv
-eTr
+aci
 knT
-fGB
+sJD
 tHl
 xbj
 xbj
@@ -75490,11 +76899,11 @@ kXJ
 dNJ
 dNJ
 dNJ
-fGB
+sJD
 nib
 enF
 knT
-fGB
+sJD
 myq
 xbj
 faw
@@ -75936,8 +77345,8 @@ dNJ
 dNJ
 dNJ
 goy
-fqx
-eTr
+acj
+aci
 vmr
 sIb
 mUb
@@ -76381,8 +77790,8 @@ kXJ
 dNJ
 dNJ
 goy
-fqx
-eTr
+acj
+aci
 jnM
 sIb
 mUb
@@ -77270,11 +78679,11 @@ kXJ
 kXJ
 dNJ
 dNJ
-fGB
+sJD
 mgB
 uiU
-hZm
-fGB
+ach
+sJD
 tHl
 xbj
 xbj
@@ -77715,11 +79124,11 @@ phR
 kXJ
 dNJ
 dNJ
-fGB
+sJD
 goy
 bkD
 goy
-fGB
+sJD
 tHl
 cwJ
 xbj
@@ -78734,7 +80143,7 @@ lfH
 lfH
 lfH
 lfH
-qxs
+adh
 qxs
 qxs
 qxs
@@ -83201,7 +84610,7 @@ lfH
 lfH
 lfH
 lfH
-qxs
+adh
 qxs
 qxs
 qxs
@@ -83665,7 +85074,7 @@ rNv
 rNv
 rNv
 ewu
-rNv
+ada
 bvK
 bvK
 bvK
@@ -85794,7 +87203,7 @@ eTr
 hYq
 qzK
 qzK
-kQm
+abX
 lhS
 oZs
 tHl
@@ -86246,7 +87655,7 @@ qWL
 qWL
 qWL
 qWL
-kQm
+abX
 lhS
 muL
 oZs
@@ -88916,7 +90325,7 @@ kob
 kob
 kob
 kob
-uPV
+abY
 heG
 edU
 qEu
@@ -89325,7 +90734,7 @@ gWp
 fSX
 dFh
 dFh
-kzD
+acd
 dFh
 oOW
 dFh
@@ -89354,7 +90763,7 @@ eTr
 wLC
 qzK
 qzK
-uPV
+abY
 heG
 qEu
 eTr
@@ -94597,7 +96006,7 @@ pAG
 phR
 phR
 phR
-lXu
+acq
 kXJ
 kXJ
 kXJ
