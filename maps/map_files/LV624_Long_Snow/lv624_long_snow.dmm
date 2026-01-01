@@ -782,7 +782,7 @@
 	color = "#C02526";
 	pixel_y = -9
 	},
-/mob/living/simple_animal/mouse,
+/mob/living/simple_animal/mouse/brown,
 /turf/open/floor/freezerfloor,
 /area/lv624/lazarus/sleep_male)
 "adB" = (
@@ -899,12 +899,7 @@
 /turf/open/floor/freezerfloor,
 /area/lv624/lazarus/sleep_male)
 "adQ" = (
-/obj/item/paper/prison_station/chapel_program{
-	name = "USS Kuala prisoner note";
-	info = "many of us managed to survive the crash, the other two I was captured with froze to death in this meat locker <BR>\n<BR>\n we managed to figure out that we're far north, we just need to hold out until rescue arrives... <BR>\n<BR>\n my prayers are often answered somehow in this coffin of a freezer, but if our rescue doesn't arrive, I fear the worst <BR>\n<BR>\nwe can hear so many of those UPP bastards outside... maybe it would be best to not try and escape, it may be the death of us all...";
-	icon_state = "paper_words";
-	color = "light_red"
-	},
+/obj/item/paper/prison_station/kuala_note,
 /turf/open/floor/freezerfloor,
 /area/lv624/lazarus/sleep_male)
 "adR" = (
@@ -1114,6 +1109,9 @@
 	dir = 1;
 	pixel_y = 11
 	},
+/obj/item/dogtag{
+	desc = "A fallen servicemember's information dog tag. You can make out "SGT O'Brian" and "USCM" on the tags."
+	},
 /turf/open/floor/wood,
 /area/lv624/lazarus/sleep_male)
 "aep" = (
@@ -1164,7 +1162,7 @@
 /area/lv624/lazarus/toilet)
 "aet" = (
 /obj/structure/prop/invuln/static_corpse/afric_zimmer{
-	desc = "The corpse of a USS Kuala soldier. There's no dogtag to collect unfortunately. Poor bastard.!'";
+	desc = "The corpse of a USS Kuala soldier. There's nothing you can do to help them unfortunately. Poor bastard.";
 	name = "USS Kuala soldier";
 	layer = 3;
 	pixel_x = -9
@@ -3550,6 +3548,9 @@
 "dbe" = (
 /turf/open/floor/whiteblue/west,
 /area/lv624/lazarus/medbay)
+"dcn" = (
+/turf/open/floor/wood,
+/area/lv624/ground/caves/north_west_caves)
 "dcu" = (
 /obj/structure/flora/jungle/vines{
 	color = "#64b1fa"
@@ -9827,6 +9828,9 @@
 	name = "Fulcrum"
 	},
 /area/lv624/lazarus/sleep_male)
+"kIN" = (
+/turf/open/floor/wood/wood_broken,
+/area/lv624/ground/caves/north_west_caves)
 "kJd" = (
 /obj/structure/machinery/door/airlock/hatch/cockpit/upp,
 /turf/open/floor/strata/floor3/east,
@@ -17472,6 +17476,9 @@
 /obj/structure/pipes/standard/simple/hidden/cyan,
 /turf/open/floor/grass,
 /area/lv624/lazarus/main_hall)
+"uUa" = (
+/turf/closed/wall/wood,
+/area/lv624/ground/caves/north_west_caves)
 "uUg" = (
 /obj/effect/landmark/crap_item,
 /turf/open/auto_turf/snow/brown_base/layer1,
@@ -21275,11 +21282,11 @@ thY
 (4,1,1) = {"
 jqS
 ojY
-ojY
-ojY
-ojY
-ojY
-ojY
+uUa
+uUa
+uUa
+uUa
+uUa
 ojY
 ojY
 ojY
@@ -21720,11 +21727,11 @@ thY
 (5,1,1) = {"
 jqS
 ojY
-ojY
-ojY
-ojY
-ojY
-ojY
+uUa
+kIN
+kIN
+dcn
+uUa
 ojY
 ojY
 ojY
@@ -22165,11 +22172,11 @@ thY
 (6,1,1) = {"
 jqS
 ojY
-ojY
-ojY
-ojY
-ojY
-ojY
+uUa
+dcn
+dcn
+kIN
+uUa
 ojY
 ojY
 ojY
@@ -22610,11 +22617,11 @@ thY
 (7,1,1) = {"
 jqS
 ojY
-ojY
-ojY
-ojY
-ojY
-ojY
+uUa
+dcn
+dcn
+dcn
+uUa
 ojY
 ojY
 ojY
@@ -23055,11 +23062,11 @@ thY
 (8,1,1) = {"
 jqS
 ojY
-ojY
-ojY
-ojY
-ojY
-ojY
+uUa
+kIN
+dcn
+dcn
+uUa
 ojY
 ojY
 ojY
@@ -23500,11 +23507,11 @@ thY
 (9,1,1) = {"
 jqS
 ojY
-ojY
-ojY
-ojY
-ojY
-ojY
+uUa
+dcn
+dcn
+dcn
+uUa
 ojY
 ojY
 ojY
@@ -23945,11 +23952,11 @@ thY
 (10,1,1) = {"
 jqS
 ojY
-ojY
-ojY
-ojY
-ojY
-ojY
+uUa
+dcn
+dcn
+kIN
+uUa
 ojY
 ojY
 ojY
@@ -24390,11 +24397,11 @@ thY
 (11,1,1) = {"
 jqS
 ojY
-ojY
-ojY
-ojY
-ojY
-ojY
+uUa
+uUa
+uUa
+uUa
+uUa
 ojY
 ojY
 ojY
