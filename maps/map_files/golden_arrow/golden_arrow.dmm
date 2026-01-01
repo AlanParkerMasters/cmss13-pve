@@ -4012,6 +4012,9 @@
 	pixel_x = -8;
 	pixel_y = -2
 	},
+/obj/item/paper/kuala/kuala_operation_note{
+	pixel_x = 5
+	},
 /turf/open/floor/almayer,
 /area/golden_arrow/platoon_commander_rooms)
 "ama" = (

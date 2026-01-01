@@ -239,6 +239,39 @@
 	},
 /turf/open/floor/freezerfloor,
 /area/lv624/lazarus/sleep_male)
+"aaM" = (
+/obj/structure/machinery/camera/autoname{
+	dir = 8
+	},
+/turf/open/floor/plating/platebotc,
+/area/lv624/ground/jungle/north_jungle)
+"aaN" = (
+/obj/effect/vehicle_spawner/uppvan/medical/decrepit,
+/turf/open/auto_turf/snow/layer3,
+/area/lv624/ground/jungle/north_jungle)
+"aaO" = (
+/obj/effect/vehicle_spawner/uppvant/fixed,
+/turf/open/auto_turf/snow/layer3,
+/area/lv624/ground/jungle/north_jungle)
+"aaP" = (
+/obj/effect/vehicle_spawner/upptank/fixed,
+/turf/open/auto_turf/snow/layer3,
+/area/lv624/ground/jungle/north_jungle)
+"aaQ" = (
+/obj/effect/vehicle_spawner/uppvant/decrepit,
+/turf/open/auto_turf/snow/layer3,
+/area/lv624/ground/jungle/north_jungle)
+"aaR" = (
+/obj/effect/vehicle_spawner/uppvan/medical/fixed,
+/turf/open/auto_turf/snow/brown_base/layer1,
+/area/lv624/ground/jungle/north_jungle)
+"aaS" = (
+/obj/item/device/flashlight/flare/on{
+	fuel_rate = 0.0001;
+	pixel_x = 8
+	},
+/turf/open/floor/wood,
+/area/lv624/ground/caves/north_west_caves)
 "aba" = (
 /obj/structure/bed/chair{
 	dir = 4
@@ -751,6 +784,14 @@
 	pixel_x = 6;
 	pixel_y = -4
 	},
+/obj/item/clothing/under/marine{
+	pixel_x = 1;
+	pixel_y = -10
+	},
+/obj/item/clothing/under/marine{
+	pixel_x = -9;
+	pixel_y = -8
+	},
 /turf/open/floor/freezerfloor,
 /area/lv624/lazarus/sleep_male)
 "adw" = (
@@ -899,7 +940,7 @@
 /turf/open/floor/freezerfloor,
 /area/lv624/lazarus/sleep_male)
 "adQ" = (
-/obj/item/paper/prison_station/kuala_note,
+/obj/item/paper/kuala/kuala_note,
 /turf/open/floor/freezerfloor,
 /area/lv624/lazarus/sleep_male)
 "adR" = (
@@ -1244,10 +1285,6 @@
 "agO" = (
 /turf/open/auto_turf/snow/layer3,
 /area/lv624/ground/caves/sand_temple)
-"ahg" = (
-/obj/structure/blocker/forcefield/multitile_vehicles,
-/turf/open/auto_turf/snow/layer0,
-/area/lv624/ground/caves/south_east_caves)
 "ahp" = (
 /obj/structure/reagent_dispensers/fueltank,
 /obj/item/device/flashlight{
@@ -3030,10 +3067,6 @@
 "crI" = (
 /turf/open/floor/red/west,
 /area/lv624/lazarus/security)
-"csc" = (
-/obj/structure/blocker/forcefield/multitile_vehicles,
-/turf/open/auto_turf/snow/layer3,
-/area/lv624/ground/caves/south_west_caves)
 "csu" = (
 /obj/structure/flora/bush/ausbushes/ausbush{
 	color = "#64b1fa"
@@ -3591,10 +3624,6 @@
 "deG" = (
 /turf/open/floor/asteroidwarning/northwest,
 /area/lv624/ground/jungle/north_jungle)
-"deQ" = (
-/obj/structure/blocker/forcefield/multitile_vehicles,
-/turf/open/auto_turf/snow/layer3,
-/area/lv624/ground/caves/south_central_caves)
 "deX" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/closed/shuttle/ert{
@@ -5713,10 +5742,6 @@
 	},
 /turf/open/auto_turf/snow/layer3,
 /area/lv624/ground/jungle/north_jungle)
-"fBB" = (
-/obj/structure/blocker/forcefield/multitile_vehicles,
-/turf/open/auto_turf/snow/layer0,
-/area/lv624/ground/caves/sand_temple)
 "fBQ" = (
 /obj/structure/closet/crate/secure/hydrosec,
 /turf/open/floor/whitepurplecorner/east,
@@ -5918,10 +5943,6 @@
 /obj/item/shard,
 /turf/open/floor/dark,
 /area/lv624/lazarus/comms)
-"fPc" = (
-/obj/structure/blocker/forcefield/multitile_vehicles,
-/turf/open/auto_turf/snow/layer0,
-/area/lv624/ground/caves/south_central_caves)
 "fPp" = (
 /obj/structure/machinery/still,
 /turf/open/floor/whiteyellowfull/east,
@@ -6027,7 +6048,6 @@
 /area/lv624/lazarus/quartstorage)
 "fZa" = (
 /obj/effect/spider/stickyweb,
-/obj/structure/blocker/forcefield/multitile_vehicles,
 /turf/open/floor/sandstone/runed,
 /area/lv624/ground/caves/sand_temple)
 "fZb" = (
@@ -7431,7 +7451,6 @@
 /turf/open/floor/warning/west,
 /area/lv624/ground/jungle/north_jungle)
 "hSX" = (
-/obj/structure/blocker/forcefield/multitile_vehicles,
 /obj/structure/machinery/door/airlock/hatch/cockpit/three{
 	dir = 1
 	},
@@ -7439,6 +7458,7 @@
 	pixel_x = 8;
 	pixel_y = 10
 	},
+/obj/structure/blocker/invisible_wall,
 /turf/open/shuttle/dropship/medium_grey_single_wide_up_to_down,
 /area/lv624/lazarus/sleep_male)
 "hTy" = (
@@ -8533,14 +8553,6 @@
 	},
 /turf/open/gm/dirtgrassborder/weedable/grass1,
 /area/lv624/ground/jungle/north_jungle)
-"jmI" = (
-/obj/structure/flora/jungle/vines/light_3{
-	desc = "A frozen mass of twisted vines.";
-	color = "#64b1fa"
-	},
-/obj/structure/blocker/forcefield/multitile_vehicles,
-/turf/open/auto_turf/snow/layer0,
-/area/lv624/ground/caves/sand_temple)
 "jnA" = (
 /obj/vehicle/train/cargo/engine,
 /obj/effect/landmark/good_item,
@@ -9269,10 +9281,6 @@
 	},
 /turf/open/floor/sandstone/runed,
 /area/lv624/ground/caves/sand_temple)
-"kbZ" = (
-/obj/structure/blocker/forcefield/multitile_vehicles,
-/turf/open/auto_turf/snow/layer0,
-/area/lv624/ground/caves/south_west_caves)
 "kcm" = (
 /obj/structure/flora/bush/ausbushes/palebush{
 	color = "#64b1fa"
@@ -13876,10 +13884,6 @@
 /obj/structure/largecrate,
 /turf/open/floor/vault,
 /area/lv624/lazarus/quartstorage)
-"qdJ" = (
-/obj/structure/blocker/forcefield/multitile_vehicles,
-/turf/closed/wall/mineral/sandstone/runed,
-/area/lv624/ground/caves/sand_temple)
 "qdK" = (
 /turf/closed/wall/r_wall,
 /area/lv624/lazarus/main_hall)
@@ -14177,10 +14181,6 @@
 "qxs" = (
 /turf/open/auto_turf/snow/layer0,
 /area/lv624/ground/caves/north_east_caves)
-"qxH" = (
-/obj/structure/blocker/forcefield/multitile_vehicles,
-/turf/closed/wall/cult,
-/area/lv624/ground/caves/south_west_caves)
 "qxK" = (
 /turf/closed/shuttle/ert{
 	icon_state = "upp1"
@@ -15978,11 +15978,6 @@
 	},
 /turf/open/floor/white,
 /area/lv624/lazarus/main_hall)
-"sXq" = (
-/obj/structure/prop/brazier/torch,
-/obj/structure/blocker/forcefield/multitile_vehicles,
-/turf/closed/wall/mineral/sandstone/runed,
-/area/lv624/ground/caves/sand_temple)
 "sXs" = (
 /turf/open/floor/plating/warnplate,
 /area/lv624/lazarus/robotics)
@@ -16577,10 +16572,6 @@
 	},
 /turf/open/floor/bluecorner,
 /area/lv624/lazarus/sleep_male)
-"tNX" = (
-/obj/structure/blocker/forcefield/multitile_vehicles,
-/turf/open/auto_turf/snow/layer0,
-/area/lv624/ground/caves/central_caves)
 "tOf" = (
 /obj/structure/surface/rack,
 /obj/effect/landmark/item_pool_spawner/survivor_ammo/buckshot,
@@ -16681,10 +16672,6 @@
 "tUQ" = (
 /turf/open/floor/strata/grey_multi_tiles,
 /area/lv624/ground/caves/sand_temple)
-"tVf" = (
-/obj/structure/blocker/forcefield/multitile_vehicles,
-/turf/open/auto_turf/snow/layer3,
-/area/lv624/ground/caves/central_caves)
 "tVi" = (
 /obj/structure/surface/table/woodentable/poor,
 /obj/item/paper_bin{
@@ -17222,14 +17209,6 @@
 /obj/structure/machinery/power/apc/no_power/west,
 /turf/open/floor/vault,
 /area/lv624/lazarus/quartstorage)
-"uFH" = (
-/obj/structure/flora/jungle/vines/light_3{
-	desc = "A frozen mass of twisted vines.";
-	color = "#64b1fa"
-	},
-/obj/structure/blocker/forcefield/multitile_vehicles,
-/turf/open/auto_turf/snow/layer3,
-/area/lv624/ground/caves/sand_temple)
 "uFO" = (
 /obj/structure/surface/rack,
 /obj/item/stack/sheet/mineral/gold{
@@ -18097,10 +18076,6 @@
 /obj/structure/bed,
 /turf/open/floor/bluecorner,
 /area/lv624/lazarus/sleep_male)
-"vML" = (
-/obj/structure/blocker/forcefield/multitile_vehicles,
-/turf/open/floor/cult,
-/area/lv624/ground/caves/south_west_caves)
 "vNr" = (
 /obj/structure/device/broken_piano,
 /obj/structure/machinery/light/small{
@@ -18252,10 +18227,6 @@
 	},
 /turf/open/floor/redfull/northwest,
 /area/lv624/lazarus/security)
-"vVU" = (
-/obj/structure/blocker/forcefield/multitile_vehicles,
-/turf/closed/wall/strata_ice/dirty,
-/area/lv624/ground/caves/sand_temple)
 "vXj" = (
 /turf/closed/shuttle/dropship1{
 	icon_state = "73"
@@ -18301,8 +18272,10 @@
 /turf/open/floor/vault,
 /area/lv624/lazarus/quartstorage)
 "wcQ" = (
-/obj/structure/prop/tower,
-/turf/open/auto_turf/snow/layer1,
+/obj/structure/machinery/telecomms/relay/preset/tower/mapcomms{
+	desc = "A static heavy-duty TC-4J telecommunications jamming tower. Used to disrupt telecommunication frequencies across the region. You can either destroy it with explosives or try to disable it."
+	},
+/turf/open/auto_turf/snow/brown_base/layer0,
 /area/lv624/ground/jungle/north_jungle)
 "wdg" = (
 /obj/item/stack/sheet/metal,
@@ -18682,10 +18655,6 @@
 /obj/effect/decal/cleanable/blood/drip,
 /turf/open/shuttle/bright_red,
 /area/lv624/lazarus/crashed_ship_containers)
-"wBu" = (
-/obj/structure/blocker/forcefield/multitile_vehicles,
-/turf/open/floor/sandstone/runed,
-/area/lv624/ground/caves/sand_temple)
 "wBE" = (
 /obj/structure/flora/bush/ausbushes/var3/sunnybush{
 	color = "#64b1fa"
@@ -19286,10 +19255,6 @@
 	},
 /turf/open/floor/bluecorner,
 /area/lv624/lazarus/sleep_male)
-"xnV" = (
-/obj/structure/blocker/forcefield/multitile_vehicles,
-/turf/open/auto_turf/snow/layer0,
-/area/lv624/ground/caves/west_caves)
 "xoe" = (
 /obj/structure/flora/bush/ausbushes/pointybush{
 	color = "#64b1fa"
@@ -23065,7 +23030,7 @@ ojY
 ecC
 esJ
 fko
-fko
+aaS
 ecC
 ojY
 ojY
@@ -23618,7 +23583,7 @@ nhE
 nhE
 nhE
 nhE
-vML
+fbS
 fbS
 fbS
 fbS
@@ -24063,7 +24028,7 @@ nhE
 nhE
 nhE
 nhE
-vML
+fbS
 fbS
 fbS
 fbS
@@ -24508,7 +24473,7 @@ nhE
 nhE
 nhE
 nhE
-vML
+fbS
 fbS
 fbS
 fbS
@@ -24953,7 +24918,7 @@ nhE
 nhE
 nhE
 nhE
-vML
+fbS
 fbS
 fbS
 fbS
@@ -34294,11 +34259,11 @@ vrJ
 iFU
 dGk
 dGk
-qxH
-kbZ
-kbZ
-kbZ
-csc
+wzt
+stK
+stK
+stK
+rzY
 fRH
 dET
 rzY
@@ -41410,7 +41375,7 @@ nhE
 nhE
 nhE
 nhE
-xnV
+nhE
 stK
 stK
 stK
@@ -41855,7 +41820,7 @@ iEa
 nhE
 nhE
 nhE
-xnV
+nhE
 stK
 stK
 stK
@@ -41869,14 +41834,14 @@ stK
 dGk
 dGk
 dGk
-kbZ
-kbZ
+stK
+stK
 dGk
 dGk
 dGk
 dGk
-kbZ
-kbZ
+stK
+stK
 dGk
 dGk
 dGk
@@ -42300,7 +42265,7 @@ nhE
 nhE
 nhE
 nhE
-xnV
+nhE
 stK
 stK
 stK
@@ -42745,7 +42710,7 @@ nhE
 nhE
 nhE
 nhE
-xnV
+nhE
 stK
 stK
 stK
@@ -44881,7 +44846,7 @@ clG
 phR
 kXJ
 kXJ
-kXJ
+aaQ
 dNJ
 dNJ
 kXJ
@@ -46213,14 +46178,14 @@ acv
 phR
 phR
 phR
+dNJ
+dNJ
+aaR
+dNJ
+dNJ
 kXJ
-kXJ
-dNJ
-dNJ
-dNJ
 kXJ
 oKo
-kXJ
 kXJ
 kXJ
 sCI
@@ -46657,13 +46622,13 @@ adx
 acv
 phR
 phR
-kXJ
-kXJ
+dNJ
+dNJ
 dNJ
 dNJ
 kXJ
-kXJ
-kXJ
+dNJ
+dNJ
 kXJ
 kXJ
 kXJ
@@ -47105,7 +47070,7 @@ dNJ
 dNJ
 adn
 dNJ
-xUJ
+dNJ
 kwN
 kXJ
 kXJ
@@ -47550,7 +47515,7 @@ dNJ
 dNJ
 dNJ
 dNJ
-kXJ
+dNJ
 kXJ
 kXJ
 kXJ
@@ -51122,7 +51087,7 @@ xbj
 tHl
 tHl
 tHl
-kXJ
+aaP
 kXJ
 kXJ
 kXJ
@@ -52463,10 +52428,10 @@ kXJ
 kXJ
 kwN
 kXJ
-poj
 kXJ
 kXJ
 kXJ
+aaO
 kXJ
 kXJ
 kXJ
@@ -52912,7 +52877,7 @@ kXJ
 kXJ
 kXJ
 kXJ
-qTT
+kXJ
 kXJ
 kXJ
 kXJ
@@ -64131,7 +64096,7 @@ phR
 kXJ
 qTT
 dNJ
-kXJ
+aai
 dNJ
 kXJ
 kXJ
@@ -64576,8 +64541,8 @@ kXJ
 kXJ
 kXJ
 dNJ
-kXJ
-kXJ
+aai
+aai
 kXJ
 kXJ
 kXJ
@@ -64979,9 +64944,9 @@ wqP
 wqP
 ccl
 ccl
-deQ
-deQ
-fPc
+jry
+jry
+ait
 wqP
 wqP
 wqP
@@ -65022,7 +64987,7 @@ kXJ
 kXJ
 dNJ
 kXJ
-dNJ
+aai
 kXJ
 kXJ
 kXJ
@@ -65467,7 +65432,7 @@ kXJ
 kXJ
 kXJ
 kXJ
-dNJ
+aai
 kXJ
 kXJ
 kGQ
@@ -65911,8 +65876,8 @@ kXJ
 kXJ
 kXJ
 dNJ
-kXJ
-dNJ
+aai
+aai
 kXJ
 kXJ
 kXJ
@@ -66356,7 +66321,7 @@ kXJ
 kXJ
 kXJ
 dNJ
-kXJ
+aai
 kXJ
 kXJ
 pAG
@@ -66689,8 +66654,8 @@ mae
 udH
 xxT
 udH
-udH
-udH
+dNJ
+dNJ
 udH
 adm
 adi
@@ -66748,7 +66713,7 @@ gAO
 gAO
 gAO
 gAO
-tVf
+cBo
 kXJ
 kXJ
 kXJ
@@ -67133,9 +67098,9 @@ udH
 udH
 udH
 udH
-udH
+dQz
 wcQ
-udH
+dNJ
 udH
 fuG
 fuG
@@ -67193,7 +67158,7 @@ gAO
 hda
 gAO
 gAO
-tNX
+gAO
 tHl
 tHl
 tHl
@@ -67246,7 +67211,7 @@ phR
 kXJ
 kXJ
 kXJ
-kXJ
+aai
 dNJ
 phR
 phR
@@ -67577,9 +67542,9 @@ jju
 fuG
 fuG
 aqI
-udH
-udH
-udH
+dNJ
+dQz
+dQz
 udH
 udH
 udH
@@ -67638,7 +67603,7 @@ gAO
 gAO
 gAO
 gAO
-tNX
+gAO
 tHl
 tHl
 tHl
@@ -68022,9 +67987,9 @@ wSU
 fuG
 adi
 adi
-udH
-udH
-udH
+dNJ
+dNJ
+dNJ
 udH
 tvS
 udH
@@ -68083,7 +68048,7 @@ cBo
 cBo
 qkk
 fLY
-tVf
+cBo
 tHl
 tHl
 fTr
@@ -68580,7 +68545,7 @@ kXJ
 kXJ
 kXJ
 kXJ
-dNJ
+aai
 kXJ
 kXJ
 kXJ
@@ -69021,10 +68986,10 @@ phR
 phR
 phR
 kXJ
-kXJ
-kXJ
-kXJ
-kXJ
+dNJ
+dNJ
+dNJ
+aai
 dNJ
 kXJ
 dNJ
@@ -69466,11 +69431,11 @@ phR
 phR
 acT
 kXJ
-kXJ
-kXJ
-kXJ
-kXJ
 dNJ
+aai
+dNJ
+dNJ
+aai
 kXJ
 dNJ
 kXJ
@@ -75220,11 +75185,11 @@ duV
 bjE
 cDb
 ldj
-kXJ
+hIH
 kXJ
 dNJ
 kXJ
-kXJ
+aaN
 dNJ
 dNJ
 kXJ
@@ -76109,7 +76074,7 @@ dNJ
 kXJ
 kXJ
 kXJ
-kXJ
+hIH
 kXJ
 kXJ
 dNJ
@@ -78326,7 +78291,7 @@ xWs
 ePP
 ePP
 ePP
-ahg
+ePP
 tHl
 kXJ
 dYX
@@ -78771,7 +78736,7 @@ xWs
 iat
 ePP
 ePP
-ahg
+ePP
 tHl
 kXJ
 kXJ
@@ -79216,7 +79181,7 @@ ePP
 ePP
 ePP
 ePP
-ahg
+ePP
 tHl
 kXJ
 kXJ
@@ -79661,7 +79626,7 @@ ePP
 bea
 bea
 ePP
-ahg
+ePP
 tHl
 tHl
 sIr
@@ -80997,8 +80962,8 @@ llT
 oWU
 oWU
 oWU
-ahg
-ahg
+ePP
+ePP
 ePP
 qVq
 qVq
@@ -83509,7 +83474,7 @@ qEd
 kXJ
 uBt
 uBt
-uBt
+aaM
 xzE
 xzE
 uBt
@@ -83673,7 +83638,7 @@ eEh
 kBj
 kBj
 kBj
-vVU
+qVq
 gTW
 gTW
 hnm
@@ -84118,7 +84083,7 @@ owi
 ePP
 wyg
 wyg
-qdJ
+lEv
 gTW
 agO
 ocA
@@ -84130,7 +84095,7 @@ huv
 kbt
 bxH
 eJa
-uFH
+lcv
 iXU
 iXU
 huv
@@ -84575,7 +84540,7 @@ eKv
 agO
 agO
 lcv
-uFH
+lcv
 iXU
 huv
 huv
@@ -85008,7 +84973,7 @@ owi
 wyg
 wyg
 wyg
-wBu
+huv
 huv
 iXU
 iXU
@@ -85020,7 +84985,7 @@ tKZ
 gTW
 lcv
 cgf
-fBB
+iXU
 iXU
 huv
 huv
@@ -85453,7 +85418,7 @@ tOV
 ePP
 ePP
 wyg
-wBu
+huv
 lEv
 iXU
 huv
@@ -85465,7 +85430,7 @@ nVd
 lcv
 agO
 kUD
-jmI
+cgf
 huv
 huv
 iXU
@@ -85890,15 +85855,15 @@ ePP
 ePP
 ePP
 oWU
-ahg
-ahg
+ePP
+ePP
 ePP
 ePP
 owi
 ePP
 ePP
 ePP
-qdJ
+lEv
 hwU
 huv
 ktq
@@ -85910,7 +85875,7 @@ iXU
 ktq
 eUj
 iQw
-uFH
+lcv
 huv
 iXU
 iXU
@@ -86336,7 +86301,7 @@ xWs
 xWs
 xWs
 ePP
-ahg
+ePP
 ePP
 ePP
 gwG
@@ -86781,7 +86746,7 @@ xWs
 xWs
 xWs
 ePP
-ahg
+ePP
 ePP
 ePP
 ePP
@@ -87226,7 +87191,7 @@ xWs
 xWs
 xWs
 xWs
-ahg
+ePP
 ePP
 ePP
 ePP
@@ -88117,8 +88082,8 @@ ePP
 ePP
 ePP
 oWU
-ahg
-ahg
+ePP
+ePP
 oWU
 bea
 uBV
@@ -89471,7 +89436,7 @@ huv
 iXU
 gSu
 gTW
-qdJ
+lEv
 iXU
 iXU
 iXU
@@ -89916,7 +89881,7 @@ dQd
 iXU
 agO
 lcv
-qdJ
+lEv
 iXU
 iXU
 iXU
@@ -90361,7 +90326,7 @@ pyE
 huv
 iXU
 iXU
-qdJ
+lEv
 iXU
 iXU
 iXU
@@ -90806,8 +90771,8 @@ pyE
 huv
 huv
 huv
-sXq
-qdJ
+lgx
+lEv
 iXU
 iXU
 qVq
@@ -91683,7 +91648,7 @@ ePP
 ePP
 ePP
 qVq
-qdJ
+lEv
 afD
 huv
 huv
@@ -92128,7 +92093,7 @@ xWs
 oWU
 ePP
 iXU
-qdJ
+lEv
 afD
 huv
 huv
@@ -92573,7 +92538,7 @@ xWs
 ePP
 ePP
 iXU
-fBB
+iXU
 iXU
 iXU
 iXU
@@ -93018,7 +92983,7 @@ ePP
 ePP
 ePP
 iXU
-fBB
+iXU
 huv
 iXU
 iXU
@@ -93463,7 +93428,7 @@ ePP
 ePP
 ePP
 qVq
-qdJ
+lEv
 nRV
 iXU
 huv
