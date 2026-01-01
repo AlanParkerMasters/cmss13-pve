@@ -89,10 +89,6 @@
 /obj/structure/sign/poster/corporate{
 	pixel_y = 5
 	},
-/obj/structure/sign/poster/corporate{
-	pixel_y = 12;
-	pixel_x = -7
-	},
 /turf/closed/wall/almayer,
 /area/golden_arrow/cryo_cells)
 "aal" = (
@@ -1066,7 +1062,12 @@
 "acg" = (
 /obj/structure/surface/table/almayer,
 /obj/item/storage/donut_box{
-	pixel_y = 16
+	pixel_y = 13;
+	pixel_x = 7
+	},
+/obj/item/storage/donut_box{
+	pixel_y = 19;
+	pixel_x = 7
 	},
 /turf/open/floor/almayer,
 /area/golden_arrow/cryo_cells)
@@ -1168,12 +1169,6 @@
 	},
 /turf/open/floor/almayer/edge/smooth,
 /area/golden_arrow/platoonprep)
-"acv" = (
-/obj/effect/landmark/nightmare{
-	insert_tag = "dorms"
-	},
-/turf/closed/wall/almayer,
-/area/golden_arrow/dorms)
 "acw" = (
 /obj/structure/pipes/standard/simple/hidden/supply{
 	dir = 8
@@ -7974,7 +7969,7 @@
 /obj/structure/machinery/hybrisa/coffee_machine{
 	pixel_x = -5;
 	pixel_y = 1;
-	desc = "A coffee machine. A sticker cheesy sticker about supporting the NSPA shows this was shamelessly stolen off of Hybrisa Prospera on a recent trip there."
+	desc = "A coffee machine. A cheesy sticker about supporting the NSPA shows this was shamelessly stolen off of Hybrisa Prospera on a recent trip there."
 	},
 /obj/item/reagent_container/food/drinks/milk{
 	pixel_x = 10;
@@ -25738,7 +25733,7 @@ aVJ
 abx
 akK
 aJU
-acv
+abx
 avb
 aEG
 aEG
