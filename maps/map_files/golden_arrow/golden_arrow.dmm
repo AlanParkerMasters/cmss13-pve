@@ -71,18 +71,27 @@
 /turf/closed/wall/almayer,
 /area/golden_arrow/cryo_cells)
 "aaj" = (
-/obj/structure/machinery/vending/coffee{
+/obj/structure/machinery/vending/cigarette/koorlander{
+	pixel_x = -3;
 	pixel_y = -7;
-	pixel_x = -1;
 	wrenchable = 0
 	},
 /turf/closed/wall/almayer,
 /area/golden_arrow/cryo_cells)
 "aak" = (
-/obj/structure/machinery/vending/cigarette/koorlander{
-	pixel_x = -7;
-	pixel_y = -7;
-	wrenchable = 0
+/obj/structure/sign/poster/corporate{
+	pixel_x = -9
+	},
+/obj/structure/sign/poster/nspa{
+	pixel_x = 7;
+	pixel_y = -1
+	},
+/obj/structure/sign/poster/corporate{
+	pixel_y = 5
+	},
+/obj/structure/sign/poster/corporate{
+	pixel_y = 12;
+	pixel_x = -7
 	},
 /turf/closed/wall/almayer,
 /area/golden_arrow/cryo_cells)
@@ -465,7 +474,9 @@
 /area/golden_arrow/hangar)
 "aaS" = (
 /obj/structure/surface/table/almayer,
-/obj/item/pizzabox/mystery/stack,
+/obj/item/storage/donut_box{
+	pixel_y = 10
+	},
 /turf/open/floor/almayer,
 /area/golden_arrow/cryo_cells)
 "aaT" = (
@@ -1052,6 +1063,13 @@
 	},
 /turf/open/space/basic,
 /area/space)
+"acg" = (
+/obj/structure/surface/table/almayer,
+/obj/item/storage/donut_box{
+	pixel_y = 16
+	},
+/turf/open/floor/almayer,
+/area/golden_arrow/cryo_cells)
 "ach" = (
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
@@ -1065,6 +1083,16 @@
 	},
 /turf/open/floor/almayer/plate,
 /area/golden_arrow/hangar)
+"acj" = (
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
+	},
+/obj/structure/surface/table/almayer,
+/obj/item/storage/donut_box{
+	pixel_y = 16
+	},
+/turf/open/floor/almayer,
+/area/golden_arrow/cryo_cells)
 "ack" = (
 /obj/structure/bed{
 	can_buckle = 0
@@ -1082,6 +1110,35 @@
 	},
 /turf/open/floor/almayer/edge/southwest,
 /area/golden_arrow/dorms)
+"acl" = (
+/obj/item/ashtray/bronze{
+	pixel_x = 29;
+	pixel_y = 37
+	},
+/turf/open/floor/almayer/edge/smooth/north,
+/area/golden_arrow/cryo_cells)
+"acm" = (
+/obj/structure/surface/table/almayer,
+/obj/item/reagent_container/food/drinks/coffeecup,
+/obj/item/reagent_container/food/drinks/coffeecup,
+/obj/item/reagent_container/food/drinks/coffeecup,
+/obj/item/reagent_container/food/drinks/coffeecup,
+/obj/item/reagent_container/food/drinks/coffeecup,
+/obj/item/reagent_container/food/drinks/coffeecup,
+/obj/item/reagent_container/food/drinks/coffeecup,
+/obj/item/reagent_container/food/drinks/coffeecup,
+/obj/item/reagent_container/food/drinks/coffeecup,
+/obj/item/reagent_container/food/drinks/coffeecup,
+/obj/item/reagent_container/food/drinks/coffeecup,
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 4;
+	light_power = 0.7
+	},
+/obj/item/reagent_container/food/drinks/coffeecup,
+/obj/item/reagent_container/food/drinks/coffeecup,
+/obj/item/reagent_container/food/drinks/coffeecup,
+/turf/open/floor/almayer,
+/area/golden_arrow/cryo_cells)
 "aco" = (
 /obj/effect/decal/cleanable/blood/oil,
 /turf/open/floor/almayer/plate,
@@ -1201,11 +1258,6 @@
 /turf/open/floor/almayer/dark_sterile,
 /area/golden_arrow/medical)
 "acL" = (
-/obj/structure/surface/table/almayer,
-/obj/item/prop/colony/game{
-	pixel_y = 10;
-	pixel_x = 15
-	},
 /turf/open/floor/almayer/edge,
 /area/golden_arrow/dorms)
 "acO" = (
@@ -1602,16 +1654,16 @@
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
 	},
-/obj/structure/machinery/vending/walkman{
-	pixel_y = 21;
-	pixel_x = 10;
-	density = 0
+/obj/structure/machinery/computer/hybrisa/misc/slotmachine{
+	pixel_x = 6;
+	pixel_y = 19;
+	desc = "A slot machine someone somehow managed to sneak onto the Golden Arrow. Best way to spend that enlistment bonus."
 	},
-/obj/item/trash/kepler{
-	pixel_x = 8;
-	pixel_y = 44
+/obj/structure/bed/stool{
+	buckling_y = 14;
+	layer = 4;
+	pixel_y = 2
 	},
-/obj/item/trash/barcardine,
 /turf/open/floor/almayer/edge/northwest,
 /area/golden_arrow/dorms)
 "aed" = (
@@ -2823,6 +2875,22 @@
 /area/golden_arrow/medical)
 "ahK" = (
 /obj/structure/surface/table/almayer,
+/obj/item/storage/donut_box{
+	pixel_y = 8;
+	pixel_x = -8
+	},
+/obj/item/storage/donut_box{
+	pixel_y = 14;
+	pixel_x = -8
+	},
+/obj/item/storage/donut_box{
+	pixel_y = 20;
+	pixel_x = -8
+	},
+/obj/item/prop/flower_vase/bluewhiteflowers{
+	pixel_y = 6;
+	pixel_x = 12
+	},
 /turf/open/floor/almayer,
 /area/golden_arrow/cryo_cells)
 "ahN" = (
@@ -5082,9 +5150,6 @@
 /turf/open/floor/almayer/plate,
 /area/golden_arrow/hangar)
 "apG" = (
-/obj/structure/bed/chair{
-	dir = 8
-	},
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
 	},
@@ -5511,13 +5576,19 @@
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
 	},
-/obj/structure/machinery/cm_vending/sorted/medical/wall_med{
-	pixel_y = 25
-	},
 /obj/structure/pipes/vents/pump,
 /obj/item/trash/uscm_mre{
-	pixel_y = 14;
+	pixel_y = 2;
 	pixel_x = 9
+	},
+/obj/structure/machinery/vending/walkman{
+	pixel_y = 21;
+	pixel_x = 5;
+	density = 0
+	},
+/obj/item/trash/kepler{
+	pixel_x = 8;
+	pixel_y = 44
 	},
 /turf/open/floor/almayer/edge/north,
 /area/golden_arrow/dorms)
@@ -5961,7 +6032,9 @@
 /obj/structure/pipes/standard/simple/hidden/supply{
 	dir = 5
 	},
-/obj/structure/bed/chair,
+/obj/structure/bed/chair{
+	dir = 1
+	},
 /turf/open/floor/almayer,
 /area/golden_arrow/dorms)
 "asy" = (
@@ -6808,7 +6881,6 @@
 	icon_state = "1-2"
 	},
 /obj/structure/surface/table/almayer,
-/obj/item/pizzabox/mystery/stack,
 /turf/open/floor/almayer/mono,
 /area/golden_arrow/cryo_cells)
 "avY" = (
@@ -7481,17 +7553,6 @@
 	dir = 8
 	},
 /obj/structure/surface/table/almayer,
-/obj/item/prop/magazine/dirty/torn{
-	pixel_x = 2;
-	pixel_y = 6
-	},
-/obj/item/trash/cigbutt{
-	pixel_y = 10;
-	pixel_x = -7
-	},
-/obj/item/trash/eat{
-	pixel_x = 10
-	},
 /turf/open/floor/almayer,
 /area/golden_arrow/dorms)
 "axX" = (
@@ -7508,14 +7569,11 @@
 /turf/open/floor/almayer,
 /area/golden_arrow/hangar)
 "aya" = (
-/obj/structure/surface/table/almayer,
-/obj/item/device/camera{
-	pixel_y = 9;
-	pixel_x = -7
+/obj/structure/prop/hybrisa/furniture/tables/tablepool{
+	desc = "A large table used for Pool. You should've brought your pool sticks and maybe a set of billards balls."
 	},
-/obj/item/device/camera_film{
-	pixel_y = 4
-	},
+/obj/item/spacecash/c50,
+/obj/item/spacecash/c500,
 /turf/open/floor/plating/plating_catwalk,
 /area/golden_arrow/dorms)
 "ayd" = (
@@ -7909,12 +7967,22 @@
 /turf/open/floor/almayer/mono,
 /area/golden_arrow/briefing)
 "azd" = (
-/obj/structure/machinery/light/double/blue/golden_arrow{
-	dir = 4;
-	light_power = 0.7
-	},
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
+	},
+/obj/structure/surface/table/almayer,
+/obj/structure/machinery/hybrisa/coffee_machine{
+	pixel_x = -5;
+	pixel_y = 1;
+	desc = "A coffee machine. A sticker cheesy sticker about supporting the NSPA shows this was shamelessly stolen off of Hybrisa Prospera on a recent trip there."
+	},
+/obj/item/reagent_container/food/drinks/milk{
+	pixel_x = 10;
+	pixel_y = 10
+	},
+/obj/item/reagent_container/food/drinks/milk{
+	pixel_x = 9;
+	pixel_y = 3
 	},
 /turf/open/floor/almayer/edge/east,
 /area/golden_arrow/cryo_cells)
@@ -8288,6 +8356,11 @@
 /obj/effect/decal/warning_stripes{
 	icon_state = "S";
 	layer = 3.3
+	},
+/obj/structure/bed/hybrisa/hospital/hospitaldivider{
+	dir = 1;
+	layer = 3.8;
+	pixel_y = 20
 	},
 /turf/open/floor/almayer/plate,
 /area/golden_arrow/medical)
@@ -9038,7 +9111,11 @@
 /area/golden_arrow/hangar)
 "aCu" = (
 /obj/structure/bed/chair{
-	dir = 8
+	dir = 8;
+	pixel_x = 7;
+	buckling_x = 7;
+	buckling_y = 4;
+	pixel_y = 4
 	},
 /turf/open/floor/almayer,
 /area/golden_arrow/dorms)
@@ -10509,9 +10586,10 @@
 /turf/open/floor/almayer/edge/smooth/east,
 /area/golden_arrow/supply)
 "aHk" = (
-/obj/structure/surface/table/almayer,
-/obj/item/toy/deck/uno,
 /obj/structure/disposalpipe/segment,
+/obj/item/spacecash/c10{
+	pixel_y = 8
+	},
 /turf/open/floor/plating/plating_catwalk,
 /area/golden_arrow/dorms)
 "aHl" = (
@@ -10531,16 +10609,6 @@
 /obj/structure/window/framed/almayer,
 /turf/open/floor/plating,
 /area/golden_arrow/medical)
-"aHs" = (
-/obj/structure/bed/chair{
-	dir = 8;
-	pixel_y = 3
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 1
-	},
-/turf/open/floor/plating/plating_catwalk,
-/area/golden_arrow/dorms)
 "aHt" = (
 /obj/structure/closet/secure_closet/engineering_electrical{
 	req_one_access = null
@@ -10640,13 +10708,6 @@
 /obj/structure/pipes/vents/scrubber,
 /turf/open/floor/almayer,
 /area/golden_arrow/hangar)
-"aHQ" = (
-/obj/item/ashtray/bronze{
-	pixel_x = 29;
-	pixel_y = 37
-	},
-/turf/open/floor/almayer,
-/area/golden_arrow/cryo_cells)
 "aHR" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "SE-out";
@@ -11197,7 +11258,7 @@
 	},
 /obj/item/facepaint/sunscreen_stick{
 	pixel_y = 2;
-	pixel_x = -2;
+	pixel_x = 9;
 	layer = 3.2
 	},
 /obj/structure/sign/poster{
@@ -11211,6 +11272,9 @@
 /obj/structure/cable{
 	icon_state = "0-8";
 	layer = 2.36
+	},
+/obj/item/storage/box/mre/wy{
+	pixel_x = -9
 	},
 /turf/open/floor/almayer/plate,
 /area/golden_arrow/platoonprep)
@@ -11340,7 +11404,12 @@
 	icon_state = "1-2"
 	},
 /obj/structure/surface/table/almayer,
-/obj/item/pizzabox/mystery/stack,
+/obj/item/storage/donut_box{
+	pixel_y = 10
+	},
+/obj/item/storage/donut_box{
+	pixel_y = 16
+	},
 /turf/open/floor/almayer,
 /area/golden_arrow/cryo_cells)
 "aKi" = (
@@ -12083,13 +12152,16 @@
 /turf/open/floor/almayer,
 /area/golden_arrow/hangar)
 "aMQ" = (
-/obj/structure/bed/chair,
 /obj/structure/pipes/standard/simple/hidden/supply{
 	dir = 8
 	},
 /obj/structure/disposalpipe/junction{
 	dir = 2;
 	icon_state = "pipe-j2"
+	},
+/obj/structure/bed/chair{
+	dir = 1;
+	pixel_y = 5
 	},
 /turf/open/floor/almayer,
 /area/golden_arrow/dorms)
@@ -12255,9 +12327,6 @@
 /turf/open/floor/almayer,
 /area/golden_arrow/cryo_cells)
 "aNr" = (
-/obj/structure/bed/chair{
-	dir = 4
-	},
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
 	},
@@ -14746,12 +14815,6 @@
 	},
 /turf/open/floor/almayer/plate,
 /area/golden_arrow/cryo_cells)
-"aWx" = (
-/obj/structure/bed/chair{
-	dir = 4
-	},
-/turf/open/floor/almayer,
-/area/golden_arrow/dorms)
 "aWy" = (
 /obj/structure/pipes/standard/simple/hidden/supply{
 	dir = 8
@@ -14846,8 +14909,6 @@
 /turf/open/floor/almayer,
 /area/golden_arrow/hangar)
 "aWM" = (
-/obj/structure/surface/table/almayer,
-/obj/item/toy/deck,
 /obj/structure/machinery/light/double/blue/golden_arrow{
 	light_power = 0.7
 	},
@@ -25853,7 +25914,7 @@ axW
 ajy
 atI
 aFt
-aWx
+aeo
 aNr
 avb
 aEG
@@ -26203,7 +26264,7 @@ abx
 aDs
 aFt
 asE
-aHs
+alw
 aMg
 alw
 aMQ
@@ -28318,7 +28379,7 @@ asS
 aba
 arj
 ahK
-aaS
+acg
 aaP
 axK
 aOM
@@ -28672,7 +28733,7 @@ alD
 aKk
 aaf
 aZr
-arj
+acj
 aQm
 aBk
 ama
@@ -28845,7 +28906,7 @@ aEG
 aEG
 aWh
 aai
-alD
+acl
 ave
 anG
 atc
@@ -29022,7 +29083,7 @@ aEG
 aEG
 aWh
 aaj
-aHQ
+aBk
 aBk
 aBk
 aEY
@@ -29199,7 +29260,7 @@ aEG
 aEG
 aWh
 aak
-aBk
+acm
 azd
 aQd
 aZl
