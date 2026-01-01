@@ -542,8 +542,16 @@
 
 /obj/item/paper/prison_station/kuala_note
 	name = "USS Kuala prisoner note"
-	info = "many of us managed to survive the crash, the other two I was captured with froze in this meat locker<BR>\n<BR>\nwe managed to figure out that we're far north, we just need to hold out until rescue arrives...	<BR>\n<BR>\nwe can hear so many of those UPP bastards outside... maybe it would be best to not try and escape, it may be the death of us all...\"<BR>\n<BR>\n<BR>\n<BR>\n<em>These are the only two readable sections. The rest is covered in smears of blood.</em>";
+	info = "many of us managed to survive the crash, the other two I was captured with froze in this meat locker<BR>\n<BR>\nwe managed to figure out that we're far north, we just need to hold out until rescue arrives...	<BR>\n<BR>\nwe can hear so many of those UPP bastards outside... maybe it would be best to not try and escape, it may be the death of us all...\"<BR>\n<BR>\n<BR>\n<BR>\n<em>These are the only two readable sections. The rest is covered in smears of blood.</em>"
 	icon_state = "paper_words"
+
+/obj/item/paper/prison_station/kuala_distress
+	name = "USS Kuala distress call"
+	info = "<B>PAN-PAN, PAN-PAN, PAN-PAN.</B><BR>\nThis is the Captain Armstrong of the USS Kuala, we are in urgent need of assistance in this sector. We have just lost contact with our squad that was enroute to combat the reported UPP presence to the north of the LV-624 colony. The dropship carrying over 36 soldiers is not responding to hails and appears to have been downed by a AT-87 ASAT anti-air unit. We are requesting immediate assistance in locating the downed ship in the region and destroying any AA presence to the far north of the colony. It appears to be located near a lake with a cabin. <BR>\n<BR>\nWe suspect that there are surviving marines of the dropship. Some have likely been captured and are located at the AA encampment. We HEAVILY advise against directly bombing the AA camp until the site is fully secured. <BR>\n<BR>\nDue to the landing site being inaccessible, we advise that a HALO jump be preformed to make entry into the region. Fly cautiously due to the AA presence. <BR>\n<BR>\nWe also suspect that UPP radio jamming equipment is located at the encampment, making communication very difficult. Destroy or disable the jamming equipment when you find it. <BR>\n<BR>\nDue to ongoing conflict across the area, all colonist presence has been evacuated beforehand. Any targets that are not USCM affliated should be considered hostile. Beware of UPP patrols, mines, and try to stay together. It is incredibly dargerous down there, the USS Kuala is unable to provide any support at this time. <BR>\n<BR>\n<BR>\nGood luck, and do not fail the Corps. Godspeed."
+
+/obj/item/paper/prison_station/kuala_operation_note
+	name = "USS Golden Arrow Operational Orders"
+	info = "<B>USCM HIGH COMMAND ORDERS</B> <BR>\n<BR>\n<BR>\nUSS Golden Arrow, you are hereby assigned to stay in the vicinity of the LV-624 colony that is currently under assault by UPP forces. The USS Kuala in the vicinity is currently engaging them at this time. <BR>\n<BR>\nAdditional support staff and equipment have been awoken and prepared in anticipation of further instructions.<BR>\n<BR>\n<B>Await further orders.</B>"
 
 /obj/item/paper/prison_station/inmate_handbook
 	name = "paper= 'Inmate Rights, Privileges and Responsibilities'"

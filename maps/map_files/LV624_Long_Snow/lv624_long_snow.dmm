@@ -3548,9 +3548,6 @@
 "dbe" = (
 /turf/open/floor/whiteblue/west,
 /area/lv624/lazarus/medbay)
-"dcn" = (
-/turf/open/floor/wood,
-/area/lv624/ground/caves/north_west_caves)
 "dcu" = (
 /obj/structure/flora/jungle/vines{
 	color = "#64b1fa"
@@ -4459,6 +4456,9 @@
 /obj/structure/flora/grass/tallgrass/ice,
 /turf/open/auto_turf/snow/layer3,
 /area/lv624/ground/jungle/north_jungle)
+"ecC" = (
+/turf/closed/wall/wood,
+/area/lv624/ground/caves/north_west_caves)
 "ecE" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/item/stack/rods,
@@ -4716,6 +4716,9 @@
 	},
 /turf/open/floor/plating/plating_catwalk/strata,
 /area/lv624/lazarus/sleep_male)
+"esJ" = (
+/turf/open/floor/wood/wood_broken,
+/area/lv624/ground/caves/north_west_caves)
 "esW" = (
 /obj/structure/flora/bush/ausbushes/lavendergrass,
 /turf/open/auto_turf/snow/layer0,
@@ -5395,6 +5398,9 @@
 /obj/item/tool/mop,
 /turf/open/floor/white,
 /area/lv624/lazarus/main_hall)
+"fko" = (
+/turf/open/floor/wood,
+/area/lv624/ground/caves/north_west_caves)
 "fkq" = (
 /obj/structure/shuttle/part/dropship1/right_outer_wing_connector,
 /turf/open/auto_turf/strata_grass/layer0_mud_alt,
@@ -9828,9 +9834,6 @@
 	name = "Fulcrum"
 	},
 /area/lv624/lazarus/sleep_male)
-"kIN" = (
-/turf/open/floor/wood/wood_broken,
-/area/lv624/ground/caves/north_west_caves)
 "kJd" = (
 /obj/structure/machinery/door/airlock/hatch/cockpit/upp,
 /turf/open/floor/strata/floor3/east,
@@ -17476,9 +17479,6 @@
 /obj/structure/pipes/standard/simple/hidden/cyan,
 /turf/open/floor/grass,
 /area/lv624/lazarus/main_hall)
-"uUa" = (
-/turf/closed/wall/wood,
-/area/lv624/ground/caves/north_west_caves)
 "uUg" = (
 /obj/effect/landmark/crap_item,
 /turf/open/auto_turf/snow/brown_base/layer1,
@@ -21282,11 +21282,11 @@ thY
 (4,1,1) = {"
 jqS
 ojY
-uUa
-uUa
-uUa
-uUa
-uUa
+ecC
+ecC
+ecC
+ecC
+ecC
 ojY
 ojY
 ojY
@@ -21727,11 +21727,11 @@ thY
 (5,1,1) = {"
 jqS
 ojY
-uUa
-kIN
-kIN
-dcn
-uUa
+ecC
+esJ
+esJ
+fko
+ecC
 ojY
 ojY
 ojY
@@ -22172,11 +22172,11 @@ thY
 (6,1,1) = {"
 jqS
 ojY
-uUa
-dcn
-dcn
-kIN
-uUa
+ecC
+fko
+fko
+esJ
+ecC
 ojY
 ojY
 ojY
@@ -22617,11 +22617,11 @@ thY
 (7,1,1) = {"
 jqS
 ojY
-uUa
-dcn
-dcn
-dcn
-uUa
+ecC
+fko
+fko
+fko
+ecC
 ojY
 ojY
 ojY
@@ -23062,11 +23062,11 @@ thY
 (8,1,1) = {"
 jqS
 ojY
-uUa
-kIN
-dcn
-dcn
-uUa
+ecC
+esJ
+fko
+fko
+ecC
 ojY
 ojY
 ojY
@@ -23507,11 +23507,11 @@ thY
 (9,1,1) = {"
 jqS
 ojY
-uUa
-dcn
-dcn
-dcn
-uUa
+ecC
+fko
+fko
+fko
+ecC
 ojY
 ojY
 ojY
@@ -23952,11 +23952,11 @@ thY
 (10,1,1) = {"
 jqS
 ojY
-uUa
-dcn
-dcn
-kIN
-uUa
+ecC
+fko
+fko
+esJ
+ecC
 ojY
 ojY
 ojY
@@ -24397,11 +24397,11 @@ thY
 (11,1,1) = {"
 jqS
 ojY
-uUa
-uUa
-uUa
-uUa
-uUa
+ecC
+ecC
+ecC
+ecC
+ecC
 ojY
 ojY
 ojY
