@@ -3,7 +3,11 @@
 /datum/weather_ss_map_holder/lv624_long_snow
 	name = "LV624 Long Snow Map Holder"
 
-	min_time_between_events = 30 MINUTES
+	warn_time = 1 MINUTES
+	min_time_between_events = 12 MINUTES
+	min_time_between_checks = 0
+	min_check_variance = 0
+
 	no_weather_turf_icon_state = "strata_clearsky"
 
 	potential_weather_events = list(
