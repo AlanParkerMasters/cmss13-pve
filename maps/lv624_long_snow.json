@@ -9,7 +9,7 @@
     "environment_traits": {},
 
     "weather_holder": "/datum/weather_ss_map_holder/shivas_snowball",
-    "announce_text": "Pan-Pan. This is the commanding officer of the USS Kuala. Our primary fighting force are currently grounded on planet LV-624 to the far north of the colony. We are unable to contact the our dropship the Hanyut and are unable to provide further reinforcements. We are requesting assistance from any nearby vessels; this broadcast is set to repeat every 24 hours.",
+    "announce_text": "USS Golden Arrow, this is the USS Kuala. We are in the vicinity of the LV-624 colony and currently engaging with UPP forces at this time. Remain at ready for potential reinforcement action. We'll keep you updated, out.",
     "gamemodes": [
         "Distress Signal",
         "Hunter Games",
