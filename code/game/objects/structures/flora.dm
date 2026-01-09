@@ -403,7 +403,7 @@ ICEY GRASS. IT LOOKS LIKE IT'S MADE OF ICE.
 	icon = 'icons/obj/structures/props/snowflora.dmi'
 	icon_state = "snowbush_1"
 	density = FALSE
-	layer = ABOVE_XENO_LAYER
+	layer = ABOVE_LYING_MOB_LAYER
 	fire_flag = FLORA_BURN_NO_SPREAD
 
 /obj/structure/flora/bush/snow

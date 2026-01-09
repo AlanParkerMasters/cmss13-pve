@@ -51,6 +51,8 @@
 		var/turf/location = get_turf(dropship.paradrop_signal.signal_loc)
 		for(var/turf/turf as anything in RANGE_TURFS(crosser.get_paradrop_scatter(), location))
 			var/area/turf_area = get_area(turf)
+			if(turf_area.flags_area & AREA_NOPARADROP)
+				continue
 			if(!turf_area || CEILING_IS_PROTECTED(turf_area.ceiling, CEILING_PROTECTION_TIER_1))
 				continue
 			if(turf.density)
@@ -80,6 +82,8 @@
 	var/list/area/potential_areas = shuffle(SSmapping.areas_in_z["[ground_z_levels[1]]"])
 
 	for(var/area/maybe_this_area in potential_areas)
+		if(maybe_this_area.flags_area & AREA_NOPARADROP) //prevents players from dropping in a flagged area for not paradropping
+			continue
 		if(CEILING_IS_PROTECTED(maybe_this_area.ceiling, CEILING_PROTECTION_TIER_1)) // prevents out of bounds too
 			continue
 		if(istype(maybe_this_area, /area/space)) // make sure its not space, just in case
