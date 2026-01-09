@@ -6,6 +6,7 @@
 	name = "Kheshig-1M"
 	desc = "The Kheshig-1M is a result of a modernization program to try and make a common heavy utility vehicle for the Union. Lightly armored and relatively compact, most variants are unarmed."
 	layer = ABOVE_XENO_LAYER
+	vehicle_faction = FACTION_UPP
 
 	icon = 'icons/obj/vehicles/uppvan.dmi'
 	icon_state = "uppvan_base"

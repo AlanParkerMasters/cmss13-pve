@@ -552,6 +552,10 @@
 	},
 /turf/open/auto_turf/snow/layer3,
 /area/lv624/ground/snow/no_paradrop)
+"abN" = (
+/obj/structure/blocker/invisible_wall,
+/turf/open/auto_turf/snow/layer0,
+/area/lv624/ground/snow/no_paradrop)
 "abO" = (
 /turf/open/auto_turf/snow/layer1,
 /area/lv624/ground/snow/no_paradrop)
@@ -1627,6 +1631,14 @@
 /obj/structure/fence,
 /turf/open/auto_turf/snow/brown_base/layer1,
 /area/lv624/ground/snow/no_paradrop)
+"aeO" = (
+/obj/structure/surface/table/woodentable/poor,
+/obj/structure/machinery/light/blue{
+	dir = 1;
+	pixel_y = 11
+	},
+/turf/open/floor/wood,
+/area/lv624/ground/snow/unknown)
 "aeP" = (
 /obj/structure/flora/bush/snow{
 	icon_state = "snowgrassgb_2"
@@ -1930,7 +1942,9 @@
 /obj/structure/barricade/sandbags/wired{
 	dir = 4
 	},
-/obj/structure/machinery/defenses/sentry/premade/dumb/upp,
+/obj/structure/machinery/defenses/sentry/premade/dumb/upp{
+	dir = 4
+	},
 /turf/open/auto_turf/snow/layer3,
 /area/lv624/ground/caves/south_central_caves)
 "afP" = (
@@ -2174,12 +2188,6 @@
 "agv" = (
 /obj/structure/barricade/sandbags/wired,
 /obj/structure/machinery/defenses/sentry/premade/dumb/upp,
-/turf/open/floor/wood,
-/area/lv624/ground/snow/unknown)
-"agw" = (
-/obj/structure/machinery/light/double{
-	dir = 8
-	},
 /turf/open/floor/wood,
 /area/lv624/ground/snow/unknown)
 "agK" = (
@@ -42290,7 +42298,7 @@ nhE
 nhE
 nhE
 nhE
-jSh
+nhE
 afI
 nhE
 nhE
@@ -43571,7 +43579,7 @@ oUY
 oUY
 oUY
 oUY
-oUY
+nKV
 oUY
 oUY
 nhE
@@ -51560,7 +51568,7 @@ aeK
 aeK
 aeK
 abL
-abL
+abN
 abL
 abL
 abJ
@@ -52005,7 +52013,7 @@ aeK
 aeM
 aeK
 abL
-abL
+abN
 abL
 aaP
 abJ
@@ -52433,7 +52441,7 @@ aej
 acv
 adS
 fWy
-agw
+qpn
 adp
 adT
 qXT
@@ -52450,7 +52458,7 @@ aeK
 aeK
 aeK
 aeK
-abL
+abN
 abL
 abJ
 abJ
@@ -52876,7 +52884,7 @@ acv
 adU
 adE
 acv
-adU
+aeO
 wkf
 fsG
 qpn
@@ -63145,10 +63153,10 @@ abJ
 abK
 abJ
 abJ
-abJ
+abH
 ade
 abL
-abH
+abL
 wsI
 wsI
 wsI
@@ -68529,7 +68537,7 @@ abL
 abL
 abL
 abJ
-aeS
+abJ
 abJ
 abJ
 abJ
@@ -75139,7 +75147,7 @@ abH
 abH
 aeR
 abJ
-abJ
+dNW
 abJ
 abH
 abH

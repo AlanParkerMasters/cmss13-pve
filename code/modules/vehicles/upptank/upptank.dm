@@ -2,6 +2,7 @@
 	name = "Cheetah 2A Light Tank"
 	desc = "A giant piece of state-approved armor with a big gun, you know what to do. Entrance in the back."
 	desc_lore = "The Cheetah 2A is an assault tank designed to be rapidly deployed from light dropcraft in daring raids and first strike operations. The Cheetah 2A is relatively new in comparison to most UPP vehicles seen on the Frontier, but has already earned a fair reputation as a reliable workhorse, that is able to bring some cutting edge technology to the fight. While the project was based in Germany, the Cheetah 2A has a truly progressive development history, seeing influences from nearly all UPP member states."
+	vehicle_faction = FACTION_UPP
 
 	icon = 'icons/obj/vehicles/upptank.dmi'
 	icon_state = "tank_base"
