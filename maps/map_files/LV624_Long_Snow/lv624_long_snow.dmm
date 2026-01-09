@@ -1440,7 +1440,8 @@
 	req_access_txt = "100";
 	req_one_access = null;
 	desc = "It opens and closes. It's made of really strong material.";
-	opacity = 1
+	opacity = 1;
+	locked = 1
 	},
 /turf/open/floor/wood,
 /area/lv624/ground/snow/unknown)
@@ -2190,6 +2191,14 @@
 /obj/structure/machinery/defenses/sentry/premade/dumb/upp,
 /turf/open/floor/wood,
 /area/lv624/ground/snow/unknown)
+"agw" = (
+/obj/effect/decal/cleanable/blood/splatter,
+/turf/open/floor/plating/asteroidwarning,
+/area/lv624/ground/snow/no_paradrop)
+"agx" = (
+/obj/effect/decal/cleanable/blood/splatter,
+/turf/open/floor/plating/asteroidfloor/north,
+/area/lv624/ground/snow/no_paradrop)
 "agK" = (
 /obj/structure/pipes/standard/simple/hidden/cyan{
 	dir = 4
@@ -67020,7 +67029,7 @@ afk
 afk
 afk
 afk
-afk
+agx
 afk
 afk
 afj
@@ -67466,9 +67475,9 @@ afk
 afk
 afk
 afk
+agx
 afk
-afk
-afj
+agw
 dNJ
 dNJ
 dNJ
@@ -67908,7 +67917,7 @@ afq
 afo
 afk
 afk
-afk
+agx
 afk
 afk
 afk
