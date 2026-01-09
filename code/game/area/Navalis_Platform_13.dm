@@ -12,7 +12,7 @@
 	ceiling = CEILING_MAX
 	is_resin_allowed = FALSE
 	minimap_color = MINIMAP_AREA_OOB
-	flags_area = AREA_NOTUNNEL|AREA_UNWEEDABLE|AREA_NO_PARA
+	flags_area = AREA_NOTUNNEL|AREA_UNWEEDABLE|AREA_NOPARADROP
 
 /area/navalis/indoors
 	name = "Navalis - Indoors"
@@ -56,7 +56,7 @@
 	requires_power = FALSE
 	ceiling = CEILING_NONE
 	minimap_color = MINIMAP_WATER
-	flags_area = AREA_NOTUNNEL|AREA_UNWEEDABLE|AREA_NO_PARA
+	flags_area = AREA_NOTUNNEL|AREA_UNWEEDABLE|AREA_NOPARADROP
 
 // PSV Charon
 
@@ -525,7 +525,7 @@
 /area/navalis/outdoors/exterior_xeno_only
 	name = "Industrial Rig - Exterior Lattice Walkway"
 	icon_state = "red2"
-	flags_area = AREA_NOTUNNEL|AREA_CONTAINMENT|NOT_WEEDABLE|AREA_NO_PARA
+	flags_area = AREA_NOTUNNEL|AREA_CONTAINMENT|NOT_WEEDABLE|AREA_NOPARADROP
 	base_lighting_alpha = 35
 	requires_power = FALSE
 

@@ -47,10 +47,10 @@
 #define AREA_CONTAINMENT (1<<3)
 /// Flags the area as permanently unweedable. Still requires is_resin_allowed = FALSE
 #define AREA_UNWEEDABLE (1<<4)
-/// Flags the area as not being a valid location for a para-drop to land on..
-#define AREA_NO_PARA (1<<5)
+/// Prevents paradrops in an area
+#define AREA_NOPARADROP (1<<5)
 /// Default number of ticks for do_after
-#define DA_DEFAULT_NUM_TICKS 5
+#define DA_DEFAULT_NUM_TICKS 6
 
 //construction flags
 
