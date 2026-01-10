@@ -9819,7 +9819,9 @@
 /turf/open/floor/almayer/edge/smooth,
 /area/golden_arrow/hangar)
 "aED" = (
-/obj/docking_port/stationary/marine_dropship/golden_arrow_hangar,
+/obj/docking_port/stationary/marine_dropship/golden_arrow_hangar{
+	roundstart_template = /datum/map_template/shuttle/tornado
+	},
 /turf/open/floor/plating,
 /area/golden_arrow/hangar)
 "aEE" = (
