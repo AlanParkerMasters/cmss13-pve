@@ -102,7 +102,7 @@ PLANT_CUT_MACHETE = 3 = Needs at least a machete to be cut down
 /obj/structure/flora/tree
 	name = "tree"
 	pixel_x = -16
-	layer = ABOVE_FLY_LAYER
+	layer = 4.15
 
 /obj/structure/flora/tree/pine
 	name = "pine tree"

@@ -30,9 +30,10 @@
 	display_name = "Blizzard"
 	length = 4 MINUTES
 	turf_overlay_icon_state = "strata_blizzard"
+	turf_overlay_alpha = 60
 
 	effect_message = "You feel the winds of the blizzard sap all the warmth from your body!"
-	damage_per_tick = 0.25
+	damage_per_tick = 0.001
 
 	ambience = 'sound/ambience/strata/strata_blizzard.ogg'
 
