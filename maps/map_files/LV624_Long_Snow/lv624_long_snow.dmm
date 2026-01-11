@@ -1811,6 +1811,13 @@
 "afv" = (
 /turf/open/auto_turf/snow/brown_base/layer2,
 /area/lv624/ground/snow/no_paradrop)
+"afw" = (
+/obj/structure/machinery/door/airlock/hatch/cockpit/upp{
+	locked = 1
+	},
+/obj/structure/blocker/invisible_wall,
+/turf/open/floor/strata/floor3/east,
+/area/lv624/ground/snow/unknown)
 "afx" = (
 /obj/structure/barricade/sandbags/wired,
 /turf/open/auto_turf/snow/brown_base/layer2,
@@ -8839,21 +8846,6 @@
 /obj/effect/landmark/item_pool_spawner/survivor_ammo/buckshot,
 /turf/open/floor/purple/northwest,
 /area/lv624/lazarus/sleep_female)
-"hXI" = (
-/obj/structure/machinery/light{
-	dir = 4;
-	pixel_x = 14
-	},
-/obj/structure/bed/chair/dropship/pilot{
-	dir = 1;
-	layer = 6
-	},
-/obj/effect/decal/warning_stripes{
-	icon_state = "W";
-	pixel_x = -1
-	},
-/turf/open/floor/strata/multi_tiles/southwest,
-/area/lv624/ground/snow/unknown)
 "hXV" = (
 /obj/structure/closet/secure_closet/hydroponics,
 /turf/open/floor/whitepurplecorner/east,
@@ -16560,21 +16552,6 @@
 /obj/item/restraint/adjustable/cable/white,
 /turf/open/floor/whiteyellow,
 /area/lv624/lazarus/corporate_dome)
-"rVY" = (
-/obj/structure/machinery/light{
-	dir = 8;
-	pixel_x = -14
-	},
-/obj/structure/bed/chair/dropship/pilot{
-	dir = 1;
-	layer = 6
-	},
-/obj/effect/decal/warning_stripes{
-	icon_state = "E";
-	pixel_x = 1
-	},
-/turf/open/floor/strata/multi_tiles/southwest,
-/area/lv624/ground/snow/unknown)
 "rWp" = (
 /turf/closed/wall/sulaco,
 /area/lv624/lazarus/crashed_ship_containers)
@@ -55929,7 +55906,7 @@ abL
 aeQ
 wCb
 xKM
-rVY
+aac
 dme
 lUr
 uSO
@@ -56374,8 +56351,8 @@ abL
 abL
 dme
 jwy
-lUr
-kJd
+aad
+afw
 wxP
 qCL
 aCm
@@ -56819,7 +56796,7 @@ abL
 abL
 wCb
 nfL
-hXI
+aae
 dme
 lUr
 mpi
@@ -71147,7 +71124,7 @@ abK
 abJ
 aeA
 abJ
-afG
+abJ
 kXJ
 kXJ
 kXJ
