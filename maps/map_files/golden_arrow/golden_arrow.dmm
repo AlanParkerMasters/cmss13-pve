@@ -1161,6 +1161,10 @@
 	},
 /turf/open/floor/almayer/edge/smooth/corner/west,
 /area/golden_arrow/hangar)
+"acq" = (
+/obj/item/paper/kuala/kuala_distress,
+/turf/open/space/basic,
+/area/space)
 "acr" = (
 /obj/structure/pipes/vents/scrubber{
 	dir = 8
@@ -1633,6 +1637,9 @@
 	pixel_x = 2;
 	pixel_y = 4
 	},
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
+	},
 /turf/open/floor/almayer,
 /area/golden_arrow/hangar)
 "adi" = (
@@ -1908,6 +1915,9 @@
 /obj/structure/desertdam/decals/road_edge{
 	icon_state = "road_edge_decal3";
 	pixel_y = 16
+	},
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
 	},
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
@@ -21592,12 +21602,6 @@
 	},
 /turf/open/floor/almayer,
 /area/golden_arrow/lower_cargo)
-"vbQ" = (
-/obj/effect/landmark/nightmare{
-	insert_tag = "briefing"
-	},
-/turf/open/space/basic,
-/area/space)
 "vfK" = (
 /obj/structure/surface/table/almayer,
 /obj/structure/machinery/reagentgrinder/industrial{
@@ -30385,9 +30389,9 @@ aXH
 abz
 ayo
 awL
-vbQ
 aEG
 aEG
+acq
 aEG
 aEG
 aEG
@@ -31796,10 +31800,10 @@ oCT
 azn
 aEo
 aEo
-aWC
 fUj
-vFU
 azc
+aSV
+fUj
 azc
 awL
 aEG
@@ -31973,11 +31977,11 @@ aaT
 aiV
 aEo
 aEo
-amB
-azc
-aSV
-azc
+aWC
 fUj
+vFU
+azc
+azc
 awL
 aEG
 aEG
@@ -32150,8 +32154,8 @@ aeW
 aeW
 aEo
 aEo
-fUj
-fUj
+amB
+azc
 aSV
 azc
 fUj
@@ -32327,11 +32331,11 @@ aAZ
 alI
 aEo
 aEo
-azc
-azc
-aSV
 fUj
+fUj
+aSV
 azc
+fUj
 awL
 aEG
 aEG
@@ -32504,11 +32508,11 @@ xch
 axM
 aEo
 aEo
-dhv
-wPl
-ayZ
-aCS
-aFb
+azc
+azc
+aSV
+fUj
+azc
 awL
 aEG
 aEG
@@ -32681,11 +32685,11 @@ amM
 azV
 aEo
 aEo
-aRf
-ayY
-gUY
-aMY
-nmO
+dhv
+wPl
+ayZ
+aCS
+aFb
 awL
 aEG
 aEG
@@ -32858,11 +32862,11 @@ akb
 akb
 aEo
 aEo
-kXG
-ayN
-hmW
-ayN
-ozg
+aRf
+ayY
+gUY
+aMY
+nmO
 awL
 aEG
 aEG
@@ -33035,11 +33039,11 @@ akb
 akb
 aEo
 aEo
-aVi
-aVi
-aJz
-aKl
-etb
+kXG
+ayN
+hmW
+ayN
+ozg
 awL
 aEG
 aEG
@@ -33212,11 +33216,11 @@ akb
 akb
 aEo
 aEo
-aEo
-aEo
-aEo
-aEo
-aEo
+aVi
+aVi
+aJz
+aKl
+etb
 awL
 aEG
 aEG
