@@ -2813,7 +2813,6 @@
 "aoE" = (
 /obj/structure/surface/table/woodentable/poor,
 /obj/effect/decal/cleanable/dirt,
-/obj/item/tool/shovel/snow,
 /turf/open/floor/plating/wood_broken4,
 /area/lv624/ground/snow/unknown)
 "aoS" = (
