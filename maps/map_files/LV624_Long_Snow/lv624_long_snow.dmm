@@ -242,19 +242,21 @@
 /area/lv624/ground/snow)
 "aaJ" = (
 /obj/structure/prop/invuln/fire{
-	pixel_x = -7;
-	pixel_y = 24
+	pixel_x = 15;
+	pixel_y = 25;
+	layer = 4.2
 	},
 /turf/open/auto_turf/snow/brown_base/layer1,
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "aaK" = (
 /obj/structure/prop/invuln/fire{
 	pixel_x = 16;
-	pixel_y = 4
+	pixel_y = 4;
+	layer = 4.2
 	},
 /obj/effect/vehicle_spawner/apc/unarmed/broken,
 /turf/open/auto_turf/strata_grass/layer0_mud_alt,
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "aaL" = (
 /obj/structure/kitchenspike,
 /obj/effect/decal/cleanable/blood,
@@ -1059,13 +1061,13 @@
 	pixel_y = 5
 	},
 /obj/effect/decal/cleanable/blood,
-/obj/item/weapon/gun/pistol/holdout{
-	pixel_x = 6;
-	pixel_y = -4
-	},
 /obj/item/clothing/under/marine{
 	pixel_x = 1;
 	pixel_y = -10
+	},
+/obj/item/weapon/gun/pistol/clfpistol{
+	pixel_x = -1;
+	pixel_y = -1
 	},
 /obj/item/clothing/under/marine{
 	pixel_x = -9;
@@ -1507,7 +1509,7 @@
 	pixel_x = -30
 	},
 /turf/open/floor/warning/southwest,
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "aes" = (
 /obj/structure/machinery/door/airlock/almayer/generic{
 	dir = 1;
@@ -1682,7 +1684,7 @@
 /turf/open/auto_turf/snow/layer3,
 /area/lv624/ground/snow/no_paradrop)
 "aeX" = (
-/obj/structure/machinery/defenses/sentry/premade/dumb/upp,
+/obj/structure/machinery/defenses/sentry/premade/dumb/upp/light,
 /turf/open/floor/white,
 /area/lv624/lazarus/main_hall)
 "aeY" = (
@@ -1705,7 +1707,7 @@
 /obj/structure/barricade/wooden{
 	dir = 8
 	},
-/obj/structure/machinery/defenses/sentry/premade/dumb/upp{
+/obj/structure/machinery/defenses/sentry/premade/dumb/upp/light{
 	dir = 8
 	},
 /turf/open/floor/white,
@@ -1719,7 +1721,7 @@
 	dir = 1;
 	pixel_y = 7
 	},
-/obj/structure/machinery/defenses/sentry/premade/dumb/upp{
+/obj/structure/machinery/defenses/sentry/premade/dumb/upp/light{
 	dir = 1
 	},
 /turf/open/floor/white,
@@ -1774,8 +1776,10 @@
 /area/lv624/ground/snow/no_paradrop)
 "afp" = (
 /obj/structure/barricade/sandbags/wired,
-/obj/structure/machinery/defenses/sentry/premade/dumb/upp,
-/turf/open/auto_turf/snow/brown_base/layer1,
+/obj/structure/machinery/defenses/sentry/premade/dumb/upp/light,
+/obj/item/ammo_casing/bullet,
+/obj/item/ammo_casing/bullet,
+/turf/open/auto_turf/snow/brown_base/layer0,
 /area/lv624/ground/snow/no_paradrop)
 "afq" = (
 /obj/structure/barricade/sandbags/wired,
@@ -1783,7 +1787,8 @@
 	dir = 4;
 	icon_state = "sandbag_0"
 	},
-/turf/open/auto_turf/snow/brown_base/layer1,
+/obj/item/ammo_casing/bullet,
+/turf/open/auto_turf/snow/brown_base/layer0,
 /area/lv624/ground/snow/no_paradrop)
 "afr" = (
 /obj/structure/flora/bush/ausbushes/ppflowers,
@@ -1805,13 +1810,6 @@
 /area/lv624/ground/snow/no_paradrop)
 "afv" = (
 /turf/open/auto_turf/snow/brown_base/layer2,
-/area/lv624/ground/snow/no_paradrop)
-"afw" = (
-/obj/structure/barricade/sandbags/wired,
-/obj/structure/barricade/sandbags/wired{
-	dir = 8
-	},
-/turf/open/auto_turf/snow/layer3,
 /area/lv624/ground/snow/no_paradrop)
 "afx" = (
 /obj/structure/barricade/sandbags/wired,
@@ -1837,7 +1835,7 @@
 	omni_directional = 1;
 	desc = "A deployable, semi-automated turret with AI targeting capabilities. Armed with an AK-500 Autocannon and a 350-round drum magazine. This one is capable of turning 360 degrees to orient towards targets."
 	},
-/turf/open/auto_turf/snow/layer3,
+/turf/open/auto_turf/snow/brown_base/layer0,
 /area/lv624/ground/snow/no_paradrop)
 "afA" = (
 /obj/structure/barricade/sandbags/wired{
@@ -2054,6 +2052,16 @@
 /obj/structure/barricade/sandbags/wired,
 /turf/open/auto_turf/snow/layer0,
 /area/lv624/ground/caves/south_east_caves)
+"agi" = (
+/obj/structure/largecrate/random,
+/turf/open/floor/bot/north,
+/area/lv624/ground/snow/no_paradrop)
+"agj" = (
+/obj/item/stack/sheet/wood{
+	amount = 2
+	},
+/turf/open/floor/bot/north,
+/area/lv624/ground/snow/no_paradrop)
 "agk" = (
 /obj/structure/barricade/sandbags/wired,
 /obj/structure/barricade/sandbags/wired{
@@ -2065,8 +2073,8 @@
 /obj/structure/barricade/sandbags/wired{
 	dir = 4
 	},
-/obj/structure/machinery/defenses/sentry/premade/dumb/upp,
-/turf/open/auto_turf/snow/layer1,
+/obj/structure/machinery/defenses/sentry/premade/dumb/upp/light,
+/turf/open/auto_turf/snow/layer0,
 /area/lv624/ground/snow/no_paradrop)
 "agl" = (
 /obj/structure/barricade/sandbags/wired,
@@ -2079,10 +2087,10 @@
 /obj/structure/barricade/sandbags/wired{
 	dir = 4
 	},
-/obj/structure/machinery/defenses/sentry/premade/dumb/upp{
+/obj/structure/machinery/defenses/sentry/premade/dumb/upp/light{
 	dir = 8
 	},
-/turf/open/auto_turf/snow/layer1,
+/turf/open/auto_turf/snow/layer0,
 /area/lv624/ground/snow/no_paradrop)
 "agm" = (
 /obj/structure/barricade/sandbags/wired,
@@ -2095,10 +2103,10 @@
 /obj/structure/barricade/sandbags/wired{
 	dir = 4
 	},
-/obj/structure/machinery/defenses/sentry/premade/dumb/upp{
+/obj/structure/machinery/defenses/sentry/premade/dumb/upp/light{
 	dir = 4
 	},
-/turf/open/auto_turf/snow/layer1,
+/turf/open/auto_turf/snow/layer0,
 /area/lv624/ground/snow/no_paradrop)
 "agn" = (
 /obj/structure/prop/rock{
@@ -2177,7 +2185,7 @@
 /area/lv624/ground/snow/no_paradrop)
 "agv" = (
 /obj/structure/barricade/sandbags/wired,
-/obj/structure/machinery/defenses/sentry/premade/dumb/upp,
+/obj/structure/machinery/defenses/sentry/premade/dumb/upp/light,
 /turf/open/floor/wood,
 /area/lv624/ground/snow/unknown)
 "agw" = (
@@ -2220,12 +2228,42 @@
 	},
 /turf/open/auto_turf/snow/layer0,
 /area/lv624/ground/caves/south_east_caves)
+"agC" = (
+/turf/open/floor/warning/north,
+/area/lv624/ground/snow/no_paradrop)
+"agD" = (
+/turf/open/floor/warningcorner/east,
+/area/lv624/ground/snow/no_paradrop)
+"agE" = (
+/obj/structure/largecrate,
+/turf/open/floor/bot/north,
+/area/lv624/ground/snow/no_paradrop)
+"agF" = (
+/obj/structure/largecrate/random,
+/turf/open/floor,
+/area/lv624/ground/snow/no_paradrop)
+"agG" = (
+/turf/open/floor/warning/west,
+/area/lv624/ground/snow/no_paradrop)
+"agH" = (
+/turf/open/floor/warning,
+/area/lv624/ground/snow/no_paradrop)
+"agI" = (
+/obj/effect/landmark/hunter_primary,
+/turf/open/floor,
+/area/lv624/ground/snow/no_paradrop)
+"agJ" = (
+/turf/open/floor/warning/southwest,
+/area/lv624/ground/snow/no_paradrop)
 "agK" = (
 /obj/structure/pipes/standard/simple/hidden/cyan{
 	dir = 4
 	},
 /turf/open/floor/wood/wood_broken6,
 /area/lv624/lazarus/hop)
+"agL" = (
+/turf/open/floor/warningcorner/north,
+/area/lv624/ground/snow/no_paradrop)
 "agM" = (
 /obj/structure/barricade/wooden,
 /obj/structure/flora/jungle/vines/heavy{
@@ -2234,9 +2272,194 @@
 	},
 /turf/open/floor/warning/north,
 /area/lv624/ground/snow)
+"agN" = (
+/turf/open/floor/warning/east,
+/area/lv624/ground/snow/no_paradrop)
 "agO" = (
 /turf/open/auto_turf/snow/layer3,
 /area/lv624/ground/caves/sand_temple)
+"agP" = (
+/turf/open/floor/warning/northeast,
+/area/lv624/ground/snow/no_paradrop)
+"agQ" = (
+/obj/structure/barricade/sandbags/wired,
+/obj/structure/barricade/sandbags/wired{
+	dir = 8
+	},
+/obj/item/ammo_casing/bullet,
+/turf/open/auto_turf/snow/brown_base/layer0,
+/area/lv624/ground/snow/no_paradrop)
+"agR" = (
+/obj/item/ammo_casing/bullet,
+/turf/open/auto_turf/snow/brown_base/layer0,
+/area/lv624/ground/snow/no_paradrop)
+"agS" = (
+/obj/structure/largecrate/empty/case{
+	pixel_x = 3
+	},
+/obj/structure/largecrate/random/mini/ammo{
+	pixel_y = 8;
+	pixel_x = 4
+	},
+/turf/open/auto_turf/snow/brown_base/layer0,
+/area/lv624/ground/snow/no_paradrop)
+"agT" = (
+/obj/structure/prop/invuln/fire{
+	icon_state = "dynamic_4";
+	layer = 3.01;
+	pixel_y = 9;
+	pixel_x = 1
+	},
+/turf/closed/shuttle/dropship3/tornado{
+	icon_state = "24";
+	opacity = 0
+	},
+/area/lv624/ground/snow)
+"agU" = (
+/obj/structure/shuttle/part/tornado/transparent{
+	icon_state = "28"
+	},
+/obj/structure/prop/invuln/fire{
+	icon_state = "dynamic_4";
+	layer = 3.01
+	},
+/turf/open/auto_turf/snow/layer3,
+/area/lv624/ground/snow)
+"agV" = (
+/obj/structure/shuttle/part/tornado{
+	icon_state = "6";
+	opacity = 0
+	},
+/obj/structure/prop/invuln/fire{
+	icon_state = "dynamic_4";
+	layer = 3.01
+	},
+/turf/open/auto_turf/snow/layer3,
+/area/lv624/ground/snow)
+"agW" = (
+/obj/effect/decal/cleanable/blood/oil,
+/turf/open/auto_turf/snow/layer3,
+/area/lv624/ground/snow/no_paradrop)
+"agX" = (
+/obj/structure/prop/invuln/fire{
+	icon_state = "dynamic_4";
+	layer = 3.01
+	},
+/turf/open/auto_turf/snow/brown_base/layer0,
+/area/lv624/ground/snow/no_paradrop)
+"agY" = (
+/obj/structure/flora/jungle/vines{
+	color = "#64b1fa"
+	},
+/obj/structure/flora/jungle/vines{
+	color = "#64b1fa"
+	},
+/turf/open/auto_turf/snow/layer3,
+/area/lv624/ground/snow/no_paradrop)
+"agZ" = (
+/obj/effect/decal/cleanable/blood/oil,
+/turf/open/auto_turf/snow/brown_base/layer0,
+/area/lv624/ground/snow/no_paradrop)
+"aha" = (
+/obj/structure/prop/invuln/fire{
+	icon_state = "dynamic_4";
+	layer = 3.01
+	},
+/turf/open/auto_turf/snow/layer3,
+/area/lv624/ground/snow/no_paradrop)
+"ahb" = (
+/obj/structure/flora/jungle/vines/heavy{
+	color = "#64b1fa";
+	desc = "A frozen thick, coiled mass of twisted vines."
+	},
+/turf/open/auto_turf/snow/layer3,
+/area/lv624/ground/snow/no_paradrop)
+"ahc" = (
+/obj/structure/prop/invuln/fire{
+	pixel_x = -8;
+	pixel_y = 10
+	},
+/turf/open/auto_turf/snow/layer3,
+/area/lv624/ground/snow/no_paradrop)
+"ahd" = (
+/obj/structure/prop/invuln/fire{
+	pixel_x = -19;
+	pixel_y = 3
+	},
+/turf/open/auto_turf/snow/layer3,
+/area/lv624/ground/snow/no_paradrop)
+"ahe" = (
+/obj/structure/prop/invuln/fire{
+	pixel_x = -8;
+	pixel_y = 10
+	},
+/turf/open/auto_turf/snow/brown_base/layer1,
+/area/lv624/ground/snow/no_paradrop)
+"ahf" = (
+/obj/structure/prop/invuln/fire{
+	pixel_x = -7;
+	pixel_y = 24
+	},
+/turf/open/auto_turf/snow/brown_base/layer1,
+/area/lv624/ground/snow/no_paradrop)
+"ahg" = (
+/turf/closed/wall/wood,
+/area/lv624/ground/snow/no_paradrop)
+"ahh" = (
+/obj/structure/blocker/fog,
+/turf/open/auto_turf/snow/layer3,
+/area/lv624/ground/snow)
+"ahi" = (
+/obj/item/storage/firstaid/regular{
+	pixel_x = 6;
+	pixel_y = 11;
+	color = "grey";
+	desc = "It's an old emergency medical kit containing basic medication and equipment. You question if any of the meds in it are still useful."
+	},
+/obj/effect/decal/cleanable/hybrisa/trash{
+	icon_state = "trash_14"
+	},
+/turf/open/floor/plating/wood_broken6,
+/area/lv624/ground/snow/unknown)
+"ahj" = (
+/obj/structure/surface/table/woodentable/poor,
+/obj/item/reagent_container/food/snacks/protein_pack/rmc,
+/turf/open/floor/plating/wood,
+/area/lv624/ground/snow/unknown)
+"ahk" = (
+/obj/structure/flora/bush/ausbushes/ausbush{
+	color = "#64b1fa"
+	},
+/obj/structure/blocker/fog,
+/turf/open/auto_turf/snow/layer3,
+/area/lv624/ground/snow)
+"ahl" = (
+/obj/effect/decal/cleanable/hybrisa/trash{
+	icon_state = "trash_10"
+	},
+/turf/open/floor/plating/wood_broken5,
+/area/lv624/ground/snow/unknown)
+"ahm" = (
+/obj/effect/decal/cleanable/hybrisa/trash{
+	icon_state = "trash_4";
+	pixel_y = 14
+	},
+/turf/open/floor/plating/wood_broken4,
+/area/lv624/ground/snow/unknown)
+"ahn" = (
+/obj/structure/prop/brazier/campfire{
+	remaining_fuel = 99999999
+	},
+/turf/open/auto_turf/snow/brown_base/layer0,
+/area/lv624/ground/snow)
+"aho" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/hybrisa/trash{
+	pixel_x = -9;
+	pixel_y = 4
+	},
+/turf/open/floor/plating/wood_broken2,
+/area/lv624/ground/snow/unknown)
 "ahp" = (
 /obj/structure/reagent_dispensers/fueltank,
 /obj/item/device/flashlight{
@@ -2244,6 +2467,60 @@
 	},
 /turf/open/floor/brown/northwest,
 /area/lv624/lazarus/comms)
+"ahq" = (
+/obj/structure/machinery/space_heater/radiator/red{
+	dir = 1;
+	pixel_y = 26
+	},
+/turf/open/floor/plating/wood_broken5,
+/area/lv624/ground/snow/unknown)
+"ahr" = (
+/obj/structure/sign/banners/united_americas_worn,
+/turf/closed/wall/wood,
+/area/lv624/ground/snow/unknown)
+"ahs" = (
+/obj/item/prop/colony/usedbandage{
+	dir = 1
+	},
+/turf/open/auto_turf/snow/brown_base/layer1,
+/area/lv624/ground/snow)
+"aht" = (
+/obj/effect/decal/cleanable/blood/splatter,
+/obj/item/prop/colony/usedbandage{
+	dir = 4
+	},
+/obj/item/prop/colony/usedbandage{
+	dir = 5;
+	pixel_y = 16;
+	pixel_x = 5
+	},
+/obj/item/prop/colony/usedbandage{
+	dir = 10;
+	pixel_y = -12
+	},
+/turf/open/auto_turf/snow/brown_base/layer0,
+/area/lv624/ground/snow)
+"ahu" = (
+/obj/item/weapon/gun/smg/mp5,
+/obj/item/storage/belt/marine/mp5,
+/obj/item/ammo_magazine/smg/mp5,
+/obj/item/device/flashlight/flare,
+/turf/open/auto_turf/snow/brown_base/layer1,
+/area/lv624/ground/snow)
+"ahv" = (
+/obj/structure/flora/jungle/vines{
+	color = "#64b1fa"
+	},
+/obj/effect/decal/cleanable/blood/splatter,
+/turf/open/auto_turf/snow/layer3,
+/area/lv624/ground/snow/no_paradrop)
+"ahw" = (
+/obj/structure/flora/jungle/vines{
+	color = "#64b1fa"
+	},
+/obj/effect/decal/cleanable/blood/splatter,
+/turf/open/auto_turf/snow/layer3,
+/area/lv624/ground/snow)
 "ahx" = (
 /obj/item/device/radio/intercom{
 	freerange = 1;
@@ -2259,10 +2536,104 @@
 /obj/item/clothing/head/hardhat/orange,
 /turf/open/floor/dark,
 /area/lv624/lazarus/engineering)
+"ahy" = (
+/obj/structure/flora/jungle/vines{
+	color = "#64b1fa"
+	},
+/obj/structure/machinery/camera/autoname{
+	dir = 8
+	},
+/turf/open/auto_turf/snow/layer3,
+/area/lv624/ground/snow/no_paradrop)
+"ahz" = (
+/obj/effect/decal/cleanable/blood/splatter,
+/turf/open/auto_turf/snow/layer3,
+/area/lv624/ground/snow/no_paradrop)
+"ahA" = (
+/obj/structure/prop/invuln/fire{
+	pixel_x = -7;
+	pixel_y = 24;
+	layer = 4.2
+	},
+/turf/open/auto_turf/snow/brown_base/layer1,
+/area/lv624/ground/snow/no_paradrop)
 "ahB" = (
 /obj/effect/landmark/crap_item,
 /turf/open/auto_turf/ice/layer0,
 /area/lv624/ground/caves/west_caves)
+"ahC" = (
+/obj/item/ammo_casing/bullet,
+/turf/open/auto_turf/snow/layer3,
+/area/lv624/ground/snow/no_paradrop)
+"ahD" = (
+/obj/item/ammo_casing/bullet,
+/obj/item/ammo_casing/bullet,
+/turf/open/auto_turf/snow/brown_base/layer1,
+/area/lv624/ground/snow/no_paradrop)
+"ahE" = (
+/obj/item/ammo_casing/bullet,
+/turf/open/auto_turf/snow/brown_base/layer1,
+/area/lv624/ground/snow/no_paradrop)
+"ahF" = (
+/obj/item/ammo_casing/bullet,
+/turf/open/auto_turf/strata_grass/layer0_mud_alt,
+/area/lv624/ground/snow/no_paradrop)
+"ahG" = (
+/obj/structure/flora/tree/dead,
+/obj/structure/flora/jungle/vines{
+	color = "#64b1fa"
+	},
+/turf/open/auto_turf/snow/layer3,
+/area/lv624/ground/snow/no_paradrop)
+"ahH" = (
+/obj/item/ammo_casing/bullet,
+/obj/item/ammo_casing/bullet,
+/turf/open/shuttle/dropship{
+	icon_state = "rasputin3"
+	},
+/area/lv624/ground/snow/unknown)
+"ahI" = (
+/obj/item/ammo_casing/bullet,
+/turf/open/shuttle/dropship{
+	icon_state = "rasputin3"
+	},
+/area/lv624/ground/snow/no_paradrop)
+"ahJ" = (
+/obj/structure/flora/grass/tallgrass/ice,
+/turf/open/auto_turf/snow/layer3,
+/area/lv624/ground/snow/no_paradrop)
+"ahK" = (
+/obj/item/ammo_casing/bullet,
+/obj/item/ammo_casing/bullet,
+/turf/open/shuttle/dropship{
+	icon_state = "rasputin3"
+	},
+/area/lv624/ground/snow/no_paradrop)
+"ahL" = (
+/obj/structure/prop/invuln/fire,
+/turf/open/auto_turf/strata_grass/layer0_mud_alt,
+/area/lv624/ground/snow/no_paradrop)
+"ahM" = (
+/obj/structure/bed/chair{
+	dir = 4
+	},
+/turf/open/auto_turf/snow/brown_base/layer0,
+/area/lv624/ground/snow/no_paradrop)
+"ahN" = (
+/obj/structure/bed/chair{
+	dir = 8;
+	pixel_y = 10;
+	pixel_x = 5
+	},
+/turf/open/auto_turf/snow/brown_base/layer0,
+/area/lv624/ground/snow/no_paradrop)
+"ahO" = (
+/obj/structure/bed/chair{
+	pixel_y = 5;
+	pixel_x = 6
+	},
+/turf/open/auto_turf/snow/brown_base/layer0,
+/area/lv624/ground/snow/no_paradrop)
 "ahP" = (
 /obj/item/tool/kitchen/knife/butcher,
 /obj/structure/surface/rack,
@@ -2271,6 +2642,52 @@
 	},
 /turf/open/floor/freezerfloor,
 /area/lv624/lazarus/kitchen)
+"ahQ" = (
+/obj/structure/largecrate/supply/explosives/grenades,
+/turf/open/auto_turf/snow/brown_base/layer1,
+/area/lv624/ground/snow/no_paradrop)
+"ahR" = (
+/obj/effect/landmark/lizard_spawn,
+/turf/open/floor/sandstone/runed,
+/area/lv624/ground/caves/sand_temple)
+"ahS" = (
+/mob/living/simple_animal/bat,
+/turf/open/auto_turf/snow/layer0,
+/area/lv624/ground/caves/east_caves)
+"ahT" = (
+/mob/living/simple_animal/bat,
+/turf/open/auto_turf/ice/layer0,
+/area/lv624/ground/caves/central_caves)
+"ahU" = (
+/obj/structure/largecrate/empty/case/double,
+/turf/open/auto_turf/snow/layer3,
+/area/lv624/ground/snow/no_paradrop)
+"ahV" = (
+/obj/structure/largecrate/random/barrel/black,
+/turf/open/auto_turf/snow/layer3,
+/area/lv624/ground/snow/no_paradrop)
+"ahW" = (
+/obj/structure/largecrate/random/barrel{
+	layer = 3.1;
+	pixel_x = -17;
+	pixel_y = -9
+	},
+/obj/structure/largecrate/random/barrel/black,
+/turf/open/auto_turf/snow/layer0,
+/area/lv624/ground/snow/no_paradrop)
+"ahX" = (
+/obj/structure/largecrate/random/case/small,
+/obj/item/prop/geiger_counter,
+/turf/open/auto_turf/snow/layer0,
+/area/lv624/ground/snow/no_paradrop)
+"ahY" = (
+/mob/living/simple_animal/bat,
+/turf/open/auto_turf/snow/layer3,
+/area/lv624/ground/caves/north_east_caves)
+"ahZ" = (
+/obj/structure/largecrate/empty/case/double,
+/turf/open/auto_turf/snow/brown_base/layer1,
+/area/lv624/ground/snow/no_paradrop)
 "aic" = (
 /obj/structure/flora/jungle/vines/heavy{
 	color = "#64b1fa";
@@ -2332,7 +2749,7 @@
 	pixel_y = 7
 	},
 /turf/open/shuttle/dropship/medium_grey_single_wide_up_to_down,
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "alg" = (
 /obj/structure/girder/reinforced,
 /turf/open/auto_turf/snow/layer3,
@@ -2392,10 +2809,11 @@
 	pixel_y = 3
 	},
 /turf/open/auto_turf/strata_grass/layer0_mud_alt,
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "aoE" = (
 /obj/structure/surface/table/woodentable/poor,
 /obj/effect/decal/cleanable/dirt,
+/obj/item/tool/shovel/snow,
 /turf/open/floor/plating/wood_broken4,
 /area/lv624/ground/snow/unknown)
 "aoS" = (
@@ -2554,6 +2972,11 @@
 /area/lv624/ground/caves/sand_temple)
 "avI" = (
 /obj/structure/machinery/blackbox_recorder,
+/obj/item/prop/almayer/flight_recorder{
+	desc = "A black box recording the final events of this dropship's unfortunate landing. Data of the flight recorder reveals that the landing was soft enough to allow for several marines to have survived. However, many were captured shortly afterwards if audio of UPP soldiers is anything to go by.";
+	name = "\improper dropship flight recorder";
+	color = "orange"
+	},
 /turf/open/shuttle/dropship{
 	icon_state = "rasputin15"
 	},
@@ -2771,7 +3194,7 @@
 "aJC" = (
 /obj/structure/shuttle/part/dropship1/transparent/left_inner_bottom_wing,
 /turf/open/auto_turf/strata_grass/layer0_mud_alt,
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "aJM" = (
 /obj/structure/flora/bush/snow{
 	icon_state = "snowgrassbb_1"
@@ -2791,7 +3214,7 @@
 /turf/open/shuttle/dropship{
 	icon_state = "rasputin15"
 	},
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "aLj" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "W";
@@ -2911,7 +3334,7 @@
 /turf/open/shuttle/dropship{
 	icon_state = "rasputin15"
 	},
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "aUs" = (
 /obj/structure/floodgate{
 	icon_state = "0,2"
@@ -3013,7 +3436,7 @@
 	pixel_y = 6
 	},
 /turf/open/auto_turf/snow/layer3,
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "aYX" = (
 /obj/structure/machinery/light{
 	dir = 1;
@@ -3050,7 +3473,7 @@
 /obj/effect/attach_point/weapon/dropship1/left_wing,
 /obj/structure/shuttle/part/dropship1/transparent/lower_left_wing,
 /turf/open/auto_turf/strata_grass/layer0_mud_alt,
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "bbX" = (
 /obj/structure/girder/displaced,
 /obj/structure/foamed_metal,
@@ -3272,7 +3695,7 @@
 	icon_state = "5"
 	},
 /turf/open/auto_turf/snow/layer3,
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "bsS" = (
 /turf/closed/shuttle/dropship1/transparent{
 	icon_state = "89"
@@ -3379,12 +3802,12 @@
 /obj/structure/barricade/handrail/strata{
 	dir = 1
 	},
-/turf/open/gm/dirtgrassborder/weedable/grass1,
+/turf/open/auto_turf/snow/layer3,
 /area/lv624/ground/snow)
 "bCv" = (
 /obj/effect/decal/cleanable/blood/oil,
 /turf/open/shuttle/dropship/light_grey_single_wide_up_to_down,
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "bCK" = (
 /obj/structure/machinery/door/airlock/almayer/security/colony{
 	locked = 1;
@@ -3453,7 +3876,7 @@
 "bGY" = (
 /obj/structure/shuttle/part/dropship1/right_inner_wing_connector,
 /turf/open/auto_turf/strata_grass/layer0_mud_alt,
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "bHQ" = (
 /obj/structure/flora/jungle/vines/heavy{
 	color = "#64b1fa";
@@ -3495,7 +3918,7 @@
 	icon_state = "38"
 	},
 /turf/open/auto_turf/snow/layer3,
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "bJq" = (
 /obj/structure/surface/rack,
 /obj/item/weapon/gun/shotgun/pump,
@@ -3710,7 +4133,7 @@
 /area/lv624/ground/snow)
 "bZr" = (
 /obj/structure/shuttle/part/tornado/gunpod_prop,
-/turf/open/auto_turf/snow/layer3,
+/turf/open/auto_turf/snow/brown_base/layer0,
 /area/lv624/ground/snow/unknown)
 "bZJ" = (
 /obj/structure/girder/displaced,
@@ -4026,7 +4449,7 @@
 "csY" = (
 /obj/effect/attach_point/crew_weapon/tornado,
 /turf/open/shuttle/dropship/medium_grey_single_wide_up_to_down,
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "ctG" = (
 /obj/item/reagent_container/food/snacks/grown/mushroom/glowshroom{
 	light_on = 1;
@@ -4110,10 +4533,6 @@
 	icon_state = "53"
 	},
 /area/lv624/ground/snow/unknown)
-"czD" = (
-/mob/living/simple_animal/bat,
-/turf/open/auto_turf/snow/layer3,
-/area/lv624/ground/snow/no_paradrop)
 "czF" = (
 /obj/structure/surface/table/woodentable/poor,
 /obj/item/tool/candle,
@@ -4144,7 +4563,7 @@
 /obj/effect/decal/cleanable/blood/gibs/robot,
 /obj/effect/decal/cleanable/blood/oil,
 /turf/open/auto_turf/snow/layer3,
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "cBA" = (
 /obj/structure/flora/bush/ausbushes/var3/sunnybush{
 	color = "#64b1fa"
@@ -4203,7 +4622,7 @@
 /turf/open/shuttle/dropship{
 	icon_state = "rasputin15"
 	},
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "cFa" = (
 /turf/open/floor/warnwhite/northwest,
 /area/lv624/lazarus/fitness)
@@ -4253,7 +4672,7 @@
 	layer = 3.01
 	},
 /turf/open/auto_turf/snow/layer3,
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "cJr" = (
 /obj/structure/flora/tree/dead,
 /obj/structure/flora/jungle/vines{
@@ -4294,7 +4713,7 @@
 /area/lv624/lazarus/armory)
 "cJZ" = (
 /turf/open/shuttle/dropship/medium_grey_single_wide_up_to_down,
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "cKn" = (
 /obj/structure/machinery/door_control{
 	id = "garage_lv";
@@ -4358,8 +4777,8 @@
 /obj/effect/particle_effect/smoke/bad{
 	time_to_live = 9000000
 	},
-/turf/open/auto_turf/snow/layer3,
-/area/lv624/ground/snow)
+/turf/open/auto_turf/snow/brown_base/layer0,
+/area/lv624/ground/snow/no_paradrop)
 "cRB" = (
 /obj/structure/largecrate,
 /turf/open/floor/greengrid,
@@ -4390,7 +4809,7 @@
 "cSF" = (
 /obj/effect/decal/cleanable/blood/gibs/robot,
 /turf/open/auto_turf/strata_grass/layer0_mud_alt,
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "cSK" = (
 /obj/structure/machinery/landinglight/ds1,
 /turf/open/floor/plating,
@@ -4510,7 +4929,7 @@
 /turf/open/shuttle/dropship{
 	icon_state = "rasputin5"
 	},
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "cYs" = (
 /turf/open/floor/plating/warnplate/west,
 /area/lv624/lazarus/robotics)
@@ -4835,6 +5254,7 @@
 /turf/open/floor/whiteblue/northwest,
 /area/lv624/lazarus/corporate_dome)
 "dur" = (
+/obj/effect/decal/cleanable/blood/oil,
 /turf/open/shuttle/dropship/light_grey_top_left,
 /area/lv624/ground/snow/unknown)
 "duA" = (
@@ -4845,7 +5265,7 @@
 "duG" = (
 /obj/effect/decal/cleanable/blood/oil,
 /turf/open/floor/warning/north,
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "duT" = (
 /obj/structure/flora/bush/ausbushes/var3/sunnybush{
 	color = "#64b1fa"
@@ -4911,7 +5331,7 @@
 /turf/open/shuttle/dropship{
 	icon_state = "rasputin15"
 	},
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "dzz" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/foamed_metal,
@@ -4923,7 +5343,6 @@
 /area/lv624/ground/snow)
 "dzV" = (
 /obj/structure/barricade/sandbags/wired,
-/obj/structure/machinery/defenses/sentry/premade/dumb/upp,
 /turf/open/floor/wood/wood_broken3,
 /area/lv624/ground/snow/unknown)
 "dAx" = (
@@ -5113,7 +5532,7 @@
 	color = "#64b1fa";
 	desc = "Exceptionally dense vegetation that you can't see through. It's frozen over."
 	},
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "dJZ" = (
 /obj/structure/flora/bush/ausbushes/var3/sparsegrass,
 /turf/open/auto_turf/ice,
@@ -5262,8 +5681,8 @@
 	density = 0;
 	layer = 4.2
 	},
-/turf/open/auto_turf/snow/layer3,
-/area/lv624/ground/snow)
+/turf/open/auto_turf/snow/brown_base/layer0,
+/area/lv624/ground/snow/no_paradrop)
 "dTB" = (
 /obj/effect/decal/cleanable/blood/oil,
 /turf/open/shuttle/dropship/medium_grey_single_wide_up_to_down,
@@ -5553,18 +5972,12 @@
 	icon_state = "66"
 	},
 /turf/open/auto_turf/snow/layer3,
-/area/lv624/ground/snow)
-"ekP" = (
-/obj/structure/prop/brazier/campfire{
-	remaining_fuel = 99999999
-	},
-/turf/open/auto_turf/snow/layer3,
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "eld" = (
 /turf/closed/shuttle/dropship1/transparent{
 	icon_state = "39"
 	},
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "elv" = (
 /obj/structure/window_frame/colony,
 /turf/open/floor/plating/platebotc,
@@ -5657,7 +6070,7 @@
 /obj/structure/grille,
 /obj/structure/prop/invuln/fire,
 /turf/open/floor/plating,
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "esI" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "S";
@@ -5749,7 +6162,7 @@
 	pixel_y = 10
 	},
 /turf/open/shuttle/dropship/medium_grey_single_wide_up_to_down,
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "eyp" = (
 /obj/effect/decal/cleanable/vomit,
 /turf/open/floor/white,
@@ -5804,7 +6217,7 @@
 "eBN" = (
 /obj/item/tool/crowbar/red,
 /turf/open/floor/warningcorner/west,
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "eCb" = (
 /obj/structure/machinery/constructable_frame{
 	icon_state = "box_1"
@@ -5827,7 +6240,7 @@
 	icon_state = "dynamic_4"
 	},
 /turf/open/auto_turf/snow/brown_base/layer0,
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "eEh" = (
 /obj/structure/stairs/perspective{
 	color = "#b29082";
@@ -5980,10 +6393,6 @@
 /obj/structure/machinery/washing_machine,
 /turf/open/floor/freezerfloor,
 /area/lv624/lazarus/toilet)
-"eLG" = (
-/obj/effect/landmark/good_item,
-/turf/open/auto_turf/snow/layer3,
-/area/lv624/ground/snow)
 "eLW" = (
 /obj/structure/machinery/door/airlock/multi_tile/almayer/medidoor/colony,
 /turf/open/floor/white,
@@ -6350,7 +6759,7 @@
 /turf/closed/shuttle/dropship1{
 	icon_state = "31"
 	},
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "fkj" = (
 /obj/structure/platform/kutjevo/rock{
 	dir = 4
@@ -6370,7 +6779,7 @@
 "fkq" = (
 /obj/structure/shuttle/part/dropship1/right_outer_wing_connector,
 /turf/open/auto_turf/strata_grass/layer0_mud_alt,
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "fks" = (
 /turf/closed/wall,
 /area/lv624/lazarus/engineering)
@@ -6518,7 +6927,7 @@
 	},
 /obj/structure/girder/reinforced,
 /turf/open/auto_turf/strata_grass/layer0_mud_alt,
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "fuG" = (
 /obj/structure/prop/rock{
 	icon_state = "uppcrate_stackedalt";
@@ -6625,7 +7034,7 @@
 /turf/open/shuttle/dropship{
 	icon_state = "rasputin3"
 	},
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "fyK" = (
 /obj/structure/flora/jungle/vines{
 	color = "#64b1fa"
@@ -6738,7 +7147,7 @@
 "fEj" = (
 /obj/structure/shuttle/part/dropship1/transparent/right_outer_bottom_wing,
 /turf/open/auto_turf/snow/layer3,
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "fEs" = (
 /obj/item/reagent_container/food/snacks/grown/mushroom/glowshroom{
 	light_on = 1;
@@ -6773,7 +7182,7 @@
 	layer = 3.01
 	},
 /turf/open/floor/plating,
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "fGo" = (
 /obj/item/tool/shovel,
 /turf/open/auto_turf/snow/layer0,
@@ -6970,7 +7379,7 @@
 /turf/closed/shuttle/dropship1{
 	icon_state = "43"
 	},
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "fWy" = (
 /obj/effect/decal/cleanable/blood,
 /turf/open/floor/wood,
@@ -7092,10 +7501,6 @@
 	},
 /turf/open/floor/whiteyellowfull/east,
 /area/lv624/ground/caves/sand_temple)
-"gfe" = (
-/obj/effect/decal/cleanable/blood,
-/turf/open/auto_turf/snow/layer3,
-/area/lv624/ground/snow)
 "gfH" = (
 /obj/structure/flora/bush/ausbushes/var3/brflowers,
 /turf/open/auto_turf/snow/layer3,
@@ -7161,7 +7566,7 @@
 	pixel_x = -8
 	},
 /turf/open/shuttle/dropship/medium_grey_single_wide_up_to_down,
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "glK" = (
 /obj/item/shard,
 /turf/open/floor/podhatchfloor,
@@ -7185,11 +7590,7 @@
 /turf/closed/shuttle/dropship1/transparent{
 	icon_state = "26"
 	},
-/area/lv624/ground/snow)
-"goq" = (
-/obj/item/device/flashlight/lantern,
-/turf/open/auto_turf/snow/brown_base/layer1,
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "goy" = (
 /obj/structure/window/framed/colony,
 /turf/open/floor/vault2/west,
@@ -7437,10 +7838,6 @@
 /obj/structure/bed/stool,
 /turf/open/floor/dark,
 /area/lv624/lazarus/engineering)
-"gKQ" = (
-/obj/effect/acid_hole,
-/turf/closed/wall/r_wall,
-/area/lv624/lazarus/corporate_dome)
 "gLX" = (
 /obj/structure/pipes/standard/simple/hidden/cyan{
 	dir = 4
@@ -7522,7 +7919,7 @@
 /obj/structure/shuttle/part/dropship1/transparent/upper_left_wing,
 /obj/effect/decal/cleanable/blood/oil,
 /turf/open/auto_turf/snow/layer3,
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "gSu" = (
 /obj/structure/flora/jungle/vines/heavy{
 	color = "#64b1fa";
@@ -7672,8 +8069,9 @@
 /area/lv624/lazarus/quart)
 "hdl" = (
 /obj/structure/shuttle/part/dropship1/transparent/left_outer_bottom_wing,
+/obj/structure/prop/invuln/fire,
 /turf/open/auto_turf/strata_grass/layer0_mud_alt,
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "hdC" = (
 /obj/effect/landmark/survivor_spawner,
 /turf/open/floor/dark,
@@ -7881,7 +8279,7 @@
 /turf/closed/shuttle/dropship1{
 	icon_state = "50"
 	},
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "hne" = (
 /obj/structure/closet,
 /obj/item/tool/crowbar,
@@ -7928,7 +8326,7 @@
 /turf/closed/shuttle/dropship1{
 	icon_state = "54"
 	},
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "hpv" = (
 /obj/effect/landmark/nightmare{
 	insert_tag = "armory"
@@ -7945,7 +8343,7 @@
 /turf/closed/shuttle/dropship3/tornado{
 	icon_state = "31"
 	},
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "hrq" = (
 /obj/structure/flora/bush/ausbushes/grassybush{
 	color = "#64b1fa"
@@ -8002,7 +8400,7 @@
 /turf/open/shuttle/dropship{
 	icon_state = "rasputin15"
 	},
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "hvx" = (
 /obj/structure/platform/kutjevo/rock,
 /obj/structure/platform/kutjevo/rock{
@@ -8019,7 +8417,7 @@
 	icon_state = "dynamic_4"
 	},
 /turf/open/auto_turf/snow/brown_base/layer0,
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "hvW" = (
 /obj/structure/prop/invuln/fire{
 	pixel_x = 8;
@@ -8085,7 +8483,7 @@
 "hxF" = (
 /obj/structure/shuttle/part/dropship1/transparent/right_inner_bottom_wing,
 /turf/open/auto_turf/snow/layer3,
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "hyv" = (
 /obj/structure/flora/bush/snow{
 	icon_state = "snowgrassall_1"
@@ -8126,13 +8524,13 @@
 /turf/open/auto_turf/snow/brown_base/layer1,
 /area/lv624/ground/snow)
 "hAr" = (
-/obj/structure/prop/brazier,
+/obj/structure/prop/brazier/frame,
 /turf/open/floor/sandstone/runed,
 /area/lv624/ground/snow)
 "hAw" = (
 /obj/structure/shuttle/part/dropship1/lower_right_wall,
 /turf/open/auto_turf/strata_grass/layer0_mud_alt,
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "hBd" = (
 /obj/item/reagent_container/food/snacks/grown/mushroom/glowshroom{
 	light_on = 1;
@@ -8201,7 +8599,7 @@
 /obj/effect/decal/cleanable/blood/gibs/robot,
 /obj/effect/decal/cleanable/blood/oil,
 /turf/open/auto_turf/strata_grass/layer0_mud_alt,
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "hFj" = (
 /obj/structure/girder,
 /turf/open/auto_turf/snow/layer0,
@@ -8332,10 +8730,6 @@
 /obj/structure/coatrack,
 /turf/open/floor/grimy,
 /area/lv624/lazarus/captain)
-"hRf" = (
-/obj/item/ammo_magazine/rifle,
-/turf/open/auto_turf/snow/layer3,
-/area/lv624/ground/snow)
 "hRl" = (
 /obj/effect/landmark/lizard_spawn,
 /turf/open/auto_turf/snow/brown_base/layer1,
@@ -8361,7 +8755,7 @@
 "hSH" = (
 /obj/effect/landmark/crap_item,
 /turf/open/floor/loadingarea/west,
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "hSN" = (
 /obj/item/device/radio/intercom{
 	freerange = 1;
@@ -8373,7 +8767,7 @@
 	dir = 4
 	},
 /turf/open/floor/warning/west,
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "hSX" = (
 /obj/structure/machinery/door/airlock/hatch/cockpit/three{
 	dir = 1
@@ -8511,7 +8905,7 @@
 /obj/structure/shuttle/part/tornado/transparent/nosecone{
 	icon_state = "102"
 	},
-/turf/open/auto_turf/snow/layer3,
+/turf/open/auto_turf/snow/brown_base/layer0,
 /area/lv624/ground/snow/unknown)
 "idA" = (
 /obj/structure/disposalpipe/junction{
@@ -8658,7 +9052,7 @@
 /area/lv624/ground/caves/south_east_caves)
 "ikC" = (
 /turf/open/floor/loadingarea/west,
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "ikD" = (
 /obj/structure/barricade/wooden,
 /turf/open/auto_turf/snow/brown_base/layer1,
@@ -8698,7 +9092,7 @@
 "inJ" = (
 /obj/structure/shuttle/part/dropship1/transparent/engine_left_cap,
 /turf/open/auto_turf/strata_grass/layer0_mud_alt,
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "inR" = (
 /obj/structure/machinery/colony_floodlight,
 /turf/open/auto_turf/snow/brown_base/layer1,
@@ -9187,7 +9581,7 @@
 /turf/open/shuttle/dropship{
 	icon_state = "rasputin15"
 	},
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "iXU" = (
 /turf/open/auto_turf/snow/layer0,
 /area/lv624/ground/caves/sand_temple)
@@ -9207,7 +9601,7 @@
 /turf/open/shuttle/dropship{
 	icon_state = "rasputin15"
 	},
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "iYX" = (
 /obj/effect/landmark/crap_item,
 /turf/open/floor/wood/wood_broken6,
@@ -9456,15 +9850,6 @@
 "jms" = (
 /turf/open/floor/freezerfloor,
 /area/lv624/lazarus/toilet)
-"jmE" = (
-/obj/structure/barricade/handrail/strata{
-	dir = 1
-	},
-/obj/structure/barricade/handrail/strata{
-	dir = 4
-	},
-/turf/open/gm/dirtgrassborder/weedable/grass1,
-/area/lv624/ground/snow)
 "jnA" = (
 /obj/vehicle/train/cargo/engine,
 /obj/effect/landmark/good_item,
@@ -9601,13 +9986,13 @@
 "juw" = (
 /obj/structure/girder/displaced,
 /turf/open/floor/plating,
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "juQ" = (
 /obj/effect/attach_point/crew_weapon/dropship1,
 /turf/open/shuttle/dropship{
 	icon_state = "rasputin15"
 	},
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "juZ" = (
 /obj/structure/ship_ammo/rocket/keeper{
 	pixel_x = -19;
@@ -9752,7 +10137,7 @@
 /area/lv624/lazarus/security)
 "jBY" = (
 /turf/open/shuttle/dropship/light_grey_single_wide_up_to_down,
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "jCg" = (
 /obj/structure/surface/table/reinforced/prison,
 /turf/open/floor/whiteblue/west,
@@ -9795,7 +10180,7 @@
 /turf/open/shuttle/dropship{
 	icon_state = "rasputin15"
 	},
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "jEK" = (
 /obj/item/clothing/head/cmcap/boonie/tan,
 /obj/structure/prop/invuln/fire{
@@ -9954,14 +10339,14 @@
 	icon_state = "23"
 	},
 /turf/open/auto_turf/snow/layer3,
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "jRe" = (
 /obj/structure/prop/invuln/fire{
 	pixel_x = -8;
 	pixel_y = 10
 	},
-/turf/open/auto_turf/snow/layer3,
-/area/lv624/ground/snow)
+/turf/open/auto_turf/snow/brown_base/layer0,
+/area/lv624/ground/snow/no_paradrop)
 "jRh" = (
 /obj/structure/fence,
 /turf/open/floor/warning/west,
@@ -10012,7 +10397,7 @@
 	pixel_y = 7
 	},
 /turf/open/auto_turf/snow/layer3,
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "jTX" = (
 /obj/item/device/radio/intercom{
 	freerange = 1;
@@ -10035,6 +10420,7 @@
 	pixel_y = 6;
 	pixel_x = -6
 	},
+/obj/structure/blocker/invisible_wall,
 /turf/open/shuttle/dropship{
 	icon_state = "rasputin15"
 	},
@@ -10104,8 +10490,8 @@
 /obj/structure/shuttle/part/tornado{
 	icon_state = "2"
 	},
-/turf/open/auto_turf/snow/layer3,
-/area/lv624/ground/snow)
+/turf/open/auto_turf/snow/brown_base/layer0,
+/area/lv624/ground/snow/no_paradrop)
 "jWQ" = (
 /obj/structure/surface/table/woodentable/poor,
 /obj/item/tool/candle{
@@ -10136,14 +10522,6 @@
 /obj/structure/machinery/light/small,
 /turf/open/floor/vault2,
 /area/lv624/lazarus/robotics)
-"jXQ" = (
-/obj/item/clothing/head/helmet/augment{
-	desc = "Part of a strange alien mask. It loosely fits on a human, but just barely.";
-	name = "alien mask";
-	unacidable = 1
-	},
-/turf/open/floor/cult,
-/area/lv624/ground/caves/west_caves)
 "jXR" = (
 /obj/structure/stairs/perspective{
 	color = "#6b675e";
@@ -10665,7 +11043,7 @@
 	icon_state = "dynamic_4"
 	},
 /turf/open/auto_turf/snow/layer3,
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "kCq" = (
 /obj/structure/barricade/handrail/strata{
 	dir = 8;
@@ -10776,9 +11154,6 @@
 "kKi" = (
 /obj/structure/surface/table/reinforced/prison{
 	color = "#6b675e"
-	},
-/obj/item/reagent_container/food/snacks/xemeatpie{
-	name = "Elite Hunter's Xenopie"
 	},
 /obj/item/tool/kitchen/utensil/fork{
 	pixel_x = 10;
@@ -10987,7 +11362,7 @@
 /turf/open/floor/plating/warnplate/southwest,
 /area/lv624/lazarus/engineering)
 "kYu" = (
-/obj/structure/machinery/defenses/sentry/upp,
+/obj/structure/machinery/defenses/sentry/premade/dumb/upp/light,
 /turf/open/auto_turf/snow/layer0,
 /area/lv624/ground/caves/south_central_caves)
 "kZg" = (
@@ -11138,7 +11513,7 @@
 /turf/closed/shuttle/dropship1{
 	icon_state = "25"
 	},
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "lje" = (
 /obj/structure/flora/bush/snow{
 	icon_state = "snowbush_2";
@@ -11210,8 +11585,8 @@
 	pixel_x = 3;
 	pixel_y = 7
 	},
-/turf/open/auto_turf/snow/brown_base/layer1,
-/area/lv624/ground/snow)
+/turf/open/auto_turf/snow/brown_base/layer0,
+/area/lv624/ground/snow/no_paradrop)
 "lqb" = (
 /obj/structure/pipes/vents/pump{
 	dir = 8
@@ -11326,7 +11701,7 @@
 	pixel_y = 24
 	},
 /turf/open/auto_turf/snow/layer3,
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "lxs" = (
 /obj/structure/surface/table,
 /obj/item/device/flashlight,
@@ -11348,7 +11723,7 @@
 	layer = 3.01
 	},
 /turf/open/auto_turf/strata_grass/layer0_mud_alt,
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "lyi" = (
 /turf/open/floor/whiteyellow/north,
 /area/lv624/lazarus/main_hall)
@@ -11423,8 +11798,8 @@
 /area/lv624/lazarus/crashed_ship_containers)
 "lCs" = (
 /obj/structure/shuttle/part/tornado/transparent,
-/turf/open/auto_turf/snow/layer3,
-/area/lv624/ground/snow)
+/turf/open/auto_turf/snow/brown_base/layer0,
+/area/lv624/ground/snow/no_paradrop)
 "lCw" = (
 /obj/item/device/radio/intercom{
 	freerange = 1;
@@ -11499,10 +11874,6 @@
 	},
 /turf/open/floor/bar,
 /area/lv624/lazarus/kitchen)
-"lFW" = (
-/obj/item/stack/barbed_wire/small_stack,
-/turf/open/auto_turf/snow/layer3,
-/area/lv624/ground/snow/no_paradrop)
 "lGt" = (
 /obj/structure/surface/rack,
 /obj/item/weapon/gun/rifle/mar40{
@@ -11629,7 +12000,7 @@
 /obj/structure/barricade/sandbags/wired{
 	dir = 4
 	},
-/turf/open/auto_turf/snow/layer1,
+/turf/open/auto_turf/snow/layer0,
 /area/lv624/ground/snow/no_paradrop)
 "lPK" = (
 /obj/structure/machinery/landinglight/ds2/delaythree{
@@ -11751,7 +12122,7 @@
 /turf/closed/shuttle/dropship3/tornado{
 	icon_state = "19"
 	},
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "mae" = (
 /obj/structure/flora/tree/dead/tree_5{
 	layer = 4
@@ -11791,7 +12162,7 @@
 "mcE" = (
 /obj/structure/grille,
 /turf/open/auto_turf/snow/layer3,
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "mcS" = (
 /obj/structure/barricade/wooden{
 	dir = 4
@@ -12274,7 +12645,7 @@
 /obj/structure/shuttle/part/tornado/transparent/nosecone{
 	icon_state = "100"
 	},
-/turf/open/auto_turf/snow/layer3,
+/turf/open/auto_turf/snow/brown_base/layer0,
 /area/lv624/ground/snow/unknown)
 "mGp" = (
 /obj/structure/ship_ammo/rocket/keeper{
@@ -12362,7 +12733,7 @@
 	time_to_live = 9000000
 	},
 /turf/open/auto_turf/snow/layer3,
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "mLU" = (
 /turf/closed/wall,
 /area/lv624/lazarus/robotics)
@@ -12385,7 +12756,7 @@
 /obj/structure/grille,
 /obj/effect/decal/cleanable/blood/oil,
 /turf/open/floor/plating,
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "mQC" = (
 /obj/effect/attach_point/fuel/dropship1{
 	pixel_x = -32
@@ -12393,7 +12764,7 @@
 /turf/closed/shuttle/dropship1/transparent{
 	icon_state = "33"
 	},
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "mQS" = (
 /obj/structure/prop/rock{
 	icon_state = "uppcrate_stacked";
@@ -12444,10 +12815,11 @@
 /area/lv624/lazarus/medbay)
 "mUI" = (
 /obj/structure/shuttle/part/tornado{
-	icon_state = "6"
+	icon_state = "6";
+	opacity = 0
 	},
 /turf/open/auto_turf/snow/layer3,
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "mUX" = (
 /obj/structure/closet/secure_closet/freezer/fridge,
 /obj/structure/pipes/standard/simple/hidden/cyan{
@@ -12518,7 +12890,7 @@
 	icon_state = "28"
 	},
 /turf/open/auto_turf/snow/layer3,
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "mZQ" = (
 /obj/structure/surface/table,
 /obj/item/trash/snack_bowl{
@@ -12801,7 +13173,7 @@
 /turf/open/shuttle/dropship{
 	icon_state = "rasputin15"
 	},
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "npL" = (
 /obj/structure/flora/bush,
 /obj/structure/pipes/standard/manifold/fourway/hidden/cyan,
@@ -12935,7 +13307,7 @@
 	icon_state = "61"
 	},
 /turf/open/auto_turf/snow/layer3,
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "nzI" = (
 /obj/structure/pipes/standard/simple/hidden/cyan{
 	dir = 4
@@ -12982,7 +13354,7 @@
 	icon_state = "dynamic_1"
 	},
 /turf/open/auto_turf/snow/layer3,
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "nDu" = (
 /obj/item/device/analyzer,
 /turf/open/auto_turf/snow/brown_base/layer1,
@@ -13021,7 +13393,7 @@
 	time_to_live = 9000000
 	},
 /turf/open/auto_turf/snow/layer3,
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "nGE" = (
 /obj/structure/window/framed/colony/reinforced,
 /turf/open/floor/plating,
@@ -13296,7 +13668,7 @@
 	pixel_x = 8
 	},
 /turf/open/shuttle/dropship/medium_grey_single_wide_up_to_down,
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "obJ" = (
 /obj/item/stack/rods{
 	amount = 15
@@ -13328,6 +13700,10 @@
 /area/lv624/ground/snow)
 "odq" = (
 /obj/structure/surface/table/woodentable/poor,
+/obj/item/reagent_container/food/drinks/bottle/whiskey{
+	pixel_x = -8;
+	pixel_y = 18
+	},
 /turf/open/floor/plating/wood_broken4,
 /area/lv624/ground/snow/unknown)
 "odr" = (
@@ -13360,7 +13736,7 @@
 	layer = 3.01
 	},
 /turf/open/auto_turf/snow/layer3,
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "ofo" = (
 /obj/structure/largecrate/random,
 /turf/open/floor/greengrid,
@@ -13383,9 +13759,9 @@
 	icon_state = "16"
 	},
 /turf/open/auto_turf/snow/layer3,
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "ogi" = (
-/obj/structure/machinery/defenses/sentry/upp,
+/obj/structure/machinery/defenses/sentry/premade/dumb/upp/light,
 /turf/open/auto_turf/snow/layer0,
 /area/lv624/ground/caves/north_east_caves)
 "ogl" = (
@@ -13512,7 +13888,7 @@
 /turf/closed/shuttle/dropship3/tornado{
 	icon_state = "64"
 	},
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "osr" = (
 /obj/item/stack/sheet/wood{
 	amount = 2
@@ -13574,7 +13950,7 @@
 "ouT" = (
 /obj/effect/decal/cleanable/blood/splatter,
 /turf/open/auto_turf/strata_grass/layer0_mud_alt,
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "owh" = (
 /obj/item/reagent_container/food/snacks/grown/mushroom/glowshroom{
 	light_on = 1;
@@ -13729,7 +14105,7 @@
 /turf/closed/shuttle/dropship1/transparent{
 	icon_state = "38"
 	},
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "oEg" = (
 /obj/structure/machinery/door/airlock/almayer/engineering/colony{
 	name = "\improper Garage";
@@ -13796,7 +14172,7 @@
 	pixel_x = -8
 	},
 /turf/open/auto_turf/strata_grass/layer0_mud_alt,
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "oJN" = (
 /obj/item/reagent_container/food/snacks/grown/mushroom/plumphelmet{
 	pixel_x = 8;
@@ -13852,8 +14228,8 @@
 	density = 0;
 	layer = 4.2
 	},
-/turf/open/auto_turf/snow/layer3,
-/area/lv624/ground/snow)
+/turf/open/auto_turf/snow/brown_base/layer0,
+/area/lv624/ground/snow/no_paradrop)
 "oOW" = (
 /turf/open/floor/vault,
 /area/lv624/lazarus/quartstorage)
@@ -13922,7 +14298,7 @@
 /area/lv624/ground/caves/south_west_caves)
 "oUo" = (
 /turf/open/floor/loadingarea/north,
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "oUW" = (
 /obj/structure/stairs/perspective{
 	color = "#6b675e";
@@ -14106,7 +14482,7 @@
 /turf/open/shuttle/dropship{
 	icon_state = "rasputin4"
 	},
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "phE" = (
 /obj/structure/cargo_container/wy/left,
 /turf/open/floor/plating/platebotc,
@@ -14148,7 +14524,7 @@
 	pixel_y = 24
 	},
 /turf/open/auto_turf/strata_grass/layer0_mud_alt,
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "pjX" = (
 /obj/item/frame/table,
 /obj/effect/landmark/crap_item,
@@ -14189,7 +14565,7 @@
 	icon_state = "dynamic_1"
 	},
 /turf/open/auto_turf/snow/brown_base/layer1,
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "poj" = (
 /obj/structure/flora/tree/dead/tree_5{
 	layer = 4
@@ -14241,7 +14617,7 @@
 "prF" = (
 /obj/structure/shuttle/part/dropship1/transparent/middle_left_wing,
 /turf/open/auto_turf/snow/layer3,
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "psa" = (
 /obj/structure/machinery/power/apc/no_power/north,
 /turf/open/floor/green/northwest,
@@ -14490,13 +14866,13 @@
 "pJB" = (
 /obj/structure/shuttle/part/dropship1/transparent/nose_top_left,
 /turf/open/auto_turf/strata_grass/layer0_mud_alt,
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "pKP" = (
 /obj/item/stack/sheet/wood,
 /turf/open/floor/white,
 /area/lv624/lazarus/main_hall)
 "pLb" = (
-/obj/structure/machinery/defenses/sentry/upp,
+/obj/structure/machinery/defenses/sentry/premade/dumb/upp/light,
 /turf/open/auto_turf/snow/layer3,
 /area/lv624/ground/caves/east_caves)
 "pLr" = (
@@ -14571,7 +14947,7 @@
 "pPC" = (
 /obj/structure/shuttle/part/dropship1/left_outer_wing_connector,
 /turf/open/auto_turf/strata_grass/layer0_mud_alt,
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "pPJ" = (
 /obj/structure/machinery/shower{
 	dir = 4
@@ -14742,7 +15118,7 @@
 "pZb" = (
 /obj/structure/prop/invuln/fire,
 /turf/open/auto_turf/snow/brown_base/layer0,
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "pZd" = (
 /obj/structure/machinery/door/airlock/almayer/generic{
 	locked = 1;
@@ -14815,7 +15191,7 @@
 /turf/closed/shuttle/dropship1{
 	icon_state = "47"
 	},
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "qek" = (
 /obj/structure/foamed_metal,
 /turf/open/shuttle/bright_red,
@@ -14842,7 +15218,7 @@
 /area/lv624/ground/caves/sand_temple)
 "qfS" = (
 /obj/structure/barricade/sandbags/wired,
-/turf/open/auto_turf/snow/layer1,
+/turf/open/auto_turf/snow/layer0,
 /area/lv624/ground/snow/no_paradrop)
 "qfX" = (
 /obj/structure/prop/invuln/fire,
@@ -14880,13 +15256,6 @@
 /obj/item/trash/candle,
 /turf/open/floor/plating/wood_broken3,
 /area/lv624/ground/snow/unknown)
-"qix" = (
-/obj/structure/surface/table/reinforced/prison{
-	color = "#6b675e"
-	},
-/obj/item/weapon/twohanded/yautja/spear,
-/turf/open/floor/corsat/squareswood/north,
-/area/lv624/ground/caves/sand_temple)
 "qja" = (
 /obj/structure/flora/bush/ausbushes/var3/stalkybush,
 /turf/open/auto_turf/snow/layer3,
@@ -14955,7 +15324,7 @@
 "qmv" = (
 /obj/effect/landmark/railgun_camera_pos,
 /turf/open/floor,
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "qmN" = (
 /obj/structure/platform_decoration{
 	dir = 8
@@ -15037,7 +15406,7 @@
 /obj/structure/girder/displaced,
 /obj/effect/decal/cleanable/blood/oil,
 /turf/open/floor/plating,
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "qsy" = (
 /obj/structure/machinery/gibber,
 /obj/effect/landmark/good_item,
@@ -15058,7 +15427,7 @@
 /turf/open/shuttle/dropship{
 	icon_state = "rasputin15"
 	},
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "qua" = (
 /obj/structure/flora/jungle/vines/heavy{
 	color = "#64b1fa";
@@ -15126,7 +15495,7 @@
 /obj/structure/barricade/handrail/strata{
 	dir = 8
 	},
-/turf/open/gm/dirtgrassborder/weedable/grass1,
+/turf/open/auto_turf/snow/layer3,
 /area/lv624/ground/snow)
 "qyB" = (
 /obj/structure/machinery/constructable_frame,
@@ -15153,7 +15522,7 @@
 "qAu" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/barricade/sandbags/wired,
-/obj/structure/machinery/defenses/sentry/premade/dumb/upp,
+/obj/structure/machinery/defenses/sentry/premade/dumb/upp/light,
 /turf/open/auto_turf/snow/layer1,
 /area/lv624/ground/snow/no_paradrop)
 "qAB" = (
@@ -15236,7 +15605,7 @@
 	color = "#64b1fa";
 	desc = "Exceptionally dense vegetation that you can't see through. It's frozen over."
 	},
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "qEu" = (
 /turf/closed/shuttle/ert{
 	icon_state = "rightengine_11";
@@ -15252,7 +15621,7 @@
 	pixel_y = 10
 	},
 /turf/open/auto_turf/snow/layer3,
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "qHc" = (
 /obj/structure/flora/bush/snow{
 	icon_state = "snowgrassall_3"
@@ -15311,15 +15680,15 @@
 /obj/structure/shuttle/part/tornado/transparent{
 	icon_state = "21"
 	},
-/turf/open/auto_turf/snow/layer3,
-/area/lv624/ground/snow)
+/turf/open/auto_turf/snow/brown_base/layer0,
+/area/lv624/ground/snow/no_paradrop)
 "qMn" = (
 /obj/structure/shuttle/part/dropship1/transparent/upper_right_wing,
 /turf/closed/wall/strata_ice/jungle{
 	color = "#64b1fa";
 	desc = "Exceptionally dense vegetation that you can't see through. It's frozen over."
 	},
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "qMH" = (
 /obj/structure/machinery/vending/security,
 /turf/open/floor/red/east,
@@ -15363,7 +15732,7 @@
 	pixel_y = 7
 	},
 /turf/open/shuttle/dropship/light_grey_single_wide_up_to_down,
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "qPd" = (
 /obj/effect/landmark/crap_item,
 /obj/structure/machinery/camera/autoname,
@@ -15386,7 +15755,7 @@
 /turf/closed/shuttle/dropship3/tornado{
 	icon_state = "62"
 	},
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "qQD" = (
 /obj/structure/flora/bush/snow{
 	icon_state = "snowgrassall_1"
@@ -15405,7 +15774,7 @@
 	time_to_live = 9000000
 	},
 /turf/open/auto_turf/snow/layer3,
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "qRc" = (
 /obj/structure/flora/bush/ausbushes/var3/sunnybush{
 	color = "#64b1fa"
@@ -15551,7 +15920,7 @@
 	},
 /obj/structure/shuttle/part/dropship1/transparent/inner_right_weapons,
 /turf/open/auto_turf/strata_grass/layer0_mud_alt,
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "rer" = (
 /obj/structure/platform/mineral/sandstone/runed{
 	dir = 1
@@ -15583,7 +15952,7 @@
 	density = 0
 	},
 /turf/open/auto_turf/snow/layer3,
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "rgq" = (
 /obj/structure/bed/alien{
 	color = "#aba9a9"
@@ -15793,7 +16162,7 @@
 /turf/closed/shuttle/dropship1/transparent{
 	icon_state = "27"
 	},
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "rsP" = (
 /obj/item/tool/weldingtool,
 /obj/effect/decal/cleanable/dirt,
@@ -15806,7 +16175,7 @@
 	color = "#64b1fa";
 	desc = "Exceptionally dense vegetation that you can't see through. It's frozen over."
 	},
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "rtw" = (
 /obj/structure/machinery/light/small{
 	dir = 8
@@ -15860,7 +16229,7 @@
 /turf/open/shuttle/dropship{
 	icon_state = "rasputin3"
 	},
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "rwS" = (
 /obj/effect/landmark/yautja_teleport,
 /turf/open/auto_turf/snow/layer3,
@@ -15914,7 +16283,7 @@
 	icon_state = "dynamic_4"
 	},
 /turf/open/auto_turf/strata_grass/layer0_mud_alt,
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "rzk" = (
 /obj/structure/shuttle/part/dropship1/bottom_right_wall,
 /turf/open/auto_turf/snow/brown_base/layer0,
@@ -16135,7 +16504,7 @@
 	desc = "These boot prints have irregular treads that don't make clear prints. They are likely worn down from years of use."
 	},
 /turf/open/auto_turf/snow/brown_base/layer0,
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "rRD" = (
 /turf/closed/wall/mineral/sandstone/runed/decor,
 /area/lv624/ground/snow)
@@ -16160,7 +16529,7 @@
 "rTG" = (
 /obj/structure/prop/invuln/fire,
 /turf/open/auto_turf/snow/layer3,
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "rTT" = (
 /obj/effect/landmark/hunter_secondary,
 /turf/open/auto_turf/snow/layer0,
@@ -16485,8 +16854,8 @@
 /area/lv624/lazarus/sleep_female)
 "spa" = (
 /obj/effect/decal/cleanable/blood/squirt,
-/turf/open/auto_turf/snow/layer3,
-/area/lv624/ground/snow)
+/turf/open/auto_turf/snow/brown_base/layer1,
+/area/lv624/ground/snow/no_paradrop)
 "spU" = (
 /obj/effect/attach_point/crew_weapon/tornado,
 /turf/open/shuttle/dropship/light_grey_single_wide_up_to_down,
@@ -16498,7 +16867,7 @@
 /turf/open/shuttle/dropship{
 	icon_state = "rasputin3"
 	},
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "srM" = (
 /obj/structure/machinery/body_scanconsole,
 /turf/open/floor/whitebluefull,
@@ -16596,12 +16965,12 @@
 	pixel_y = 7
 	},
 /turf/open/auto_turf/strata_grass/layer0_mud_alt,
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "szc" = (
 /turf/closed/shuttle/dropship1/transparent{
 	icon_state = "32"
 	},
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "szq" = (
 /obj/structure/machinery/light/small{
 	dir = 4
@@ -16686,7 +17055,7 @@
 /obj/structure/barricade/sandbags/wired{
 	dir = 1
 	},
-/turf/open/auto_turf/snow/layer1,
+/turf/open/auto_turf/snow/layer0,
 /area/lv624/ground/snow/no_paradrop)
 "sGi" = (
 /obj/structure/bed/chair/office/light{
@@ -16751,7 +17120,7 @@
 /obj/structure/shuttle/part/dropship1/left_inner_wing_connector,
 /obj/structure/prop/invuln/fire,
 /turf/open/auto_turf/strata_grass/layer0_mud_alt,
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "sKb" = (
 /obj/item/clothing/glasses/regular,
 /turf/open/floor/white,
@@ -17053,8 +17422,8 @@
 /obj/structure/shuttle/part/tornado/transparent{
 	icon_state = "20"
 	},
-/turf/open/auto_turf/snow/layer3,
-/area/lv624/ground/snow)
+/turf/open/auto_turf/snow/brown_base/layer0,
+/area/lv624/ground/snow/no_paradrop)
 "thY" = (
 /turf/open/space,
 /area/space)
@@ -17290,7 +17659,7 @@
 	pixel_x = 2;
 	pixel_y = 10
 	},
-/turf/open/auto_turf/snow/layer1,
+/turf/open/auto_turf/snow/layer0,
 /area/lv624/ground/snow/no_paradrop)
 "txk" = (
 /obj/structure/flora/jungle/vines{
@@ -17350,7 +17719,7 @@
 /obj/structure/shuttle/part/tornado/transparent{
 	icon_state = "95a"
 	},
-/turf/open/auto_turf/snow/layer3,
+/turf/open/auto_turf/snow/brown_base/layer0,
 /area/lv624/ground/snow/unknown)
 "tCE" = (
 /obj/item/device/radio/intercom/alamo{
@@ -17359,7 +17728,7 @@
 /turf/open/shuttle/dropship{
 	icon_state = "rasputin6"
 	},
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "tDP" = (
 /obj/structure/ship_ammo/rocket/keeper{
 	pixel_x = -4;
@@ -17421,7 +17790,7 @@
 "tIQ" = (
 /obj/structure/shuttle/part/dropship1/transparent/middle_right_wing,
 /turf/open/auto_turf/snow/layer3,
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "tJq" = (
 /obj/structure/platform/kutjevo/rock{
 	dir = 4
@@ -17561,7 +17930,7 @@
 /obj/structure/barricade/sandbags/wired{
 	dir = 8
 	},
-/turf/open/auto_turf/snow/layer1,
+/turf/open/auto_turf/snow/layer0,
 /area/lv624/ground/snow/no_paradrop)
 "tSR" = (
 /obj/structure/inflatable/popped,
@@ -17717,7 +18086,7 @@
 	layer = 4
 	},
 /turf/open/auto_turf/snow/layer3,
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "ucV" = (
 /turf/open/floor/delivery,
 /area/lv624/lazarus/engineering)
@@ -17792,7 +18161,7 @@
 /obj/effect/decal/cleanable/blood/oil,
 /obj/effect/decal/cleanable/blood/gibs/robot,
 /turf/open/auto_turf/snow/brown_base/layer0,
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "uik" = (
 /turf/open/floor/vault2,
 /area/lv624/lazarus/robotics)
@@ -17888,13 +18257,14 @@
 	pixel_x = -19;
 	pixel_y = 3
 	},
+/obj/structure/blocker/invisible_wall,
 /turf/open/shuttle/dropship{
 	icon_state = "rasputin15"
 	},
 /area/lv624/ground/snow/unknown)
 "uon" = (
 /turf/open/floor/warning/northwest,
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "uoo" = (
 /obj/structure/surface/rack,
 /obj/item/tool/pickaxe,
@@ -17943,6 +18313,7 @@
 	dir = 1
 	},
 /obj/effect/decal/cleanable/blood/oil,
+/obj/structure/blocker/invisible_wall,
 /turf/open/shuttle/dropship{
 	icon_state = "rasputin15"
 	},
@@ -17973,12 +18344,6 @@
 "uuM" = (
 /turf/closed/wall/r_wall,
 /area/lv624/lazarus/comms)
-"uuX" = (
-/obj/structure/barricade/sandbags/wired{
-	dir = 4
-	},
-/turf/open/auto_turf/snow/layer1,
-/area/lv624/ground/snow/no_paradrop)
 "uwf" = (
 /obj/structure/surface/table/reinforced,
 /turf/open/floor/greengrid,
@@ -17996,7 +18361,7 @@
 /turf/open/shuttle/dropship{
 	icon_state = "rasputin3"
 	},
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "uxd" = (
 /obj/structure/flora/bush/ausbushes/ausbush{
 	color = "#64b1fa"
@@ -18059,10 +18424,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/auto_turf/snow/brown_base/layer1,
 /area/lv624/ground/snow)
-"uAb" = (
-/obj/item/attachable/bayonet,
-/turf/open/auto_turf/snow/layer3,
-/area/lv624/ground/snow)
 "uAj" = (
 /obj/structure/flora/jungle/vines/heavy{
 	color = "#64b1fa";
@@ -18094,7 +18455,7 @@
 	},
 /obj/structure/girder/reinforced,
 /turf/open/auto_turf/snow/layer3,
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "uBV" = (
 /obj/structure/flora/bush/ausbushes/var3/ywflowers,
 /turf/open/auto_turf/snow/layer3,
@@ -18177,7 +18538,7 @@
 	pixel_x = 3
 	},
 /turf/open/auto_turf/snow/brown_base/layer0,
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "uKe" = (
 /obj/structure/shuttle/part/tornado/transparent{
 	icon_state = "40";
@@ -18185,8 +18546,8 @@
 	layer = 4.2
 	},
 /obj/effect/decal/cleanable/blood/gibs/robot,
-/turf/open/auto_turf/snow/layer3,
-/area/lv624/ground/snow)
+/turf/open/auto_turf/snow/brown_base/layer1,
+/area/lv624/ground/snow/no_paradrop)
 "uKv" = (
 /obj/structure/window/framed/colony/reinforced,
 /turf/open/floor/plating,
@@ -18242,11 +18603,11 @@
 	pixel_y = 7
 	},
 /turf/open/auto_turf/snow/brown_base/layer1,
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "uNs" = (
 /obj/effect/decal/cleanable/blood/gibs/robot,
-/turf/open/auto_turf/snow/layer3,
-/area/lv624/ground/snow)
+/turf/open/auto_turf/snow/brown_base/layer0,
+/area/lv624/ground/snow/no_paradrop)
 "uOG" = (
 /obj/structure/machinery/power/apc/no_power/north,
 /turf/open/floor/vault2,
@@ -18255,10 +18616,6 @@
 /obj/structure/pipes/standard/manifold/hidden/cyan,
 /turf/closed/wall,
 /area/lv624/lazarus/toilet)
-"uOQ" = (
-/obj/item/attachable/reddot,
-/turf/open/auto_turf/snow/brown_base/layer1,
-/area/lv624/ground/snow)
 "uOV" = (
 /obj/structure/flora/bush/snow{
 	icon_state = "snowgrassall_3"
@@ -18297,7 +18654,7 @@
 /turf/closed/shuttle/dropship1{
 	icon_state = "42"
 	},
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "uQB" = (
 /obj/item/ammo_magazine/rifle/type71/heap{
 	current_rounds = 0
@@ -18410,7 +18767,7 @@
 	layer = 4.2
 	},
 /turf/open/auto_turf/snow/layer3,
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "uWo" = (
 /obj/structure/machinery/smartfridge,
 /turf/open/floor/barber/west,
@@ -18419,7 +18776,7 @@
 /turf/closed/shuttle/dropship1{
 	icon_state = "51"
 	},
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "uWF" = (
 /turf/open/floor/warning/west,
 /area/lv624/ground/snow)
@@ -18539,7 +18896,7 @@
 	color = "#64b1fa";
 	desc = "Exceptionally dense vegetation that you can't see through. It's frozen over."
 	},
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "vdE" = (
 /obj/item/lightstick/red/variant/planted,
 /turf/open/auto_turf/snow/brown_base/layer1,
@@ -18599,7 +18956,7 @@
 "vhy" = (
 /obj/structure/shuttle/part/dropship1/transparent/engine_right_cap,
 /turf/open/auto_turf/snow/layer3,
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "vhY" = (
 /obj/structure/flora/bush/ausbushes/ppflowers,
 /obj/structure/platform_decoration/mineral/sandstone/runed{
@@ -18740,7 +19097,7 @@
 /turf/open/shuttle/dropship{
 	icon_state = "rasputin5"
 	},
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "vxe" = (
 /turf/open/floor/plating,
 /area/lv624/lazarus/toilet)
@@ -18811,7 +19168,7 @@
 /area/lv624/lazarus/quart)
 "vAc" = (
 /turf/open/auto_turf/strata_grass/layer0_mud_alt,
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "vAI" = (
 /obj/structure/flora/jungle/vines/light_3{
 	desc = "A frozen mass of twisted vines.";
@@ -19093,7 +19450,7 @@
 "vQE" = (
 /obj/structure/girder/displaced,
 /turf/open/auto_turf/snow/layer3,
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "vRm" = (
 /turf/closed/shuttle/ert{
 	icon_state = "T5";
@@ -19549,7 +19906,7 @@
 /obj/effect/attach_point/weapon/dropship1/right_fore,
 /obj/structure/shuttle/part/dropship1/transparent/outer_right_weapons,
 /turf/open/auto_turf/snow/layer3,
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "wyR" = (
 /obj/structure/machinery/portable_atmospherics/hydroponics,
 /turf/open/floor/green/northwest,
@@ -19699,7 +20056,7 @@
 /turf/closed/shuttle/dropship1{
 	icon_state = "52"
 	},
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "wJX" = (
 /obj/structure/bed/alien,
 /turf/open/floor/wood,
@@ -19749,7 +20106,7 @@
 	icon_state = "32"
 	},
 /turf/open/auto_turf/snow/layer3,
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "wOx" = (
 /obj/structure/flora/bush/ausbushes/pointybush{
 	color = "#64b1fa"
@@ -19779,7 +20136,7 @@
 	icon_state = "dynamic_4"
 	},
 /turf/open/auto_turf/snow/layer3,
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "wPS" = (
 /obj/structure/extinguisher_cabinet{
 	pixel_y = 30
@@ -19906,7 +20263,7 @@
 	icon_state = "dynamic_4"
 	},
 /turf/open/auto_turf/strata_grass/layer0_mud_alt,
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "wYR" = (
 /obj/structure/computerframe,
 /turf/open/floor/plating/platebot,
@@ -20055,7 +20412,7 @@
 	icon_state = "dynamic_4"
 	},
 /turf/open/auto_turf/snow/layer3,
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "xje" = (
 /obj/structure/surface/table/woodentable/poor,
 /obj/effect/decal/cleanable/blood,
@@ -20115,7 +20472,7 @@
 	icon_state = "71"
 	},
 /turf/open/auto_turf/snow/layer3,
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "xkM" = (
 /obj/structure/prop/rock{
 	icon_state = "uppcrate_stackedalt";
@@ -20559,7 +20916,7 @@
 	icon_state = "65"
 	},
 /turf/open/auto_turf/snow/layer3,
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "xNx" = (
 /obj/item/stool,
 /turf/open/auto_turf/snow/layer0,
@@ -20666,7 +21023,7 @@
 	dir = 8
 	},
 /turf/open/floor/warning/west,
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "xXx" = (
 /obj/structure/flora/tree/dead/tree_3{
 	layer = 4
@@ -20761,7 +21118,7 @@
 	layer = 3.01
 	},
 /turf/open/auto_turf/snow/layer3,
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "yeQ" = (
 /turf/open/floor/bluecorner,
 /area/lv624/lazarus/sleep_male)
@@ -20777,7 +21134,7 @@
 	icon_state = "29"
 	},
 /turf/open/auto_turf/snow/layer3,
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "yhp" = (
 /obj/structure/flora/grass/tallgrass/ice/corner{
 	dir = 3
@@ -34288,7 +34645,7 @@ nhE
 nhE
 nhE
 nhE
-nhE
+kDe
 vrJ
 vrJ
 vrJ
@@ -35275,7 +35632,7 @@ phR
 kXJ
 kXJ
 kXJ
-eZh
+kXJ
 kXJ
 kXJ
 kXJ
@@ -45727,7 +46084,7 @@ dNJ
 dNJ
 dNJ
 dNJ
-gKQ
+erc
 qIt
 hgF
 hgF
@@ -47141,7 +47498,7 @@ vIZ
 vIZ
 bvm
 crl
-lFW
+aaW
 bJN
 abO
 abJ
@@ -47162,7 +47519,7 @@ nhE
 tWU
 tWU
 tWU
-jXQ
+tWU
 tWU
 tWU
 iFU
@@ -52607,26 +52964,26 @@ phR
 phR
 phR
 phR
-sOa
-sOa
-sOa
-phR
-phR
-phR
-phR
-umK
-umK
-umK
-phR
-phR
-pAG
-kXJ
-dNJ
-kXJ
-dNJ
-kXJ
-kXJ
-kXJ
+afu
+afu
+afu
+abK
+abK
+abK
+abK
+ahJ
+ahJ
+ahJ
+abK
+abK
+afa
+abJ
+aeA
+ahC
+aeA
+abJ
+abJ
+abJ
 kXJ
 kXJ
 phR
@@ -52747,24 +53104,24 @@ kXJ
 kXJ
 phR
 phR
-kXJ
-kXJ
-kXJ
-kXJ
-sOa
-sOa
-gcS
-gcS
-phR
-kXJ
-kXJ
-kXJ
-kXJ
-kXJ
-kXJ
-sOa
-sOa
-sOa
+abJ
+abJ
+abJ
+abJ
+afu
+afu
+ahb
+ahb
+abK
+abJ
+abJ
+abJ
+abJ
+abJ
+abJ
+afu
+afu
+afu
 sOa
 sOa
 kXJ
@@ -53052,26 +53409,26 @@ phR
 phR
 phR
 phR
-phR
-sOa
-sOa
-sOa
-phR
-phR
-phR
-xDW
-xDW
-xDW
-phR
-phR
-kXJ
-kXJ
-dNJ
-kXJ
-dNJ
-kXJ
-pAG
-kXJ
+abK
+afu
+afu
+afu
+abK
+abK
+abK
+afh
+afh
+afh
+abK
+abK
+abJ
+abJ
+aeA
+abJ
+aeA
+abJ
+afa
+abJ
 phR
 phR
 phR
@@ -53188,28 +53545,28 @@ kXJ
 kXJ
 phR
 phR
-kXJ
-kXJ
-kXJ
-kXJ
-kXJ
-kXJ
-jRe
-kXJ
-kXJ
-kXJ
+abJ
+abJ
+abJ
+abJ
+abJ
+abJ
+ahc
+abJ
+abJ
+abJ
 erY
 cSF
 hES
-kXJ
-rUI
-kXJ
-kXJ
-kXJ
-kXJ
-phR
-phR
-sOa
+abJ
+agW
+abJ
+abJ
+abJ
+abJ
+abK
+abK
+afu
 sOa
 sOa
 kXJ
@@ -53497,26 +53854,26 @@ phR
 phR
 phR
 phR
-phR
-sOa
-sOa
-sOa
-sOa
-sOa
-kXJ
-kXJ
-kGQ
-kXJ
-kXJ
-phR
-kXJ
-kXJ
-dNJ
-kXJ
+abK
+afu
+afu
+afu
+afu
+afu
+abJ
+abJ
+abU
+abJ
+abJ
+abK
+abJ
+abJ
+ahD
+abJ
 nCC
-kXJ
-kXJ
-phR
+abJ
+abJ
+abK
 phR
 phR
 kXJ
@@ -53633,11 +53990,11 @@ qTT
 kXJ
 kXJ
 kXJ
-kXJ
-kXJ
-kXJ
-kXJ
-kXJ
+abJ
+abJ
+abJ
+abJ
+abJ
 xkz
 yeO
 ekm
@@ -53651,10 +54008,10 @@ mZI
 mLa
 thV
 lCs
-kXJ
-phR
-phR
-sOa
+aeF
+abK
+abK
+afu
 phR
 kXJ
 kXJ
@@ -53938,35 +54295,35 @@ sOa
 phR
 phR
 phR
-phR
-phR
+abK
+abK
 dJP
-dQz
-kXJ
+aeF
+abJ
 gRT
 prF
 bbm
-vAc
-vAc
+ahL
+ahF
 cSF
-dQz
+aeF
 vAc
 vAc
 erY
 cSF
 hES
 syq
-kXJ
-kXJ
-dQz
-kXJ
-kXJ
-phR
-phR
-kXJ
-kXJ
-phR
-phR
+abJ
+abJ
+aeF
+abJ
+abJ
+abK
+abK
+abJ
+abJ
+abK
+abK
 phR
 phR
 kXJ
@@ -54079,9 +54436,9 @@ dNJ
 dNJ
 dNJ
 rTG
-jRe
-kXJ
-kXJ
+ahe
+aeA
+aeA
 aVp
 bgG
 tMq
@@ -54097,10 +54454,10 @@ jPt
 qMm
 jWP
 pZb
-dNJ
-sOa
-sOa
-phR
+aeA
+aeF
+aeA
+abK
 phR
 kXJ
 kXJ
@@ -54383,9 +54740,9 @@ kXJ
 phR
 phR
 phR
-phR
-kXJ
-kXJ
+abK
+abJ
+abJ
 hvG
 uJr
 uhN
@@ -54402,16 +54759,16 @@ mPa
 fGf
 cSF
 vAc
-jRe
+ahc
 aJC
-kXJ
-phR
-phR
-phR
-kXJ
-kXJ
-phR
-phR
+pZb
+aeF
+abK
+abK
+ahC
+abJ
+abK
+abK
 phR
 phR
 phR
@@ -54521,12 +54878,12 @@ dNJ
 dNJ
 kXJ
 dFp
-dEK
-dNJ
-kXJ
-kXJ
-kXJ
-kXJ
+ahg
+aeA
+aeA
+aeF
+aeF
+aeF
 jHu
 lAO
 bFe
@@ -54541,12 +54898,12 @@ pTH
 qhL
 pcP
 oOs
-dQz
-dNJ
+aeF
+aeF
 nCC
-phR
-phR
-phR
+aeF
+aeF
+dQz
 phR
 phR
 kXJ
@@ -54828,10 +55185,10 @@ phR
 phR
 phR
 phR
-phR
+abK
 vAc
 rzh
-kXJ
+abJ
 qrS
 aUn
 jgP
@@ -54849,17 +55206,17 @@ acH
 tcg
 vAc
 hdl
-kXJ
-phR
-phR
-phR
-kXJ
-qTT
-phR
-phR
-phR
-phR
-phR
+aeA
+pZb
+aeF
+aeF
+abJ
+aex
+abK
+abK
+abK
+abK
+abK
 phR
 phR
 kXJ
@@ -54966,8 +55323,8 @@ dNJ
 dNJ
 dNJ
 oid
-dEK
-dNJ
+ahg
+aeA
 mFJ
 tBx
 nYy
@@ -54985,16 +55342,16 @@ pbG
 acm
 luY
 pWR
-vej
+agX
+aeF
+aeF
+aeA
+aeA
+aeF
+dNJ
 dQz
 dNJ
 dNJ
-dNJ
-phR
-phR
-phR
-kXJ
-kXJ
 dNJ
 dNJ
 dNJ
@@ -55125,7 +55482,7 @@ pQl
 oDN
 dzV
 qXT
-abL
+aaY
 abL
 fKQ
 qWL
@@ -55172,7 +55529,7 @@ tei
 tei
 tei
 tei
-tei
+ahT
 gAO
 tei
 tei
@@ -55283,7 +55640,7 @@ acK
 tPp
 eFM
 rvL
-rvL
+ahK
 pgF
 cEZ
 npy
@@ -55294,17 +55651,17 @@ acI
 pOb
 sJE
 pPC
-qTT
+aeA
 spa
-kXJ
+ahC
 pZb
-kXJ
-kXJ
-pAG
-phR
-phR
-phR
-phR
+abJ
+abJ
+afa
+abK
+abK
+abK
+abK
 kXJ
 kXJ
 kXJ
@@ -55411,8 +55768,8 @@ dNJ
 dNJ
 dNJ
 dNJ
-dEK
-dNJ
+ahg
+aeA
 bZr
 ouE
 cWm
@@ -55430,14 +55787,14 @@ acl
 spU
 acl
 dIL
-kXJ
-kXJ
+abJ
+abJ
 jRe
 pnI
-kXJ
+abJ
+aeA
+dQz
 dNJ
-dNJ
-kXJ
 wEw
 kXJ
 kXJ
@@ -55734,22 +56091,22 @@ sqK
 rvL
 uwP
 acK
-acK
+ahH
 acK
 aoS
 vAc
 pZb
-kXJ
-kXJ
-aQp
-kXJ
-kXJ
-kGQ
-kXJ
-kXJ
-phR
-phR
-phR
+aeA
+abJ
+ahz
+abJ
+abJ
+abU
+abJ
+abJ
+abK
+abK
+abK
 kXJ
 kXJ
 dNJ
@@ -55856,8 +56213,8 @@ dNJ
 dNJ
 dNJ
 dNJ
-dNJ
-dNJ
+aeA
+aeA
 icx
 viF
 fFn
@@ -55876,16 +56233,16 @@ acm
 acm
 dIL
 aYU
-kXJ
-kXJ
-kXJ
-pAG
+abJ
+abJ
+abJ
+afa
 wPA
 dNJ
 kXJ
-kXJ
-kXJ
-kXJ
+dQz
+dNJ
+agU
 dNJ
 dNJ
 dNJ
@@ -56182,19 +56539,19 @@ juQ
 act
 acL
 act
-dQz
+aeF
 vAc
-dNJ
-kXJ
+ahE
+abJ
 vAc
 vAc
-dNJ
+aeA
 aaJ
-aQp
-dNJ
-dNJ
-dNJ
-kXJ
+ahz
+aeA
+aeA
+aeA
+abJ
 dNJ
 dNJ
 kXJ
@@ -56301,11 +56658,11 @@ dNJ
 dNJ
 dNJ
 dNJ
-dNJ
-dNJ
-wEw
-kXJ
-kXJ
+aeA
+aeA
+ahf
+aeA
+aeA
 uKe
 tyV
 acu
@@ -56321,16 +56678,16 @@ acn
 qyo
 xYl
 dTo
+aeF
+aeF
+aeA
+aeA
+aeA
+dNJ
+kXJ
 kXJ
 kXJ
 dNJ
-dNJ
-dNJ
-kXJ
-kXJ
-kGQ
-kXJ
-kXJ
 kXJ
 kXJ
 dNJ
@@ -56622,24 +56979,24 @@ acQ
 drX
 acO
 jEK
-rvL
+ahI
 rvL
 fyD
 acK
 act
-dQz
+aeF
 ouT
-kXJ
-kXJ
+vAc
+ahD
 vAc
 pjj
 aaK
-kXJ
-kXJ
+abJ
+abJ
 pZb
-kXJ
-kXJ
-kXJ
+abJ
+abJ
+abJ
 kXJ
 kXJ
 kXJ
@@ -56746,11 +57103,11 @@ tHl
 dNJ
 dNJ
 dNJ
-dNJ
-dNJ
-kXJ
-kXJ
-sZm
+aeA
+aeA
+abJ
+abJ
+ahd
 rfK
 vkY
 ryh
@@ -56761,22 +57118,22 @@ lZz
 hrc
 qyo
 jiR
-vej
+aha
 vQE
 cJl
-kXJ
+abJ
 bsM
-dQz
+aeF
 lpQ
 uNf
-phR
-phR
+aeF
+aeF
 kXJ
-gfe
+rUI
 kXJ
 vej
 kXJ
-kGQ
+kXJ
 kXJ
 dNJ
 dNJ
@@ -56903,7 +57260,7 @@ adq
 qpn
 adE
 uUy
-adT
+agv
 qXT
 man
 abL
@@ -57074,17 +57431,17 @@ acM
 ruB
 bGY
 fkq
-dNJ
-dNJ
-kXJ
-dNJ
 vAc
-aaJ
-dNJ
-dNJ
-dNJ
-kXJ
-dNJ
+aeA
+abJ
+aeA
+vAc
+ahA
+aeA
+aeA
+aeA
+abJ
+aeA
 dNJ
 dNJ
 dNJ
@@ -57191,13 +57548,13 @@ tHl
 tHl
 dNJ
 dNJ
-dEK
-dEK
-acA
-kXJ
-jRe
-kXJ
-kXJ
+ahg
+ahg
+aeR
+abJ
+ahc
+abJ
+abJ
 qFD
 kLF
 sct
@@ -57206,20 +57563,20 @@ bJb
 wNB
 kBQ
 ofK
-rUI
+agZ
 mcE
-rUI
-kXJ
+agZ
+aeF
 mUI
-dQz
+aeF
+aeA
+aeA
+aeA
+abJ
+kXJ
+kXJ
+kXJ
 dNJ
-dNJ
-dNJ
-kXJ
-kXJ
-kXJ
-kXJ
-kXJ
 kXJ
 kXJ
 kXJ
@@ -57498,7 +57855,7 @@ phR
 phR
 phR
 phR
-dQz
+aeF
 vAc
 rzh
 rdJ
@@ -57517,19 +57874,19 @@ fki
 lio
 wUR
 rzk
-kXJ
+abJ
 hxF
-kXJ
-kXJ
-aQp
-phR
-phR
-kXJ
-kXJ
-kXJ
-kXJ
-kXJ
-kXJ
+ahF
+aeA
+ahz
+abK
+abK
+abJ
+abJ
+abJ
+abJ
+abJ
+abJ
 kXJ
 kXJ
 kXJ
@@ -57639,33 +57996,33 @@ tHl
 dEK
 oid
 kXJ
-kXJ
-kXJ
-kXJ
-kXJ
-kXJ
-kXJ
-kXJ
+abJ
+abJ
+abJ
+abJ
+abJ
+agW
+abJ
 rfK
 ofa
 nGk
 xiv
 qQN
 cRs
-kXJ
+aeF
 uNs
-kXJ
-rUI
-dNJ
-dNJ
-rUI
-kXJ
-kXJ
+aeF
+agW
+aeA
+aeA
+agW
+abJ
+abJ
 kXJ
 sZm
 kXJ
-kXJ
-kXJ
+dNJ
+dNJ
 kXJ
 kXJ
 kXJ
@@ -57944,8 +58301,8 @@ phR
 phR
 phR
 vAc
-kXJ
-kXJ
+abJ
+abJ
 wyF
 iij
 vXj
@@ -57961,20 +58318,20 @@ oDU
 szc
 gol
 lyd
-dQz
-kXJ
+aeF
+abJ
 fEj
-kXJ
-kXJ
-kXJ
-kXJ
-kXJ
-kXJ
-kXJ
-kXJ
-sOa
-phR
-phR
+vAc
+ahD
+aeA
+aeA
+ahz
+abJ
+ahz
+abJ
+ahv
+abK
+abK
 phR
 phR
 phR
@@ -58086,30 +58443,30 @@ dNJ
 dNJ
 dNJ
 dNJ
-dNJ
-dNJ
-dNJ
-dNJ
-dNJ
-dNJ
-dNJ
-dNJ
+aeA
+aeA
+aeA
+aeA
+aeA
+afT
+aeA
+aeA
+abJ
+abK
+abK
+abK
+afu
+agY
+afu
+aeA
+abJ
+abJ
+abJ
+aeA
 kXJ
-phR
-phR
-phR
-sOa
-huC
-sOa
-dNJ
+dQz
 kXJ
 kXJ
-kXJ
-kXJ
-kXJ
-kXJ
-kXJ
-sIr
 kXJ
 kXJ
 kXJ
@@ -58391,35 +58748,35 @@ phR
 phR
 phR
 phR
-kXJ
-phR
+abJ
+abK
 qMn
 tIQ
 aoD
 vAc
-dQz
+aeF
 rRx
-kXJ
-kXJ
+abJ
+abJ
 vhy
 eld
 mQC
 rsa
 wYz
-dQz
+agZ
 eEg
-kXJ
-phR
-phR
-phR
-kXJ
-kXJ
-kXJ
-phR
-acE
-sOa
-sOa
-phR
+abJ
+abK
+abK
+abK
+abJ
+abJ
+abJ
+abK
+ahy
+afu
+afu
+abK
 phR
 phR
 kXJ
@@ -58532,37 +58889,37 @@ tHl
 eTD
 qbl
 dEK
-dNJ
-dNJ
-dNJ
-dNJ
-dNJ
-dNJ
-dNJ
-kXJ
-phR
-phR
-phR
-phR
-sOa
-sOa
-sOa
-kGQ
-kXJ
+aeA
+aeA
+aeA
+aeA
+aeA
+aeA
+aeA
+abJ
+abK
+abK
+abK
+abK
+afu
+afu
+afu
+abJ
+abJ
 jTI
-kXJ
-kXJ
-sIr
-kXJ
-gfe
+abJ
 kXJ
 kXJ
 kXJ
+rUI
 kXJ
 kXJ
 kXJ
 kXJ
-sIr
+kXJ
+kXJ
+kXJ
+kXJ
 kXJ
 dNJ
 dNJ
@@ -58703,7 +59060,7 @@ abL
 xkM
 abL
 abL
-abJ
+ahV
 abQ
 abJ
 abJ
@@ -58848,20 +59205,20 @@ phR
 phR
 phR
 phR
-phR
-sOa
-sOa
-sOa
-phR
-phR
-phR
-phR
-kXJ
-kXJ
-pAG
-phR
-phR
-phR
+abK
+afu
+afu
+afu
+abK
+abK
+abK
+abK
+abJ
+abJ
+afa
+abK
+abK
+abK
 sOa
 sOa
 phR
@@ -58979,32 +59336,32 @@ oid
 kNi
 dNJ
 dNJ
+aeA
+aeA
+aeA
+aeA
+aeA
+abJ
+abJ
+abK
+abK
+abK
+abK
+afu
+abJ
+abJ
+abJ
+abJ
+abJ
+kXJ
+kXJ
+kXJ
+kXJ
+kXJ
+kXJ
+agT
 dNJ
-dNJ
-dNJ
-dNJ
-dNJ
-kXJ
-kXJ
-phR
-phR
-phR
-phR
-sOa
-kXJ
-kXJ
-kXJ
-kXJ
-kXJ
-kXJ
-hRf
-kXJ
-kXJ
-kXJ
-kXJ
-kXJ
-kXJ
-kXJ
+vej
 kXJ
 kXJ
 kXJ
@@ -59148,7 +59505,7 @@ abL
 abL
 abL
 abL
-abL
+ahW
 abJ
 abJ
 abJ
@@ -59293,21 +59650,21 @@ phR
 phR
 phR
 phR
+abK
+abK
+afu
+afu
+ahG
+abK
+abK
+abJ
+abJ
+abJ
+abK
+abK
 phR
 phR
-sOa
-sOa
-cJr
-phR
-phR
-kXJ
-kXJ
-kXJ
-phR
-phR
-phR
-phR
-sOa
+ahw
 cJr
 phR
 phR
@@ -59431,24 +59788,24 @@ dNJ
 dNJ
 dNJ
 kXJ
-kXJ
-phR
-phR
-phR
-phR
-kXJ
-kXJ
-kXJ
-kXJ
-kXJ
-kXJ
-kXJ
-kXJ
-kXJ
-uAb
+abJ
+abK
+abK
+abK
+abK
+abJ
+abJ
+abJ
+abJ
+abJ
 kXJ
 kXJ
 kXJ
+kXJ
+kXJ
+kXJ
+dNJ
+dNJ
 kXJ
 kXJ
 kXJ
@@ -59738,15 +60095,15 @@ phR
 phR
 phR
 phR
-phR
-phR
-phR
-sOa
-sOa
-sOa
-sOa
-kXJ
-phR
+abK
+abK
+abK
+afu
+afu
+afu
+afu
+abJ
+abK
 phR
 phR
 sOa
@@ -59889,8 +60246,8 @@ kXJ
 kXJ
 kXJ
 kXJ
-kXJ
-kXJ
+agV
+dNJ
 kXJ
 kXJ
 kXJ
@@ -60116,7 +60473,7 @@ phR
 kXJ
 kXJ
 kXJ
-fyK
+sOa
 sOa
 sOa
 sOa
@@ -60183,15 +60540,15 @@ kXJ
 phR
 phR
 phR
-phR
-phR
-phR
-phR
-phR
-phR
-phR
-phR
-phR
+abK
+abK
+abK
+abK
+abK
+abK
+abK
+abK
+abK
 phR
 phR
 phR
@@ -60199,7 +60556,7 @@ sOa
 sOa
 sOa
 sOa
-kXJ
+aQp
 kXJ
 phR
 phR
@@ -60332,14 +60689,14 @@ kXJ
 kXJ
 kXJ
 kXJ
-gfe
+rUI
 kXJ
-kXJ
+dNJ
 kXJ
 kXJ
 aBj
 kXJ
-gfe
+rUI
 kXJ
 kXJ
 kXJ
@@ -61228,7 +61585,7 @@ kXJ
 kXJ
 kXJ
 kXJ
-kXJ
+dQz
 kXJ
 kXJ
 kXJ
@@ -61978,7 +62335,7 @@ phR
 kXJ
 phR
 phR
-kXJ
+aQp
 phR
 kXJ
 kXJ
@@ -62113,15 +62470,15 @@ tHl
 tHl
 dNJ
 dNJ
-uOQ
-uUg
+dNJ
+dNJ
 kXJ
-gfe
-kXJ
-hRf
+rUI
 kXJ
 kXJ
-eLG
+kXJ
+kXJ
+kXJ
 kXJ
 kXJ
 kXJ
@@ -62559,7 +62916,7 @@ tHl
 tHl
 dNJ
 dNJ
-goq
+dNJ
 dNJ
 dNJ
 kXJ
@@ -63152,7 +63509,7 @@ rFo
 aeF
 aeF
 abO
-abO
+abL
 abO
 abO
 abO
@@ -63311,7 +63668,7 @@ phR
 phR
 kXJ
 kXJ
-kXJ
+aQp
 kXJ
 phR
 phR
@@ -63597,8 +63954,8 @@ aeF
 abd
 aeA
 abO
-abO
-abO
+abL
+abL
 mhB
 abO
 eSH
@@ -63608,7 +63965,7 @@ abJ
 abJ
 abJ
 abJ
-abJ
+ahU
 abL
 abL
 abL
@@ -64041,9 +64398,9 @@ acJ
 acJ
 aeA
 aeA
-abO
-abO
-abO
+ahX
+abL
+abL
 wSU
 abO
 abO
@@ -64487,8 +64844,8 @@ acJ
 acJ
 aeA
 gXN
-abO
-abO
+abL
+abL
 jju
 tSi
 tSi
@@ -64927,14 +65284,14 @@ xxT
 abO
 agq
 rLK
-aeA
+ahZ
 aeA
 acJ
 aeA
 aeA
-abO
-abO
-abO
+abL
+abL
+abL
 vCz
 jAQ
 qfS
@@ -65378,8 +65735,8 @@ abe
 aeA
 aeA
 abO
-abO
-abO
+abL
+abL
 tJq
 hvx
 qfS
@@ -65544,10 +65901,10 @@ phR
 acv
 odq
 aoE
-acx
+ahi
 acv
-kXJ
-kXJ
+dNJ
+qTT
 phR
 kXJ
 phR
@@ -65825,8 +66182,8 @@ aeA
 pQT
 abO
 jju
-uuX
-uuX
+xKL
+xKL
 lPu
 abO
 abJ
@@ -65979,23 +66336,23 @@ sOa
 phR
 phR
 kXJ
-kXJ
+aQp
 phR
 phR
 phR
 kXJ
 kXJ
 phR
-acv
+ahr
 wWb
 seY
 acF
 pvp
+dNJ
+dNJ
 kXJ
-qTT
 kXJ
-kXJ
-kXJ
+ahh
 kXJ
 phR
 phR
@@ -66134,7 +66491,7 @@ aeA
 aeA
 aeA
 afs
-abL
+abO
 abL
 aeK
 aeK
@@ -66433,11 +66790,11 @@ phR
 phR
 acv
 acw
-acy
+ahl
 cdu
 acv
 phR
-kXJ
+dNJ
 kXJ
 pAG
 phR
@@ -66579,7 +66936,7 @@ aeA
 aeA
 aeA
 aeA
-abL
+abO
 afi
 afi
 afi
@@ -66714,8 +67071,8 @@ abL
 abL
 rhQ
 abO
-abO
-abO
+abL
+abL
 tSi
 tSi
 lPu
@@ -66877,8 +67234,8 @@ fir
 phR
 phR
 acv
-cdu
-acw
+aho
+ahm
 nVo
 acv
 phR
@@ -67023,8 +67380,8 @@ dNJ
 aeA
 aeA
 aeA
-aeA
-aaf
+aeF
+agQ
 afo
 afk
 afk
@@ -67160,7 +67517,7 @@ abL
 rhQ
 abO
 mhB
-abO
+abL
 vCz
 jAQ
 qfS
@@ -67322,15 +67679,15 @@ phR
 phR
 phR
 acv
-acy
+ahq
 ost
-aum
+ahj
 acv
 phR
 phR
 kXJ
 kXJ
-kXJ
+ahh
 phR
 phR
 phR
@@ -67467,8 +67824,8 @@ dNJ
 dNJ
 aeA
 aft
-aeA
-aeA
+aeF
+agR
 afp
 afo
 afk
@@ -67605,7 +67962,7 @@ abL
 rhQ
 abO
 wSU
-abO
+abL
 tJq
 hvx
 qfS
@@ -67775,7 +68132,7 @@ phR
 phR
 kXJ
 kXJ
-kXJ
+ahh
 kXJ
 phR
 phR
@@ -67912,8 +68269,8 @@ dNJ
 dNJ
 aeA
 aeA
-aeA
-aeA
+agS
+agR
 afq
 afo
 afk
@@ -68051,8 +68408,8 @@ rhQ
 aeA
 wSU
 abO
-uuX
-uuX
+xKL
+xKL
 lPu
 abJ
 abJ
@@ -68202,7 +68559,7 @@ phR
 phR
 phR
 phR
-sOa
+ahw
 kXJ
 kXJ
 phR
@@ -68211,10 +68568,10 @@ phR
 phR
 phR
 phR
-kXJ
-kXJ
-kXJ
-kXJ
+ahs
+dNJ
+dNJ
+dNJ
 phR
 kXJ
 kXJ
@@ -68359,7 +68716,7 @@ abL
 abL
 aeA
 aeA
-abL
+abO
 afi
 afi
 afi
@@ -68483,8 +68840,8 @@ aqI
 aeA
 aeF
 aeF
-abO
-abO
+aeA
+abL
 abO
 abO
 eDD
@@ -68655,10 +69012,10 @@ phR
 phR
 phR
 phR
-kXJ
-kXJ
-ekP
-kXJ
+ahu
+dQz
+dQz
+ahn
 phR
 phR
 kXJ
@@ -68928,12 +69285,12 @@ adi
 aeA
 aeA
 aeA
-abO
+abL
 tvS
-abO
+abL
 eSH
-abO
-abO
+abL
+abL
 abO
 kSO
 aeA
@@ -69034,9 +69391,9 @@ phR
 phR
 phR
 abK
-abJ
-abJ
-abJ
+aex
+aeA
+aeA
 abJ
 aeA
 abJ
@@ -69094,21 +69451,21 @@ kXJ
 kXJ
 kXJ
 kXJ
-kXJ
+aQp
 sOa
 phR
 phR
 phR
 phR
 phR
-kXJ
-kXJ
-pAG
+aht
+dQz
+dNJ
 phR
 kXJ
-eZh
 kXJ
 kXJ
+ahh
 phR
 phR
 phR
@@ -69374,11 +69731,11 @@ abO
 abO
 abn
 abO
-abO
-abO
-abO
-abO
-abO
+abL
+abL
+abL
+abL
+abL
 abO
 juZ
 aeA
@@ -69480,9 +69837,9 @@ phR
 phR
 abK
 afC
-abJ
-abJ
-afw
+ahM
+aeF
+aaf
 afv
 abJ
 abJ
@@ -69547,12 +69904,12 @@ phR
 phR
 phR
 phR
-kXJ
-kXJ
+kAq
+dNJ
 kXJ
 kXJ
 phR
-kXJ
+ahh
 kXJ
 kXJ
 kXJ
@@ -69822,7 +70179,7 @@ aeA
 abO
 abO
 abO
-abO
+abL
 mhB
 wSU
 wSU
@@ -69892,7 +70249,7 @@ acV
 acV
 dlU
 abG
-czD
+abJ
 aeA
 afu
 abK
@@ -69923,10 +70280,10 @@ kXJ
 phR
 phR
 phR
-abJ
-aeA
-aeA
-aeA
+ahQ
+ahO
+rFo
+aeF
 afx
 aeA
 abJ
@@ -69993,8 +70350,8 @@ sOa
 phR
 phR
 phR
-kXJ
-kXJ
+ahh
+ahk
 phR
 phR
 kXJ
@@ -70368,9 +70725,9 @@ sOa
 phR
 phR
 afE
-abJ
 aeA
-afv
+aeF
+ahN
 aeA
 afy
 afv
@@ -70432,13 +70789,13 @@ phR
 phR
 sOa
 sOa
-sOa
+ahw
 sOa
 sOa
 sOa
 phR
 kXJ
-kXJ
+aQp
 kXJ
 phR
 phR
@@ -70814,7 +71171,7 @@ phR
 afu
 afu
 abJ
-abJ
+aeA
 afB
 afA
 afz
@@ -70880,7 +71237,7 @@ phR
 phR
 sOa
 kXJ
-kXJ
+aQp
 kXJ
 kXJ
 kXJ
@@ -71155,8 +71512,8 @@ abO
 abO
 abO
 lPu
-uuX
-uuX
+xKL
+xKL
 agm
 abO
 abO
@@ -72485,8 +72842,8 @@ abJ
 abO
 abO
 agm
-uuX
-uuX
+xKL
+xKL
 lPu
 abO
 abO
@@ -76493,7 +76850,7 @@ lfH
 qxs
 qxs
 qxs
-qxs
+kFC
 qxs
 lfH
 lfH
@@ -76503,7 +76860,7 @@ lfH
 qxs
 qxs
 qxs
-qxs
+kFC
 qxs
 qxs
 lfH
@@ -77990,7 +78347,7 @@ phR
 phR
 phR
 kXJ
-eZh
+kXJ
 phR
 phR
 phR
@@ -78457,7 +78814,7 @@ phR
 phR
 phR
 qTT
-eZh
+kXJ
 phR
 phR
 phR
@@ -78873,7 +79230,7 @@ kXJ
 phR
 phR
 sOa
-sOa
+fyK
 phR
 phR
 kXJ
@@ -80157,7 +80514,7 @@ qTT
 phR
 phR
 phR
-eZh
+kXJ
 kXJ
 pAG
 kXJ
@@ -82228,8 +82585,8 @@ qdK
 jNw
 bLY
 jNw
-jdV
-jdV
+abS
+abS
 jdV
 dCY
 kXJ
@@ -82659,8 +83016,8 @@ oOW
 oOW
 cLJ
 uon
-uWF
-cpE
+agG
+agJ
 qdK
 fgw
 wMb
@@ -82670,11 +83027,11 @@ wMb
 oji
 fgw
 qdK
-kXJ
-kXJ
-sTc
-iFj
-jVg
+abJ
+abJ
+agC
+abT
+agi
 iFj
 dCY
 aBj
@@ -83104,22 +83461,22 @@ oOW
 oOW
 vyw
 duG
-jdV
-qzE
+abS
+agL
 hSN
-uWF
-uWF
-uWF
+agG
+agG
+agG
 xWG
-uWF
-uWF
-uWF
+agG
+agG
+agG
 aer
-uWF
-uWF
-qsY
-jdV
-jdV
+agG
+agG
+agD
+abS
+abS
 jdV
 agp
 cpE
@@ -83548,23 +83905,23 @@ aBA
 kEN
 fYO
 fYO
-pMJ
-xqI
-xqI
+agP
+agN
+agN
 eBN
-gNs
+agj
 ikC
 hSH
 ikC
 ikC
 ikC
-iFj
-dCY
-gNs
-iFj
-oay
-gNs
-iFj
+abT
+agH
+agj
+abT
+agE
+agj
+abT
 jVg
 dCY
 dCY
@@ -83992,24 +84349,24 @@ oOW
 oOW
 wcA
 gWp
-kXJ
-kXJ
-kXJ
-aBj
-sTc
-oay
-jdV
-iFj
-jdV
-iFj
-jdV
-jVg
-dCY
+abJ
+abJ
+abJ
+aeZ
+agC
+agE
+abS
+abT
+abS
+abT
+abS
+agi
+agH
 oUo
-jdV
-jdV
-jdV
-jdV
+abS
+abS
+abS
+abS
 jdV
 dCY
 dCY
@@ -84437,24 +84794,24 @@ oOW
 oOW
 ktG
 gWp
-kXJ
-jfA
-kXJ
+abJ
+afV
+abJ
 ucc
-sTc
-iFj
-jdV
-jVg
+agC
+abT
+abS
+agi
 qmv
-gNs
-jdV
-gNs
-dCY
+agj
+abS
+agj
+agH
 oUo
-iFj
-iFj
-jVg
-iFj
+abT
+abT
+agi
+abT
 oay
 dCY
 dCY
@@ -84882,23 +85239,23 @@ oOW
 oOW
 oOW
 gWp
-uWF
-cpE
-kXJ
-kXJ
-sTc
-iFj
-jdV
-iFj
-nrn
-iFj
-jdV
-oay
-dCY
+agG
+agJ
+abJ
+abJ
+agC
+abT
+abS
+abT
+agI
+abT
+abS
+agE
+agH
 oUo
-jdV
-pLy
-jdV
+abS
+agF
+abS
 jdV
 jdV
 dCY
@@ -84955,7 +85312,7 @@ lEo
 lfH
 djx
 hBd
-djx
+ahY
 qxs
 qxs
 qxs
@@ -85918,14 +86275,14 @@ iXU
 huv
 huv
 aeH
-qix
+fbt
 tKZ
 gTW
 lcv
 cgf
 iXU
 iXU
-huv
+ahR
 huv
 iXU
 agO
@@ -86384,7 +86741,7 @@ rnQ
 rnQ
 rnQ
 rJS
-jmE
+yaI
 kXJ
 dNJ
 dNJ
@@ -90063,7 +90420,7 @@ dNJ
 kXJ
 dNJ
 dNJ
-xbj
+kXJ
 dNJ
 dNJ
 dNJ
@@ -90508,7 +90865,7 @@ kXJ
 dNJ
 kXJ
 dNJ
-xbj
+kXJ
 dNJ
 dNJ
 kXJ
@@ -90953,7 +91310,7 @@ kXJ
 pAG
 dNJ
 dNJ
-xbj
+kXJ
 dNJ
 kXJ
 kXJ
@@ -95232,7 +95589,7 @@ fWG
 rNv
 rNv
 rNv
-rNv
+ahS
 rNv
 rNv
 rNv
