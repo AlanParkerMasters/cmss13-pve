@@ -5,7 +5,7 @@
     "map_file": "lv624_long_snow.dmm",
     "map_item_type": "/obj/item/map/lazarus_landing_map",
     "traits": [{ "ground": true}],
-    "camouflage": "jungle",
+    "camouflage": "snow",
     "environment_traits": {},
 
     "weather_holder": "/datum/weather_ss_map_holder/shivas_snowball",
