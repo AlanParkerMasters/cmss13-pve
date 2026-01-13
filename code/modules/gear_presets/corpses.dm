@@ -359,7 +359,7 @@
 	skills = /datum/skills/civilian/survivor/marshal
 	access = list(ACCESS_CIVILIAN_PUBLIC, ACCESS_CIVILIAN_BRIG, ACCESS_CIVILIAN_COMMAND, ACCESS_WY_SECURITY)
 
-/datum/equipment_preset/colonist/corpse/security/load_gear(mob/living/carbon/human/new_human)
+/datum/equipment_preset/corpse/security/load_gear(mob/living/carbon/human/new_human)
 
 	new_human.undershirt = "undershirt"
 	//back
