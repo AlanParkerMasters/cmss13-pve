@@ -98,7 +98,11 @@
 	name = "Burst Colonial Marshals Deputy"
 	equip_path = /datum/equipment_preset/corpse/cmb/burst
 
+//*****************************************************************************************************/
 ///////////Faction Specific Corpses//////////////////////
+//*****************************************************************************************************/
+
+/// UPP
 
 /obj/effect/landmark/corpsespawner/upp
 	name = "UPP Squad Rifleman"
@@ -108,6 +112,8 @@
 	name = "Burst UPP Squad Rifleman"
 	equip_path = /datum/equipment_preset/corpse/upp
 
+/// TWE
+
 /obj/effect/landmark/corpsespawner/rmc
 	name = "TWE Squad Rifleman"
 	equip_path = /datum/equipment_preset/corpse/royal_marine
@@ -116,13 +122,7 @@
 	name = "Burst TWE Squad Rifleman"
 	equip_path = /datum/equipment_preset/corpse/royal_marine/burst
 
-/obj/effect/landmark/corpsespawner/uscm
-	name = "USCM Squad Rifleman"
-	equip_path = /datum/equipment_preset/corpse/uscm
-
-/obj/effect/landmark/corpsespawner/uscm/burst
-	name = "Burst USCM Squad Rifleman"
-	equip_path = /datum/equipment_preset/corpse/uscm/burst
+/// Freelancer
 
 /obj/effect/landmark/corpsespawner/freelancer
 	name = "Freelancer"
@@ -132,7 +132,34 @@
 	name = "Burst Freelancer"
 	equip_path = /datum/equipment_preset/corpse/freelancer/burst
 
-///////////FORECON//////////////////////
+/// USCM
+
+/obj/effect/landmark/corpsespawner/uscm
+	name = "USCM Squad Rifleman"
+	equip_path = /datum/equipment_preset/corpse/uscm
+
+/obj/effect/landmark/corpsespawner/uscm/burst
+	name = "Burst USCM Squad Rifleman"
+	equip_path = /datum/equipment_preset/corpse/uscm/burst
+
+/obj/effect/landmark/corpsespawner/uscm_dp
+	name = "USCM Dropship Pilot"
+	equip_path = /datum/equipment_preset/corpse/uscm_dp
+
+/obj/effect/landmark/corpsespawner/uscm_dp/burst
+	name = "Burst USCM Dropship Pilot"
+	equip_path = /datum/equipment_preset/corpse/uscm_dp/burst
+
+/obj/effect/landmark/corpsespawner/uscm_unequipped
+	name = "USCM Unequipped Squad Rifleman"
+	equip_path = /datum/equipment_preset/corpse/uscm_unequipped
+
+/obj/effect/landmark/corpsespawner/uscm_unequipped/burst
+	name = "Burst USCM Unequipped Squad Rifleman"
+	equip_path = /datum/equipment_preset/corpse/uscm_unequipped/burst
+
+/// FORECON
+
 /obj/effect/landmark/corpsespawner/forecon_spotter
 	name = "USCM Reconnaissance Spotter"
 	equip_path = /datum/equipment_preset/corpse/forecon_spotter
