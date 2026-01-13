@@ -620,8 +620,8 @@
 
 /datum/equipment_preset/corpse/uscm_unequipped	//Used for POWs
 	name = "USCM Squad Rifleman"
+	idtype = /obj/item/card/id/dogtag
 	flags = EQUIPMENT_PRESET_START_OF_ROUND|EQUIPMENT_PRESET_MARINE
-
 	access = list(ACCESS_MARINE_PREP)
 	assignment = JOB_SQUAD_MARINE
 	rank = JOB_SQUAD_MARINE
