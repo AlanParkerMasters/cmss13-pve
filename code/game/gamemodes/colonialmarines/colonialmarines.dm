@@ -9,6 +9,7 @@
 	xeno_required_num = 1 //Need at least one xeno.
 	monkey_amount = 5
 	corpses_to_spawn = 100
+	human_ai_to_spawn = 100
 	flags_round_type = MODE_INFESTATION|MODE_FOG_ACTIVATED|MODE_NEW_SPAWN
 	static_comms_amount = 1
 	var/round_status_flags
