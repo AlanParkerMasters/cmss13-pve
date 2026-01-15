@@ -2520,6 +2520,7 @@
 /obj/item/weapon/gun/smg/mp5,
 /obj/item/storage/belt/marine/mp5,
 /obj/item/ammo_magazine/smg/mp5,
+/obj/item/device/flashlight/flare/signal,
 /turf/open/auto_turf/snow/brown_base/layer1,
 /area/lv624/ground/snow)
 "ahv" = (
@@ -53773,7 +53774,7 @@ abK
 abJ
 abJ
 abJ
-aeA
+ajs
 abJ
 aeA
 abK
