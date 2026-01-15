@@ -275,6 +275,11 @@
 	desc = "UPP military doctor, unarmed but still a member of the military"
 	equip_path = /datum/equipment_preset/upp/mildoctor
 
+/obj/effect/landmark/humanaispawner/upp/sniper
+	name = "UPP Sniper"
+	desc = "UPP Marksman"
+	equip_path = /datum/equipment_preset/upp/sniper
+
 //Colonists
 
 /obj/effect/landmark/humanaispawner/upp/colonist
@@ -282,57 +287,57 @@
 	desc = "A generic UPP colonist, unarmed"
 	equip_path = /datum/equipment_preset/upp/colonist
 
-/obj/effect/landmark/humanaispawner/upp/researcher
+/obj/effect/landmark/humanaispawner/upp/colonist/researcher
 	name = "UPP - Researcher"
 	desc = "A civillian researcher for the UPP, Unarmed"
 	equip_path = /datum/equipment_preset/upp/researcher
 
-/obj/effect/landmark/humanaispawner/upp/doctor
+/obj/effect/landmark/humanaispawner/upp/colonist/doctor
 	name = "UPP - Doctor"
 	desc = "A civillian doctor for the UPP, unarmed"
 	equip_path = /datum/equipment_preset/upp/doctor
 
-/obj/effect/landmark/humanaispawner/upp/admin
+/obj/effect/landmark/humanaispawner/upp/colonist/admin
 	name = "UPP - Admin Tech"
 	desc = "A civillian admin tech for the UPP, unarmed"
 	equip_path = /datum/equipment_preset/upp/admin
 
-/obj/effect/landmark/humanaispawner/upp/cargo
+/obj/effect/landmark/humanaispawner/upp/colonist/cargo
 	name = "UPP - Cargo Tech"
 	desc = "A civillian cargo tech for the UPP, unarmed"
 	equip_path = /datum/equipment_preset/upp/cargo
 
-/obj/effect/landmark/humanaispawner/upp/engineer
+/obj/effect/landmark/humanaispawner/upp/colonist/engineer
 	name = "UPP - Engineer"
 	desc = "A civillian engineer for the UPP, unarmed"
 	equip_path = /datum/equipment_preset/upp/engineer
 
-/obj/effect/landmark/humanaispawner/upp/operations
+/obj/effect/landmark/humanaispawner/upp/colonist/operations
 	name = "UPP - Operations Tech"
 	desc = "A civillian operations tech for the UPP, unarmed"
 	equip_path = /datum/equipment_preset/upp/operations
 
-/obj/effect/landmark/humanaispawner/upp/police
+/obj/effect/landmark/humanaispawner/upp/colonist/police
 	name = "UPP - Police"
 	desc = "Police officer armed with a pistol"
 	equip_path = /datum/equipment_preset/upp/police
 
-/obj/effect/landmark/humanaispawner/upp/police/riot
+/obj/effect/landmark/humanaispawner/upp/colonist/police/riot
 	name = "UPP - Riot Police"
 	desc = "Riot police officer armed with a shotgun and less than lethal beanbags"
 	equip_path = /datum/equipment_preset/upp/police/riot
 
-/obj/effect/landmark/humanaispawner/upp/prisoner
+/obj/effect/landmark/humanaispawner/upp/colonist/prisoner
 	name = "UPP - Prisoner"
 	desc = "UPP prisoner, unarmed"
 	equip_path = /datum/equipment_preset/upp/prisoner
 
-/obj/effect/landmark/humanaispawner/upp/police/mss
+/obj/effect/landmark/humanaispawner/upp/colonist/police/mss
 	name = "UPP MSS Agent"
 	desc = "A ministry of space security operative with a pistol"
 	equip_path = /datum/equipment_preset/upp/police/mss
 
-/obj/effect/landmark/humanaispawner/upp/dzho
+/obj/effect/landmark/humanaispawner/upp/colonist/dzho
 	name = "UPP Dzho Automaton"
 	desc = "You always know a legally distinct working joe"
 	equip_path = /datum/equipment_preset/synth/working_joe/upp
