@@ -762,6 +762,12 @@
 	},
 /turf/open/auto_turf/snow/brown_base/layer3,
 /area/lv624/ground/snow)
+"acE" = (
+/obj/structure/flora/bush/snow{
+	icon_state = "snowgrassall_1"
+	},
+/turf/open/auto_turf/snow/layer0,
+/area/lv624/ground/snow/no_paradrop)
 "acF" = (
 /turf/open/floor/plating/wood_broken3,
 /area/lv624/ground/snow/unknown)
@@ -1791,7 +1797,6 @@
 	icon_state = "sandbag_0"
 	},
 /obj/item/ammo_casing/bullet,
-/obj/effect/landmark/humanaispawner/upp/rifleman,
 /turf/open/auto_turf/snow/brown_base/layer0,
 /area/lv624/ground/snow/no_paradrop)
 "afr" = (
@@ -2916,10 +2921,6 @@
 /obj/structure/flora/bush/ausbushes/var3/brflowers,
 /turf/open/auto_turf/snow/layer3,
 /area/lv624/ground/snow/no_paradrop)
-"aiP" = (
-/obj/effect/landmark/humanaispawner/upp/engineer,
-/turf/open/auto_turf/snow/brown_base/layer1,
-/area/lv624/ground/snow/no_paradrop)
 "aiQ" = (
 /obj/item/ammo_casing/bullet,
 /obj/effect/landmark/humanaispawner/upp/rifleman,
@@ -3125,7 +3126,7 @@
 /obj/structure/barricade/sandbags/wired{
 	dir = 4
 	},
-/obj/effect/landmark/humanaispawner/upp/rifleman/ag80,
+/obj/effect/landmark/humanaispawner/upp/colonist,
 /turf/open/floor/wood,
 /area/lv624/ground/snow/unknown)
 "ajB" = (
@@ -3140,6 +3141,24 @@
 /obj/effect/landmark/humanaispawner/upp/platoon_sergeant,
 /turf/open/floor/wood,
 /area/lv624/ground/snow/unknown)
+"ajD" = (
+/obj/structure/flora/bush/ausbushes/ppflowers,
+/turf/open/auto_turf/ice,
+/area/lv624/ground/snow/no_paradrop)
+"ajE" = (
+/obj/structure/barricade/sandbags/wired,
+/obj/structure/barricade/sandbags/wired{
+	dir = 1
+	},
+/obj/structure/barricade/sandbags/wired{
+	dir = 8
+	},
+/obj/structure/barricade/sandbags/wired{
+	dir = 4
+	},
+/obj/effect/landmark/humanaispawner/upp/sniper,
+/turf/open/auto_turf/snow/layer0,
+/area/lv624/ground/snow/no_paradrop)
 "ajZ" = (
 /obj/structure/surface/rack,
 /obj/item/tool/shovel/spade,
@@ -4474,7 +4493,7 @@
 	insert_tag = "lv-bridge-nofog"
 	},
 /turf/open/auto_turf/snow/layer3,
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "bRj" = (
 /obj/structure/flora/grass/tallgrass/ice,
 /obj/structure/flora/bush/snow{
@@ -53754,7 +53773,7 @@ abK
 abJ
 abJ
 abJ
-aiP
+aeA
 abJ
 aeA
 abK
@@ -65006,18 +65025,18 @@ abL
 abL
 abL
 aeK
-xbj
-xbj
-xbj
-xbj
-faw
-tHl
-tHl
-dNJ
-dNJ
+aeK
+aeK
+aeK
+aeK
+aeM
+abL
+abL
+aeA
+aeA
 bRc
-kXJ
-kXJ
+abJ
+abJ
 dNJ
 dNJ
 jsQ
@@ -65452,17 +65471,17 @@ abL
 afl
 aeK
 aeK
-xbj
-hiO
-xbj
-xbj
-tHl
-aeY
-dNJ
-dNJ
-kXJ
-kXJ
-dNJ
+aeK
+ajD
+aeK
+aeK
+abL
+acE
+aeA
+aeA
+abJ
+abJ
+aeA
 dNJ
 dNJ
 oGh
@@ -65897,17 +65916,17 @@ abL
 aeK
 aeK
 aeM
-xbj
-xbj
-xbj
-cwJ
-tHl
-tHl
-dNJ
-dNJ
-kXJ
-dNJ
-dNJ
+aeK
+aeK
+aeK
+afn
+abL
+abL
+aeA
+aeA
+abJ
+aeA
+aeA
 dNJ
 kXJ
 bET
@@ -68701,7 +68720,7 @@ wSU
 abO
 xKL
 xKL
-lPu
+ajE
 abJ
 abJ
 abJ
@@ -70792,17 +70811,17 @@ aeK
 aeK
 aeK
 aeK
-xbj
-faw
-tHl
-tHl
-tHl
-dNJ
-dNJ
-kXJ
-kXJ
-kXJ
-kXJ
+aeK
+aeM
+abL
+abL
+abL
+aeA
+aeA
+abJ
+abJ
+abJ
+abJ
 phR
 gcS
 rrc
@@ -71237,17 +71256,17 @@ aeK
 aeK
 afm
 aeK
-xbj
-xbj
-tHl
-tHl
-tHl
-dNJ
-kXJ
-kXJ
-kXJ
-kXJ
-phR
+aeK
+aeK
+abL
+abL
+abL
+aeA
+abJ
+abJ
+abJ
+abJ
+abK
 phR
 dkU
 dkU
@@ -71681,18 +71700,18 @@ abL
 aeK
 aeK
 aeK
-xbj
-tHl
-tHl
-tHl
-aeY
-myq
-dNJ
-kXJ
-phR
-kXJ
-kXJ
-phR
+aeK
+abL
+abL
+abL
+acE
+aeQ
+aeA
+abJ
+abK
+abJ
+abJ
+abK
 dkU
 dkU
 dkU
