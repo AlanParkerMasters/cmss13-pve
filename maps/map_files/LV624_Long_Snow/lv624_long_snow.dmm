@@ -233,13 +233,13 @@
 	dir = 8
 	},
 /turf/open/auto_turf/snow/layer3,
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "aaI" = (
 /obj/structure/barricade/sandbags/wired{
 	dir = 8
 	},
 /turf/open/auto_turf/snow/brown_base/layer1,
-/area/lv624/ground/snow)
+/area/lv624/ground/snow/no_paradrop)
 "aaJ" = (
 /obj/structure/prop/invuln/fire{
 	pixel_x = 15;
@@ -761,15 +761,6 @@
 	dir = 1
 	},
 /turf/open/auto_turf/snow/brown_base/layer3,
-/area/lv624/ground/snow)
-"acE" = (
-/obj/structure/flora/jungle/vines{
-	color = "#64b1fa"
-	},
-/obj/structure/machinery/camera/autoname{
-	dir = 8
-	},
-/turf/open/auto_turf/snow/layer3,
 /area/lv624/ground/snow)
 "acF" = (
 /turf/open/floor/plating/wood_broken3,
@@ -1800,6 +1791,7 @@
 	icon_state = "sandbag_0"
 	},
 /obj/item/ammo_casing/bullet,
+/obj/effect/landmark/humanaispawner/upp/rifleman,
 /turf/open/auto_turf/snow/brown_base/layer0,
 /area/lv624/ground/snow/no_paradrop)
 "afr" = (
@@ -1947,6 +1939,7 @@
 /obj/structure/barricade/sandbags/wired{
 	dir = 4
 	},
+/obj/effect/landmark/humanaispawner/upp/rifleman,
 /turf/open/auto_turf/snow/layer0,
 /area/lv624/ground/caves/south_central_caves)
 "afN" = (
@@ -2587,6 +2580,10 @@
 /obj/item/ammo_casing/bullet,
 /turf/open/auto_turf/snow/brown_base/layer1,
 /area/lv624/ground/snow/no_paradrop)
+"ahE" = (
+/obj/effect/landmark/humanaispawner/upp/rifleman,
+/turf/open/floor/greengrid,
+/area/lv624/lazarus/secure_storage)
 "ahF" = (
 /obj/item/ammo_casing/bullet,
 /obj/item/ammo_casing/bullet,
@@ -2636,6 +2633,7 @@
 /obj/structure/bed/chair{
 	dir = 4
 	},
+/obj/effect/landmark/humanaispawner/upp/rifleman,
 /turf/open/auto_turf/snow/brown_base/layer0,
 /area/lv624/ground/snow/no_paradrop)
 "ahN" = (
@@ -2651,6 +2649,7 @@
 	pixel_y = 5;
 	pixel_x = 6
 	},
+/obj/effect/landmark/humanaispawner/upp/rifleman,
 /turf/open/auto_turf/snow/brown_base/layer0,
 /area/lv624/ground/snow/no_paradrop)
 "ahP" = (
@@ -2845,6 +2844,159 @@
 /obj/effect/landmark/corpsespawner/uscm_unequipped/burst,
 /turf/open/floor/hybrisa/tile/tilewhite,
 /area/lv624/ground/snow/unknown)
+"aiy" = (
+/obj/effect/landmark/humanaispawner/upp/rifleman,
+/turf/open/floor/white,
+/area/lv624/lazarus/main_hall)
+"aiz" = (
+/obj/effect/landmark/humanaispawner/upp/rifleman,
+/turf/open/floor/brown/northwest,
+/area/lv624/lazarus/comms)
+"aiA" = (
+/obj/effect/landmark/humanaispawner/upp/pilot,
+/turf/open/floor/white,
+/area/lv624/lazarus/main_hall)
+"aiB" = (
+/obj/effect/landmark/humanaispawner/upp/rifleman,
+/turf/open/floor/white,
+/area/lv624/lazarus/corporate_dome)
+"aiC" = (
+/obj/structure/barricade/wooden{
+	dir = 1;
+	pixel_y = 7
+	},
+/obj/effect/landmark/humanaispawner/upp/rifleman,
+/turf/open/floor/white,
+/area/lv624/lazarus/main_hall)
+"aiD" = (
+/obj/structure/barricade/wooden,
+/turf/open/auto_turf/snow/layer3,
+/area/lv624/ground/snow/no_paradrop)
+"aiE" = (
+/obj/effect/landmark/humanaispawner/upp/rifleman,
+/turf/open/floor/vault,
+/area/lv624/lazarus/quartstorage)
+"aiF" = (
+/obj/effect/landmark/hunter_secondary,
+/turf/open/auto_turf/snow/layer3,
+/area/lv624/ground/snow/no_paradrop)
+"aiG" = (
+/obj/structure/flora/tree/dead/tree_6{
+	layer = 4
+	},
+/turf/open/auto_turf/snow/layer3,
+/area/lv624/ground/snow/no_paradrop)
+"aiH" = (
+/turf/closed/wall,
+/area/lv624/ground/snow/no_paradrop)
+"aiI" = (
+/turf/open/floor/plating/platebotc,
+/area/lv624/ground/snow/no_paradrop)
+"aiJ" = (
+/obj/effect/landmark/humanaispawner/upp/rifleman,
+/turf/open/floor/whitepurplecorner/east,
+/area/lv624/lazarus/fitness)
+"aiK" = (
+/obj/effect/landmark/humanaispawner/upp/rifleman,
+/turf/open/floor/plating/asteroidfloor/north,
+/area/lv624/ground/snow/no_paradrop)
+"aiL" = (
+/obj/effect/landmark/humanaispawner/upp/rifleman,
+/turf/open/auto_turf/snow/brown_base/layer1,
+/area/lv624/ground/snow/no_paradrop)
+"aiM" = (
+/obj/effect/landmark/humanaispawner/upp/rifleman,
+/turf/open/auto_turf/snow/layer3,
+/area/lv624/ground/snow/no_paradrop)
+"aiN" = (
+/obj/effect/landmark/humanaispawner/upp/medic,
+/turf/open/auto_turf/snow/brown_base/layer1,
+/area/lv624/ground/snow/no_paradrop)
+"aiO" = (
+/obj/structure/flora/bush/ausbushes/var3/brflowers,
+/turf/open/auto_turf/snow/layer3,
+/area/lv624/ground/snow/no_paradrop)
+"aiP" = (
+/obj/effect/landmark/humanaispawner/upp/engineer,
+/turf/open/auto_turf/snow/brown_base/layer1,
+/area/lv624/ground/snow/no_paradrop)
+"aiQ" = (
+/obj/item/ammo_casing/bullet,
+/obj/effect/landmark/humanaispawner/upp/rifleman,
+/turf/open/auto_turf/snow/brown_base/layer0,
+/area/lv624/ground/snow/no_paradrop)
+"aiR" = (
+/obj/effect/landmark/humanaispawner/upp/rifleman,
+/turf/open/auto_turf/strata_grass/layer0_mud_alt,
+/area/lv624/ground/snow/no_paradrop)
+"aiS" = (
+/obj/effect/landmark/humanaispawner/upp/rifleman,
+/turf/open/auto_turf/snow/layer0,
+/area/lv624/ground/snow/no_paradrop)
+"aiT" = (
+/obj/effect/landmark/humanaispawner/upp/rifleman,
+/turf/open/auto_turf/snow/layer0,
+/area/lv624/ground/caves/west_caves)
+"aiU" = (
+/obj/structure/barricade/sandbags/wired,
+/obj/effect/landmark/humanaispawner/upp/rifleman,
+/turf/open/auto_turf/ice/layer0,
+/area/lv624/ground/caves/south_east_caves)
+"aiV" = (
+/obj/effect/landmark/humanaispawner/upp/rifleman,
+/turf/open/auto_turf/ice/layer0,
+/area/lv624/ground/caves/south_east_caves)
+"aiW" = (
+/obj/structure/barricade/sandbags/wired,
+/obj/effect/landmark/humanaispawner/upp/rifleman,
+/turf/open/auto_turf/snow/layer0,
+/area/lv624/ground/caves/central_caves)
+"aiX" = (
+/obj/effect/landmark/humanaispawner/upp/rifleman/ag80,
+/turf/open/auto_turf/snow/layer0,
+/area/lv624/ground/caves/south_central_caves)
+"aiY" = (
+/obj/effect/landmark/humanaispawner/upp/rifleman/ag80,
+/turf/open/auto_turf/snow/layer0,
+/area/lv624/ground/caves/east_caves)
+"aiZ" = (
+/obj/effect/landmark/humanaispawner/upp/rifleman/ag80,
+/turf/open/auto_turf/ice/layer0,
+/area/lv624/ground/caves/central_caves)
+"aja" = (
+/obj/effect/landmark/humanaispawner/upp/rifleman,
+/turf/open/auto_turf/snow/layer0,
+/area/lv624/ground/caves/north_west_caves)
+"ajb" = (
+/obj/effect/landmark/humanaispawner/upp/rifleman,
+/turf/open/auto_turf/snow/layer0,
+/area/lv624/ground/caves/north_east_caves)
+"ajc" = (
+/obj/effect/landmark/humanaispawner/upp/pilot,
+/turf/open/auto_turf/snow/layer1,
+/area/lv624/ground/snow/no_paradrop)
+"ajd" = (
+/obj/effect/landmark/humanaispawner/upp/rifleman/ag80,
+/turf/open/auto_turf/snow/layer0,
+/area/lv624/ground/caves/north_east_caves)
+"aje" = (
+/obj/effect/landmark/humanaispawner/upp/tanker,
+/turf/open/auto_turf/snow/layer3,
+/area/lv624/ground/snow/no_paradrop)
+"ajf" = (
+/obj/structure/barricade/sandbags/wired,
+/obj/structure/barricade/sandbags/wired{
+	dir = 1
+	},
+/obj/structure/barricade/sandbags/wired{
+	dir = 8
+	},
+/obj/structure/barricade/sandbags/wired{
+	dir = 4
+	},
+/obj/effect/landmark/humanaispawner/upp/rifleman/ag80,
+/turf/open/auto_turf/snow/layer0,
+/area/lv624/ground/snow/no_paradrop)
 "ajg" = (
 /obj/structure/stairs/perspective{
 	color = "#b29082";
@@ -2854,6 +3006,140 @@
 /obj/structure/platform/mineral/sandstone/runed,
 /turf/open/auto_turf/snow/layer0,
 /area/lv624/ground/snow)
+"ajh" = (
+/obj/structure/barricade/sandbags/wired,
+/obj/structure/barricade/sandbags/wired{
+	dir = 1
+	},
+/obj/structure/barricade/sandbags/wired{
+	dir = 8
+	},
+/obj/structure/barricade/sandbags/wired{
+	dir = 4
+	},
+/obj/effect/landmark/humanaispawner/upp/machinegunner,
+/turf/open/auto_turf/snow/layer0,
+/area/lv624/ground/snow/no_paradrop)
+"aji" = (
+/obj/structure/platform/kutjevo/rock,
+/obj/structure/platform/kutjevo/rock{
+	dir = 4
+	},
+/obj/effect/landmark/humanaispawner/upp/rifleman/ag80,
+/turf/open/auto_turf/snow/brown_base/layer0,
+/area/lv624/ground/snow/no_paradrop)
+"ajj" = (
+/obj/structure/platform/kutjevo/rock{
+	dir = 8
+	},
+/obj/structure/platform/kutjevo/rock,
+/obj/effect/landmark/humanaispawner/upp/rifleman/ag80,
+/turf/open/auto_turf/snow/brown_base/layer0,
+/area/lv624/ground/snow/no_paradrop)
+"ajk" = (
+/obj/effect/landmark/humanaispawner/upp/rifleman/ag80,
+/turf/open/auto_turf/snow/layer3,
+/area/lv624/ground/snow/no_paradrop)
+"ajl" = (
+/obj/structure/barricade/sandbags/wired{
+	dir = 8
+	},
+/obj/effect/landmark/humanaispawner/upp/rifleman/ag80,
+/turf/open/auto_turf/snow/layer0,
+/area/lv624/ground/snow/no_paradrop)
+"ajm" = (
+/obj/effect/landmark/humanaispawner/upp/rifleman/ag80,
+/turf/open/auto_turf/snow/brown_base/layer0,
+/area/lv624/ground/snow/no_paradrop)
+"ajn" = (
+/obj/effect/landmark/humanaispawner/upp/rifleman/ag80,
+/turf/open/auto_turf/snow/layer0,
+/area/lv624/ground/caves/north_west_caves)
+"ajo" = (
+/obj/effect/landmark/humanaispawner/upp/tanker,
+/turf/open/auto_turf/ice,
+/area/lv624/ground/snow/no_paradrop)
+"ajp" = (
+/obj/structure/platform/kutjevo/rock{
+	dir = 4
+	},
+/obj/structure/platform/kutjevo/rock,
+/obj/effect/landmark/humanaispawner/upp/rifleman/ag80,
+/turf/open/auto_turf/snow/brown_base/layer0,
+/area/lv624/ground/snow/no_paradrop)
+"ajq" = (
+/obj/structure/bed/bedroll{
+	dir = 4
+	},
+/obj/effect/landmark/humanaispawner/upp/officer,
+/turf/open/auto_turf/snow/layer0,
+/area/lv624/ground/snow/unknown)
+"ajr" = (
+/obj/effect/landmark/humanaispawner/upp/rifleman/ag80,
+/turf/open/auto_turf/snow/layer0,
+/area/lv624/ground/snow/no_paradrop)
+"ajs" = (
+/obj/effect/landmark/humanaispawner/upp/tanker,
+/turf/open/auto_turf/snow/brown_base/layer1,
+/area/lv624/ground/snow/no_paradrop)
+"ajt" = (
+/obj/structure/bed/chair,
+/obj/effect/landmark/humanaispawner/upp/officer,
+/turf/open/auto_turf/snow/brown_base/layer0,
+/area/lv624/ground/snow/no_paradrop)
+"aju" = (
+/obj/structure/bed/bedroll{
+	dir = 4
+	},
+/obj/effect/landmark/humanaispawner/upp/rifleman/ag80,
+/turf/open/auto_turf/snow/layer0,
+/area/lv624/ground/snow/unknown)
+"ajv" = (
+/obj/structure/platform/kutjevo/rock{
+	dir = 1
+	},
+/obj/structure/platform/kutjevo/rock{
+	dir = 4
+	},
+/obj/effect/landmark/humanaispawner/upp/rifleman/ag80,
+/turf/open/auto_turf/snow/brown_base/layer0,
+/area/lv624/ground/snow/no_paradrop)
+"ajw" = (
+/obj/effect/landmark/humanaispawner/upp/tanker,
+/turf/open/auto_turf/snow/brown_base/layer0,
+/area/lv624/ground/snow/no_paradrop)
+"ajx" = (
+/obj/effect/landmark/humanaispawner/upp/mil_doc,
+/turf/open/auto_turf/snow/brown_base/layer1,
+/area/lv624/ground/snow/no_paradrop)
+"ajy" = (
+/obj/effect/landmark/humanaispawner/upp/medic,
+/turf/open/auto_turf/snow/layer0,
+/area/lv624/ground/snow/unknown)
+"ajz" = (
+/obj/structure/barricade/sandbags/wired,
+/obj/effect/landmark/humanaispawner/upp/machinegunner,
+/turf/open/floor/wood,
+/area/lv624/ground/snow/unknown)
+"ajA" = (
+/obj/structure/barricade/sandbags/wired{
+	dir = 4
+	},
+/obj/effect/landmark/humanaispawner/upp/rifleman/ag80,
+/turf/open/floor/wood,
+/area/lv624/ground/snow/unknown)
+"ajB" = (
+/obj/structure/barricade/sandbags/wired{
+	dir = 4
+	},
+/obj/effect/landmark/humanaispawner/upp/machinegunner,
+/turf/open/floor/wood,
+/area/lv624/ground/snow/unknown)
+"ajC" = (
+/obj/structure/bed/chair/wood/normal,
+/obj/effect/landmark/humanaispawner/upp/platoon_sergeant,
+/turf/open/floor/wood,
+/area/lv624/ground/snow/unknown)
 "ajZ" = (
 /obj/structure/surface/rack,
 /obj/item/tool/shovel/spade,
@@ -2876,8 +3162,6 @@
 /turf/open/floor/dark,
 /area/lv624/lazarus/comms)
 "akR" = (
-/obj/effect/decal/cleanable/blood/splatter,
-/obj/effect/decal/cleanable/blood/gibs,
 /obj/structure/pipes/standard/simple/hidden/cyan,
 /turf/open/floor/whiteyellowfull/east,
 /area/lv624/lazarus/main_hall)
@@ -3221,6 +3505,7 @@
 	icon_state = "N";
 	pixel_y = 1
 	},
+/obj/effect/landmark/humanaispawner/upp/pilot,
 /turf/open/floor/plating/plating_catwalk/strata,
 /area/lv624/ground/snow/unknown)
 "aCZ" = (
@@ -4004,10 +4289,6 @@
 /obj/structure/largecrate/random/barrel/green,
 /turf/open/auto_turf/snow/brown_base/layer1,
 /area/lv624/ground/snow/no_paradrop)
-"bFr" = (
-/obj/effect/decal/cleanable/blood/splatter,
-/turf/open/floor,
-/area/lv624/lazarus/main_hall)
 "bGL" = (
 /obj/structure/machinery/light/small{
 	dir = 1
@@ -4247,13 +4528,6 @@
 /obj/item/explosive/plastic,
 /turf/open/floor/carpet/bcarpet08,
 /area/lv624/ground/snow/unknown)
-"bYA" = (
-/obj/effect/decal/cleanable/blood{
-	pixel_y = 12
-	},
-/obj/structure/pipes/standard/simple/hidden/cyan,
-/turf/open/floor,
-/area/lv624/lazarus/main_hall)
 "bYR" = (
 /turf/open/gm/grass/grass1/weedable,
 /area/lv624/ground/caves/north_east_caves)
@@ -5038,10 +5312,8 @@
 	pixel_y = 8
 	},
 /obj/structure/prop/invuln/fire{
-	icon_state = "dynamic_4";
-	layer = 3.01
+	icon_state = "dynamic_4"
 	},
-/obj/effect/landmark/corpsespawner/uscm_dp,
 /turf/open/shuttle/dropship/medium_grey_single_wide_up_to_down,
 /area/lv624/ground/snow/unknown)
 "cXh" = (
@@ -5255,6 +5527,7 @@
 	dir = 4;
 	pixel_y = -5
 	},
+/obj/effect/landmark/humanaispawner/upp/pilot,
 /turf/open/shuttle/dropship/can_surgery/light_grey_single_wide_up_to_down,
 /area/lv624/ground/snow/unknown)
 "dlU" = (
@@ -5379,7 +5652,6 @@
 /turf/open/auto_turf/snow/layer3,
 /area/lv624/ground/snow)
 "dtm" = (
-/obj/effect/decal/cleanable/blood/splatter,
 /obj/structure/pipes/standard/simple/hidden/cyan,
 /turf/open/floor,
 /area/lv624/lazarus/main_hall)
@@ -5481,11 +5753,6 @@
 	icon_state = "rasputin15"
 	},
 /area/lv624/ground/snow/no_paradrop)
-"dzz" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/foamed_metal,
-/turf/open/floor/dark,
-/area/lv624/lazarus/engineering)
 "dzM" = (
 /obj/structure/flora/bush/ausbushes/var3/ywflowers,
 /turf/open/auto_turf/snow/brown_base/layer1,
@@ -5898,10 +6165,6 @@
 /obj/structure/flora/bush/ausbushes/ppflowers,
 /turf/open/auto_turf/snow/layer3,
 /area/lv624/ground/caves/central_caves)
-"dWz" = (
-/obj/effect/decal/cleanable/blood/gibs,
-/turf/open/floor/whiteyellowfull/east,
-/area/lv624/lazarus/main_hall)
 "dWF" = (
 /obj/structure/flora/bush/ausbushes/var3/ywflowers,
 /obj/structure/flora/jungle/vines{
@@ -6102,12 +6365,6 @@
 /obj/effect/landmark/item_pool_spawner/survivor_ammo/buckshot,
 /turf/open/floor/red/north,
 /area/lv624/lazarus/security)
-"ejx" = (
-/obj/structure/barricade/metal{
-	health = 250
-	},
-/turf/open/floor/white,
-/area/lv624/lazarus/corporate_dome)
 "ejD" = (
 /obj/structure/machinery/door/airlock/multi_tile/almayer/generic{
 	dir = 1;
@@ -6209,7 +6466,6 @@
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/foamed_metal,
 /turf/open/floor/dark,
 /area/lv624/lazarus/engineering)
 "erD" = (
@@ -6618,11 +6874,6 @@
 /obj/effect/landmark/item_pool_spawner/survivor_ammo/buckshot,
 /turf/open/floor/purple/northwest,
 /area/lv624/lazarus/sleep_female)
-"eQt" = (
-/obj/effect/decal/cleanable/blood/splatter,
-/obj/effect/decal/cleanable/blood/splatter,
-/turf/open/floor/whiteyellowfull/east,
-/area/lv624/lazarus/main_hall)
 "eRw" = (
 /obj/structure/flora/tree/dead,
 /turf/open/auto_turf/snow/brown_base/layer1,
@@ -7513,7 +7764,6 @@
 /turf/open/floor/bluecorner,
 /area/lv624/lazarus/sleep_male)
 "fVx" = (
-/obj/structure/barricade/metal/wired,
 /turf/open/floor/whiteblue/southwest,
 /area/lv624/lazarus/corporate_dome)
 "fVY" = (
@@ -7973,11 +8223,6 @@
 	},
 /turf/open/auto_turf/snow/layer3,
 /area/lv624/ground/caves/south_west_caves)
-"gKf" = (
-/obj/structure/foamed_metal,
-/obj/structure/window/framed/colony/reinforced,
-/turf/open/floor/plating,
-/area/lv624/lazarus/engineering)
 "gKD" = (
 /turf/open/floor/plating/asteroidwarning,
 /area/lv624/ground/snow)
@@ -8135,18 +8380,6 @@
 	layer = 4
 	},
 /turf/open/auto_turf/snow/layer1,
-/area/lv624/ground/snow/no_paradrop)
-"gXS" = (
-/obj/structure/prop/rock{
-	icon_state = "uppcrate_stackedalt";
-	icon = 'icons/obj/structures/crates.dmi';
-	desc = "Two crates owned by the Union of Progressive Peoples Armed Collective, as denoted by the two large stars on their fronts. They've been double-stacked and secured for longterm transportation.";
-	name = "secured military crates"
-	},
-/obj/item/weapon/gun/launcher/rocket/m57a4{
-	pixel_y = -10
-	},
-/turf/open/auto_turf/snow/layer3,
 /area/lv624/ground/snow/no_paradrop)
 "gYh" = (
 /obj/structure/machinery/chem_master/condimaster,
@@ -8938,10 +9171,6 @@
 /obj/structure/cargo_container/wy/right,
 /turf/open/floor,
 /area/lv624/ground/snow)
-"hTT" = (
-/obj/effect/decal/cleanable/blood/splatter,
-/turf/open/floor/whiteyellowfull/east,
-/area/lv624/lazarus/main_hall)
 "hUs" = (
 /obj/effect/landmark/hunter_secondary,
 /turf/open/floor/white,
@@ -10787,9 +11016,6 @@
 /obj/structure/surface/table/reinforced/prison,
 /obj/effect/landmark/item_pool_spawner/survivor_ammo/buckshot,
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/foamed_metal{
-	layer = 3.01
-	},
 /obj/structure/machinery/fuelcell_recycler/full,
 /turf/open/floor/dark,
 /area/lv624/lazarus/engineering)
@@ -11569,6 +11795,7 @@
 /area/lv624/lazarus/engineering)
 "lfm" = (
 /obj/structure/bed/chair,
+/obj/effect/landmark/humanaispawner/upp/sergeant,
 /turf/open/auto_turf/snow/brown_base/layer0,
 /area/lv624/ground/snow/no_paradrop)
 "lfC" = (
@@ -13603,6 +13830,7 @@
 	layer = 5;
 	pixel_x = 8
 	},
+/obj/effect/landmark/corpsespawner/uscm_dp,
 /turf/open/shuttle/dropship/medium_grey_single_wide_up_to_down,
 /area/lv624/ground/snow/unknown)
 "nNw" = (
@@ -13883,10 +14111,6 @@
 	},
 /turf/open/auto_turf/snow/layer3,
 /area/lv624/ground/snow/no_paradrop)
-"ogi" = (
-/obj/structure/machinery/defenses/sentry/premade/dumb/upp/light,
-/turf/open/auto_turf/snow/layer0,
-/area/lv624/ground/caves/north_east_caves)
 "ogl" = (
 /obj/item/ammo_magazine/rifle/m41aMK1{
 	current_rounds = 0
@@ -14557,12 +14781,6 @@
 	},
 /turf/open/shuttle/dropship/medium_grey_single_wide_up_to_down,
 /area/lv624/ground/snow/unknown)
-"pbI" = (
-/obj/structure/foamed_metal{
-	layer = 3.1
-	},
-/turf/open/floor/dark,
-/area/lv624/lazarus/engineering)
 "pcE" = (
 /obj/structure/flora/jungle/vines/light_3{
 	desc = "A frozen mass of twisted vines.";
@@ -17207,7 +17425,6 @@
 /area/lv624/lazarus/hop)
 "sIH" = (
 /obj/item/tool/crowbar,
-/obj/effect/decal/cleanable/blood/splatter,
 /turf/open/floor/whiteyellowfull/east,
 /area/lv624/lazarus/main_hall)
 "sJn" = (
@@ -18273,12 +18490,6 @@
 	},
 /turf/open/auto_turf/snow/layer3,
 /area/lv624/ground/snow)
-"ujl" = (
-/obj/structure/barricade/metal/wired{
-	health = 300
-	},
-/turf/open/floor/white,
-/area/lv624/lazarus/corporate_dome)
 "ujo" = (
 /obj/structure/machinery/prop/almayer/CICmap,
 /obj/structure/surface/table/reinforced/black,
@@ -18704,6 +18915,7 @@
 /area/lv624/ground/snow/no_paradrop)
 "uOG" = (
 /obj/structure/machinery/power/apc/no_power/north,
+/obj/effect/landmark/humanaispawner/upp/rifleman,
 /turf/open/floor/vault2,
 /area/lv624/lazarus/robotics)
 "uON" = (
@@ -19778,6 +19990,7 @@
 	throw_range = 15
 	},
 /obj/effect/decal/cleanable/blood/gibs/robot,
+/obj/effect/landmark/humanaispawner/upp/rifleman,
 /turf/open/shuttle/dropship{
 	icon_state = "floor8"
 	},
@@ -20306,13 +20519,6 @@
 /obj/effect/landmark/crap_item,
 /turf/open/floor/plating,
 /area/lv624/ground/snow)
-"wVZ" = (
-/obj/structure/foamed_metal{
-	layer = 3.1
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/dark,
-/area/lv624/lazarus/engineering)
 "wWb" = (
 /obj/structure/surface/table/woodentable/poor,
 /obj/effect/decal/cleanable/dirt,
@@ -20374,9 +20580,6 @@
 /turf/open/auto_turf/snow/layer3,
 /area/lv624/ground/snow)
 "wZP" = (
-/obj/structure/foamed_metal{
-	layer = 3.1
-	},
 /obj/item/weapon/baseballbat/metal,
 /obj/item/device/lightreplacer,
 /turf/open/floor/dark,
@@ -21269,6 +21472,7 @@
 /area/lv624/ground/caves/sand_temple)
 "ykC" = (
 /obj/structure/bed/stool,
+/obj/effect/landmark/humanaispawner/upp/rifleman,
 /turf/open/floor/plating,
 /area/lv624/ground/snow/unknown)
 "ylN" = (
@@ -29106,15 +29310,15 @@ kXJ
 sOa
 sOa
 kXJ
-pAG
-kXJ
-dNJ
-kXJ
-dNJ
-kXJ
-sOa
-sOa
-phR
+afa
+abJ
+aeA
+abJ
+aeA
+abJ
+afu
+afu
+abK
 phR
 phR
 phR
@@ -29551,15 +29755,15 @@ kXJ
 sOa
 sOa
 kXJ
-kXJ
-kXJ
-kXJ
-kXJ
-dNJ
-kXJ
-sOa
-sOa
-phR
+abJ
+abJ
+abJ
+abJ
+aeA
+abJ
+afu
+afu
+abK
 phR
 phR
 phR
@@ -29996,17 +30200,17 @@ phR
 phR
 umK
 umK
-kXJ
-kXJ
-dNJ
-kXJ
-dNJ
-kXJ
-kXJ
-sOa
-sOa
-phR
-phR
+abJ
+abJ
+aeA
+abJ
+aeA
+abJ
+abJ
+afu
+afu
+abK
+abK
 phR
 phR
 phR
@@ -30441,20 +30645,20 @@ phR
 phR
 phR
 umK
-umK
-kXJ
-dNJ
-kXJ
-dNJ
-oKo
-kXJ
-sOa
-sOa
-phR
-phR
-phR
-phR
-phR
+ahJ
+abJ
+aeA
+abJ
+aeA
+abP
+abJ
+afu
+afu
+abK
+abK
+abK
+abK
+abK
 phR
 phR
 phR
@@ -30886,20 +31090,20 @@ phR
 phR
 phR
 umK
-umK
-kXJ
-dNJ
-kXJ
-dNJ
-kXJ
-kXJ
-kXJ
-kXJ
-kXJ
-kXJ
-phR
-phR
-phR
+ahJ
+abJ
+aeA
+abJ
+aeA
+abJ
+abJ
+abJ
+abJ
+abJ
+abJ
+abK
+abK
+abK
 phR
 phR
 phR
@@ -31331,20 +31535,20 @@ kXJ
 phR
 phR
 umK
-umK
-kXJ
-dNJ
-kXJ
-kXJ
-dNJ
-kXJ
-kXJ
-kXJ
-kXJ
-kXJ
-kXJ
-kXJ
-kXJ
+ahJ
+abJ
+aeA
+abJ
+abJ
+aiL
+abJ
+abJ
+abJ
+abJ
+abJ
+abJ
+abJ
+abJ
 kXJ
 phR
 phR
@@ -31592,7 +31796,7 @@ nhE
 eAP
 eAP
 nhE
-nhE
+aiT
 nhE
 nhE
 nhE
@@ -31776,20 +31980,20 @@ kXJ
 phR
 phR
 umK
-umK
-kXJ
-kXJ
-dNJ
-kXJ
-kXJ
-dNJ
-kXJ
-dNJ
-dNJ
-dNJ
-dNJ
-dNJ
-kXJ
+ahJ
+abJ
+abJ
+aeA
+abJ
+abJ
+aeA
+abJ
+aeA
+aeA
+aeA
+aeA
+aeA
+abJ
 mBr
 kXJ
 kXJ
@@ -32221,20 +32425,20 @@ lXu
 phR
 phR
 umK
-kXJ
-kXJ
-kXJ
-kXJ
-dNJ
-kXJ
-kXJ
-kXJ
-kXJ
-kXJ
-kXJ
-kXJ
-kXJ
-dNJ
+abJ
+abJ
+abJ
+abJ
+aeA
+abJ
+abJ
+abJ
+abJ
+abJ
+abJ
+abJ
+abJ
+aeA
 dNJ
 dNJ
 kXJ
@@ -32666,20 +32870,20 @@ kXJ
 phR
 phR
 phR
-sOa
-sOa
-kXJ
-kXJ
-kXJ
-dNJ
-dNJ
-dNJ
-dNJ
-dNJ
-dNJ
-dNJ
-dNJ
-kXJ
+afu
+afu
+abJ
+abJ
+abJ
+aeA
+aeA
+aeA
+aeA
+aeA
+aeA
+aeA
+aeA
+abJ
 kXJ
 kXJ
 kXJ
@@ -33111,20 +33315,20 @@ kXJ
 phR
 phR
 phR
-sOa
-sOa
-kXJ
-kGQ
-kXJ
-pAG
-kXJ
-kXJ
-kXJ
-kXJ
-kXJ
-kXJ
-kXJ
-dNJ
+afu
+afu
+abJ
+abU
+abJ
+afa
+abJ
+aiM
+abJ
+abJ
+abJ
+abJ
+abJ
+aeA
 dNJ
 dNJ
 dNJ
@@ -33556,20 +33760,20 @@ kXJ
 phR
 phR
 sOa
-sOa
-sOa
-sOa
-sOa
-sOa
-sOa
-sOa
-kXJ
-kXJ
-kXJ
-kXJ
-kXJ
-kXJ
-sOa
+afu
+afu
+afu
+afu
+afu
+afu
+afu
+abJ
+abJ
+abJ
+abJ
+abJ
+abJ
+afu
 sOa
 sOa
 kXJ
@@ -34002,19 +34206,19 @@ sOa
 sOa
 sOa
 sOa
-sOa
-sOa
-sOa
-acE
-sOa
-sOa
-sOa
-sOa
-oKo
-sOa
-sOa
-sOa
-sOa
+afu
+afu
+afu
+ahy
+afu
+afu
+afu
+afu
+abP
+afu
+afu
+afu
+afu
 sOa
 sOa
 sOa
@@ -34447,19 +34651,19 @@ sOa
 sOa
 sOa
 sOa
-phR
-phR
-phR
-phR
-phR
-sOa
-sOa
-sOa
-sOa
-sOa
-sOa
-sOa
-phR
+abK
+abK
+abK
+abK
+abK
+afu
+afu
+afu
+afu
+afu
+afu
+afu
+abK
 phR
 sOa
 sOa
@@ -34892,19 +35096,19 @@ sOa
 sOa
 phR
 phR
-phR
-phR
-phR
-phR
-phR
-sOa
-sOa
-sOa
-phR
-phR
-phR
-phR
-phR
+abK
+abK
+abK
+abK
+abK
+afu
+afu
+afu
+abK
+abK
+abK
+abK
+abK
 phR
 sOa
 sOa
@@ -37736,7 +37940,7 @@ awx
 awx
 fLC
 hMr
-hMr
+ahE
 wTh
 fMi
 nnO
@@ -37764,7 +37968,7 @@ ojY
 oUY
 oUY
 oUY
-oUY
+ajn
 bPA
 tvQ
 tvQ
@@ -40452,7 +40656,7 @@ ojY
 oUY
 oUY
 oUY
-oUY
+ajn
 oUY
 oUY
 ojY
@@ -40973,7 +41177,7 @@ eAP
 nhE
 nhE
 nhE
-nhE
+aiT
 nhE
 nhE
 ryb
@@ -43139,7 +43343,7 @@ adf
 oUY
 oUY
 oUY
-oUY
+aja
 oUY
 ojY
 ojY
@@ -43202,7 +43406,7 @@ iEa
 nhE
 nhE
 nhE
-nhE
+aiT
 stK
 stK
 stK
@@ -44930,7 +45134,7 @@ ryb
 ryb
 ryb
 nhE
-nhE
+aiT
 nhE
 jSh
 nhE
@@ -44992,7 +45196,7 @@ stK
 stK
 wzt
 stK
-abL
+aiS
 abJ
 abJ
 abJ
@@ -45295,7 +45499,7 @@ jYq
 vKx
 jYq
 nrO
-ejx
+jYq
 vKx
 dNJ
 dNJ
@@ -45727,7 +45931,7 @@ dNJ
 dNJ
 dNJ
 jYq
-jYq
+aiB
 nrO
 jYq
 jYq
@@ -45740,7 +45944,7 @@ jYq
 jYq
 jYq
 jYq
-ujl
+jYq
 jYq
 dNJ
 dNJ
@@ -45810,7 +46014,7 @@ eRx
 abJ
 abJ
 abJ
-gXS
+abM
 bPA
 ojY
 ojY
@@ -46267,7 +46471,7 @@ ryb
 ryb
 nhE
 nhE
-nhE
+aiT
 nhE
 nhE
 iFU
@@ -47119,7 +47323,7 @@ abr
 abJ
 abJ
 aeA
-aeA
+ajs
 aeA
 abJ
 abJ
@@ -47142,7 +47346,7 @@ paO
 uDM
 abO
 nXt
-abO
+ajc
 abO
 abJ
 abJ
@@ -48452,7 +48656,7 @@ aeA
 aeA
 adn
 aeA
-aeA
+ajx
 abQ
 abJ
 abJ
@@ -49788,7 +49992,7 @@ abK
 abJ
 abJ
 tDP
-aeF
+ajw
 abL
 abL
 rhQ
@@ -50739,7 +50943,7 @@ wqP
 wqP
 ait
 ait
-ait
+aiX
 ait
 ait
 wqP
@@ -50874,17 +51078,17 @@ phR
 phR
 phR
 phR
-sOa
-sOa
-phR
-sOa
-kGQ
-kXJ
-dNJ
-kXJ
-kXJ
-kXJ
-kXJ
+afu
+afu
+abK
+afu
+abU
+abJ
+aeA
+abJ
+abJ
+abJ
+abJ
 phR
 umK
 umK
@@ -51319,17 +51523,17 @@ kXJ
 kXJ
 kXJ
 phR
-sOa
-sOa
-sOa
-sOa
-kXJ
-kXJ
-dNJ
-kXJ
-dNJ
-kXJ
-kXJ
+afu
+afu
+afu
+afu
+abJ
+abJ
+aeA
+abJ
+aeA
+abJ
+abJ
 phR
 umK
 umK
@@ -51569,7 +51773,7 @@ abJ
 abJ
 abL
 aeF
-lfm
+ajt
 qbk
 aeK
 aeK
@@ -51764,17 +51968,17 @@ kXJ
 xXx
 kXJ
 sOa
-sOa
-sOa
-sOa
-sOa
-kXJ
-kXJ
-dNJ
-kXJ
-dNJ
-kXJ
-kGQ
+afu
+afu
+afu
+afu
+abJ
+abJ
+aeA
+abJ
+aeA
+abJ
+abU
 phR
 phR
 umK
@@ -52166,16 +52370,16 @@ phR
 phR
 sOa
 sOa
-phR
-phR
-phR
-umK
-phR
-phR
-phR
-phR
-fgJ
-kXJ
+abK
+abK
+abK
+ahJ
+abK
+abK
+abK
+abK
+aiO
+abJ
 kXJ
 dNJ
 kXJ
@@ -52209,17 +52413,17 @@ kXJ
 kXJ
 kXJ
 sOa
-sOa
-sOa
-phR
-phR
-kXJ
-kXJ
-fgJ
-kXJ
-dNJ
-kXJ
-kXJ
+afu
+afu
+abK
+abK
+abJ
+abJ
+aiO
+abJ
+aeA
+abJ
+abJ
 phR
 phR
 umK
@@ -52611,16 +52815,16 @@ phR
 sOa
 sOa
 sOa
-phR
-phR
-phR
-umK
-umK
-phR
-phR
-kXJ
-kXJ
-dNJ
+abK
+abK
+abK
+ahJ
+ahJ
+abK
+abK
+abJ
+abJ
+aeA
 kXJ
 dNJ
 kXJ
@@ -52654,17 +52858,17 @@ phR
 sOa
 sOa
 sOa
-qgO
-phR
-phR
-phR
-phR
-kXJ
-dNJ
-kXJ
-dNJ
-kXJ
-phR
+agA
+abK
+abK
+abK
+abK
+abJ
+aeA
+abJ
+aeA
+abJ
+abK
 phR
 phR
 phR
@@ -52897,7 +53101,7 @@ adS
 fWy
 qpn
 adp
-adT
+ajz
 qXT
 abL
 abL
@@ -52911,7 +53115,7 @@ aeK
 aeK
 aeK
 aeK
-aeK
+ajo
 abN
 abL
 abJ
@@ -52919,7 +53123,7 @@ abJ
 abJ
 abJ
 abJ
-abJ
+aje
 abJ
 abJ
 abJ
@@ -53099,17 +53303,17 @@ sOa
 sOa
 sOa
 sOa
-phR
-phR
-phR
-phR
-phR
-kXJ
+abK
+abK
+abK
+abK
+abK
+abJ
 aaI
 aaH
-kXJ
-kXJ
-phR
+abJ
+abJ
+abK
 phR
 phR
 sOa
@@ -53544,17 +53748,17 @@ kXJ
 sOa
 sOa
 phR
-phR
-phR
-phR
-kXJ
-kXJ
-kXJ
-dNJ
-kXJ
-dNJ
-phR
-phR
+abK
+abK
+abK
+abJ
+abJ
+abJ
+aiP
+abJ
+aeA
+abK
+abK
 kXJ
 kGQ
 kXJ
@@ -53815,7 +54019,7 @@ abJ
 abJ
 aaO
 abJ
-abJ
+aje
 abJ
 abJ
 abJ
@@ -53989,17 +54193,17 @@ kXJ
 kXJ
 phR
 phR
-phR
-phR
-kXJ
-kXJ
-pAG
-dNJ
-kXJ
-kXJ
-kXJ
-dNJ
-dNJ
+abK
+abK
+abJ
+abJ
+afa
+aeA
+abJ
+abJ
+abJ
+aeA
+aeA
 dNJ
 dNJ
 kXJ
@@ -54395,7 +54599,7 @@ ahF
 cSF
 aeF
 vAc
-vAc
+aiR
 erY
 cSF
 hES
@@ -54434,17 +54638,17 @@ kXJ
 phR
 phR
 phR
-kXJ
-kXJ
-kXJ
-kXJ
-kXJ
-dNJ
-kXJ
-dNJ
-kXJ
-kXJ
-kXJ
+abJ
+abJ
+abJ
+abJ
+abJ
+aeA
+abJ
+aeA
+abJ
+abJ
+abJ
 kXJ
 kXJ
 dNJ
@@ -54879,17 +55083,17 @@ kXJ
 kGQ
 kXJ
 kXJ
-kXJ
-kXJ
-dNJ
-dNJ
-dNJ
-kXJ
-kXJ
-dNJ
-dNJ
-dNJ
-kXJ
+abJ
+abJ
+aeA
+aeA
+aeA
+abJ
+abJ
+aeA
+aeA
+aeA
+abJ
 dNJ
 kXJ
 kXJ
@@ -55085,7 +55289,7 @@ dNJ
 kXJ
 uuM
 uuM
-tlL
+aiz
 tlL
 hxd
 hxd
@@ -55324,17 +55528,17 @@ kXJ
 kXJ
 kXJ
 dNJ
-dNJ
-dNJ
-kXJ
-kXJ
-kXJ
-kXJ
-dNJ
-kXJ
-aca
-phR
-phR
+aeA
+aeA
+abJ
+abJ
+abJ
+abJ
+aeA
+abJ
+afR
+abK
+abK
 kXJ
 dNJ
 kXJ
@@ -55562,7 +55766,7 @@ abH
 acv
 aeq
 adF
-jjf
+ajC
 jWQ
 fsy
 pQl
@@ -55769,17 +55973,17 @@ kXJ
 dNJ
 dNJ
 kXJ
-kXJ
-kXJ
-kXJ
-dNJ
-dNJ
-dNJ
-kXJ
-kXJ
-phR
-phR
-phR
+abJ
+abJ
+abJ
+aeA
+aeA
+aeA
+abJ
+abJ
+abK
+abK
+abK
 phR
 kXJ
 dNJ
@@ -56183,7 +56387,7 @@ acK
 aoS
 vAc
 pZb
-aeA
+aiL
 aip
 ahz
 pZb
@@ -56214,17 +56418,17 @@ dNJ
 kXJ
 kXJ
 kXJ
-dNJ
-dNJ
-pAG
-kXJ
-kXJ
-kXJ
-kXJ
-kXJ
-kXJ
-kXJ
-phR
+aeA
+aeA
+afa
+abJ
+abJ
+abJ
+abJ
+abJ
+abJ
+abJ
+abK
 phR
 phR
 dNJ
@@ -56659,17 +56863,17 @@ kXJ
 kXJ
 dNJ
 dNJ
-kXJ
-kXJ
-phR
-phR
-kXJ
-kGQ
-kXJ
-phR
-phR
-kXJ
-kXJ
+abJ
+abJ
+abK
+abK
+abJ
+abU
+abJ
+abK
+abK
+abJ
+abJ
 phR
 phR
 kXJ
@@ -56902,7 +57106,7 @@ iQY
 bhQ
 wkf
 qpn
-adT
+ajz
 qXT
 abL
 abL
@@ -57071,7 +57275,7 @@ rvL
 fyD
 acK
 act
-agR
+aiQ
 ouT
 ais
 ahD
@@ -58109,7 +58313,7 @@ abJ
 ahd
 abJ
 aeA
-aeA
+aiL
 abJ
 abJ
 abJ
@@ -58653,12 +58857,12 @@ vSV
 vSV
 vSV
 eru
-lpy
-lpy
+qUR
+qUR
 vSV
 vSV
 rtU
-gKf
+rtU
 vSV
 lXu
 kXJ
@@ -59097,13 +59301,13 @@ vSV
 gDE
 vJA
 jzg
-dzz
-lpy
-lpy
+qPJ
+qUR
+qUR
 fks
 jJr
 wZP
-pbI
+qUR
 iwB
 kXJ
 kXJ
@@ -59543,12 +59747,12 @@ vkt
 qdh
 khD
 qUR
-lpy
-dzz
+qUR
+qPJ
 leQ
 qUR
 qUR
-wVZ
+qPJ
 rtU
 kXJ
 kXJ
@@ -59580,7 +59784,7 @@ abL
 abL
 abL
 abL
-abL
+aiS
 abL
 abL
 abL
@@ -60013,10 +60217,10 @@ abH
 acv
 kkI
 biw
+ajB
+acv
 biw
-iSm
-biw
-biw
+ajA
 clb
 acv
 abJ
@@ -61661,12 +61865,12 @@ dNJ
 dNJ
 dNJ
 dNJ
-dNJ
-dNJ
+aeA
+aeA
 aeA
 aeA
 abJ
-abJ
+aiM
 abJ
 abJ
 abJ
@@ -61721,7 +61925,7 @@ dNJ
 dNJ
 sxo
 vLp
-pdh
+aiJ
 pdh
 sJn
 pdh
@@ -62106,8 +62310,8 @@ tHl
 dNJ
 dNJ
 dNJ
-dNJ
-dNJ
+aeA
+aeA
 aeA
 aeA
 aeA
@@ -62260,7 +62464,7 @@ abO
 abO
 abO
 lPu
-tSi
+ajl
 tSi
 agl
 abO
@@ -62551,8 +62755,8 @@ tHl
 tHl
 tHl
 tHl
-tHl
-tHl
+abL
+abL
 abL
 abL
 aeA
@@ -62691,7 +62895,7 @@ abJ
 abJ
 abO
 lPu
-tSi
+ajl
 tSi
 agl
 mhB
@@ -62732,7 +62936,7 @@ gAO
 gAO
 tei
 tei
-tei
+aiZ
 tei
 tei
 gAO
@@ -62996,18 +63200,18 @@ tHl
 tHl
 tHl
 tHl
-tHl
-tHl
-tHl
-tHl
-tHl
-dNJ
-dNJ
-dNJ
-dNJ
-dNJ
-kXJ
-kXJ
+abL
+abL
+abL
+abL
+abL
+aeA
+aeA
+aeA
+aeA
+aeA
+abJ
+abJ
 kXJ
 kXJ
 kXJ
@@ -63441,18 +63645,18 @@ tHl
 tHl
 tHl
 tHl
-tHl
-tHl
-tHl
-tHl
-tHl
-tHl
-tHl
-dNJ
-dNJ
-dNJ
-dNJ
-dNJ
+abL
+abL
+abL
+abL
+abL
+abL
+abL
+aeA
+aeA
+aeA
+aeA
+aeA
 dNJ
 kXJ
 kXJ
@@ -63591,7 +63795,7 @@ abO
 abO
 eSH
 aeF
-aeF
+ajm
 rFo
 aeF
 aeF
@@ -63886,18 +64090,18 @@ xbj
 xbj
 xbj
 xbj
-xbj
-xbj
-xbj
-tHl
-tHl
-tHl
-tHl
-tHl
-tHl
-dNJ
-dNJ
-dNJ
+aeK
+aeK
+aeK
+abL
+abL
+abL
+abL
+abL
+abL
+aeA
+aeA
+aeA
 dNJ
 dNJ
 kXJ
@@ -64331,18 +64535,18 @@ xbj
 xbj
 xbj
 xbj
-xbj
-xbj
-xbj
-xbj
-xbj
-tHl
-tHl
-tHl
-tHl
-tHl
-tHl
-dNJ
+aeK
+aeK
+aeK
+aeK
+aeK
+abL
+abL
+abL
+abL
+abL
+abL
+aeA
 dNJ
 dNJ
 dNJ
@@ -64497,7 +64701,7 @@ abJ
 abJ
 abJ
 abJ
-abJ
+aiM
 abL
 abL
 abL
@@ -64555,11 +64759,11 @@ wqP
 wqP
 wqP
 wqP
-kXJ
-kXJ
-kXJ
-kXJ
-kXJ
+abJ
+abJ
+abJ
+abJ
+abJ
 phR
 phR
 phR
@@ -64776,18 +64980,18 @@ tHl
 tHl
 tHl
 tHl
-tHl
-tHl
-tHl
-tHl
-xbj
-xbj
-xbj
-xbj
-tHl
-tHl
-tHl
-tHl
+abL
+abL
+abL
+abL
+aeK
+aeK
+aeK
+aeK
+abL
+abL
+abL
+abL
 tHl
 dNJ
 dNJ
@@ -64919,7 +65123,7 @@ jIk
 abO
 abO
 jlR
-jlR
+aju
 aqI
 abL
 aik
@@ -65000,11 +65204,11 @@ wqP
 wqP
 wqP
 wqP
-kXJ
-kXJ
-kXJ
-kXJ
-phR
+abJ
+abJ
+abJ
+abJ
+abK
 phR
 phR
 phR
@@ -65221,18 +65425,18 @@ tHl
 tHl
 tHl
 tHl
-tHl
-tHl
-tHl
-tHl
-tHl
-xbj
-xbj
-xbj
-xbj
-tHl
-tHl
-tHl
+abL
+abL
+abL
+abL
+abL
+aeK
+aeK
+aeK
+aeK
+abL
+abL
+abL
 tHl
 tHl
 aeA
@@ -65380,7 +65584,7 @@ abL
 abL
 abL
 vCz
-jAQ
+ajj
 qfS
 abO
 abJ
@@ -65448,8 +65652,8 @@ abJ
 abJ
 abJ
 abJ
-phR
-phR
+abK
+abK
 phR
 phR
 phR
@@ -65893,8 +66097,8 @@ abJ
 abJ
 abK
 abK
-phR
-phR
+abK
+abK
 phR
 phR
 phR
@@ -66143,12 +66347,12 @@ aeK
 aeK
 aeK
 abL
-tHl
-dNJ
-dNJ
-phR
-dNJ
-dNJ
+abL
+aeA
+aeA
+abK
+aeA
+aeA
 lXu
 kXJ
 vBe
@@ -66259,7 +66463,7 @@ aqI
 abL
 abp
 abO
-jlR
+ajq
 fuG
 aqI
 aeF
@@ -66271,7 +66475,7 @@ abO
 jju
 xKL
 xKL
-lPu
+ajh
 abO
 abJ
 abJ
@@ -66338,8 +66542,8 @@ abJ
 abJ
 abK
 abK
-phR
-phR
+abK
+abK
 phR
 phR
 phR
@@ -66588,12 +66792,12 @@ aeK
 aeK
 aeL
 abL
-lVL
-dNJ
-dNJ
-phR
-dNJ
-dNJ
+aib
+aeA
+aeA
+abK
+aeA
+aeA
 kXJ
 kXJ
 kXJ
@@ -66645,7 +66849,7 @@ vLG
 hoD
 wMb
 wMb
-wMb
+aiy
 toJ
 xkm
 xkm
@@ -66783,8 +66987,8 @@ abJ
 abJ
 abJ
 abJ
-phR
-phR
+abK
+abK
 phR
 phR
 kXJ
@@ -67033,12 +67237,12 @@ afi
 afi
 afi
 afi
-uXe
-uXe
-uXe
-ngb
-dNJ
-dNJ
+aeN
+aeN
+aeN
+aeT
+aeA
+aeA
 ngb
 ngb
 ngb
@@ -67162,8 +67366,8 @@ abL
 abL
 tSi
 tSi
-lPu
-abU
+ajf
+abJ
 abJ
 abJ
 abJ
@@ -67222,7 +67426,7 @@ abJ
 abJ
 abJ
 abJ
-abJ
+aiM
 abJ
 abJ
 abJ
@@ -67251,15 +67455,15 @@ kXJ
 kXJ
 pAG
 kXJ
-kXJ
-poj
-kXJ
-kXJ
-kXJ
-kXJ
-dNJ
-aai
-aai
+abJ
+afC
+abJ
+abJ
+abJ
+abJ
+aeA
+afv
+afv
 kXJ
 kXJ
 kXJ
@@ -67476,14 +67680,14 @@ afk
 afk
 agx
 afk
-afk
+aiK
 afj
-dNJ
-dNJ
-dNJ
-dNJ
-dNJ
-dNJ
+aeA
+aeA
+aeA
+aeA
+aeA
+aeA
 dNJ
 dNJ
 dNJ
@@ -67693,8 +67897,8 @@ phR
 phR
 sOa
 kXJ
-kXJ
-kXJ
+abJ
+abJ
 abJ
 abJ
 abJ
@@ -67923,12 +68127,12 @@ afk
 agx
 afk
 agw
-dNJ
-dNJ
-dNJ
-dNJ
-dNJ
-dNJ
+aeA
+aeA
+aeA
+aeA
+aeA
+aeA
 dNJ
 dNJ
 dNJ
@@ -68027,7 +68231,7 @@ abH
 abJ
 add
 abJ
-abJ
+aiM
 abO
 abO
 jju
@@ -68051,7 +68255,7 @@ abO
 wSU
 abL
 tJq
-hvx
+aji
 qfS
 abJ
 abJ
@@ -68138,7 +68342,7 @@ phR
 kXJ
 kXJ
 kXJ
-kXJ
+abJ
 abJ
 abJ
 abJ
@@ -68368,12 +68572,12 @@ afk
 afk
 afk
 afj
-dNJ
-dNJ
-dNJ
-dNJ
-dNJ
-dNJ
+aeA
+aeA
+aeA
+aeA
+aeA
+aeA
 dNJ
 dNJ
 dNJ
@@ -68540,7 +68744,7 @@ gAO
 gAO
 gAO
 gAO
-agd
+aiW
 abL
 abL
 abL
@@ -68583,7 +68787,7 @@ pAG
 kXJ
 kXJ
 kXJ
-kXJ
+abJ
 abJ
 abJ
 abK
@@ -68813,12 +69017,12 @@ afi
 afi
 afi
 afi
-uXe
-uXe
-uXe
-ngb
-ngb
-uXe
+aeN
+aeN
+aeN
+aeT
+aeT
+aeN
 dNJ
 dNJ
 dNJ
@@ -68944,7 +69148,7 @@ abO
 abO
 abO
 abJ
-abJ
+abU
 abJ
 abJ
 abH
@@ -69028,7 +69232,7 @@ kXJ
 kXJ
 kXJ
 kXJ
-kXJ
+abJ
 abJ
 abK
 abK
@@ -69258,12 +69462,12 @@ aeK
 aeK
 afl
 abL
-lVL
-dNJ
-dNJ
-kXJ
-kXJ
-ngb
+aib
+aeA
+aeA
+abJ
+abJ
+aeT
 ngb
 ngb
 ngb
@@ -69367,7 +69571,7 @@ abO
 abO
 wSU
 fuG
-adi
+ajy
 adi
 aeF
 aeF
@@ -69457,8 +69661,8 @@ abJ
 abJ
 afH
 afu
-sOa
-phR
+afu
+abK
 phR
 phR
 phR
@@ -69473,7 +69677,7 @@ kXJ
 kXJ
 kXJ
 phR
-phR
+abK
 abK
 abK
 abK
@@ -69703,12 +69907,12 @@ aeK
 aeK
 aeK
 abL
-tHl
-dNJ
-dNJ
-kXJ
-kXJ
-kXJ
+abL
+aeA
+aeA
+abJ
+abJ
+abJ
 kXJ
 kXJ
 ngb
@@ -69825,7 +70029,7 @@ abL
 abL
 abL
 juZ
-aeF
+ajm
 eeE
 lQX
 lQX
@@ -69902,8 +70106,8 @@ abJ
 abJ
 abJ
 afu
-phR
-phR
+abK
+abK
 phR
 phR
 phR
@@ -69918,7 +70122,7 @@ kXJ
 xXx
 kXJ
 pAG
-phR
+abK
 abK
 abK
 abK
@@ -70148,12 +70352,12 @@ aeK
 aeL
 abL
 abL
-tHl
-dNJ
-kXJ
-mBr
-kXJ
-kXJ
+abL
+aeA
+abJ
+aiG
+abJ
+abJ
 kXJ
 kXJ
 kXJ
@@ -70347,8 +70551,8 @@ abJ
 abJ
 abJ
 abJ
-kXJ
-kXJ
+abJ
+abJ
 phR
 phR
 phR
@@ -70363,7 +70567,7 @@ kXJ
 kXJ
 kXJ
 kXJ
-kXJ
+abJ
 abK
 abK
 abK
@@ -70792,6 +70996,12 @@ abJ
 abJ
 aeA
 aeA
+aeA
+aeA
+dNJ
+dNJ
+dNJ
+kXJ
 dNJ
 dNJ
 dNJ
@@ -70801,14 +71011,8 @@ kXJ
 dNJ
 dNJ
 dNJ
-dNJ
-dNJ
 kXJ
-dNJ
-dNJ
-dNJ
-kXJ
-sOa
+afu
 abK
 abK
 afE
@@ -71155,7 +71359,7 @@ aeF
 abL
 sFI
 xla
-fkj
+ajp
 qfS
 abO
 abO
@@ -71237,8 +71441,8 @@ abJ
 aeA
 abJ
 abJ
-kXJ
-kXJ
+abJ
+abJ
 kXJ
 kXJ
 kXJ
@@ -71253,7 +71457,7 @@ qTT
 kXJ
 kXJ
 dNJ
-sOa
+afu
 abK
 afu
 afu
@@ -71598,7 +71802,7 @@ abL
 abL
 abL
 abO
-lPu
+ajf
 xKL
 xKL
 agm
@@ -71682,8 +71886,8 @@ aeA
 abJ
 abJ
 abJ
-dNJ
-dNJ
+aeA
+aeA
 qTT
 dNJ
 dNJ
@@ -71698,7 +71902,7 @@ dNJ
 dNJ
 kXJ
 kXJ
-dNJ
+aeA
 abJ
 aeA
 aeA
@@ -72127,8 +72331,8 @@ aeA
 abJ
 abJ
 aeA
-phR
-phR
+abK
+abK
 phR
 phR
 kXJ
@@ -72143,7 +72347,7 @@ kXJ
 kXJ
 dNJ
 kXJ
-kXJ
+abJ
 abJ
 abJ
 abJ
@@ -72484,7 +72688,7 @@ abO
 abO
 abO
 sFI
-xla
+ajv
 fkj
 qfS
 abO
@@ -72572,8 +72776,8 @@ aeA
 abJ
 aeA
 abK
-phR
-phR
+abK
+abK
 phR
 phR
 phR
@@ -72588,7 +72792,7 @@ kXJ
 kXJ
 kXJ
 dNJ
-dNJ
+aeA
 aeA
 aeA
 aeA
@@ -72874,10 +73078,10 @@ wMb
 wMb
 qwy
 iIQ
-bFr
-hTT
+iIQ
 lQH
-kVC
+lQH
+wMb
 ioJ
 wMb
 wMb
@@ -72931,7 +73135,7 @@ abO
 agm
 xKL
 xKL
-lPu
+ajf
 abO
 abO
 abO
@@ -73017,8 +73221,8 @@ aeA
 abJ
 aeA
 abK
-phR
-phR
+abK
+abK
 kXJ
 phR
 phR
@@ -73318,11 +73522,11 @@ wMb
 wMb
 eyp
 wMb
-bFr
-dWz
+iIQ
+lQH
 sIH
-hTT
-kVC
+lQH
+wMb
 wMb
 wMb
 wMb
@@ -73336,7 +73540,7 @@ wMb
 wMb
 wMb
 qZj
-wMb
+aiy
 pKP
 pot
 pWB
@@ -73456,14 +73660,14 @@ aeA
 aeA
 aeA
 abJ
-abJ
+aiM
 aeA
 abJ
 abJ
 aeA
 abK
-phR
-kXJ
+abK
+abJ
 kXJ
 kXJ
 kXJ
@@ -73762,11 +73966,11 @@ eNL
 eNL
 aZd
 wMb
-kVC
-eQt
-dWz
-hTT
-bFr
+wMb
+lQH
+lQH
+lQH
+iIQ
 wMb
 wMb
 eNL
@@ -73907,8 +74111,8 @@ abJ
 aeA
 afu
 afu
-kXJ
-kXJ
+abJ
+abJ
 kXJ
 kXJ
 kXJ
@@ -74210,7 +74414,7 @@ xZs
 nNI
 akR
 gbv
-bYA
+dtm
 dtm
 nNI
 izc
@@ -74346,14 +74550,14 @@ abJ
 abJ
 aeA
 aeA
-abJ
+aeS
 aeA
 abJ
 aeA
 afu
 abJ
-pAG
-kXJ
+afa
+abJ
 fgJ
 kXJ
 kXJ
@@ -74637,7 +74841,7 @@ aeA
 oWT
 pKP
 wMb
-peA
+aiC
 qqE
 wMb
 wMb
@@ -74652,11 +74856,11 @@ fWc
 fWc
 wMb
 wMb
-kVC
-hTT
-hTT
-dWz
-bFr
+wMb
+lQH
+lQH
+lQH
+iIQ
 wMb
 wMb
 fWc
@@ -74797,8 +75001,8 @@ abJ
 aeA
 afu
 abJ
-kXJ
-kXJ
+abJ
+abJ
 kXJ
 kXJ
 kXJ
@@ -75098,10 +75302,10 @@ wMb
 wMb
 wMb
 wMb
-bFr
-hTT
+iIQ
 lQH
-hTT
+lQH
+lQH
 wMb
 aZd
 wMb
@@ -75191,7 +75395,7 @@ wsI
 gAO
 gAO
 gAO
-tei
+aiZ
 gAO
 wsI
 wsI
@@ -75242,8 +75446,8 @@ aeA
 aeA
 aeA
 abJ
-xXx
-kXJ
+afG
+abJ
 kXJ
 kXJ
 phR
@@ -75680,15 +75884,15 @@ abJ
 abJ
 abJ
 aeA
-aeA
+aiN
 aeA
 aeA
 aeA
 aeA
 aeA
 abJ
-kXJ
-kXJ
+abJ
+abJ
 kXJ
 phR
 phR
@@ -76056,7 +76260,7 @@ abH
 abH
 abH
 abJ
-abJ
+ajk
 abJ
 abJ
 abJ
@@ -76132,8 +76336,8 @@ abJ
 aeA
 abJ
 abJ
-kXJ
-kXJ
+abJ
+abJ
 kXJ
 phR
 phR
@@ -76492,7 +76696,7 @@ abH
 abL
 abL
 abL
-abL
+ajr
 abL
 abH
 abH
@@ -76577,8 +76781,8 @@ aeA
 abJ
 abJ
 abJ
-kXJ
-pAG
+abJ
+afa
 kXJ
 phR
 phR
@@ -77022,8 +77226,8 @@ afK
 abJ
 abJ
 abK
-kXJ
-kXJ
+abJ
+abJ
 phR
 phR
 sOa
@@ -77465,10 +77669,10 @@ abJ
 abJ
 qVq
 qVq
-phR
-kXJ
-kXJ
-kXJ
+abK
+abJ
+abJ
+abJ
 sOa
 sOa
 sOa
@@ -77902,7 +78106,7 @@ abJ
 afc
 abJ
 abJ
-kXJ
+abJ
 qVq
 qVq
 qVq
@@ -77911,8 +78115,8 @@ qVq
 qVq
 qVq
 qVq
-kXJ
-kXJ
+abJ
+abJ
 qVq
 qVq
 sOa
@@ -78356,7 +78560,7 @@ uAj
 uAj
 qVq
 qVq
-kXJ
+abJ
 qVq
 qVq
 qVq
@@ -79080,13 +79284,13 @@ dNJ
 dNJ
 ngb
 kXJ
-kXJ
-kXJ
-mBr
-kXJ
-kQY
-phR
-sjH
+abJ
+abJ
+aiG
+abJ
+aiF
+abK
+aiD
 qyG
 vuf
 eQk
@@ -79525,13 +79729,13 @@ uBt
 fGB
 uXe
 kXJ
-kXJ
-kXJ
-kXJ
-kXJ
-kXJ
-kXJ
-kXJ
+abJ
+abJ
+abJ
+abJ
+abJ
+abJ
+abJ
 jkc
 dnC
 qpz
@@ -79970,9 +80174,9 @@ uBt
 uBt
 fGB
 fGB
-kXJ
-kXJ
-kXJ
+abJ
+abJ
+abJ
 fYO
 gWp
 gWp
@@ -80415,9 +80619,9 @@ voD
 uBt
 uBt
 fGB
-fGB
-kXJ
-kXJ
+aiH
+abJ
+abJ
 gWp
 oOW
 oOW
@@ -80557,7 +80761,7 @@ ePP
 ePP
 ePP
 xWs
-agc
+aiU
 xWs
 ePP
 ePP
@@ -80860,9 +81064,9 @@ jMw
 uBt
 uBt
 uBt
-fGB
-fGB
-kXJ
+aiH
+aiH
+abJ
 gWp
 qdi
 oOW
@@ -81305,12 +81509,12 @@ ckq
 uBt
 uBt
 uBt
-uBt
-fGB
-kXJ
+aiI
+aiH
+abJ
 gWp
 pYn
-oOW
+aiE
 oOW
 mEy
 oOW
@@ -81331,7 +81535,7 @@ wMb
 xrL
 wMb
 wMb
-wMb
+aiA
 wMb
 wMb
 ewP
@@ -82321,7 +82525,7 @@ ewu
 rNv
 rNv
 rNv
-rNv
+aiY
 rNv
 ePP
 ePP
@@ -84522,7 +84726,7 @@ qxs
 qxs
 kFC
 qxs
-qxs
+ajd
 qxs
 qxs
 qxs
@@ -86303,8 +86507,8 @@ lfH
 qxs
 qxs
 qxs
-ogi
 qxs
+ajb
 qxs
 qxs
 lfH
@@ -89011,7 +89215,7 @@ ePP
 ePP
 ePP
 xWs
-xWs
+aiV
 agc
 xWs
 afZ
@@ -92291,19 +92495,19 @@ kXJ
 dNJ
 kXJ
 uWO
-phR
-phR
-phR
-phR
-phR
-phR
-phR
-phR
-phR
-phR
-phR
-phR
-phR
+abK
+abK
+abK
+abK
+abK
+abK
+abK
+abK
+abK
+abK
+abK
+abK
+abK
 phR
 phR
 kXJ
@@ -92736,19 +92940,19 @@ kXJ
 dNJ
 kXJ
 phR
-phR
-phR
-qTT
-phR
-phR
-phR
-phR
-phR
-sOa
-sOa
-kXJ
-phR
-phR
+abK
+abK
+aex
+abK
+abK
+abK
+abK
+abK
+afu
+afu
+abJ
+abK
+abK
 phR
 phR
 sOa
@@ -93181,19 +93385,19 @@ kXJ
 dNJ
 kXJ
 phR
-phR
-phR
-kXJ
-kXJ
-phR
-phR
-phR
-sOa
-sOa
-phR
-kXJ
-kXJ
-phR
+abK
+abK
+abJ
+abJ
+abK
+abK
+abK
+afu
+afu
+abK
+abJ
+abJ
+abK
 phR
 phR
 sOa
@@ -93626,19 +93830,19 @@ kXJ
 kXJ
 pAG
 phR
-phR
-phR
-phR
-kXJ
-sOa
-phR
-phR
-sOa
-phR
-phR
-kXJ
-oKo
-phR
+abK
+abK
+abK
+abJ
+afu
+abK
+abK
+afu
+abK
+abK
+abJ
+abP
+abK
 phR
 sOa
 sOa
@@ -94071,19 +94275,19 @@ kXJ
 dNJ
 kXJ
 phR
-phR
-phR
-phR
-sOa
-sOa
-sOa
-phR
-sOa
-phR
-phR
-kXJ
-pAG
-phR
+abK
+abK
+abK
+afu
+afu
+afu
+abK
+afu
+abK
+abK
+abJ
+afa
+abK
 sOa
 sOa
 sOa
@@ -94516,19 +94720,19 @@ kXJ
 dNJ
 kXJ
 kXJ
-phR
-phR
-sOa
-sOa
-phR
-sOa
-sOa
-sOa
-phR
-phR
-phR
-kXJ
-sOa
+abK
+abK
+afu
+afu
+abK
+afu
+afu
+afu
+abK
+abK
+abK
+abJ
+afu
 sOa
 phR
 kXJ
@@ -94961,19 +95165,19 @@ kXJ
 dNJ
 kXJ
 kXJ
-phR
-sOa
-sOa
-phR
-phR
-phR
-phR
-sOa
-sOa
-phR
-phR
-kXJ
-kXJ
+abK
+afu
+afu
+abK
+abK
+abK
+abK
+afu
+afu
+abK
+abK
+abJ
+abJ
 phR
 phR
 phR
@@ -95406,19 +95610,19 @@ kXJ
 dNJ
 kXJ
 kXJ
-tuu
-sOa
-phR
-phR
-phR
-sOa
-sOa
-sOa
-kXJ
-phR
-phR
-kXJ
-kXJ
+agy
+afu
+abK
+abK
+abK
+afu
+afu
+afu
+abJ
+abK
+abK
+abJ
+abJ
 kXJ
 kGQ
 phR
@@ -95851,19 +96055,19 @@ kXJ
 kXJ
 dNJ
 kXJ
-kXJ
-kGQ
-phR
-phR
-kXJ
-kXJ
-phR
-phR
-kXJ
-kGQ
-kXJ
-dNJ
-dNJ
+abJ
+abU
+abK
+abK
+abJ
+abJ
+abK
+abK
+abJ
+abU
+abJ
+aeA
+aeA
 dNJ
 dNJ
 dNJ
@@ -96296,19 +96500,19 @@ dNJ
 kXJ
 kXJ
 dNJ
-kXJ
-kXJ
-phR
-kXJ
-kXJ
-phR
-phR
-kXJ
-pAG
-kXJ
-dNJ
-kXJ
-kXJ
+abJ
+abJ
+abK
+abJ
+abJ
+abK
+abK
+abJ
+afa
+abJ
+aeA
+abJ
+abJ
 kXJ
 kXJ
 kXJ
@@ -96741,19 +96945,19 @@ kXJ
 dNJ
 kXJ
 kXJ
-dNJ
-dNJ
-dNJ
-dNJ
-dNJ
-dNJ
-kXJ
-dNJ
-dNJ
-dNJ
-kXJ
-kXJ
-dNJ
+aeA
+aeA
+aeA
+aeA
+aeA
+aeA
+aiM
+aeA
+aeA
+aeA
+abJ
+abJ
+aeA
 dNJ
 kXJ
 dNJ
@@ -97186,19 +97390,19 @@ kXJ
 kXJ
 dNJ
 kXJ
-kXJ
-kXJ
-kXJ
-kXJ
-kXJ
-kXJ
-kXJ
-kXJ
-kXJ
-kXJ
-kXJ
-dNJ
-phR
+abJ
+abJ
+abJ
+abJ
+abJ
+abJ
+abJ
+abJ
+abJ
+abJ
+abJ
+aeA
+abK
 phR
 sOa
 pAG
@@ -97631,19 +97835,19 @@ kXJ
 kXJ
 kXJ
 dNJ
-dNJ
-dNJ
-kXJ
-dNJ
-dNJ
-dNJ
-dNJ
-dNJ
-dNJ
-dNJ
-dNJ
-phR
-phR
+aeA
+aeA
+abJ
+aeA
+aeA
+aeA
+aiN
+aeA
+aeA
+aeA
+aeA
+abK
+abK
 sOa
 sOa
 phR
@@ -98076,19 +98280,19 @@ phR
 phR
 phR
 phR
-phR
-phR
-phR
-phR
-phR
-phR
-phR
-phR
-phR
-phR
-phR
-phR
-phR
+abK
+abK
+abK
+abK
+abK
+abK
+abK
+abK
+abK
+abK
+abK
+abK
+abK
 phR
 phR
 phR
@@ -98521,19 +98725,19 @@ phR
 phR
 phR
 phR
-phR
-phR
-phR
-phR
-phR
-phR
-phR
-phR
-phR
-phR
-phR
-phR
-phR
+abK
+abK
+abK
+abK
+abK
+abK
+abK
+abK
+abK
+abK
+abK
+abK
+abK
 phR
 phR
 phR
