@@ -559,7 +559,8 @@
 	},
 /obj/structure/machinery/cm_vending/sorted/uniform_supply/squad_prep{
 	req_one_access_txt = "8;12;39;40";
-	req_access = list()
+	req_access = list();
+	hacked = 1
 	},
 /turf/open/floor/almayer/edge/smooth/east,
 /area/golden_arrow/platoonprep)
@@ -578,7 +579,8 @@
 	},
 /obj/structure/machinery/cm_vending/sorted/uniform_supply/squad_prep{
 	req_one_access_txt = "8;12;39;40";
-	req_access = list()
+	req_access = list();
+	hacked = 1
 	},
 /turf/open/floor/almayer/edge/smooth/west,
 /area/golden_arrow/platoonprep)
@@ -617,7 +619,8 @@
 	},
 /obj/structure/machinery/cm_vending/sorted/cargo_guns/squad{
 	req_one_access_txt = "8;12;39;40";
-	req_one_access = list()
+	req_one_access = list();
+	hacked = 1
 	},
 /turf/open/floor/almayer/edge/smooth/east,
 /area/golden_arrow/platoonprep)
@@ -632,26 +635,29 @@
 	},
 /obj/structure/machinery/cm_vending/sorted/cargo_guns/squad{
 	req_one_access_txt = "8;12;39;40";
-	req_one_access = list()
+	req_one_access = list();
+	hacked = 1
 	},
 /turf/open/floor/almayer/edge/smooth/west,
 /area/golden_arrow/platoonprep)
 "abm" = (
-/obj/structure/machinery/cm_vending/sorted/cargo_guns/squad{
-	req_one_access_txt = "8;12;39;40";
-	req_one_access = list()
-	},
 /obj/structure/machinery/door/poddoor/shutters/almayer{
 	dir = 4;
 	id = "squadarmory";
 	name = "\improper Gear Lockers"
+	},
+/obj/structure/machinery/cm_vending/sorted/cargo_guns/squad{
+	req_one_access_txt = "8;12;39;40";
+	req_one_access = list();
+	hacked = 1
 	},
 /turf/closed/wall/almayer/outer,
 /area/golden_arrow/platoonprep)
 "abn" = (
 /obj/structure/machinery/cm_vending/sorted/cargo_guns/squad{
 	req_one_access_txt = "8;12;39;40";
-	req_one_access = list()
+	req_one_access = list();
+	hacked = 1
 	},
 /turf/closed/wall/almayer/outer,
 /area/golden_arrow/platoonprep)
@@ -2612,7 +2618,8 @@
 "afO" = (
 /obj/structure/machinery/cm_vending/sorted/cargo_guns/squad{
 	req_one_access_txt = "8;12;39;40";
-	req_one_access = list()
+	req_one_access = list();
+	hacked = 1
 	},
 /turf/open/floor/almayer,
 /area/golden_arrow/platoonprep)
@@ -3372,6 +3379,9 @@
 	pixel_y = 14;
 	anchored = 1;
 	density = 0
+	},
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	pixel_y = 40
 	},
 /turf/open/floor/almayer/edge/smooth/north,
 /area/golden_arrow/platoonprep)
@@ -5885,7 +5895,8 @@
 	},
 /obj/structure/machinery/cm_vending/sorted/uniform_supply/squad_prep{
 	req_one_access_txt = "8;12;39;40";
-	req_access = list()
+	req_access = list();
+	hacked = 1
 	},
 /turf/open/floor/almayer/edge/smooth/endcap_right/west,
 /area/golden_arrow/platoonprep)
@@ -8874,7 +8885,8 @@
 	},
 /obj/structure/machinery/cm_vending/sorted/uniform_supply/squad_prep{
 	req_one_access_txt = "8;12;39;40";
-	req_access = list()
+	req_access = list();
+	hacked = 1
 	},
 /turf/open/floor/almayer/edge/smooth/endcap_left/east,
 /area/golden_arrow/platoonprep)
@@ -10706,8 +10718,12 @@
 	pixel_y = 21;
 	pixel_x = 0
 	},
-/obj/item/storage/box/spec/sniper{
-	pixel_y = 6
+/obj/item/storage/box/spec/spotter,
+/obj/item/storage/box/spec/spotter{
+	pixel_y = 7
+	},
+/obj/item/storage/box/spec/spotter{
+	pixel_y = 15
 	},
 /turf/open/floor/almayer,
 /area/golden_arrow/platoonarmory)
@@ -13539,7 +13555,8 @@
 "aQF" = (
 /obj/structure/machinery/cm_vending/sorted/uniform_supply/squad_prep{
 	req_one_access_txt = "8;12;39;40";
-	req_access = list()
+	req_access = list();
+	hacked = 1
 	},
 /turf/open/floor/almayer,
 /area/golden_arrow/platoonprep)

@@ -279,10 +279,6 @@
 /obj/effect/vehicle_spawner/uppvan/medical/decrepit,
 /turf/open/auto_turf/snow/layer3,
 /area/lv624/ground/snow/no_paradrop)
-"aaO" = (
-/obj/effect/vehicle_spawner/uppvant/fixed,
-/turf/open/auto_turf/snow/layer3,
-/area/lv624/ground/snow/no_paradrop)
 "aaP" = (
 /obj/effect/vehicle_spawner/upptank/fixed,
 /turf/open/auto_turf/snow/layer3,
@@ -3271,6 +3267,21 @@
 	},
 /turf/open/auto_turf/snow/layer3,
 /area/lv624/ground/snow/no_paradrop)
+"ajV" = (
+/obj/effect/decal/cleanable/blood/oil,
+/turf/open/auto_turf/snow/layer0,
+/area/lv624/ground/caves/south_west_caves)
+"ajW" = (
+/turf/closed/wall/strata_ice,
+/area/lv624/ground/caves/south_west_caves)
+"ajX" = (
+/obj/effect/vehicle_spawner/uppvant/fixed,
+/turf/open/auto_turf/ice/layer0,
+/area/lv624/ground/caves/south_west_caves)
+"ajY" = (
+/obj/structure/ship_ammo/heavygun,
+/turf/open/auto_turf/snow/layer0,
+/area/lv624/ground/caves/south_west_caves)
 "ajZ" = (
 /obj/structure/surface/rack,
 /obj/item/tool/shovel/spade,
@@ -3288,6 +3299,33 @@
 /obj/structure/machinery/light,
 /turf/open/floor/green/northwest,
 /area/lv624/lazarus/fitness)
+"aka" = (
+/obj/item/device/flashlight/flare/on{
+	fuel_rate = 0.0001;
+	pixel_x = 8
+	},
+/turf/open/auto_turf/ice/layer0,
+/area/lv624/ground/caves/south_west_caves)
+"akb" = (
+/obj/structure/ship_ammo/heavygun{
+	pixel_y = 9;
+	pixel_x = -3
+	},
+/turf/open/auto_turf/snow/layer0,
+/area/lv624/ground/caves/south_west_caves)
+"akc" = (
+/obj/structure/flora/jungle/vines{
+	color = "#64b1fa"
+	},
+/turf/closed/wall/strata_ice/jungle{
+	color = "#64b1fa";
+	desc = "Exceptionally dense vegetation that you can't see through. It's frozen over."
+	},
+/area/lv624/ground/snow/no_paradrop)
+"akd" = (
+/obj/effect/landmark/humanaispawner/upp/mil_doc,
+/turf/open/auto_turf/snow/layer3,
+/area/lv624/ground/snow/no_paradrop)
 "akO" = (
 /obj/item/shard,
 /turf/open/floor/dark,
@@ -26655,7 +26693,7 @@ dGk
 dGk
 dGk
 dGk
-stK
+aig
 vGN
 stK
 stK
@@ -27098,9 +27136,9 @@ stK
 wUT
 stK
 stK
-stK
-stK
-stK
+dGk
+aig
+ajY
 vGN
 vGN
 stK
@@ -27543,13 +27581,13 @@ stK
 stK
 stK
 stK
+dGk
 stK
-stK
+aka
 vGN
 vGN
-vGN
 stK
-stK
+ajV
 dGk
 dGk
 dGk
@@ -27988,8 +28026,8 @@ stK
 stK
 dGk
 dGk
-stK
-stK
+dGk
+akb
 stK
 vGN
 vGN
@@ -28434,7 +28472,7 @@ stK
 dGk
 dGk
 dGk
-stK
+aig
 aCZ
 vGN
 vGN
@@ -29323,11 +29361,11 @@ stK
 stK
 stK
 dGk
-stK
-stK
+dGk
+ajV
 vGN
 vGN
-vGN
+ajX
 vGN
 stK
 dGk
@@ -30663,7 +30701,7 @@ stK
 vGN
 vGN
 vGN
-stK
+afF
 stK
 wzt
 dGk
@@ -31105,7 +31143,7 @@ vGN
 stK
 dGk
 stK
-stK
+ajV
 vGN
 vGN
 stK
@@ -31548,7 +31586,7 @@ stK
 stK
 vGN
 vGN
-stK
+dGk
 stK
 stK
 stK
@@ -31993,10 +32031,10 @@ dGk
 stK
 stK
 stK
-stK
-stK
-stK
 dGk
+stK
+stK
+ajW
 stK
 stK
 stK
@@ -32441,10 +32479,10 @@ stK
 dGk
 dGk
 dGk
-stK
-stK
-stK
-stK
+ajW
+ajW
+ajW
+ajW
 stK
 dGk
 dGk
@@ -32889,8 +32927,8 @@ dGk
 stK
 stK
 stK
-stK
-stK
+ajW
+dGk
 dGk
 dGk
 dGk
@@ -33330,8 +33368,8 @@ stK
 stK
 stK
 wzt
-wzt
-wzt
+stK
+stK
 stK
 stK
 stK
@@ -34664,7 +34702,7 @@ stK
 stK
 vGN
 vGN
-vGN
+aka
 vGN
 stK
 stK
@@ -45330,8 +45368,8 @@ abJ
 abJ
 abJ
 afu
-afu
-abJ
+akc
+abK
 abJ
 abJ
 abJ
@@ -45776,10 +45814,10 @@ abJ
 afu
 agA
 afu
-afu
-abK
-abK
-abK
+akc
+abJ
+abJ
+abJ
 abJ
 kXJ
 kXJ
@@ -48996,7 +49034,7 @@ kXJ
 kXJ
 kXJ
 sOa
-afu
+sOa
 sOa
 kXJ
 kXJ
@@ -54144,7 +54182,7 @@ abJ
 abJ
 abJ
 abJ
-aaO
+aaQ
 abJ
 aje
 abJ
@@ -76457,7 +76495,7 @@ aeA
 aeA
 aeA
 abJ
-abJ
+akd
 abJ
 abJ
 aeA
