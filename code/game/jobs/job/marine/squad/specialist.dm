@@ -65,6 +65,19 @@
 /datum/job/marine/specialist/ai/get_total_positions(latejoin=0)
 	return latejoin ? total_positions : spawn_positions
 
+/datum/job/marine/specialist/ai/uscm
+	total_positions = 1
+	spawn_positions = 1
+	flags_startup_parameters = ROLE_ADD_TO_DEFAULT|ROLE_ADD_TO_SQUAD
+	gear_preset = /datum/equipment_preset/uscm/specialist_equipped/spotter/unequipped
+	job_options = null
+	entry_message_body = "You are a specially trained scout-sniper. You have been awoken due to the possibility of large amounts of enemies on the field today. Your equipment is in the armory. You are out of a locker for the moment, you should have all you need however."
+
+/obj/effect/landmark/start/marine/specialist/uscm
+	name = JOB_SQUAD_SPOTTER
+	squad = SQUAD_MARINE_1
+	job = /datum/job/marine/specialist/ai/uscm
+
 /datum/job/marine/specialist/ai/rmc
 	total_positions = 1
 	spawn_positions = 1

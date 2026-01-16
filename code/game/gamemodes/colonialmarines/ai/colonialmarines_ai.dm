@@ -22,6 +22,7 @@
 		/datum/job/marine/tl/ai = JOB_SQUAD_TEAM_LEADER,
 		/datum/job/marine/smartgunner/ai = JOB_SQUAD_SMARTGUN,
 		/datum/job/marine/standard/ai = JOB_SQUAD_MARINE,
+		/datum/job/marine/specialist/ai/uscm = JOB_SQUAD_SPOTTER,
 	)
 
 	static_comms_amount = 0
@@ -98,7 +99,8 @@ GLOBAL_LIST_INIT(platoon_to_jobs, list(/datum/squad/marine/alpha = list(/datum/j
 		/datum/job/marine/medic/ai = JOB_SQUAD_MEDIC,\
 		/datum/job/marine/tl/ai = JOB_SQUAD_TEAM_LEADER,\
 		/datum/job/marine/smartgunner/ai = JOB_SQUAD_SMARTGUN,\
-		/datum/job/marine/standard/ai = JOB_SQUAD_MARINE),\
+		/datum/job/marine/standard/ai = JOB_SQUAD_MARINE,\
+		/datum/job/marine/specialist/ai/uscm = JOB_SQUAD_SPOTTER),\
 		/datum/squad/marine/upp = list(/datum/job/command/bridge/ai/upp = JOB_SO,\
 		/datum/job/marine/leader/ai/upp = JOB_SQUAD_LEADER,\
 		/datum/job/marine/medic/ai/upp = JOB_SQUAD_MEDIC,\

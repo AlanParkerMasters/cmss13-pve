@@ -2102,6 +2102,13 @@
 	},
 /turf/open/floor/almayer/dark_sterile,
 /area/golden_arrow/medical)
+"aee" = (
+/obj/effect/landmark/start/marine/leader/alpha,
+/obj/effect/landmark/late_join/alpha,
+/obj/effect/landmark/late_join,
+/obj/effect/landmark/start/marine/specialist/uscm,
+/turf/open/floor/plating/plating_catwalk,
+/area/golden_arrow/cryo_cells)
 "aef" = (
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
@@ -22087,6 +22094,7 @@
 /obj/effect/landmark/start/bridge,
 /obj/effect/landmark/late_join/alpha,
 /obj/effect/landmark/late_join,
+/obj/effect/landmark/start/marine/specialist/uscm,
 /turf/open/floor/plating/plating_catwalk,
 /area/golden_arrow/cryo_cells)
 "wYO" = (
@@ -25602,10 +25610,10 @@ aEG
 aEG
 aWh
 aEZ
-asK
+aee
 aQQ
 wSf
-asK
+aee
 aAU
 hSW
 aEI

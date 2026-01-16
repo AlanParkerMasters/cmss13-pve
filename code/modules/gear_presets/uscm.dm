@@ -1056,7 +1056,7 @@
 	if(SSmapping.configs[GROUND_MAP].environment_traits[MAP_COLD])
 		new_human.equip_to_slot_or_del(new /obj/item/clothing/mask/rebreather/scarf, WEAR_FACE)
 
-//*****************************************************************************************************/
+ //*****************************************************************************************************/
 
 /datum/equipment_preset/uscm/specialist_equipped/spotter
 	name = "USCM Scout Sniper, Spotter (Equipped)"
@@ -1106,6 +1106,31 @@
 	if(SSmapping.configs[GROUND_MAP].environment_traits[MAP_COLD])
 		new_human.equip_to_slot_or_del(new /obj/item/clothing/mask/rebreather/scarf, WEAR_FACE)
 //*****************************************************************************************************/
+
+/datum/equipment_preset/uscm/specialist_equipped/spotter/unequipped
+	name = "USCM Scout Sniper, Spotter"
+	assignment = "Scout Sniper"
+	role_comm_title = "SctSnpr"
+	rank = JOB_SQUAD_SPOTTER
+	skills = /datum/skills/tl/recon
+	paygrades = list(PAY_SHORT_ME4 = JOB_PLAYTIME_TIER_0)
+
+/datum/equipment_preset/uscm/specialist_equipped/spotter/unequipped/load_gear(mob/living/carbon/human/new_human)
+	new_human.underwear = "Marine Boxers"
+	new_human.undershirt = "Marine Undershirt"
+
+	new_human.equip_to_slot_or_del(new /obj/item/device/radio/headset/almayer/marine/solardevils(new_human), WEAR_L_EAR)
+	add_uscm_goggles(new_human)
+	add_uscm_uniform(new_human)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/shoes/marine/jungle/knife(new_human), WEAR_FEET)
+	GLOB.character_traits[/datum/character_trait/skills/spotter].apply_trait(new_human)
+
+	if(SSmapping.configs[GROUND_MAP].environment_traits[MAP_COLD])
+		new_human.equip_to_slot_or_del(new /obj/item/clothing/mask/rebreather/scarf, WEAR_FACE)
+
+//*****************************************************************************************************/
+
+
 
 /datum/equipment_preset/uscm/tank
 	name = "USCM Vehicle Crewman (Equipped)"
