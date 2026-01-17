@@ -279,6 +279,10 @@
 /obj/effect/vehicle_spawner/uppvan/medical/decrepit,
 /turf/open/auto_turf/snow/layer3,
 /area/lv624/ground/snow/no_paradrop)
+"aaO" = (
+/obj/structure/flora/bush/ausbushes/ppflowers,
+/turf/closed/wall/strata_ice/dirty,
+/area/lv624/ground/caves/west_caves)
 "aaP" = (
 /obj/effect/vehicle_spawner/upptank/fixed,
 /turf/open/auto_turf/snow/layer3,
@@ -2299,6 +2303,7 @@
 	dir = 8
 	},
 /obj/item/ammo_casing/bullet,
+/obj/effect/landmark/humanaispawner/upp/rifleman,
 /turf/open/auto_turf/snow/brown_base/layer0,
 /area/lv624/ground/snow/no_paradrop)
 "agR" = (
@@ -2898,10 +2903,6 @@
 /obj/effect/landmark/humanaispawner/upp/rifleman,
 /turf/open/floor/whitepurplecorner/east,
 /area/lv624/lazarus/fitness)
-"aiK" = (
-/obj/effect/landmark/humanaispawner/upp/rifleman,
-/turf/open/floor/plating/asteroidfloor/north,
-/area/lv624/ground/snow/no_paradrop)
 "aiL" = (
 /obj/effect/landmark/humanaispawner/upp/rifleman,
 /turf/open/auto_turf/snow/brown_base/layer1,
@@ -3124,13 +3125,6 @@
 "ajz" = (
 /obj/structure/barricade/sandbags/wired,
 /obj/effect/landmark/humanaispawner/upp/machinegunner,
-/turf/open/floor/wood,
-/area/lv624/ground/snow/unknown)
-"ajA" = (
-/obj/structure/barricade/sandbags/wired{
-	dir = 4
-	},
-/obj/effect/landmark/humanaispawner/upp/colonist,
 /turf/open/floor/wood,
 /area/lv624/ground/snow/unknown)
 "ajB" = (
@@ -7433,6 +7427,7 @@
 	phone_id = "Lakeside Bar";
 	pixel_y = 32
 	},
+/obj/effect/landmark/humanaispawner/upp/officer,
 /turf/open/floor/wood,
 /area/lv624/ground/snow/unknown)
 "fqx" = (
@@ -31075,8 +31070,8 @@ nhE
 nhE
 nhE
 nhE
-nhE
-nhE
+ryb
+ryb
 nhE
 nhE
 nhE
@@ -31520,8 +31515,8 @@ nhE
 jSh
 nhE
 nhE
-nhE
-nhE
+ryb
+ryb
 nhE
 kDe
 nhE
@@ -31965,8 +31960,8 @@ aiT
 nhE
 nhE
 nhE
-nhE
-nhE
+ryb
+ryb
 nhE
 nhE
 lZq
@@ -32409,8 +32404,8 @@ nhE
 nhE
 nhE
 nhE
-nhE
-nhE
+ryb
+ryb
 nhE
 nhE
 sHB
@@ -32854,8 +32849,8 @@ nhE
 vyo
 nhE
 nhE
-nhE
-nhE
+ryb
+ryb
 nhE
 ryb
 ryb
@@ -42647,8 +42642,8 @@ ryb
 ryb
 ryb
 ryb
-nhE
-wfs
+ryb
+aaO
 gPz
 sHB
 sHB
@@ -43090,10 +43085,10 @@ nhE
 eAP
 eAP
 ryb
-nhE
-nhE
-nhE
-sHB
+ryb
+ryb
+ryb
+ryb
 sHB
 sHB
 nhE
@@ -43536,10 +43531,10 @@ nhE
 eAP
 eAP
 nhE
-nhE
-nhE
-nhE
-nhE
+ryb
+ryb
+ryb
+ryb
 nhE
 nhE
 nhE
@@ -43982,10 +43977,10 @@ nhE
 nhE
 nhE
 nhE
-goM
-nhE
-nhE
-nhE
+ryb
+ryb
+ryb
+ryb
 nhE
 nhE
 nhE
@@ -44428,10 +44423,10 @@ nhE
 nhE
 nhE
 nhE
-nhE
-nhE
-nhE
-nhE
+ryb
+ryb
+ryb
+ryb
 nhE
 ryb
 ryb
@@ -44874,8 +44869,8 @@ nhE
 nhE
 nhE
 nhE
-nhE
-nhE
+ryb
+ryb
 ryb
 ryb
 ryb
@@ -45320,7 +45315,7 @@ eAP
 nhE
 nhE
 nhE
-nhE
+ryb
 ryb
 ryb
 ryb
@@ -60385,7 +60380,7 @@ biw
 ajB
 acv
 biw
-ajA
+ajB
 clb
 acv
 abJ
@@ -67845,7 +67840,7 @@ afk
 afk
 agx
 afk
-aiK
+afk
 afj
 aeA
 aeA
