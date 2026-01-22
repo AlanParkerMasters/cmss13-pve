@@ -321,6 +321,171 @@
 /turf/open/desert/cave/cave_shore/southeast
 	dir = SOUTHEAST
 
+//Desert River Toxic
+/turf/open/gm/river/desert
+	name = "water"
+	icon = 'icons/turf/floors/desert_water.dmi'
+	icon_state = "shallow"
+	var/toxic = 0
+
+/turf/open/gm/river/desert/is_weedable()
+	return NOT_WEEDABLE
+
+/turf/open/gm/river/desert/update_icon()
+	..()
+	switch(toxic)
+		if(1)
+			set_light(2)
+			icon = 'icons/turf/floors/desert_water_toxic.dmi'
+		if(0)
+			set_light(0)
+			icon = 'icons/turf/floors/desert_water.dmi'
+		if(-1)
+			set_light(1)
+			icon = 'icons/turf/floors/desert_water_transition.dmi'
+
+
+//shallow water
+/turf/open/gm/river/desert/shallow
+	icon_state = "shallow"
+
+/turf/open/gm/river/desert/shallow/no_overlay
+	icon_state = "shallow"
+
+/turf/open/gm/river/desert/shallow/covered
+	icon = 'icons/turf/floors/desert_water_covered.dmi'
+
+/turf/open/gm/river/desert/shallow/covered/no_overlay
+	icon = 'icons/turf/floors/desert_water_covered.dmi'
+
+/turf/open/gm/river/desert/shallow/toxic
+	icon = 'icons/turf/floors/desert_water_toxic.dmi'
+
+/turf/open/gm/river/desert/shallow/pool
+	name = "pool"
+
+//shallow water transition to deep
+/turf/open/gm/river/desert/shallow_edge
+	icon_state = "shallow_edge"
+
+/turf/open/gm/river/desert/shallow_edge/no_overlay
+	icon_state = "shallow_edge"
+
+/turf/open/gm/river/desert/shallow_edge/southwest
+	dir = SOUTHWEST
+
+/turf/open/gm/river/desert/shallow_edge/southwest/no_overlay
+	dir = SOUTHWEST
+
+/turf/open/gm/river/desert/shallow_edge/north
+	dir = NORTH
+
+/turf/open/gm/river/desert/shallow_edge/north/no_overlay
+	dir = NORTH
+
+/turf/open/gm/river/desert/shallow_edge/east
+	dir = EAST
+
+/turf/open/gm/river/desert/shallow_edge/east/no_overlay
+	dir = EAST
+
+/turf/open/gm/river/desert/shallow_edge/northeast
+	dir = NORTHEAST
+
+/turf/open/gm/river/desert/shallow_edge/northeast/no_overlay
+	dir = NORTHEAST
+
+/turf/open/gm/river/desert/shallow_edge/southeast
+	dir = SOUTHEAST
+
+/turf/open/gm/river/desert/shallow_edge/southeast/no_overlay
+	dir = SOUTHEAST
+
+/turf/open/gm/river/desert/shallow_edge/west
+	dir = WEST
+
+/turf/open/gm/river/desert/shallow_edge/west/no_overlay
+	dir = WEST
+
+/turf/open/gm/river/desert/shallow_edge/northwest
+	dir = NORTHWEST
+
+/turf/open/gm/river/desert/shallow_edge/northwest/no_overlay
+	dir = NORTHWEST
+
+/turf/open/gm/river/desert/shallow_edge/covered
+	icon = 'icons/turf/floors/desert_water_covered.dmi'
+
+/turf/open/gm/river/desert/shallow_edge/covered/north
+	dir = NORTH
+
+/turf/open/gm/river/desert/shallow_edge/covered/east
+	dir = EAST
+
+/turf/open/gm/river/desert/shallow_edge/covered/northeast
+	dir = NORTHEAST
+
+/turf/open/gm/river/desert/shallow_edge/covered/west
+	dir = WEST
+
+//shallow water transition to deep corner
+/turf/open/gm/river/desert/shallow_corner
+	icon_state = "shallow_c"
+
+/turf/open/gm/river/desert/shallow_corner/no_overlay
+	icon_state = "shallow_c"
+
+/turf/open/gm/river/desert/shallow_corner/covered
+	icon = 'icons/turf/floors/desert_water_covered.dmi'
+
+/turf/open/gm/river/desert/shallow_corner/north
+	dir = NORTH
+
+/turf/open/gm/river/desert/shallow_corner/north/no_overlay
+	dir = NORTH
+
+/turf/open/gm/river/desert/shallow_corner/east
+	dir = EAST
+
+/turf/open/gm/river/desert/shallow_corner/east/no_overlay
+	dir = EAST
+
+/turf/open/gm/river/desert/shallow_corner/west
+	dir = WEST
+
+/turf/open/gm/river/desert/shallow_corner/west/no_overlay
+	dir = WEST
+
+
+//deep water
+/turf/open/gm/river/desert/deep
+	icon_state = "deep"
+
+/turf/open/gm/river/desert/deep/no_overlay
+	icon_state = "deep"
+	supports_fishing = TRUE
+
+/turf/open/gm/river/desert/deep/no_slowdown
+
+/turf/open/gm/river/desert/deep/covered
+	icon = 'icons/turf/floors/desert_water_covered.dmi'
+
+/turf/open/gm/river/desert/deep/toxic
+	icon = 'icons/turf/floors/desert_water_toxic.dmi'
+
+//shallow water channel plain
+/turf/open/gm/river/desert/channel
+	icon_state = "channel"
+
+//shallow water channel edge
+/turf/open/gm/river/desert/channel_edge
+	icon_state = "channel_edge"
+
+//shallow water channel corner
+/turf/open/gm/river/desert/channel_three
+	icon_state = "channel_three"
+
+
 /turf/open/desert/excavation
 	icon = 'icons/turf/floors/desert_excavation.dmi'
 
