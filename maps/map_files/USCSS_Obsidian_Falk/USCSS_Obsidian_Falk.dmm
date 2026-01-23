@@ -1556,6 +1556,10 @@
 	},
 /turf/open/floor/corsat/squares,
 /area/firefly/hangar)
+"aeu" = (
+/obj/item/tape/audio_log/pmc_instructions,
+/turf/open/floor/corsat/squares,
+/area/firefly/briefing)
 "aev" = (
 /turf/closed/wall/r_wall/biodome/biodome_unmeltable,
 /area/firefly/briefing)
@@ -5449,6 +5453,10 @@
 	},
 /turf/open/floor/corsat/red/west,
 /area/firefly/cafeteria)
+"aoO" = (
+/obj/item/device/taperecorder/colony/empty,
+/turf/open/floor/corsat/squares,
+/area/firefly/briefing)
 "aoP" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/corsat/white/east,
@@ -12112,7 +12120,6 @@
 /obj/structure/pipes/standard/manifold/hidden/supply{
 	dir = 8
 	},
-/obj/item/device/taperecorder/colony,
 /turf/open/floor/corsat/plate,
 /area/firefly/cryo_cell)
 "dSa" = (
@@ -14109,13 +14116,6 @@
 	},
 /turf/open/floor/almayer/dark_sterile,
 /area/firefly/cryo_cell)
-"gfg" = (
-/obj/structure/pipes/standard/simple/hidden/supply{
-	dir = 4
-	},
-/obj/item/device/taperecorder/colony/loadout,
-/turf/open/floor/corsat/squares,
-/area/firefly/cryo_cell)
 "gfo" = (
 /obj/structure/prop/invuln/overhead{
 	dir = 5;
@@ -15337,7 +15337,6 @@
 /obj/structure/pipes/vents/scrubber{
 	dir = 4
 	},
-/obj/item/tape/audio_log/pmc_instructions,
 /turf/open/floor/corsat/squares,
 /area/firefly/cryo_cell)
 "hmX" = (
@@ -16527,7 +16526,6 @@
 /area/firefly/supply)
 "iBX" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/item/device/taperecorder/colony/empty,
 /turf/open/floor/corsat/greencorner/east,
 /area/firefly/cryo_cell)
 "iCh" = (
@@ -19348,10 +19346,6 @@
 	},
 /turf/open/floor/plating/plating_catwalk,
 /area/firefly/cryo_cell)
-"lIA" = (
-/obj/item/tape/regulation,
-/turf/open/floor/corsat/squares,
-/area/firefly/cryo_cell)
 "lIF" = (
 /obj/structure/surface/table/reinforced/almayer_B,
 /obj/structure/machinery/computer/med_data/laptop{
@@ -19414,10 +19408,6 @@
 /obj/structure/disposalpipe/segment,
 /turf/closed/wall/r_wall/biodome/biodome_unmeltable,
 /area/space)
-"lMI" = (
-/obj/item/tape/random,
-/turf/open/floor/corsat/squares,
-/area/firefly/cryo_cell)
 "lNn" = (
 /obj/structure/prop/vehicle/sensor_equipment,
 /obj/structure/barricade/handrail{
@@ -28209,10 +28199,6 @@
 	},
 /turf/open/floor/corsat/squares,
 /area/firefly/supply)
-"vKS" = (
-/obj/item/tape/random/loadout,
-/turf/open/floor/corsat/greencorner,
-/area/firefly/cryo_cell)
 "vMA" = (
 /obj/structure/surface/table/reinforced/prison,
 /obj/structure/machinery/computer/operating,
@@ -35611,9 +35597,9 @@ adC
 adC
 anZ
 pqW
-gfg
-lMI
-lIA
+adW
+adC
+adC
 adC
 dbu
 anZ
@@ -35774,7 +35760,7 @@ ddc
 aoL
 iBX
 hmR
-vKS
+ryz
 aoi
 wqj
 nKd
@@ -43527,7 +43513,7 @@ arP
 aeF
 dYO
 aei
-aei
+aeu
 xkb
 aqg
 ojo
@@ -43689,7 +43675,7 @@ rSm
 aeF
 eIg
 aei
-aei
+aoO
 aei
 aei
 arj

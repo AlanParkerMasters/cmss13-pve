@@ -2,7 +2,7 @@
 	name = "tape recorder"
 	desc = "A device that can record dialogue using magnetic tapes. It automatically translates the content in playback."
 	icon = 'icons/obj/items/walkman.dmi'
-	icon_state = "taperecorder_idle"
+	icon_state = "taperecorder"
 	item_state = "analyzer"
 	w_class = SIZE_SMALL
 
@@ -136,7 +136,7 @@
 	return FALSE
 
 
-/obj/item/device/taperecorder/verb/ejectverb()
+/obj/item/device/taperecorder/proc/ejectverb()
 	set name = "Eject Tape"
 	set category = "Object"
 
@@ -149,16 +149,17 @@
 
 
 /obj/item/device/taperecorder/update_icon()
+	var/original_icon = initial(icon_state)
 	if(!mytape)
-		icon_state = "taperecorder_empty"
+		icon_state = "[original_icon]_empty"
 		return
 	if(recording)
-		icon_state = "taperecorder_recording"
+		icon_state = "[original_icon]_recording"
 		return
 	else if(playing)
-		icon_state = "taperecorder_playing"
+		icon_state = "[original_icon]_playing"
 		return
-	icon_state = "taperecorder_idle"
+	icon_state = "[original_icon]"
 	return
 
 
@@ -172,10 +173,7 @@
 		mytape.storedinfo += "\[[time2text(mytape.used_capacity,"mm:ss")]\] [mob_name] [verb], \"[italics ? "<i>" : null][message][italics ? "</i>" : null]\""
 
 
-/obj/item/device/taperecorder/verb/record()
-	set name = "Start Recording"
-	set category = "Object"
-
+obj/item/device/taperecorder/proc/record()
 	if(!can_use(usr))
 		return
 	if(!mytape || mytape.unspooled)
@@ -209,10 +207,7 @@
 		playsound(src, 'sound/items/taperecorder/taperecorder_stop.ogg', 50, FALSE)
 
 
-/obj/item/device/taperecorder/verb/stop()
-	set name = "Stop"
-	set category = "Object"
-
+/obj/item/device/taperecorder/proc/stop()
 	if(!can_use(usr))
 		return
 
@@ -228,10 +223,7 @@
 	update_icon()
 	update_sound()
 
-/obj/item/device/taperecorder/verb/play()
-	set name = "Play Tape"
-	set category = "Object"
-
+obj/item/device/taperecorder/proc/play()
 	if(!can_use(usr))
 		return
 	if(!mytape || mytape.unspooled)
@@ -307,9 +299,6 @@
 				eject(user)
 
 /obj/item/device/taperecorder/verb/print_transcript()
-	set name = "Print Transcript"
-	set category = "Object"
-
 	if(!length(mytape.storedinfo))
 		return
 	if(!can_use(usr))
@@ -376,6 +365,7 @@
 		desc += "\nStrangely enough, the tape that came with it already seems partially used."
 		starting_tape_type = lore_tape
 	. = ..()
+
 
 /obj/item/tape
 	name = "tape"
@@ -447,8 +437,6 @@
 /obj/item/tape/Initialize(mapload)
 	. = ..()
 	initial_icon_state = icon_state //random tapes will set this after choosing their icon
-	if(prob(50))
-		tapeflip()
 	flipped_name = name
 	unflipped_name = name
 
@@ -534,7 +522,7 @@
 
 //Random color tapes
 /obj/item/tape/random
-	icon_state = "cassette_rainbow"
+	icon_state = "cassette_flip"
 
 /obj/item/tape/random/Initialize(mapload)
 	icon_state = "cassette_[pick(cassette_colors)]"
@@ -601,16 +589,16 @@
 	icon_state = "cassette_regulation"
 	storedinfo = list(
 		"\[00:03] MU/TH/ER says, \"RECEIVING AUDIO MESSAGE VIA TELEMETRY.\"",
-		"\[00:06] CHARACTERNAMEHERE says, \"Good afternoon team of the USCSS Obsidian Falk, we hope you're well rested today for your assignment.\"",
-		"\[00:11] \"I'm CHARACTERNAMEHERE, your assigned handler for this mission.\"",
+		"\[00:06] Martin Kessler says, \"Good afternoon team of the USCSS Obsidian Falk, we hope you're well rested today for your assignment.\"",
+		"\[00:11] \"I'm Martin Kessler, your assigned handler for this mission.\"",
 		"\[00:16] \"Please hold any questions you may have for your ship-side handler until after you are done listening to this brief.\"",
-		"\[00:21] CHARACTERNAMEHERE takes an audible drag from a cigarette.",
+		"\[00:21] Martin Kessler takes an audible drag from a cigarette.",
 		"\[00:24] \"Due to the extremely sensitive nature of the facility, none of the information spoken of here will leave this room.\"",
 		"\[00:29] \"You're being paid off the books for your cooperation here.\"",
 		"\[00:34] \"Once you extract from the colony, you are to forget everything you saw.\"",
 		"\[00:38] \"This operation did not occur.\"",
 		"\[00:41] \"Am I clear?\"",
-		"\[00:44] CHARACTERNAMEHERE can be heard coughing and taking another drag off their cigarette.",
+		"\[00:44] Martin Kessler can be heard coughing and taking another drag off their cigarette.",
 		"\[00:46] \"That was rhetorical. I hope none of you answered. This isn't a phone call.\"",
 		"\[00:50] \"Your information here is on a 'need to know' basis. If I don't mention it, it's probably not important to you.\"",
 		"\[00:55] \"Currently, you're hovering over a colony that houses a facility in connection with our unnamed employer.\"",
@@ -630,7 +618,7 @@
 		"\[02:01] \"2.)'Retire' anyone present at the facility,\"",
 		"\[02:06] \"3.) Destroy any critical evidence,\"",
 		"\[02:11] \"4.) Utilize the self-destruct device in the facility. A disk has been provided for authorization.\"",
-		"\[02:16] CHARACTERNAMEHERE can be heard taking their third drag.",
+		"\[02:16] Martin Kessler can be heard taking their third drag.",
 		"\[02:20] \"Your visual presence here at the colony is of no matter to your employer.\"",
 		"\[02:25] \"All they do care about is plausible deniability.\"",
 		"\[02:30] \"So you will wear nothing identifiable down there. No IDs.\"",
@@ -648,7 +636,7 @@
 		"\[03:37] \"Once your objectives are complete at the facility, you are to head back the way you came in.\"",
 		"\[03:43] \"You will extract via the medical landing zone to the far north-east. By the hospital.\"",
 		"\[03:48] \"A dropship will await you there.\"",
-		"\[03:53] CHARACTERNAMEHERE can be heard striking a match.",
+		"\[03:53] Martin Kessler can be heard striking a match.",
 		"\[03:58] \"Now for specifics.\"",
 		"\[04:03] \"Your handler here on the ship can join you.\"",
 		"\[04:08] \"Your plan and tactics are your own, just follow the objectives.\"",
