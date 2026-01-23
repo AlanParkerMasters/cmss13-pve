@@ -5532,9 +5532,29 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/corsat/white/east,
 /area/firefly/cafeteria)
+"aoY" = (
+/obj/structure/desertdam/decals/road_edge{
+	pixel_x = -12
+	},
+/obj/structure/desertdam/decals/road_edge{
+	icon_state = "road_edge_decal3";
+	pixel_y = -12
+	},
+/turf/open/floor/wood/ship,
+/area/firefly/cafeteria)
 "aoZ" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/almayer/dark_sterile,
+/area/firefly/cafeteria)
+"apa" = (
+/obj/structure/desertdam/decals/road_edge{
+	icon_state = "road_edge_decal3";
+	pixel_y = -12
+	},
+/obj/structure/desertdam/decals/road_edge{
+	pixel_x = 2
+	},
+/turf/open/floor/wood/ship,
 /area/firefly/cafeteria)
 "apb" = (
 /obj/effect/decal/cleanable/dirt,
@@ -7215,6 +7235,13 @@
 /obj/item/attachable/scope/pve,
 /turf/open/floor/carpet,
 /area/firefly/ptsgt)
+"atg" = (
+/obj/structure/desertdam/decals/road_edge{
+	icon_state = "road_edge_decal3";
+	pixel_y = -12
+	},
+/turf/open/floor/wood/ship,
+/area/firefly/cafeteria)
 "ath" = (
 /obj/structure/pipes/standard/simple/hidden/supply{
 	dir = 9
@@ -8157,6 +8184,36 @@
 /obj/item/clothing/suit/storage/marine/veteran/pmc/commando,
 /turf/open/floor/corsat/squares,
 /area/firefly/cafeteria)
+"avt" = (
+/obj/structure/desertdam/decals/road_edge{
+	pixel_x = 2
+	},
+/obj/structure/desertdam/decals/road_edge{
+	icon_state = "road_edge_decal3";
+	pixel_y = -12
+	},
+/turf/open/floor/wood/ship,
+/area/firefly/cafeteria)
+"avu" = (
+/obj/structure/desertdam/decals/road_edge{
+	icon_state = "road_edge_decal3";
+	pixel_y = -12
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 1
+	},
+/turf/open/floor/wood/ship,
+/area/firefly/cafeteria)
+"avv" = (
+/obj/structure/desertdam/decals/road_edge{
+	pixel_x = 16
+	},
+/obj/structure/desertdam/decals/road_edge{
+	icon_state = "road_edge_decal3";
+	pixel_y = -12
+	},
+/turf/open/floor/wood/ship,
+/area/firefly/cafeteria)
 "avw" = (
 /obj/item/clothing/head/helmet/marine/veteran/pmc/commando,
 /turf/open/floor/corsat/squares,
@@ -8164,6 +8221,36 @@
 "avx" = (
 /obj/item/device/encryptionkey/commando,
 /turf/open/floor/corsat/squares,
+/area/firefly/cafeteria)
+"avy" = (
+/obj/structure/desertdam/decals/road_edge{
+	pixel_x = -12
+	},
+/obj/structure/desertdam/decals/road_edge{
+	icon_state = "road_edge_decal3"
+	},
+/turf/open/floor/wood/ship,
+/area/firefly/cafeteria)
+"avz" = (
+/obj/structure/desertdam/decals/road_edge{
+	icon_state = "road_edge_decal3"
+	},
+/obj/structure/desertdam/decals/road_edge{
+	icon_state = "road_edge_decal5";
+	pixel_x = -2
+	},
+/turf/open/floor/wood/ship,
+/area/firefly/cafeteria)
+"avA" = (
+/obj/structure/desertdam/decals/road_edge{
+	icon_state = "road_edge_decal3";
+	pixel_x = -6
+	},
+/obj/structure/desertdam/decals/road_edge{
+	icon_state = "road_edge_decal3";
+	pixel_x = 9
+	},
+/turf/open/floor/wood/ship,
 /area/firefly/cafeteria)
 "avB" = (
 /obj/effect/decal/cleanable/blood/oil,
@@ -8595,6 +8682,18 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/corsat/squares,
 /area/firefly/hangar)
+"awz" = (
+/obj/structure/desertdam/decals/road_edge{
+	pixel_x = 2;
+	pixel_y = 23
+	},
+/obj/structure/desertdam/decals/road_edge{
+	icon_state = "road_edge_decal7";
+	pixel_x = 2;
+	pixel_y = -4
+	},
+/turf/open/floor/wood/ship,
+/area/firefly/cafeteria)
 "awA" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "N";
@@ -8711,6 +8810,33 @@
 	},
 /turf/open/floor/corsat/white,
 /area/firefly/hangar)
+"awO" = (
+/turf/open/floor/wood/ship,
+/area/firefly/cafeteria)
+"awP" = (
+/obj/structure/desertdam/decals/road_edge{
+	pixel_x = 2
+	},
+/turf/open/floor/wood/ship,
+/area/firefly/cafeteria)
+"awQ" = (
+/obj/structure/disposalpipe/segment{
+	dir = 1
+	},
+/turf/open/floor/wood/ship,
+/area/firefly/cafeteria)
+"awR" = (
+/obj/structure/desertdam/decals/road_edge{
+	pixel_x = 2;
+	pixel_y = 21
+	},
+/obj/structure/desertdam/decals/road_edge{
+	icon_state = "road_edge_decal8";
+	pixel_x = -2;
+	pixel_y = -4
+	},
+/turf/open/floor/wood/ship,
+/area/firefly/cafeteria)
 "awS" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "SW-out"
@@ -8733,6 +8859,25 @@
 	},
 /turf/open/floor/corsat/yellow/southwest,
 /area/firefly/supply)
+"awU" = (
+/obj/structure/desertdam/decals/road_edge{
+	icon_state = "road_edge_decal3"
+	},
+/obj/structure/desertdam/decals/road_edge{
+	icon_state = "road_edge_decal6";
+	pixel_x = 2
+	},
+/turf/open/floor/wood/ship,
+/area/firefly/cafeteria)
+"awV" = (
+/obj/structure/desertdam/decals/road_edge{
+	pixel_x = 16
+	},
+/obj/structure/desertdam/decals/road_edge{
+	icon_state = "road_edge_decal3"
+	},
+/turf/open/floor/wood/ship,
+/area/firefly/cafeteria)
 "awW" = (
 /obj/structure/pipes/standard/manifold/hidden/supply{
 	dir = 8
@@ -8753,6 +8898,40 @@
 	},
 /turf/open/floor/corsat/plate,
 /area/firefly/squad_omega)
+"awZ" = (
+/obj/structure/desertdam/decals/road_edge{
+	icon_state = "road_edge_decal8";
+	pixel_x = -16;
+	pixel_y = -16
+	},
+/obj/structure/desertdam/decals/road_edge{
+	icon_state = "road_edge_decal5";
+	pixel_x = -16;
+	pixel_y = 16
+	},
+/obj/structure/desertdam/decals/road_edge{
+	icon_state = "road_edge_decal6";
+	pixel_x = 16;
+	pixel_y = 16
+	},
+/obj/structure/desertdam/decals/road_edge{
+	icon_state = "road_edge_decal7";
+	pixel_x = 16;
+	pixel_y = -16
+	},
+/obj/structure/desertdam/decals/road_edge{
+	pixel_x = -12
+	},
+/obj/structure/barricade/handrail/wire{
+	dir = 8
+	},
+/obj/structure/holohoop{
+	dir = 4;
+	id = "basketball";
+	side = "left"
+	},
+/turf/open/floor/wood/ship,
+/area/firefly/cafeteria)
 "axa" = (
 /obj/structure/surface/rack{
 	color = "#6b675e";
@@ -8774,6 +8953,53 @@
 /obj/item/storage/large_holster/m39,
 /turf/open/floor/corsat/plate,
 /area/firefly/squad_omega)
+"axb" = (
+/obj/structure/desertdam/decals/road_edge{
+	icon_state = "road_edge_decal8";
+	pixel_x = -16;
+	pixel_y = -16
+	},
+/obj/structure/desertdam/decals/road_edge{
+	icon_state = "road_edge_decal5";
+	pixel_x = -16;
+	pixel_y = 16
+	},
+/obj/structure/desertdam/decals/road_edge{
+	icon_state = "road_edge_decal6";
+	pixel_x = 16;
+	pixel_y = 16
+	},
+/obj/structure/desertdam/decals/road_edge{
+	icon_state = "road_edge_decal7";
+	pixel_x = 16;
+	pixel_y = -16
+	},
+/turf/open/floor/wood/ship,
+/area/firefly/cafeteria)
+"axc" = (
+/obj/structure/desertdam/decals/road_edge{
+	icon_state = "road_edge_decal8";
+	pixel_x = -16;
+	pixel_y = -16
+	},
+/obj/structure/desertdam/decals/road_edge{
+	icon_state = "road_edge_decal5";
+	pixel_x = -16;
+	pixel_y = 16
+	},
+/obj/structure/desertdam/decals/road_edge{
+	icon_state = "road_edge_decal6";
+	pixel_x = 16;
+	pixel_y = 16
+	},
+/obj/structure/desertdam/decals/road_edge{
+	icon_state = "road_edge_decal7";
+	pixel_x = 16;
+	pixel_y = -16
+	},
+/obj/item/toy/beach_ball/holoball,
+/turf/open/floor/wood/ship,
+/area/firefly/cafeteria)
 "axd" = (
 /obj/structure/closet/secure_closet{
 	name = "heavy weapons specialist locker";
@@ -8827,6 +9053,63 @@
 	},
 /turf/open/floor/corsat/squares,
 /area/firefly/briefing)
+"axi" = (
+/obj/structure/desertdam/decals/road_edge{
+	icon_state = "road_edge_decal8";
+	pixel_x = -16;
+	pixel_y = -16
+	},
+/obj/structure/desertdam/decals/road_edge{
+	icon_state = "road_edge_decal7";
+	pixel_x = 16;
+	pixel_y = -16
+	},
+/obj/structure/desertdam/decals/road_edge{
+	icon_state = "road_edge_decal6";
+	pixel_x = 16;
+	pixel_y = 16
+	},
+/obj/structure/desertdam/decals/road_edge{
+	icon_state = "road_edge_decal5";
+	pixel_x = -16;
+	pixel_y = 16
+	},
+/turf/open/floor/wood/ship,
+/area/firefly/cafeteria)
+"axj" = (
+/obj/structure/desertdam/decals/road_edge{
+	icon_state = "road_edge_decal8";
+	pixel_x = -16;
+	pixel_y = -16
+	},
+/obj/structure/desertdam/decals/road_edge{
+	icon_state = "road_edge_decal5";
+	pixel_x = -16;
+	pixel_y = 16
+	},
+/obj/structure/desertdam/decals/road_edge{
+	icon_state = "road_edge_decal6";
+	pixel_x = 16;
+	pixel_y = 16
+	},
+/obj/structure/desertdam/decals/road_edge{
+	icon_state = "road_edge_decal7";
+	pixel_x = 16;
+	pixel_y = -16
+	},
+/obj/structure/holohoop{
+	dir = 8;
+	id = "basketball";
+	side = "right"
+	},
+/obj/structure/desertdam/decals/road_edge{
+	pixel_x = 16
+	},
+/obj/structure/barricade/handrail/wire{
+	dir = 4
+	},
+/turf/open/floor/wood/ship,
+/area/firefly/cafeteria)
 "axk" = (
 /obj/structure/pipes/standard/manifold/hidden/supply{
 	dir = 8
@@ -8872,6 +9155,16 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/closed/wall/r_wall/biodome/biodome_unmeltable,
 /area/firefly/squad_omega)
+"axp" = (
+/obj/structure/desertdam/decals/road_edge{
+	pixel_x = -12
+	},
+/obj/structure/desertdam/decals/road_edge{
+	icon_state = "road_edge_decal3";
+	pixel_y = 4
+	},
+/turf/open/floor/wood/ship,
+/area/firefly/cafeteria)
 "axq" = (
 /obj/structure/surface/table/reinforced/black,
 /obj/structure/machinery/prop/almayer/computer/PC{
@@ -9083,9 +9376,136 @@
 /obj/structure/closet/crate/ammo/alt,
 /turf/open/floor/corsat/brown,
 /area/firefly/briefing)
+"axQ" = (
+/obj/structure/desertdam/decals/road_edge{
+	icon_state = "road_edge_decal3";
+	pixel_y = 4
+	},
+/obj/structure/desertdam/decals/road_edge{
+	icon_state = "road_edge_decal8";
+	pixel_x = -2
+	},
+/turf/open/floor/wood/ship,
+/area/firefly/cafeteria)
+"axR" = (
+/obj/structure/desertdam/decals/road_edge{
+	icon_state = "road_edge_decal3";
+	pixel_x = 6;
+	pixel_y = 4
+	},
+/obj/structure/desertdam/decals/road_edge{
+	icon_state = "road_edge_decal3";
+	pixel_x = -9;
+	pixel_y = 4
+	},
+/turf/open/floor/wood/ship,
+/area/firefly/cafeteria)
+"axS" = (
+/obj/structure/desertdam/decals/road_edge{
+	pixel_x = 2;
+	pixel_y = -22
+	},
+/obj/structure/desertdam/decals/road_edge{
+	icon_state = "road_edge_decal6";
+	pixel_x = 2;
+	pixel_y = 4
+	},
+/turf/open/floor/wood/ship,
+/area/firefly/cafeteria)
+"axT" = (
+/obj/structure/desertdam/decals/road_edge{
+	pixel_x = 2;
+	pixel_y = -21
+	},
+/obj/structure/desertdam/decals/road_edge{
+	icon_state = "road_edge_decal5";
+	pixel_x = -2;
+	pixel_y = 4
+	},
+/turf/open/floor/wood/ship,
+/area/firefly/cafeteria)
+"axU" = (
+/obj/structure/desertdam/decals/road_edge{
+	icon_state = "road_edge_decal3";
+	pixel_x = -9;
+	pixel_y = 4
+	},
+/obj/structure/desertdam/decals/road_edge{
+	icon_state = "road_edge_decal3";
+	pixel_x = 6;
+	pixel_y = 4
+	},
+/turf/open/floor/wood/ship,
+/area/firefly/cafeteria)
 "axV" = (
 /obj/item/device/radio/headset/distress/commando,
 /turf/open/floor/corsat/squares,
+/area/firefly/cafeteria)
+"axW" = (
+/obj/structure/desertdam/decals/road_edge{
+	icon_state = "road_edge_decal3";
+	pixel_y = 4
+	},
+/obj/structure/desertdam/decals/road_edge{
+	icon_state = "road_edge_decal7";
+	pixel_x = 2
+	},
+/turf/open/floor/wood/ship,
+/area/firefly/cafeteria)
+"axX" = (
+/obj/structure/desertdam/decals/road_edge{
+	pixel_x = 16
+	},
+/obj/structure/desertdam/decals/road_edge{
+	icon_state = "road_edge_decal3";
+	pixel_y = 4
+	},
+/turf/open/floor/wood/ship,
+/area/firefly/cafeteria)
+"axY" = (
+/obj/structure/desertdam/decals/road_edge{
+	pixel_x = -12
+	},
+/obj/structure/desertdam/decals/road_edge{
+	icon_state = "road_edge_decal3";
+	pixel_y = 16
+	},
+/turf/open/floor/wood/ship,
+/area/firefly/cafeteria)
+"axZ" = (
+/obj/structure/desertdam/decals/road_edge{
+	icon_state = "road_edge_decal3";
+	pixel_y = 16
+	},
+/obj/structure/desertdam/decals/road_edge{
+	pixel_x = 2
+	},
+/obj/structure/machinery/light{
+	dir = 1
+	},
+/turf/open/floor/wood/ship,
+/area/firefly/cafeteria)
+"aya" = (
+/obj/structure/desertdam/decals/road_edge{
+	icon_state = "road_edge_decal3";
+	pixel_y = 16
+	},
+/turf/open/floor/wood/ship,
+/area/firefly/cafeteria)
+"ayb" = (
+/obj/structure/desertdam/decals/road_edge{
+	icon_state = "road_edge_decal3";
+	pixel_y = 16
+	},
+/obj/structure/desertdam/decals/road_edge{
+	pixel_x = 2
+	},
+/obj/structure/machinery/scoreboard{
+	id = "basketball";
+	pixel_y = 30;
+	layer = 5
+	},
+/turf/open/floor/wood/ship,
 /area/firefly/cafeteria)
 "ayc" = (
 /obj/structure/machinery/camera/autoname/golden_arrow{
@@ -9099,6 +9519,41 @@
 	dir = 1
 	},
 /turf/open/floor/corsat/green/east,
+/area/firefly/cafeteria)
+"ayd" = (
+/obj/structure/desertdam/decals/road_edge{
+	icon_state = "road_edge_decal3";
+	pixel_y = 16
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 1
+	},
+/turf/open/floor/wood/ship,
+/area/firefly/cafeteria)
+"aye" = (
+/obj/structure/desertdam/decals/road_edge{
+	pixel_x = 16
+	},
+/obj/structure/desertdam/decals/road_edge{
+	icon_state = "road_edge_decal3";
+	pixel_y = 16
+	},
+/turf/open/floor/wood/ship,
+/area/firefly/cafeteria)
+"ayf" = (
+/obj/structure/window/reinforced,
+/obj/structure/closet/basketball{
+	pixel_y = 19
+	},
+/turf/open/floor/corsat/red/north,
+/area/firefly/cafeteria)
+"ayg" = (
+/obj/structure/window/reinforced,
+/turf/open/floor/corsat/red/north,
+/area/firefly/cafeteria)
+"ayh" = (
+/obj/structure/window/reinforced,
+/turf/open/floor/corsat/redcorner/north,
 /area/firefly/cafeteria)
 "ayi" = (
 /turf/closed/wall/r_wall/biodome,
@@ -9136,6 +9591,165 @@
 	},
 /turf/open/floor/corsat/cargo,
 /area/firefly/squad_omega)
+"aym" = (
+/obj/structure/window/reinforced,
+/turf/open/floor/corsat/squares,
+/area/firefly/cafeteria)
+"ayn" = (
+/obj/structure/disposalpipe/segment{
+	dir = 1
+	},
+/turf/open/floor/corsat/squares,
+/area/firefly/cafeteria)
+"ayo" = (
+/obj/structure/window/reinforced,
+/turf/open/floor/corsat/red/east,
+/area/firefly/cafeteria)
+"ayp" = (
+/obj/structure/machinery/scoreboard_button{
+	id = "basketball";
+	name = "Scoreboard Reset Button";
+	pixel_x = -20
+	},
+/turf/closed/wall/r_wall/biodome/biodome_unmeltable,
+/area/firefly/cryo_cell)
+"ayq" = (
+/obj/structure/bed/chair{
+	dir = 16;
+	pixel_x = 3
+	},
+/turf/open/floor/corsat/red/west,
+/area/firefly/cafeteria)
+"ayr" = (
+/obj/structure/bed/chair{
+	dir = 16;
+	pixel_x = -2
+	},
+/turf/open/floor/corsat/squares,
+/area/firefly/cafeteria)
+"ays" = (
+/obj/structure/bed/chair{
+	dir = 16;
+	pixel_x = 3;
+	pixel_y = 3
+	},
+/turf/open/floor/corsat/squares,
+/area/firefly/cafeteria)
+"ayt" = (
+/obj/structure/bed/chair{
+	dir = 16;
+	pixel_x = -5
+	},
+/turf/open/floor/corsat/squares,
+/area/firefly/cafeteria)
+"ayu" = (
+/obj/structure/bed/chair{
+	dir = 16
+	},
+/turf/open/floor/corsat/squares,
+/area/firefly/cafeteria)
+"ayv" = (
+/obj/structure/bed/chair{
+	dir = 16
+	},
+/turf/open/floor/corsat/red/east,
+/area/firefly/cafeteria)
+"ayw" = (
+/obj/structure/bed/chair{
+	dir = 16;
+	pixel_x = -2
+	},
+/turf/open/floor/corsat/red/west,
+/area/firefly/cafeteria)
+"ayx" = (
+/obj/structure/bed/chair{
+	dir = 16;
+	pixel_x = 3
+	},
+/turf/open/floor/corsat/squares,
+/area/firefly/cafeteria)
+"ayy" = (
+/obj/structure/bed/chair{
+	dir = 16;
+	pixel_x = 6
+	},
+/turf/open/floor/corsat/squares,
+/area/firefly/cafeteria)
+"ayz" = (
+/obj/structure/bed/chair{
+	dir = 16;
+	pixel_y = 7
+	},
+/turf/open/floor/corsat/squares,
+/area/firefly/cafeteria)
+"ayA" = (
+/obj/structure/bed/chair{
+	dir = 16;
+	pixel_y = 4
+	},
+/turf/open/floor/corsat/red/east,
+/area/firefly/cafeteria)
+"ayB" = (
+/turf/open/floor/corsat/red/northwest,
+/area/firefly/cafeteria)
+"ayC" = (
+/obj/structure/disposalpipe/segment{
+	dir = 1
+	},
+/turf/open/floor/corsat/red/north,
+/area/firefly/cafeteria)
+"ayD" = (
+/obj/structure/reagent_dispensers/water_cooler/stacks{
+	pixel_y = 15;
+	pixel_x = -4
+	},
+/turf/open/floor/corsat/red/northeast,
+/area/firefly/cafeteria)
+"ayE" = (
+/obj/structure/machinery/door/airlock/almayer/secure/glass{
+	name = "\improper Basketball Court";
+	req_access = null;
+	dir = 1
+	},
+/turf/open/floor/corsat/marked,
+/area/firefly/cafeteria)
+"ayF" = (
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/corsat/arrow_south,
+/area/firefly/cafeteria)
+"ayG" = (
+/obj/structure/surface/table/reinforced/almayer_B,
+/obj/item/reagent_container/food/drinks/coffeecup,
+/obj/item/reagent_container/food/drinks/coffeecup,
+/obj/item/reagent_container/food/drinks/coffeecup,
+/obj/item/reagent_container/food/drinks/coffeecup,
+/obj/item/reagent_container/food/drinks/coffeecup,
+/obj/item/reagent_container/food/drinks/coffeecup,
+/obj/item/reagent_container/food/drinks/coffeecup,
+/obj/item/reagent_container/food/drinks/coffeecup,
+/obj/item/reagent_container/food/drinks/coffeecup,
+/obj/item/reagent_container/food/drinks/coffeecup,
+/turf/open/floor/corsat/lightplate,
+/area/firefly/cafeteria)
+"ayH" = (
+/obj/structure/surface/table/reinforced/almayer_B,
+/obj/structure/machinery/hybrisa/coffee_machine{
+	pixel_y = 3;
+	pixel_x = 4
+	},
+/obj/item/reagent_container/food/drinks/bottle/cream{
+	pixel_x = -12;
+	pixel_y = 17
+	},
+/obj/item/reagent_container/food/drinks/milk{
+	pixel_x = -13;
+	pixel_y = 9
+	},
+/turf/open/floor/corsat/lightplate,
+/area/firefly/cafeteria)
 "azd" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "SE-out";
@@ -11812,14 +12426,6 @@
 	},
 /turf/open/floor/corsat/marked,
 /area/firefly/supply)
-"dGG" = (
-/obj/structure/surface/table/almayer,
-/obj/item/reagent_container/food/condiment/coldsauce{
-	pixel_x = -5;
-	pixel_y = 9
-	},
-/turf/open/floor/corsat/lightplate,
-/area/firefly/cafeteria)
 "dGN" = (
 /obj/structure/surface/table/reinforced/almayer_B,
 /obj/item/storage/box/czsp/first_aid{
@@ -13622,14 +14228,6 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/corsat/red/north,
-/area/firefly/cafeteria)
-"fBQ" = (
-/obj/structure/surface/table/almayer,
-/obj/item/reagent_container/food/condiment/hotsauce/cholula{
-	pixel_x = 37;
-	pixel_y = 6
-	},
-/turf/open/floor/corsat/lightplate,
 /area/firefly/cafeteria)
 "fDp" = (
 /obj/structure/bed/chair/office/dark{
@@ -18868,6 +19466,7 @@
 	dir = 8;
 	icon_state = "pipe-c"
 	},
+/obj/structure/machinery/power/apc/almayer/hardened/south,
 /turf/open/floor/corsat/green/southeast,
 /area/firefly/cafeteria)
 "lgS" = (
@@ -20541,7 +21140,6 @@
 	dir = 2;
 	icon_state = "pipe-y"
 	},
-/obj/structure/machinery/power/apc/almayer/hardened/south,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/corsat/green,
 /area/firefly/cafeteria)
@@ -29837,7 +30435,7 @@
 /area/firefly/engineer)
 "xAU" = (
 /obj/structure/machinery/door/airlock/almayer/secure/glass{
-	name = "\improper Mess Hall Wing";
+	name = "\improper Basketball Court";
 	req_access = null;
 	dir = 1
 	},
@@ -36739,13 +37337,13 @@ oNA
 gez
 aep
 adw
-fDZ
-fDZ
-fDZ
-fDZ
-fDZ
-fDZ
-fDZ
+acQ
+acQ
+acQ
+acQ
+acQ
+acQ
+acQ
 fDZ
 fDZ
 fDZ
@@ -36901,13 +37499,13 @@ caj
 gez
 bku
 adw
-fDZ
-fDZ
-fDZ
-fDZ
-fDZ
-fDZ
-fDZ
+ayf
+axY
+axp
+awZ
+avy
+aoY
+acQ
 fDZ
 fDZ
 fDZ
@@ -37063,13 +37661,13 @@ caj
 gez
 aep
 adw
-fDZ
-fDZ
-fDZ
-fDZ
-fDZ
-fDZ
-fDZ
+ayf
+axZ
+axQ
+awO
+avz
+apa
+acQ
 fDZ
 fDZ
 fDZ
@@ -37225,13 +37823,13 @@ tGJ
 gez
 aep
 adw
-fDZ
-fDZ
-fDZ
-fDZ
-fDZ
-fDZ
-fDZ
+ayg
+aya
+axR
+awO
+avA
+atg
+acQ
 fDZ
 fDZ
 fDZ
@@ -37377,7 +37975,7 @@ wrO
 gRe
 ucp
 tiW
-dGG
+fsA
 gRe
 oNH
 hRo
@@ -37387,13 +37985,13 @@ dVt
 fxq
 aep
 adw
-fDZ
-fDZ
-fDZ
-fDZ
-fDZ
-fDZ
-fDZ
+ayg
+aya
+axS
+axb
+awz
+atg
+acQ
 fDZ
 fDZ
 fDZ
@@ -37541,21 +38139,21 @@ bWv
 bWv
 bWv
 gRe
-jwW
+ayG
 rlG
 shU
 gTs
 adw
 adw
 adw
-adw
-fDZ
-fDZ
-fDZ
-fDZ
-fDZ
-fDZ
-fDZ
+ayp
+huQ
+aya
+awO
+awO
+awO
+atg
+acQ
 fDZ
 fDZ
 fDZ
@@ -37703,21 +38301,21 @@ aoU
 aoU
 gRe
 gRe
-jwW
+ayH
 rlG
 paT
 acQ
-fDZ
-fDZ
-fDZ
-fDZ
-fDZ
-fDZ
-fDZ
-fDZ
-fDZ
-fDZ
-fDZ
+ayB
+hPW
+ayw
+ayq
+ayh
+aya
+awO
+awO
+awO
+atg
+acQ
 fDZ
 fDZ
 fDZ
@@ -37862,24 +38460,24 @@ rlG
 sMn
 gRe
 apk
-fBQ
+fsA
 sYA
 gRe
 oNH
 rlG
 nWg
 acQ
-fDZ
-fDZ
-fDZ
-fDZ
-fDZ
-fDZ
-fDZ
-fDZ
-fDZ
-fDZ
-fDZ
+huQ
+adk
+ayx
+ayr
+aym
+ayb
+awP
+axc
+awP
+avt
+acQ
 fDZ
 fDZ
 fDZ
@@ -38029,26 +38627,26 @@ sYA
 gRe
 oNH
 rlG
-aol
+ayF
+ayE
+asP
+adk
+ayy
+ays
+aym
+aya
+awO
+awO
+awO
+atg
 acQ
 fDZ
+fDZ
+fDZ
 iQk
 iQk
 iQk
 iQk
-fDZ
-fDZ
-fDZ
-fDZ
-fDZ
-fDZ
-fDZ
-fDZ
-fDZ
-fDZ
-fDZ
-fDZ
-fDZ
 fDZ
 fDZ
 fDZ
@@ -38193,24 +38791,24 @@ mwz
 aox
 ngn
 adL
+ayC
+ayn
+ayn
+ayn
+ayn
+ayd
+awQ
+awQ
+awQ
+avu
+adL
+sYn
+sYn
 sYn
 jeb
 oud
 aqU
 iQk
-fDZ
-fDZ
-fDZ
-fDZ
-fDZ
-fDZ
-fDZ
-fDZ
-fDZ
-fDZ
-fDZ
-fDZ
-fDZ
 fDZ
 fDZ
 fDZ
@@ -38353,26 +38951,26 @@ sYA
 gRe
 mem
 aox
-aol
+ayF
+ayE
+asP
+adk
+adk
+adk
+aym
+aya
+axT
+axi
+awR
+atg
 acQ
 fDZ
+fDZ
+fDZ
 iQk
 aqU
 aqU
 iQk
-fDZ
-fDZ
-fDZ
-fDZ
-fDZ
-fDZ
-fDZ
-fDZ
-fDZ
-fDZ
-fDZ
-fDZ
-fDZ
 fDZ
 fDZ
 fDZ
@@ -38517,24 +39115,24 @@ nPN
 aoy
 aol
 acQ
+huQ
+adk
+ayu
+ayt
+aym
+aya
+axU
+awO
+avA
+atg
+acQ
+fDZ
+fDZ
 fDZ
 iQk
 iQk
 iQk
 iQk
-fDZ
-fDZ
-fDZ
-fDZ
-fDZ
-fDZ
-fDZ
-fDZ
-fDZ
-fDZ
-fDZ
-fDZ
-fDZ
 fDZ
 fDZ
 fDZ
@@ -38679,17 +39277,17 @@ wSy
 bSi
 aom
 acQ
-fDZ
-fDZ
-fDZ
-fDZ
-fDZ
-fDZ
-fDZ
-fDZ
-fDZ
-fDZ
-fDZ
+huQ
+ayr
+ayz
+ayu
+aym
+axZ
+axW
+awO
+awU
+apa
+acQ
 fDZ
 fDZ
 fDZ
@@ -38841,17 +39439,17 @@ pDR
 lgq
 acQ
 acQ
-fDZ
-fDZ
-fDZ
-fDZ
-fDZ
-fDZ
-fDZ
-fDZ
-fDZ
-fDZ
-fDZ
+ayD
+ayv
+ayA
+ayv
+ayo
+aye
+axX
+axj
+awV
+avv
+acQ
 fDZ
 fDZ
 fDZ
@@ -39012,8 +39610,8 @@ acQ
 acQ
 acQ
 acQ
-fDZ
-fDZ
+acQ
+acQ
 fDZ
 fDZ
 fDZ
