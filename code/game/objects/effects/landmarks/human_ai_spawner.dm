@@ -617,6 +617,21 @@
 
 /obj/effect/landmark/humanaispawner/marshal
 
+/obj/effect/landmark/humanaispawner/marshal/nspa
+	name = "NSPA Officer"
+	desc = "A NSPA Officer with a pistol"
+	equip_path = /datum/equipment_preset/cmb/nspa
+
+/obj/effect/landmark/humanaispawner/marshal/nspa/shotgunner
+	name = "NSPA Officer Shotgunner"
+	desc = "A NSPA Officer with a shotgun"
+	equip_path = /datum/equipment_preset/cmb/nspa/shotgunner
+
+/obj/effect/landmark/humanaispawner/marshal/nspa/smg
+	name = "NSPA Officer SMG"
+	desc = "A NSPA Officer with a SMG"
+	equip_path = /datum/equipment_preset/cmb/nspa/smg
+
 /obj/effect/landmark/humanaispawner/marshal/deputy
 	name = "CMB Marshals - Deputy"
 	desc = "A CMB Deputy with a revolver"
