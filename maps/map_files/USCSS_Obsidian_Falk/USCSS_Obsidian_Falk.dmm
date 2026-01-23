@@ -5554,6 +5554,7 @@
 /obj/structure/desertdam/decals/road_edge{
 	pixel_x = 2
 	},
+/obj/structure/machinery/light,
 /turf/open/floor/wood/ship,
 /area/firefly/cafeteria)
 "apb" = (
@@ -9543,7 +9544,8 @@
 "ayf" = (
 /obj/structure/window/reinforced,
 /obj/structure/closet/basketball{
-	pixel_y = 19
+	pixel_y = 19;
+	density = 0
 	},
 /turf/open/floor/corsat/red/north,
 /area/firefly/cafeteria)
@@ -9750,6 +9752,24 @@
 	},
 /turf/open/floor/corsat/lightplate,
 /area/firefly/cafeteria)
+"ayI" = (
+/obj/structure/machinery/light{
+	dir = 1
+	},
+/turf/open/floor/corsat/red/north,
+/area/firefly/cafeteria)
+"ayJ" = (
+/obj/structure/window/framed/corsat,
+/turf/closed/wall/r_wall/biodome/biodome_unmeltable,
+/area/firefly/cafeteria)
+"ayK" = (
+/obj/structure/machinery/colony_selfdestruct,
+/turf/closed/wall/r_wall/biodome/biodome_unmeltable,
+/area/firefly/cafeteria)
+"ayL" = (
+/obj/item/disk/nuclear,
+/turf/open/floor/corsat/squares,
+/area/firefly/briefing)
 "azd" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "SE-out";
@@ -10978,10 +10998,6 @@
 	},
 /turf/open/floor/corsat/sterileplate,
 /area/firefly/supply)
-"bRg" = (
-/obj/item/device/taperecorder/empty,
-/turf/open/floor/corsat/green/north,
-/area/firefly/cryo_cell)
 "bSi" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4;
@@ -15309,7 +15325,6 @@
 /obj/structure/machinery/cm_vending/sorted/medical/wall_med/tent{
 	pixel_y = 26
 	},
-/obj/item/device/taperecorder,
 /turf/open/floor/corsat/green/north,
 /area/firefly/cryo_cell)
 "gKW" = (
@@ -22722,9 +22737,6 @@
 /turf/open/floor/corsat/squares,
 /area/firefly/supply)
 "paT" = (
-/obj/structure/machinery/camera/autoname/golden_arrow{
-	dir = 1
-	},
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
@@ -25682,6 +25694,9 @@
 	},
 /obj/structure/disposalpipe/segment{
 	dir = 4
+	},
+/obj/structure/machinery/camera/autoname/golden_arrow{
+	dir = 1
 	},
 /turf/open/floor/corsat/green,
 /area/firefly/cafeteria)
@@ -36343,7 +36358,7 @@ adm
 twH
 aqI
 aqu
-acQ
+ayK
 adI
 fDZ
 fDZ
@@ -36680,7 +36695,7 @@ anL
 aoj
 adA
 aez
-bRg
+aKv
 adW
 anL
 axC
@@ -38304,7 +38319,7 @@ gRe
 ayH
 rlG
 paT
-acQ
+ayJ
 ayB
 hPW
 ayw
@@ -38466,8 +38481,8 @@ gRe
 oNH
 rlG
 nWg
-acQ
-huQ
+ayJ
+ayI
 adk
 ayx
 ayr
@@ -39114,7 +39129,7 @@ gRe
 nPN
 aoy
 aol
-acQ
+ayJ
 huQ
 adk
 ayu
@@ -39276,8 +39291,8 @@ dvT
 wSy
 bSi
 aom
-acQ
-huQ
+ayJ
+ayI
 ayr
 ayz
 ayu
@@ -44435,7 +44450,7 @@ agH
 aeF
 mJZ
 aei
-aei
+ayL
 aei
 aei
 sRw
