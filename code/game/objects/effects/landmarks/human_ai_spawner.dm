@@ -1403,6 +1403,11 @@
 	desc = "An electrical enegineer of Hybrisa"
 	equip_path = /datum/equipment_preset/survivor/hybrisa/electrical_engineer
 
+/obj/effect/landmark/humanaispawner/hybrisa/corporate
+	name = "Hybrisa Corporate Liaison"
+	desc = "An Corporate Liaison of Hybrisa"
+	equip_path = /datum/equipment_preset/survivor/corporate/hybrisa
+
 /obj/effect/landmark/humanaispawner/hybrisa/construction_worker
 	name = "Hybrisa construction worker"
 	desc = "A construction worker of Hybrisa"
@@ -1422,6 +1427,38 @@
 	name = "Hybrisa Kelland Miner"
 	desc = "A Kelland Miner of Hybrisa"
 	equip_path = /datum/equipment_preset/survivor/hybrisa/kelland_miner
+
+//Hybrisa Synths
+
+/obj/effect/landmark/humanaispawner/hybrisa/synth/civlian
+	name = "Hybrisa synth civilian"
+	desc = "A synth civilian of Hybrisa"
+	equip_path = /datum/equipment_preset/synth/survivor/hybrisa/civilian
+
+/obj/effect/landmark/humanaispawner/hybrisa/synth/engineer
+	name = "Hybrisa synth engineer"
+	desc = "A synth engineeer of Hybrisa"
+	equip_path = /datum/equipment_preset/synth/survivor/hybrisa/engineer_survivor
+
+/obj/effect/landmark/humanaispawner/hybrisa/synth/paramedic
+	name = "Hybrisa synth paramedic"
+	desc = "A synth paramedic of Hybrisa"
+	equip_path = /datum/equipment_preset/synth/survivor/hybrisa/paramedic
+
+/obj/effect/landmark/humanaispawner/hybrisa/synth/detective
+	name = "Hybrisa synth detective"
+	desc = "A synth detective of Hybrisa"
+	equip_path = /datum/equipment_preset/synth/survivor/hybrisa/detective
+
+/obj/effect/landmark/humanaispawner/hybrisa/synth/exec_bodyguard
+	name = "Hybrisa synth executive bodyguard"
+	desc = "A synth executive bodyguard of Hybrisa"
+	equip_path = /datum/equipment_preset/synth/survivor/hybrisa/exec_bodyguard
+
+/obj/effect/landmark/humanaispawner/hybrisa/synth/xenoarchaeologist
+	name = "Hybrisa synth xenoarchaeologist"
+	desc = "A synth xenoarchaeologist of Hybrisa"
+	equip_path = /datum/equipment_preset/synth/survivor/hybrisa/xenoarchaeologist
 
 //*****************************************************************************************************/
 /// Zombie

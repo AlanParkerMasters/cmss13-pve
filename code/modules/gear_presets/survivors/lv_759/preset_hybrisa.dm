@@ -445,6 +445,8 @@
 	assignment = "Xenoarchaeologist"
 	skills = /datum/skills/civilian/survivor/scientist
 	flags = EQUIPMENT_PRESET_START_OF_ROUND
+	faction = FACTION_WY
+	faction_group = list(FACTION_WY, FACTION_SURVIVOR)
 	idtype = /obj/item/card/id/silver/clearance_badge/scientist
 	access = list(ACCESS_CIVILIAN_PUBLIC, ACCESS_CIVILIAN_RESEARCH, ACCESS_CIVILIAN_MEDBAY)
 
@@ -500,6 +502,8 @@
 	assignment = "Xenobiologist"
 	skills = /datum/skills/civilian/survivor/scientist
 	flags = EQUIPMENT_PRESET_START_OF_ROUND
+	faction = FACTION_WY
+	faction_group = list(FACTION_WY, FACTION_SURVIVOR)
 	idtype = /obj/item/card/id/silver/clearance_badge/scientist
 	access = list(ACCESS_CIVILIAN_PUBLIC, ACCESS_CIVILIAN_RESEARCH, ACCESS_CIVILIAN_MEDBAY)
 
@@ -1157,6 +1161,8 @@
 /datum/equipment_preset/synth/survivor/hybrisa/exec_bodyguard
 	name = "Survivor - Hybrisa - Synthetic - Executive Bodyguard"
 	flags = EQUIPMENT_PRESET_START_OF_ROUND
+	faction = FACTION_WY
+	faction_group = list(FACTION_WY, FACTION_SURVIVOR)
 
 	survivor_variant = CORPORATE_SURVIVOR
 
@@ -1216,7 +1222,8 @@
 /datum/equipment_preset/synth/survivor/hybrisa/xenoarchaeologist
 	name = "Survivor - Hybrisa - Synthetic - Xenoarchaeologist"
 	flags = EQUIPMENT_PRESET_START_OF_ROUND
-
+	faction = FACTION_WY
+	faction_group = list(FACTION_WY, FACTION_SURVIVOR)
 	survivor_variant = SCIENTIST_SURVIVOR
 
 /datum/equipment_preset/synth/survivor/hybrisa/xenoarchaeologist/load_gear(mob/living/carbon/human/new_human)
