@@ -1206,19 +1206,17 @@ GLOBAL_LIST_INIT(rebel_ua_pistols, list(
 			new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/veteran/kutjevo(new_human), WEAR_HEAD)
 
 /datum/equipment_preset/proc/add_random_survivor_equipment(mob/living/carbon/human/new_human) // Think of this gear as something a survivor of an outbreak might get before shortly taking shelter I.E spawn.
-	var/random_gear = rand(0,5)
+	var/random_gear = rand(0,4)
 	switch(random_gear)
 		if(0)
 			new_human.equip_to_slot_or_del(new /obj/item/explosive/grenade/incendiary/molotov(new_human), WEAR_IN_BACK)
 		if(1)
 			new_human.equip_to_slot_or_del(new /obj/item/storage/box/flare(new_human), WEAR_IN_BACK)
 		if(2)
-			new_human.equip_to_slot_or_del(new /obj/item/weapon/gun/smg/nailgun(new_human), WEAR_IN_BACK)
-		if(3)
 			new_human.equip_to_slot_or_del(new /obj/item/weapon/twohanded/fireaxe(new_human), WEAR_IN_BACK)
-		if(4)
+		if(3)
 			new_human.equip_to_slot_or_del(new /obj/item/tool/weldingtool/largetank(new_human), WEAR_IN_BACK)
-		if(5)
+		if(4)
 			new_human.equip_to_slot_or_del(new /obj/item/storage/firstaid/adv(new_human.back), WEAR_IN_BACK)
 
 // Random Survivor Weapon Spawners

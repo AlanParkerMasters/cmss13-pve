@@ -1329,6 +1329,101 @@
 	equip_path = /datum/equipment_preset/colonist/prisoner/spanish
 
 //*****************************************************************************************************/
+/// Hybrisa
+
+/obj/effect/landmark/humanaispawner/hybrisa
+
+/obj/effect/landmark/humanaispawner/hybrisa/civilian
+	name = "Hybrisa civilian"
+	desc = "A civilian of Hybrisa"
+	equip_path = /datum/equipment_preset/survivor/hybrisa/civilian
+
+/obj/effect/landmark/humanaispawner/hybrisa/civilian_office
+	name = "Hybrisa office civilian"
+	desc = "An office worker of Hybrisa"
+	equip_path = /datum/equipment_preset/survivor/hybrisa/civilian_office
+
+/obj/effect/landmark/humanaispawner/hybrisa/weymart
+	name = "Hybrisa Weymart employee"
+	desc = "A weymart employee"
+	equip_path = /datum/equipment_preset/survivor/hybrisa/weymart
+
+/obj/effect/landmark/humanaispawner/hybrisa/sanitation
+	name = "Hybrisa sanitation worker"
+	desc = "A sanitation worker of Hybrisa"
+	equip_path = /datum/equipment_preset/survivor/hybrisa/sanitation
+
+/obj/effect/landmark/humanaispawner/hybrisa/pizza_galaxy
+	name = "Hybrisa Pizza Galaxy employee"
+	desc = "A Pizza Galaxy employee of Hybrisa"
+	equip_path = /datum/equipment_preset/survivor/hybrisa/pizza_galaxy
+
+/obj/effect/landmark/humanaispawner/hybrisa/fire_fighter
+	name = "Hybrisa Fire Fighter"
+	desc = "A fire fighter of Hybrisa"
+	equip_path = /datum/equipment_preset/survivor/hybrisa/fire_fighter
+
+/obj/effect/landmark/humanaispawner/hybrisa/cuppa_joes
+	name = "Hybrisa Cuppa Joe employee"
+	desc = "A Cuppa Joe employee of Hybrisa"
+	equip_path = /datum/equipment_preset/survivor/hybrisa/cuppa_joes
+
+/obj/effect/landmark/humanaispawner/hybrisa/nspa_constable
+	name = "Hybrisa NSPA Constable"
+	desc = "A NSPA Constable of Hybrisa"
+	equip_path = /datum/equipment_preset/survivor/hybrisa/nspa_constable
+
+/obj/effect/landmark/humanaispawner/hybrisa/doctor
+	name = "Hybrisa Doctor"
+	desc = "A doctor of Hybrisa"
+	equip_path = /datum/equipment_preset/survivor/hybrisa/doctor
+
+/obj/effect/landmark/humanaispawner/hybrisa/paramedic
+	name = "Hybrisa Paramedic"
+	desc = "A paramedic of Hybrisa"
+	equip_path = /datum/equipment_preset/survivor/hybrisa/paramedic
+
+/obj/effect/landmark/humanaispawner/hybrisa/scientist_xenoarchaeologist
+	name = "Hybrisa Scientist Xenoarchaeologist"
+	desc = "A Scientist Xenoarchaeologist of Hybrisa"
+	equip_path = /datum/equipment_preset/survivor/hybrisa/scientist_xenoarchaeologist
+
+/obj/effect/landmark/humanaispawner/hybrisa/scientist_xenobiologist
+	name = "Hybrisa Scientist Xenobiologist"
+	desc = "A Scientist Xenobiologist of Hybrisa"
+	equip_path = /datum/equipment_preset/survivor/hybrisa/scientist_xenobiologist
+
+/obj/effect/landmark/humanaispawner/hybrisa/heavy_vehicle_operator
+	name = "Hybrisa Heavy Vehicle Operator"
+	desc = "A heavy vehicle operator of Hybrisa"
+	equip_path = /datum/equipment_preset/survivor/hybrisa/heavy_vehicle_operator
+
+/obj/effect/landmark/humanaispawner/hybrisa/electrical_engineer
+	name = "Hybrisa Electrical Engineer"
+	desc = "An electrical enegineer of Hybrisa"
+	equip_path = /datum/equipment_preset/survivor/hybrisa/electrical_engineer
+
+/obj/effect/landmark/humanaispawner/hybrisa/construction_worker
+	name = "Hybrisa construction worker"
+	desc = "A construction worker of Hybrisa"
+	equip_path = /datum/equipment_preset/survivor/hybrisa/construction_worker
+
+/obj/effect/landmark/humanaispawner/hybrisa/corporate_goon
+	name = "Hybrisa Corporate Goon"
+	desc = "A Corporate Goon of Hybrisa"
+	equip_path = /datum/equipment_preset/survivor/hybrisa/corporate_goon
+
+/obj/effect/landmark/humanaispawner/hybrisa/wey_po
+	name = "Hybrisa Commercial Pilot"
+	desc = "A Commercial Pilot of Hybrisa"
+	equip_path = /datum/equipment_preset/survivor/hybrisa/wey_po
+
+/obj/effect/landmark/humanaispawner/hybrisa/kelland_miner
+	name = "Hybrisa Kelland Miner"
+	desc = "A Kelland Miner of Hybrisa"
+	equip_path = /datum/equipment_preset/survivor/hybrisa/kelland_miner
+
+//*****************************************************************************************************/
 /// Zombie
 
 /obj/effect/landmark/humanaispawner/zombie
