@@ -9762,10 +9762,6 @@
 /obj/structure/window/framed/corsat,
 /turf/closed/wall/r_wall/biodome/biodome_unmeltable,
 /area/firefly/cafeteria)
-"ayK" = (
-/obj/structure/machinery/colony_selfdestruct,
-/turf/closed/wall/r_wall/biodome/biodome_unmeltable,
-/area/firefly/cafeteria)
 "ayL" = (
 /obj/item/disk/nuclear,
 /turf/open/floor/corsat/squares,
@@ -36358,7 +36354,7 @@ adm
 twH
 aqI
 aqu
-ayK
+acQ
 adI
 fDZ
 fDZ
