@@ -99,7 +99,6 @@
 	new_human.equip_to_slot_or_del(new /obj/item/device/radio/headset/distress(new_human), WEAR_L_EAR)
 	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/survival/full(new_human), WEAR_L_STORE)
 	new_human.equip_to_slot_or_del(new /obj/item/stack/sheet/metal/med_small_stack(new_human), WEAR_IN_BACK)
-	add_survivor_weapon_pistol(new_human)
 
 /datum/equipment_preset/survivor/load_id(mob/living/carbon/human/new_human, client/mob_client)
 	var/obj/item/clothing/under/uniform = new_human.w_uniform
