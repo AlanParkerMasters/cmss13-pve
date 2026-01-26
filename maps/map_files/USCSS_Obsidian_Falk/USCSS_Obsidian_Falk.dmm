@@ -1557,7 +1557,10 @@
 /turf/open/floor/corsat/squares,
 /area/firefly/hangar)
 "aeu" = (
-/obj/item/tape/audio_log/pmc_instructions,
+/obj/item/tape/audio_log/pmc_instructions{
+	pixel_y = 2;
+	pixel_x = 11
+	},
 /turf/open/floor/corsat/squares,
 /area/firefly/briefing)
 "aev" = (
@@ -9762,8 +9765,19 @@
 /obj/structure/window/framed/corsat,
 /turf/closed/wall/r_wall/biodome/biodome_unmeltable,
 /area/firefly/cafeteria)
+"ayK" = (
+/obj/item/device/pinpointer{
+	pixel_x = -6;
+	pixel_y = 11
+	},
+/turf/open/floor/corsat/squares,
+/area/firefly/briefing)
 "ayL" = (
-/obj/item/disk/nuclear,
+/obj/item/disk/nuclear{
+	desc = "Better keep this safe. Might be a really good idea to run once you use it.";
+	name = "self destruct disk";
+	color = "red"
+	},
 /turf/open/floor/corsat/squares,
 /area/firefly/briefing)
 "azd" = (
@@ -44447,7 +44461,7 @@ aeF
 mJZ
 aei
 ayL
-aei
+ayK
 aei
 sRw
 kmA
