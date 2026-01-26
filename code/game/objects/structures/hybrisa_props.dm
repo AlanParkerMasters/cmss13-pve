@@ -1311,6 +1311,7 @@
 	icon_state = "zfire_smoke"
 	layer = ABOVE_MOB_LAYER
 	light_on = TRUE
+	density = TRUE
 	light_power = 2
 	light_range = 3
 

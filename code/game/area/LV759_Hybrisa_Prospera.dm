@@ -7,6 +7,7 @@
 	can_build_special = TRUE
 	powernet_name = "ground"
 	minimap_color = MINIMAP_AREA_COLONY_RESANDCOM
+	flags_area = AREA_NOPARADROP
 
 //parent types
 
@@ -400,6 +401,17 @@
 	ambience_exterior = AMBIENCE_HYBRISA_CAVES
 	soundscape_playlist = SCAPE_PL_LV759_PLATEAU_OUTDOORS
 	minimap_color = MINIMAP_AREA_HYBRISACAVES
+
+	always_unpowered = TRUE
+
+/area/lv759/outdoors/landingzone
+	name = "PMC Landing Site"
+	icon_state = "caves_plateau"
+	ceiling = CEILING_NONE
+	ambience_exterior = AMBIENCE_HYBRISA_CAVES
+	soundscape_playlist = SCAPE_PL_LV759_PLATEAU_OUTDOORS
+	minimap_color = MINIMAP_AREA_HYBRISACAVES
+	flags_area = NO_FLAGS
 
 	always_unpowered = TRUE
 
