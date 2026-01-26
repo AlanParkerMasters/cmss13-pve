@@ -224,6 +224,7 @@
 /obj/vehicle/multitile/tank/night
 	desc = "A giant piece of armor with a big gun, you know what to do. Entrance in the back. Painted in a dark-environment camo scheme."
 	icon_state = "tank_base_n"
+	vehicle_faction = FACTION_MARINE
 
 /*
 ** COMMAND TANK
