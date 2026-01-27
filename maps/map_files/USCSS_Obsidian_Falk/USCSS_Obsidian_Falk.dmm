@@ -5516,6 +5516,13 @@
 	},
 /turf/open/floor/corsat/green/west,
 /area/firefly/cafeteria)
+"aoT" = (
+/obj/structure/disposalpipe/segment{
+	dir = 1
+	},
+/obj/structure/window/framed/corsat,
+/turf/open/floor/corsat/marked,
+/area/firefly/cafeteria)
 "aoU" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/corsat/lightplate,
@@ -5641,6 +5648,12 @@
 	},
 /turf/open/floor/corsat/plate,
 /area/firefly/cryo_cell)
+"apk" = (
+/obj/item/card/id/pmc/ds{
+	id = "Alpha"
+	},
+/turf/open/floor/corsat/squares,
+/area/firefly/briefing)
 "apl" = (
 /obj/structure/desertdam/decals/road_edge{
 	pixel_x = 9
@@ -9097,7 +9110,7 @@
 	name = "heavy weapons specialist locker";
 	req_access_txt = "208;217"
 	},
-/obj/item/weapon/gun/smartgun/dirty,
+/obj/item/weapon/gun/smartgun/dirty/elite,
 /obj/item/smartgun_battery,
 /obj/item/clothing/suit/storage/marine/smartgunner/veteran/pmc,
 /obj/item/clothing/head/helmet/marine/veteran/pmc/gunner,
@@ -9719,7 +9732,7 @@
 	name = "heavy weapons specialist locker";
 	req_access_txt = "208;217"
 	},
-/obj/item/weapon/gun/smartgun/dirty,
+/obj/item/weapon/gun/smartgun/dirty/elite,
 /obj/item/smartgun_battery,
 /obj/item/clothing/suit/storage/marine/smartgunner/veteran/pmc,
 /obj/item/clothing/head/helmet/marine/veteran/pmc/gunner,
@@ -9868,8 +9881,7 @@
 /obj/structure/machinery/door/airlock/almayer/secure/glass{
 	name = "\improper Basketball Court";
 	req_access = null;
-	dir = 1;
-	opacity = 1
+	dir = 1
 	},
 /turf/open/floor/corsat/marked,
 /area/firefly/cafeteria)
@@ -9915,10 +9927,6 @@
 	dir = 1
 	},
 /turf/open/floor/corsat/red/north,
-/area/firefly/cafeteria)
-"ayJ" = (
-/obj/structure/window/framed/corsat,
-/turf/closed/wall/r_wall/biodome/biodome_unmeltable,
 /area/firefly/cafeteria)
 "ayK" = (
 /obj/item/device/pinpointer{
@@ -20127,6 +20135,7 @@
 	pixel_x = -17;
 	density = 0
 	},
+/obj/item/card/id/pmc/ds,
 /turf/open/floor/corsat/blue/north,
 /area/firefly/briefing)
 "lwe" = (
@@ -28835,7 +28844,7 @@
 /obj/structure/machinery/door_control/brbutton/alt{
 	pixel_y = 5;
 	pixel_x = -6;
-	id = "F-range2"
+	id = "F-range"
 	},
 /obj/structure/machinery/door_control/brbutton/alt{
 	pixel_y = 5;
@@ -38736,7 +38745,7 @@ gRe
 ayH
 rlG
 paT
-ayJ
+mid
 ayB
 hPW
 ayw
@@ -38898,7 +38907,7 @@ gRe
 oNH
 rlG
 nWg
-ayJ
+mid
 ayI
 adk
 ayx
@@ -39222,7 +39231,7 @@ gRe
 mwz
 aox
 ngn
-adL
+aoT
 ayC
 ayn
 ayn
@@ -39546,7 +39555,7 @@ gRe
 nPN
 aoy
 aol
-ayJ
+mid
 huQ
 adk
 ayu
@@ -39708,7 +39717,7 @@ dvT
 wSy
 bSi
 aom
-ayJ
+mid
 ayI
 ayr
 ayz
@@ -44380,7 +44389,7 @@ iIj
 wxz
 aeF
 lvZ
-aei
+apk
 aei
 aei
 aqg

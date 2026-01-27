@@ -246,6 +246,10 @@
 	desc = "It lists a callsign and a blood type. Issued to Whiteout protocol teams only."
 	icon_state = "ds"
 
+/obj/item/card/id/pmc/ds/New()
+	access = get_access(ACCESS_LIST_WY_ALL)
+	..()
+
 /obj/item/card/id/marshal
 	name = "\improper CMB marshal gold badge"
 	desc = "A coveted gold badge signifying that the wearer is one of the few CMB Marshals patroling the outer rim. It is a sign of justice, authority, and protection. Protecting those who can't. This badge represents a commitment to a sworn oath always kept."
