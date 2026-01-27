@@ -621,7 +621,7 @@ obj/item/device/taperecorder/proc/play()
 		"\[02:16] Martin Kessler can be heard taking their third drag.",
 		"\[02:20] \"Your visual presence here at the colony is of no matter to your employer.\"",
 		"\[02:25] \"All they do care about is plausible deniability.\"",
-		"\[02:30] \"So you will wear nothing identifiable down there. No IDs.\"",
+		"\[02:30] \"So you will wear nothing identifiable down there. You've been provided IDs with callsigns. Ask MU/TH/ER if you want your's changed.\"",
 		"\[02:35] \"Do not be seen without a mask on by a camera, armed forces, whoever.\"",
 		"\[02:41] \"Outside of that, you are free to use anything you find or would like to gear-wise.\"",
 		"\[02:46] \"You are being provided with additional equipment due to the amount of hostiles you will be encountering down there.\"",

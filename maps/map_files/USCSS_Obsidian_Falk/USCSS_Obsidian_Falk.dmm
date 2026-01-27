@@ -5641,12 +5641,6 @@
 	},
 /turf/open/floor/corsat/plate,
 /area/firefly/cryo_cell)
-"apk" = (
-/obj/item/card/id/pmc/ds{
-	id = "Alpha"
-	},
-/turf/open/floor/corsat/squares,
-/area/firefly/briefing)
 "apl" = (
 /obj/structure/desertdam/decals/road_edge{
 	pixel_x = 9
@@ -20149,7 +20143,6 @@
 	pixel_x = -17;
 	density = 0
 	},
-/obj/item/card/id/pmc/ds,
 /turf/open/floor/corsat/blue/north,
 /area/firefly/briefing)
 "lwe" = (
@@ -21224,6 +21217,175 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/pipes/vents/pump,
+/obj/item/card/id/pmc/ds{
+	registered_name = "Zeta";
+	name = "Zeta's ID Card";
+	assignment = null;
+	paygrade = "CDNM";
+	desc = "A corporate holo-badge listing only a codename. Used in covert operations."
+	},
+/obj/item/card/id/pmc/ds{
+	registered_name = "Xi";
+	name = "Xi's ID Card";
+	assignment = null;
+	paygrade = "CDNM";
+	desc = "A corporate holo-badge listing only a codename. Used in covert operations."
+	},
+/obj/item/card/id/pmc/ds{
+	registered_name = "Upsilon";
+	name = "Upsilon's ID Card";
+	assignment = null;
+	paygrade = "CDNM";
+	desc = "A corporate holo-badge listing only a codename. Used in covert operations."
+	},
+/obj/item/card/id/pmc/ds{
+	registered_name = "Theta";
+	name = "Theta's ID Card";
+	assignment = null;
+	paygrade = "CDNM";
+	desc = "A corporate holo-badge listing only a codename. Used in covert operations."
+	},
+/obj/item/card/id/pmc/ds{
+	registered_name = "Tau";
+	name = "Tau's ID Card";
+	assignment = null;
+	paygrade = "CDNM";
+	desc = "A corporate holo-badge listing only a codename. Used in covert operations."
+	},
+/obj/item/card/id/pmc/ds{
+	registered_name = "Sigma";
+	name = "Sigma's ID Card";
+	assignment = null;
+	paygrade = "CDNM";
+	desc = "A corporate holo-badge listing only a codename. Used in covert operations."
+	},
+/obj/item/card/id/pmc/ds{
+	registered_name = "Rho";
+	name = "Rho's ID Card";
+	assignment = null;
+	paygrade = "CDNM";
+	desc = "A corporate holo-badge listing only a codename. Used in covert operations."
+	},
+/obj/item/card/id/pmc/ds{
+	registered_name = "Psi";
+	name = "Psi's ID Card";
+	assignment = null;
+	paygrade = "CDNM";
+	desc = "A corporate holo-badge listing only a codename. Used in covert operations."
+	},
+/obj/item/card/id/pmc/ds{
+	registered_name = "Pi";
+	name = "Pi's ID Card";
+	assignment = null;
+	paygrade = "CDNM";
+	desc = "A corporate holo-badge listing only a codename. Used in covert operations."
+	},
+/obj/item/card/id/pmc/ds{
+	registered_name = "Phi";
+	name = "Phi's ID Card";
+	assignment = null;
+	paygrade = "CDNM";
+	desc = "A corporate holo-badge listing only a codename. Used in covert operations."
+	},
+/obj/item/card/id/pmc/ds{
+	registered_name = "Omnicron";
+	name = "Omnicron's ID Card";
+	assignment = null;
+	paygrade = "CDNM";
+	desc = "A corporate holo-badge listing only a codename. Used in covert operations."
+	},
+/obj/item/card/id/pmc/ds{
+	registered_name = "Omega";
+	name = "Omega's ID Card";
+	assignment = null;
+	paygrade = "CDNM";
+	desc = "A corporate holo-badge listing only a codename. Used in covert operations."
+	},
+/obj/item/card/id/pmc/ds{
+	registered_name = "Nu";
+	name = "Nu's ID Card";
+	assignment = null;
+	paygrade = "CDNM";
+	desc = "A corporate holo-badge listing only a codename. Used in covert operations."
+	},
+/obj/item/card/id/pmc/ds{
+	registered_name = "Mu";
+	name = "Mu's ID Card";
+	assignment = null;
+	paygrade = "CDNM";
+	desc = "A corporate holo-badge listing only a codename. Used in covert operations."
+	},
+/obj/item/card/id/pmc/ds{
+	registered_name = "Lambda";
+	name = "Lambda's ID Card";
+	assignment = null;
+	paygrade = "CDNM";
+	desc = "A corporate holo-badge listing only a codename. Used in covert operations."
+	},
+/obj/item/card/id/pmc/ds{
+	registered_name = "Kappa";
+	name = "Kappa's ID Card";
+	assignment = null;
+	paygrade = "CDNM";
+	desc = "A corporate holo-badge listing only a codename. Used in covert operations."
+	},
+/obj/item/card/id/pmc/ds{
+	registered_name = "Iota";
+	name = "Iota's ID Card";
+	assignment = null;
+	paygrade = "CDNM";
+	desc = "A corporate holo-badge listing only a codename. Used in covert operations."
+	},
+/obj/item/card/id/pmc/ds{
+	registered_name = "Gamma";
+	name = "Gamma's ID Card";
+	assignment = null;
+	paygrade = "CDNM";
+	desc = "A corporate holo-badge listing only a codename. Used in covert operations."
+	},
+/obj/item/card/id/pmc/ds{
+	registered_name = "Eta";
+	name = "Eta's ID Card";
+	assignment = null;
+	paygrade = "CDNM";
+	desc = "A corporate holo-badge listing only a codename. Used in covert operations."
+	},
+/obj/item/card/id/pmc/ds{
+	registered_name = "Epsilon";
+	name = "Epsilon's ID Card";
+	assignment = null;
+	paygrade = "CDNM";
+	desc = "A corporate holo-badge listing only a codename. Used in covert operations."
+	},
+/obj/item/card/id/pmc/ds{
+	registered_name = "Delta";
+	name = "Delta's ID Card";
+	assignment = null;
+	paygrade = "CDNM";
+	desc = "A corporate holo-badge listing only a codename. Used in covert operations."
+	},
+/obj/item/card/id/pmc/ds{
+	registered_name = "Chi";
+	name = "Chi's ID Card";
+	assignment = null;
+	paygrade = "CDNM";
+	desc = "A corporate holo-badge listing only a codename. Used in covert operations."
+	},
+/obj/item/card/id/pmc/ds{
+	registered_name = "Beta";
+	name = "Beta's ID Card";
+	assignment = null;
+	paygrade = "CDNM";
+	desc = "A corporate holo-badge listing only a codename. Used in covert operations."
+	},
+/obj/item/card/id/pmc/ds{
+	registered_name = "Alpha";
+	name = "Alpha's ID Card";
+	assignment = null;
+	paygrade = "CDNM";
+	desc = "A corporate holo-badge listing only a codename. Used in covert operations."
+	},
+/obj/structure/closet/crate/secure/weyland,
 /turf/open/floor/corsat/blue/north,
 /area/firefly/briefing)
 "mLl" = (
@@ -25801,7 +25963,9 @@
 /turf/open/floor/corsat/marked,
 /area/firefly/supply)
 "rNE" = (
-/obj/structure/machinery/cm_vending/sorted/cargo_guns/squad/pmc,
+/obj/structure/machinery/cm_vending/sorted/cargo_guns/squad/pmc{
+	hacked = 1
+	},
 /turf/open/floor/corsat/squares,
 /area/firefly/briefing)
 "rQA" = (
@@ -26683,7 +26847,8 @@
 /area/firefly/supply)
 "sQd" = (
 /obj/structure/machinery/cm_vending/sorted/uniform_supply/squad_prep/pmc{
-	req_access = null
+	req_access = null;
+	hacked = 1
 	},
 /turf/open/floor/corsat/squares,
 /area/firefly/briefing)
@@ -44386,7 +44551,7 @@ iIj
 wxz
 aeF
 lvZ
-apk
+aei
 aei
 aei
 aqg
