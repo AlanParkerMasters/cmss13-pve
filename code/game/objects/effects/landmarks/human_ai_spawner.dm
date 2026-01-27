@@ -637,10 +637,15 @@
 	desc = "A NSPA Officer with beanbag shotty"
 	equip_path = /datum/equipment_preset/cmb/nspa/riot
 
-/obj/effect/landmark/humanaispawner/marshal/nspa/riot/launcher
-	name = "NSPA Officer Riot Launcher"
-	desc = "A NSPA Officer with a tear gas launcher"
-	equip_path = /datum/equipment_preset/cmb/nspa/riot/launcher
+/obj/effect/landmark/humanaispawner/marshal/nspa/riot/shield
+	name = "NSPA Officer Riot Shield"
+	desc = "A NSPA Officer with a riot shield"
+	equip_path = /datum/equipment_preset/cmb/nspa/riot/shield
+
+/obj/effect/landmark/humanaispawner/marshal/nspa/riot/teargas
+	name = "NSPA Officer Riot Tear Gas"
+	desc = "A NSPA Officer with riot tear gas"
+	equip_path = /datum/equipment_preset/cmb/nspa/riot/teargas
 
 /obj/effect/landmark/humanaispawner/marshal/deputy
 	name = "CMB Marshals - Deputy"

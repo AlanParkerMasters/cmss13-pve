@@ -21,10 +21,15 @@
 	desc = "A NSPA Officer with beanbag shotty"
 	path = /datum/equipment_preset/cmb/nspa/riot
 
-/datum/human_ai_equipment_preset/marshal/nspa/riot/launcher
-	name = "NSPA Officer Riot Launcher"
-	desc = "A NSPA Officer with a tear gas launcher"
-	path = /datum/equipment_preset/cmb/nspa/riot/launcher
+/datum/human_ai_equipment_preset/marshal/nspa/riot/shield
+	name = "NSPA Officer Riot Shield"
+	desc = "A NSPA Officer with a riot shield"
+	path = /datum/equipment_preset/cmb/nspa/riot/shield
+
+/datum/human_ai_equipment_preset/marshal/nspa/riot/teargas
+	name = "NSPA Officer Riot Tear Gas"
+	desc = "A NSPA Officer with riot tear gas"
+	path = /datum/equipment_preset/cmb/nspa/riot/teargas
 
 /datum/human_ai_equipment_preset/marshal/deputy
 	name = "CMB Marshals - Deputy"
