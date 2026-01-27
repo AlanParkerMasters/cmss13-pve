@@ -5426,13 +5426,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/corsat/yellow/north,
 /area/firefly/hangar)
-"aoJ" = (
-/obj/structure/machinery/light/double/blue/golden_arrow{
-	dir = 1;
-	light_power = 0.7
-	},
-/turf/open/floor/corsat/green/north,
-/area/firefly/cryo_cell)
 "aoK" = (
 /obj/structure/pipes/standard/manifold/hidden/supply{
 	dir = 4
@@ -5520,6 +5513,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 1
 	},
+/obj/structure/window/framed/corsat,
 /turf/open/floor/corsat/marked,
 /area/firefly/cafeteria)
 "aoU" = (
@@ -5578,9 +5572,9 @@
 	dir = 1;
 	name = "\improper Epsilon Wing Firing Range"
 	},
-/obj/structure/machinery/door/poddoor/almayer/locked{
-	name = "Blast Door";
+/obj/structure/machinery/door/poddoor/almayer/open{
 	id = "F-range2";
+	name = "Blast Door";
 	dir = 4
 	},
 /turf/open/floor/corsat/marked,
@@ -7351,9 +7345,9 @@
 /turf/open/space/basic,
 /area/firefly/cafeteria)
 "atv" = (
-/obj/structure/machinery/door/poddoor/almayer/locked{
-	name = "Blast Door";
-	id = "F-range"
+/obj/structure/machinery/door/poddoor/almayer/open{
+	id = "F-range";
+	name = "Blast Door"
 	},
 /turf/open/floor/corsat/marked,
 /area/firefly/cafeteria)
@@ -9927,6 +9921,11 @@
 	},
 /turf/open/floor/corsat/red/north,
 /area/firefly/cafeteria)
+"ayJ" = (
+/obj/structure/machinery/light/double/blue/golden_arrow,
+/obj/structure/closet/secure_closet/marine_personal/pmc/corpsman,
+/turf/open/floor/corsat/plate,
+/area/firefly/cryo_cell)
 "ayK" = (
 /obj/item/device/pinpointer{
 	pixel_x = -6;
@@ -10102,6 +10101,14 @@
 	},
 /turf/open/floor/corsat/cargo,
 /area/firefly/squad_omega)
+"ayW" = (
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 1;
+	light_power = 0.7
+	},
+/obj/structure/closet/secure_closet/marine_personal/pmc/squad_leader,
+/turf/open/floor/corsat/plate,
+/area/firefly/cryo_cell)
 "ayX" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/closet/crate/ammo/alt,
@@ -10169,6 +10176,19 @@
 	},
 /turf/open/floor/corsat/cargo,
 /area/firefly/squad_omega)
+"ayZ" = (
+/obj/structure/machinery/light/double/blue/golden_arrow,
+/obj/structure/closet/secure_closet/marine_personal/pmc/rifleman,
+/turf/open/floor/corsat/plate,
+/area/firefly/cryo_cell)
+"aza" = (
+/obj/structure/closet/secure_closet/marine_personal/pmc/rifleman,
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 1;
+	light_power = 0.7
+	},
+/turf/open/floor/corsat/plate,
+/area/firefly/cryo_cell)
 "azd" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "SE-out";
@@ -13320,9 +13340,9 @@
 /obj/structure/pipes/standard/simple/hidden/supply{
 	dir = 4
 	},
-/obj/structure/machinery/door/poddoor/almayer/locked{
-	name = "Blast Door";
+/obj/structure/machinery/door/poddoor/almayer/open{
 	id = "F-range2";
+	name = "Blast Door";
 	dir = 4
 	},
 /turf/open/floor/corsat/marked,
@@ -13798,11 +13818,6 @@
 /obj/structure/machinery/door/airlock/multi_tile/almayer/almayer/glass{
 	dir = 1;
 	name = "\improper Prep Lockers"
-	},
-/obj/structure/machinery/door/poddoor/almayer/locked{
-	name = "Blast Door";
-	id = "hanger_w";
-	dir = 4
 	},
 /turf/open/floor/corsat/marked,
 /area/firefly/hangar)
@@ -15935,9 +15950,9 @@
 /area/firefly/cafeteria)
 "gVg" = (
 /obj/structure/pipes/standard/simple/hidden/supply,
-/obj/structure/machinery/door/poddoor/almayer/locked{
-	name = "Blast Door";
-	id = "F-range"
+/obj/structure/machinery/door/poddoor/almayer/open{
+	id = "F-range";
+	name = "Blast Door"
 	},
 /turf/open/floor/corsat/marked,
 /area/firefly/cafeteria)
@@ -20247,14 +20262,6 @@
 	pixel_x = -1
 	},
 /turf/open/floor/corsat/squares,
-/area/firefly/hangar)
-"lzR" = (
-/obj/structure/machinery/door/poddoor/almayer/locked{
-	name = "Blast Door";
-	id = "hanger_w";
-	dir = 4
-	},
-/turf/open/floor/corsat/marked,
 /area/firefly/hangar)
 "lAg" = (
 /obj/structure/machinery/cryopod/big{
@@ -25815,15 +25822,6 @@
 	},
 /turf/open/floor/corsat/yellow/southwest,
 /area/firefly/supply)
-"rRy" = (
-/obj/structure/window/framed/corsat/security,
-/obj/structure/machinery/door/poddoor/almayer/locked{
-	name = "Blast Door";
-	id = "hanger_w";
-	dir = 4
-	},
-/turf/open/floor/corsat/marked,
-/area/firefly/hangar)
 "rSa" = (
 /obj/structure/prop/static_tank/water{
 	layer = 2
@@ -37275,17 +37273,17 @@ afe
 aeV
 aeV
 adw
-adA
-aoJ
+aza
+aKv
 aoE
-anM
+anL
+ayZ
 adA
-adA
-adA
-aoJ
+ayW
+aKv
 aoE
-anM
-adA
+anL
+ayJ
 adA
 kjO
 rwX
@@ -37599,17 +37597,17 @@ aeV
 aeV
 aeV
 adw
-adA
-aoJ
+aza
+aKv
 adY
-anM
+anL
+ayZ
 adA
-adA
-adA
-aoJ
+ayW
+aKv
 aoE
-anM
-adA
+anL
+ayJ
 adA
 hCh
 gez
@@ -38746,7 +38744,7 @@ rlG
 paT
 mid
 ayB
-hPW
+ayw
 ayw
 ayq
 ayh
@@ -38908,7 +38906,7 @@ rlG
 nWg
 mid
 ayI
-adk
+ayz
 ayx
 ayr
 aym
@@ -39070,7 +39068,7 @@ rlG
 ayF
 ayE
 asP
-adk
+ayu
 ayy
 ays
 aym
@@ -44089,10 +44087,10 @@ aeg
 aeg
 aeg
 acW
-rRy
-lzR
+mST
+adx
 eHc
-rRy
+mST
 acW
 acW
 acW
