@@ -9115,6 +9115,9 @@
 	light_power = 0.7
 	},
 /obj/item/smartgun_battery,
+/obj/item/clothing/suit/storage/marine/smartgunner/veteran/pmc/terminator{
+	color = "grey"
+	},
 /turf/open/floor/corsat/cargo,
 /area/firefly/squad_omega)
 "axe" = (
@@ -9466,6 +9469,11 @@
 /obj/item/ammo_box/magazine/nsg23,
 /obj/item/ammo_box/magazine/nsg23,
 /obj/item/ammo_box/magazine/nsg23,
+/obj/item/ammo_box/magazine/nsg23/heap,
+/obj/item/ammo_box/magazine/nsg23/heap,
+/obj/item/ammo_box/magazine/m39/heap,
+/obj/item/ammo_box/magazine/m39/heap,
+/obj/item/ammo_box/magazine/m39/heap,
 /turf/open/floor/corsat/plate,
 /area/firefly/squad_omega)
 "axO" = (
@@ -9725,6 +9733,9 @@
 /obj/item/ammo_magazine/smartgun,
 /obj/item/storage/belt/marine/smartgunner,
 /obj/item/smartgun_battery,
+/obj/item/clothing/suit/storage/marine/smartgunner/veteran/pmc/terminator{
+	color = "grey"
+	},
 /turf/open/floor/corsat/cargo,
 /area/firefly/squad_omega)
 "ayk" = (
@@ -10084,26 +10095,22 @@
 	},
 /turf/open/floor/corsat/cargo,
 /area/firefly/squad_omega)
-"ayW" = (
-/mob/living/simple_animal/cat/kitten,
-/turf/open/floor/corsat/lightplate,
-/area/firefly/cafeteria)
 "ayX" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/closet/crate/ammo/alt,
-/obj/item/clothing/shoes/veteran/pmc/commando,
-/obj/item/clothing/shoes/veteran/pmc/commando,
-/obj/item/clothing/shoes/veteran/pmc/commando,
-/obj/item/clothing/shoes/veteran/pmc/commando,
-/obj/item/clothing/shoes/veteran/pmc/commando,
-/obj/item/clothing/shoes/veteran/pmc/commando,
-/obj/item/clothing/shoes/veteran/pmc/commando,
-/obj/item/clothing/shoes/veteran/pmc/commando,
-/obj/item/clothing/shoes/veteran/pmc/commando,
-/obj/item/clothing/shoes/veteran/pmc/commando,
-/obj/item/clothing/shoes/veteran/pmc/commando,
-/obj/item/clothing/shoes/veteran/pmc/commando,
-/obj/item/clothing/shoes/veteran/pmc/commando,
+/obj/item/clothing/shoes/marine/corporate/knife,
+/obj/item/clothing/shoes/marine/corporate/knife,
+/obj/item/clothing/shoes/marine/corporate/knife,
+/obj/item/clothing/shoes/marine/corporate/knife,
+/obj/item/clothing/shoes/marine/corporate/knife,
+/obj/item/clothing/shoes/marine/corporate/knife,
+/obj/item/clothing/shoes/marine/corporate/knife,
+/obj/item/clothing/shoes/marine/corporate/knife,
+/obj/item/clothing/shoes/marine/corporate/knife,
+/obj/item/clothing/shoes/marine/corporate/knife,
+/obj/item/clothing/shoes/marine/corporate/knife,
+/obj/item/clothing/shoes/marine/corporate/knife,
+/obj/item/clothing/shoes/marine/corporate/knife,
 /turf/open/floor/corsat/cargo,
 /area/firefly/squad_omega)
 "ayY" = (
@@ -39369,7 +39376,7 @@ adm
 egw
 rlG
 jwW
-ayW
+gRe
 kgu
 ayR
 sYA
