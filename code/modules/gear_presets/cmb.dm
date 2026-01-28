@@ -452,7 +452,7 @@
 	name = "Hybrisa - NSPA Constable"
 	assignment = "NSPA Constable"
 	paygrades = list(PAY_SHORT_CST = JOB_PLAYTIME_TIER_0, PAY_SHORT_SC = JOB_PLAYTIME_TIER_3, PAY_SHORT_SGT = JOB_PLAYTIME_TIER_4)
-	skills = /datum/skills/civilian/survivor/marshal
+	skills = /datum/skills/cmb
 	flags = EQUIPMENT_PRESET_EXTRA
 	idtype = /obj/item/card/id/nspa_silver
 	access = list(ACCESS_CIVILIAN_PUBLIC,ACCESS_CIVILIAN_RESEARCH,ACCESS_CIVILIAN_ENGINEERING,ACCESS_CIVILIAN_LOGISTICS,ACCESS_CIVILIAN_BRIG,ACCESS_CIVILIAN_MEDBAY,ACCESS_CIVILIAN_COMMAND,)
@@ -497,7 +497,7 @@
 	name = "Hybrisa - NSPA Constable Shotgunner"
 	assignment = "NSPA Constable"
 	paygrades = list(PAY_SHORT_CST = JOB_PLAYTIME_TIER_0, PAY_SHORT_SC = JOB_PLAYTIME_TIER_3, PAY_SHORT_SGT = JOB_PLAYTIME_TIER_4)
-	skills = /datum/skills/civilian/survivor/marshal
+	skills = /datum/skills/cmb
 	flags = EQUIPMENT_PRESET_EXTRA
 	idtype = /obj/item/card/id/nspa_silver
 	access = list(ACCESS_CIVILIAN_PUBLIC,ACCESS_CIVILIAN_RESEARCH,ACCESS_CIVILIAN_ENGINEERING,ACCESS_CIVILIAN_LOGISTICS,ACCESS_CIVILIAN_BRIG,ACCESS_CIVILIAN_MEDBAY,ACCESS_CIVILIAN_COMMAND,)
@@ -553,7 +553,7 @@
 	name = "Hybrisa - NSPA Constable SMG"
 	assignment = "NSPA Constable"
 	paygrades = list(PAY_SHORT_CST = JOB_PLAYTIME_TIER_0, PAY_SHORT_SC = JOB_PLAYTIME_TIER_3, PAY_SHORT_SGT = JOB_PLAYTIME_TIER_4)
-	skills = /datum/skills/civilian/survivor/marshal
+	skills = /datum/skills/cmb
 	flags = EQUIPMENT_PRESET_EXTRA
 	idtype = /obj/item/card/id/nspa_silver
 	access = list(ACCESS_CIVILIAN_PUBLIC,ACCESS_CIVILIAN_RESEARCH,ACCESS_CIVILIAN_ENGINEERING,ACCESS_CIVILIAN_LOGISTICS,ACCESS_CIVILIAN_BRIG,ACCESS_CIVILIAN_MEDBAY,ACCESS_CIVILIAN_COMMAND,)
@@ -608,7 +608,7 @@
 	name = "Hybrisa - NSPA Constable Riot"
 	assignment = "NSPA Riot Police"
 	paygrades = list(PAY_SHORT_CST = JOB_PLAYTIME_TIER_0, PAY_SHORT_SC = JOB_PLAYTIME_TIER_3, PAY_SHORT_SGT = JOB_PLAYTIME_TIER_4)
-	skills = /datum/skills/cmb
+	skills = /datum/skills/MP
 	flags = EQUIPMENT_PRESET_EXTRA
 	idtype = /obj/item/card/id/nspa_silver
 	access = list(ACCESS_CIVILIAN_PUBLIC,ACCESS_CIVILIAN_RESEARCH,ACCESS_CIVILIAN_ENGINEERING,ACCESS_CIVILIAN_LOGISTICS,ACCESS_CIVILIAN_BRIG,ACCESS_CIVILIAN_MEDBAY,ACCESS_CIVILIAN_COMMAND,)
@@ -681,7 +681,7 @@
 	name = "Hybrisa - NSPA Constable Riot"
 	assignment = "NSPA Riot Police"
 	paygrades = list(PAY_SHORT_CST = JOB_PLAYTIME_TIER_0, PAY_SHORT_SC = JOB_PLAYTIME_TIER_3, PAY_SHORT_SGT = JOB_PLAYTIME_TIER_4)
-	skills = /datum/skills/cmb
+	skills = /datum/skills/MP
 	flags = EQUIPMENT_PRESET_EXTRA
 	idtype = /obj/item/card/id/nspa_silver
 	access = list(ACCESS_CIVILIAN_PUBLIC,ACCESS_CIVILIAN_RESEARCH,ACCESS_CIVILIAN_ENGINEERING,ACCESS_CIVILIAN_LOGISTICS,ACCESS_CIVILIAN_BRIG,ACCESS_CIVILIAN_MEDBAY,ACCESS_CIVILIAN_COMMAND,)

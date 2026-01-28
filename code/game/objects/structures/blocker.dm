@@ -42,7 +42,7 @@
 	name = "dense fog"
 	desc = "It looks way too dangerous to traverse. Best wait until it has cleared up."
 	icon = 'icons/effects/effects.dmi'
-	icon_state = "smoke"
+	icon_state = "fog-real"
 	opacity = TRUE
 
 /obj/structure/blocker/fog/attack_hand(mob/M)
