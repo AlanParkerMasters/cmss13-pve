@@ -33,7 +33,7 @@
 	//jacket
 	add_civilian_jacket(new_human)
 	//limbs
-	add_civilian_shoe(new_human)
+	add_rebel_ua_shoes(new_human)
 	if(prob(90))
 		add_survivor_weapon_pistol(new_human)
 	else
@@ -44,6 +44,7 @@
 	//pockets
 	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/firstaid/full/alternate, WEAR_L_STORE)
 	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/general/medium, WEAR_R_STORE)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/firstaid/softpack/adv(new_human), WEAR_IN_BACK)
 
 /datum/equipment_preset/rebel/soldier
 	name = "UA Rebel, Soldier (Rifle)"
@@ -360,7 +361,7 @@
 		new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/marine/smartgunner/black(new_human), WEAR_JACKET)
 
 	//waist
-	new_human.equip_to_slot_or_del(new /obj/item/storage/belt/marine(new_human), WEAR_WAIST)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/belt/gun/smartgunner/army/full(new_human), WEAR_WAIST)
 	//limbs
 	add_rebel_ua_shoes(new_human)
 	if(prob(35))

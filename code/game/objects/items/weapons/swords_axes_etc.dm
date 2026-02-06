@@ -121,6 +121,17 @@
 							SPAN_WARNING("You beat [target] with \the [src]!"))
 	return TRUE
 
+/obj/item/weapon/telebaton/on
+	name = "telescopic baton"
+	desc = "A compact yet rebalanced personal defense weapon. Can be concealed when folded. It will knock down humans when not on harm intent."
+	on = 1
+	icon_state = "telebaton_1"
+	item_state = "telebaton_1"
+	w_class = SIZE_MEDIUM
+	force = MELEE_FORCE_VERY_STRONG
+	stun_force = 40
+	attack_verb = list("smacked", "struck", "slapped", "beat")
+
 /*
  * Energy Shield
  */

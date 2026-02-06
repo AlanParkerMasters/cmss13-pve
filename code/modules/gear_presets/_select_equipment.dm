@@ -761,8 +761,6 @@ GLOBAL_LIST_EMPTY(personal_closets)
 	if(!istype(new_human))
 		return
 	var/shoespath = pick(
-		/obj/item/clothing/shoes/marine/civilian,
-		/obj/item/clothing/shoes/marine/civilian/brown,
 		/obj/item/clothing/shoes/marine/knife,
 		/obj/item/clothing/shoes/marine/jungle/knife,
 		)

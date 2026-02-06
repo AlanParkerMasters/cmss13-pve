@@ -677,6 +677,40 @@
 	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/explosive, WEAR_R_STORE)
 	new_human.equip_to_slot_or_del(new /obj/item/weapon/shield/riot, WEAR_R_HAND)
 
+/datum/equipment_preset/cmb/nspa/riot/shield/baton
+	name = "Hybrisa - NSPA Constable Riot Baton Shield"
+	assignment = "NSPA Riot Police"
+	paygrades = list(PAY_SHORT_CST = JOB_PLAYTIME_TIER_0, PAY_SHORT_SC = JOB_PLAYTIME_TIER_3, PAY_SHORT_SGT = JOB_PLAYTIME_TIER_4)
+	skills = /datum/skills/MP
+	flags = EQUIPMENT_PRESET_EXTRA
+	idtype = /obj/item/card/id/nspa_silver
+	access = list(ACCESS_CIVILIAN_PUBLIC,ACCESS_CIVILIAN_RESEARCH,ACCESS_CIVILIAN_ENGINEERING,ACCESS_CIVILIAN_LOGISTICS,ACCESS_CIVILIAN_BRIG,ACCESS_CIVILIAN_MEDBAY,ACCESS_CIVILIAN_COMMAND,)
+
+/datum/equipment_preset/cmb/nspa/riot/shield/baton/load_gear(mob/living/carbon/human/new_human)
+	new_human.undershirt = "undershirt"
+	//back
+	new_human.equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/black, WEAR_BACK)
+	new_human.equip_to_slot_or_del(new /obj/item/restraint/handcuffs, WEAR_IN_BACK)
+	//face
+	new_human.equip_to_slot_or_del(new /obj/item/device/radio/headset/distress, WEAR_L_EAR)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/mask/gas/pmc, WEAR_FACE)
+	//uniform + armor
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/under/hybrisa/nspa_officer, WEAR_BODY)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/glasses/sunglasses/sechud/blue, WEAR_EYES)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/armor/riot, WEAR_JACKET)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/mask/gas/military, WEAR_FACE)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/grey, WEAR_HEAD)
+	new_human.equip_to_slot_or_del(new /obj/item/prop/helmetgarb/riot_shield, WEAR_IN_HELMET)
+	//limbs
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/shoes/marine/civilian, WEAR_FEET)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/gloves/combat, WEAR_HANDS)
+	//pockets
+	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/firstaid/full/alternate, WEAR_L_STORE)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/explosive, WEAR_R_STORE)
+	new_human.equip_to_slot_or_del(new /obj/item/weapon/shield/riot, WEAR_L_HAND)
+	new_human.equip_to_slot_or_del(new /obj/item/weapon/telebaton/on, WEAR_R_HAND)
+
+
 /datum/equipment_preset/cmb/nspa/riot/teargas
 	name = "Hybrisa - NSPA Constable Riot"
 	assignment = "NSPA Riot Police"
