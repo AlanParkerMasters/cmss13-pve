@@ -1696,6 +1696,12 @@
 /area/firefly/medical)
 "aeQ" = (
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/machinery/cm_vending/gear/medic_chemical{
+	req_access = list(202);
+	name = "\improper WY Squad Medical Chemical Rack";
+	pixel_y = 20;
+	density = 0
+	},
 /turf/open/floor/corsat/purple/north,
 /area/firefly/medical)
 "aeR" = (
@@ -1707,6 +1713,10 @@
 	},
 /obj/item/ammo_box/magazine/nade_box/smoke/green{
 	pixel_y = 11
+	},
+/obj/item/ammo_box/magazine/nade_box/smoke{
+	pixel_y = 9;
+	pixel_x = 2
 	},
 /turf/open/floor/corsat/plate,
 /area/firefly/squad_omega)
@@ -4145,29 +4155,11 @@
 /obj/structure/machinery/light/double/blue/golden_arrow,
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/closet/crate/ammo/alt,
-/obj/item/weapon/gun/smg/m39/elite/pve{
-	current_mag = null;
-	pixel_y = 9
+/obj/item/storage/box/guncase/heavy/sentry/pmc_platoon{
+	pixel_y = -2
 	},
-/obj/item/weapon/gun/smg/m39/elite/pve{
-	current_mag = null;
-	pixel_y = 3
-	},
-/obj/item/weapon/gun/smg/m39/elite/pve{
-	current_mag = null;
-	pixel_y = -3
-	},
-/obj/item/weapon/gun/smg/m39/elite/pve{
-	current_mag = null;
-	pixel_y = 9
-	},
-/obj/item/weapon/gun/smg/m39/elite/pve{
-	current_mag = null;
-	pixel_y = 3
-	},
-/obj/item/weapon/gun/smg/m39/elite/pve{
-	current_mag = null;
-	pixel_y = -3
+/obj/item/storage/box/guncase/heavy/sentry/pmc_platoon{
+	pixel_y = 8
 	},
 /turf/open/floor/corsat/cargo,
 /area/firefly/squad_omega)
@@ -4244,6 +4236,18 @@
 /obj/item/weapon/gun/smg/m39/elite/pve{
 	current_mag = null;
 	pixel_y = -3
+	},
+/obj/item/weapon/gun/smg/m39/elite/pve{
+	current_mag = null;
+	pixel_y = -3
+	},
+/obj/item/weapon/gun/smg/m39/elite/pve{
+	current_mag = null;
+	pixel_y = 3
+	},
+/obj/item/weapon/gun/smg/m39/elite/pve{
+	current_mag = null;
+	pixel_y = 9
 	},
 /turf/open/floor/corsat/cargo,
 /area/firefly/squad_omega)
@@ -5426,6 +5430,11 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/corsat/yellow/north,
 /area/firefly/hangar)
+"aoJ" = (
+/obj/structure/surface/table/reinforced/almayer_B,
+/obj/item/holder/cat/kitten,
+/turf/open/floor/corsat/lightplate,
+/area/firefly/cafeteria)
 "aoK" = (
 /obj/structure/pipes/standard/manifold/hidden/supply{
 	dir = 4
@@ -7471,13 +7480,25 @@
 /turf/open/floor/corsat/purple/northeast,
 /area/firefly/ares)
 "atK" = (
-/obj/structure/closet/crate/ammo/alt,
-/obj/item/storage/box/guncase/heavy/sentry/pmc_platoon{
-	pixel_y = 8
+/obj/structure/closet/crate/medical{
+	color = "grey"
 	},
-/obj/item/storage/box/guncase/heavy/sentry/pmc_platoon{
-	pixel_y = -2
-	},
+/obj/item/storage/firstaid/softpack/adv,
+/obj/item/storage/firstaid/softpack/adv,
+/obj/item/storage/firstaid/softpack/adv,
+/obj/item/storage/firstaid/softpack/adv,
+/obj/item/storage/firstaid/softpack/adv,
+/obj/item/storage/firstaid/softpack/adv,
+/obj/item/storage/firstaid/softpack/adv,
+/obj/item/storage/firstaid/softpack/adv,
+/obj/item/storage/firstaid/softpack/adv,
+/obj/item/storage/firstaid/softpack/adv,
+/obj/item/storage/firstaid/softpack/adv,
+/obj/item/storage/firstaid/softpack/adv,
+/obj/item/storage/firstaid/softpack/adv,
+/obj/item/storage/firstaid/softpack/adv,
+/obj/item/storage/firstaid/softpack/adv,
+/obj/item/storage/firstaid/softpack/adv,
 /turf/open/floor/corsat/plate,
 /area/firefly/squad_omega)
 "atL" = (
@@ -7525,6 +7546,21 @@
 	color = "grey"
 	},
 /obj/structure/closet/crate/ammo/alt,
+/obj/item/clothing/head/helmet/marine/veteran/pmc/commando{
+	color = "grey"
+	},
+/obj/item/clothing/head/helmet/marine/veteran/pmc/commando{
+	color = "grey"
+	},
+/obj/item/clothing/head/helmet/marine/veteran/pmc/commando{
+	color = "grey"
+	},
+/obj/item/clothing/head/helmet/marine/veteran/pmc/commando{
+	color = "grey"
+	},
+/obj/item/clothing/head/helmet/marine/veteran/pmc/commando{
+	color = "grey"
+	},
 /turf/open/floor/corsat/cargo,
 /area/firefly/squad_omega)
 "atM" = (
@@ -8802,6 +8838,51 @@
 /obj/item/clothing/gloves/marine/veteran/pmc/commando{
 	color = "grey"
 	},
+/obj/item/clothing/gloves/marine/veteran/pmc/commando{
+	color = "grey"
+	},
+/obj/item/clothing/gloves/marine/veteran/pmc/commando{
+	color = "grey"
+	},
+/obj/item/clothing/gloves/marine/veteran/pmc/commando{
+	color = "grey"
+	},
+/obj/item/clothing/gloves/marine/veteran/pmc/commando{
+	color = "grey"
+	},
+/obj/item/clothing/gloves/marine/veteran/pmc/commando{
+	color = "grey"
+	},
+/obj/item/clothing/gloves/marine/veteran/pmc/commando{
+	color = "grey"
+	},
+/obj/item/clothing/gloves/marine/veteran/pmc/commando{
+	color = "grey"
+	},
+/obj/item/clothing/gloves/marine/veteran/pmc/commando{
+	color = "grey"
+	},
+/obj/item/clothing/gloves/marine/veteran/pmc/commando{
+	color = "grey"
+	},
+/obj/item/clothing/gloves/marine/veteran/pmc/commando{
+	color = "grey"
+	},
+/obj/item/clothing/gloves/marine/veteran/pmc/commando{
+	color = "grey"
+	},
+/obj/item/clothing/gloves/marine/veteran/pmc/commando{
+	color = "grey"
+	},
+/obj/item/clothing/gloves/marine/veteran/pmc/commando{
+	color = "grey"
+	},
+/obj/item/clothing/gloves/marine/veteran/pmc/commando{
+	color = "grey"
+	},
+/obj/item/clothing/gloves/marine/veteran/pmc/commando{
+	color = "grey"
+	},
 /turf/open/floor/corsat/cargo,
 /area/firefly/squad_omega)
 "awC" = (
@@ -8980,12 +9061,28 @@
 /turf/open/floor/corsat/plate,
 /area/firefly/cryo_cell)
 "awY" = (
-/obj/structure/surface/table/reinforced/almayer_B,
 /obj/effect/decal/cleanable/dirt,
-/obj/item/ammo_box/magazine/nade_box/smoke{
-	pixel_y = 9;
-	pixel_x = 2
+/obj/structure/surface/rack{
+	color = "#6b675e";
+	layer = 2.79
 	},
+/obj/item/storage/large_holster/m39,
+/obj/item/storage/large_holster/m39,
+/obj/item/storage/large_holster/m39,
+/obj/item/storage/large_holster/m39,
+/obj/item/storage/large_holster/m39,
+/obj/item/storage/large_holster/m39,
+/obj/item/storage/large_holster/m39,
+/obj/item/storage/large_holster/m39,
+/obj/item/storage/large_holster/m39,
+/obj/item/storage/large_holster/m39,
+/obj/item/storage/large_holster/m39,
+/obj/item/storage/large_holster/m39,
+/obj/item/storage/large_holster/m39,
+/obj/item/storage/large_holster/m39,
+/obj/item/storage/large_holster/m39,
+/obj/item/storage/large_holster/m39,
+/obj/item/storage/large_holster/m39,
 /turf/open/floor/corsat/plate,
 /area/firefly/squad_omega)
 "awZ" = (
@@ -9023,24 +9120,80 @@
 /turf/open/floor/wood/ship,
 /area/firefly/cafeteria)
 "axa" = (
-/obj/structure/surface/rack{
-	color = "#6b675e";
-	layer = 2.79
-	},
 /obj/structure/machinery/light/double/blue/golden_arrow{
 	dir = 4;
 	light_power = 0.7
 	},
-/obj/item/storage/large_holster/m39,
-/obj/item/storage/large_holster/m39,
-/obj/item/storage/large_holster/m39,
-/obj/item/storage/large_holster/m39,
-/obj/item/storage/large_holster/m39,
-/obj/item/storage/large_holster/m39,
-/obj/item/storage/large_holster/m39,
-/obj/item/storage/large_holster/m39,
-/obj/item/storage/large_holster/m39,
-/obj/item/storage/large_holster/m39,
+/obj/structure/closet/crate/ammo/alt,
+/obj/item/clothing/under/marine/veteran/pmc/commando{
+	color = "grey"
+	},
+/obj/item/clothing/under/marine/veteran/pmc/commando{
+	color = "grey"
+	},
+/obj/item/clothing/under/marine/veteran/pmc/commando{
+	color = "grey"
+	},
+/obj/item/clothing/under/marine/veteran/pmc/commando{
+	color = "grey"
+	},
+/obj/item/clothing/under/marine/veteran/pmc/commando{
+	color = "grey"
+	},
+/obj/item/clothing/under/marine/veteran/pmc/commando{
+	color = "grey"
+	},
+/obj/item/clothing/under/marine/veteran/pmc/commando{
+	color = "grey"
+	},
+/obj/item/clothing/under/marine/veteran/pmc/commando{
+	color = "grey"
+	},
+/obj/item/clothing/under/marine/veteran/pmc/commando{
+	color = "grey"
+	},
+/obj/item/clothing/under/marine/veteran/pmc/commando{
+	color = "grey"
+	},
+/obj/item/clothing/under/marine/veteran/pmc/commando{
+	color = "grey"
+	},
+/obj/item/clothing/under/marine/veteran/pmc/commando{
+	color = "grey"
+	},
+/obj/item/clothing/under/marine/veteran/pmc/commando{
+	color = "grey"
+	},
+/obj/item/clothing/under/marine/veteran/pmc/commando{
+	color = "grey"
+	},
+/obj/item/clothing/under/marine/veteran/pmc/commando{
+	color = "grey"
+	},
+/obj/item/clothing/under/marine/veteran/pmc/commando{
+	color = "grey"
+	},
+/obj/item/clothing/under/marine/veteran/pmc/commando{
+	color = "grey"
+	},
+/obj/item/clothing/under/marine/veteran/pmc/commando{
+	color = "grey"
+	},
+/obj/item/clothing/under/marine/veteran/pmc/commando{
+	color = "grey"
+	},
+/obj/item/clothing/under/marine/veteran/pmc/commando{
+	color = "grey"
+	},
+/obj/item/clothing/under/marine/veteran/pmc/commando{
+	color = "grey"
+	},
+/obj/item/clothing/under/marine/veteran/pmc/commando{
+	color = "grey"
+	},
+/obj/item/clothing/under/marine/veteran/pmc/commando{
+	color = "grey"
+	},
 /turf/open/floor/corsat/plate,
 /area/firefly/squad_omega)
 "axb" = (
@@ -9524,6 +9677,33 @@
 /obj/item/clothing/suit/storage/marine/veteran/pmc/commando{
 	color = "grey"
 	},
+/obj/item/clothing/suit/storage/marine/veteran/pmc/commando{
+	color = "grey"
+	},
+/obj/item/clothing/suit/storage/marine/veteran/pmc/commando{
+	color = "grey"
+	},
+/obj/item/clothing/suit/storage/marine/veteran/pmc/commando{
+	color = "grey"
+	},
+/obj/item/clothing/suit/storage/marine/veteran/pmc/commando{
+	color = "grey"
+	},
+/obj/item/clothing/suit/storage/marine/veteran/pmc/commando{
+	color = "grey"
+	},
+/obj/item/clothing/suit/storage/marine/veteran/pmc/commando{
+	color = "grey"
+	},
+/obj/item/clothing/suit/storage/marine/veteran/pmc/commando{
+	color = "grey"
+	},
+/obj/item/clothing/suit/storage/marine/veteran/pmc/commando{
+	color = "grey"
+	},
+/obj/item/clothing/suit/storage/marine/veteran/pmc/commando{
+	color = "grey"
+	},
 /turf/open/floor/corsat/cargo,
 /area/firefly/squad_omega)
 "axP" = (
@@ -9935,33 +10115,6 @@
 	},
 /turf/open/floor/corsat/squares,
 /area/firefly/briefing)
-"ayM" = (
-/obj/structure/surface/table/reinforced/almayer_B,
-/obj/item/storage/firstaid/robust,
-/obj/item/storage/firstaid/robust{
-	pixel_y = 7;
-	pixel_x = 14
-	},
-/turf/open/floor/corsat/squares,
-/area/firefly/hangar)
-"ayN" = (
-/obj/structure/surface/table/reinforced/almayer_B,
-/obj/item/storage/firstaid/robust{
-	pixel_x = -5
-	},
-/obj/item/storage/firstaid/robust{
-	pixel_x = 10;
-	pixel_y = 6
-	},
-/turf/open/floor/corsat/squares,
-/area/firefly/hangar)
-"ayO" = (
-/obj/structure/surface/table/reinforced/almayer_B,
-/obj/item/storage/firstaid/robust{
-	pixel_y = 6
-	},
-/turf/open/floor/corsat/squares,
-/area/firefly/hangar)
 "ayP" = (
 /obj/structure/surface/table/almayer,
 /obj/item/storage/donut_box{
@@ -10006,59 +10159,6 @@
 	},
 /turf/open/floor/corsat/lightplate,
 /area/firefly/cafeteria)
-"ayS" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/closet/crate/ammo/alt,
-/obj/item/clothing/under/marine/veteran/pmc/commando{
-	color = "grey"
-	},
-/obj/item/clothing/under/marine/veteran/pmc/commando{
-	color = "grey"
-	},
-/obj/item/clothing/under/marine/veteran/pmc/commando{
-	color = "grey"
-	},
-/obj/item/clothing/under/marine/veteran/pmc/commando{
-	color = "grey"
-	},
-/obj/item/clothing/under/marine/veteran/pmc/commando{
-	color = "grey"
-	},
-/obj/item/clothing/under/marine/veteran/pmc/commando{
-	color = "grey"
-	},
-/obj/item/clothing/under/marine/veteran/pmc/commando{
-	color = "grey"
-	},
-/obj/item/clothing/under/marine/veteran/pmc/commando{
-	color = "grey"
-	},
-/obj/item/clothing/under/marine/veteran/pmc/commando{
-	color = "grey"
-	},
-/obj/item/clothing/under/marine/veteran/pmc/commando{
-	color = "grey"
-	},
-/obj/item/clothing/under/marine/veteran/pmc/commando{
-	color = "grey"
-	},
-/obj/item/clothing/under/marine/veteran/pmc/commando{
-	color = "grey"
-	},
-/obj/item/clothing/under/marine/veteran/pmc/commando{
-	color = "grey"
-	},
-/obj/item/clothing/under/marine/veteran/pmc/commando{
-	color = "grey"
-	},
-/obj/item/clothing/under/marine/veteran/pmc/commando{
-	color = "grey"
-	},
-/obj/item/clothing/under/marine/veteran/pmc/commando{
-	color = "grey"
-	},
-/turf/open/floor/corsat/squares,
-/area/firefly/squad_omega)
 "ayT" = (
 /obj/item/ammo_box/magazine/mk1/large/heap{
 	pixel_y = 8
@@ -10106,6 +10206,17 @@
 "ayX" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/closet/crate/ammo/alt,
+/obj/item/clothing/shoes/marine/corporate/knife,
+/obj/item/clothing/shoes/marine/corporate/knife,
+/obj/item/clothing/shoes/marine/corporate/knife,
+/obj/item/clothing/shoes/marine/corporate/knife,
+/obj/item/clothing/shoes/marine/corporate/knife,
+/obj/item/clothing/shoes/marine/corporate/knife,
+/obj/item/clothing/shoes/marine/corporate/knife,
+/obj/item/clothing/shoes/marine/corporate/knife,
+/obj/item/clothing/shoes/marine/corporate/knife,
+/obj/item/clothing/shoes/marine/corporate/knife,
+/obj/item/clothing/shoes/marine/corporate/knife,
 /obj/item/clothing/shoes/marine/corporate/knife,
 /obj/item/clothing/shoes/marine/corporate/knife,
 /obj/item/clothing/shoes/marine/corporate/knife,
@@ -11799,10 +11910,11 @@
 /turf/open/floor/corsat/yellow,
 /area/firefly/supply)
 "cnl" = (
-/obj/structure/pipes/standard/tank/oxygen,
 /obj/structure/sign/nosmoking_2{
 	pixel_y = 30
 	},
+/obj/structure/medical_supply_link/green,
+/obj/structure/machinery/cm_vending/sorted/medical/no_access,
 /turf/open/floor/corsat/purple/north,
 /area/firefly/medical)
 "cnR" = (
@@ -12361,6 +12473,14 @@
 	pixel_y = 10
 	},
 /obj/structure/surface/table/reinforced/prison,
+/obj/item/storage/surgical_case/regular{
+	pixel_y = 2;
+	pixel_x = 8
+	},
+/obj/item/storage/surgical_case/regular{
+	pixel_y = -4;
+	pixel_x = 5
+	},
 /turf/open/floor/corsat/purple,
 /area/firefly/medical)
 "cVj" = (
@@ -20376,8 +20496,8 @@
 "lLq" = (
 /obj/structure/surface/table/reinforced/prison,
 /obj/item/device/helmet_visor/medical/advanced{
-	pixel_x = -8;
-	pixel_y = 8
+	pixel_x = -5;
+	pixel_y = 11
 	},
 /obj/item/storage/box/syringes{
 	pixel_x = 5;
@@ -20394,6 +20514,14 @@
 /obj/item/reagent_container/hypospray/autoinjector/adrenaline_concentrated{
 	pixel_x = -5;
 	pixel_y = -9
+	},
+/obj/item/device/helmet_visor/medical/advanced{
+	pixel_x = -8;
+	pixel_y = 5
+	},
+/obj/item/device/helmet_visor/medical/advanced{
+	pixel_x = 2;
+	pixel_y = 3
 	},
 /turf/open/floor/corsat/purple/east,
 /area/firefly/medical)
@@ -23756,13 +23884,12 @@
 /turf/open/floor/corsat/squares,
 /area/firefly/briefing)
 "psW" = (
-/obj/structure/pipes/unary/freezer,
-/obj/item/reagent_container/spray/cleaner{
-	pixel_x = 5;
-	pixel_y = 10
-	},
 /obj/structure/sign/safety/med_life_support{
 	pixel_y = 27
+	},
+/obj/structure/medical_supply_link/green,
+/obj/structure/machinery/cm_vending/sorted/medical/blood/antag{
+	req_one_access = null
 	},
 /turf/open/floor/corsat/purple/northeast,
 /area/firefly/medical)
@@ -27610,13 +27737,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/corsat/arrow_south,
 /area/firefly/briefing)
-"tIk" = (
-/obj/structure/medical_supply_link/green,
-/obj/structure/machinery/cm_vending/sorted/medical/blood/antag{
-	req_one_access = null
-	},
-/turf/open/floor/corsat/purple/north,
-/area/firefly/medical)
 "tIH" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "NE-out";
@@ -29974,14 +30094,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/corsat/white/west,
 /area/firefly/hangar)
-"wrO" = (
-/obj/structure/surface/table/reinforced/almayer_B,
-/obj/structure/machinery/microwave{
-	pixel_y = 7
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/corsat/lightplate,
-/area/firefly/cafeteria)
 "wrQ" = (
 /obj/structure/desertdam/decals/road_edge{
 	pixel_x = 9;
@@ -38574,7 +38686,7 @@ pWL
 adm
 hSI
 aox
-wrO
+aoU
 gRe
 ucp
 tiW
@@ -38736,7 +38848,7 @@ cbZ
 adm
 apG
 aox
-nHU
+gRe
 gRe
 kgu
 fsA
@@ -39546,7 +39658,7 @@ tCk
 adm
 egw
 rlG
-jwW
+aoJ
 gRe
 kgu
 ayR
@@ -40511,7 +40623,7 @@ pBe
 aqJ
 uKl
 bsb
-tIk
+pgD
 gAx
 xZt
 cRu
@@ -43923,7 +44035,7 @@ awt
 ayk
 awp
 awt
-ayS
+awn
 awn
 awn
 axN
@@ -44739,7 +44851,7 @@ asS
 oiV
 wvs
 aof
-ayM
+adJ
 adJ
 adF
 xnS
@@ -44888,12 +45000,12 @@ asx
 aei
 snQ
 aev
-rNE
 sQd
-rNE
+sQd
+sQd
 aev
 rNE
-sQd
+rNE
 rNE
 aev
 siC
@@ -44901,7 +45013,7 @@ aei
 mST
 aod
 adK
-ayN
+adJ
 adJ
 adG
 sHY
@@ -45063,7 +45175,7 @@ asS
 qpN
 anu
 adG
-ayO
+adJ
 adJ
 aod
 adv
