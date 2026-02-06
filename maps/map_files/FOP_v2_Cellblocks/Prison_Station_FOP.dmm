@@ -7,9 +7,6 @@
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/plating,
 /area/prison/hallway/central/south)
-"aac" = (
-/turf/open/space/basic,
-/area/prison/cellblock/mediumsec/east)
 "aae" = (
 /obj/structure/monorail{
 	dir = 9
@@ -20200,10 +20197,6 @@
 	},
 /turf/open/floor/prison/redcorner/north,
 /area/prison/recreation/highsec/n)
-"kVz" = (
-/obj/effect/landmark/static_comms/net_two,
-/turf/open/floor/prison/southwest,
-/area/prison/hangar_storage/main)
 "kVA" = (
 /turf/open/floor/prison/blue/east,
 /area/prison/residential/central)
@@ -65304,14 +65297,14 @@ cpU
 ruY
 dZS
 cpX
-aac
-aac
-aac
-aac
-aac
-aac
-aac
-aac
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
 cpX
 pGX
 aao
@@ -79207,7 +79200,7 @@ aFV
 mmk
 lgx
 wbc
-kVz
+cPp
 wbc
 lgx
 uzn
