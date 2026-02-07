@@ -1380,6 +1380,8 @@
 	desc = "A standard headset used by colonists, but this one has been tampered with. To access the colony channel use :o."
 	frequency = PFA_FREQ
 	initial_keys = list(/obj/item/device/encryptionkey/colony)
+	has_hud = TRUE
+	hud_type = list(MOB_HUD_FACTION_MARINE, MOB_HUD_FACTION_ARMY, MOB_HUD_FACTION_NAVY, MOB_HUD_SECURITY_ADVANCED, MOB_HUD_FACTION_MARSHAL)
 
 /obj/item/device/radio/headset/distress/rebel_twe
 	name = "colony headset"
