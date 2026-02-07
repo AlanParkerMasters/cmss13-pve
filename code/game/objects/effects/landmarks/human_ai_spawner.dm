@@ -642,6 +642,11 @@
 	desc = "A NSPA Officer with a riot shield"
 	equip_path = /datum/equipment_preset/cmb/nspa/riot/shield
 
+/obj/effect/landmark/humanaispawner/marshal/nspa/riot/shield_baton
+	name = "NSPA Officer Riot Shield Baton"
+	desc = "A NSPA Officer with a riot shield and baton"
+	equip_path = /datum/equipment_preset/cmb/nspa/riot/shield/baton
+
 /obj/effect/landmark/humanaispawner/marshal/nspa/riot/teargas
 	name = "NSPA Officer Riot Tear Gas"
 	desc = "A NSPA Officer with riot tear gas"
