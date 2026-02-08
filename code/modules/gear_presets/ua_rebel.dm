@@ -1,12 +1,14 @@
-/datum/equipment_preset/rebel
-	name = "UA Rebel"
+/datum/equipment_preset/rebel   //I've made this very sloppy mod that works because I told it to, this is meant for events and ease of player identification, DO NOT MERGE
+	name = FACTION_CLF
 	languages = list(LANGUAGE_ENGLISH)
-	flags = EQUIPMENT_PRESET_EXTRA
-	faction = FACTION_UA_REBEL
-	faction_group = FACTION_LIST_UA_REBEL
-	skills = /datum/skills/clf
+	assignment = JOB_CLF
+	rank = FACTION_CLF
 	paygrades = list(PAY_SHORT_REB = JOB_PLAYTIME_TIER_0)
+	faction = FACTION_CLF
+	flags = EQUIPMENT_PRESET_EXTRA
+	skills = /datum/skills/clf
 	origin_override = ORIGIN_CIVILIAN
+	idtype = /obj/item/card/id/dogtag
 
 /datum/equipment_preset/rebel/New()
 	. = ..()
@@ -14,10 +16,13 @@
 
 /datum/equipment_preset/rebel/guerilla
 	name = "UA Rebel, Guerilla"
+	assignment = JOB_CLF
+	rank = JOB_CLF
 	flags = EQUIPMENT_PRESET_EXTRA
-	faction = FACTION_UA_REBEL
-	faction_group = FACTION_LIST_UA_REBEL
 	paygrades = list(PAY_SHORT_REB = JOB_PLAYTIME_TIER_0)
+
+/datum/equipment_preset/rebel/guerilla/get_assignment(mob/living/carbon/human/new_human)
+	return "Guerilla"
 
 /datum/equipment_preset/rebel/guerilla/load_gear(mob/living/carbon/human/new_human)
 	new_human.undershirt = "undershirt"
@@ -48,6 +53,8 @@
 
 /datum/equipment_preset/rebel/soldier
 	name = "UA Rebel, Soldier (Rifle)"
+	assignment = JOB_CLF
+	rank = JOB_CLF
 	flags = EQUIPMENT_PRESET_EXTRA
 	idtype = /obj/item/card/id/dogtag
 	paygrades = list(PAY_SHORT_REB = JOB_PLAYTIME_TIER_0)
@@ -92,6 +99,8 @@
 
 /datum/equipment_preset/rebel/soldier/shotgun
 	name = "UA Rebel, Soldier (Shotgun)"
+	assignment = JOB_CLF
+	rank = JOB_CLF
 
 /datum/equipment_preset/rebel/soldier/shotgun/load_gear(mob/living/carbon/human/new_human)
 	new_human.undershirt = "undershirt"
@@ -125,6 +134,8 @@
 
 /datum/equipment_preset/rebel/soldier/machinegunner
 	name = "UA Rebel, Soldier (Machinegunner)"
+	assignment = JOB_CLF
+	rank = JOB_CLF
 
 /datum/equipment_preset/rebel/soldier/machinegunner/load_gear(mob/living/carbon/human/new_human)
 	new_human.undershirt = "undershirt"
@@ -162,6 +173,8 @@
 
 /datum/equipment_preset/rebel/soldier/flamer
 	name = "UA Rebel, Soldier (Incinerator)"
+	assignment = JOB_CLF
+	rank = JOB_CLF
 	skills = /datum/skills/clf/specialist
 
 /datum/equipment_preset/rebel/soldier/flamer/load_gear(mob/living/carbon/human/new_human)
@@ -199,6 +212,8 @@
 
 /datum/equipment_preset/rebel/soldier/leader
 	name = "UA Rebel, Soldier (Squad Leader)"
+	assignment = JOB_CLF_LEADER
+	rank = JOB_CLF_LEADER
 	skills = /datum/skills/clf/leader
 
 /datum/equipment_preset/rebel/soldier/leader/get_assignment(mob/living/carbon/human/new_human)
@@ -240,6 +255,8 @@
 
 /datum/equipment_preset/rebel/medic
 	name = "UA Rebel, Medic"
+	assignment = JOB_CLF_MEDIC
+	rank = JOB_CLF_MEDIC
 	flags = EQUIPMENT_PRESET_EXTRA
 	idtype = /obj/item/card/id/dogtag
 	paygrades = list(PAY_SHORT_REB = JOB_PLAYTIME_TIER_0)
@@ -289,6 +306,8 @@
 
 /datum/equipment_preset/rebel/at
 	name = "UA Rebel, Anti-Tank"
+	assignment = JOB_CLF
+	rank = JOB_CLF
 	flags = EQUIPMENT_PRESET_EXTRA
 	idtype = /obj/item/card/id/dogtag
 	paygrades = list(PAY_SHORT_REB = JOB_PLAYTIME_TIER_0)
@@ -330,6 +349,8 @@
 
 /datum/equipment_preset/rebel/commander
 	name = "UA Rebel, Cell Commander"
+	assignment = JOB_CLF_COMMANDER
+	rank = JOB_CLF_COMMANDER
 	flags = EQUIPMENT_PRESET_EXTRA
 	idtype = /obj/item/card/id/dogtag
 	paygrades = list(PAY_SHORT_REB = JOB_PLAYTIME_TIER_0)
@@ -377,6 +398,8 @@
 
 /datum/equipment_preset/rebel/sniper
 	name = "UA Rebel, Sniper (M42A)"
+	assignment = JOB_CLF_SPECIALIST
+	rank = JOB_CLF_SPECIALIST
 	flags = EQUIPMENT_PRESET_EXTRA
 	idtype = /obj/item/card/id/dogtag
 	paygrades = list(PAY_SHORT_REB = JOB_PLAYTIME_TIER_0)
