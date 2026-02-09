@@ -1021,6 +1021,59 @@ This is the proc mobs get to turn into a ghost. Forked from ghostize due to comp
 	mind.transfer_to(Z, TRUE)
 	msg_admin_niche("[key_name(usr)] has joined as a [Z].")
 
+/mob/dead/verb/join_as_rebels() //Adapted from join as zombie (again), very sloppy mod code for now since I just want this for an event
+	set category = "Ghost.Join"
+	set name = "Join as Rebels"
+	set desc = "Select an alive but logged-out Rebels to rejoin the game."
+
+	if (!client)
+		return
+
+	if(SSticker.current_state < GAME_STATE_PLAYING || !SSticker.mode)
+		to_chat(src, SPAN_WARNING("The game hasn't started yet!"))
+		return
+
+	var/list/rebels_list = list()
+	if(length(GLOB.rebels_landmarks))
+		rebels_list += list("Reinforcement UA Rebels" = "Reinforcement UA Rebels")
+	for(var/mob/living/carbon/human/B in GLOB.rebels_list)
+		if(!B.client && B.stat != DEAD) // Only living rebels
+			rebels_list += list(B.real_name = B)
+
+	if(!length(rebels_list))
+		to_chat(src, SPAN_DANGER("There are no available rebels."))
+		return
+
+	var/choice = tgui_input_list(usr, "Pick a Rebel:", "Join as Rebel", rebels_list)
+	if(!choice)
+		return
+
+	if(!client || !mind)
+		return
+
+	if(choice == "Reinforcement UA Rebels")
+		if(!length(GLOB.rebels_landmarks))
+			to_chat(src, SPAN_WARNING("Sorry, the last reinforcement rebels just got taken."))
+			return
+		var/obj/effect/landmark/rebels/spawn_point = pick(GLOB.rebels_landmarks)
+		spawn_point.spawn_rebels(src)
+		return
+
+	var/mob/living/carbon/human/C = rebels_list[choice]
+
+	if(!C || QDELETED(C))
+		return
+
+	if(C.stat == DEAD)
+		to_chat(src, SPAN_WARNING("This rebel is dead!"))
+		return
+
+	if(C.client)
+		to_chat(src, SPAN_WARNING("That player is still connected."))
+		return
+
+	mind.transfer_to(C, TRUE)
+	msg_admin_niche("[key_name(usr)] has joined as a [C].")
 
 /mob/dead/verb/join_as_freed_mob()
 	set category = "Ghost.Join"

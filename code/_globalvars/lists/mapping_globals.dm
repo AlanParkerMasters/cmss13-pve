@@ -31,6 +31,7 @@ GLOBAL_LIST_EMPTY(latejoin_by_squad)
 GLOBAL_LIST_EMPTY(latejoin_by_job)
 
 GLOBAL_LIST_EMPTY(zombie_landmarks)
+GLOBAL_LIST_EMPTY(rebels_landmarks)
 
 GLOBAL_LIST_EMPTY(newplayer_start)
 GLOBAL_LIST_EMPTY_TYPED(observer_starts, /obj/effect/landmark/observer_start)

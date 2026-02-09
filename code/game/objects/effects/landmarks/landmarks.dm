@@ -576,6 +576,52 @@
 /obj/effect/landmark/zombie/infinite
 	infinite_spawns = TRUE
 
+// UA Rebels spawn
+/obj/effect/landmark/rebels
+	name = "rebels spawnpoint"
+	desc = "The spot a rebel spawns in. Players in-game can't see this."
+	icon_state = "freed_mob_spawner"
+	invisibility_value = INVISIBILITY_OBSERVER
+	var/spawns_left = 1
+	var/infinite_spawns = FALSE
+
+/obj/effect/landmark/rebels/Initialize(mapload, ...)
+	. = ..()
+	GLOB.rebels_landmarks += src
+
+/obj/effect/landmark/rebels/Destroy()
+	GLOB.rebels_landmarks -= src
+	return ..()
+
+/obj/effect/landmark/rebels/proc/spawn_rebels(mob/dead/observer/observer)
+	if(!infinite_spawns)
+		spawns_left--
+	if(spawns_left <= 0)
+		GLOB.rebels_landmarks -= src
+	anim(loc, loc, 'icons/mob/mob.dmi', null, "uncloak", 12, SOUTH)
+	observer.see_invisible = SEE_INVISIBLE_LIVING
+	observer.client.eye = src // gives the player a second to orient themselves to the spawn zone
+	addtimer(CALLBACK(src, PROC_REF(handle_rebels_spawn), observer), 1 SECONDS)
+
+/obj/effect/landmark/rebels/proc/handle_rebels_spawn(mob/dead/observer/observer)
+	var/mob/living/carbon/human/rebels = new /mob/living/carbon/human(loc)
+	if(!rebels.hud_used)
+		rebels.create_hud()
+	arm_equipment(rebels, pick(/datum/equipment_preset/rebel/soldier, /datum/equipment_preset/rebel/soldier/shotgun, /datum/equipment_preset/rebel/at, /datum/equipment_preset/rebel/sniper, /datum/equipment_preset/rebel/soldier/machinegunner, /datum/equipment_preset/rebel/medic, /datum/equipment_preset/rebel/soldier/leader, /datum/equipment_preset/rebel/soldier/flamer), randomise = TRUE, count_participant = TRUE, mob_client = observer.client, show_job_gear = TRUE)
+	observer.client.eye = rebels
+	observer.mind.transfer_to(rebels)
+	if(spawns_left <= 0)
+		qdel(src)
+
+/obj/effect/landmark/rebels/three
+	spawns_left = 3
+
+/obj/effect/landmark/rebels/ten
+	spawns_left = 10
+
+/obj/effect/landmark/rebels/infinite
+	infinite_spawns = TRUE
+
 /// Marks the bottom left of the testing zone.
 /// In landmarks.dm and not unit_test.dm so it is always active in the mapping tools.
 /obj/effect/landmark/unit_test_bottom_left
