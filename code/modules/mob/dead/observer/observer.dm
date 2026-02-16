@@ -1053,7 +1053,7 @@ This is the proc mobs get to turn into a ghost. Forked from ghostize due to comp
 
 	if(choice == "Reinforcement UA Rebels")
 		if(!length(GLOB.rebels_landmarks))
-			to_chat(src, SPAN_WARNING("Sorry, the last reinforcement rebels just got taken."))
+			to_chat(src, SPAN_WARNING("Sorry, the last rebel just got taken."))
 			return
 		var/obj/effect/landmark/rebels/spawn_point = pick(GLOB.rebels_landmarks)
 		spawn_point.spawn_rebels(src)
