@@ -609,9 +609,9 @@
 		rebels.create_hud()
 	var/rebel_type = pick(/datum/equipment_preset/rebel/soldier, /datum/equipment_preset/rebel/soldier/shotgun, /datum/equipment_preset/rebel/at, /datum/equipment_preset/rebel/sniper, /datum/equipment_preset/rebel/soldier/machinegunner, /datum/equipment_preset/rebel/medic, /datum/equipment_preset/rebel/soldier/leader, /datum/equipment_preset/rebel/soldier/flamer)
 	arm_equipment(rebels, rebel_type, randomise = TRUE, count_participant = TRUE, mob_client = observer.client, show_job_gear = TRUE)
-	to_chat(rebels, SPAN_ROLE_HEADER("You are a United Americas Rebel!"))
-	to_chat(rebels, SPAN_ROLE_BODY("The colony of Hybrisa has fallen into disarray, you have joined a shady group of rebels that are out to put an end to the existing government on the colony!"))
-	to_chat(rebels, SPAN_WARNING("You have no laws or rules to follow. You aren't required to follow any sort of command structure. You are free to commit any sort of crime. Just avoid mass-murdering your own fellow rebels."))
+	to_chat(observer, SPAN_ROLE_HEADER("You are a United Americas Rebel!"))
+	to_chat(observer, SPAN_ROLE_BODY("The colony of Hybrisa has fallen into disarray, you have joined a shady group of rebels that are out to put an end to the existing government on the colony!"))
+	to_chat(observer, SPAN_WARNING("You have no laws or rules to follow. You aren't required to follow any sort of command structure. You are free to commit any sort of crime. Just avoid mass-murdering your own fellow rebels."))
 	observer.client.eye = rebels
 	observer.mind.transfer_to(rebels)
 	if(spawns_left <= 0)
