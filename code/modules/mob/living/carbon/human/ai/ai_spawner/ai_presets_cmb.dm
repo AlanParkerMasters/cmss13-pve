@@ -26,6 +26,11 @@
 	desc = "A NSPA Officer with a riot shield"
 	path = /datum/equipment_preset/cmb/nspa/riot/shield
 
+/datum/human_ai_equipment_preset/marshal/nspa/riot/shield/baton
+	name = "Hybrisa - NSPA Constable Riot Baton Shield"
+	desc = "NSPA Riot Police"
+	path = /datum/equipment_preset/cmb/nspa/riot/shield/baton
+
 /datum/human_ai_equipment_preset/marshal/nspa/riot/teargas
 	name = "NSPA Officer Riot Tear Gas"
 	desc = "A NSPA Officer with riot tear gas"
