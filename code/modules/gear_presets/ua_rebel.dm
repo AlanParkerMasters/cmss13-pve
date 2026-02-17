@@ -170,6 +170,42 @@
 	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/firstaid/full/alternate, WEAR_L_STORE)
 	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/general/medium, WEAR_R_STORE)
 
+/datum/equipment_preset/rebel/soldier/lunge
+	name = "UA Rebel, Soldier (Lungemine)"
+	assignment = JOB_CLF
+	rank = JOB_CLF
+	flags = EQUIPMENT_PRESET_EXTRA
+
+/datum/equipment_preset/rebel/soldier/lunge/load_gear(mob/living/carbon/human/new_human)
+	new_human.undershirt = "undershirt"
+	//back
+	new_human.equip_to_slot_or_del(new /obj/item/storage/backpack/marine/satchel(new_human), WEAR_BACK)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/firstaid/softpack/adv(new_human), WEAR_IN_BACK)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/box/mre(new_human), WEAR_IN_BACK)
+	new_human.equip_to_slot_or_del(new /obj/item/weapon/twohanded/lungemine(new_human), WEAR_IN_BACK)
+	new_human.equip_to_slot_or_del(new /obj/item/weapon/twohanded/lungemine(new_human), WEAR_IN_BACK)
+	new_human.equip_to_slot_or_del(new /obj/item/weapon/twohanded/lungemine(new_human), WEAR_IN_BACK)
+	//face
+	if(prob(45))
+		add_facewrap(new_human)
+	new_human.equip_to_slot_or_del(new /obj/item/device/radio/headset/distress/rebel_ua(new_human), WEAR_L_EAR)
+	//head
+	add_rebel_ua_helmet(new_human)
+	//uniform
+	add_rebel_ua_uniform(new_human)
+	//jacket
+	add_rebel_ua_suit(new_human)
+	//waist
+	new_human.equip_to_slot_or_del(new /obj/item/storage/backpack/general_belt(new_human), WEAR_WAIST)
+	new_human.equip_to_slot_or_del(new /obj/item/weapon/twohanded/lungemine(new_human), WEAR_IN_BELT)
+	//limbs
+	add_rebel_ua_shoes(new_human)
+	if(prob(35))
+		add_rebel_gloves(new_human)
+	new_human.equip_to_slot_or_del(new /obj/item/weapon/twohanded/lungemine(new_human), WEAR_L_HAND)
+	//pockets
+	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/firstaid/full/alternate, WEAR_L_STORE)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/general/medium, WEAR_R_STORE)
 
 /datum/equipment_preset/rebel/soldier/flamer
 	name = "UA Rebel, Soldier (Incinerator)"
