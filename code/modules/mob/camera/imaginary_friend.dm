@@ -43,7 +43,7 @@
 		return INITIALIZE_HINT_QDEL
 
 	src.owner = owner
-	owner.play_screen_text("You hear footsteps...", /atom/movable/screen/text/screen_text/command_order, rgb(117, 4, 4))
+	owner.play_screen_text(pick("You hear footsteps...", "You feel watched...", "You feel breathing down your neck...", "You hear someone say your name nearby..." ), /atom/movable/screen/text/screen_text/command_order, rgb(117, 4, 4))
 
 	mouse_opacity = MOUSE_OPACITY_TRANSPARENT
 
