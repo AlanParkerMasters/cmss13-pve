@@ -1,7 +1,7 @@
 /mob/camera/imaginary_friend
 	name = "imaginary friend"
 	real_name = "imaginary friend"
-	desc = "A wonderful yet fake friend."
+	desc = "What...?"
 	mouse_opacity = MOUSE_OPACITY_TRANSPARENT
 	lighting_alpha = LIGHTING_PLANE_ALPHA_MOSTLY_INVISIBLE
 	see_invisible = SEE_INVISIBLE_OBSERVER
