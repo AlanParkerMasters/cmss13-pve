@@ -11055,6 +11055,9 @@
 /obj/item/storage/box/guncase/heavy/m49a_pve{
 	pixel_y = 10
 	},
+/obj/item/storage/box/spec/spotter,
+/obj/item/storage/box/spec/heavy_grenadier,
+/obj/item/storage/box/spec/sniper/anti_materiel,
 /turf/open/floor/almayer,
 /area/golden_arrow/platoonarmory)
 "aGo" = (
@@ -14391,6 +14394,10 @@
 	},
 /obj/item/storage/box/guncase/heavy/fuel{
 	pixel_y = 14
+	},
+/obj/item/storage/box/guncase/heavy/motiondetectors{
+	pixel_y = 2;
+	pixel_x = -3
 	},
 /obj/item/storage/box/guncase/heavy/motiondetectors{
 	pixel_y = 2;
@@ -19011,6 +19018,7 @@
 	layer = 3.2;
 	pixel_x = 3
 	},
+/obj/item/storage/box/guncase/heavy/sentry,
 /turf/open/floor/almayer,
 /area/golden_arrow/platoonarmory)
 "kDp" = (
@@ -21188,7 +21196,7 @@
 /obj/structure/gun_rack/mk221{
 	pixel_x = -11
 	},
-/obj/structure/gun_rack/flamer/unloaded{
+/obj/structure/gun_rack/mk221{
 	pixel_x = 7
 	},
 /turf/open/floor/almayer,
@@ -21764,6 +21772,18 @@
 /obj/item/ammo_box/magazine/shotgun{
 	pixel_y = 9
 	},
+/obj/item/ammo_box/magazine/shotgun/buckshot,
+/obj/item/ammo_box/magazine/shotgun{
+	pixel_y = 9
+	},
+/obj/item/ammo_box/magazine/mk1/large{
+	pixel_y = 13;
+	pixel_x = -3
+	},
+/obj/item/ammo_box/magazine/mk1/large{
+	pixel_y = 13;
+	pixel_x = -3
+	},
 /turf/open/floor/almayer,
 /area/golden_arrow/platoonarmory)
 "uxq" = (
@@ -22067,6 +22087,14 @@
 	},
 /obj/item/ammo_magazine/smartgun{
 	pixel_x = 9;
+	pixel_y = -3
+	},
+/obj/item/ammo_magazine/smartgun{
+	pixel_x = 9;
+	pixel_y = -3
+	},
+/obj/item/ammo_magazine/smartgun{
+	pixel_x = -9;
 	pixel_y = -3
 	},
 /turf/open/floor/almayer,
