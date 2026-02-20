@@ -403,6 +403,9 @@
 	pixel_y = -3;
 	name = "crew compartment attach point"
 	},
+/obj/structure/machinery/light/double{
+	dir = 8
+	},
 /turf/open/shuttle/dropship/medium_grey_single_wide_up_to_down,
 /area/prison/hanger/research)
 "abn" = (
@@ -535,6 +538,9 @@
 /obj/structure/bed/chair/vehicle{
 	pixel_x = -8
 	},
+/obj/structure/machinery/light/double{
+	dir = 8
+	},
 /turf/open/shuttle/dropship/light_grey_top_left,
 /area/prison/hanger/research)
 "abL" = (
@@ -543,6 +549,9 @@
 "abM" = (
 /obj/structure/bed/chair/vehicle{
 	pixel_x = 8
+	},
+/obj/structure/machinery/light/double{
+	dir = 4
 	},
 /turf/open/shuttle/dropship/light_grey_top_right,
 /area/prison/hanger/research)
@@ -1529,6 +1538,51 @@
 /obj/structure/machinery/floodlight/landing/floor,
 /turf/open/floor/plating/prison,
 /area/prison/hanger/research)
+"aeV" = (
+/obj/structure/machinery/light/double{
+	dir = 1;
+	pixel_y = 21
+	},
+/turf/open/floor/prison/yellow/north,
+/area/prison/cellblock/mediumsec/east)
+"aeW" = (
+/obj/structure/pipes/standard/simple/hidden/supply{
+	dir = 4
+	},
+/obj/structure/machinery/light/double{
+	dir = 1;
+	pixel_y = 21
+	},
+/turf/open/floor/prison/yellow/north,
+/area/prison/cellblock/mediumsec/east)
+"aeX" = (
+/obj/structure/machinery/light/spot,
+/turf/open/floor/prison/bright_clean/southwest,
+/area/prison/yard)
+"aeY" = (
+/obj/structure/machinery/light/spot{
+	dir = 8
+	},
+/turf/open/floor/prison/bright_clean/southwest,
+/area/prison/yard)
+"aeZ" = (
+/obj/structure/machinery/light/spot{
+	dir = 4
+	},
+/turf/open/floor/prison/bright_clean/southwest,
+/area/prison/yard)
+"afa" = (
+/obj/structure/machinery/light/spot{
+	dir = 1
+	},
+/turf/open/floor/prison/bright_clean/southwest,
+/area/prison/yard)
+"afb" = (
+/obj/structure/machinery/light/double{
+	dir = 4
+	},
+/turf/open/floor/prison/darkred2/east,
+/area/prison/security/checkpoint/maxsec)
 "afc" = (
 /obj/structure/machinery/light/double{
 	dir = 4
@@ -1536,6 +1590,16 @@
 /obj/structure/pipes/standard/simple/hidden/supply,
 /turf/open/floor/plating,
 /area/prison/cellblock/maxsec/north)
+"afd" = (
+/obj/structure/prop/almayer/cannon_cable_connector{
+	pixel_y = -3;
+	name = "crew compartment attach point"
+	},
+/obj/structure/machinery/light/double{
+	dir = 4
+	},
+/turf/open/shuttle/dropship/medium_grey_single_wide_up_to_down,
+/area/prison/hanger/research)
 "afe" = (
 /obj/structure/disposaloutlet,
 /obj/structure/disposalpipe/up,
@@ -1545,6 +1609,15 @@
 /obj/structure/window/framed/prison/reinforced/hull,
 /turf/open/floor/plating,
 /area/prison/cellblock/maxsec/north)
+"afg" = (
+/obj/structure/machinery/door/airlock/hatch/cockpit/two{
+	req_access = null;
+	req_one_access = null;
+	dir = 1;
+	locked = 1
+	},
+/turf/open/floor/almayer/test_floor4,
+/area/prison/hanger/research)
 "afh" = (
 /obj/structure/machinery/light/double{
 	dir = 8
@@ -61675,7 +61748,7 @@ thz
 pgd
 dKQ
 rpa
-qke
+yeT
 qke
 qke
 pwC
@@ -64855,7 +64928,7 @@ aAO
 alH
 dKQ
 rpa
-ydN
+afb
 ydN
 ydN
 ydN
@@ -65104,12 +65177,12 @@ wyl
 iQS
 iQS
 ooD
+aeY
 iQS
 iQS
 iQS
 iQS
-iQS
-iQS
+aeY
 ooD
 iQS
 iQS
@@ -65376,7 +65449,7 @@ cpU
 cpU
 cpU
 cpU
-out
+aeW
 cCt
 pNe
 jnt
@@ -65948,7 +66021,7 @@ bcj
 iQS
 qur
 bfw
-iQS
+afa
 byX
 qIq
 gsd
@@ -65961,7 +66034,7 @@ ilh
 iQS
 qIq
 iQS
-iQS
+aeX
 bfw
 ooD
 iNr
@@ -66872,7 +66945,7 @@ cpU
 qbH
 qNy
 cpU
-pGX
+aeV
 aao
 cpU
 qbH
@@ -67008,7 +67081,7 @@ bcj
 iQS
 qur
 bfw
-iQS
+afa
 byX
 xNe
 iQS
@@ -67021,7 +67094,7 @@ iQS
 iQS
 qIq
 byX
-iQS
+aeX
 bfw
 ooD
 iNr
@@ -67072,7 +67145,7 @@ cpU
 qNy
 qbH
 cpU
-out
+aeW
 dZS
 crc
 cok
@@ -67860,12 +67933,12 @@ qtl
 iQS
 iQS
 kqB
+aeZ
 iQS
 iQS
 iQS
 iQS
-iQS
-iQS
+aeZ
 ooD
 iQS
 iQS
@@ -68144,7 +68217,7 @@ cpU
 nJY
 see
 cpU
-pGX
+aeV
 aao
 cpU
 see
@@ -69616,7 +69689,7 @@ aAO
 aAO
 aAO
 cqh
-out
+aeW
 dZS
 aFB
 nth
@@ -74171,13 +74244,13 @@ aaE
 aaE
 aaE
 aaE
+aeU
 aaE
 aaE
 aaE
 aaE
 aaE
-aaE
-aaE
+aeU
 aaE
 aaE
 aaE
@@ -75231,7 +75304,7 @@ aaE
 acg
 acd
 abY
-abh
+afg
 abL
 abJ
 abF
@@ -75449,7 +75522,7 @@ abI
 abG
 abA
 abt
-abm
+afd
 abi
 aaR
 aal
@@ -76291,13 +76364,13 @@ aaE
 aaE
 aaE
 aaE
+aeU
 aaE
 aaE
 aaE
 aaE
 aaE
-aaE
-aaE
+aeU
 aaf
 aaE
 aaE
@@ -84818,13 +84891,13 @@ aaA
 aaA
 aaA
 aaA
+aeF
 aaA
 aaA
 aaA
 aaA
 aaA
-aaA
-aaA
+aeF
 aaA
 aaA
 aaA
@@ -86938,13 +87011,13 @@ aaA
 aaA
 bqa
 aaA
+aeF
 aaA
 aaA
 aaA
 aaA
 aaA
-aaA
-aaA
+aeF
 aaA
 aaA
 aaA
