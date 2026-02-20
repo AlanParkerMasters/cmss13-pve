@@ -546,6 +546,7 @@
 /obj/structure/machinery/light/double{
 	dir = 8
 	},
+/obj/effect/landmark/humanaispawner/clf/ua/prisoner/soldier,
 /turf/open/shuttle/dropship/light_grey_top_left,
 /area/prison/hanger/research)
 "abL" = (
@@ -2599,6 +2600,7 @@
 /area/prison/recreation/medsec)
 "aik" = (
 /obj/item/ammo_casing/bullet,
+/obj/effect/landmark/humanaispawner/clf/ua/prisoner,
 /turf/open/floor/wood,
 /area/prison/library)
 "ail" = (
@@ -4900,6 +4902,7 @@
 "apz" = (
 /obj/effect/landmark/corpsespawner/guard,
 /obj/effect/decal/cleanable/blood/splatter,
+/obj/effect/landmark/humanaispawner/clf/ua/prisoner/soldier,
 /turf/open/floor/prison/sterile_white/southwest,
 /area/prison/quarters/research)
 "apA" = (
@@ -5448,11 +5451,53 @@
 /obj/effect/decal/cleanable/blood/splatter,
 /turf/open/floor/plating,
 /area/prison/security/monitoring/maxsec/panopticon)
-"arr" = (
-/obj/structure/closet/crate/freezer,
-/obj/effect/landmark/humanaispawner/clf/ua,
-/turf/open/floor/prison/kitchen,
-/area/prison/kitchen)
+"ars" = (
+/obj/structure/sink{
+	dir = 8;
+	pixel_x = -12
+	},
+/obj/effect/landmark/humanaispawner/clf/ua/prisoner,
+/turf/open/floor/prison/floor_plate,
+/area/prison/cellblock/mediumsec/south)
+"art" = (
+/obj/effect/landmark/humanaispawner/clf/ua/prisoner,
+/turf/open/floor/prison/floor_plate,
+/area/prison/cellblock/mediumsec/east)
+"aru" = (
+/obj/effect/landmark/humanaispawner/clf/ua/prisoner,
+/turf/open/floor/prison/yellow,
+/area/prison/cellblock/mediumsec/south)
+"arv" = (
+/obj/effect/landmark/humanaispawner/clf/ua/prisoner,
+/turf/open/floor/prison/floor_plate,
+/area/prison/recreation/medsec)
+"arw" = (
+/obj/effect/landmark/humanaispawner/clf/ua/prisoner,
+/turf/open/floor/prison/darkred2/east,
+/area/prison/security)
+"arx" = (
+/obj/effect/landmark/humanaispawner/clf/ua/prisoner/soldier,
+/turf/open/organic/grass,
+/area/prison/residential/south)
+"ary" = (
+/obj/item/clothing/under/color/orange,
+/obj/effect/landmark/humanaispawner/clf/ua/prisoner,
+/turf/open/floor/prison,
+/area/prison/security)
+"arz" = (
+/obj/effect/landmark/humanaispawner/clf/ua/prisoner,
+/turf/open/floor/prison/bright_clean2/southwest,
+/area/prison/hallway/central/south)
+"arA" = (
+/obj/structure/pipes/standard/simple/hidden/supply{
+	dir = 4
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/effect/landmark/humanaispawner/clf/ua/prisoner,
+/turf/open/floor/plating/plating_catwalk/prison,
+/area/prison/hallway/east)
 "arB" = (
 /obj/structure/machinery/door/airlock/almayer/medical/colony{
 	name = "Morgue"
@@ -5468,6 +5513,10 @@
 	},
 /turf/open/floor/prison,
 /area/prison/medbay/morgue)
+"arD" = (
+/obj/effect/landmark/humanaispawner/clf/ua/prisoner,
+/turf/open/floor/prison,
+/area/prison/hallway/central/west)
 "arE" = (
 /obj/structure/pipes/vents/pump{
 	dir = 4
@@ -5483,6 +5532,14 @@
 	},
 /turf/open/floor/prison,
 /area/prison/medbay/morgue)
+"arG" = (
+/obj/effect/landmark/humanaispawner/clf/ua/prisoner/soldier,
+/turf/open/floor/carpet,
+/area/prison/residential/central)
+"arH" = (
+/obj/effect/landmark/humanaispawner/clf/ua/prisoner,
+/turf/open/floor/prison/bright_clean/southwest,
+/area/prison/visitation)
 "arI" = (
 /obj/structure/machinery/light/double{
 	dir = 4
@@ -5492,6 +5549,79 @@
 "arJ" = (
 /turf/closed/wall/r_wall/prison,
 /area/prison/hangar_storage/research)
+"arK" = (
+/obj/effect/landmark/humanaispawner/clf/ua/prisoner/riot,
+/turf/open/floor/prison,
+/area/prison/hanger/main)
+"arL" = (
+/obj/effect/decal/siding/wood_siding,
+/obj/effect/landmark/humanaispawner/clf/ua/prisoner/soldier,
+/turf/open/floor/asteroid,
+/area/prison/residential/central)
+"arM" = (
+/obj/structure/pipes/standard/simple/hidden/supply{
+	dir = 4
+	},
+/obj/effect/landmark/humanaispawner/clf/ua/prisoner/riot,
+/turf/open/floor/prison,
+/area/prison/hallway/entrance)
+"arN" = (
+/obj/effect/landmark/humanaispawner/clf/ua/prisoner/soldier,
+/turf/open/floor/prison/bright_clean/southwest,
+/area/prison/yard)
+"arO" = (
+/obj/effect/decal/ammo_casing,
+/obj/effect/landmark/humanaispawner/clf/ua/prisoner/soldier,
+/turf/open/floor/prison/bright_clean/southwest,
+/area/prison/yard)
+"arP" = (
+/obj/structure/stairs/perspective{
+	dir = 8;
+	icon_state = "p_stair_full";
+	color = "#858680"
+	},
+/obj/effect/landmark/humanaispawner/clf/ua/prisoner/riot,
+/turf/open/floor/plating/prison,
+/area/prison/hanger/main)
+"arQ" = (
+/obj/structure/bed/chair,
+/obj/effect/landmark/humanaispawner/clf/ua/prisoner/soldier,
+/turf/open/floor/prison/bright_clean/southwest,
+/area/prison/canteen)
+"arR" = (
+/obj/structure/pipes/standard/simple/hidden/supply{
+	dir = 4
+	},
+/obj/effect/landmark/humanaispawner/clf/ua/prisoner/riot,
+/turf/open/floor/plating/plating_catwalk/prison,
+/area/prison/hallway/entrance)
+"arS" = (
+/obj/item/ammo_magazine/rifle/m16,
+/obj/effect/landmark/humanaispawner/clf/ua/prisoner/soldier,
+/turf/open/floor/prison/bright_clean/southwest,
+/area/prison/yard)
+"arT" = (
+/obj/structure/pipes/standard/simple/hidden/supply{
+	dir = 5
+	},
+/obj/effect/landmark/humanaispawner/clf/ua/prisoner/soldier,
+/turf/open/floor/prison/bright_clean/southwest,
+/area/prison/yard)
+"arU" = (
+/obj/structure/pipes/standard/simple/hidden/supply{
+	dir = 4
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/effect/landmark/humanaispawner/clf/ua/prisoner/riot/beanbag,
+/turf/open/floor/plating/plating_catwalk/prison,
+/area/prison/hallway/entrance)
+"arV" = (
+/obj/structure/disposalpipe/segment,
+/obj/effect/landmark/humanaispawner/clf/ua/prisoner/soldier,
+/turf/open/floor/prison/bright_clean/southwest,
+/area/prison/canteen)
 "arW" = (
 /obj/structure/pipes/unary/freezer{
 	icon_state = "freezer_1"
@@ -5503,6 +5633,17 @@
 /obj/structure/pipes/standard/cap,
 /turf/open/floor/prison,
 /area/prison/medbay)
+"arY" = (
+/obj/structure/machinery/shower{
+	dir = 8;
+	pixel_x = -6
+	},
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/effect/landmark/humanaispawner/clf/ua/prisoner,
+/turf/open/floor/prison/kitchen/southwest,
+/area/prison/cellblock/highsec/north/south)
 "arZ" = (
 /obj/structure/morgue,
 /turf/open/floor/prison,
@@ -5513,6 +5654,30 @@
 	},
 /turf/open/floor/prison,
 /area/prison/medbay/morgue)
+"asb" = (
+/obj/effect/landmark/humanaispawner/clf/ua/prisoner/soldier,
+/turf/open/floor/prison/bright_clean/southwest,
+/area/prison/canteen)
+"asc" = (
+/obj/effect/landmark/humanaispawner/clf/ua/prisoner,
+/turf/open/floor/prison/floor_plate/southwest,
+/area/prison/recreation/highsec/n)
+"asd" = (
+/obj/structure/pipes/standard/simple/hidden/supply,
+/obj/effect/landmark/humanaispawner/clf/ua/prisoner,
+/turf/open/floor/prison/darkredfull2/southwest,
+/area/prison/security/checkpoint/maxsec)
+"ase" = (
+/obj/effect/landmark/humanaispawner/clf/ua/prisoner/soldier,
+/turf/open/floor/prison/sterile_white/southwest,
+/area/prison/medbay)
+"asf" = (
+/obj/structure/machinery/light/small{
+	dir = 1
+	},
+/obj/effect/landmark/humanaispawner/clf/ua/prisoner,
+/turf/open/floor/prison/floor_plate/southwest,
+/area/prison/cellblock/maxsec/south)
 "asi" = (
 /obj/structure/machinery/light/small{
 	dir = 4
@@ -14677,6 +14842,7 @@
 /obj/structure/pipes/vents/scrubber{
 	dir = 8
 	},
+/obj/effect/landmark/humanaispawner/clf/ua/prisoner/soldier,
 /turf/open/floor/prison/darkredcorners2/north,
 /area/prison/security/monitoring/highsec)
 "cAz" = (
@@ -46267,7 +46433,7 @@ jBg
 xrx
 aiF
 jan
-qun
+arx
 qun
 qtz
 bGQ
@@ -46447,7 +46613,7 @@ bgc
 bgc
 nxt
 bLY
-oby
+arL
 giW
 bLY
 bgc
@@ -47513,7 +47679,7 @@ sMv
 rRS
 hoZ
 aWr
-bbJ
+arG
 bbJ
 bsi
 aZQ
@@ -58709,7 +58875,7 @@ uWQ
 lyp
 tGO
 tkJ
-lyp
+asc
 mBR
 aBg
 oyz
@@ -60849,7 +61015,7 @@ osx
 oPR
 oPR
 oPR
-oPR
+arY
 jkX
 bfg
 ndr
@@ -61766,7 +61932,7 @@ cag
 cag
 cag
 cwM
-kUw
+aru
 cun
 cuR
 bxM
@@ -62568,7 +62734,7 @@ baz
 hJv
 bBF
 bBF
-bBF
+arD
 dnH
 bBF
 bBF
@@ -62594,7 +62760,7 @@ paq
 bNr
 bXX
 jTz
-jTz
+arv
 jTz
 jTz
 jiF
@@ -64276,7 +64442,7 @@ bFk
 bGC
 bFk
 bFk
-iEa
+arz
 fZb
 lWT
 iEa
@@ -64742,7 +64908,7 @@ cun
 ykS
 rWV
 cun
-ykS
+ars
 acu
 cun
 dnm
@@ -66332,7 +66498,7 @@ acL
 alH
 xFu
 jYh
-jYh
+asd
 jYh
 jYh
 jYh
@@ -66952,7 +67118,7 @@ itd
 ajF
 jLN
 akK
-itd
+asf
 ajF
 jLN
 akK
@@ -68494,7 +68660,7 @@ anJ
 iQS
 iQS
 amK
-iQS
+arN
 tEY
 amb
 aGz
@@ -68912,7 +69078,7 @@ bfw
 spY
 byX
 qIq
-gsd
+arS
 iQS
 byX
 sVE
@@ -69972,7 +70138,7 @@ sBZ
 aow
 egT
 prG
-sSq
+arT
 iQS
 ilh
 gsd
@@ -70188,7 +70354,7 @@ tNU
 qIq
 qIq
 tIo
-iHf
+arO
 amL
 amB
 tNU
@@ -70357,7 +70523,7 @@ rOO
 rOO
 rOO
 aqN
-rOO
+ase
 rOO
 rOO
 uGA
@@ -72160,7 +72326,7 @@ cok
 jWl
 cpU
 cok
-jWl
+art
 cpU
 cok
 jWl
@@ -76750,7 +76916,7 @@ jCz
 fyr
 lOT
 lbZ
-jCz
+arV
 lJD
 gdw
 taN
@@ -77394,7 +77560,7 @@ ekR
 wtj
 wtj
 qEO
-loY
+arQ
 gdw
 ljh
 blx
@@ -78262,7 +78428,7 @@ wGX
 bzy
 jei
 bEA
-bDM
+arA
 jei
 jUC
 fYU
@@ -79502,7 +79668,7 @@ aWY
 loY
 nNy
 ljh
-blx
+asb
 loY
 gdw
 ljh
@@ -80372,7 +80538,7 @@ bmF
 bmF
 btt
 jZn
-fXa
+arH
 bsY
 btZ
 buc
@@ -82051,7 +82217,7 @@ aQC
 aQC
 aQC
 bdl
-arr
+vSw
 tsA
 bjz
 wzi
@@ -83542,7 +83708,7 @@ bcA
 bkr
 bcA
 bcA
-bkr
+arR
 blB
 bcA
 bcA
@@ -83789,7 +83955,7 @@ aje
 bMu
 qBG
 qBG
-afr
+ary
 qBG
 qBG
 xZe
@@ -83959,7 +84125,7 @@ aoU
 wPN
 aoQ
 bcA
-bes
+arU
 bcz
 bcC
 bcC
@@ -84607,7 +84773,7 @@ bcz
 bcA
 bcA
 bcz
-bpf
+arM
 vyL
 bcC
 acL
@@ -85277,7 +85443,7 @@ tSp
 mnu
 mnu
 mnu
-mnu
+arw
 olO
 cce
 bMu
@@ -86088,7 +86254,7 @@ aXt
 nHF
 aaC
 aaB
-aaB
+arP
 aaB
 aaB
 vuS
@@ -86728,7 +86894,7 @@ fBA
 wmn
 blH
 blH
-blH
+arK
 blH
 boy
 blH
