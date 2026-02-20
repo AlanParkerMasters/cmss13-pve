@@ -44,6 +44,169 @@
 	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/firstaid/full/alternate, WEAR_L_STORE)
 	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/general/medium, WEAR_R_STORE)
 
+///These guys are here since I might sprinkle in rebels with them at some point
+/datum/equipment_preset/rebel/prisoner
+	name = "Unarmed Prisoner Rebel"
+	flags = EQUIPMENT_PRESET_EXTRA
+	assignment = "Inmate"
+	paygrades = list(PAY_SHORT_REB = JOB_PLAYTIME_TIER_0)
+	access = list(null)
+	idtype = /obj/item/card/id
+
+/datum/equipment_preset/rebel/prisoner/load_gear(mob/living/carbon/human/new_human)
+	new_human.undershirt = "undershirt"
+	//uniform
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/under/colonist/prison_boiler(new_human), WEAR_BODY)
+	//limb
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/shoes/white(new_human), WEAR_FEET)
+
+/datum/equipment_preset/rebel/prisoner/riot/shield
+	name = "Shield Prisoner Rebel"
+	flags = EQUIPMENT_PRESET_EXTRA
+	assignment = "Inmate"
+	paygrades = list(PAY_SHORT_REB = JOB_PLAYTIME_TIER_0)
+	access = list(null)
+	idtype = /obj/item/card/id
+
+/datum/equipment_preset/rebel/prisoner/riot/shield/load_gear(mob/living/carbon/human/new_human)
+	new_human.undershirt = "undershirt"
+	//uniform
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/under/colonist/prison_boiler(new_human), WEAR_BODY)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/shoes/white(new_human), WEAR_FEET)
+	//stuff
+	if(prob(65))
+		new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/grey, WEAR_HEAD)
+		new_human.equip_to_slot_or_del(new /obj/item/prop/helmetgarb/riot_shield, WEAR_IN_HELMET)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/armor/riot, WEAR_JACKET)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/mask/gas/military, WEAR_FACE)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/firstaid/full/alternate, WEAR_L_STORE)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/mask/gas/military, WEAR_FACE)
+	new_human.equip_to_slot_or_del(new /obj/item/weapon/shield/riot, WEAR_R_HAND)
+
+/datum/equipment_preset/rebel/prisoner/riot/teargas
+	name = "Teargas Prisoner Rebel"
+	flags = EQUIPMENT_PRESET_EXTRA
+	assignment = "Inmate"
+	paygrades = list(PAY_SHORT_REB = JOB_PLAYTIME_TIER_0)
+	access = list(null)
+	idtype = /obj/item/card/id
+
+/datum/equipment_preset/rebel/prisoner/riot/teargas/load_gear(mob/living/carbon/human/new_human)
+	new_human.undershirt = "undershirt"
+	//uniform
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/under/colonist/prison_boiler(new_human), WEAR_BODY)
+	//limb
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/shoes/white(new_human), WEAR_FEET)
+	//pockets
+	if(prob(65))
+		new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/grey, WEAR_HEAD)
+		new_human.equip_to_slot_or_del(new /obj/item/prop/helmetgarb/riot_shield, WEAR_IN_HELMET)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/armor/riot, WEAR_JACKET)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/mask/gas/military, WEAR_FACE)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/firstaid/full/alternate, WEAR_L_STORE)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/mask/gas/military, WEAR_FACE)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/black, WEAR_BACK)
+	new_human.equip_to_slot_or_del(new /obj/item/explosive/grenade/tear/marine, WEAR_IN_BACK)
+	new_human.equip_to_slot_or_del(new /obj/item/explosive/grenade/tear/marine, WEAR_IN_BACK)
+	new_human.equip_to_slot_or_del(new /obj/item/explosive/grenade/tear/marine, WEAR_IN_BACK)
+	new_human.equip_to_slot_or_del(new /obj/item/explosive/grenade/tear/marine, WEAR_R_HAND)
+
+/datum/equipment_preset/rebel/prisoner/riot/beanbag
+	name = "Beanbag Prisoner Rebel"
+	flags = EQUIPMENT_PRESET_EXTRA
+	assignment = "Inmate"
+	paygrades = list(PAY_SHORT_REB = JOB_PLAYTIME_TIER_0)
+	access = list(null)
+	idtype = /obj/item/card/id
+
+/datum/equipment_preset/rebel/prisoner/riot/beanbag/load_gear(mob/living/carbon/human/new_human)
+	new_human.undershirt = "undershirt"
+	//uniform
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/under/colonist/prison_boiler(new_human), WEAR_BODY)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/shoes/white(new_human), WEAR_FEET)
+	//stuff
+	if(prob(65))
+		new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/grey, WEAR_HEAD)
+		new_human.equip_to_slot_or_del(new /obj/item/prop/helmetgarb/riot_shield, WEAR_IN_HELMET)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/armor/riot, WEAR_JACKET)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/mask/gas/military, WEAR_FACE)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/firstaid/full/alternate, WEAR_L_STORE)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/mask/gas/military, WEAR_FACE)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/shotgun/large, WEAR_R_STORE)
+	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/handful/shotgun/beanbag, WEAR_IN_R_STORE)
+	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/handful/shotgun/beanbag, WEAR_IN_R_STORE)
+	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/handful/shotgun/beanbag, WEAR_IN_R_STORE)
+	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/handful/shotgun/beanbag, WEAR_IN_R_STORE)
+	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/handful/shotgun/beanbag, WEAR_IN_R_STORE)
+	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/handful/shotgun/beanbag, WEAR_IN_R_STORE)
+	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/handful/shotgun/beanbag, WEAR_IN_R_STORE)
+	new_human.equip_to_slot_or_del(new /obj/item/weapon/gun/shotgun/combat/riot, WEAR_J_STORE)
+
+/datum/equipment_preset/rebel/prisoner/soldier
+	name = "Soldier Prisoner Rebel"
+	flags = EQUIPMENT_PRESET_EXTRA
+	assignment = "Inmate"
+	paygrades = list(PAY_SHORT_REB = JOB_PLAYTIME_TIER_0)
+	access = list(null)
+	idtype = /obj/item/card/id
+
+/datum/equipment_preset/rebel/prisoner/soldier/load_gear(mob/living/carbon/human/new_human)
+	new_human.undershirt = "undershirt"
+	//uniform
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/under/colonist/prison_boiler(new_human), WEAR_BODY)
+	//limb
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/shoes/white(new_human), WEAR_FEET)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/belt/marine(new_human), WEAR_WAIST)
+	add_rebel_ua_suit(new_human)
+	if(prob(65))
+		add_facewrap(new_human)
+	if(prob(65))
+		add_rebel_ua_helmet(new_human)
+	if(prob(35))
+		add_rebel_gloves(new_human)
+	add_rebel_ua_rifle(new_human)
+
+/datum/equipment_preset/rebel/prisoner/shotgunner
+	name = "Shotgunner Prisoner Rebel"
+	flags = EQUIPMENT_PRESET_EXTRA
+	assignment = "Inmate"
+	paygrades = list(PAY_SHORT_REB = JOB_PLAYTIME_TIER_0)
+	access = list(null)
+	idtype = /obj/item/card/id
+
+/datum/equipment_preset/rebel/prisoner/shotgunner/load_gear(mob/living/carbon/human/new_human)
+	new_human.undershirt = "undershirt"
+	//uniform
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/under/colonist/prison_boiler(new_human), WEAR_BODY)
+	//limb
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/shoes/white(new_human), WEAR_FEET)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/belt/marine(new_human), WEAR_WAIST)
+	add_rebel_ua_suit(new_human)
+	if(prob(65))
+		add_facewrap(new_human)
+	if(prob(65))
+		add_rebel_ua_helmet(new_human)
+	if(prob(35))
+		add_rebel_gloves(new_human)
+	add_rebel_ua_shotgun(new_human)
+
+
+/datum/equipment_preset/rebel/prisoner/lunge
+	name = "Lunge Prisoner Rebel"
+	flags = EQUIPMENT_PRESET_EXTRA
+	assignment = "Inmate"
+	paygrades = list(PAY_SHORT_REB = JOB_PLAYTIME_TIER_0)
+	access = list(null)
+	idtype = /obj/item/card/id
+
+/datum/equipment_preset/rebel/prisoner/lunge/load_gear(mob/living/carbon/human/new_human)
+	new_human.undershirt = "undershirt"
+	//uniform
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/under/colonist/prison_boiler(new_human), WEAR_BODY)
+	//limb
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/shoes/white(new_human), WEAR_FEET)
+	new_human.put_in_active_hand(new /obj/item/weapon/twohanded/lungemine(new_human))
+
 /datum/equipment_preset/rebel/soldier
 	name = "UA Rebel, Soldier (Rifle)"
 	flags = EQUIPMENT_PRESET_EXTRA
