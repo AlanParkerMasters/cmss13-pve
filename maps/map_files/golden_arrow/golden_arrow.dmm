@@ -714,6 +714,10 @@
 	},
 /turf/open/floor/almayer,
 /area/golden_arrow/motor_pool)
+"abv" = (
+/obj/effect/landmark/observer_start,
+/turf/open/floor/almayer/edge/smooth/west,
+/area/golden_arrow/cryo_cells)
 "abw" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "E";
@@ -25165,7 +25169,7 @@ adW
 aog
 aLK
 akO
-akO
+abv
 akO
 adW
 aog
