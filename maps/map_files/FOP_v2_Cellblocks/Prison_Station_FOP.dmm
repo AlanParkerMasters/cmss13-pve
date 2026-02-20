@@ -5448,6 +5448,11 @@
 /obj/effect/decal/cleanable/blood/splatter,
 /turf/open/floor/plating,
 /area/prison/security/monitoring/maxsec/panopticon)
+"arr" = (
+/obj/structure/closet/crate/freezer,
+/obj/effect/landmark/humanaispawner/clf/ua,
+/turf/open/floor/prison/kitchen,
+/area/prison/kitchen)
 "arB" = (
 /obj/structure/machinery/door/airlock/almayer/medical/colony{
 	name = "Morgue"
@@ -82046,7 +82051,7 @@ aQC
 aQC
 aQC
 bdl
-vSw
+arr
 tsA
 bjz
 wzi
