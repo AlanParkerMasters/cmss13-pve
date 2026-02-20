@@ -2125,6 +2125,10 @@
 	},
 /turf/open/floor/almayer/edge/smooth/north,
 /area/golden_arrow/hangar)
+"aeh" = (
+/obj/structure/machinery/cm_vending/sorted/medical,
+/turf/open/floor/almayer/plate,
+/area/golden_arrow/medical)
 "aej" = (
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
@@ -9960,14 +9964,22 @@
 /turf/open/floor/almayer,
 /area/golden_arrow/hangar)
 "aDO" = (
-/obj/structure/machinery/cm_vending/sorted/medical{
-	pixel_y = 18;
-	density = 0
-	},
 /obj/structure/machinery/light/double/blue/golden_arrow{
 	dir = 8;
 	light_power = 0.7
 	},
+/obj/structure/closet/crate/freezer{
+	name = "blood cooler crate";
+	pixel_y = 7
+	},
+/obj/item/reagent_container/blood/OMinus{
+	pixel_x = 7
+	},
+/obj/item/reagent_container/blood/OMinus{
+	pixel_x = -5
+	},
+/obj/item/reagent_container/blood/OMinus,
+/obj/item/reagent_container/blood/OMinus,
 /turf/open/floor/almayer/dark_sterile,
 /area/golden_arrow/medical)
 "aDQ" = (
@@ -15497,6 +15509,10 @@
 /obj/effect/decal/warning_stripes{
 	icon_state = "S"
 	},
+/obj/structure/machinery/cm_vending/gear/medic_chemical{
+	pixel_y = 20;
+	density = 0
+	},
 /turf/open/floor/almayer/sterile_green_side,
 /area/golden_arrow/medical)
 "aXq" = (
@@ -18197,9 +18213,6 @@
 	},
 /turf/open/floor/almayer,
 /area/golden_arrow/synthcloset)
-"hRK" = (
-/turf/open/floor/almayer/plate,
-/area/golden_arrow/medical)
 "hSW" = (
 /obj/effect/landmark/start/marine/leader/alpha,
 /obj/effect/landmark/late_join/alpha,
@@ -21678,24 +21691,6 @@
 	},
 /turf/open/floor/almayer,
 /area/golden_arrow/lower_cargo)
-"vtV" = (
-/obj/structure/closet/crate/freezer{
-	name = "blood cooler crate";
-	pixel_y = 7
-	},
-/obj/item/reagent_container/blood/OMinus,
-/obj/item/reagent_container/blood/OMinus{
-	pixel_x = -5
-	},
-/obj/item/reagent_container/blood/OMinus{
-	pixel_x = 7
-	},
-/obj/item/reagent_container/blood/OMinus,
-/obj/effect/decal/warning_stripes{
-	icon_state = "S"
-	},
-/turf/open/floor/almayer/sterile_green_side,
-/area/golden_arrow/medical)
 "vve" = (
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
@@ -28286,8 +28281,8 @@ aiM
 aEh
 aCE
 aDO
-vtV
-aaI
+rAj
+aeh
 aVg
 aEG
 aEG
@@ -28464,7 +28459,7 @@ aiQ
 acH
 aoe
 jVu
-hRK
+aeh
 aaI
 aEG
 aEG
