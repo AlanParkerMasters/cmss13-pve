@@ -37,6 +37,9 @@
 /obj/structure/machinery/landinglight/ds1/delaythree,
 /turf/open/floor/almayer/plate,
 /area/golden_arrow/hangar)
+"aaf" = (
+/turf/open/floor/almayer/edge/smooth,
+/area/golden_arrow/cryo_cells)
 "aag" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "door_warning";
@@ -3148,30 +3151,18 @@
 /area/golden_arrow/motor_pool)
 "agk" = (
 /obj/structure/safe/floor,
-/obj/item/spacecash/c1000,
-/obj/item/spacecash/c100,
-/obj/item/spacecash/c10,
-/obj/item/spacecash/c10,
-/obj/item/spacecash/c10,
-/obj/item/spacecash/c10,
-/obj/item/spacecash/c100,
-/obj/item/spacecash/c100,
-/obj/item/spacecash/c100,
-/obj/item/spacecash/c100,
-/obj/item/spacecash/c100,
-/obj/item/spacecash/c100,
-/obj/item/spacecash/c50,
-/obj/item/spacecash/c50,
-/obj/item/spacecash/c50,
-/obj/item/spacecash/c50,
-/obj/item/spacecash/c50,
-/obj/item/spacecash/c500,
-/obj/item/spacecash/c500,
-/obj/item/spacecash/c500,
 /obj/structure/machinery/light/double/blue/golden_arrow{
 	dir = 4;
 	light_power = 0.7
 	},
+/obj/item/spacecash/c1000/counterfeit,
+/obj/item/spacecash/c1000/counterfeit,
+/obj/item/spacecash/c1000/counterfeit,
+/obj/item/spacecash/c20,
+/obj/item/spacecash/c500/counterfeit,
+/obj/item/spacecash/c500/counterfeit,
+/obj/item/spacecash/c500/counterfeit,
+/obj/item/spacecash/c20,
 /turf/open/floor/prison/kitchen,
 /area/golden_arrow/cryo_cells)
 "agl" = (
@@ -28871,7 +28862,7 @@ aei
 adX
 adN
 adF
-aBk
+alD
 aBd
 aog
 aog
@@ -29579,7 +29570,7 @@ aei
 adY
 adO
 adF
-aBk
+alD
 aLz
 aDS
 azx
@@ -30283,11 +30274,11 @@ aEG
 aEG
 aWh
 aet
-aBk
+aaf
 adZ
 arQ
 aHF
-aBk
+alD
 ahm
 aog
 aCM
