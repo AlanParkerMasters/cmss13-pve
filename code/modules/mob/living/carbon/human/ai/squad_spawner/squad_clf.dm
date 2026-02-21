@@ -104,8 +104,8 @@
 /datum/human_ai_squad_preset/clf/prisoner/riot
 	name = "Prisoner riot squad"
 	ai_to_spawn = list(
-		/datum/equipment_preset/rebel/prisoner/shield= 4,
-		/datum/equipment_preset/rebel/riot/teargas= 3,
+		/datum/equipment_preset/rebel/prisoner/riot/shield= 4,
+		/datum/equipment_preset/rebel/prisoner/riot/teargas= 3,
 	)
 
 /datum/human_ai_squad_preset/clf/prisoner/soldiers

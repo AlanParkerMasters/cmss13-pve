@@ -570,27 +570,27 @@
 /obj/effect/landmark/humanaispawner/clf/ua/prisoner/riot/shield
 	name = "Shield Prisoner Rebel"
 	desc = "A rioting prisoner."
-	equip_path = /datum/equipment_preset/rebel/riot/shield
+	equip_path = /datum/equipment_preset/rebel/prisoner/riot/shield
 
 /obj/effect/landmark/humanaispawner/clf/ua/prisoner/riot/teargas
 	name = "Teargas Prisoner Rebel"
 	desc = "A rioting prisoner."
-	equip_path = /datum/equipment_preset/rebel/riot/teargas
+	equip_path = /datum/equipment_preset/rebel/prisoner/riot/teargas
 
 /obj/effect/landmark/humanaispawner/clf/ua/prisoner/riot/beanbag
 	name = "Beanbag Prisoner Rebel"
 	desc = "A rioting prisoner."
-	equip_path = /datum/equipment_preset/rebel/riot/beanbag
+	equip_path =  /datum/equipment_preset/rebel/prisoner/riot/beanbag
 
 /obj/effect/landmark/humanaispawner/clf/ua/prisoner/soldier
 	name = "Soldier Prisoner Rebel"
 	desc = "A rioting prisoner."
-	equip_path = /datum/equipment_preset/rebel/soldier
+	equip_path = /datum/equipment_preset/rebel/prisoner/soldier
 
 /obj/effect/landmark/humanaispawner/clf/ua/prisoner/shotgunner
 	name = "Shotgunner Prisoner Rebel"
 	desc = "A rioting prisoner."
-	equip_path = /datum/equipment_preset/rebel/shotgunner
+	equip_path = /datum/equipment_preset/rebel/prisoner/shotgunner
 
 /obj/effect/landmark/humanaispawner/clf/ua/guerilla
 	name = "UA Rebel, Soldier (Pistol)"
