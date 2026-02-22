@@ -251,9 +251,20 @@
 	idtype = /obj/item/card/id
 
 /datum/equipment_preset/corpse/prisoner/load_gear(mob/living/carbon/human/new_human)
-	new_human.undershirt = "undershirt"
+	//undershirt
+	if(new_human.gender == MALE)
+		new_human.undershirt = pick("undershirt", "Undershirt (Grey)", "None")
+	if(new_human.gender == FEMALE)
+		new_human.undershirt = pick("undershirt", "Undershirt (Grey)")
 	//uniform
-	new_human.equip_to_slot_or_del(new /obj/item/clothing/under/colonist/prison_boiler(new_human), WEAR_BODY)
+	var/obj/item/clothing/under/colonist/prison_boiler/uniform = new()
+	var/random_uniform = rand(1,2)
+	switch(random_uniform)
+		if(1)
+			uniform.roll_suit_jacket(new_human)
+		if(2)
+			uniform.roll_suit_sleeves(new_human)
+	new_human.equip_to_slot_or_del(uniform, WEAR_BODY)
 	//limb
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/shoes/white(new_human), WEAR_FEET)
 

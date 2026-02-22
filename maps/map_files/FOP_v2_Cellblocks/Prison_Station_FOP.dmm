@@ -345,10 +345,6 @@
 	},
 /turf/open/floor/prison,
 /area/prison/security/armory/lethal)
-"abc" = (
-/obj/structure/window/framed/prison/reinforced/hull,
-/turf/closed/wall/r_wall/prison_unmeltable,
-/area/prison/monorail/east)
 "abd" = (
 /obj/structure/shuttle/part/twe_cosmetic1/transparent{
 	icon_state = "1,2"
@@ -90725,16 +90721,16 @@ bwU
 bwU
 bwU
 bwU
-abc
-abc
-abc
-abc
-abc
-abc
+bzV
+bzV
+bzV
+bzV
+bzV
+bzV
 bwU
 bwU
-abc
-abc
+bzV
+bzV
 bwU
 aAO
 aAO

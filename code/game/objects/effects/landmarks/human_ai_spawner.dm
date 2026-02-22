@@ -567,6 +567,16 @@
 	desc = "A rioting prisoner."
 	equip_path = /datum/equipment_preset/rebel/prisoner
 
+/obj/effect/landmark/humanaispawner/clf/ua/prisoner/lunge
+	name = "Lunge Prisoner Rebel"
+	desc = "A rioting prisoner."
+	equip_path = /datum/equipment_preset/rebel/prisoner/lunge
+
+/obj/effect/landmark/humanaispawner/clf/ua/prisoner/molotov
+	name = "Molotov Prisoner Rebel"
+	desc = "A rioting prisoner."
+	equip_path = /datum/equipment_preset/rebel/prisoner/molotov
+
 /obj/effect/landmark/humanaispawner/clf/ua/prisoner/riot/shield
 	name = "Shield Prisoner Rebel"
 	desc = "A rioting prisoner."

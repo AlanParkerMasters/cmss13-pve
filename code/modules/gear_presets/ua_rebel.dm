@@ -54,11 +54,92 @@
 	idtype = /obj/item/card/id
 
 /datum/equipment_preset/rebel/prisoner/load_gear(mob/living/carbon/human/new_human)
-	new_human.undershirt = "undershirt"
+	//undershirt
+	if(new_human.gender == MALE)
+		new_human.undershirt = pick("undershirt", "Undershirt (Grey)", "None")
+	if(new_human.gender == FEMALE)
+		new_human.undershirt = pick("undershirt", "Undershirt (Grey)")
 	//uniform
-	new_human.equip_to_slot_or_del(new /obj/item/clothing/under/colonist/prison_boiler(new_human), WEAR_BODY)
+	var/obj/item/clothing/under/colonist/prison_boiler/uniform = new()
+	var/random_uniform = rand(1,2)
+	switch(random_uniform)
+		if(1)
+			uniform.roll_suit_jacket(new_human)
+		if(2)
+			uniform.roll_suit_sleeves(new_human)
+	new_human.equip_to_slot_or_del(uniform, WEAR_BODY)
 	//limb
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/shoes/white(new_human), WEAR_FEET)
+	if(prob(15))
+		new_human.equip_to_slot_or_del(new /obj/item/storage/belt/security/MP/colonist(new_human), WEAR_WAIST)
+	if(prob(35))
+		add_prisoner_rebel_headband(new_human)
+	var/random_weapon = pick(/obj/item/weapon/classic_baton, /obj/item/weapon/baseballbat/metal, /obj/item/weapon/butterfly/switchblade/open)
+	if(prob(50))
+		new_human.equip_to_slot_or_del(new random_weapon, WEAR_R_HAND)
+
+/datum/equipment_preset/rebel/prisoner/molotov
+	name = "Molotov Prisoner Rebel"
+	flags = EQUIPMENT_PRESET_EXTRA
+	assignment = "Inmate"
+	paygrades = list(PAY_SHORT_REB = JOB_PLAYTIME_TIER_0)
+	access = list(null)
+	idtype = /obj/item/card/id
+
+/datum/equipment_preset/rebel/prisoner/molotov/load_gear(mob/living/carbon/human/new_human)
+	//undershirt
+	if(new_human.gender == MALE)
+		new_human.undershirt = pick("undershirt", "Undershirt (Grey)", "None")
+	if(new_human.gender == FEMALE)
+		new_human.undershirt = pick("undershirt", "Undershirt (Grey)")
+	//uniform
+	var/obj/item/clothing/under/colonist/prison_boiler/uniform = new()
+	var/random_uniform = rand(1,2)
+	switch(random_uniform)
+		if(1)
+			uniform.roll_suit_jacket(new_human)
+		if(2)
+			uniform.roll_suit_sleeves(new_human)
+	new_human.equip_to_slot_or_del(uniform, WEAR_BODY)
+	//limb
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/shoes/white(new_human), WEAR_FEET)
+	if(prob(15))
+		new_human.equip_to_slot_or_del(new /obj/item/storage/belt/security/MP/colonist(new_human), WEAR_WAIST)
+	if(prob(35))
+		add_prisoner_rebel_headband(new_human)
+	new_human.equip_to_slot_or_del(new /obj/item/explosive/grenade/incendiary/molotov(new_human), WEAR_R_HAND)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/black, WEAR_BACK)
+	new_human.equip_to_slot_or_del(new /obj/item/explosive/grenade/incendiary/molotov, WEAR_IN_BACK)
+	new_human.equip_to_slot_or_del(new /obj/item/explosive/grenade/incendiary/molotov, WEAR_IN_BACK)
+
+/datum/equipment_preset/rebel/prisoner/lunge
+	name = "Lunge Prisoner Rebel"
+	flags = EQUIPMENT_PRESET_EXTRA
+	assignment = "Inmate"
+	paygrades = list(PAY_SHORT_REB = JOB_PLAYTIME_TIER_0)
+	access = list(null)
+	idtype = /obj/item/card/id
+
+/datum/equipment_preset/rebel/prisoner/lunge/load_gear(mob/living/carbon/human/new_human)
+	//undershirt
+	if(new_human.gender == MALE)
+		new_human.undershirt = pick("undershirt", "Undershirt (Grey)", "None")
+	if(new_human.gender == FEMALE)
+		new_human.undershirt = pick("undershirt", "Undershirt (Grey)")
+	//uniform
+	var/obj/item/clothing/under/colonist/prison_boiler/uniform = new()
+	var/random_uniform = rand(1,2)
+	switch(random_uniform)
+		if(1)
+			uniform.roll_suit_jacket(new_human)
+		if(2)
+			uniform.roll_suit_sleeves(new_human)
+	new_human.equip_to_slot_or_del(uniform, WEAR_BODY)
+	//limb
+	if(prob(35))
+		add_prisoner_rebel_headband(new_human)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/shoes/white(new_human), WEAR_FEET)
+	new_human.put_in_active_hand(new /obj/item/weapon/twohanded/lungemine(new_human))
 
 /datum/equipment_preset/rebel/prisoner/riot/shield
 	name = "Shield Prisoner Rebel"
@@ -69,11 +150,24 @@
 	idtype = /obj/item/card/id
 
 /datum/equipment_preset/rebel/prisoner/riot/shield/load_gear(mob/living/carbon/human/new_human)
-	new_human.undershirt = "undershirt"
+	//undershirt
+	if(new_human.gender == MALE)
+		new_human.undershirt = pick("undershirt", "Undershirt (Grey)", "None")
+	if(new_human.gender == FEMALE)
+		new_human.undershirt = pick("undershirt", "Undershirt (Grey)")
 	//uniform
-	new_human.equip_to_slot_or_del(new /obj/item/clothing/under/colonist/prison_boiler(new_human), WEAR_BODY)
+	var/obj/item/clothing/under/colonist/prison_boiler/uniform = new()
+	var/random_uniform = rand(1,2)
+	switch(random_uniform)
+		if(1)
+			uniform.roll_suit_jacket(new_human)
+		if(2)
+			uniform.roll_suit_sleeves(new_human)
+	new_human.equip_to_slot_or_del(uniform, WEAR_BODY)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/shoes/white(new_human), WEAR_FEET)
 	//stuff
+	if(prob(15))
+		new_human.equip_to_slot_or_del(new /obj/item/storage/belt/security/MP/colonist(new_human), WEAR_WAIST)
 	if(prob(65))
 		new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/grey, WEAR_HEAD)
 		new_human.equip_to_slot_or_del(new /obj/item/prop/helmetgarb/riot_shield, WEAR_IN_HELMET)
@@ -92,12 +186,25 @@
 	idtype = /obj/item/card/id
 
 /datum/equipment_preset/rebel/prisoner/riot/teargas/load_gear(mob/living/carbon/human/new_human)
-	new_human.undershirt = "undershirt"
+	//undershirt
+	if(new_human.gender == MALE)
+		new_human.undershirt = pick("undershirt", "Undershirt (Grey)", "None")
+	if(new_human.gender == FEMALE)
+		new_human.undershirt = pick("undershirt", "Undershirt (Grey)")
 	//uniform
-	new_human.equip_to_slot_or_del(new /obj/item/clothing/under/colonist/prison_boiler(new_human), WEAR_BODY)
+	var/obj/item/clothing/under/colonist/prison_boiler/uniform = new()
+	var/random_uniform = rand(1,2)
+	switch(random_uniform)
+		if(1)
+			uniform.roll_suit_jacket(new_human)
+		if(2)
+			uniform.roll_suit_sleeves(new_human)
+	new_human.equip_to_slot_or_del(uniform, WEAR_BODY)
 	//limb
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/shoes/white(new_human), WEAR_FEET)
 	//pockets
+	if(prob(15))
+		new_human.equip_to_slot_or_del(new /obj/item/storage/belt/security/MP/colonist(new_human), WEAR_WAIST)
 	if(prob(65))
 		new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/grey, WEAR_HEAD)
 		new_human.equip_to_slot_or_del(new /obj/item/prop/helmetgarb/riot_shield, WEAR_IN_HELMET)
@@ -120,11 +227,24 @@
 	idtype = /obj/item/card/id
 
 /datum/equipment_preset/rebel/prisoner/riot/beanbag/load_gear(mob/living/carbon/human/new_human)
-	new_human.undershirt = "undershirt"
+	//undershirt
+	if(new_human.gender == MALE)
+		new_human.undershirt = pick("undershirt", "Undershirt (Grey)", "None")
+	if(new_human.gender == FEMALE)
+		new_human.undershirt = pick("undershirt", "Undershirt (Grey)")
 	//uniform
-	new_human.equip_to_slot_or_del(new /obj/item/clothing/under/colonist/prison_boiler(new_human), WEAR_BODY)
+	var/obj/item/clothing/under/colonist/prison_boiler/uniform = new()
+	var/random_uniform = rand(1,2)
+	switch(random_uniform)
+		if(1)
+			uniform.roll_suit_jacket(new_human)
+		if(2)
+			uniform.roll_suit_sleeves(new_human)
+	new_human.equip_to_slot_or_del(uniform, WEAR_BODY)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/shoes/white(new_human), WEAR_FEET)
 	//stuff
+	if(prob(15))
+		new_human.equip_to_slot_or_del(new /obj/item/storage/belt/security/MP/colonist(new_human), WEAR_WAIST)
 	if(prob(65))
 		new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/grey, WEAR_HEAD)
 		new_human.equip_to_slot_or_del(new /obj/item/prop/helmetgarb/riot_shield, WEAR_IN_HELMET)
@@ -151,12 +271,24 @@
 	idtype = /obj/item/card/id
 
 /datum/equipment_preset/rebel/prisoner/soldier/load_gear(mob/living/carbon/human/new_human)
-	new_human.undershirt = "undershirt"
+	//undershirt
+	if(new_human.gender == MALE)
+		new_human.undershirt = pick("undershirt", "Undershirt (Grey)", "None")
+	if(new_human.gender == FEMALE)
+		new_human.undershirt = pick("undershirt", "Undershirt (Grey)")
 	//uniform
-	new_human.equip_to_slot_or_del(new /obj/item/clothing/under/colonist/prison_boiler(new_human), WEAR_BODY)
+	var/obj/item/clothing/under/colonist/prison_boiler/uniform = new()
+	var/random_uniform = rand(1,2)
+	switch(random_uniform)
+		if(1)
+			uniform.roll_suit_jacket(new_human)
+		if(2)
+			uniform.roll_suit_sleeves(new_human)
+	new_human.equip_to_slot_or_del(uniform, WEAR_BODY)
 	//limb
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/shoes/white(new_human), WEAR_FEET)
 	new_human.equip_to_slot_or_del(new /obj/item/storage/belt/marine(new_human), WEAR_WAIST)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/firstaid/full/alternate, WEAR_L_STORE)
 	add_rebel_ua_suit(new_human)
 	if(prob(65))
 		add_facewrap(new_human)
@@ -175,10 +307,22 @@
 	idtype = /obj/item/card/id
 
 /datum/equipment_preset/rebel/prisoner/shotgunner/load_gear(mob/living/carbon/human/new_human)
-	new_human.undershirt = "undershirt"
+	//undershirt
+	if(new_human.gender == MALE)
+		new_human.undershirt = pick("undershirt", "Undershirt (Grey)", "None")
+	if(new_human.gender == FEMALE)
+		new_human.undershirt = pick("undershirt", "Undershirt (Grey)")
 	//uniform
-	new_human.equip_to_slot_or_del(new /obj/item/clothing/under/colonist/prison_boiler(new_human), WEAR_BODY)
+	var/obj/item/clothing/under/colonist/prison_boiler/uniform = new()
+	var/random_uniform = rand(1,2)
+	switch(random_uniform)
+		if(1)
+			uniform.roll_suit_jacket(new_human)
+		if(2)
+			uniform.roll_suit_sleeves(new_human)
+	new_human.equip_to_slot_or_del(uniform, WEAR_BODY)
 	//limb
+	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/firstaid/full/alternate, WEAR_L_STORE)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/shoes/white(new_human), WEAR_FEET)
 	new_human.equip_to_slot_or_del(new /obj/item/storage/belt/marine(new_human), WEAR_WAIST)
 	add_rebel_ua_suit(new_human)
@@ -189,23 +333,6 @@
 	if(prob(35))
 		add_rebel_gloves(new_human)
 	add_rebel_ua_shotgun(new_human)
-
-
-/datum/equipment_preset/rebel/prisoner/lunge
-	name = "Lunge Prisoner Rebel"
-	flags = EQUIPMENT_PRESET_EXTRA
-	assignment = "Inmate"
-	paygrades = list(PAY_SHORT_REB = JOB_PLAYTIME_TIER_0)
-	access = list(null)
-	idtype = /obj/item/card/id
-
-/datum/equipment_preset/rebel/prisoner/lunge/load_gear(mob/living/carbon/human/new_human)
-	new_human.undershirt = "undershirt"
-	//uniform
-	new_human.equip_to_slot_or_del(new /obj/item/clothing/under/colonist/prison_boiler(new_human), WEAR_BODY)
-	//limb
-	new_human.equip_to_slot_or_del(new /obj/item/clothing/shoes/white(new_human), WEAR_FEET)
-	new_human.put_in_active_hand(new /obj/item/weapon/twohanded/lungemine(new_human))
 
 /datum/equipment_preset/rebel/soldier
 	name = "UA Rebel, Soldier (Rifle)"

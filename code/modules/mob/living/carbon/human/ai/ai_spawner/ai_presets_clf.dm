@@ -58,6 +58,16 @@
 	desc = "A rioting prisoner."
 	path = /datum/equipment_preset/rebel/prisoner
 
+/datum/human_ai_equipment_preset/clf/ua/prisoner/lunge
+	name = "Lunge Prisoner Rebel"
+	desc = "A rioting prisoner."
+	path = /datum/equipment_preset/rebel/prisoner/lunge
+
+/datum/human_ai_equipment_preset/clf/ua/prisoner/molotov
+	name = "Molotov Prisoner Rebel"
+	desc = "A rioting prisoner."
+	path = /datum/equipment_preset/rebel/prisoner/molotov
+
 /datum/human_ai_equipment_preset/clf/ua/prisoner/riot/shield
 	name = "Shield Prisoner Rebel"
 	desc = "A rioting prisoner."
