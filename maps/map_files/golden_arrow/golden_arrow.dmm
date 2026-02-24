@@ -262,7 +262,7 @@
 /turf/open/floor/almayer/edge/smooth/east,
 /area/golden_arrow/cryo_cells)
 "aay" = (
-/obj/item/holder/rat/gray,
+/mob/living/simple_animal/mouse/rat/gray,
 /turf/open/floor/almayer/edge/smooth/corner/west,
 /area/golden_arrow/supply)
 "aaz" = (
@@ -1943,7 +1943,7 @@
 	dir = 8
 	},
 /obj/structure/surface/table/almayer,
-/obj/item/holder/cat/blackcat{
+/mob/living/simple_animal/cat/blackcat{
 	name = "Luna"
 	},
 /turf/open/floor/almayer/mono,
