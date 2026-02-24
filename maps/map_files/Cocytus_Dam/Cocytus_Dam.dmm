@@ -76,7 +76,7 @@
 /obj/structure/blocker/invisible_wall/directional{
 	dir = 4
 	},
-/turf/open/gm/river/shallow_ocean_shallow_ocean,
+/turf/open/liquid/water/shallow_ocean_shallow_ocean,
 /area/desert_dam/exterior/valley/north_valley_dam)
 "aq" = (
 /obj/structure/bed/chair/office/light{
@@ -103,7 +103,7 @@
 /obj/structure/blocker/invisible_wall/directional{
 	dir = 4
 	},
-/turf/open/gm/river/shallow_ocean_shallow_ocean,
+/turf/open/liquid/water/shallow_ocean_shallow_ocean,
 /area/desert_dam/exterior/valley/north_valley_dam)
 "aB" = (
 /obj/structure/machinery/landinglight/ds1/delayone{
@@ -113,7 +113,7 @@
 /area/desert_dam/exterior/valley/north_valley_dam)
 "aD" = (
 /obj/structure/blocker/fog,
-/turf/open/gm/river/ocean/deep_ocean,
+/turf/open/liquid/water/ocean/deep_ocean,
 /area/desert_dam/exterior/valley/north_valley_dam)
 "aF" = (
 /obj/effect/decal/warning_stripes{
@@ -254,7 +254,7 @@
 /turf/open/floor/almayer/plate,
 /area/calliope/bunker_exterior_buildings/west_checkpoint)
 "bU" = (
-/turf/open/gm/river/desert/shallow_edge,
+/turf/open/liquid/water/river/desert/shallow/edge,
 /area/desert_dam/exterior/valley/north_valley_dam)
 "bY" = (
 /turf/open/floor/kutjevo/tan/grey_edge,
@@ -324,7 +324,7 @@
 /turf/open/floor/kutjevo/tan/grey_edge/southeast,
 /area/desert_dam/interior/dam_interior/engine_room)
 "cK" = (
-/turf/open/gm/river/desert/shallow_edge/southeast,
+/turf/open/liquid/water/river/desert/shallow/edge/southeast,
 /area/desert_dam/exterior/valley/north_valley_dam)
 "cP" = (
 /obj/structure/reagent_dispensers/water_cooler/stacks{
@@ -462,7 +462,7 @@
 	damage = 125;
 	vector_y = 20
 	},
-/turf/open/gm/river/shallow_ocean_shallow_ocean,
+/turf/open/liquid/water/shallow_ocean_shallow_ocean,
 /area/desert_dam/exterior/valley/north_valley_dam)
 "dm" = (
 /obj/structure/machinery/light/double{
@@ -900,7 +900,7 @@
 /turf/open/floor/whitebluefull,
 /area/desert_dam/building/medical/treatment_room)
 "gx" = (
-/turf/open/gm/river/desert/shallow_edge/north,
+/turf/open/liquid/water/river/desert/shallow/edge/north,
 /area/desert_dam/exterior/valley/north_valley_dam)
 "gy" = (
 /obj/item/clothing/under/marine/officer/pilot/flight/para{
@@ -983,7 +983,7 @@
 /turf/open/floor/almayer/plate,
 /area/calliope/bunker_exterior_buildings/west_checkpoint)
 "gJ" = (
-/turf/open/gm/river/shallow_ocean_shallow_ocean,
+/turf/open/liquid/water/shallow_ocean_shallow_ocean,
 /area/desert_dam/exterior/valley/north_valley_dam)
 "gK" = (
 /obj/structure/machinery/door/airlock/almayer/generic/glass{
@@ -1022,7 +1022,7 @@
 	damage = 125;
 	vector_x = -15
 	},
-/turf/open/gm/river/shallow_ocean_shallow_ocean,
+/turf/open/liquid/water/shallow_ocean_shallow_ocean,
 /area/desert_dam/exterior/valley/north_valley_dam)
 "gX" = (
 /obj/effect/decal/cleanable/dirt,
@@ -1099,7 +1099,7 @@
 /turf/open/floor/kutjevo/tan,
 /area/bigredv2/outside/telecomm/store)
 "hn" = (
-/turf/open/gm/river/ocean/deep_ocean,
+/turf/open/liquid/water/ocean/deep_ocean,
 /area/desert_dam/exterior/valley/north_valley_dam)
 "ho" = (
 /turf/open/floor/whitebluecorner/north,
@@ -1174,7 +1174,7 @@
 /area/bigredv2/outside/telecomm/store)
 "ia" = (
 /obj/structure/prop/rock/brown,
-/turf/open/gm/river/desert/shallow_edge/southwest,
+/turf/open/liquid/water/river/desert/shallow/edge/southwest,
 /area/desert_dam/exterior/valley/north_valley_dam)
 "ib" = (
 /obj/effect/decal/cleanable/dirt,
@@ -1247,7 +1247,7 @@
 /turf/open/asphalt/cement_sunbleached_darkened,
 /area/desert_dam/exterior/valley/north_valley_dam)
 "iL" = (
-/turf/open/gm/river/ocean/deep_ocean,
+/turf/open/liquid/water/ocean/deep_ocean,
 /area/desert_dam/interior/dam_interior/engine_room)
 "iN" = (
 /turf/open/floor/carpet/edge/northwest,
@@ -1448,7 +1448,7 @@
 /obj/structure/blocker/invisible_wall/directional{
 	dir = 8
 	},
-/turf/open/gm/river/shallow_ocean_shallow_ocean,
+/turf/open/liquid/water/shallow_ocean_shallow_ocean,
 /area/desert_dam/exterior/valley/north_valley_dam)
 "jL" = (
 /obj/structure/window/framed/colony,
@@ -1567,7 +1567,7 @@
 /area/desert_dam/building/medical/emergency_room)
 "kZ" = (
 /obj/structure/blocker/fog,
-/turf/open/gm/river/beach_water,
+/turf/open/liquid/water/beach_water,
 /area/desert_dam/exterior/valley/north_valley_dam)
 "lc" = (
 /obj/effect/decal/cleanable/dirt,
@@ -1753,7 +1753,7 @@
 "mf" = (
 /obj/structure/prop/turbine,
 /obj/structure/prop/turbine_extras/border,
-/turf/open/gm/river/ocean/deep_ocean,
+/turf/open/liquid/water/ocean/deep_ocean,
 /area/desert_dam/interior/dam_interior/engine_room)
 "mg" = (
 /obj/structure/platform/kutjevo{
@@ -2122,7 +2122,7 @@
 	damage = 75;
 	vector_y = 1
 	},
-/turf/open/gm/river/ocean/deep_ocean,
+/turf/open/liquid/water/ocean/deep_ocean,
 /area/desert_dam/interior/dam_interior/engine_room)
 "pF" = (
 /obj/structure/cargo_container/trijent/left{
@@ -2235,7 +2235,7 @@
 /obj/structure/blocker/invisible_wall/directional{
 	dir = 4
 	},
-/turf/open/gm/river/shallow_ocean_shallow_ocean,
+/turf/open/liquid/water/shallow_ocean_shallow_ocean,
 /area/desert_dam/exterior/valley/north_valley_dam)
 "re" = (
 /obj/structure/machinery/vending/walkman{
@@ -2373,7 +2373,7 @@
 /obj/structure/blocker/invisible_wall/directional{
 	dir = 1
 	},
-/turf/open/gm/river/shallow_ocean_shallow_ocean,
+/turf/open/liquid/water/shallow_ocean_shallow_ocean,
 /area/desert_dam/exterior/valley/north_valley_dam)
 "rD" = (
 /obj/structure/bed/sofa/vert/grey/top,
@@ -2494,7 +2494,7 @@
 	dir = 4
 	},
 /obj/structure/blocker/invisible_wall/directional,
-/turf/open/gm/river/ocean/deep_ocean,
+/turf/open/liquid/water/ocean/deep_ocean,
 /area/desert_dam/exterior/valley/north_valley_dam)
 "sF" = (
 /obj/structure/desertdam/decals/road_edge{
@@ -2577,7 +2577,7 @@
 /area/desert_dam/interior/dam_interior/engine_room)
 "sS" = (
 /obj/structure/blocker/invisible_wall/directional,
-/turf/open/gm/river/shallow_ocean_shallow_ocean,
+/turf/open/liquid/water/shallow_ocean_shallow_ocean,
 /area/desert_dam/exterior/valley/north_valley_dam)
 "sU" = (
 /obj/structure/machinery/landinglight/ds1/delaytwo,
@@ -2606,7 +2606,7 @@
 	vector_y = -1;
 	damage = 75
 	},
-/turf/open/gm/river/ocean/deep_ocean,
+/turf/open/liquid/water/ocean/deep_ocean,
 /area/desert_dam/interior/dam_interior/engine_room)
 "td" = (
 /obj/structure/cargo_container/trijent/mid{
@@ -2963,7 +2963,7 @@
 /area/bigredv2/outside/telecomm/store)
 "vV" = (
 /obj/structure/blocker/fog,
-/turf/open/gm/river/shallow_ocean_shallow_ocean,
+/turf/open/liquid/water/shallow_ocean_shallow_ocean,
 /area/desert_dam/exterior/valley/north_valley_dam)
 "vW" = (
 /obj/structure/bed/chair/comfy/bench/south,
@@ -2978,7 +2978,7 @@
 /obj/structure/blocker/invisible_wall/directional{
 	dir = 8
 	},
-/turf/open/gm/river/ocean/deep_ocean,
+/turf/open/liquid/water/ocean/deep_ocean,
 /area/desert_dam/exterior/valley/north_valley_dam)
 "wc" = (
 /obj/structure/prop/dam/truck/cargo,
@@ -3031,7 +3031,7 @@
 	layer = 7;
 	pixel_x = 4
 	},
-/turf/open/gm/river/beach_water,
+/turf/open/liquid/water/beach_water,
 /area/desert_dam/exterior/valley/north_valley_dam)
 "wA" = (
 /obj/item/tool/wrench{
@@ -3252,7 +3252,7 @@
 	vector_y = 20
 	},
 /obj/structure/platform/kutjevo,
-/turf/open/gm/river/shallow_ocean_shallow_ocean,
+/turf/open/liquid/water/shallow_ocean_shallow_ocean,
 /area/desert_dam/exterior/valley/north_valley_dam)
 "yn" = (
 /obj/effect/decal/cleanable/blood/oil,
@@ -3656,7 +3656,7 @@
 	damage = 125;
 	vector_x = -15
 	},
-/turf/open/gm/river/ocean/deep_ocean,
+/turf/open/liquid/water/ocean/deep_ocean,
 /area/desert_dam/exterior/valley/north_valley_dam)
 "Bt" = (
 /obj/effect/vehicle_spawner/box_van/cop_car/decrepit,
@@ -3771,7 +3771,7 @@
 	damage = 75;
 	vector_y = 10
 	},
-/turf/open/gm/river/ocean/deep_ocean,
+/turf/open/liquid/water/ocean/deep_ocean,
 /area/desert_dam/exterior/valley/north_valley_dam)
 "Cf" = (
 /turf/open/floor/carpet/edge/northwest,
@@ -4022,7 +4022,7 @@
 	pixel_x = 4;
 	dir = 1
 	},
-/turf/open/gm/river/beach_water,
+/turf/open/liquid/water/beach_water,
 /area/desert_dam/exterior/valley/north_valley_dam)
 "DC" = (
 /obj/effect/decal/cleanable/dirt,
@@ -4067,7 +4067,7 @@
 /obj/structure/blocker/invisible_wall/directional{
 	dir = 1
 	},
-/turf/open/gm/river/shallow_ocean_shallow_ocean,
+/turf/open/liquid/water/shallow_ocean_shallow_ocean,
 /area/desert_dam/exterior/valley/north_valley_dam)
 "DK" = (
 /obj/structure/surface/table,
@@ -4157,7 +4157,7 @@
 /obj/structure/blocker/invisible_wall/directional{
 	dir = 8
 	},
-/turf/open/gm/river/ocean/deep_ocean,
+/turf/open/liquid/water/ocean/deep_ocean,
 /area/desert_dam/exterior/valley/north_valley_dam)
 "Eh" = (
 /obj/structure/reagent_dispensers/fueltank,
@@ -4226,7 +4226,7 @@
 /obj/structure/blocker/invisible_wall/directional{
 	dir = 1
 	},
-/turf/open/gm/river/shallow_ocean_shallow_ocean,
+/turf/open/liquid/water/shallow_ocean_shallow_ocean,
 /area/desert_dam/exterior/valley/north_valley_dam)
 "EJ" = (
 /obj/structure/surface/table,
@@ -4407,7 +4407,7 @@
 /turf/open/floor/kutjevo/tan,
 /area/desert_dam/building/administration/lobby)
 "Gf" = (
-/turf/open/gm/river/desert/shallow_edge/east,
+/turf/open/liquid/water/river/desert/shallow/edge/east,
 /area/desert_dam/exterior/valley/north_valley_dam)
 "Gh" = (
 /obj/effect/decal/warning_stripes{
@@ -4423,7 +4423,7 @@
 /turf/open/floor/plating,
 /area/desert_dam/exterior/valley/north_valley_dam)
 "GE" = (
-/turf/open/gm/river/desert/shallow_edge/northwest,
+/turf/open/liquid/water/river/desert/shallow/edge/northwest,
 /area/desert_dam/exterior/valley/north_valley_dam)
 "GG" = (
 /obj/structure/surface/table/reinforced/black,
@@ -5068,7 +5068,7 @@
 	layer = 7;
 	pixel_x = -5
 	},
-/turf/open/gm/river/beach_water,
+/turf/open/liquid/water/beach_water,
 /area/desert_dam/exterior/valley/north_valley_dam)
 "KP" = (
 /obj/structure/machinery/light/double{
@@ -5081,7 +5081,7 @@
 	damage = 75;
 	vector_y = 10
 	},
-/turf/open/gm/river/shallow_ocean_shallow_ocean,
+/turf/open/liquid/water/shallow_ocean_shallow_ocean,
 /area/desert_dam/exterior/valley/north_valley_dam)
 "KR" = (
 /obj/effect/decal/cleanable/dirt,
@@ -5503,7 +5503,7 @@
 	vector_x = 10;
 	damage = 125
 	},
-/turf/open/gm/river/shallow_ocean_shallow_ocean,
+/turf/open/liquid/water/shallow_ocean_shallow_ocean,
 /area/desert_dam/exterior/valley/north_valley_dam)
 "NJ" = (
 /obj/effect/decal/cleanable/dirt,
@@ -5612,7 +5612,7 @@
 /turf/open/floor/whitebluefull,
 /area/desert_dam/building/medical/treatment_room)
 "OG" = (
-/turf/open/gm/river/desert/shallow_edge/northeast,
+/turf/open/liquid/water/river/desert/shallow/edge/northeast,
 /area/desert_dam/exterior/valley/north_valley_dam)
 "OH" = (
 /obj/structure/machinery/body_scanconsole,
@@ -5629,7 +5629,7 @@
 /turf/open/floor/kutjevo/tan/alt_edge,
 /area/desert_dam/interior/dam_interior/engine_room)
 "OL" = (
-/turf/open/gm/river/desert/shallow_edge/west,
+/turf/open/liquid/water/river/desert/shallow/edge/west,
 /area/desert_dam/exterior/valley/north_valley_dam)
 "OO" = (
 /turf/open/floor/kutjevo/tan/alt_edge/north,
@@ -5861,7 +5861,7 @@
 /turf/open/gm/grass/weedable,
 /area/desert_dam/exterior/valley/north_valley_dam)
 "Rk" = (
-/turf/open/gm/river/desert/deep,
+/turf/open/liquid/water/river/desert/deep,
 /area/desert_dam/exterior/valley/north_valley_dam)
 "Rl" = (
 /obj/structure/machinery/light/double,
@@ -6302,7 +6302,7 @@
 /obj/structure/blocker/invisible_wall/directional{
 	dir = 8
 	},
-/turf/open/gm/river/ocean/deep_ocean,
+/turf/open/liquid/water/ocean/deep_ocean,
 /area/desert_dam/exterior/valley/north_valley_dam)
 "UQ" = (
 /obj/structure/cargo_container/grant/rightmid,
@@ -6394,13 +6394,13 @@
 /obj/structure/blocker/invisible_wall/directional{
 	dir = 8
 	},
-/turf/open/gm/river/shallow_ocean_shallow_ocean,
+/turf/open/liquid/water/shallow_ocean_shallow_ocean,
 /area/desert_dam/exterior/valley/north_valley_dam)
 "VQ" = (
 /obj/structure/blocker/invisible_wall/directional{
 	dir = 4
 	},
-/turf/open/gm/river/ocean/deep_ocean,
+/turf/open/liquid/water/ocean/deep_ocean,
 /area/desert_dam/exterior/valley/north_valley_dam)
 "VR" = (
 /obj/effect/decal/cleanable/dirt,
@@ -6634,7 +6634,7 @@
 	dir = 4
 	},
 /obj/structure/blocker/invisible_wall/directional,
-/turf/open/gm/river/shallow_ocean_shallow_ocean,
+/turf/open/liquid/water/shallow_ocean_shallow_ocean,
 /area/desert_dam/exterior/valley/north_valley_dam)
 "XK" = (
 /turf/closed/wall/r_wall,
@@ -6718,14 +6718,14 @@
 /turf/open/floor/kutjevo/tan/alt_edge/southeast,
 /area/desert_dam/interior/dam_interior/engine_room)
 "Yu" = (
-/turf/open/gm/river/beach_water,
+/turf/open/liquid/water/beach_water,
 /area/desert_dam/exterior/valley/north_valley_dam)
 "Yw" = (
 /obj/structure/blocker/invisible_wall/directional,
 /obj/structure/blocker/invisible_wall/directional{
 	dir = 8
 	},
-/turf/open/gm/river/shallow_ocean_shallow_ocean,
+/turf/open/liquid/water/shallow_ocean_shallow_ocean,
 /area/desert_dam/exterior/valley/north_valley_dam)
 "YB" = (
 /turf/closed/wall/r_wall,
@@ -6735,7 +6735,7 @@
 	damage = 75;
 	vector_x = -5
 	},
-/turf/open/gm/river/ocean/deep_ocean,
+/turf/open/liquid/water/ocean/deep_ocean,
 /area/desert_dam/exterior/valley/north_valley_dam)
 "YF" = (
 /turf/open/floor/carpet/bcarpet08,
@@ -6820,7 +6820,7 @@
 	damage = 75;
 	vector_x = -5
 	},
-/turf/open/gm/river/shallow_ocean_shallow_ocean,
+/turf/open/liquid/water/shallow_ocean_shallow_ocean,
 /area/desert_dam/exterior/valley/north_valley_dam)
 "Zp" = (
 /turf/open/floor/carpet/edge/southwest,
@@ -6835,7 +6835,7 @@
 	damage = 125;
 	vector_y = 20
 	},
-/turf/open/gm/river/shallow_ocean_shallow_ocean,
+/turf/open/liquid/water/shallow_ocean_shallow_ocean,
 /area/desert_dam/exterior/valley/north_valley_dam)
 "Zw" = (
 /obj/structure/machinery/sleep_console,
@@ -6888,7 +6888,7 @@
 /area/bigredv2/outside/telecomm/store)
 "ZO" = (
 /obj/structure/blocker/invisible_wall/directional,
-/turf/open/gm/river/ocean/deep_ocean,
+/turf/open/liquid/water/ocean/deep_ocean,
 /area/desert_dam/exterior/valley/north_valley_dam)
 "ZR" = (
 /obj/effect/vehicle_spawner/box_van/cop_car/fixed,
