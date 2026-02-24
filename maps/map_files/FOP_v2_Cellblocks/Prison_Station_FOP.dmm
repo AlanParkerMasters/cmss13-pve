@@ -143,7 +143,8 @@
 /area/prison/monorail/east)
 "aax" = (
 /turf/closed/shuttle/ert{
-	icon_state = "wy27"
+	icon_state = "wy27";
+	opacity = 0
 	},
 /area/prison/monorail/east)
 "aay" = (
@@ -3261,6 +3262,7 @@
 /obj/item/ammo_casing/bullet,
 /obj/item/ammo_casing/bullet,
 /obj/item/ammo_casing/bullet,
+/obj/item/ammo_casing/bullet,
 /turf/open/shuttle/dropship/light_grey_single_wide_up_to_down,
 /area/prison/monorail/east)
 "akj" = (
@@ -3391,6 +3393,10 @@
 "akH" = (
 /obj/effect/landmark/corpsespawner/guard,
 /obj/effect/decal/cleanable/blood/splatter,
+/obj/item/weapon/throwing_knife{
+	pixel_x = 6;
+	pixel_y = -12
+	},
 /turf/open/shuttle/dropship/light_grey_single_wide_up_to_down,
 /area/prison/monorail/east)
 "akI" = (
@@ -3437,7 +3443,7 @@
 /turf/open/floor/prison,
 /area/prison/research/secret/dissection)
 "akO" = (
-/obj/item/weapon/throwing_knife,
+/obj/structure/prop/hybrisa/misc/blood/blood2,
 /turf/open/shuttle/dropship/light_grey_single_wide_up_to_down,
 /area/prison/monorail/east)
 "akP" = (
@@ -3964,11 +3970,6 @@
 /obj/item/ammo_casing/bullet,
 /turf/open/floor/prison/darkyellow2/east,
 /area/prison/hanger/main)
-"amw" = (
-/obj/effect/decal/cleanable/blood/splatter,
-/obj/effect/landmark/corpsespawner/guard/hung,
-/turf/open/floor/prison/darkyellow2/west,
-/area/prison/hanger/main)
 "amx" = (
 /obj/structure/machinery/flasher{
 	id = "suspended_WWN"
@@ -4093,14 +4094,25 @@
 /area/prison/hanger/research)
 "amR" = (
 /obj/effect/decal/cleanable/blood/splatter,
+/obj/effect/landmark/corpsespawner/guard/hung,
 /turf/open/floor/prison/bright_clean/southwest,
 /area/prison/hanger/main)
 "amS" = (
 /obj/effect/decal/cleanable/blood/splatter,
-/obj/effect/landmark/corpsespawner/guard/hung,
+/obj/effect/landmark/corpsespawner/guard,
 /turf/open/floor/prison/darkyellow2,
 /area/prison/hanger/main)
+"amT" = (
+/obj/structure/machinery/door/poddoor/hybrisa/secure_red_door{
+	name = "Civilian Residences Emergency Access";
+	dir = 4;
+	desc = "An emergency lockdown blast door that automatically locks down when rioting is occurring. You won't be able to get past until the rioting is quelled...";
+	id = "end-game"
+	},
+/turf/open/floor/plating,
+/area/prison/maintenance/residential/access/south)
 "amU" = (
+/obj/item/ammo_casing/bullet,
 /obj/item/ammo_casing/bullet,
 /obj/item/ammo_casing/bullet,
 /obj/item/ammo_casing/bullet,
@@ -4240,10 +4252,6 @@
 /obj/item/ammo_casing/bullet,
 /turf/open/floor/plating/plating_catwalk/prison,
 /area/prison/hallway/entrance)
-"ano" = (
-/obj/item/ammo_casing/bullet,
-/turf/open/floor/prison/darkyellow2/west,
-/area/prison/hanger/main)
 "anp" = (
 /obj/effect/decal/siding/wood_siding,
 /obj/effect/decal/cleanable/blood/splatter,
@@ -4331,6 +4339,11 @@
 /obj/structure/barricade/table/prison{
 	dir = 4
 	},
+/obj/item/ammo_casing/bullet,
+/obj/item/ammo_casing/bullet,
+/obj/item/ammo_casing/bullet,
+/obj/item/ammo_casing/bullet,
+/obj/item/ammo_casing/bullet,
 /turf/open/floor/prison/bright_clean/southwest,
 /area/prison/hallway/entrance)
 "anG" = (
@@ -4366,6 +4379,9 @@
 /obj/structure/barricade/table/prison{
 	dir = 4
 	},
+/obj/item/ammo_casing/bullet,
+/obj/item/ammo_casing/bullet,
+/obj/item/ammo_casing/bullet,
 /turf/open/floor/prison/bright_clean/southwest,
 /area/prison/hallway/entrance)
 "anM" = (
@@ -4650,9 +4666,6 @@
 /turf/open/floor/prison,
 /area/prison/hallway/entrance)
 "aoI" = (
-/obj/structure/bed/chair{
-	dir = 8
-	},
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
@@ -5751,18 +5764,446 @@
 	},
 /turf/open/floor/plating/plating_catwalk/prison,
 /area/prison/security)
-"ass" = (
+"ast" = (
+/obj/structure/pipes/standard/simple/hidden/supply{
+	dir = 4
+	},
+/obj/structure/machinery/door/poddoor/hybrisa/secure_red_door{
+	name = "Civilian Residences Emergency Access";
+	dir = 4;
+	desc = "An emergency lockdown blast door that automatically locks down when rioting is occurring. You won't be able to get past until the rioting is quelled...";
+	id = "end-game"
+	},
+/turf/open/floor/plating,
+/area/prison/maintenance/residential/access/south)
+"asu" = (
 /obj/effect/decal/cleanable/blood/splatter,
-/obj/effect/landmark/corpsespawner/guard/hung,
+/obj/effect/landmark/corpsespawner/guard,
+/turf/open/floor/prison/darkredfull2/southwest,
+/area/prison/security)
+"asv" = (
+/obj/item/ammo_casing/bullet,
+/obj/item/ammo_casing/bullet,
+/obj/item/ammo_casing/bullet,
+/obj/item/ammo_casing/bullet,
+/obj/item/ammo_casing/bullet,
+/turf/open/floor/plating/plating_catwalk/prison,
+/area/prison/hallway/east)
+"asw" = (
+/obj/structure/pipes/standard/simple/hidden/supply{
+	dir = 4
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/item/ammo_casing/bullet,
+/obj/item/ammo_casing/bullet,
+/obj/item/ammo_casing/bullet,
+/obj/item/ammo_casing/bullet,
+/turf/open/floor/plating/plating_catwalk/prison,
+/area/prison/hallway/central/south)
+"asx" = (
+/obj/structure/machinery/alarm/almayer{
+	dir = 1
+	},
+/obj/item/ammo_casing/bullet,
+/obj/item/ammo_casing/bullet,
+/obj/item/ammo_casing/bullet,
+/obj/item/ammo_casing/bullet,
+/turf/open/floor/prison/bright_clean2/southwest,
+/area/prison/hallway/central/south)
+"asy" = (
+/obj/structure/bed/chair/comfy{
+	dir = 4
+	},
+/obj/item/ammo_casing/bullet,
+/obj/item/ammo_casing/bullet,
+/turf/open/shuttle/dropship/medium_grey_single_wide_up_to_down,
+/area/prison/monorail/east)
+"asz" = (
+/obj/item/ammo_casing/bullet,
 /turf/open/floor/prison,
+/area/prison/hallway/east)
+"asA" = (
+/obj/item/ammo_casing/bullet,
+/obj/item/ammo_casing/bullet,
+/turf/open/floor/prison,
+/area/prison/hallway/east)
+"asB" = (
+/obj/structure/bed/chair/comfy{
+	dir = 4
+	},
+/obj/structure/machinery/light/double{
+	dir = 8
+	},
+/obj/item/ammo_casing/bullet,
+/obj/item/ammo_casing/bullet,
+/turf/open/shuttle/dropship/medium_grey_single_wide_up_to_down,
+/area/prison/monorail/east)
+"asC" = (
+/obj/structure/bed/chair/comfy{
+	dir = 8
+	},
+/obj/structure/machinery/light/double{
+	dir = 4
+	},
+/obj/item/ammo_casing/bullet,
+/obj/item/ammo_casing/bullet,
+/turf/open/shuttle/dropship/medium_grey_single_wide_up_to_down,
+/area/prison/monorail/east)
+"asD" = (
+/obj/item/ammo_casing/bullet,
+/turf/open/floor/prison/bright_clean/southwest,
+/area/prison/hallway/east)
+"asE" = (
+/obj/item/weapon/twohanded/folded_metal_chair,
+/turf/open/floor/prison/bright_clean/southwest,
+/area/prison/visitation)
+"asF" = (
+/obj/effect/landmark/corpsespawner/guard/hung,
+/obj/effect/decal/cleanable/blood/splatter,
+/turf/open/floor/prison,
+/area/prison/hanger/main)
+"asG" = (
+/obj/structure/pipes/standard/simple/hidden/supply{
+	dir = 4
+	},
+/obj/effect/landmark/corpsespawner/guard/hung,
+/obj/effect/decal/cleanable/blood/splatter,
+/turf/open/floor/prison,
+/area/prison/hanger/main)
+"asH" = (
+/obj/structure/largecrate/random/barrel/brown{
+	pixel_y = 15;
+	pixel_x = -6;
+	layer = 3.1
+	},
+/obj/structure/largecrate/random/barrel/brown{
+	pixel_y = 1;
+	pixel_x = 4;
+	layer = 3.1
+	},
+/turf/open/floor/prison,
+/area/prison/hanger/main)
+"asI" = (
+/obj/item/ammo_casing/bullet,
+/turf/open/floor/prison/darkyellow2,
+/area/prison/hanger/main)
+"asJ" = (
+/obj/effect/landmark/corpsespawner/guard,
+/obj/effect/decal/cleanable/blood/splatter,
+/turf/open/floor/prison/darkyellow2,
+/area/prison/hanger/main)
+"asK" = (
+/obj/structure/machinery/light/double{
+	dir = 8
+	},
+/obj/structure/largecrate/random/barrel/green,
+/turf/open/floor/prison,
+/area/prison/hanger/main)
+"asL" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "N"
+	},
+/obj/structure/machinery/landinglight/ds1/delaytwo{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/blood/splatter,
+/turf/open/floor/prison/darkyellowfull2/east,
+/area/prison/hanger/main)
+"asM" = (
+/obj/effect/landmark/corpsespawner/guard,
+/obj/effect/decal/cleanable/blood/splatter,
+/turf/open/floor/plating/prison,
+/area/prison/hanger/main)
+"asN" = (
+/obj/structure/prop/hybrisa/misc/fire/firebarrel{
+	pixel_y = 2;
+	pixel_x = 13;
+	layer = 3
+	},
+/turf/open/floor/prison,
+/area/prison/hanger/main)
+"asO" = (
+/obj/item/weapon/twohanded/folded_metal_chair,
+/turf/open/floor/prison/bright_clean2/southwest,
+/area/prison/canteen)
+"asP" = (
+/obj/item/ammo_casing/bullet,
+/turf/open/floor/prison/bright_clean/southwest,
+/area/prison/hallway/entrance)
+"asQ" = (
+/obj/item/ammo_casing/bullet,
+/turf/open/floor/prison,
+/area/prison/hanger/main)
+"asR" = (
+/obj/item/weapon/twohanded/folded_metal_chair,
+/turf/open/floor/prison/bright_clean/southwest,
+/area/prison/canteen)
+"asS" = (
+/obj/item/ammo_casing/bullet,
+/obj/item/ammo_casing/bullet,
+/obj/item/ammo_casing/bullet,
+/obj/item/ammo_casing/bullet,
+/obj/item/ammo_casing/bullet,
+/obj/item/ammo_casing/bullet,
+/obj/item/ammo_casing/bullet,
+/obj/item/ammo_casing/bullet,
+/obj/item/ammo_casing/bullet,
+/turf/open/floor/prison,
+/area/prison/hallway/entrance)
+"asT" = (
+/obj/item/ammo_casing/bullet,
+/obj/item/ammo_casing/bullet,
+/obj/item/ammo_casing/bullet,
+/obj/item/ammo_casing/bullet,
+/turf/open/floor/prison,
+/area/prison/hanger/main)
+"asU" = (
+/obj/structure/window/framed/prison,
+/obj/structure/machinery/door/poddoor/hybrisa/secure_red_door{
+	name = "Civilian Residences Emergency Access";
+	dir = 4;
+	desc = "An emergency lockdown blast door that automatically locks down when rioting is occurring. You won't be able to get past until the rioting is quelled...";
+	id = "end-game"
+	},
+/turf/open/floor/plating,
+/area/prison/security/monitoring/highsec)
+"asV" = (
+/obj/structure/pipes/standard/simple/hidden/supply{
+	dir = 4
+	},
+/obj/item/weapon/twohanded/folded_metal_chair,
+/turf/open/floor/prison/bright_clean/southwest,
+/area/prison/canteen)
+"asW" = (
+/obj/structure/pipes/standard/manifold/fourway/hidden/supply,
+/obj/item/ammo_casing/bullet,
+/obj/item/ammo_casing/bullet,
+/turf/open/floor/prison/sterile_white/southwest,
+/area/prison/residential/central)
+"asX" = (
+/obj/item/ammo_casing/bullet,
+/turf/open/floor/plating/plating_catwalk/prison,
+/area/prison/hallway/entrance)
+"asY" = (
+/obj/item/ammo_casing/bullet,
+/turf/open/floor/prison/darkyellow2/north,
+/area/prison/hanger/main)
+"asZ" = (
+/obj/item/weapon/knife/marine/kabar{
+	pixel_y = 3;
+	pixel_x = -5
+	},
+/turf/open/floor/prison/darkyellow2/east,
+/area/prison/hanger/main)
+"ata" = (
+/obj/effect/decal/cleanable/blood/splatter,
+/obj/item/ammo_casing/bullet,
+/obj/item/ammo_casing/bullet,
+/obj/item/ammo_casing/bullet,
+/turf/open/floor/prison/sterile_white/southwest,
+/area/prison/residential/central)
+"atb" = (
+/obj/structure/pipes/standard/simple/hidden/supply,
+/obj/item/ammo_casing/bullet,
+/obj/item/ammo_casing/bullet,
+/turf/open/floor/prison/sterile_white/southwest,
+/area/prison/residential/central)
+"atc" = (
+/obj/structure/pipes/standard/simple/hidden/supply{
+	dir = 4
+	},
+/obj/item/ammo_casing/bullet,
+/obj/item/ammo_casing/bullet,
+/obj/item/ammo_casing/bullet,
+/obj/item/ammo_casing/bullet,
+/turf/open/floor/prison,
+/area/prison/hallway/entrance)
+"atd" = (
+/obj/structure/pipes/standard/simple/hidden/supply{
+	dir = 4
+	},
+/obj/item/ammo_casing/bullet,
+/obj/item/ammo_casing/bullet,
+/turf/open/floor/prison,
+/area/prison/hanger/main)
+"ate" = (
+/obj/structure/pipes/standard/simple/hidden/supply{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/blood/splatter,
+/turf/open/floor/prison/bright_clean/southwest,
 /area/prison/hanger/main)
 "atf" = (
 /turf/closed/wall/r_wall/prison,
 /area/prison/medbay/morgue)
+"atg" = (
+/obj/structure/pipes/standard/simple/hidden/supply{
+	dir = 9
+	},
+/obj/item/weapon/twohanded/folded_metal_chair,
+/turf/open/floor/prison/bright_clean/southwest,
+/area/prison/canteen)
+"ath" = (
+/obj/structure/prop/hybrisa/misc/firebarreloff{
+	pixel_x = -4
+	},
+/turf/open/floor/prison/bright_clean/southwest,
+/area/prison/hallway/entrance)
+"ati" = (
+/obj/structure/prop/hybrisa/misc/fire/firebarrel{
+	pixel_y = 6;
+	pixel_x = 6
+	},
+/turf/open/floor/prison/darkyellow2/north,
+/area/prison/hanger/main)
+"atj" = (
+/obj/structure/pipes/standard/simple/hidden/supply,
+/obj/structure/machinery/door/airlock/almayer/security/glass/colony{
+	dir = 2;
+	name = "Security Booth";
+	locked = 1
+	},
+/turf/open/floor/prison/darkredfull2/southwest,
+/area/prison/hanger/main)
+"atk" = (
+/obj/structure/pipes/standard/simple/hidden/supply{
+	dir = 4
+	},
+/obj/item/ammo_casing/bullet,
+/turf/open/floor/plating/plating_catwalk/prison,
+/area/prison/hallway/entrance)
+"atl" = (
+/obj/structure/pipes/standard/simple/hidden/supply,
+/obj/structure/prop/invuln/fire,
+/obj/structure/barricade/table/prison,
+/turf/open/floor/prison/darkredfull2/southwest,
+/area/prison/hanger/main)
+"atm" = (
+/obj/structure/bed/chair/office/dark{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/blood/splatter,
+/obj/structure/pipes/standard/manifold/hidden/supply{
+	dir = 4
+	},
+/obj/effect/landmark/corpsespawner/guard,
+/obj/structure/prop/invuln/fire{
+	pixel_x = -1;
+	pixel_y = 4
+	},
+/obj/item/ammo_casing/bullet,
+/obj/item/ammo_casing/bullet,
+/obj/item/ammo_casing/bullet,
+/obj/item/ammo_casing/bullet,
+/obj/item/ammo_casing/bullet,
+/turf/open/floor/prison/darkredfull2/southwest,
+/area/prison/hanger/main)
+"atn" = (
+/obj/structure/prop/hybrisa/misc/fire/firebarrel{
+	pixel_y = 6;
+	pixel_x = 6
+	},
+/turf/open/floor/prison,
+/area/prison/hanger/main)
+"ato" = (
+/obj/structure/pipes/vents/scrubber{
+	dir = 4
+	},
+/obj/item/weapon/twohanded/folded_metal_chair,
+/turf/open/floor/prison/bright_clean2/southwest,
+/area/prison/canteen)
+"atp" = (
+/obj/structure/prop/hybrisa/misc/fire/firebarrel{
+	pixel_y = 6;
+	pixel_x = 6
+	},
+/turf/open/floor/prison/bright_clean/southwest,
+/area/prison/canteen)
+"atq" = (
+/obj/structure/machinery/light/double{
+	dir = 8
+	},
+/obj/structure/largecrate/random/barrel/red{
+	layer = 5
+	},
+/obj/structure/largecrate/random/barrel{
+	desc = "A green storage barrel.";
+	icon_state = "barrel_green";
+	layer = 4;
+	name = "green barrel";
+	pixel_x = 13;
+	pixel_y = 16
+	},
+/turf/open/floor/prison,
+/area/prison/hanger/main)
+"atr" = (
+/obj/structure/largecrate/random/barrel{
+	desc = "A green storage barrel.";
+	icon_state = "barrel_green";
+	layer = 4;
+	name = "green barrel";
+	pixel_x = 1;
+	pixel_y = 7
+	},
+/turf/open/floor/prison,
+/area/prison/hanger/main)
+"ats" = (
+/obj/structure/largecrate/random/barrel{
+	layer = 4;
+	pixel_x = 6;
+	pixel_y = -16
+	},
+/obj/structure/largecrate/random/barrel/green,
+/turf/open/floor/prison,
+/area/prison/hanger/main)
+"att" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "S"
+	},
+/obj/structure/machinery/landinglight/ds1/delaytwo,
+/obj/effect/decal/cleanable/blood/splatter,
+/turf/open/floor/prison/darkyellowfull2/east,
+/area/prison/hanger/main)
+"atu" = (
+/obj/structure/machinery/flasher{
+	id = "canteen"
+	},
+/obj/item/weapon/twohanded/folded_metal_chair,
+/turf/open/floor/prison/bright_clean/southwest,
+/area/prison/canteen)
+"atv" = (
+/obj/effect/decal/cleanable/blood/splatter,
+/turf/open/floor/prison/darkyellow2/north,
+/area/prison/hanger/main)
+"atw" = (
+/obj/effect/landmark/corpsespawner/guard,
+/obj/effect/decal/cleanable/blood/splatter,
+/turf/open/floor/prison/darkyellow2/north,
+/area/prison/hanger/main)
+"atx" = (
+/obj/structure/disposalpipe/segment,
+/obj/item/weapon/twohanded/folded_metal_chair,
+/turf/open/floor/prison/bright_clean/southwest,
+/area/prison/canteen)
 "aty" = (
 /obj/structure/window/framed/prison/reinforced,
 /turf/open/floor/plating,
 /area/prison/hangar_storage/research)
+"atz" = (
+/obj/structure/pipes/standard/simple/hidden/supply{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/blood/splatter,
+/turf/open/floor/carpet,
+/area/prison/command/secretary_office)
+"atA" = (
+/obj/structure/machinery/door_control/brbutton{
+	id = "end-game"
+	},
+/turf/open/space,
+/area/space)
 "atE" = (
 /obj/structure/machinery/light/double{
 	dir = 8
@@ -6031,9 +6472,11 @@
 /turf/open/floor/plating,
 /area/prison/maintenance/residential/access/north)
 "axP" = (
-/obj/structure/machinery/door/poddoor/almayer/open{
+/obj/structure/machinery/door/poddoor/hybrisa/secure_red_door{
+	name = "Civilian Residences Emergency Access";
 	dir = 4;
-	name = "Civilian Residences Emergency Access"
+	desc = "An emergency lockdown blast door that automatically locks down when rioting is occurring. You won't be able to get past until the rioting is quelled...";
+	id = "end-game"
 	},
 /turf/open/floor/plating,
 /area/prison/maintenance/residential/access/north)
@@ -6102,9 +6545,11 @@
 /obj/structure/pipes/standard/simple/hidden/supply{
 	dir = 4
 	},
-/obj/structure/machinery/door/poddoor/almayer/open{
+/obj/structure/machinery/door/poddoor/hybrisa/secure_red_door{
+	name = "Civilian Residences Emergency Access";
 	dir = 4;
-	name = "Civilian Residences Emergency Access"
+	desc = "An emergency lockdown blast door that automatically locks down when rioting is occurring. You won't be able to get past until the rioting is quelled...";
+	id = "end-game"
 	},
 /turf/open/floor/plating,
 /area/prison/maintenance/residential/access/north)
@@ -7380,6 +7825,9 @@
 "aOB" = (
 /obj/effect/decal/cleanable/blood/splatter,
 /obj/item/tool/pen,
+/obj/item/weapon/sword/katana/replica{
+	pixel_x = -8
+	},
 /turf/open/floor/carpet,
 /area/prison/command/office)
 "aOC" = (
@@ -7488,18 +7936,21 @@
 /obj/structure/machinery/door/airlock/almayer/command/colony{
 	name = "Warden's Office"
 	},
+/obj/effect/decal/cleanable/blood/splatter,
 /turf/open/floor/carpet,
 /area/prison/command/office)
 "aPT" = (
 /obj/structure/pipes/standard/simple/hidden/supply{
 	dir = 4
 	},
+/obj/effect/decal/cleanable/blood/splatter,
 /turf/open/floor/carpet,
 /area/prison/command/office)
 "aPV" = (
 /obj/structure/pipes/standard/simple/hidden/supply{
 	dir = 4
 	},
+/obj/effect/decal/cleanable/blood/splatter,
 /turf/open/floor/wood,
 /area/prison/command/office)
 "aPW" = (
@@ -8703,6 +9154,12 @@
 /obj/structure/pipes/standard/simple/hidden/supply{
 	dir = 4
 	},
+/obj/structure/machinery/door/poddoor/hybrisa/secure_red_door{
+	name = "Civilian Residences Emergency Access";
+	dir = 4;
+	desc = "An emergency lockdown blast door that automatically locks down when rioting is occurring. You won't be able to get past until the rioting is quelled...";
+	id = "end-game"
+	},
 /turf/open/floor/wood,
 /area/prison/security/monitoring/highsec)
 "bcW" = (
@@ -9033,6 +9490,7 @@
 /obj/structure/pipes/standard/simple/hidden/supply{
 	dir = 5
 	},
+/obj/structure/prop/invuln/fire,
 /turf/open/floor/prison/darkredfull2/southwest,
 /area/prison/hanger/main)
 "biP" = (
@@ -9134,9 +9592,11 @@
 /turf/open/floor/prison/sterile_white,
 /area/prison/residential/north)
 "bkI" = (
-/obj/structure/machinery/door/poddoor/almayer/open{
+/obj/structure/machinery/door/poddoor/hybrisa/secure_red_door{
+	name = "Civilian Residences Emergency Access";
 	dir = 4;
-	name = "Civilian Residences Emergency Access"
+	desc = "An emergency lockdown blast door that automatically locks down when rioting is occurring. You won't be able to get past until the rioting is quelled...";
+	id = "end-game"
 	},
 /turf/open/floor/plating,
 /area/prison/security/monitoring/highsec)
@@ -9237,6 +9697,7 @@
 	dir = 2;
 	name = "Entrance Hallway"
 	},
+/obj/item/ammo_casing/bullet,
 /turf/open/floor/prison,
 /area/prison/hanger/main)
 "blH" = (
@@ -9246,9 +9707,11 @@
 /obj/structure/pipes/standard/simple/hidden/supply{
 	dir = 4
 	},
-/obj/structure/machinery/door/poddoor/almayer/open{
+/obj/structure/machinery/door/poddoor/hybrisa/secure_red_door{
+	name = "Civilian Residences Emergency Access";
 	dir = 4;
-	name = "Civilian Residences Emergency Access"
+	desc = "An emergency lockdown blast door that automatically locks down when rioting is occurring. You won't be able to get past until the rioting is quelled...";
+	id = "end-game"
 	},
 /turf/open/floor/plating,
 /area/prison/security/monitoring/highsec)
@@ -9462,6 +9925,9 @@
 	dir = 2;
 	name = "Entrance Hallway"
 	},
+/obj/item/ammo_casing/bullet,
+/obj/item/ammo_casing/bullet,
+/obj/item/ammo_casing/bullet,
 /turf/open/floor/prison,
 /area/prison/hanger/main)
 "bpk" = (
@@ -9705,6 +10171,7 @@
 /obj/effect/decal/warning_stripes{
 	icon_state = "NE-out"
 	},
+/obj/item/ammo_casing/bullet,
 /turf/open/floor/prison/darkyellowfull2/east,
 /area/prison/hanger/main)
 "bts" = (
@@ -10496,6 +10963,7 @@
 "bEB" = (
 /obj/structure/pipes/standard/simple/hidden/supply,
 /obj/structure/disposalpipe/segment,
+/obj/item/ammo_casing/bullet,
 /turf/open/floor/prison,
 /area/prison/hallway/east)
 "bED" = (
@@ -10572,6 +11040,7 @@
 /obj/structure/pipes/standard/manifold/hidden/supply{
 	dir = 4
 	},
+/obj/item/ammo_casing/bullet,
 /turf/open/floor/plating/plating_catwalk/prison,
 /area/prison/hallway/east)
 "bFL" = (
@@ -13373,6 +13842,7 @@
 "cgc" = (
 /obj/structure/pipes/standard/simple/hidden/supply,
 /obj/effect/decal/cleanable/blood/splatter,
+/obj/effect/landmark/corpsespawner/hybrisa/civilian_office,
 /turf/open/floor/wood,
 /area/prison/security/head)
 "cgd" = (
@@ -14883,7 +15353,6 @@
 /area/prison/security/monitoring/medsec/south)
 "czR" = (
 /obj/structure/surface/rack,
-/obj/item/weapon/sword/katana/replica,
 /turf/open/floor/wood,
 /area/prison/command/office)
 "cAc" = (
@@ -15596,9 +16065,6 @@
 /turf/open/floor/plating,
 /area/prison/visitation)
 "doL" = (
-/obj/structure/bed/chair{
-	dir = 8
-	},
 /obj/structure/pipes/standard/simple/hidden/supply{
 	dir = 4
 	},
@@ -15654,7 +16120,6 @@
 /turf/open/floor/prison/red/north,
 /area/prison/security/monitoring/highsec)
 "drD" = (
-/obj/structure/bed/chair,
 /obj/structure/pipes/standard/simple/hidden/supply{
 	dir = 5
 	},
@@ -16721,18 +17186,6 @@
 	},
 /turf/open/floor/prison/bright_clean/southwest,
 /area/prison/hallway/central/east)
-"ekR" = (
-/obj/structure/bed/chair{
-	dir = 4
-	},
-/obj/structure/pipes/standard/simple/hidden/supply{
-	dir = 4
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/turf/open/floor/prison/bright_clean/southwest,
-/area/prison/canteen)
 "elf" = (
 /obj/structure/pipes/vents/pump{
 	dir = 4
@@ -16865,6 +17318,7 @@
 /obj/structure/pipes/standard/simple/hidden/supply{
 	dir = 4
 	},
+/obj/effect/decal/cleanable/blood/splatter,
 /turf/open/floor/prison/blue/east,
 /area/prison/command/secretary_office)
 "esK" = (
@@ -18620,9 +19074,6 @@
 /turf/open/floor/prison/darkyellow2,
 /area/prison/hallway/engineering)
 "fWT" = (
-/obj/structure/bed/chair{
-	dir = 8
-	},
 /obj/structure/disposalpipe/segment{
 	dir = 1;
 	icon_state = "pipe-c"
@@ -19207,15 +19658,8 @@
 /turf/open/floor/prison/darkyellow2/north,
 /area/prison/hallway/engineering)
 "gwK" = (
-/obj/structure/surface/table/reinforced/prison,
-/obj/item/paper_bin{
-	pixel_x = -3;
-	pixel_y = 7
-	},
-/obj/item/tool/pen{
-	pixel_x = 9;
-	pixel_y = 8
-	},
+/obj/structure/machinery/vending/security,
+/obj/structure/prop/invuln/fire,
 /turf/open/floor/prison/darkred2/northeast,
 /area/prison/hanger/main)
 "gwY" = (
@@ -20456,6 +20900,7 @@
 /obj/structure/pipes/standard/manifold/hidden/supply{
 	dir = 8
 	},
+/obj/item/weapon/twohanded/folded_metal_chair,
 /turf/open/floor/prison/bright_clean/southwest,
 /area/prison/canteen)
 "hyt" = (
@@ -21949,8 +22394,11 @@
 /turf/open/floor/prison,
 /area/prison/recreation/medsec)
 "iVE" = (
-/obj/structure/machinery/computer/secure_data,
-/obj/structure/surface/table/reinforced/prison,
+/obj/structure/prop/invuln/fire{
+	pixel_x = -1;
+	pixel_y = 4
+	},
+/obj/structure/barricade/table/prison,
 /turf/open/floor/prison/darkred2/southeast,
 /area/prison/hanger/main)
 "iVG" = (
@@ -22601,6 +23049,11 @@
 /obj/structure/pipes/standard/simple/hidden/supply{
 	dir = 4
 	},
+/obj/item/ammo_casing/bullet,
+/obj/item/ammo_casing/bullet,
+/obj/item/ammo_casing/bullet,
+/obj/item/ammo_casing/bullet,
+/obj/item/ammo_casing/bullet,
 /turf/open/floor/prison/bright_clean/southwest,
 /area/prison/hallway/entrance)
 "jEq" = (
@@ -23812,7 +24265,7 @@
 "kNZ" = (
 /obj/structure/pipes/standard/simple/hidden/supply,
 /obj/effect/decal/cleanable/blood/splatter,
-/obj/effect/landmark/corpsespawner/guard/hung,
+/obj/effect/landmark/corpsespawner/guard,
 /turf/open/floor/prison/darkyellow2/east,
 /area/prison/hanger/main)
 "kOs" = (
@@ -24009,6 +24462,12 @@
 /obj/structure/machinery/door/airlock/almayer/maint/colony,
 /obj/structure/pipes/standard/simple/hidden/supply{
 	dir = 4
+	},
+/obj/structure/machinery/door/poddoor/hybrisa/secure_red_door{
+	name = "Civilian Residences Emergency Access";
+	dir = 4;
+	desc = "An emergency lockdown blast door that automatically locks down when rioting is occurring. You won't be able to get past until the rioting is quelled...";
+	id = "end-game"
 	},
 /turf/open/floor/plating,
 /area/prison/security/monitoring/highsec)
@@ -25120,6 +25579,7 @@
 /area/prison/medbay/foyer)
 "mbk" = (
 /obj/structure/lz_sign/prison_sign,
+/obj/effect/landmark/corpsespawner/guard/hung,
 /turf/open/floor/prison,
 /area/prison/hanger/main)
 "mbo" = (
@@ -25686,9 +26146,6 @@
 /turf/open/floor/prison/redfull,
 /area/prison/hallway/central/west)
 "mBr" = (
-/obj/structure/bed/chair{
-	dir = 8
-	},
 /obj/structure/pipes/standard/simple/hidden/supply{
 	dir = 4
 	},
@@ -26122,6 +26579,10 @@
 /area/prison/cellblock/highsec/south/north)
 "mTZ" = (
 /obj/structure/pipes/vents/scrubber,
+/obj/structure/prop/invuln/fire{
+	pixel_x = 4;
+	pixel_y = -5
+	},
 /turf/open/floor/prison/darkred2/northwest,
 /area/prison/hanger/main)
 "mUh" = (
@@ -26915,6 +27376,7 @@
 "nIk" = (
 /obj/effect/decal/cleanable/blood/splatter,
 /obj/structure/pipes/vents/pump/on,
+/obj/structure/prop/invuln/fire,
 /turf/open/floor/prison/darkred2/north,
 /area/prison/hanger/main)
 "nIJ" = (
@@ -28298,6 +28760,7 @@
 /area/prison/residential/south)
 "oWS" = (
 /obj/structure/pipes/standard/manifold/fourway/hidden/supply,
+/obj/effect/decal/cleanable/blood/splatter,
 /turf/open/floor/prison/darkyellow2/east,
 /area/prison/hanger/main)
 "oWU" = (
@@ -29471,9 +29934,6 @@
 /turf/open/floor/prison/bright_clean2/southwest,
 /area/prison/residential/north)
 "pTA" = (
-/obj/structure/bed/chair{
-	dir = 8
-	},
 /obj/structure/disposalpipe/junction{
 	dir = 1
 	},
@@ -29683,7 +30143,7 @@
 /area/prison/cellblock/mediumsec/south)
 "qeE" = (
 /obj/effect/decal/cleanable/blood/splatter,
-/obj/effect/landmark/corpsespawner/guard/hung,
+/obj/effect/landmark/corpsespawner/guard,
 /turf/open/floor/prison/darkyellowcorners2/east,
 /area/prison/hanger/main)
 "qeI" = (
@@ -30292,6 +30752,7 @@
 /area/prison/canteen)
 "qFD" = (
 /obj/structure/pipes/standard/simple/hidden/supply,
+/obj/item/ammo_casing/bullet,
 /turf/open/floor/prison/darkyellowcorners2/north,
 /area/prison/hanger/main)
 "qFH" = (
@@ -32004,7 +32465,11 @@
 /obj/structure/machinery/light/double{
 	dir = 8
 	},
-/obj/structure/machinery/vending/security,
+/obj/structure/prop/invuln/fire{
+	pixel_x = 4;
+	pixel_y = 2
+	},
+/obj/structure/barricade/table/prison,
 /turf/open/floor/prison/darkred2/southwest,
 /area/prison/hanger/main)
 "shp" = (
@@ -34151,6 +34616,7 @@
 /area/prison/security/checkpoint/maxsec)
 "umA" = (
 /obj/structure/pipes/standard/simple/hidden/supply,
+/obj/item/ammo_casing/bullet,
 /turf/open/floor/prison/darkyellowcorners2,
 /area/prison/hanger/main)
 "umK" = (
@@ -35107,6 +35573,7 @@
 /obj/structure/pipes/standard/manifold/hidden/supply{
 	dir = 8
 	},
+/obj/structure/prop/hybrisa/misc/blood/blood2,
 /turf/open/floor/prison/darkyellow2/northeast,
 /area/prison/hanger/main)
 "vkU" = (
@@ -35317,6 +35784,7 @@
 	},
 /obj/structure/machinery/light/double,
 /obj/structure/platform,
+/obj/item/ammo_casing/bullet,
 /turf/open/floor/plating/prison,
 /area/prison/hanger/main)
 "vuZ" = (
@@ -37489,6 +37957,8 @@
 	dir = 1;
 	pixel_y = 21
 	},
+/obj/item/ammo_casing/bullet,
+/obj/item/ammo_casing/bullet,
 /turf/open/floor/prison/whitegreen/north,
 /area/prison/residential/central)
 "xtI" = (
@@ -47057,7 +47527,7 @@ aAO
 aAO
 aAO
 aAO
-aAO
+atA
 avl
 avl
 avl
@@ -48587,7 +49057,7 @@ wNF
 wNF
 aWr
 xty
-anq
+ata
 dLv
 jrP
 aWr
@@ -48799,8 +49269,8 @@ bbK
 bbK
 bdx
 dIg
-rZy
-bvx
+atb
+asW
 pXx
 bdx
 bbK
@@ -50743,17 +51213,17 @@ bTR
 bTR
 bTR
 bSk
-bUX
-bWE
-bUX
+amT
+ast
+amT
 bSk
 bSk
 bSk
 bSk
 bSk
-bUX
-bWE
-bUX
+amT
+ast
+amT
 bSk
 aAO
 aAO
@@ -50918,10 +51388,10 @@ aWz
 aWz
 aWz
 aWz
-bdC
+asU
 bkI
 blQ
-bdC
+asU
 aWz
 aWz
 aWz
@@ -65784,9 +66254,9 @@ mwY
 bxG
 fgX
 bql
-lwD
+asx
 vHX
-lWT
+asw
 iEa
 bUa
 lLY
@@ -76350,7 +76820,7 @@ aWY
 dFo
 aWY
 aWY
-oPn
+ato
 jJd
 alT
 blx
@@ -76361,7 +76831,7 @@ oPn
 aWY
 aWY
 aWY
-aWY
+asO
 hFB
 aWY
 aWY
@@ -76569,7 +77039,7 @@ wtP
 dKU
 wtP
 krM
-gBx
+atg
 loY
 nNy
 ujw
@@ -76766,7 +77236,7 @@ aNK
 aPi
 aQv
 aTF
-aWY
+asO
 loY
 nNy
 ljh
@@ -76777,18 +77247,18 @@ ljh
 blx
 wtj
 wtj
-wtj
-ekR
+blx
+eNR
 wtj
 wtj
 blx
-loY
+blx
 ljc
 ljh
 blx
-loY
+blx
 gdw
-ljh
+blx
 alT
 bmF
 wTC
@@ -76981,7 +77451,7 @@ aTG
 aRy
 drD
 lmf
-lbZ
+atx
 jCz
 fyr
 lOT
@@ -76994,14 +77464,14 @@ wxY
 nNy
 ygq
 blx
-loY
+blx
 nNy
 ljh
 amM
 loY
 gOH
-ujw
-aWY
+qEO
+asO
 bmF
 qRN
 bue
@@ -77191,28 +77661,28 @@ aPk
 aNN
 cWg
 aWY
-mnC
+tKF
 taN
-ljh
 blx
-lRD
+blx
+qEO
 gdw
-ljh
+blx
 qEO
 aoI
 pcf
 pcf
 doL
-pcf
-pcf
 blx
-loY
+blx
+blx
+blx
 gdw
 ljh
 blx
-loY
+blx
 vcR
-ljh
+blx
 aWY
 bmF
 kTj
@@ -77403,14 +77873,14 @@ aOt
 cde
 aOt
 aWY
-mnC
+asV
 gxz
-ljh
-kwq
+blx
+atu
 loY
 mzD
-ljh
 blx
+asR
 qvc
 amM
 blx
@@ -77424,7 +77894,7 @@ ljh
 kwq
 loY
 nNy
-ljh
+blx
 aWY
 aTF
 bue
@@ -77621,18 +78091,18 @@ ujw
 blx
 loY
 iMc
-ljh
+blx
 blx
 jnp
 wtj
-wtj
-ekR
+asR
+eNR
 wtj
 wtj
 qEO
 arQ
 gdw
-ljh
+blx
 blx
 loY
 nNy
@@ -77833,8 +78303,8 @@ ljh
 blx
 loY
 nNy
-ljh
 blx
+atp
 sgN
 taN
 fdD
@@ -77844,9 +78314,9 @@ ygq
 blx
 loY
 rWb
-ljh
 blx
-lRD
+blx
+qEO
 nNy
 ljh
 aWY
@@ -78045,7 +78515,7 @@ ljh
 blx
 loY
 ygq
-ljh
+blx
 blx
 qyL
 frC
@@ -78054,9 +78524,9 @@ mBr
 pTA
 fWT
 blx
-loY
+blx
 ygq
-ljh
+asR
 blx
 loY
 ygq
@@ -78690,7 +79160,7 @@ aos
 rLS
 aTF
 afF
-loY
+blx
 ygq
 ljh
 tKF
@@ -78886,11 +79356,11 @@ twQ
 xif
 fCu
 jYq
-aWY
-loY
-iZF
-ljh
+asO
 blx
+iZF
+blx
+asR
 loY
 nNy
 ljh
@@ -78902,13 +79372,13 @@ nZd
 rWn
 rWn
 anS
-loY
+blx
 nNy
-ljh
-tKF
-loY
+blx
+asV
+blx
 nNy
-ljh
+blx
 aWY
 bmF
 dZg
@@ -79099,11 +79569,11 @@ tol
 hfK
 cde
 aWY
-loY
-nNy
-ljh
 blx
-loY
+nNy
+blx
+blx
+blx
 nNy
 ljh
 moJ
@@ -79114,14 +79584,14 @@ nZd
 rLS
 rWn
 moJ
-loY
+blx
 nNy
-ljh
+blx
 tKF
-loY
+blx
 taN
-ujw
-aWY
+qEO
+asO
 btt
 bwX
 bwX
@@ -79315,7 +79785,7 @@ loY
 iZF
 ljh
 kwq
-lRD
+qEO
 nNy
 ljh
 vLx
@@ -79326,13 +79796,13 @@ eNR
 sfC
 kSp
 klP
-lRD
+qEO
 vcR
-ljh
+blx
 fWx
-loY
+blx
 nNy
-ljh
+blx
 aWY
 bwX
 vba
@@ -79523,9 +79993,9 @@ tol
 hfK
 cde
 aWY
-loY
+asR
 gdw
-ljh
+blx
 blx
 loY
 taN
@@ -79540,9 +80010,9 @@ bmF
 wcf
 loY
 taN
-ujw
+qEO
 tKF
-loY
+asR
 nNy
 ljh
 aWY
@@ -79741,7 +80211,7 @@ ljh
 asb
 loY
 gdw
-ljh
+asR
 kCN
 nsx
 fLT
@@ -79754,9 +80224,9 @@ loY
 nNy
 ljh
 tKF
-loY
+blx
 mFL
-ljh
+blx
 aWY
 pcU
 vba
@@ -79968,7 +80438,7 @@ ljh
 tKF
 loY
 gdw
-ljh
+blx
 aWY
 dou
 vba
@@ -80181,14 +80651,14 @@ tKF
 loY
 eHi
 ljh
-aWY
+asO
 gAU
 vba
 fXa
 bsY
 btZ
 buc
-bvt
+kGq
 fXa
 paS
 gAU
@@ -80402,7 +80872,7 @@ bwX
 bwX
 bwX
 fXa
-fXa
+asE
 bwX
 jei
 bEA
@@ -80842,7 +81312,7 @@ bEA
 bEA
 bEA
 bEA
-bEA
+asv
 bEG
 bEA
 bEA
@@ -83374,7 +83844,7 @@ tRZ
 bBB
 kKu
 jei
-jei
+asD
 bEI
 kMK
 kMK
@@ -83586,8 +84056,8 @@ vCZ
 bBC
 kKu
 hKx
-jei
-bEI
+asD
+asz
 lPD
 lPD
 bDM
@@ -83774,8 +84244,8 @@ bcA
 aoL
 bcA
 bcA
-bcA
-bkr
+asX
+atk
 bcA
 bcA
 arR
@@ -83784,7 +84254,7 @@ bcA
 bcA
 bcA
 bkr
-bcA
+ann
 alV
 alJ
 bcA
@@ -83799,7 +84269,7 @@ rWU
 akJ
 jei
 jei
-bEI
+asA
 olw
 lCd
 bDM
@@ -84416,9 +84886,9 @@ bcC
 anW
 bpf
 bcz
+asX
 bcA
-bcA
-bcz
+asS
 amr
 vyL
 bcC
@@ -84822,7 +85292,7 @@ aOv
 aOv
 aQH
 aRQ
-aOv
+aOu
 lrm
 aUS
 aUS
@@ -85033,7 +85503,7 @@ xdd
 aOv
 aPP
 aQI
-aRQ
+atz
 aOv
 lyf
 aUS
@@ -85050,13 +85520,13 @@ aAO
 aAO
 bcC
 anX
-bpf
-bcz
+atc
+asS
 bcA
-bcA
+amN
 bcz
 amu
-vyL
+asP
 bcC
 aAO
 aAO
@@ -85261,11 +85731,11 @@ aAO
 aAO
 aAO
 bcC
-vyL
+ath
 anL
 anF
 bcA
-bcA
+amN
 vyL
 jDK
 vyL
@@ -85474,11 +85944,11 @@ aXu
 aXu
 aXt
 bhw
-bkt
+atd
 blE
 bhw
 bhw
-blH
+asT
 bph
 bhw
 aXt
@@ -85519,7 +85989,7 @@ cce
 bMu
 faO
 kZf
-faO
+asu
 vNY
 cgY
 cgY
@@ -85685,8 +86155,8 @@ mTZ
 biG
 sgY
 bhw
-kXc
-ybx
+ati
+ate
 fFC
 fFC
 amR
@@ -85894,9 +86364,9 @@ aAO
 aAO
 aXu
 nIk
-wUw
-pfl
-kmL
+atm
+atl
+atj
 vkJ
 oWS
 kNZ
@@ -86111,8 +86581,8 @@ iVE
 bhw
 biP
 biP
-blH
-kXc
+asQ
+asY
 amS
 boy
 bpk
@@ -86531,22 +87001,22 @@ beu
 btm
 blH
 aot
+boy
+asF
 blH
-blH
-blH
-blH
-blH
-kXc
+asQ
+asQ
+asY
 amS
-blH
-blH
-blH
-blH
-blH
-blH
-blH
-btm
-blH
+asQ
+asQ
+asF
+asF
+asF
+asN
+asF
+asK
+asH
 blH
 blH
 bwP
@@ -86750,11 +87220,11 @@ anM
 wKf
 qeE
 vcv
-blH
-ass
+asQ
+boy
 boy
 blH
-ass
+boy
 blH
 blH
 boy
@@ -86947,12 +87417,12 @@ aAO
 aXu
 blH
 blH
+ats
+blH
+atq
 blH
 blH
-btm
-blH
-blH
-blH
+atn
 blH
 mbk
 blH
@@ -86960,7 +87430,7 @@ kXc
 mUh
 fBA
 fBA
-fBA
+asZ
 wmn
 blH
 blH
@@ -86969,10 +87439,10 @@ blH
 boy
 blH
 blH
-ass
+boy
 blH
 blH
-blH
+asF
 bwQ
 vac
 llV
@@ -87160,14 +87630,14 @@ aXu
 blH
 blH
 blH
-blH
+atr
 aoR
 blH
 blH
 blH
 blH
 blH
-blH
+boy
 kXc
 vcv
 blH
@@ -87382,12 +87852,12 @@ wKf
 wKf
 wKf
 wKf
-ano
 anG
-ano
+amU
+anG
 amU
 wKf
-amw
+anM
 wKf
 wKf
 wKf
@@ -87395,7 +87865,7 @@ wKf
 wKf
 wKf
 aay
-bkt
+asG
 blH
 bwQ
 nEp
@@ -87606,7 +88076,7 @@ bdq
 bew
 bfT
 btp
-vcv
+asI
 bkt
 blH
 bwS
@@ -87794,8 +88264,8 @@ acL
 acL
 aXu
 blH
-kXc
-aYj
+atv
+att
 aeF
 aaA
 aaA
@@ -87818,7 +88288,7 @@ aaA
 aaA
 aeF
 bts
-vcv
+asI
 bkt
 boy
 bwQ
@@ -88006,7 +88476,7 @@ aAO
 aAO
 aXu
 blH
-kXc
+atw
 aYk
 aaA
 aaA
@@ -88878,7 +89348,7 @@ aaA
 aaA
 aaA
 btu
-vcv
+ami
 bkt
 blH
 aXu
@@ -88887,8 +89357,8 @@ aax
 hwo
 hwo
 wbf
-afs
-hwo
+asB
+asy
 hwo
 bzS
 hwo
@@ -89088,8 +89558,8 @@ aaA
 aaA
 bqa
 aaA
-aaA
-btv
+asM
+asL
 vcv
 bkt
 blH
@@ -89311,7 +89781,7 @@ aax
 lho
 lho
 akw
-aft
+asC
 akj
 lho
 bzS
@@ -89726,8 +90196,8 @@ aaA
 aaA
 aaA
 btu
-vcv
-bkt
+asJ
+akZ
 blH
 bwU
 bwU
@@ -89939,7 +90409,7 @@ aaA
 aeF
 btv
 vcv
-bkt
+akZ
 bvU
 bwW
 nli
