@@ -261,6 +261,10 @@
 	},
 /turf/open/floor/almayer/edge/smooth/east,
 /area/golden_arrow/cryo_cells)
+"aay" = (
+/obj/item/holder/rat/gray,
+/turf/open/floor/almayer/edge/smooth/corner/west,
+/area/golden_arrow/supply)
 "aaz" = (
 /obj/structure/cable/heavyduty{
 	icon_state = "1-2"
@@ -1957,8 +1961,8 @@
 	dir = 8
 	},
 /obj/structure/surface/table/almayer,
-/obj/item/holder/cat/kitten{
-	name = "Isabelle"
+/obj/item/holder/cat/blackcat{
+	name = "Luna"
 	},
 /turf/open/floor/almayer/mono,
 /area/golden_arrow/cryo_cells)
@@ -33157,7 +33161,7 @@ ati
 gtS
 aOm
 qZf
-aWJ
+aay
 afz
 nOf
 aHZ
