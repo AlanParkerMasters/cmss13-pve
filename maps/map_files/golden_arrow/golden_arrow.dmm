@@ -86,6 +86,15 @@
 	},
 /turf/open/floor/almayer/plate,
 /area/golden_arrow/cryo_cells)
+"aaj" = (
+/obj/structure/closet/secure_closet/marine_personal/corpsman{
+	pixel_x = 8
+	},
+/obj/structure/closet/secure_closet/marine_personal/corpsman{
+	pixel_x = -7
+	},
+/turf/open/floor/almayer/plate,
+/area/golden_arrow/cryo_cells)
 "aak" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "N";
@@ -3049,6 +3058,38 @@
 /area/golden_arrow/platoonarmory)
 "aga" = (
 /obj/structure/surface/table/reinforced/almayer_B,
+/obj/item/storage/box/zipcuffs{
+	pixel_x = -4;
+	pixel_y = 8
+	},
+/obj/item/storage/box/zipcuffs{
+	pixel_x = -4;
+	pixel_y = 2
+	},
+/obj/item/storage/box/zipcuffs{
+	pixel_x = -4;
+	pixel_y = -4
+	},
+/obj/item/storage/box/zipcuffs{
+	pixel_x = 9;
+	pixel_y = 8
+	},
+/obj/item/storage/box/zipcuffs{
+	pixel_x = 9;
+	pixel_y = 2
+	},
+/obj/item/storage/box/zipcuffs{
+	pixel_x = 9;
+	pixel_y = -4
+	},
+/obj/item/storage/box/zipcuffs{
+	pixel_x = 9;
+	pixel_y = -4
+	},
+/obj/item/storage/box/zipcuffs{
+	pixel_x = -4;
+	pixel_y = -4
+	},
 /turf/open/floor/almayer/mono,
 /area/golden_arrow/platoonarmory)
 "agb" = (
@@ -12453,6 +12494,24 @@
 /obj/item/explosive/plastic/breaching_charge,
 /obj/item/explosive/plastic/breaching_charge,
 /obj/item/explosive/plastic/breaching_charge,
+/obj/item/explosive/plastic/breaching_charge/rubber{
+	pixel_y = -6
+	},
+/obj/item/explosive/plastic/breaching_charge/rubber{
+	pixel_y = -6
+	},
+/obj/item/explosive/plastic/breaching_charge/rubber{
+	pixel_y = -6
+	},
+/obj/item/explosive/plastic/breaching_charge/rubber{
+	pixel_y = -6
+	},
+/obj/item/explosive/plastic/breaching_charge/rubber{
+	pixel_y = -6
+	},
+/obj/item/explosive/plastic/breaching_charge/rubber{
+	pixel_y = -6
+	},
 /turf/open/floor/almayer/edge/west,
 /area/golden_arrow/platoonarmory)
 "aLs" = (
@@ -13722,6 +13781,7 @@
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
 	},
+/obj/item/ammo_box/magazine/mk1/large/rubber,
 /turf/open/floor/plating/plating_catwalk,
 /area/golden_arrow/platoonarmory)
 "aQf" = (
@@ -14385,6 +14445,10 @@
 	},
 /obj/item/storage/box/guncase/heavy/fuel{
 	pixel_y = 14
+	},
+/obj/item/storage/box/guncase/heavy/motiondetectors{
+	pixel_y = 2;
+	pixel_x = -3
 	},
 /obj/item/storage/box/guncase/heavy/motiondetectors{
 	pixel_y = 2;
@@ -21187,7 +21251,7 @@
 /obj/structure/gun_rack/mk221{
 	pixel_x = -11
 	},
-/obj/structure/gun_rack/mk221{
+/obj/structure/gun_rack/flamer/unloaded{
 	pixel_x = 7
 	},
 /turf/open/floor/almayer,
@@ -27272,7 +27336,7 @@ alc
 awW
 aAv
 aTn
-aFo
+aaj
 abx
 agI
 abp
