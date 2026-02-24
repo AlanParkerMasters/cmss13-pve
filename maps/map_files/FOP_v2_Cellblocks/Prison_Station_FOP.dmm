@@ -3098,6 +3098,7 @@
 /area/prison/hallway/central/south)
 "ajK" = (
 /obj/item/ammo_casing/bullet,
+/obj/effect/landmark/humanaispawner/clf/ua/prisoner,
 /turf/open/floor/prison/darkred2/west,
 /area/prison/security)
 "ajL" = (
@@ -3408,6 +3409,11 @@
 	},
 /turf/open/floor/prison/redfull,
 /area/prison/hallway/central/west)
+"akJ" = (
+/obj/item/ammo_casing/bullet,
+/obj/effect/landmark/humanaispawner/clf/ua/prisoner,
+/turf/open/floor/prison,
+/area/prison/security)
 "akK" = (
 /turf/closed/wall/r_wall/prison,
 /area/prison/cellblock/maxsec/south)
@@ -3417,6 +3423,10 @@
 	},
 /turf/open/floor/plating,
 /area/prison/maintenance/research_medbay)
+"akM" = (
+/obj/effect/landmark/humanaispawner/clf/ua/prisoner,
+/turf/open/floor/prison/bright_clean/southwest,
+/area/prison/hallway/east)
 "akN" = (
 /obj/structure/pipes/standard/simple/hidden/supply,
 /turf/open/floor/prison,
@@ -3709,6 +3719,10 @@
 /obj/structure/surface/table/reinforced/prison,
 /turf/open/floor/prison/bright_clean2/southwest,
 /area/prison/hallway/central/east)
+"alJ" = (
+/obj/effect/landmark/humanaispawner/clf/ua/prisoner,
+/turf/open/floor/prison/darkred2/east,
+/area/prison/monorail/east)
 "alK" = (
 /obj/structure/pipes/vents/scrubber{
 	dir = 8
@@ -3771,6 +3785,22 @@
 /obj/effect/decal/cleanable/blood/splatter,
 /turf/open/floor/prison/bright_clean2/southwest,
 /area/prison/canteen)
+"alU" = (
+/obj/structure/stairs/perspective{
+	dir = 8;
+	icon_state = "p_stair_full";
+	color = "#858680"
+	},
+/obj/structure/barricade/table/prison{
+	dir = 4
+	},
+/obj/effect/landmark/humanaispawner/clf/ua/prisoner/soldier,
+/turf/open/floor/plating/prison,
+/area/prison/hallway/east)
+"alV" = (
+/obj/effect/landmark/humanaispawner/clf/ua/prisoner,
+/turf/open/floor/prison,
+/area/prison/quarters/security)
 "alW" = (
 /obj/item/ammo_casing/bullet,
 /obj/item/ammo_casing/bullet,
@@ -4708,17 +4738,17 @@
 /turf/open/floor/wood,
 /area/prison/security/monitoring/highsec)
 "aoU" = (
-/obj/structure/barricade/wooden,
 /obj/item/ammo_casing/bullet,
 /obj/item/ammo_casing/bullet,
+/obj/structure/girder/reinforced,
 /turf/open/floor/prison/green,
 /area/prison/hallway/staff)
 "aoV" = (
 /obj/structure/pipes/standard/simple/hidden/supply,
 /obj/structure/disposalpipe/segment,
-/obj/structure/barricade/wooden,
 /obj/item/ammo_casing/bullet,
 /obj/item/ammo_casing/bullet,
+/obj/structure/girder/reinforced,
 /turf/open/floor/prison/green,
 /area/prison/hallway/staff)
 "aoW" = (
@@ -6494,6 +6524,14 @@
 /obj/effect/decal/cleanable/blood/splatter,
 /turf/open/floor/wood,
 /area/prison/residential/north)
+"auw" = (
+/obj/item/ammo_casing/bullet,
+/obj/item/ammo_casing/bullet,
+/obj/item/ammo_casing/bullet,
+/obj/item/ammo_casing/bullet,
+/obj/effect/landmark/humanaispawner/clf/ua/prisoner,
+/turf/open/floor/plating/plating_catwalk/prison,
+/area/prison/hallway/entrance)
 "aux" = (
 /obj/structure/pipes/standard/simple/hidden/supply{
 	dir = 9
@@ -6509,6 +6547,10 @@
 /obj/structure/machinery/light/double,
 /turf/open/floor/plating,
 /area/prison/cellblock/maxsec/south)
+"auA" = (
+/obj/item/clothing/head/helmet/warden,
+/turf/open/floor/wood,
+/area/prison/command/office)
 "auI" = (
 /obj/structure/pipes/standard/simple/hidden/supply{
 	dir = 5
@@ -8213,12 +8255,9 @@
 /turf/open/floor/carpet,
 /area/prison/command/office)
 "aPY" = (
-/obj/structure/bed/chair/comfy{
-	dir = 8
-	},
 /obj/effect/decal/cleanable/blood/splatter,
-/obj/item/clothing/head/helmet/warden,
 /obj/effect/decal/cleanable/blood/splatter,
+/obj/effect/landmark/corpsespawner/guard/hung,
 /turf/open/floor/carpet,
 /area/prison/command/office)
 "aPZ" = (
@@ -11549,7 +11588,9 @@
 "bHO" = (
 /obj/structure/pipes/standard/simple/hidden/supply,
 /obj/structure/disposalpipe/segment,
-/obj/structure/machinery/door/airlock/multi_tile/almayer/comdoor/colony,
+/obj/structure/machinery/door/airlock/multi_tile/almayer/comdoor/colony{
+	locked = 1
+	},
 /turf/open/floor/prison,
 /area/prison/hallway/east)
 "bHQ" = (
@@ -22172,6 +22213,7 @@
 /obj/structure/pipes/vents/pump{
 	dir = 8
 	},
+/obj/effect/landmark/humanaispawner/clf/ua/prisoner,
 /turf/open/floor/prison/kitchen,
 /area/prison/kitchen)
 "iAk" = (
@@ -30525,7 +30567,8 @@
 /turf/open/floor/prison/bright_clean2/southwest,
 /area/prison/holding/holding1)
 "qlx" = (
-/obj/structure/girder/reinforced,
+/obj/effect/landmark/humanaispawner/clf/ua/soldier,
+/obj/structure/barricade/table/prison,
 /turf/open/floor/prison/green,
 /area/prison/hallway/staff)
 "qlM" = (
@@ -36832,7 +36875,8 @@
 /area/prison/cellblock/highsec/south/north)
 "wio" = (
 /obj/structure/machinery/door/airlock/multi_tile/almayer/comdoor/colony{
-	dir = 2
+	dir = 2;
+	locked = 1
 	},
 /turf/open/floor/prison/bright_clean/southwest,
 /area/prison/hallway/east)
@@ -37557,7 +37601,8 @@
 /area/prison/security)
 "wPN" = (
 /obj/structure/machinery/door/airlock/multi_tile/almayer/generic{
-	name = "Staff Hallway"
+	name = "Staff Hallway";
+	locked = 1
 	},
 /turf/open/floor/prison/bright_clean/southwest,
 /area/prison/hallway/staff)
@@ -81978,7 +82023,7 @@ bwX
 atT
 atT
 atT
-atT
+alU
 bBB
 uIU
 ajY
@@ -82828,7 +82873,7 @@ jei
 jei
 jei
 jei
-jei
+akM
 sxS
 jei
 jei
@@ -85351,7 +85396,7 @@ bcC
 vyL
 bpf
 bcz
-ann
+auw
 bcA
 bcz
 bpf
@@ -86217,7 +86262,7 @@ aeb
 bAE
 bFL
 bys
-bAE
+alV
 adg
 adg
 bDZ
@@ -86650,7 +86695,7 @@ byt
 kez
 ebB
 bNk
-ajo
+akJ
 ajo
 bOw
 bRZ
@@ -87451,7 +87496,7 @@ aLG
 aMQ
 aMS
 aPV
-aMS
+auA
 czR
 aLG
 acL
@@ -91095,7 +91140,7 @@ vXP
 vXP
 vXP
 vXP
-vXP
+alJ
 vXP
 vXP
 vXP
