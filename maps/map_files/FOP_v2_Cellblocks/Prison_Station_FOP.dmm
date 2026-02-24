@@ -3970,6 +3970,13 @@
 /obj/item/ammo_casing/bullet,
 /turf/open/floor/prison/darkyellow2/east,
 /area/prison/hanger/main)
+"amw" = (
+/obj/structure/pipes/standard/simple/hidden/supply,
+/obj/structure/disposalpipe/segment,
+/obj/effect/landmark/corpsespawner/scrubs,
+/obj/effect/decal/cleanable/blood/splatter,
+/turf/open/floor/prison/sterile_white/southwest,
+/area/prison/medbay)
 "amx" = (
 /obj/structure/machinery/flasher{
 	id = "suspended_WWN"
@@ -4252,6 +4259,12 @@
 /obj/item/ammo_casing/bullet,
 /turf/open/floor/plating/plating_catwalk/prison,
 /area/prison/hallway/entrance)
+"ano" = (
+/obj/effect/landmark/corpsespawner/scrubs,
+/obj/effect/decal/cleanable/blood/splatter,
+/obj/effect/decal/cleanable/blood/splatter,
+/turf/open/floor/prison/whitegreen/west,
+/area/prison/medbay)
 "anp" = (
 /obj/effect/decal/siding/wood_siding,
 /obj/effect/decal/cleanable/blood/splatter,
@@ -5364,6 +5377,7 @@
 	dir = 4
 	},
 /obj/effect/landmark/corpsespawner/doctor,
+/obj/effect/decal/cleanable/blood/splatter,
 /turf/open/floor/prison/sterile_white/southwest,
 /area/prison/medbay)
 "arb" = (
@@ -70629,8 +70643,8 @@ akB
 akB
 apK
 qeo
-rmm
-rmm
+ano
+quS
 rmm
 rmm
 rmm
@@ -71061,7 +71075,7 @@ rOO
 rOO
 rOO
 rOO
-rOO
+jCW
 aqN
 ase
 rOO
@@ -71267,13 +71281,13 @@ bIl
 xyf
 rOO
 ara
-rOO
+jCW
 mDG
 rOO
 xgi
 mEh
-mEh
-mEh
+amw
+iMj
 mEh
 mEh
 mEh
