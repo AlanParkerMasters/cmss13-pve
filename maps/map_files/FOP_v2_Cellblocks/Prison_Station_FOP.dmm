@@ -345,6 +345,12 @@
 	},
 /turf/open/floor/prison,
 /area/prison/security/armory/lethal)
+"abc" = (
+/obj/item/weapon/twohanded/folded_metal_chair{
+	pixel_x = 5
+	},
+/turf/open/floor/prison,
+/area/prison/security/briefing)
 "abd" = (
 /obj/structure/shuttle/part/twe_cosmetic1/transparent{
 	icon_state = "1,2"
@@ -2351,6 +2357,7 @@
 "aht" = (
 /obj/structure/pipes/standard/simple/hidden/supply,
 /obj/item/ammo_casing/bullet,
+/obj/effect/decal/cleanable/blood/splatter,
 /turf/open/floor/prison,
 /area/prison/security/briefing)
 "ahu" = (
@@ -3958,8 +3965,8 @@
 /turf/open/floor/prison/darkyellow2/east,
 /area/prison/hanger/main)
 "amw" = (
-/obj/effect/landmark/corpsespawner/guard,
 /obj/effect/decal/cleanable/blood/splatter,
+/obj/effect/landmark/corpsespawner/guard/hung,
 /turf/open/floor/prison/darkyellow2/west,
 /area/prison/hanger/main)
 "amx" = (
@@ -4089,13 +4096,8 @@
 /turf/open/floor/prison/bright_clean/southwest,
 /area/prison/hanger/main)
 "amS" = (
-/obj/effect/landmark/corpsespawner/guard,
 /obj/effect/decal/cleanable/blood/splatter,
-/turf/open/floor/prison/darkyellow2,
-/area/prison/hanger/main)
-"amT" = (
-/obj/effect/landmark/corpsespawner/guard/burst,
-/obj/effect/decal/cleanable/blood/splatter,
+/obj/effect/landmark/corpsespawner/guard/hung,
 /turf/open/floor/prison/darkyellow2,
 /area/prison/hanger/main)
 "amU" = (
@@ -4368,6 +4370,7 @@
 /area/prison/hallway/entrance)
 "anM" = (
 /obj/effect/decal/cleanable/blood/splatter,
+/obj/effect/landmark/corpsespawner/guard,
 /turf/open/floor/prison/darkyellow2/west,
 /area/prison/hanger/main)
 "anN" = (
@@ -5447,6 +5450,11 @@
 /obj/effect/decal/cleanable/blood/splatter,
 /turf/open/floor/plating,
 /area/prison/security/monitoring/maxsec/panopticon)
+"arr" = (
+/obj/effect/landmark/corpsespawner/guard/hung,
+/obj/effect/decal/cleanable/blood/splatter,
+/turf/open/floor/prison/darkred2,
+/area/prison/security/briefing)
 "ars" = (
 /obj/structure/sink{
 	dir = 8;
@@ -5674,6 +5682,14 @@
 /obj/effect/landmark/humanaispawner/clf/ua/prisoner,
 /turf/open/floor/prison/floor_plate/southwest,
 /area/prison/cellblock/maxsec/south)
+"asg" = (
+/obj/effect/decal/cleanable/blood/splatter,
+/turf/open/floor/prison/darkred2,
+/area/prison/security/briefing)
+"ash" = (
+/obj/effect/landmark/corpsespawner/guard/hung,
+/turf/open/floor/prison/darkred2,
+/area/prison/security/briefing)
 "asi" = (
 /obj/structure/machinery/light/small{
 	dir = 4
@@ -5681,12 +5697,65 @@
 /obj/effect/decal/cleanable/blood/splatter,
 /turf/open/floor/plating/plating_catwalk/prison,
 /area/prison/cellblock/highsec/north/north)
+"asj" = (
+/obj/structure/pipes/standard/simple/hidden/supply,
+/obj/item/weapon/twohanded/folded_metal_chair{
+	pixel_y = 13;
+	pixel_x = -3
+	},
+/turf/open/floor/prison,
+/area/prison/security/briefing)
+"ask" = (
+/obj/effect/landmark/corpsespawner/guard/hung,
+/obj/effect/decal/cleanable/blood/splatter,
+/turf/open/floor/prison,
+/area/prison/security/briefing)
 "asl" = (
 /obj/structure/pipes/standard/manifold/visible{
 	dir = 8
 	},
 /turf/open/floor/prison,
 /area/prison/medbay)
+"asm" = (
+/obj/item/weapon/twohanded/folded_metal_chair{
+	pixel_x = 7
+	},
+/turf/open/floor/prison,
+/area/prison/security/briefing)
+"asn" = (
+/obj/item/weapon/twohanded/folded_metal_chair{
+	pixel_x = 2;
+	pixel_y = 9
+	},
+/turf/open/floor/prison,
+/area/prison/security/briefing)
+"aso" = (
+/obj/effect/decal/cleanable/blood/splatter,
+/turf/open/floor/prison,
+/area/prison/security/briefing)
+"asp" = (
+/obj/item/weapon/twohanded/folded_metal_chair,
+/turf/open/floor/prison,
+/area/prison/security/briefing)
+"asq" = (
+/obj/item/weapon/twohanded/folded_metal_chair{
+	pixel_x = -6;
+	pixel_y = 2
+	},
+/turf/open/floor/prison,
+/area/prison/security/briefing)
+"asr" = (
+/obj/item/weapon/twohanded/folded_metal_chair{
+	pixel_x = 2;
+	pixel_y = 9
+	},
+/turf/open/floor/plating/plating_catwalk/prison,
+/area/prison/security)
+"ass" = (
+/obj/effect/decal/cleanable/blood/splatter,
+/obj/effect/landmark/corpsespawner/guard/hung,
+/turf/open/floor/prison,
+/area/prison/hanger/main)
 "atf" = (
 /turf/closed/wall/r_wall/prison,
 /area/prison/medbay/morgue)
@@ -13407,6 +13476,7 @@
 /obj/structure/machinery/light/double{
 	dir = 4
 	},
+/obj/effect/landmark/corpsespawner/guard/hung,
 /turf/open/floor/prison,
 /area/prison/security/briefing)
 "cgY" = (
@@ -21922,6 +21992,8 @@
 /area/prison/storage/medsec)
 "iXX" = (
 /obj/structure/machinery/power/apc/upgraded/power/west,
+/obj/effect/landmark/corpsespawner/guard/hung,
+/obj/effect/decal/cleanable/blood/splatter,
 /turf/open/floor/prison/darkred2/north,
 /area/prison/security/briefing)
 "iYZ" = (
@@ -23739,8 +23811,8 @@
 /area/prison/monorail/east)
 "kNZ" = (
 /obj/structure/pipes/standard/simple/hidden/supply,
-/obj/effect/landmark/corpsespawner/guard,
 /obj/effect/decal/cleanable/blood/splatter,
+/obj/effect/landmark/corpsespawner/guard/hung,
 /turf/open/floor/prison/darkyellow2/east,
 /area/prison/hanger/main)
 "kOs" = (
@@ -29610,8 +29682,8 @@
 /turf/open/floor/prison/yellowcorner/west,
 /area/prison/cellblock/mediumsec/south)
 "qeE" = (
-/obj/effect/landmark/corpsespawner/guard,
 /obj/effect/decal/cleanable/blood/splatter,
+/obj/effect/landmark/corpsespawner/guard/hung,
 /turf/open/floor/prison/darkyellowcorners2/east,
 /area/prison/hanger/main)
 "qeI" = (
@@ -35499,6 +35571,7 @@
 	dir = 6
 	},
 /obj/item/ammo_casing/bullet,
+/obj/effect/decal/cleanable/blood/splatter,
 /turf/open/floor/prison/darkred2/north,
 /area/prison/security/briefing)
 "vFr" = (
@@ -36098,6 +36171,7 @@
 /area/prison/hallway/central/west)
 "wmn" = (
 /obj/effect/decal/cleanable/blood/splatter,
+/obj/effect/landmark/corpsespawner/guard,
 /turf/open/floor/prison/darkyellow2/southeast,
 /area/prison/hanger/main)
 "wmu" = (
@@ -81630,12 +81704,12 @@ oZU
 cgN
 iXX
 cgV
+asn
+ask
+ask
+cje
 chZ
-chZ
-chZ
-chZ
-chZ
-xbW
+arr
 eAS
 koP
 uQU
@@ -81841,13 +81915,13 @@ cev
 oZU
 cgN
 ahE
+aso
+cje
+asm
+cje
 cje
 chZ
-chZ
-chZ
-chZ
-chZ
-xbW
+asg
 cje
 cnZ
 cje
@@ -82058,7 +82132,7 @@ cia
 ahi
 cia
 cia
-cgW
+asj
 fmI
 cgW
 cnX
@@ -82268,13 +82342,13 @@ nsC
 ahu
 chZ
 chZ
-chZ
+cje
 ahb
 chZ
-xbW
+ash
 hCS
 glZ
-cje
+abc
 cpg
 aAO
 aAO
@@ -82473,12 +82547,12 @@ bMq
 hYl
 bZE
 bWx
-cev
+asr
 oZU
 nqN
 jwu
 cje
-chZ
+cje
 chZ
 chZ
 chZ
@@ -82689,7 +82763,7 @@ cev
 oZU
 cgQ
 ahF
-cje
+asp
 cic
 cic
 cic
@@ -82902,8 +82976,8 @@ oZU
 nqN
 jwu
 ahu
-chZ
-chZ
+cje
+cje
 chZ
 chZ
 chZ
@@ -83114,10 +83188,10 @@ phh
 nqN
 ahG
 ahv
+cje
+cje
 chZ
-chZ
-chZ
-chZ
+cje
 chZ
 xbW
 hCS
@@ -83537,9 +83611,9 @@ bMq
 bZp
 cgN
 lxM
+asq
 cje
-chZ
-chZ
+cje
 chZ
 ahb
 chZ
@@ -83750,7 +83824,7 @@ xqv
 cgN
 jwu
 cgX
-chZ
+cje
 chZ
 chZ
 chZ
@@ -86463,7 +86537,7 @@ blH
 blH
 blH
 kXc
-amT
+amS
 blH
 blH
 blH
@@ -86677,10 +86751,10 @@ wKf
 qeE
 vcv
 blH
-akR
+ass
 boy
 blH
-akR
+ass
 blH
 blH
 boy
@@ -86895,7 +86969,7 @@ blH
 boy
 blH
 blH
-akR
+ass
 blH
 blH
 blH
