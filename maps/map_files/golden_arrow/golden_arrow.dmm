@@ -977,15 +977,6 @@
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
 	},
-/obj/structure/bed/bedroll{
-	pixel_x = -2;
-	color = "#333333";
-	name = "gym mat";
-	buckle_lying = null;
-	can_buckle = 0;
-	foldabletype = null;
-	desc = "A black gym mat, useful if you don't want to use the cold hard floor for exercise."
-	},
 /turf/open/floor/almayer/cargo_arrow/east,
 /area/golden_arrow/hangar)
 "abZ" = (
@@ -1551,15 +1542,6 @@
 	},
 /turf/open/floor/plating/plating_catwalk,
 /area/golden_arrow/cryo_cells)
-"acW" = (
-/obj/structure/bed/chair{
-	dir = 8;
-	pixel_y = 3;
-	buckling_y = 7;
-	pixel_x = 3
-	},
-/turf/open/floor/almayer/edge/smooth,
-/area/golden_arrow/hangar)
 "acX" = (
 /obj/structure/sign/safety/galley{
 	pixel_y = 28
@@ -2328,8 +2310,25 @@
 /area/golden_arrow/hangar)
 "aez" = (
 /obj/effect/decal/strata_decals/grime/grime2,
-/obj/structure/machinery/firealarm{
-	pixel_y = 28
+/obj/item/clothing/under/shorts/blue,
+/obj/item/clothing/under/shorts/blue,
+/obj/item/clothing/under/shorts/red,
+/obj/item/clothing/under/shorts/red,
+/obj/item/clothing/under/shorts/green,
+/obj/item/clothing/under/shorts/green,
+/obj/item/clothing/under/shorts/black,
+/obj/item/clothing/under/shorts/black,
+/obj/item/clothing/under/shorts/grey,
+/obj/item/clothing/under/shorts/grey,
+/obj/structure/closet{
+	name = "atheletic attire";
+	pixel_x = 7;
+	pixel_y = 15;
+	storage_capacity = 60
+	},
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 1;
+	light_power = 0.7
 	},
 /turf/open/floor/almayer,
 /area/golden_arrow/hangar)
@@ -2398,6 +2397,13 @@
 	},
 /turf/open/floor/prison/floor_plate/southwest,
 /area/golden_arrow/cryo_cells)
+"aeG" = (
+/obj/item/tool/dumbbell/alt{
+	pixel_x = -7;
+	pixel_y = -11
+	},
+/turf/open/floor/almayer/edge/smooth/north,
+/area/golden_arrow/hangar)
 "aeH" = (
 /obj/structure/machinery/faxmachine/uscm/command/capt,
 /obj/structure/surface/table/reinforced/almayer_B,
@@ -2686,6 +2692,24 @@
 /obj/structure/gun_rack/m41/unloaded,
 /turf/open/floor/almayer,
 /area/golden_arrow/platoonarmory)
+"afl" = (
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
+	},
+/obj/structure/bed/bedroll{
+	pixel_y = -4;
+	color = "#333333";
+	name = "gym mat";
+	buckle_lying = null;
+	can_buckle = 0;
+	foldabletype = null;
+	desc = "A black gym mat, useful if you don't want to use the cold hard floor for exercise."
+	},
+/obj/item/reagent_container/food/snacks/protein_pack{
+	pixel_x = 6
+	},
+/turf/open/floor/almayer/edge/smooth/corner/west,
+/area/golden_arrow/hangar)
 "afm" = (
 /obj/structure/bed{
 	can_buckle = 0
@@ -3415,6 +3439,17 @@
 	},
 /turf/open/floor/almayer/edge/smooth/endcap_right/west,
 /area/golden_arrow/cryo_cells)
+"agH" = (
+/obj/structure/sign/poster{
+	pixel_x = 3;
+	icon_state = "poster32";
+	pixel_y = -1;
+	desc = "This poster depicts Lance McDonell, the winner of Mr. Universe 2170-74. Don't ask how you know that. He bears a striking resemblance to the 42nd President of the United States, Arnold Schwarzenegger.";
+	name = "Mr. Universe 2170-74";
+	serial_number = 32
+	},
+/turf/closed/wall/almayer/outer,
+/area/golden_arrow/hangar)
 "agI" = (
 /obj/structure/barricade/handrail{
 	dir = 4
@@ -3628,6 +3663,10 @@
 	},
 /turf/open/floor/almayer/cargo_arrow/west,
 /area/golden_arrow/hangar)
+"agZ" = (
+/obj/structure/punching_bag,
+/turf/open/floor/plating/plating_catwalk,
+/area/golden_arrow/hangar)
 "aha" = (
 /obj/structure/surface/table/almayer,
 /obj/item/trash/cigbutt/cigarbutt{
@@ -3669,6 +3708,33 @@
 	},
 /turf/open/floor/almayer/plate,
 /area/golden_arrow/hangar)
+"ahd" = (
+/obj/item/trash/cigbutt,
+/turf/open/floor/almayer,
+/area/golden_arrow/hangar)
+"ahe" = (
+/obj/structure/machinery/camera/autoname/golden_arrow{
+	dir = 8
+	},
+/obj/structure/surface/rack,
+/obj/item/tool/dumbbell{
+	pixel_y = 5;
+	pixel_x = -2
+	},
+/obj/item/tool/dumbbell{
+	pixel_y = -1;
+	pixel_x = 1
+	},
+/obj/item/tool/dumbbell{
+	pixel_y = -8;
+	pixel_x = 4
+	},
+/turf/open/floor/almayer/plate,
+/area/golden_arrow/hangar)
+"ahf" = (
+/obj/structure/punching_bag,
+/turf/open/floor/almayer/plate,
+/area/golden_arrow/hangar)
 "ahg" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "N";
@@ -3676,6 +3742,16 @@
 	},
 /obj/structure/pipes/standard/simple/hidden/supply,
 /turf/open/floor/almayer/cargo_arrow,
+/area/golden_arrow/hangar)
+"ahh" = (
+/obj/structure/sign/poster{
+	pixel_x = -5;
+	icon_state = "poster3";
+	serial_number = 3;
+	desc = "This poster depicts a long-gone 20th century rocker. Rock may be dead, but it had a good run.";
+	name = "Lita"
+	},
+/turf/closed/wall/almayer/outer,
 /area/golden_arrow/hangar)
 "ahi" = (
 /obj/effect/decal/warning_stripes{
@@ -3735,6 +3811,10 @@
 /obj/structure/machinery/vending/coffee,
 /turf/open/floor/almayer/edge/smooth,
 /area/golden_arrow/cryo_cells)
+"ahn" = (
+/obj/structure/weightmachine/weightlifter,
+/turf/open/floor/almayer/edge/smooth,
+/area/golden_arrow/hangar)
 "aho" = (
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
@@ -3750,6 +3830,33 @@
 	},
 /turf/open/floor/plating,
 /area/golden_arrow/hangar)
+"ahq" = (
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
+	},
+/obj/structure/weightmachine/stacklifter,
+/turf/open/floor/almayer/plate,
+/area/golden_arrow/hangar)
+"ahr" = (
+/obj/structure/sign/poster{
+	pixel_x = 5;
+	pixel_y = 5;
+	icon_state = "poster12";
+	desc = "This poster features Roxanne Straski. She was the January 2180 centerfold in Playboy Magazine. Don't ask how you know that.";
+	name = "'Miss January' pinup";
+	serial_number = 12
+	},
+/turf/closed/wall/almayer/outer,
+/area/golden_arrow/hangar)
+"ahs" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "SW-out"
+	},
+/obj/structure/cable/heavyduty{
+	icon_state = "4-8"
+	},
+/turf/open/floor/almayer/edge/smooth/corner/east,
+/area/space)
 "aht" = (
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
@@ -3764,6 +3871,16 @@
 	},
 /turf/open/floor/almayer/edge/smooth/endcap_left/west,
 /area/golden_arrow/cryo_cells)
+"ahu" = (
+/obj/structure/cable/heavyduty{
+	icon_state = "2-8"
+	},
+/turf/open/floor/almayer/edge/smooth,
+/area/space)
+"ahv" = (
+/obj/structure/pipes/standard/simple/hidden/supply,
+/turf/open/floor/almayer/edge/smooth,
+/area/space)
 "ahw" = (
 /obj/structure/disposalpipe/segment,
 /obj/structure/pipes/standard/simple/hidden/supply,
@@ -3772,6 +3889,23 @@
 	},
 /turf/open/floor/plating/plating_catwalk,
 /area/golden_arrow/lower_cargo)
+"ahx" = (
+/turf/open/floor/almayer/edge/smooth/corner,
+/area/space)
+"ahy" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "E"
+	},
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
+	},
+/obj/structure/target{
+	name = "punching bag";
+	pixel_y = 16;
+	layer = 3.1
+	},
+/turf/open/floor/almayer/plate,
+/area/space)
 "ahz" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "door_warning";
@@ -3812,12 +3946,64 @@
 	},
 /turf/open/floor/almayer/test_floor4,
 /area/golden_arrow/hangar)
+"ahC" = (
+/obj/structure/sign/safety/bulkhead_door{
+	pixel_y = 27
+	},
+/obj/structure/sign/safety/hazard{
+	pixel_x = 14;
+	pixel_y = 27
+	},
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
+	},
+/obj/structure/closet/coffin/woodencrate,
+/obj/item/clothing/gloves/boxing,
+/obj/item/clothing/gloves/boxing/blue,
+/obj/item/clothing/gloves/boxing/green,
+/obj/item/clothing/gloves/boxing/yellow,
+/turf/open/floor/almayer/cargo_arrow/west,
+/area/space)
+"ahD" = (
+/obj/item/reagent_container/food/drinks/cans/thirteenloko{
+	pixel_x = -12;
+	pixel_y = 20
+	},
+/turf/open/floor/almayer,
+/area/golden_arrow/hangar)
+"ahE" = (
+/obj/item/trash/cigbutt,
+/obj/item/trash/cigbutt,
+/obj/item/trash/cigbutt,
+/obj/item/trash/cigbutt,
+/obj/item/trash/cigbutt,
+/turf/open/floor/almayer,
+/area/golden_arrow/hangar)
 "ahF" = (
 /obj/structure/machinery/door/poddoor/railing{
 	id = "garrow_vehicle_elevator_one"
 	},
 /turf/open/floor/almayer/black/north,
 /area/golden_arrow/vehicle_shuttle/upper)
+"ahG" = (
+/obj/structure/sign/poster{
+	pixel_x = -6;
+	icon_state = "poster33";
+	pixel_y = -1;
+	desc = "This poster depicts Rockwell Jordan, the winner of Mr. Universe 2174-76. Don't ask how you know that.";
+	name = "Mr. Universe 2174-76";
+	serial_number = 33
+	},
+/obj/structure/sign/poster{
+	pixel_x = 5;
+	pixel_y = 3;
+	icon_state = "poster34";
+	name = "Mr. Universe 2176-present";
+	serial_number = 34;
+	desc = "This poster depicts Wilson Winslow, the current Mr. Universe reigning champion. Don't ask how you know that."
+	},
+/turf/closed/wall/almayer/outer,
+/area/golden_arrow/hangar)
 "ahH" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "N";
@@ -3845,12 +4031,98 @@
 "ahK" = (
 /turf/open/floor/plating/plating_catwalk,
 /area/golden_arrow/cryo_cells)
+"ahL" = (
+/obj/structure/pipes/standard/simple/hidden/supply{
+	dir = 8
+	},
+/turf/open/floor/almayer/plate,
+/area/space)
+"ahM" = (
+/obj/structure/pipes/standard/simple/hidden/supply{
+	dir = 10
+	},
+/turf/open/floor/almayer/plate,
+/area/space)
 "ahN" = (
 /obj/structure/sign/safety/one{
 	pixel_x = 39
 	},
 /turf/open/floor/almayer,
 /area/golden_arrow/motor_pool)
+"ahO" = (
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
+	},
+/turf/open/floor/almayer/plate,
+/area/space)
+"ahP" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "SE-out"
+	},
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
+	},
+/obj/item/storage/box/cups{
+	pixel_x = -1;
+	pixel_y = 16
+	},
+/obj/structure/largecrate/random/case/double,
+/turf/open/floor/almayer/plate,
+/area/space)
+"ahQ" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "S";
+	pixel_y = 1
+	},
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
+	},
+/obj/structure/prop{
+	name = "\improper uncomfy case";
+	desc = "A regular case you'd sit on. The label says it's full of steel sheets. Probably empty now.";
+	icon_state = "case";
+	icon = 'icons/obj/structures/crates.dmi';
+	can_buckle = 1
+	},
+/turf/open/floor/almayer/cargo_arrow/north,
+/area/golden_arrow/hangar)
+"ahR" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "S";
+	pixel_y = 1
+	},
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
+	},
+/obj/item/reagent_container/food/drinks/cans/waterbottle{
+	pixel_x = 13;
+	pixel_y = -5
+	},
+/obj/item/tool/dumbbell{
+	pixel_y = -13;
+	pixel_x = -7
+	},
+/obj/item/tool/dumbbell{
+	pixel_y = 4;
+	pixel_x = 1
+	},
+/turf/open/floor/almayer/cargo_arrow/north,
+/area/golden_arrow/hangar)
+"ahS" = (
+/obj/structure/bed/bedroll{
+	pixel_y = -4;
+	color = "#333333";
+	name = "gym mat";
+	buckle_lying = null;
+	can_buckle = 0;
+	foldabletype = null;
+	desc = "A black gym mat, useful if you don't want to use the cold hard floor for exercise."
+	},
+/obj/item/reagent_container/food/snacks/protein_pack{
+	pixel_x = 6
+	},
+/turf/open/floor/almayer/edge/smooth/north,
+/area/space)
 "ahT" = (
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
@@ -3860,8 +4132,19 @@
 	icon_state = "0-8";
 	layer = 2.36
 	},
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 4;
+	light_power = 0.7
+	},
 /turf/open/floor/almayer/plate,
 /area/golden_arrow/hangar)
+"ahU" = (
+/obj/item/tool/dumbbell/alt{
+	pixel_x = -7;
+	pixel_y = -11
+	},
+/turf/open/floor/almayer/edge/smooth/north,
+/area/space)
 "ahV" = (
 /obj/structure/machinery/door/poddoor/almayer/locked{
 	name = "\improper Hangar Lockdown Blast Door";
@@ -3870,6 +4153,36 @@
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/almayer/test_floor4,
 /area/golden_arrow/lower_cargo)
+"ahW" = (
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
+	},
+/turf/open/floor/almayer/edge/smooth/corner/west,
+/area/space)
+"ahX" = (
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
+	},
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 4;
+	light_power = 0.7;
+	pixel_x = 3
+	},
+/obj/structure/surface/rack,
+/obj/item/tool/dumbbell/alt{
+	pixel_x = -4;
+	pixel_y = 5
+	},
+/obj/item/tool/dumbbell/alt{
+	pixel_x = -1;
+	pixel_y = -1
+	},
+/obj/item/tool/dumbbell/alt{
+	pixel_x = 3;
+	pixel_y = -8
+	},
+/turf/open/floor/almayer/plate,
+/area/space)
 "ahY" = (
 /obj/structure/prop/invuln/lattice_prop{
 	icon_state = "lattice1";
@@ -3931,6 +4244,21 @@
 	},
 /turf/open/floor/almayer/test_floor4,
 /area/golden_arrow/hangar)
+"aie" = (
+/obj/structure/sign/poster{
+	pixel_x = 3;
+	icon_state = "poster32";
+	pixel_y = -1;
+	desc = "This poster depicts Lance McDonell, the winner of Mr. Universe 2170-74. Don't ask how you know that. He bears a striking resemblance to the 42nd President of the United States, Arnold Schwarzenegger.";
+	name = "Mr. Universe 2170-74";
+	serial_number = 32
+	},
+/turf/closed/wall/almayer/outer,
+/area/space)
+"aif" = (
+/obj/structure/punching_bag,
+/turf/open/floor/plating/plating_catwalk,
+/area/space)
 "aig" = (
 /obj/structure/machinery/door_control{
 	id = "cargobay3";
@@ -3983,6 +4311,9 @@
 	},
 /turf/open/floor/almayer/edge/northeast,
 /area/golden_arrow/dorms)
+"aik" = (
+/turf/open/floor/almayer/edge/smooth/west,
+/area/space)
 "ail" = (
 /obj/structure/machinery/door/firedoor/border_only/almayer{
 	dir = 2
@@ -3992,6 +4323,38 @@
 	},
 /turf/open/floor/almayer/test_floor4,
 /area/golden_arrow/platoonprep)
+"aim" = (
+/obj/item/trash/cigbutt,
+/turf/open/floor/almayer,
+/area/space)
+"ain" = (
+/obj/structure/machinery/camera/autoname/golden_arrow{
+	dir = 8
+	},
+/obj/structure/surface/rack,
+/obj/item/tool/dumbbell{
+	pixel_y = 5;
+	pixel_x = -2
+	},
+/obj/item/tool/dumbbell{
+	pixel_y = -1;
+	pixel_x = 1
+	},
+/obj/item/tool/dumbbell{
+	pixel_y = -8;
+	pixel_x = 4
+	},
+/turf/open/floor/almayer/plate,
+/area/space)
+"aio" = (
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
+	},
+/turf/open/floor/almayer/mono,
+/area/space)
+"aip" = (
+/turf/open/floor/plating/plating_catwalk,
+/area/space)
 "aiq" = (
 /obj/structure/machinery/door/firedoor/border_only/almayer{
 	dir = 2
@@ -4043,6 +4406,10 @@
 /obj/structure/pipes/vents/pump,
 /turf/open/floor/almayer/edge/smooth,
 /area/golden_arrow/lower_cargo)
+"aiw" = (
+/obj/structure/punching_bag,
+/turf/open/floor/almayer/plate,
+/area/space)
 "aix" = (
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
@@ -4075,12 +4442,31 @@
 	},
 /turf/open/floor/almayer,
 /area/golden_arrow/supply)
+"aiA" = (
+/obj/structure/sign/poster{
+	pixel_x = -5;
+	icon_state = "poster3";
+	serial_number = 3;
+	desc = "This poster depicts a long-gone 20th century rocker. Rock may be dead, but it had a good run.";
+	name = "Lita"
+	},
+/turf/closed/wall/almayer/outer,
+/area/space)
 "aiB" = (
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
 	},
 /turf/open/floor/almayer,
 /area/golden_arrow/shared_office)
+"aiC" = (
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/turf/open/floor/almayer/mono,
+/area/space)
 "aiD" = (
 /obj/structure/machinery/door/poddoor/shutters/almayer{
 	dir = 4;
@@ -4089,6 +4475,18 @@
 	},
 /turf/open/floor/almayer/edge/smooth/endcap_left/west,
 /area/golden_arrow/platoonprep)
+"aiE" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/space)
+"aiF" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/turf/open/floor/almayer/edge/smooth/west,
+/area/space)
 "aiG" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "N";
@@ -4105,6 +4503,27 @@
 	},
 /turf/open/floor/almayer/mono,
 /area/golden_arrow/prep_hallway)
+"aiI" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/turf/open/floor/almayer,
+/area/space)
+"aiJ" = (
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
+	},
+/obj/structure/machinery/power/apc/almayer/east,
+/obj/structure/cable{
+	icon_state = "0-8";
+	layer = 2.36
+	},
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 4;
+	light_power = 0.7
+	},
+/turf/open/floor/almayer/plate,
+/area/space)
 "aiK" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "NW-out";
@@ -4177,6 +4596,13 @@
 /obj/structure/pipes/standard/simple/hidden/supply,
 /turf/open/floor/almayer/dark_sterile,
 /area/golden_arrow/medical)
+"aiR" = (
+/turf/open/floor/almayer/edge/smooth,
+/area/space)
+"aiS" = (
+/obj/structure/weightmachine/weightlifter,
+/turf/open/floor/almayer/edge/smooth,
+/area/space)
 "aiT" = (
 /obj/structure/cable/heavyduty{
 	icon_state = "1-2"
@@ -4208,6 +4634,12 @@
 	},
 /turf/open/floor/plating/plating_catwalk,
 /area/golden_arrow/briefing)
+"aiW" = (
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
+	},
+/turf/open/floor/almayer/edge/smooth/corner,
+/area/space)
 "aiX" = (
 /obj/structure/machinery/door/poddoor/almayer/locked{
 	name = "\improper Hangar Lockdown Blast Door";
@@ -4225,6 +4657,24 @@
 	},
 /turf/open/floor/almayer/plate,
 /area/golden_arrow/hangar)
+"aiZ" = (
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
+	},
+/obj/structure/weightmachine/stacklifter,
+/turf/open/floor/almayer/plate,
+/area/space)
+"aja" = (
+/obj/structure/sign/poster{
+	pixel_x = 5;
+	pixel_y = 5;
+	icon_state = "poster12";
+	desc = "This poster features Roxanne Straski. She was the January 2180 centerfold in Playboy Magazine. Don't ask how you know that.";
+	name = "'Miss January' pinup";
+	serial_number = 12
+	},
+/turf/closed/wall/almayer/outer,
+/area/space)
 "ajb" = (
 /obj/structure/pipes/standard/manifold/hidden/supply{
 	dir = 8
@@ -4261,6 +4711,52 @@
 	},
 /turf/open/floor/almayer/edge/smooth/corner/west,
 /area/golden_arrow/hangar)
+"ajf" = (
+/obj/item/trash/cigbutt,
+/obj/item/trash/cigbutt,
+/obj/item/trash/cigbutt,
+/obj/item/trash/cigbutt,
+/obj/item/trash/cigbutt,
+/turf/open/floor/almayer,
+/area/space)
+"ajg" = (
+/obj/structure/reagent_dispensers/water_cooler/stacks{
+	pixel_y = 16;
+	layer = 3.6;
+	density = 0;
+	pixel_x = -8
+	},
+/obj/structure/mirror{
+	pixel_y = 27;
+	pixel_x = 5;
+	desc = "A large gym mirror, to check out your GAINS!"
+	},
+/turf/open/floor/almayer,
+/area/space)
+"ajh" = (
+/obj/effect/decal/strata_decals/grime/grime2,
+/obj/item/clothing/under/shorts/blue,
+/obj/item/clothing/under/shorts/blue,
+/obj/item/clothing/under/shorts/red,
+/obj/item/clothing/under/shorts/red,
+/obj/item/clothing/under/shorts/green,
+/obj/item/clothing/under/shorts/green,
+/obj/item/clothing/under/shorts/black,
+/obj/item/clothing/under/shorts/black,
+/obj/item/clothing/under/shorts/grey,
+/obj/item/clothing/under/shorts/grey,
+/obj/structure/closet{
+	name = "atheletic attire";
+	pixel_x = 7;
+	pixel_y = 15;
+	storage_capacity = 60
+	},
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 1;
+	light_power = 0.7
+	},
+/turf/open/floor/almayer,
+/area/space)
 "aji" = (
 /obj/structure/pipes/standard/simple/hidden/supply{
 	dir = 8
@@ -4273,6 +4769,25 @@
 	},
 /turf/open/floor/almayer,
 /area/golden_arrow/prep_hallway)
+"ajj" = (
+/obj/structure/sign/poster{
+	pixel_x = -6;
+	icon_state = "poster33";
+	pixel_y = -1;
+	desc = "This poster depicts Rockwell Jordan, the winner of Mr. Universe 2174-76. Don't ask how you know that.";
+	name = "Mr. Universe 2174-76";
+	serial_number = 33
+	},
+/obj/structure/sign/poster{
+	pixel_x = 5;
+	pixel_y = 3;
+	icon_state = "poster34";
+	name = "Mr. Universe 2176-present";
+	serial_number = 34;
+	desc = "This poster depicts Wilson Winslow, the current Mr. Universe reigning champion. Don't ask how you know that."
+	},
+/turf/closed/wall/almayer/outer,
+/area/space)
 "ajk" = (
 /obj/structure/surface/table/almayer,
 /obj/structure/largecrate/random/mini/small_case/c{
@@ -4281,6 +4796,16 @@
 	},
 /turf/open/floor/almayer/plate,
 /area/golden_arrow/hangar)
+"ajl" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "S";
+	pixel_y = 1
+	},
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
+	},
+/turf/open/floor/almayer/cargo_arrow/north,
+/area/space)
 "ajm" = (
 /obj/structure/machinery/firealarm{
 	dir = 4;
@@ -4288,6 +4813,20 @@
 	},
 /turf/open/floor/almayer/edge/smooth/endcap_right/east,
 /area/golden_arrow/cryo_cells)
+"ajn" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "S";
+	pixel_y = 1
+	},
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
+	},
+/obj/item/reagent_container/food/drinks/cans/waterbottle{
+	pixel_x = 13;
+	pixel_y = -5
+	},
+/turf/open/floor/almayer/cargo_arrow/north,
+/area/space)
 "ajq" = (
 /obj/structure/surface/table/reinforced/almayer_B,
 /obj/structure/vehicle_locker/cabinet/utensils{
@@ -11911,11 +12450,11 @@
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
 	},
-/obj/structure/reagent_dispensers/water_cooler/stacks{
-	pixel_y = 18;
-	layer = 3.6;
-	density = 0
-	},
+/obj/structure/closet/coffin/woodencrate,
+/obj/item/clothing/gloves/boxing,
+/obj/item/clothing/gloves/boxing/blue,
+/obj/item/clothing/gloves/boxing/green,
+/obj/item/clothing/gloves/boxing/yellow,
 /turf/open/floor/almayer/cargo_arrow/west,
 /area/golden_arrow/hangar)
 "aJg" = (
@@ -12872,9 +13411,16 @@
 /turf/open/floor/almayer/edge/smooth/east,
 /area/golden_arrow/hangar)
 "aMP" = (
-/obj/structure/machinery/light/double/blue/golden_arrow{
-	dir = 1;
-	light_power = 0.7
+/obj/structure/reagent_dispensers/water_cooler/stacks{
+	pixel_y = 16;
+	layer = 3.6;
+	density = 0;
+	pixel_x = -8
+	},
+/obj/structure/mirror{
+	pixel_y = 27;
+	pixel_x = 5;
+	desc = "A large gym mirror, to check out your GAINS!"
 	},
 /turf/open/floor/almayer,
 /area/golden_arrow/hangar)
@@ -14786,15 +15332,6 @@
 /obj/structure/pipes/vents/pump{
 	dir = 8
 	},
-/obj/structure/bed/bedroll{
-	pixel_x = 1;
-	color = "#333333";
-	name = "gym mat";
-	buckle_lying = null;
-	can_buckle = 0;
-	foldabletype = null;
-	desc = "A black gym mat, useful if you don't want to use the cold hard floor for exercise."
-	},
 /turf/open/floor/almayer/edge/smooth/corner,
 /area/golden_arrow/hangar)
 "aTD" = (
@@ -16020,24 +16557,6 @@
 	},
 /turf/open/floor/almayer/edge/smooth/east,
 /area/golden_arrow/motor_pool)
-"aXW" = (
-/obj/effect/decal/warning_stripes{
-	icon_state = "E"
-	},
-/obj/effect/decal/cleanable/dirt{
-	layer = 2.52
-	},
-/obj/structure/bed/bedroll{
-	pixel_y = -4;
-	color = "#333333";
-	name = "gym mat";
-	buckle_lying = null;
-	can_buckle = 0;
-	foldabletype = null;
-	desc = "A black gym mat, useful if you don't want to use the cold hard floor for exercise."
-	},
-/turf/open/floor/almayer/plate,
-/area/golden_arrow/hangar)
 "aYb" = (
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
@@ -17323,27 +17842,22 @@
 	},
 /obj/structure/machinery/light/double/blue/golden_arrow{
 	dir = 4;
-	light_power = 0.7
+	light_power = 0.7;
+	pixel_x = 3
 	},
-/obj/structure/closet/coffin/woodencrate{
-	name = "gym equipment"
+/obj/structure/surface/rack,
+/obj/item/tool/dumbbell/alt{
+	pixel_x = -4;
+	pixel_y = 5
 	},
-/obj/item/clothing/gloves/boxing/yellow,
-/obj/item/clothing/gloves/boxing/green,
-/obj/item/clothing/gloves/boxing/blue,
-/obj/item/clothing/gloves/boxing,
-/obj/item/clothing/under/shorts/black,
-/obj/item/clothing/under/shorts/black,
-/obj/item/clothing/under/shorts/black,
-/obj/item/clothing/under/shorts/black,
-/obj/item/clothing/under/shorts/black,
-/obj/item/clothing/under/shorts/black,
-/obj/item/clothing/under/shorts/black,
-/obj/item/clothing/under/shorts/black,
-/obj/item/clothing/under/shorts/black,
-/obj/item/clothing/under/shorts/black,
-/obj/item/clothing/under/shorts/black,
-/obj/item/clothing/under/shorts/black,
+/obj/item/tool/dumbbell/alt{
+	pixel_x = -1;
+	pixel_y = -1
+	},
+/obj/item/tool/dumbbell/alt{
+	pixel_x = 3;
+	pixel_y = -8
+	},
 /turf/open/floor/almayer/plate,
 /area/golden_arrow/hangar)
 "dLD" = (
@@ -21443,29 +21957,6 @@
 	},
 /turf/open/floor/almayer/cargo_arrow,
 /area/golden_arrow/supply)
-"sCf" = (
-/obj/effect/decal/cleanable/dirt{
-	layer = 2.52
-	},
-/obj/structure/sign/safety/bulkhead_door{
-	pixel_y = -29
-	},
-/obj/structure/sign/safety/hazard{
-	pixel_x = 14;
-	pixel_y = -29
-	},
-/obj/structure/bed/bedroll{
-	pixel_x = -2;
-	color = "#333333";
-	name = "gym mat";
-	buckle_lying = null;
-	can_buckle = 0;
-	foldabletype = null;
-	pixel_y = -3;
-	desc = "A black gym mat, useful if you don't want to use the cold hard floor for exercise."
-	},
-/turf/open/floor/almayer/cargo_arrow/east,
-/area/golden_arrow/hangar)
 "sCG" = (
 /obj/structure/bed/chair{
 	dir = 8
@@ -38115,9 +38606,9 @@ aKD
 aWa
 aVr
 aEF
-aPk
-aWa
-acW
+ahQ
+ahD
+aEC
 aaL
 aRm
 aMz
@@ -38292,13 +38783,13 @@ axH
 aHu
 aVr
 aEF
-aPk
-aWa
-aEC
+ahR
+ahE
+ahn
 aph
 aVD
-aVD
-ajZ
+agZ
+aeG
 aFf
 avh
 azF
@@ -38475,7 +38966,7 @@ adK
 afJ
 aHI
 aHI
-aRV
+afl
 axw
 aYE
 aES
@@ -38651,7 +39142,7 @@ aez
 aWa
 arJ
 aWa
-aWa
+ahd
 aWa
 aKa
 aKX
@@ -38824,15 +39315,15 @@ aHI
 adz
 aEG
 adz
-adz
-aKa
+ahG
+ahq
 ahT
-rTS
-aEH
+ahf
+ahe
 dJo
 fuL
 aZQ
-aXW
+aIo
 aIl
 aLL
 aIo
@@ -39002,17 +39493,17 @@ aEG
 aEG
 aEG
 adz
+ahr
 adz
+ahh
 adz
-adz
-adz
-adz
+agH
 adz
 aJf
 aok
 abY
 aok
-sCf
+aKF
 adz
 adz
 adz
@@ -40941,15 +41432,15 @@ aEG
 aEG
 aEG
 aEG
-aEG
-aEG
-aEG
-aEG
-aEG
-aEG
-aEG
-aEG
-aEG
+ajl
+aPh
+aiR
+aiC
+aio
+aGK
+ahS
+ahL
+ahs
 aEG
 aEG
 aEG
@@ -41118,15 +41609,15 @@ aEG
 aEG
 aEG
 aEG
-aEG
-aEG
-aEG
-aEG
-aEG
-aEG
-aEG
-aEG
-aEG
+ajn
+ajf
+aiS
+aiE
+aip
+aif
+ahU
+ahL
+ahu
 aEG
 aEG
 aEG
@@ -41295,15 +41786,15 @@ aEG
 aEG
 aEG
 aEG
-aEG
-aEG
-aEG
-aEG
-aEG
-aEG
-aEG
-aEG
-aEG
+aDh
+ajg
+aiW
+aiF
+aik
+aik
+ahW
+ahM
+ahv
 aEG
 aEG
 aEG
@@ -41472,15 +41963,15 @@ aEG
 aEG
 aEG
 aEG
-aEG
-aEG
-aEG
-aEG
-aEG
-aEG
-aEG
-aEG
-aEG
+aDh
+ajh
+aPh
+aiI
+aPh
+aim
+aPh
+ahO
+ahx
 aEG
 aEG
 aEG
@@ -41649,15 +42140,15 @@ aEG
 aEG
 aEG
 aEG
-aEG
-aEG
-aEG
-aEG
-aEG
-aEG
-aEG
-aEG
-aEG
+aDh
+ajj
+aiZ
+aiJ
+aiw
+ain
+ahX
+ahP
+ahy
 aEG
 aEG
 aEG
@@ -41827,14 +42318,14 @@ aEG
 aEG
 aEG
 aEG
-aEG
-aEG
-aEG
-aEG
-aEG
-aEG
-aEG
-aEG
+aDh
+aja
+aDh
+aiA
+aDh
+aie
+aDh
+ahC
 aEG
 aEG
 aEG
