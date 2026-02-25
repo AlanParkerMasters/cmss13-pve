@@ -11546,6 +11546,7 @@
 /obj/item/spacecash/c10{
 	pixel_y = 8
 	},
+/obj/item/trash/crushed_cup,
 /turf/open/floor/plating/plating_catwalk,
 /area/golden_arrow/dorms)
 "aHl" = (
@@ -13910,6 +13911,7 @@
 /area/golden_arrow/hangar)
 "aPS" = (
 /obj/structure/pipes/standard/simple/hidden/supply,
+/obj/structure/prop/ice_colony/tiger_rug,
 /turf/open/floor/plating/plating_catwalk,
 /area/golden_arrow/dorms)
 "aPU" = (
@@ -13963,6 +13965,9 @@
 	layer = 2.52
 	},
 /obj/item/ammo_box/magazine/mk1/large/rubber,
+/obj/item/ammo_box/magazine/mk1/large/rubber{
+	pixel_y = 6
+	},
 /turf/open/floor/plating/plating_catwalk,
 /area/golden_arrow/platoonarmory)
 "aQf" = (
