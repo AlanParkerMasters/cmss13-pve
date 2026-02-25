@@ -129,6 +129,7 @@
 	icon_state = "switchblade"
 
 /obj/item/weapon/butterfly/switchblade/open	//Here for prisoner HAI
+	active = 1
 	name = "switchblade"
 	desc = "A classic switchblade with gold engraving. Just holding it makes you feel like a gangster."
 	icon_state = "switchblade_open"

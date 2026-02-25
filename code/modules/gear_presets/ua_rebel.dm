@@ -74,9 +74,11 @@
 		new_human.equip_to_slot_or_del(new /obj/item/storage/belt/security/MP/colonist(new_human), WEAR_WAIST)
 	if(prob(35))
 		add_prisoner_rebel_headband(new_human)
-	var/random_weapon = pick(/obj/item/weapon/classic_baton, /obj/item/weapon/baseballbat/metal, /obj/item/weapon/butterfly/switchblade/open)
+	var/random_weapon = pick(/obj/item/weapon/classic_baton, /obj/item/weapon/baseballbat/metal, /obj/item/weapon/butterfly/switchblade/open, /obj/item/weapon/knife/marine, /obj/item/tool/wrench,/obj/item/weapon/broken_bottle, /obj/item/weapon/classic_baton, 20;/obj/item/weapon/twohanded/spear, 20;/obj/item/weapon/twohanded/fireaxe, 20;/obj/item/tool/extinguisher, /obj/item/tool/kitchen/knife/butcher, 20;/obj/item/tool/screwdriver, 20;/obj/item/tool/crowbar/red)
 	if(prob(50))
 		new_human.equip_to_slot_or_del(new random_weapon, WEAR_R_HAND)
+	if(prob(10))
+		new_human.equip_to_slot_or_del(new /obj/item/weapon/shield/riot, WEAR_L_HAND)
 
 /datum/equipment_preset/rebel/prisoner/molotov
 	name = "Molotov Prisoner Rebel"

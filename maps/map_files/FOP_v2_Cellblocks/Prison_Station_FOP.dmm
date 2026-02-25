@@ -2902,6 +2902,12 @@
 /obj/effect/decal/cleanable/blood/splatter,
 /turf/open/floor/wood,
 /area/prison/residential/south)
+"ajd" = (
+/obj/structure/barricade/table/prison{
+	dir = 4
+	},
+/turf/open/floor/prison/bright_clean/southwest,
+/area/prison/hallway/entrance)
 "aje" = (
 /obj/effect/decal/cleanable/blood/splatter,
 /turf/open/floor/prison/darkred2/west,
@@ -4643,10 +4649,6 @@
 /obj/item/ammo_casing/bullet,
 /turf/open/floor/plating/plating_catwalk/prison,
 /area/prison/hallway/entrance)
-"aoE" = (
-/obj/structure/largecrate/supply/explosives/mortar_flare,
-/turf/open/floor/prison,
-/area/prison/hanger/main)
 "aoF" = (
 /obj/structure/pipes/standard/simple/hidden/supply{
 	dir = 4
@@ -6556,6 +6558,40 @@
 /obj/effect/landmark/corpsespawner/guard/float,
 /turf/open/space,
 /area/space)
+"auD" = (
+/obj/structure/largecrate/random/case/double,
+/turf/open/floor/plating/plating_catwalk/prison,
+/area/prison/hallway/entrance)
+"auE" = (
+/obj/effect/decal/cleanable/blood/splatter,
+/obj/structure/largecrate/random/barrel/medical{
+	pixel_y = -5
+	},
+/turf/open/floor/plating/plating_catwalk/prison,
+/area/prison/hallway/entrance)
+"auF" = (
+/obj/effect/decal/cleanable/blood/splatter,
+/obj/structure/largecrate/random/barrel{
+	pixel_y = 6
+	},
+/turf/open/floor/plating/plating_catwalk/prison,
+/area/prison/hallway/entrance)
+"auG" = (
+/obj/structure/largecrate/random/barrel/brown{
+	pixel_y = 9;
+	pixel_x = 4
+	},
+/obj/structure/largecrate/random/barrel/red{
+	pixel_y = -4
+	},
+/turf/open/floor/plating/plating_catwalk/prison,
+/area/prison/hallway/entrance)
+"auH" = (
+/obj/structure/pipes/standard/simple/hidden/supply,
+/obj/structure/disposalpipe/segment,
+/obj/item/tool/wrench,
+/turf/open/floor/plating/plating_catwalk/prison,
+/area/prison/hallway/entrance)
 "auI" = (
 /obj/structure/pipes/standard/simple/hidden/supply{
 	dir = 5
@@ -23353,6 +23389,9 @@
 /obj/item/ammo_casing/bullet,
 /obj/item/ammo_casing/bullet,
 /obj/item/ammo_casing/bullet,
+/obj/structure/barricade/table/prison{
+	dir = 4
+	},
 /turf/open/floor/prison/bright_clean/southwest,
 /area/prison/hallway/entrance)
 "jEq" = (
@@ -29794,16 +29833,6 @@
 /obj/effect/decal/cleanable/blood/splatter,
 /turf/open/floor/prison/whitegreen/southwest,
 /area/prison/medbay)
-"pBa" = (
-/obj/structure/pipes/standard/simple/hidden/supply,
-/obj/structure/disposalpipe/segment,
-/obj/structure/stairs/perspective{
-	dir = 1;
-	icon_state = "p_stair_full";
-	color = "#858680"
-	},
-/turf/open/floor/plating/prison,
-/area/prison/cellblock/protective)
 "pBP" = (
 /obj/structure/pipes/standard/manifold/hidden/supply{
 	dir = 4
@@ -52761,7 +52790,7 @@ aWz
 bsn
 aAO
 aAO
-auB
+aAO
 aAO
 aAO
 aAO
@@ -72290,7 +72319,7 @@ oyV
 qEe
 hnU
 noT
-pBa
+ufG
 kLI
 hnU
 oJc
@@ -84333,7 +84362,7 @@ aYW
 nak
 bcA
 ber
-bdp
+auH
 aoD
 aZE
 auh
@@ -85614,7 +85643,7 @@ vyL
 amr
 bcz
 bcA
-bcA
+auD
 bcz
 arM
 vyL
@@ -85825,8 +85854,8 @@ bcC
 anX
 atc
 asS
-bcA
-amN
+auG
+auE
 bcz
 amu
 asP
@@ -86037,9 +86066,9 @@ bcC
 ath
 anL
 anF
-bcA
-amN
-vyL
+auD
+auF
+ajd
 jDK
 vyL
 bcC
@@ -87514,7 +87543,7 @@ aXt
 aXt
 aYG
 blH
-aoE
+akT
 aou
 blH
 pSb
