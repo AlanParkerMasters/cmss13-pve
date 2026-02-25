@@ -2421,26 +2421,6 @@
 /obj/structure/machinery/chem_dispenser/canteen,
 /turf/open/floor/almayer/plate,
 /area/golden_arrow/cryo_cells)
-"aeJ" = (
-/obj/structure/surface/table/reinforced/prison,
-/obj/effect/decal/warning_stripes{
-	icon_state = "N";
-	pixel_y = 3
-	},
-/obj/item/reagent_container/food/condiment/saltshaker{
-	pixel_y = 7;
-	pixel_x = 4
-	},
-/obj/item/reagent_container/food/condiment/peppermill{
-	pixel_x = 9;
-	pixel_y = 11
-	},
-/obj/structure/machinery/door/poddoor/shutters/almayer{
-	name = "\improper Kitchen Shutters";
-	id = "kitchen_pizza_time"
-	},
-/turf/open/floor/almayer/plate,
-/area/golden_arrow/cryo_cells)
 "aeK" = (
 /obj/structure/pipes/standard/simple/hidden/supply,
 /obj/structure/cable/heavyduty{
@@ -6923,6 +6903,14 @@
 	dir = 8
 	},
 /obj/structure/surface/table/almayer,
+/obj/item/reagent_container/food/condiment/saltshaker{
+	pixel_y = 7;
+	pixel_x = 4
+	},
+/obj/item/reagent_container/food/condiment/peppermill{
+	pixel_x = 9;
+	pixel_y = 11
+	},
 /turf/open/floor/almayer/mono,
 /area/golden_arrow/cryo_cells)
 "arR" = (
@@ -7018,6 +7006,7 @@
 	pixel_y = 13;
 	pixel_x = -3
 	},
+/obj/item/storage/fancy/cigar,
 /turf/open/floor/almayer/edge/smooth/north,
 /area/golden_arrow/platoon_commander_rooms)
 "asj" = (
@@ -10749,6 +10738,10 @@
 /obj/structure/sign/safety/terminal{
 	layer = 2.96;
 	pixel_x = 34
+	},
+/obj/item/storage/fancy/cigar/matchbook/wy_gold{
+	pixel_x = 21;
+	pixel_y = -7
 	},
 /turf/open/floor/almayer/edge/smooth/east,
 /area/golden_arrow/platoon_commander_rooms)
@@ -17416,6 +17409,9 @@
 /obj/item/ammo_box/magazine/nade_box/flare{
 	pixel_x = 1
 	},
+/obj/item/storage/box/guncase/heavy/hpr,
+/obj/item/storage/box/guncase/heavy/hpr,
+/obj/item/storage/box/guncase/heavy/hpr,
 /turf/open/floor/almayer,
 /area/golden_arrow/platoonarmory)
 "dAO" = (
@@ -29582,7 +29578,7 @@ afH
 afr
 aeP
 aeP
-aeJ
+ouD
 alD
 adw
 adw
