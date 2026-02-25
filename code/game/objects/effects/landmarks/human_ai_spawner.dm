@@ -602,6 +602,11 @@
 	desc = "A rioting prisoner."
 	equip_path = /datum/equipment_preset/rebel/prisoner/shotgunner
 
+/obj/effect/landmark/humanaispawner/clf/ua/guardhostage
+	name = "Hostage Correction Officer"
+	desc = "A captured Corrections Officer."
+	equip_path = /datum/equipment_preset/colonist/security/prison/hostage
+
 /obj/effect/landmark/humanaispawner/clf/ua/guerilla
 	name = "UA Rebel, Soldier (Pistol)"
 	desc = "UA Rebel soldier with a random pistol."
