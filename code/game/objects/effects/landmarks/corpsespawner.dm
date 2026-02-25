@@ -78,6 +78,10 @@
 	name = "Hung Security Guard, Prison"
 	equip_path = /datum/equipment_preset/corpse/guard/hung
 
+/obj/effect/landmark/corpsespawner/guard/float
+	name = "Float Security Guard, Prison"
+	equip_path = /datum/equipment_preset/corpse/guard/float
+
 /obj/effect/landmark/corpsespawner/riot
 	name = "Security Guard, UA Colonial Guard"
 	equip_path = /datum/equipment_preset/corpse/riot

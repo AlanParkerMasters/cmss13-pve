@@ -11,6 +11,7 @@
 	idtype = /obj/item/card/id/lanyard
 	var/xenovictim = FALSE //Set to true to make the corpse spawn as a victim of a xeno burst
 	var/hungvictim = FALSE //Set to true to make the corpse spawn as a hung corpse
+	var/spacevictim = FALSE //Set to true to make the corpse float as if in space/zero-gravity
 
 /datum/equipment_preset/corpse/load_languages(mob/living/carbon/human/new_human)
 	return
@@ -44,6 +45,8 @@
 			nest.afterbuckle(new_human)
 	if(hungvictim)
 		new_human.get_hung()
+	if(spacevictim)
+		new_human.start_floating()
 	new_human.spawned_corpse = TRUE
 	new_human.updatehealth()
 	new_human.pulse = PULSE_NONE
@@ -319,6 +322,10 @@
 /datum/equipment_preset/corpse/guard/hung
 	name = "Corpse - Security Guard, Prison (Hung)"
 	hungvictim = TRUE
+
+/datum/equipment_preset/corpse/guard/float
+	name = "Corpse - Security Guard, Prison (Float)"
+	spacevictim = TRUE
 
 /datum/equipment_preset/corpse/riot
 	name = "Corpse - Security Guard, UA Colonial Guard"
