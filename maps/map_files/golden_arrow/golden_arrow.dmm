@@ -8684,6 +8684,9 @@
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
 	},
+/obj/item/storage/box/stompers{
+	pixel_x = 4
+	},
 /turf/open/floor/almayer/edge/north,
 /area/golden_arrow/dorms)
 "ayr" = (
