@@ -1243,15 +1243,11 @@
 /turf/open/floor/prison,
 /area/prison/cellblock/maxsec/south)
 "adV" = (
-/obj/structure/bookcase{
-	icon_state = "book-5"
-	},
+/obj/structure/prop/bookshelf,
 /turf/open/floor/wood,
 /area/prison/residential/south)
 "adW" = (
-/obj/structure/bookcase{
-	icon_state = "book-5"
-	},
+/obj/structure/prop/bookshelf,
 /turf/open/floor/wood,
 /area/prison/library)
 "adX" = (
@@ -1260,18 +1256,6 @@
 	},
 /turf/open/floor/prison,
 /area/prison/cellblock/maxsec/north)
-"adY" = (
-/obj/structure/bookcase{
-	icon_state = "book-2"
-	},
-/turf/open/floor/wood,
-/area/prison/library)
-"adZ" = (
-/obj/structure/bookcase{
-	icon_state = "book-1"
-	},
-/turf/open/floor/wood,
-/area/prison/library)
 "aea" = (
 /obj/structure/pipes/standard/simple/hidden/supply,
 /obj/structure/bed/hybrisa/prisonbed{
@@ -1286,15 +1270,11 @@
 /turf/open/floor/prison,
 /area/prison/quarters/security)
 "aec" = (
-/obj/structure/bookcase{
-	icon_state = "book-5"
-	},
+/obj/structure/prop/bookshelf,
 /turf/open/floor/wood,
 /area/prison/residential/central)
 "aed" = (
-/obj/structure/bookcase{
-	icon_state = "book-5"
-	},
+/obj/structure/prop/bookshelf,
 /turf/open/floor/prison,
 /area/prison/cellblock/vip)
 "aee" = (
@@ -1680,13 +1660,6 @@
 /obj/effect/decal/cleanable/blood/splatter,
 /turf/open/floor/prison,
 /area/prison/security)
-"afq" = (
-/obj/structure/bookcase{
-	icon_state = "book-5";
-	density = 0
-	},
-/turf/open/floor/wood,
-/area/prison/library)
 "afr" = (
 /obj/item/clothing/under/color/orange,
 /turf/open/floor/prison,
@@ -6504,7 +6477,7 @@
 /turf/open/floor/carpet,
 /area/prison/residential/north)
 "aut" = (
-/obj/structure/bookcase,
+/obj/structure/prop/bookshelf,
 /turf/open/floor/wood,
 /area/prison/residential/north)
 "auu" = (
@@ -7474,7 +7447,7 @@
 /turf/open/floor/wood,
 /area/prison/chapel)
 "aGJ" = (
-/obj/structure/bookcase,
+/obj/structure/prop/bookshelf,
 /turf/open/floor/wood,
 /area/prison/chapel)
 "aHE" = (
@@ -7822,7 +7795,7 @@
 /turf/open/floor/plating,
 /area/prison/security/checkpoint/highsec/n)
 "aKE" = (
-/obj/structure/bookcase,
+/obj/structure/prop/bookshelf,
 /obj/structure/machinery/light/small,
 /turf/open/floor/carpet,
 /area/prison/quarters/research)
@@ -8012,7 +7985,7 @@
 /turf/closed/wall/r_wall/prison_unmeltable,
 /area/prison/command/office)
 "aMQ" = (
-/obj/structure/bookcase,
+/obj/structure/prop/bookshelf,
 /turf/open/floor/wood,
 /area/prison/command/office)
 "aMR" = (
@@ -8950,7 +8923,7 @@
 /turf/open/floor/wood,
 /area/prison/recreation/staff)
 "aYc" = (
-/obj/structure/bookcase,
+/obj/structure/prop/bookshelf,
 /turf/open/floor/carpet,
 /area/prison/command/quarters)
 "aYd" = (
@@ -9073,10 +9046,6 @@
 	},
 /turf/open/floor/prison,
 /area/prison/hanger/main)
-"aYQ" = (
-/obj/structure/bookcase,
-/turf/open/floor/wood,
-/area/prison/residential/central)
 "aYR" = (
 /turf/open/floor/wood,
 /area/prison/residential/central)
@@ -9317,12 +9286,8 @@
 /obj/structure/surface/table/reinforced/prison,
 /turf/open/floor/prison,
 /area/prison/cellblock/vip)
-"bby" = (
-/obj/structure/bookcase,
-/turf/open/floor/prison,
-/area/prison/cellblock/vip)
 "bbz" = (
-/obj/structure/bookcase,
+/obj/structure/prop/bookshelf,
 /obj/effect/decal/cleanable/blood/splatter,
 /turf/open/floor/prison,
 /area/prison/cellblock/vip)
@@ -11767,10 +11732,6 @@
 	},
 /turf/open/floor/wood,
 /area/prison/residential/south)
-"bJA" = (
-/obj/structure/bookcase,
-/turf/open/floor/wood,
-/area/prison/residential/south)
 "bJB" = (
 /turf/open/floor/wood,
 /area/prison/residential/south)
@@ -12595,10 +12556,6 @@
 /obj/structure/pipes/standard/simple/hidden/supply,
 /turf/open/floor/prison,
 /area/prison/storage/medsec)
-"bSO" = (
-/obj/structure/bookcase,
-/turf/open/floor/wood,
-/area/prison/library)
 "bSP" = (
 /obj/structure/surface/table/reinforced/prison,
 /obj/item/device/flashlight/lamp,
@@ -13994,9 +13951,7 @@
 /turf/open/floor/prison,
 /area/prison/recreation/medsec)
 "ceE" = (
-/obj/structure/bookcase{
-	icon_state = "book-5"
-	},
+/obj/structure/prop/bookshelf,
 /obj/item/book/manual/engineering_construction,
 /obj/item/book/manual/engineering_guide,
 /obj/item/book/manual/engineering_hacking,
@@ -44339,7 +44294,7 @@ bTA
 bBn
 iRU
 bGU
-bJA
+adV
 bJB
 cct
 bGU
@@ -44924,11 +44879,11 @@ umM
 aRT
 aWo
 aXv
-aYQ
+aec
 aWr
 baK
 aYR
-aYQ
+aec
 aWr
 dLv
 nAY
@@ -48740,11 +48695,11 @@ aSR
 aRU
 aWo
 aXv
-aYQ
+aec
 aWr
 baQ
 auk
-aYQ
+aec
 aWr
 nAY
 qUD
@@ -50051,7 +50006,7 @@ aAO
 aAO
 aAO
 bKl
-bJA
+adV
 bJB
 acX
 bGU
@@ -58725,7 +58680,7 @@ jxo
 bgy
 bdk
 bdm
-bby
+aed
 baw
 tsP
 jhP
@@ -59770,7 +59725,7 @@ aCl
 aCl
 aCl
 baw
-bby
+aed
 bdm
 bdk
 bgy
@@ -59785,7 +59740,7 @@ jxo
 bgy
 bdk
 bdm
-bby
+aed
 baw
 bvA
 bvA
@@ -72958,7 +72913,7 @@ adW
 bPI
 adW
 bPI
-afq
+adW
 bYY
 adW
 bPI
@@ -73380,11 +73335,11 @@ gzd
 bPI
 adW
 bPI
-bSO
+adW
 bWZ
 adW
 bPI
-adY
+adW
 bPI
 adW
 bNU
@@ -73590,15 +73545,15 @@ aAO
 puK
 bUi
 bPI
-bSO
+adW
 bUh
 adW
 bPI
-bSO
+adW
 bYZ
 adW
 bPI
-bSO
+adW
 bPZ
 cfl
 cfl
@@ -74230,9 +74185,9 @@ bPI
 bUk
 adW
 bPI
-bSO
+adW
 bZc
-bSO
+adW
 bPI
 adW
 bNU
@@ -74658,7 +74613,7 @@ adW
 bPI
 adW
 bPI
-bSO
+adW
 bPZ
 uOD
 iuf
@@ -74866,7 +74821,7 @@ bNV
 bPI
 adW
 bPI
-adZ
+adW
 bPI
 adW
 bPI

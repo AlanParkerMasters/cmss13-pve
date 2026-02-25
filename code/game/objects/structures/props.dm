@@ -385,6 +385,21 @@
 	unslashable = TRUE
 	density = TRUE //impassable by default
 
+/obj/structure/prop/bookshelf
+	name = "book shelf"
+	desc = "On closer inspection, everything on these shelves are made of plastic."
+	icon = 'icons/obj/structures/structures.dmi'
+	icon_state = "book-0"
+	unslashable = TRUE
+	density = TRUE //impassable by default
+	opacity = FALSE
+
+/obj/structure/prop/bookshelf/New()
+	..()
+	icon_state = pick("book-0","book-1","book-2","book-3","book-4","book-5")
+
+
+
 /obj/structure/prop/resin_prop
 	name = "resin coated object"
 	desc = "Well, it's useless now."
