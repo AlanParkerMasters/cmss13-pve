@@ -2596,7 +2596,7 @@
 	dir = 8;
 	light_power = 0.7
 	},
-/turf/open/floor/almayer/plate,
+/turf/open/floor/plating/plating_catwalk,
 /area/golden_arrow/cryo_cells)
 "afc" = (
 /obj/structure/pipes/vents/scrubber{
@@ -2633,7 +2633,7 @@
 	light_power = 0.7
 	},
 /obj/structure/surface/table/reinforced/prison,
-/turf/open/floor/almayer/plate,
+/turf/open/floor/plating/plating_catwalk,
 /area/golden_arrow/cryo_cells)
 "afh" = (
 /obj/effect/decal/warning_stripes{
@@ -2851,7 +2851,7 @@
 	pixel_y = 10
 	},
 /obj/structure/surface/table/reinforced/prison,
-/turf/open/floor/almayer/plate,
+/turf/open/floor/plating/plating_catwalk,
 /area/golden_arrow/cryo_cells)
 "afD" = (
 /obj/structure/machinery/light/double/blue/golden_arrow,
@@ -18404,6 +18404,24 @@
 	pixel_x = 16;
 	layer = 2.98
 	},
+/obj/item/ammo_box/magazine/mk1{
+	pixel_y = 12;
+	pixel_x = 16;
+	layer = 2.98
+	},
+/obj/item/ammo_box/magazine/mk1{
+	pixel_y = 12;
+	pixel_x = 16;
+	layer = 2.98
+	},
+/obj/item/ammo_box/magazine/vp70{
+	pixel_y = -2
+	},
+/obj/item/ammo_box/magazine/m4a3{
+	pixel_y = 11;
+	pixel_x = -7;
+	layer = 2.98
+	},
 /turf/open/floor/almayer,
 /area/golden_arrow/platoonarmory)
 "gUY" = (
@@ -21964,6 +21982,14 @@
 /obj/item/ammo_box/magazine/shotgun/buckshot,
 /obj/item/ammo_box/magazine/shotgun{
 	pixel_y = 9
+	},
+/obj/item/ammo_box/magazine/mk1/large{
+	pixel_y = 13;
+	pixel_x = -3
+	},
+/obj/item/ammo_box/magazine/mk1/large{
+	pixel_y = 13;
+	pixel_x = -3
 	},
 /obj/item/ammo_box/magazine/mk1/large{
 	pixel_y = 13;

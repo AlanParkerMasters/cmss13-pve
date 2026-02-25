@@ -1605,6 +1605,13 @@
 /obj/structure/pipes/standard/simple/hidden/supply,
 /turf/open/floor/plating,
 /area/prison/cellblock/maxsec/north)
+"afd" = (
+/obj/effect/decal/ammo_casing{
+	dir = 6;
+	icon_state = "casing_5"
+	},
+/turf/open/floor/prison/sterile_white/west,
+/area/prison/cellblock/mediumsec/north)
 "afe" = (
 /obj/structure/disposaloutlet,
 /obj/structure/disposalpipe/up,
@@ -4492,6 +4499,7 @@
 /area/prison/hallway/central/west)
 "aof" = (
 /obj/effect/landmark/corpsespawner/prisoner,
+/obj/effect/decal/cleanable/blood/splatter,
 /turf/open/floor/plating/plating_catwalk/prison,
 /area/prison/hallway/central/west)
 "aog" = (
@@ -5770,6 +5778,9 @@
 "ass" = (
 /obj/item/ammo_casing/bullet,
 /obj/item/ammo_casing/bullet,
+/obj/effect/decal/ammo_casing{
+	icon_state = "casing_7_1"
+	},
 /turf/open/floor/prison/bright_clean/southwest,
 /area/prison/execution)
 "ast" = (
@@ -6237,6 +6248,9 @@
 /obj/item/ammo_casing/bullet,
 /obj/item/ammo_casing/bullet,
 /obj/item/ammo_casing/bullet,
+/obj/effect/decal/ammo_casing{
+	icon_state = "casing_7_1"
+	},
 /turf/open/floor/prison/bright_clean/southwest,
 /area/prison/execution)
 "atE" = (
@@ -7103,21 +7117,102 @@
 "awo" = (
 /turf/open/floor/plating,
 /area/prison/residential/north)
+"awp" = (
+/obj/structure/flora/bush/ausbushes/var3/ywflowers,
+/obj/effect/landmark/corpsespawner/guard,
+/turf/open/organic/grass,
+/area/prison/residential/south)
+"awq" = (
+/obj/effect/decal/cleanable/blood/splatter,
+/obj/effect/decal/ammo_casing{
+	icon_state = "casing_9_1"
+	},
+/turf/open/floor/prison,
+/area/prison/security)
 "awr" = (
 /obj/structure/machinery/light/small{
 	dir = 8
 	},
 /turf/open/floor/wood,
 /area/prison/residential/north)
+"aws" = (
+/obj/structure/flora/bush/ausbushes/var3/ywflowers,
+/obj/effect/decal/cleanable/blood/splatter,
+/obj/effect/landmark/corpsespawner/guard,
+/turf/open/organic/grass,
+/area/prison/residential/south)
+"awt" = (
+/obj/effect/decal/cleanable/blood/splatter,
+/obj/effect/decal/cleanable/blood/splatter,
+/turf/open/organic/grass,
+/area/prison/residential/south)
+"awu" = (
+/obj/structure/flora/bush/ausbushes/var3/ywflowers,
+/obj/effect/decal/cleanable/blood/splatter,
+/turf/open/organic/grass,
+/area/prison/residential/south)
+"awv" = (
+/obj/effect/landmark/corpsespawner/guard/hung,
+/obj/effect/decal/cleanable/blood/splatter,
+/turf/open/organic/grass,
+/area/prison/residential/south)
+"aww" = (
+/obj/effect/landmark/corpsespawner/guard/hung,
+/obj/effect/decal/cleanable/blood/splatter,
+/turf/open/floor/grass,
+/area/prison/residential/south)
 "awx" = (
 /obj/structure/machinery/light/double,
 /turf/open/floor/prison,
 /area/prison/medbay/morgue)
+"awy" = (
+/obj/effect/landmark/corpsespawner/guard,
+/turf/open/organic/grass,
+/area/prison/residential/south)
+"awz" = (
+/obj/structure/flora/bush/ausbushes/ppflowers,
+/obj/effect/landmark/corpsespawner/guard/hung,
+/obj/effect/decal/cleanable/blood/splatter,
+/turf/open/organic/grass,
+/area/prison/residential/south)
+"awA" = (
+/obj/structure/bed/roller,
+/turf/open/floor/prison,
+/area/prison/hallway/east)
+"awB" = (
+/obj/effect/landmark/corpsespawner/hybrisa/civilian_office,
+/obj/effect/decal/cleanable/blood/splatter,
+/turf/open/floor/prison,
+/area/prison/hallway/central/west)
+"awC" = (
+/obj/effect/decal/cleanable/blood/splatter,
+/turf/open/floor/prison,
+/area/prison/hallway/central/west)
+"awD" = (
+/obj/effect/decal/cleanable/blood/splatter,
+/turf/open/floor/prison/redfull,
+/area/prison/hallway/central/west)
+"awE" = (
+/obj/structure/flora/bush/ausbushes/ppflowers,
+/obj/effect/decal/cleanable/blood/splatter,
+/turf/open/organic/grass,
+/area/prison/residential/central)
 "awF" = (
 /obj/effect/landmark/crap_item,
 /obj/structure/machinery/floodlight/landing/floor,
 /turf/open/floor/plating/prison,
 /area/prison/hanger/research)
+"awG" = (
+/obj/effect/landmark/corpsespawner/guard,
+/obj/effect/decal/cleanable/blood/splatter,
+/turf/open/organic/grass,
+/area/prison/residential/central)
+"awH" = (
+/obj/effect/decal/ammo_casing{
+	icon_state = "casing_7_1"
+	},
+/turf/open/floor/prison,
+/area/prison/hanger/main)
 "awI" = (
 /turf/open/floor/carpet,
 /area/prison/residential/north)
@@ -7131,11 +7226,70 @@
 /obj/structure/pipes/standard/simple/hidden/supply,
 /turf/open/floor/wood,
 /area/prison/residential/north)
+"awL" = (
+/obj/effect/decal/ammo_casing{
+	dir = 6;
+	icon_state = "casing_10_1"
+	},
+/turf/open/floor/prison,
+/area/prison/hanger/main)
 "awM" = (
 /obj/structure/bed/chair/comfy{
 	dir = 4
 	},
 /turf/open/floor/carpet,
+/area/prison/residential/north)
+"awN" = (
+/obj/effect/decal/ammo_casing{
+	dir = 6;
+	icon_state = "casing_5"
+	},
+/turf/open/floor/prison/bright_clean2/southwest,
+/area/prison/yard)
+"awO" = (
+/obj/effect/decal/ammo_casing{
+	dir = 2;
+	icon_state = "casing_5"
+	},
+/turf/open/floor/prison/bright_clean/southwest,
+/area/prison/yard)
+"awP" = (
+/obj/structure/pipes/standard/simple/hidden/supply{
+	dir = 4
+	},
+/obj/effect/decal/ammo_casing{
+	icon_state = "casing_9_1"
+	},
+/turf/open/floor/prison/bright_clean/southwest,
+/area/prison/yard)
+"awQ" = (
+/obj/effect/decal/ammo_casing{
+	dir = 6;
+	icon_state = "casing_5"
+	},
+/turf/open/organic/grass,
+/area/prison/residential/north)
+"awR" = (
+/obj/effect/decal/ammo_casing{
+	icon_state = "casing_5_1"
+	},
+/turf/open/organic/grass,
+/area/prison/residential/north)
+"awS" = (
+/obj/effect/landmark/humanaispawner/clf/ua/guardhostage,
+/turf/open/organic/grass,
+/area/prison/residential/north)
+"awT" = (
+/obj/effect/decal/ammo_casing{
+	icon_state = "casing_10_1"
+	},
+/turf/open/organic/grass,
+/area/prison/residential/north)
+"awU" = (
+/obj/effect/decal/ammo_casing{
+	icon_state = "casing_10_1"
+	},
+/turf/open/floor/prison/bright_clean2/southwest,
 /area/prison/residential/north)
 "awV" = (
 /turf/open/floor/wood,
@@ -7152,9 +7306,36 @@
 	},
 /turf/open/floor/wood,
 /area/prison/chapel)
+"awY" = (
+/obj/effect/decal/ammo_casing{
+	icon_state = "casing_9_1"
+	},
+/turf/open/organic/grass,
+/area/prison/residential/north)
+"awZ" = (
+/obj/structure/machinery/cm_vending/sorted/medical/wall_med/limited{
+	pixel_x = 28
+	},
+/obj/structure/bed/roller,
+/turf/open/floor/prison/whitegreen/east,
+/area/prison/medbay)
+"axa" = (
+/obj/effect/landmark/corpsespawner/doctor,
+/obj/effect/decal/cleanable/blood/splatter,
+/turf/open/floor/prison/sterile_white/southwest,
+/area/prison/medbay)
 "axb" = (
 /turf/open/floor/wood,
 /area/prison/residential/north)
+"axc" = (
+/obj/structure/bed/roller,
+/turf/open/floor/prison/whitegreen/west,
+/area/prison/medbay)
+"axd" = (
+/obj/structure/pipes/standard/simple/hidden/supply,
+/obj/structure/bed/roller,
+/turf/open/floor/prison/whitegreen/northeast,
+/area/prison/medbay)
 "axr" = (
 /obj/structure/pipes/vents/pump{
 	dir = 8
@@ -15807,6 +15988,9 @@
 /obj/effect/decal/cleanable/blood/splatter,
 /obj/structure/pipes/standard/simple/hidden/supply{
 	dir = 4
+	},
+/obj/effect/decal/ammo_casing{
+	icon_state = "casing_9_1"
 	},
 /turf/open/floor/prison/bright_clean2/southwest,
 /area/prison/yard)
@@ -27300,6 +27484,9 @@
 /turf/open/floor/prison/darkred2/northwest,
 /area/prison/hanger/main)
 "mUh" = (
+/obj/effect/decal/ammo_casing{
+	icon_state = "casing_5_1"
+	},
 /turf/open/floor/prison/darkyellowcorners2,
 /area/prison/hanger/main)
 "mUB" = (
@@ -27312,7 +27499,8 @@
 /obj/structure/machinery/door/airlock/almayer/medical/glass/colony{
 	dir = 2;
 	name = "Garden";
-	req_one_access = null
+	req_one_access = null;
+	locked = 1
 	},
 /obj/structure/pipes/standard/simple/hidden/supply,
 /turf/open/floor/prison/bright_clean2/southwest,
@@ -28047,6 +28235,7 @@
 /turf/open/floor/prison/darkred2,
 /area/prison/medbay/foyer)
 "nGD" = (
+/obj/structure/bed/roller,
 /turf/open/floor/prison/whitegreencorner/west,
 /area/prison/medbay)
 "nGE" = (
@@ -45736,8 +45925,8 @@ aWr
 qiu
 bgc
 bgc
-bgc
-bgc
+awG
+aov
 bgc
 bgc
 oby
@@ -46171,7 +46360,7 @@ bgc
 bgc
 bgc
 bgc
-bgc
+aov
 xLq
 bdx
 bbK
@@ -46381,7 +46570,7 @@ nAY
 amC
 uuW
 bgc
-bgc
+awG
 bgc
 bgc
 uwo
@@ -46411,8 +46600,8 @@ tTq
 hjF
 xrx
 gML
-nXE
-nXE
+awu
+aws
 pkV
 bGQ
 aAO
@@ -46553,7 +46742,7 @@ aAO
 avm
 avm
 esR
-esR
+awS
 esR
 auo
 iIY
@@ -46583,7 +46772,7 @@ iuc
 aWr
 nJj
 aov
-bgc
+aov
 bgc
 bgc
 clZ
@@ -46622,9 +46811,9 @@ jBg
 aiT
 jBg
 xrx
-qun
-qun
-qun
+awv
+aiE
+awt
 qun
 bGQ
 bGQ
@@ -46764,10 +46953,10 @@ aAO
 avm
 avm
 aDE
-esR
+awS
 esR
 jVk
-esR
+awQ
 iIY
 olF
 tdP
@@ -46834,7 +47023,7 @@ jBg
 aiU
 aiN
 xrx
-qLI
+aww
 nDg
 qLI
 atK
@@ -47046,7 +47235,7 @@ aja
 aiW
 jBg
 pdO
-vAi
+atL
 bEj
 atL
 mwJ
@@ -47187,7 +47376,7 @@ aAO
 aAO
 avm
 wUz
-esR
+awS
 vPi
 esR
 aDE
@@ -47263,7 +47452,7 @@ oWU
 bTF
 ddt
 qLI
-nXE
+awp
 bGQ
 aAO
 aAO
@@ -47612,10 +47801,10 @@ aAO
 avm
 avm
 aDE
-esR
+awY
 auo
 tuQ
-esR
+awR
 iIY
 olF
 tdP
@@ -47825,7 +48014,7 @@ aAO
 avm
 avm
 esR
-esR
+awT
 auo
 auo
 iIY
@@ -47894,7 +48083,7 @@ jBg
 dGI
 jBg
 xrx
-qun
+awy
 aiE
 aiw
 qun
@@ -48079,7 +48268,7 @@ bgc
 oby
 giW
 bgc
-bgc
+aov
 uwo
 aWr
 wNF
@@ -48106,8 +48295,8 @@ mGO
 tTq
 tfD
 xrx
-gML
-nXE
+awz
+awu
 nXE
 mAT
 bGQ
@@ -48290,8 +48479,8 @@ aWn
 bgc
 oby
 giW
-bgc
-bxO
+aov
+awE
 xLq
 bdx
 bbK
@@ -48503,7 +48692,7 @@ bgc
 oby
 giW
 bgc
-bgc
+awG
 uwo
 aWr
 bbJ
@@ -49945,7 +50134,7 @@ olF
 apX
 olF
 vax
-olF
+awU
 tdP
 oiE
 avN
@@ -63989,7 +64178,7 @@ arD
 dnH
 bBF
 bBF
-bBF
+awB
 bBF
 ghY
 bEn
@@ -64200,8 +64389,8 @@ bBF
 bBF
 dnH
 bBF
-bBF
-bBF
+awC
+awC
 bBF
 ghY
 bEn
@@ -64412,7 +64601,7 @@ bBF
 bBF
 dnH
 dnH
-dnH
+awD
 dnH
 dnH
 bEn
@@ -66089,7 +66278,7 @@ vzn
 aNp
 eur
 tOU
-tOU
+hdK
 tOU
 tOU
 aue
@@ -69103,7 +69292,7 @@ ccV
 nrI
 rFS
 fEr
-rFS
+afd
 vsf
 ccV
 dma
@@ -69698,7 +69887,7 @@ qIq
 gzE
 iQS
 ilh
-qIq
+awN
 qIq
 cux
 eTi
@@ -70118,7 +70307,7 @@ afa
 byX
 qIq
 gsd
-iQS
+awO
 ilh
 iQS
 ilh
@@ -70708,7 +70897,7 @@ rOO
 rOO
 apK
 rOO
-rOO
+axa
 rOO
 apK
 arX
@@ -71343,7 +71532,7 @@ qeo
 ano
 quS
 rmm
-rmm
+axc
 rmm
 rmm
 rmm
@@ -71813,7 +72002,7 @@ tNU
 ooD
 lYw
 hsQ
-ooD
+awP
 iQS
 byX
 byX
@@ -72187,7 +72376,7 @@ agJ
 akE
 alv
 apu
-eDo
+axd
 cJJ
 nQH
 cJJ
@@ -72198,7 +72387,7 @@ dKX
 xaw
 wAo
 jKa
-jKa
+awZ
 hbe
 uGA
 hmD
@@ -84560,7 +84749,7 @@ bEI
 kMK
 kMK
 bDM
-bEI
+awA
 dTt
 bLv
 nBE
@@ -85635,7 +85824,7 @@ olO
 bMu
 bMu
 cce
-bWx
+awq
 bMu
 oZU
 cgT
@@ -88144,7 +88333,7 @@ fBA
 asZ
 wmn
 blH
-blH
+awH
 arK
 blH
 boy
@@ -88355,7 +88544,7 @@ blH
 blH
 tAI
 blH
-blH
+awL
 blH
 blH
 alW
