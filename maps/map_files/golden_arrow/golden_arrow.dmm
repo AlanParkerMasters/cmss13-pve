@@ -2596,7 +2596,7 @@
 	dir = 8;
 	light_power = 0.7
 	},
-/turf/open/floor/prison/kitchen,
+/turf/open/floor/almayer/plate,
 /area/golden_arrow/cryo_cells)
 "afc" = (
 /obj/structure/pipes/vents/scrubber{
@@ -2633,7 +2633,7 @@
 	light_power = 0.7
 	},
 /obj/structure/surface/table/reinforced/prison,
-/turf/open/floor/prison/kitchen,
+/turf/open/floor/almayer/plate,
 /area/golden_arrow/cryo_cells)
 "afh" = (
 /obj/effect/decal/warning_stripes{
@@ -2740,7 +2740,7 @@
 /obj/structure/sign/safety/galley{
 	pixel_x = -24
 	},
-/turf/open/floor/prison/kitchen,
+/turf/open/floor/almayer/plate,
 /area/golden_arrow/cryo_cells)
 "afq" = (
 /obj/structure/disposalpipe/segment{
@@ -2851,7 +2851,7 @@
 	pixel_y = 10
 	},
 /obj/structure/surface/table/reinforced/prison,
-/turf/open/floor/prison/kitchen,
+/turf/open/floor/almayer/plate,
 /area/golden_arrow/cryo_cells)
 "afD" = (
 /obj/structure/machinery/light/double/blue/golden_arrow,
@@ -2877,7 +2877,7 @@
 /obj/structure/machinery/firealarm{
 	pixel_x = -24
 	},
-/turf/open/floor/prison/kitchen,
+/turf/open/floor/almayer/plate,
 /area/golden_arrow/cryo_cells)
 "afG" = (
 /obj/effect/decal/cleanable/flour,
@@ -3035,7 +3035,7 @@
 	dir = 8;
 	light_power = 0.7
 	},
-/turf/open/floor/prison/kitchen,
+/turf/open/floor/almayer/plate,
 /area/golden_arrow/cryo_cells)
 "afW" = (
 /obj/effect/decal/warning_stripes{
@@ -3213,7 +3213,7 @@
 /obj/item/spacecash/c500/counterfeit,
 /obj/item/spacecash/c500/counterfeit,
 /obj/item/spacecash/c20,
-/turf/open/floor/prison/kitchen,
+/turf/open/floor/almayer/plate,
 /area/golden_arrow/cryo_cells)
 "agl" = (
 /obj/structure/window/framed/almayer/hull,
@@ -3229,7 +3229,7 @@
 /obj/item/clothing/gloves/latex,
 /obj/item/clothing/head/chefhat,
 /obj/structure/surface/table/reinforced/prison,
-/turf/open/floor/prison/kitchen,
+/turf/open/floor/almayer/plate,
 /area/golden_arrow/cryo_cells)
 "agn" = (
 /obj/effect/decal/cleanable/egg_smudge,
@@ -3273,7 +3273,7 @@
 /area/golden_arrow/cryo_cells)
 "agt" = (
 /obj/structure/machinery/vending/dinnerware,
-/turf/open/floor/prison/kitchen,
+/turf/open/floor/almayer/plate,
 /area/golden_arrow/cryo_cells)
 "agu" = (
 /turf/open/floor/almayer_hull/outerhull_dir/northwest,
@@ -3296,7 +3296,7 @@
 	pixel_x = -8
 	},
 /obj/structure/surface/table/reinforced/prison,
-/turf/open/floor/prison/kitchen,
+/turf/open/floor/almayer/plate,
 /area/golden_arrow/cryo_cells)
 "agx" = (
 /obj/effect/decal/cleanable/blood/writing{
@@ -3354,7 +3354,7 @@
 /obj/item/reagent_container/food/snacks/meat{
 	pixel_y = -5
 	},
-/turf/open/floor/prison/kitchen,
+/turf/open/floor/almayer/plate,
 /area/golden_arrow/cryo_cells)
 "agB" = (
 /obj/effect/decal/warning_stripes{
@@ -3471,14 +3471,14 @@
 	name = "Kitchen Hull Shutters";
 	pixel_x = -28
 	},
-/turf/open/floor/prison/kitchen,
+/turf/open/floor/almayer/plate,
 /area/golden_arrow/cryo_cells)
 "agK" = (
 /obj/item/book/manual/chef_recipes,
 /obj/item/clothing/head/chefhat,
 /obj/structure/surface/table/reinforced/prison,
 /obj/item/clothing/suit/chef/classic,
-/turf/open/floor/prison/kitchen,
+/turf/open/floor/almayer/plate,
 /area/golden_arrow/cryo_cells)
 "agL" = (
 /obj/item/reagent_container/food/snacks/sliceable/bread{
@@ -3490,7 +3490,7 @@
 /obj/item/reagent_container/food/snacks/sliceable/bread,
 /obj/structure/surface/table/reinforced/prison,
 /obj/effect/decal/cleanable/egg_smudge,
-/turf/open/floor/prison/kitchen,
+/turf/open/floor/almayer/plate,
 /area/golden_arrow/cryo_cells)
 "agM" = (
 /obj/structure/machinery/light/double/blue/golden_arrow{
@@ -3543,7 +3543,7 @@
 	pixel_x = 6
 	},
 /obj/structure/surface/table/reinforced/prison,
-/turf/open/floor/prison/kitchen,
+/turf/open/floor/almayer/plate,
 /area/golden_arrow/cryo_cells)
 "agR" = (
 /obj/structure/pipes/standard/simple/hidden/supply{
@@ -3598,7 +3598,7 @@
 /obj/item/reagent_container/food/snacks/flour,
 /obj/item/reagent_container/food/condiment/sugar,
 /obj/structure/closet/secure_closet/fridge/dry,
-/turf/open/floor/prison/kitchen,
+/turf/open/floor/almayer/plate,
 /area/golden_arrow/cryo_cells)
 "agV" = (
 /obj/structure/pipes/standard/simple/hidden/supply{
