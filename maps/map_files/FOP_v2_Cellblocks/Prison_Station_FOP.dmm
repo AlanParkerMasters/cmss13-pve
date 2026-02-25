@@ -2902,10 +2902,6 @@
 /obj/effect/decal/cleanable/blood/splatter,
 /turf/open/floor/wood,
 /area/prison/residential/south)
-"ajd" = (
-/obj/effect/landmark/corpsespawner/guard,
-/turf/open/space,
-/area/space)
 "aje" = (
 /obj/effect/decal/cleanable/blood/splatter,
 /turf/open/floor/prison/darkred2/west,
@@ -6551,6 +6547,15 @@
 /obj/item/clothing/head/helmet/warden,
 /turf/open/floor/wood,
 /area/prison/command/office)
+"auB" = (
+/obj/effect/landmark/corpsespawner/guard/float,
+/turf/open/space,
+/area/space)
+"auC" = (
+/obj/structure/lattice,
+/obj/effect/landmark/corpsespawner/guard/float,
+/turf/open/space,
+/area/space)
 "auI" = (
 /obj/structure/pipes/standard/simple/hidden/supply{
 	dir = 5
@@ -50888,7 +50893,7 @@ ibJ
 ibJ
 bTR
 aAO
-aAO
+auB
 aAO
 aAO
 aAO
@@ -52118,7 +52123,7 @@ boc
 gDS
 aWz
 bsn
-acL
+auC
 acL
 acL
 acL
@@ -52756,7 +52761,7 @@ aWz
 bsn
 aAO
 aAO
-aAO
+auB
 aAO
 aAO
 aAO
@@ -52776,7 +52781,7 @@ aAO
 aAO
 aAO
 aAO
-ajd
+auB
 aAO
 aAO
 acL
@@ -53202,7 +53207,7 @@ aAO
 aAO
 aAO
 aAO
-aAO
+auB
 acL
 aAO
 aAO
@@ -53413,7 +53418,7 @@ aAO
 aAO
 aAO
 aAO
-ajd
+aaa
 aAO
 acL
 aAO
@@ -53622,13 +53627,13 @@ aAO
 aAO
 aAO
 aAO
-ajd
+auB
 aAO
 aAO
 aAO
 aAO
 acL
-aAO
+auB
 aAO
 bTR
 bTL
@@ -53647,7 +53652,7 @@ acL
 aAO
 aAO
 aAO
-aAO
+auB
 aAO
 aAO
 aAO
@@ -53856,7 +53861,7 @@ bTL
 bTL
 bTR
 acL
-aAO
+auB
 aAO
 aAO
 aAO
