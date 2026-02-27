@@ -358,7 +358,8 @@
 /obj/structure/bedsheetbin{
 	icon_state = "linenbin-empty";
 	pixel_x = 2;
-	pixel_y = 9
+	pixel_y = 9;
+	amount = 0
 	},
 /obj/item/reagent_container/glass/rag/polishing_rag{
 	pixel_x = 6;
