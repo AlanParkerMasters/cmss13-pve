@@ -76,15 +76,11 @@
 /obj/item/reagent_container/food/drinks/cans/starkist{
 	pixel_x = -9
 	},
-/obj/effect/decal/warning_stripes{
-	icon_state = "N";
-	pixel_y = 3
-	},
 /obj/structure/machinery/door/poddoor/shutters/almayer{
 	name = "\improper Kitchen Shutters";
 	id = "kitchen_pizza_time"
 	},
-/turf/open/floor/almayer/plate,
+/turf/open/floor/almayer/test_floor4,
 /area/golden_arrow/cryo_cells)
 "aaj" = (
 /obj/structure/closet/secure_closet/marine_personal/corpsman{
@@ -96,16 +92,11 @@
 /turf/open/floor/almayer/plate,
 /area/golden_arrow/cryo_cells)
 "aak" = (
-/obj/effect/decal/warning_stripes{
-	icon_state = "N";
-	layer = 3.33;
-	pixel_y = 1
-	},
 /obj/structure/machinery/door/airlock/almayer/generic/glass{
 	dir = 1;
 	name = "Kitchen"
 	},
-/turf/open/floor/almayer/plate,
+/turf/open/floor/almayer/test_floor4,
 /area/golden_arrow/cryo_cells)
 "aal" = (
 /obj/structure/machinery/door/poddoor/almayer/locked{
@@ -314,7 +305,7 @@
 	dir = 4;
 	health = 80
 	},
-/turf/open/floor/plating/plating_catwalk/prison,
+/turf/open/floor/plating/plating_catwalk,
 /area/golden_arrow/cryo_cells)
 "aaD" = (
 /obj/effect/decal/strata_decals/grime/grime1{
@@ -331,7 +322,7 @@
 	dir = 4;
 	health = 80
 	},
-/turf/open/floor/plating/plating_catwalk/prison,
+/turf/open/floor/plating/plating_catwalk,
 /area/golden_arrow/cryo_cells)
 "aaE" = (
 /obj/effect/decal/cleanable/dirt{
@@ -342,7 +333,7 @@
 	pixel_y = 2;
 	pixel_x = 1
 	},
-/turf/open/floor/prison/floor_plate/southwest,
+/turf/open/floor/plating/plating_catwalk,
 /area/golden_arrow/cryo_cells)
 "aaF" = (
 /obj/effect/decal/strata_decals/grime/grime1{
@@ -352,7 +343,7 @@
 	icon_state = "N";
 	pixel_y = 2
 	},
-/turf/open/floor/plating/plating_catwalk/prison,
+/turf/open/floor/plating/plating_catwalk,
 /area/golden_arrow/cryo_cells)
 "aaG" = (
 /obj/effect/decal/cleanable/dirt{
@@ -385,7 +376,7 @@
 	pixel_y = 7;
 	name = "towel"
 	},
-/turf/open/floor/prison/floor_plate/southwest,
+/turf/open/floor/plating/plating_catwalk,
 /area/golden_arrow/cryo_cells)
 "aaH" = (
 /obj/structure/pipes/standard/simple/hidden/supply{
@@ -417,7 +408,7 @@
 	icon_state = "N";
 	pixel_y = 1
 	},
-/turf/open/floor/prison/floor_plate/southwest,
+/turf/open/floor/almayer/mono,
 /area/golden_arrow/cryo_cells)
 "aaK" = (
 /obj/structure/disposalpipe/segment,
@@ -459,7 +450,7 @@
 /obj/structure/curtain/open/shower{
 	pixel_y = -6
 	},
-/turf/open/floor/plating/plating_catwalk/prison,
+/turf/open/floor/plating/plating_catwalk,
 /area/golden_arrow/cryo_cells)
 "aaO" = (
 /obj/structure/machinery/light/small/blue/golden_arrow{
@@ -1233,9 +1224,6 @@
 	},
 /turf/open/floor/almayer,
 /area/golden_arrow/hangar)
-"acq" = (
-/turf/open/floor/prison/floor_plate/southwest,
-/area/golden_arrow/cryo_cells)
 "acr" = (
 /obj/structure/pipes/vents/scrubber{
 	dir = 8
@@ -1267,7 +1255,7 @@
 	icon_state = "N";
 	pixel_y = 2
 	},
-/turf/open/floor/plating/plating_catwalk/prison,
+/turf/open/floor/plating/plating_catwalk,
 /area/golden_arrow/cryo_cells)
 "acw" = (
 /obj/structure/pipes/standard/simple/hidden/supply{
@@ -1483,7 +1471,7 @@
 	dir = 8;
 	light_power = 0.7
 	},
-/turf/open/floor/prison/floor_plate/southwest,
+/turf/open/floor/almayer/mono,
 /area/golden_arrow/cryo_cells)
 "acP" = (
 /obj/effect/decal/warning_stripes{
@@ -1541,6 +1529,13 @@
 	dir = 8
 	},
 /turf/open/floor/plating/plating_catwalk,
+/area/golden_arrow/cryo_cells)
+"acW" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "door_warning";
+	dir = 1
+	},
+/turf/open/floor/almayer/edge/smooth/north,
 /area/golden_arrow/cryo_cells)
 "acX" = (
 /obj/structure/sign/safety/galley{
@@ -2152,7 +2147,7 @@
 	dir = 8;
 	light_power = 0.7
 	},
-/turf/open/floor/prison/floor_plate/southwest,
+/turf/open/floor/almayer/mono,
 /area/golden_arrow/cryo_cells)
 "aem" = (
 /obj/structure/machinery/door/poddoor/shutters/almayer{
@@ -2396,7 +2391,7 @@
 	pixel_y = -1;
 	name = "towel"
 	},
-/turf/open/floor/prison/floor_plate/southwest,
+/turf/open/floor/almayer/mono,
 /area/golden_arrow/cryo_cells)
 "aeG" = (
 /obj/item/tool/dumbbell/alt{
@@ -2522,8 +2517,8 @@
 /turf/open/floor/almayer/cargo_arrow/north,
 /area/golden_arrow/hangar)
 "aeS" = (
-/obj/structure/extinguisher_cabinet/alt{
-	pixel_x = 23
+/obj/effect/decal/warning_stripes{
+	icon_state = "door_warning"
 	},
 /turf/open/floor/prison/kitchen,
 /area/golden_arrow/cryo_cells)
@@ -2633,6 +2628,9 @@
 	light_power = 0.7
 	},
 /obj/structure/surface/table/reinforced/prison,
+/obj/structure/extinguisher_cabinet/alt{
+	pixel_x = 23
+	},
 /turf/open/floor/plating/plating_catwalk,
 /area/golden_arrow/cryo_cells)
 "afh" = (
@@ -2667,7 +2665,7 @@
 	dir = 4;
 	light_power = 0.7
 	},
-/turf/open/floor/prison/floor_plate/southwest,
+/turf/open/floor/almayer/mono,
 /area/golden_arrow/cryo_cells)
 "afk" = (
 /obj/structure/gun_rack/m41/unloaded,
@@ -2740,6 +2738,7 @@
 /obj/structure/sign/safety/galley{
 	pixel_x = -24
 	},
+/obj/item/reagent_container/food/snacks/sliceable/applecake,
 /turf/open/floor/almayer/plate,
 /area/golden_arrow/cryo_cells)
 "afq" = (
@@ -2907,7 +2906,7 @@
 /obj/structure/curtain/open/shower{
 	pixel_y = -6
 	},
-/turf/open/floor/plating/plating_catwalk/prison,
+/turf/open/floor/plating/plating_catwalk,
 /area/golden_arrow/cryo_cells)
 "afJ" = (
 /obj/structure/cable{
@@ -3213,7 +3212,7 @@
 /obj/item/spacecash/c500/counterfeit,
 /obj/item/spacecash/c500/counterfeit,
 /obj/item/spacecash/c20,
-/turf/open/floor/almayer/plate,
+/turf/open/floor/plating,
 /area/golden_arrow/cryo_cells)
 "agl" = (
 /obj/structure/window/framed/almayer/hull,
@@ -3336,24 +3335,30 @@
 	},
 /obj/item/reagent_container/food/snacks/sliceable/pizza/meatpizza,
 /obj/item/reagent_container/food/snacks/sliceable/pizza/margherita,
-/obj/item/reagent_container/food/snacks/meat{
-	pixel_y = -5
-	},
-/obj/item/reagent_container/food/snacks/meat{
-	pixel_y = -5
-	},
-/obj/item/reagent_container/food/snacks/meat{
-	pixel_y = -5
-	},
-/obj/item/reagent_container/food/snacks/meat{
-	pixel_y = -5
-	},
-/obj/item/reagent_container/food/snacks/meat{
-	pixel_y = -5
-	},
-/obj/item/reagent_container/food/snacks/meat{
-	pixel_y = -5
-	},
+/obj/item/reagent_container/food/snacks/sliceable/pizza/mushroompizza,
+/obj/item/reagent_container/food/snacks/sliceable/pizza/mushroompizza,
+/obj/item/reagent_container/food/snacks/sliceable/pizza/mushroompizza,
+/obj/item/reagent_container/food/snacks/sliceable/pizza/meatpizza,
+/obj/item/reagent_container/food/snacks/sliceable/pizza/meatpizza,
+/obj/item/reagent_container/food/snacks/sliceable/pizza/meatpizza,
+/obj/item/reagent_container/food/snacks/sliceable/cheesecake,
+/obj/item/reagent_container/food/snacks/sliceable/chocolatecake,
+/obj/item/reagent_container/food/snacks/cheeseburger,
+/obj/item/reagent_container/food/snacks/cheeseburger,
+/obj/item/reagent_container/food/snacks/cheeseburger,
+/obj/item/reagent_container/food/snacks/jellysandwich,
+/obj/item/reagent_container/food/snacks/boiledspagetti,
+/obj/item/reagent_container/food/snacks/omelette,
+/obj/item/reagent_container/food/snacks/omelette,
+/obj/item/reagent_container/food/snacks/omelette,
+/obj/item/reagent_container/food/snacks/meatballspagetti,
+/obj/item/reagent_container/food/snacks/fishfingers,
+/obj/item/reagent_container/food/snacks/fishfingers,
+/obj/item/reagent_container/food/snacks/cheesyfries,
+/obj/item/reagent_container/food/snacks/cheesyfries,
+/obj/item/reagent_container/food/snacks/cheesyfries,
+/obj/item/reagent_container/food/snacks/carrotfries,
+/obj/item/reagent_container/food/snacks/carrotfries,
 /turf/open/floor/almayer/plate,
 /area/golden_arrow/cryo_cells)
 "agB" = (
@@ -3470,6 +3475,18 @@
 	id = "kitchen_hull";
 	name = "Kitchen Hull Shutters";
 	pixel_x = -28
+	},
+/obj/item/reagent_container/food/snacks/meat{
+	pixel_y = -5
+	},
+/obj/item/reagent_container/food/snacks/meat{
+	pixel_y = -5
+	},
+/obj/item/reagent_container/food/snacks/meat{
+	pixel_y = -5
+	},
+/obj/item/reagent_container/food/snacks/meat{
+	pixel_y = -5
 	},
 /turf/open/floor/almayer/plate,
 /area/golden_arrow/cryo_cells)
@@ -4525,6 +4542,14 @@
 /obj/structure/disposalpipe/trunk{
 	dir = 4
 	},
+/obj/item/tool/crowbar/red{
+	pixel_y = -7;
+	pixel_x = -5
+	},
+/obj/item/stack/catwalk{
+	pixel_x = 2;
+	pixel_y = -9
+	},
 /turf/open/floor/almayer,
 /area/golden_arrow/dorms)
 "ajA" = (
@@ -5188,16 +5213,10 @@
 /turf/open/floor/almayer/edge/smooth/west,
 /area/golden_arrow/platoonprep)
 "alX" = (
-/obj/structure/barricade/handrail{
-	dir = 8
-	},
-/obj/structure/closet/secure_closet,
-/obj/structure/barricade/handrail{
-	dir = 4
-	},
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
 	},
+/obj/structure/weightmachine/weightlifter,
 /turf/open/floor/almayer/edge/northeast,
 /area/golden_arrow/dorms)
 "alY" = (
@@ -6709,7 +6728,7 @@
 	pixel_y = 35;
 	pixel_x = -1
 	},
-/turf/open/floor/prison/floor_plate/southwest,
+/turf/open/floor/almayer/mono,
 /area/golden_arrow/cryo_cells)
 "arj" = (
 /obj/effect/decal/cleanable/dirt{
@@ -7280,7 +7299,7 @@
 /area/golden_arrow/cryo_cells)
 "ato" = (
 /obj/effect/decal/strata_decals/grime/grime3,
-/turf/open/floor/prison/floor_plate/southwest,
+/turf/open/floor/almayer/mono,
 /area/golden_arrow/cryo_cells)
 "atq" = (
 /obj/structure/machinery/door/poddoor/shutters/almayer{
@@ -7818,7 +7837,7 @@
 	pixel_y = 34;
 	pixel_x = 2
 	},
-/turf/open/floor/prison/floor_plate/southwest,
+/turf/open/floor/almayer/mono,
 /area/golden_arrow/cryo_cells)
 "avI" = (
 /obj/structure/surface/table/reinforced/prison,
@@ -8683,9 +8702,6 @@
 	},
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
-	},
-/obj/item/storage/box/stompers{
-	pixel_x = 4
 	},
 /turf/open/floor/almayer/edge/north,
 /area/golden_arrow/dorms)
@@ -11159,7 +11175,7 @@
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
 	},
-/turf/open/floor/prison/floor_plate/southwest,
+/turf/open/floor/almayer/mono,
 /area/golden_arrow/cryo_cells)
 "aFX" = (
 /obj/structure/machinery/light/double/blue/golden_arrow{
@@ -11530,7 +11546,7 @@
 	dir = 8;
 	health = 80
 	},
-/turf/open/floor/plating/plating_catwalk/prison,
+/turf/open/floor/plating/plating_catwalk,
 /area/golden_arrow/cryo_cells)
 "aHh" = (
 /obj/structure/cargo_container/uscm/chinook/left{
@@ -11547,6 +11563,9 @@
 	pixel_y = 8
 	},
 /obj/item/trash/crushed_cup,
+/obj/item/storage/box/stompers{
+	pixel_x = -16
+	},
 /turf/open/floor/plating/plating_catwalk,
 /area/golden_arrow/dorms)
 "aHl" = (
@@ -12496,7 +12515,7 @@
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
 	},
-/turf/open/floor/prison/floor_plate/southwest,
+/turf/open/floor/almayer/mono,
 /area/golden_arrow/cryo_cells)
 "aKD" = (
 /obj/structure/roof/cargocrane_tracks/horizontal{
@@ -13373,7 +13392,7 @@
 /obj/effect/decal/strata_decals/grime/grime1{
 	dir = 4
 	},
-/turf/open/floor/prison/floor_plate/southwest,
+/turf/open/floor/almayer/mono,
 /area/golden_arrow/cryo_cells)
 "aNV" = (
 /obj/effect/decal/cleanable/dirt{
@@ -13501,7 +13520,7 @@
 /obj/structure/pipes/standard/simple/hidden/supply{
 	dir = 10
 	},
-/turf/open/floor/prison/floor_plate/southwest,
+/turf/open/floor/almayer/mono,
 /area/golden_arrow/cryo_cells)
 "aOw" = (
 /obj/structure/machinery/door/poddoor/almayer/locked{
@@ -13686,7 +13705,7 @@
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
 	},
-/turf/open/floor/plating/plating_catwalk/prison,
+/turf/open/floor/plating/plating_catwalk,
 /area/golden_arrow/cryo_cells)
 "aPg" = (
 /obj/structure/machinery/light/double/blue/golden_arrow{
@@ -14055,7 +14074,7 @@
 	icon_state = "NE-out";
 	pixel_y = 2
 	},
-/turf/open/floor/prison/floor_plate/southwest,
+/turf/open/floor/almayer/mono,
 /area/golden_arrow/cryo_cells)
 "aQF" = (
 /obj/structure/machinery/cm_vending/sorted/uniform_supply/squad_prep{
@@ -14190,6 +14209,7 @@
 /obj/structure/barricade/handrail{
 	dir = 4
 	},
+/obj/structure/punching_bag,
 /turf/open/floor/almayer,
 /area/golden_arrow/dorms)
 "aRe" = (
@@ -14353,7 +14373,7 @@
 	pixel_x = -9;
 	pixel_y = -6
 	},
-/turf/open/floor/plating/plating_catwalk/prison,
+/turf/open/floor/plating/plating_catwalk,
 /area/golden_arrow/cryo_cells)
 "aRA" = (
 /obj/structure/cable/heavyduty{
@@ -14675,7 +14695,7 @@
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
 	},
-/turf/open/floor/plating/plating_catwalk/prison,
+/turf/open/floor/plating/plating_catwalk,
 /area/golden_arrow/cryo_cells)
 "aSv" = (
 /obj/effect/decal/cleanable/dirt{
@@ -15564,7 +15584,7 @@
 /obj/item/spacecash/c1000/counterfeit,
 /obj/item/spacecash/c1000/counterfeit,
 /obj/item/spacecash/c1000/counterfeit,
-/turf/open/floor/almayer/edge/southwest,
+/turf/open/floor/plating,
 /area/golden_arrow/dorms)
 "aVL" = (
 /obj/structure/barricade/handrail{
@@ -16357,7 +16377,7 @@
 	pixel_x = -6;
 	pixel_y = -6
 	},
-/turf/open/floor/prison/floor_plate/southwest,
+/turf/open/floor/almayer/mono,
 /area/golden_arrow/cryo_cells)
 "aYI" = (
 /obj/effect/decal/cleanable/dirt{
@@ -20464,15 +20484,11 @@
 /area/golden_arrow/lower_cargo)
 "ouD" = (
 /obj/structure/surface/table/reinforced/prison,
-/obj/effect/decal/warning_stripes{
-	icon_state = "N";
-	pixel_y = 3
-	},
 /obj/structure/machinery/door/poddoor/shutters/almayer{
 	name = "\improper Kitchen Shutters";
 	id = "kitchen_pizza_time"
 	},
-/turf/open/floor/almayer/plate,
+/turf/open/floor/almayer/test_floor4,
 /area/golden_arrow/cryo_cells)
 "ouW" = (
 /obj/structure/disposalpipe/segment{
@@ -28382,7 +28398,7 @@ apA
 aBw
 atm
 aPf
-acq
+aQr
 aaC
 aog
 atY
@@ -30143,7 +30159,7 @@ afC
 afg
 aeS
 aak
-alD
+acW
 aLz
 aBk
 aEY
