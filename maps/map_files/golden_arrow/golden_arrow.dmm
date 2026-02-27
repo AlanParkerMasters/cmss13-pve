@@ -2187,6 +2187,12 @@
 	req_access = list();
 	hacked = 1
 	},
+/obj/structure/noticeboard{
+	pixel_y = 33;
+	icon_state = "notices_8";
+	desc = null;
+	name = "sticky notes"
+	},
 /turf/open/floor/almayer/edge/smooth/west,
 /area/golden_arrow/platoonprep)
 "aeq" = (
