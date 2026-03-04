@@ -1948,7 +1948,8 @@
 	},
 /obj/structure/surface/table/almayer,
 /mob/living/simple_animal/cat/blackcat{
-	name = "Luna"
+	name = "Luna";
+	desc = "The refurbished canteen's trusty guardian."
 	},
 /turf/open/floor/almayer/mono,
 /area/golden_arrow/cryo_cells)
@@ -3385,6 +3386,32 @@
 /obj/item/reagent_container/food/snacks/taco,
 /obj/item/reagent_container/food/snacks/taco,
 /obj/item/reagent_container/food/snacks/sliceable/chocolatecake,
+/obj/item/reagent_container/food/snacks/stew,
+/obj/item/reagent_container/food/snacks/stew,
+/obj/item/reagent_container/food/snacks/tossedsalad{
+	pixel_x = 5;
+	pixel_y = 4
+	},
+/obj/item/reagent_container/food/snacks/tossedsalad{
+	pixel_x = 5;
+	pixel_y = 4
+	},
+/obj/item/reagent_container/food/snacks/tossedsalad{
+	pixel_x = 5;
+	pixel_y = 4
+	},
+/obj/item/reagent_container/food/snacks/fries{
+	pixel_x = 5;
+	pixel_y = 7
+	},
+/obj/item/reagent_container/food/snacks/fries{
+	pixel_x = 5;
+	pixel_y = 7
+	},
+/obj/item/reagent_container/food/snacks/sliceable/carrotcake{
+	pixel_y = -4;
+	layer = 2.9
+	},
 /turf/open/floor/almayer/plate,
 /area/golden_arrow/cryo_cells)
 "agB" = (
@@ -3514,6 +3541,7 @@
 /obj/item/reagent_container/food/snacks/meat{
 	pixel_y = -5
 	},
+/obj/item/reagent_container/food/condiment/hotsauce/sriracha,
 /turf/open/floor/almayer/plate,
 /area/golden_arrow/cryo_cells)
 "agK" = (
@@ -14083,6 +14111,12 @@
 	pixel_x = -7;
 	pixel_y = -1
 	},
+/obj/item/reagent_container/food/snacks/mre_pack/meal1{
+	desc = "A tray of standard W-Y 'flight' food. This one is what resembles Corn-bread. Disgusting.";
+	name = "\improper W-Y Prepared Meal (cornbread)";
+	pixel_x = -1;
+	pixel_y = 6
+	},
 /turf/open/floor/almayer/edge/smooth/endcap_right/west,
 /area/golden_arrow/cryo_cells)
 "aQr" = (
@@ -15611,6 +15645,8 @@
 /obj/item/spacecash/c1000/counterfeit,
 /obj/item/spacecash/c1000/counterfeit,
 /obj/item/spacecash/c1000/counterfeit,
+/obj/item/coin/diamond,
+/obj/item/weapon/knife/marine/bowie/kukri,
 /turf/open/floor/plating,
 /area/golden_arrow/dorms)
 "aVL" = (
