@@ -57,24 +57,28 @@
 "aai" = (
 /obj/structure/surface/table/reinforced/prison,
 /obj/item/reagent_container/food/drinks/cans/dr_gibb{
-	pixel_x = 8;
-	pixel_y = 7
+	pixel_x = 10;
+	pixel_y = 12
 	},
 /obj/item/reagent_container/food/drinks/cans/space_mountain_wind{
-	pixel_y = 7
+	pixel_y = 12;
+	pixel_x = 1
 	},
 /obj/item/reagent_container/food/drinks/cans/space_up{
-	pixel_x = -9;
-	pixel_y = 7
+	pixel_x = -8;
+	pixel_y = 12
 	},
 /obj/item/reagent_container/food/drinks/cans/classcola{
-	pixel_x = 8
+	pixel_x = 10;
+	pixel_y = 5
 	},
 /obj/item/reagent_container/food/drinks/cans/cola{
-	pixel_x = -1
+	pixel_x = 1;
+	pixel_y = 5
 	},
 /obj/item/reagent_container/food/drinks/cans/starkist{
-	pixel_x = -9
+	pixel_x = -8;
+	pixel_y = 5
 	},
 /obj/structure/machinery/door/poddoor/shutters/almayer{
 	name = "\improper Kitchen Shutters";
@@ -1225,6 +1229,9 @@
 	},
 /turf/open/floor/almayer,
 /area/golden_arrow/hangar)
+"acq" = (
+/turf/open/floor/plating,
+/area/golden_arrow/supply)
 "acr" = (
 /obj/structure/pipes/vents/scrubber{
 	dir = 8
@@ -3366,6 +3373,18 @@
 /obj/item/reagent_container/food/snacks/cheesyfries,
 /obj/item/reagent_container/food/snacks/carrotfries,
 /obj/item/reagent_container/food/snacks/carrotfries,
+/obj/item/reagent_container/food/snacks/vegetablesoup,
+/obj/item/reagent_container/food/snacks/taco,
+/obj/item/reagent_container/food/snacks/taco,
+/obj/item/reagent_container/food/snacks/taco,
+/obj/item/reagent_container/food/snacks/taco,
+/obj/item/reagent_container/food/snacks/pastatomato,
+/obj/item/reagent_container/food/snacks/pastatomato,
+/obj/item/reagent_container/food/snacks/hotchili,
+/obj/item/reagent_container/food/snacks/taco,
+/obj/item/reagent_container/food/snacks/taco,
+/obj/item/reagent_container/food/snacks/taco,
+/obj/item/reagent_container/food/snacks/sliceable/chocolatecake,
 /turf/open/floor/almayer/plate,
 /area/golden_arrow/cryo_cells)
 "agB" = (
@@ -11571,7 +11590,8 @@
 	},
 /obj/item/trash/crushed_cup,
 /obj/item/storage/box/stompers{
-	pixel_x = -16
+	pixel_x = -19;
+	pixel_y = 5
 	},
 /turf/open/floor/plating/plating_catwalk,
 /area/golden_arrow/dorms)
@@ -22114,12 +22134,6 @@
 	},
 /turf/open/floor/almayer,
 /area/golden_arrow/lower_cargo)
-"vbQ" = (
-/obj/effect/landmark/nightmare{
-	insert_tag = "briefing"
-	},
-/turf/open/space/basic,
-/area/space)
 "vfK" = (
 /obj/structure/surface/table/almayer,
 /obj/structure/machinery/reagentgrinder/industrial{
@@ -30509,16 +30523,16 @@ aEG
 agu
 afi
 ahl
-aEG
-aEG
-aEG
-aEG
-aEG
-aEG
-aEG
-aEG
-aEG
-aEG
+acq
+acq
+acq
+acq
+acq
+acq
+acq
+acq
+acq
+acq
 aWh
 aet
 aaf
@@ -30693,9 +30707,9 @@ agF
 ahl
 ahl
 ahl
-aEG
-aEG
-aEG
+acq
+acq
+acq
 aWh
 aeu
 aBk
@@ -30870,9 +30884,9 @@ aum
 aAu
 euH
 ahl
-aEG
-aEG
-aEG
+acq
+acq
+acq
 aWh
 aew
 azG
@@ -30898,7 +30912,7 @@ aXH
 abz
 ayo
 awL
-vbQ
+aEG
 aEG
 aEG
 aEG
