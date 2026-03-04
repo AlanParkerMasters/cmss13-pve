@@ -22,7 +22,16 @@
 	var/datum/action/innate/imaginary_orbit/orbit
 	var/datum/action/innate/imaginary_hide/hide
 
-	var/list/outfit_choices = list(/datum/equipment_preset/uscm_ship/di)
+	var/list/outfit_choices = list(
+		/datum/equipment_preset/uscm_ship/di,
+		/datum/equipment_preset/uscm_event/dress/officer/co/ltcol,
+		/datum/equipment_preset/uscm/private_equipped/eva,
+		/datum/equipment_preset/corpse/hybrisa/civilian_office/burst,
+		/datum/equipment_preset/other/xeno_cultist,
+		/datum/equipment_preset/fun/clown,
+		/datum/equipment_preset/fun/santa,
+		/datum/equipment_preset/fun/monkey
+	)
 
 	var/list/current_huds = list()
 
@@ -43,7 +52,7 @@
 		return INITIALIZE_HINT_QDEL
 
 	src.owner = owner
-	owner.play_screen_text(pick("You hear footsteps...", "You feel watched...", "You feel breathing down your neck...", "You hear someone say your name nearby..." ), /atom/movable/screen/text/screen_text/command_order, rgb(117, 4, 4))
+	owner.play_screen_text(pick("You hear footsteps...", "You feel watched...", "You feel breathing down your neck...", "You hear someone say your name nearby...", "You feel your mind wander..."), /atom/movable/screen/text/screen_text/command_order, rgb(117, 4, 4))
 
 	mouse_opacity = MOUSE_OPACITY_TRANSPARENT
 
@@ -63,7 +72,7 @@
 		outfit_choice = outfit_choices[1]
 	if(outfit_choice == "Drone")
 		friend_image = get_xeno_appearance()
-		name = "Helpful Drone"
+		name = "Xenomorph"
 		return
 	friend_image = get_flat_human_icon(null, outfit_choice, client.prefs)
 
@@ -136,7 +145,7 @@
 		outfit_choice = outfit_choices[1]
 	if(outfit_choice == "Drone")
 		friend_image = get_xeno_appearance()
-		name = "Helpful Drone"
+		name = "Xenomorph"
 		return
 	name = client.prefs.real_name
 	friend_image = get_flat_human_icon(null, outfit_choice, client.prefs)
