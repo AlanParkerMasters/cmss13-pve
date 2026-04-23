@@ -576,6 +576,66 @@
 /obj/effect/landmark/zombie/infinite
 	infinite_spawns = TRUE
 
+// UA Rebels spawn
+/obj/effect/landmark/rebels
+	name = "rebels spawnpoint"
+	desc = "The spot a rebel spawns in. Players in-game can't see this."
+	icon_state = "freed_mob_spawner"
+	invisibility_value = INVISIBILITY_OBSERVER
+	var/spawns_left = 1
+	var/infinite_spawns = FALSE
+
+/obj/effect/landmark/rebels/Initialize(mapload, ...)
+	. = ..()
+	GLOB.rebels_landmarks += src
+
+/obj/effect/landmark/rebels/Destroy()
+	GLOB.rebels_landmarks -= src
+	return ..()
+
+/obj/effect/landmark/rebels/proc/spawn_rebels(mob/dead/observer/observer)
+	if(!infinite_spawns)
+		spawns_left--
+	if(spawns_left <= 0)
+		GLOB.rebels_landmarks -= src
+	anim(loc, loc, 'icons/mob/mob.dmi', null, "uncloak", 12, SOUTH)
+	observer.see_invisible = SEE_INVISIBLE_LIVING
+	observer.client.eye = src // gives the player a second to orient themselves to the spawn zone
+	addtimer(CALLBACK(src, PROC_REF(handle_rebels_spawn), observer), 1 SECONDS)
+
+/obj/effect/landmark/rebels/proc/handle_rebels_spawn(mob/dead/observer/observer)
+	var/mob/living/carbon/human/rebels = new /mob/living/carbon/human(loc)
+	if(!rebels.hud_used)
+		rebels.create_hud()
+	var/rebel_type = pick(
+		/datum/equipment_preset/rebel/soldier,
+		/datum/equipment_preset/rebel/soldier/shotgun,
+		80; /datum/equipment_preset/rebel/at,
+		75; /datum/equipment_preset/rebel/sniper,
+		75; /datum/equipment_preset/rebel/soldier/machinegunner,
+		75; /datum/equipment_preset/rebel/medic,
+		75; /datum/equipment_preset/rebel/soldier/leader,
+		75; /datum/equipment_preset/rebel/soldier/flamer,
+		25; /datum/equipment_preset/rebel/soldier/lunge
+	)
+	arm_equipment(rebels, rebel_type, randomise = TRUE, count_participant = TRUE, mob_client = observer.client, show_job_gear = TRUE)
+	to_chat(observer, SPAN_ROLE_HEADER("You are a United Americas Rebel!"))
+	to_chat(observer, SPAN_ROLE_BODY("The colony of Hybrisa has fallen into disarray. You have joined a shady group of rebels that are out to put an end to the existing government on the colony!"))
+	to_chat(observer, SPAN_ROLE_BODY("You have no laws or rules to follow. You aren't required to follow any sort of command structure. You are free to commit any sort of crime."))
+	observer.client.eye = rebels
+	observer.mind.transfer_to(rebels)
+	if(spawns_left <= 0)
+		qdel(src)
+
+/obj/effect/landmark/rebels/three
+	spawns_left = 3
+
+/obj/effect/landmark/rebels/ten
+	spawns_left = 10
+
+/obj/effect/landmark/rebels/infinite
+	infinite_spawns = TRUE
+
 /// Marks the bottom left of the testing zone.
 /// In landmarks.dm and not unit_test.dm so it is always active in the mapping tools.
 /obj/effect/landmark/unit_test_bottom_left

@@ -23,6 +23,38 @@
 		/datum/equipment_preset/cmb/deputy/emergency = 1,
 	)
 
+/datum/human_ai_squad_preset/cmb/nspa/riotshields
+	name = "NSPA, Riot Shield Team"
+	desc = "A team of five shield-carrying riot police officers."
+	ai_to_spawn = list(
+		/datum/equipment_preset/cmb/nspa/riot/shield = 5,
+	)
+
+/datum/human_ai_squad_preset/cmb/nspa/riotshields/baton
+	name = "NSPA, Riot Shield Team w/ Batons"
+	desc = "A team of five shield-carrying riot police officers, two with batons."
+	ai_to_spawn = list(
+		/datum/equipment_preset/cmb/nspa/riot/shield = 3,
+		/datum/equipment_preset/cmb/nspa/riot/shield/baton = 2,
+	)
+
+/datum/human_ai_squad_preset/cmb/nspa/riotshields/teargas
+	name = "NSPA, Riot Shield Team w/ Tear gas"
+	desc = "A team of five shield-carrying riot police officers, two with teargas."
+	ai_to_spawn = list(
+		/datum/equipment_preset/cmb/nspa/riot/shield = 3,
+		/datum/equipment_preset/cmb/nspa/riot/teargas = 2,
+	)
+
+/datum/human_ai_squad_preset/cmb/nspa/riotshields/fullsquad
+	name = "NSPA, Riot Shield Team w/ Tear gas & Batons"
+	desc = "A full team of shield-carrying riot police officers, with batons and teargas."
+	ai_to_spawn = list(
+		/datum/equipment_preset/cmb/nspa/riot/shield = 4,
+		/datum/equipment_preset/cmb/nspa/riot/teargas = 3,
+		/datum/equipment_preset/cmb/nspa/riot/shield/baton = 4,
+	)
+
 /datum/human_ai_squad_preset/cmb/lead
 	name = "CMB, Marshal Team"
 	desc = "CMB team armed with Viper 9 SMGs or M41A rifles and carrying IFAKs containing gauze, ointment, splints and an injector."

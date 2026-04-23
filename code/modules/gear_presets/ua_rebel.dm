@@ -1,12 +1,14 @@
-/datum/equipment_preset/rebel
-	name = "UA Rebel"
+/datum/equipment_preset/rebel   //I've made this very sloppy mod that works because I told it to, this is meant for events and ease of player identification, DO NOT MERGE
+	name = FACTION_CLF
 	languages = list(LANGUAGE_ENGLISH)
-	flags = EQUIPMENT_PRESET_EXTRA
-	faction = FACTION_UA_REBEL
-	faction_group = FACTION_LIST_UA_REBEL
-	skills = /datum/skills/clf
+	assignment = JOB_CLF
+	rank = FACTION_CLF
 	paygrades = list(PAY_SHORT_REB = JOB_PLAYTIME_TIER_0)
+	faction = FACTION_CLF
+	flags = EQUIPMENT_PRESET_EXTRA
+	skills = /datum/skills/clf
 	origin_override = ORIGIN_CIVILIAN
+	idtype = /obj/item/card/id/dogtag
 
 /datum/equipment_preset/rebel/New()
 	. = ..()
@@ -14,10 +16,13 @@
 
 /datum/equipment_preset/rebel/guerilla
 	name = "UA Rebel, Guerilla"
+	assignment = JOB_CLF
+	rank = JOB_CLF
 	flags = EQUIPMENT_PRESET_EXTRA
-	faction = FACTION_UA_REBEL
-	faction_group = FACTION_LIST_UA_REBEL
 	paygrades = list(PAY_SHORT_REB = JOB_PLAYTIME_TIER_0)
+
+/datum/equipment_preset/rebel/guerilla/get_assignment(mob/living/carbon/human/new_human)
+	return "Guerilla"
 
 /datum/equipment_preset/rebel/guerilla/load_gear(mob/living/carbon/human/new_human)
 	new_human.undershirt = "undershirt"
@@ -33,19 +38,23 @@
 	//jacket
 	add_civilian_jacket(new_human)
 	//limbs
-	add_civilian_shoe(new_human)
+	add_rebel_ua_shoes(new_human)
 	if(prob(90))
 		add_survivor_weapon_pistol(new_human)
 	else
 		new_human.equip_to_slot_or_del(new /obj/item/weapon/gun/smg/m39(new_human), WEAR_L_HAND)
 		new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/smg/m39(new_human), WEAR_BACK)
 		new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/smg/m39(new_human), WEAR_BACK)
+		new_human.equip_to_slot_or_del(new /obj/item/storage/firstaid/softpack/adv(new_human), WEAR_IN_BACK)
 	//pockets
 	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/firstaid/full/alternate, WEAR_L_STORE)
 	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/general/medium, WEAR_R_STORE)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/firstaid/softpack/adv(new_human), WEAR_IN_BACK)
 
 /datum/equipment_preset/rebel/soldier
 	name = "UA Rebel, Soldier (Rifle)"
+	assignment = JOB_CLF
+	rank = JOB_CLF
 	flags = EQUIPMENT_PRESET_EXTRA
 	idtype = /obj/item/card/id/dogtag
 	paygrades = list(PAY_SHORT_REB = JOB_PLAYTIME_TIER_0)
@@ -60,6 +69,7 @@
 	new_human.equip_to_slot_or_del(new /obj/item/storage/backpack/marine/satchel(new_human), WEAR_BACK)
 	new_human.equip_to_slot_or_del(new /obj/item/tool/weldingtool(new_human), WEAR_IN_BACK)
 	new_human.equip_to_slot_or_del(new /obj/item/tool/wirecutters(new_human), WEAR_IN_BACK)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/firstaid/softpack/adv(new_human), WEAR_IN_BACK)
 	new_human.equip_to_slot_or_del(new /obj/item/tool/shovel/etool/folded(new_human), WEAR_IN_BACK)
 	new_human.equip_to_slot_or_del(new /obj/item/storage/box/mre(new_human), WEAR_IN_BACK)
 	//face
@@ -89,6 +99,8 @@
 
 /datum/equipment_preset/rebel/soldier/shotgun
 	name = "UA Rebel, Soldier (Shotgun)"
+	assignment = JOB_CLF
+	rank = JOB_CLF
 
 /datum/equipment_preset/rebel/soldier/shotgun/load_gear(mob/living/carbon/human/new_human)
 	new_human.undershirt = "undershirt"
@@ -96,6 +108,7 @@
 	new_human.equip_to_slot_or_del(new /obj/item/storage/backpack/marine/satchel(new_human), WEAR_BACK)
 	new_human.equip_to_slot_or_del(new /obj/item/tool/weldingtool(new_human), WEAR_IN_BACK)
 	new_human.equip_to_slot_or_del(new /obj/item/tool/wirecutters(new_human), WEAR_IN_BACK)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/firstaid/softpack/adv(new_human), WEAR_IN_BACK)
 	new_human.equip_to_slot_or_del(new /obj/item/tool/shovel/etool/folded(new_human), WEAR_IN_BACK)
 	new_human.equip_to_slot_or_del(new /obj/item/storage/box/mre(new_human), WEAR_IN_BACK)
 	//face
@@ -121,6 +134,8 @@
 
 /datum/equipment_preset/rebel/soldier/machinegunner
 	name = "UA Rebel, Soldier (Machinegunner)"
+	assignment = JOB_CLF
+	rank = JOB_CLF
 
 /datum/equipment_preset/rebel/soldier/machinegunner/load_gear(mob/living/carbon/human/new_human)
 	new_human.undershirt = "undershirt"
@@ -128,6 +143,7 @@
 	new_human.equip_to_slot_or_del(new /obj/item/storage/backpack/marine/satchel(new_human), WEAR_BACK)
 	new_human.equip_to_slot_or_del(new /obj/item/tool/weldingtool(new_human), WEAR_IN_BACK)
 	new_human.equip_to_slot_or_del(new /obj/item/tool/wirecutters(new_human), WEAR_IN_BACK)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/firstaid/softpack/adv(new_human), WEAR_IN_BACK)
 	new_human.equip_to_slot_or_del(new /obj/item/tool/shovel/etool/folded(new_human), WEAR_IN_BACK)
 	new_human.equip_to_slot_or_del(new /obj/item/storage/box/mre(new_human), WEAR_IN_BACK)
 	//face
@@ -154,9 +170,47 @@
 	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/firstaid/full/alternate, WEAR_L_STORE)
 	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/general/medium, WEAR_R_STORE)
 
+/datum/equipment_preset/rebel/soldier/lunge
+	name = "UA Rebel, Soldier (Lungemine)"
+	assignment = JOB_CLF
+	rank = JOB_CLF
+	flags = EQUIPMENT_PRESET_EXTRA
+
+/datum/equipment_preset/rebel/soldier/lunge/load_gear(mob/living/carbon/human/new_human)
+	new_human.undershirt = "undershirt"
+	//back
+	new_human.equip_to_slot_or_del(new /obj/item/storage/backpack/marine/satchel(new_human), WEAR_BACK)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/firstaid/softpack/adv(new_human), WEAR_IN_BACK)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/box/mre(new_human), WEAR_IN_BACK)
+	new_human.equip_to_slot_or_del(new /obj/item/weapon/twohanded/lungemine(new_human), WEAR_IN_BACK)
+	new_human.equip_to_slot_or_del(new /obj/item/weapon/twohanded/lungemine(new_human), WEAR_IN_BACK)
+	new_human.equip_to_slot_or_del(new /obj/item/weapon/twohanded/lungemine(new_human), WEAR_IN_BACK)
+	//face
+	if(prob(45))
+		add_facewrap(new_human)
+	new_human.equip_to_slot_or_del(new /obj/item/device/radio/headset/distress/rebel_ua(new_human), WEAR_L_EAR)
+	//head
+	add_rebel_ua_helmet(new_human)
+	//uniform
+	add_rebel_ua_uniform(new_human)
+	//jacket
+	add_rebel_ua_suit(new_human)
+	//waist
+	new_human.equip_to_slot_or_del(new /obj/item/storage/backpack/general_belt(new_human), WEAR_WAIST)
+	new_human.equip_to_slot_or_del(new /obj/item/weapon/twohanded/lungemine(new_human), WEAR_IN_BELT)
+	//limbs
+	add_rebel_ua_shoes(new_human)
+	if(prob(35))
+		add_rebel_gloves(new_human)
+	new_human.equip_to_slot_or_del(new /obj/item/weapon/twohanded/lungemine(new_human), WEAR_L_HAND)
+	//pockets
+	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/firstaid/full/alternate, WEAR_L_STORE)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/general/medium, WEAR_R_STORE)
 
 /datum/equipment_preset/rebel/soldier/flamer
 	name = "UA Rebel, Soldier (Incinerator)"
+	assignment = JOB_CLF
+	rank = JOB_CLF
 	skills = /datum/skills/clf/specialist
 
 /datum/equipment_preset/rebel/soldier/flamer/load_gear(mob/living/carbon/human/new_human)
@@ -165,6 +219,7 @@
 	new_human.equip_to_slot_or_del(new /obj/item/storage/backpack/marine/satchel(new_human), WEAR_BACK)
 	new_human.equip_to_slot_or_del(new /obj/item/tool/weldingtool(new_human), WEAR_IN_BACK)
 	new_human.equip_to_slot_or_del(new /obj/item/tool/wirecutters(new_human), WEAR_IN_BACK)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/firstaid/softpack/adv(new_human), WEAR_IN_BACK)
 	new_human.equip_to_slot_or_del(new /obj/item/tool/shovel/etool/folded(new_human), WEAR_IN_BACK)
 	new_human.equip_to_slot_or_del(new /obj/item/storage/box/mre(new_human), WEAR_IN_BACK)
 	//face
@@ -193,6 +248,8 @@
 
 /datum/equipment_preset/rebel/soldier/leader
 	name = "UA Rebel, Soldier (Squad Leader)"
+	assignment = JOB_CLF_LEADER
+	rank = JOB_CLF_LEADER
 	skills = /datum/skills/clf/leader
 
 /datum/equipment_preset/rebel/soldier/leader/get_assignment(mob/living/carbon/human/new_human)
@@ -204,6 +261,7 @@
 	new_human.equip_to_slot_or_del(new /obj/item/storage/backpack/marine/satchel(new_human), WEAR_BACK)
 	new_human.equip_to_slot_or_del(new /obj/item/tool/weldingtool(new_human), WEAR_IN_BACK)
 	new_human.equip_to_slot_or_del(new /obj/item/tool/wirecutters(new_human), WEAR_IN_BACK)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/firstaid/softpack/adv(new_human), WEAR_IN_BACK)
 	new_human.equip_to_slot_or_del(new /obj/item/tool/shovel/etool/folded(new_human), WEAR_IN_BACK)
 	new_human.equip_to_slot_or_del(new /obj/item/storage/box/mre(new_human), WEAR_IN_BACK)
 	//face
@@ -233,6 +291,8 @@
 
 /datum/equipment_preset/rebel/medic
 	name = "UA Rebel, Medic"
+	assignment = JOB_CLF_MEDIC
+	rank = JOB_CLF_MEDIC
 	flags = EQUIPMENT_PRESET_EXTRA
 	idtype = /obj/item/card/id/dogtag
 	paygrades = list(PAY_SHORT_REB = JOB_PLAYTIME_TIER_0)
@@ -255,6 +315,7 @@
 	new_human.equip_to_slot_or_del(new /obj/item/tool/surgery/synthgraft(new_human), WEAR_IN_BACK)
 	new_human.equip_to_slot_or_del(new /obj/item/storage/firstaid/softpack/regular(new_human), WEAR_IN_BACK)
 	new_human.equip_to_slot_or_del(new /obj/item/storage/firstaid/softpack/adv(new_human), WEAR_IN_BACK)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/surgical_case/rmc_surgical_case/full(new_human), WEAR_IN_BACK)
 	//face
 	if(prob(45))
 		add_facewrap(new_human)
@@ -281,6 +342,8 @@
 
 /datum/equipment_preset/rebel/at
 	name = "UA Rebel, Anti-Tank"
+	assignment = JOB_CLF
+	rank = JOB_CLF
 	flags = EQUIPMENT_PRESET_EXTRA
 	idtype = /obj/item/card/id/dogtag
 	paygrades = list(PAY_SHORT_REB = JOB_PLAYTIME_TIER_0)
@@ -298,6 +361,7 @@
 	new_human.equip_to_slot_or_del(new /obj/item/storage/backpack/marine/satchel/intel/chestrig(new_human), WEAR_BACK)
 	new_human.equip_to_slot_or_del(new /obj/item/tool/weldingtool(new_human), WEAR_IN_BACK)
 	new_human.equip_to_slot_or_del(new /obj/item/tool/wirecutters(new_human), WEAR_IN_BACK)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/firstaid/softpack/adv(new_human), WEAR_IN_BACK)
 	new_human.equip_to_slot_or_del(new /obj/item/tool/shovel/etool/folded(new_human), WEAR_IN_BACK)
 	new_human.equip_to_slot_or_del(new /obj/item/storage/box/mre(new_human), WEAR_IN_BACK)
 	new_human.equip_to_slot_or_del(new /obj/item/prop/folded_anti_tank_sadar(new_human), WEAR_IN_BACK)
@@ -321,6 +385,8 @@
 
 /datum/equipment_preset/rebel/commander
 	name = "UA Rebel, Cell Commander"
+	assignment = JOB_CLF_COMMANDER
+	rank = JOB_CLF_COMMANDER
 	flags = EQUIPMENT_PRESET_EXTRA
 	idtype = /obj/item/card/id/dogtag
 	paygrades = list(PAY_SHORT_REB = JOB_PLAYTIME_TIER_0)
@@ -352,7 +418,7 @@
 		new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/marine/smartgunner/black(new_human), WEAR_JACKET)
 
 	//waist
-	new_human.equip_to_slot_or_del(new /obj/item/storage/belt/marine(new_human), WEAR_WAIST)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/belt/gun/smartgunner/army/full(new_human), WEAR_WAIST)
 	//limbs
 	add_rebel_ua_shoes(new_human)
 	if(prob(35))
@@ -368,6 +434,8 @@
 
 /datum/equipment_preset/rebel/sniper
 	name = "UA Rebel, Sniper (M42A)"
+	assignment = JOB_CLF_SPECIALIST
+	rank = JOB_CLF_SPECIALIST
 	flags = EQUIPMENT_PRESET_EXTRA
 	idtype = /obj/item/card/id/dogtag
 	paygrades = list(PAY_SHORT_REB = JOB_PLAYTIME_TIER_0)
@@ -385,6 +453,7 @@
 	new_human.equip_to_slot_or_del(new /obj/item/storage/backpack/marine/satchel(new_human), WEAR_BACK)
 	new_human.equip_to_slot_or_del(new /obj/item/tool/weldingtool(new_human), WEAR_IN_BACK)
 	new_human.equip_to_slot_or_del(new /obj/item/tool/wirecutters(new_human), WEAR_IN_BACK)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/firstaid/softpack/adv(new_human), WEAR_IN_BACK)
 	new_human.equip_to_slot_or_del(new /obj/item/tool/shovel/etool/folded(new_human), WEAR_IN_BACK)
 	new_human.equip_to_slot_or_del(new /obj/item/storage/box/mre(new_human), WEAR_IN_BACK)
 	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/sniper/basic(new_human), WEAR_IN_BACK)

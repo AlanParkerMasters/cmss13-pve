@@ -349,9 +349,9 @@ const ObservableContent = () => {
         title="Union of Progressive Peoples"
       />
       <ObservableSection
-        color="teal"
+        color="red"
         section={clf}
-        title="Colonial Liberation Front"
+        title="United Americas Rebels"
       />
       <ObservableSection color="white" section={wy} title="Weyland Yutani" />
       <ObservableSection

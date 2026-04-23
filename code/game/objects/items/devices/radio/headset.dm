@@ -1253,6 +1253,14 @@
 	icon_state = "wy_headset"
 	initial_keys = list(/obj/item/device/encryptionkey/WY, /obj/item/device/encryptionkey/cmb)
 
+/obj/item/device/radio/headset/distress/NSPA
+	name = "NSPA Headset"
+	desc = "NSPA headset."
+	frequency = RMC_FREQ
+	icon_state = "vai_headset"
+	initial_keys = list(/obj/item/device/encryptionkey/public, /obj/item/device/encryptionkey/royal_marine)
+	volume = RADIO_VOLUME_IMPORTANT
+
 /obj/item/device/radio/headset/almayer/highcom
 	name = "USCM High Command headset"
 	desc = "Issued to members of USCM High Command and their immediate subordinates. Channels are as follows: :v - marine command, :p - military police, :a - alpha squad, :b - bravo squad, :c - charlie squad, :d - delta squad, :n - engineering, :m - medbay, :u - requisitions, :j - JTAC,  :t - intel,  :z - HighCom"
@@ -1370,8 +1378,11 @@
 /obj/item/device/radio/headset/distress/rebel_ua
 	name = "colony headset"
 	desc = "A standard headset used by colonists, but this one has been tampered with. To access the colony channel use :o."
+	icon_state = "sec_headset"
 	frequency = PFA_FREQ
 	initial_keys = list(/obj/item/device/encryptionkey/colony)
+	has_hud = TRUE
+	hud_type = list(MOB_HUD_FACTION_CLF, MOB_HUD_FACTION_OBSERVER, MOB_HUD_FACTION_MARINE, MOB_HUD_FACTION_ARMY, MOB_HUD_FACTION_NAVY, MOB_HUD_FACTION_MARSHAL)
 
 /obj/item/device/radio/headset/distress/rebel_twe
 	name = "colony headset"

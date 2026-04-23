@@ -336,3 +336,24 @@
 	desc = "The flag of Brazil."
 	icon_state = "flag_brazil_planted"
 	flag_type = /obj/item/flag/plantable/brazil
+
+// Revived for an event, DO NOT MERGE
+// COLONIAL LIBERATION FRONT FLAG //
+//////////////////////////
+
+/obj/item/flag/plantable/clf
+	name = "\improper UA Rebel flag"
+	desc = "The flag of your UA rebel movement. This one looks ready to be planted into the ground."
+	icon = 'icons/obj/structures/plantable_flag.dmi'
+	icon_state = "flag_clf"
+	flag_type = /obj/structure/flag/plantable/clf
+	faction = FACTION_CLF
+	play_warcry = TRUE
+	warcry_sound = 'sound/effects/flag_warcry_clf.ogg'
+	warcry_extra_sound = 'sound/effects/flag_warcry_clf_extra.ogg'
+
+/obj/structure/flag/plantable/clf
+	name = "\improper UA Rebel flag"
+	desc = "The flag of your UA rebel movement — a symbol of resistance and resolve. Strength forged in unity. Freedom earned through struggle."
+	icon_state = "flag_clf_planted"
+	flag_type = /obj/item/flag/plantable/clf
