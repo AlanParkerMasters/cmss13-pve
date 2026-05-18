@@ -160,6 +160,16 @@ PLANT_CUT_MACHETE = 3 = Needs at least a machete to be cut down
 	unacidable = TRUE
 
 // LV-624's Yggdrasil Tree
+/obj/structure/flora/tree/jungle/bigtreeTR
+	icon_state = "bigtreeTR"
+
+/obj/structure/flora/tree/jungle/bigtreeTL
+	icon_state = "bigtreeTL"
+
+/obj/structure/flora/tree/jungle/bigtreeBOT
+	icon_state = "bigtreeBOT"
+
+// LV-624's Yggdrasil Tree
 
 /obj/structure/roof/flora/tree/jungle/bigtreeTR
 	icon_state = "bigtreeTR"
