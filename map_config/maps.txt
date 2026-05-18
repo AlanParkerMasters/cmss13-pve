@@ -140,5 +140,19 @@ map binhai_supply_station
 endmap
 
 map lv624_lazarus_landing
+endmap
 
+map _event1_hybrisa_zombie_iso
+endmap
+
+map _event2_lv624_long_snow
+endmap
+
+map _event3_lv759_hybrisa_prospera
+endmap
+
+map _event4_lv759_hybrisa_prospera
+endmap
+
+map _event5_prison_station_fop
 endmap
