@@ -156,3 +156,6 @@ endmap
 
 map _event5_prison_station_fop
 endmap
+
+map _event6_usg_ishimura
+endmap

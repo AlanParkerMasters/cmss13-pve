@@ -1,0 +1,21 @@
+{
+    "map_name": "USG Ishimura",
+    "map_path": "map_files/EVENTS",
+    "map_file": "_event6_usg_ishimura.dmm",
+    "survivor_message": "You are a survivor of the attack on Fiorina Orbital Penitentiary. You worked or lived on the prison station, and managed to avoid the alien attacks... until now.",
+    "map_item_type": "/obj/item/map/FOP_map",
+    "announce_text": "An unidentified vessel has been found. It is not responding to any hails. A response team from the ###SHIPNAME### will be dispatched shortly to investigate.",
+    "environment_traits": {
+        "Lockdown": true,
+        "InSpace": true
+    },
+    "traits": [{ "Ground": true }],
+    "camouflage": "jungle",
+    "gamemodes": [
+        "Distress Signal",
+        "Hunter Games",
+        "Hive Wars",
+        "Faction Clash",
+        "Infection"
+    ]
+}
