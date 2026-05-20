@@ -1,3 +1,14 @@
+/turf/simulated/floor
+	icon = 'icons/turf/flooring/plating.dmi'
+	icon_state = "plating"
+	plane = FLOOR_PLANE
+
+/turf/simulated/mineral
+
+/turf/simulated/shuttle/wall
+
+/turf/simulated/wall
+
 /turf/simulated/floor/plating
 	icon = 'icons/turf/flooring/plating.dmi'
 	name = "plating"

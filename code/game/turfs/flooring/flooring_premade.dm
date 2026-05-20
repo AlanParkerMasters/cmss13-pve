@@ -432,3 +432,15 @@
 /turf/simulated/floor/dank/grille_spare_2
 	name = "grille-spare2"
 	icon_state = "grille-spare2"
+
+/turf/simulated/wall
+	name = "bulkhead"
+
+/turf/simulated/floor
+	name = "bare deck"
+
+/turf/simulated/floor/tiled
+	name = "deck"
+
+/decl/flooring/tiling
+	name = "deck"

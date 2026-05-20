@@ -232,32 +232,26 @@ var/list/flooring_types
 /decl/flooring/carpet/blue
 	name = "blue carpet"
 	icon_base = "blue1"
-	build_type = /obj/item/stack/tile/carpetblue
 
 /decl/flooring/carpet/blue2
 	name = "pale blue carpet"
 	icon_base = "blue2"
-	build_type = /obj/item/stack/tile/carpetblue2
 
 /decl/flooring/carpet/purple
 	name = "purple carpet"
 	icon_base = "purple"
-	build_type = /obj/item/stack/tile/carpetpurple
 
 /decl/flooring/carpet/orange
 	name = "orange carpet"
 	icon_base = "orange"
-	build_type = /obj/item/stack/tile/carpetorange
 
 /decl/flooring/carpet/green
 	name = "green carpet"
 	icon_base = "green"
-	build_type = /obj/item/stack/tile/carpetgreen
 
 /decl/flooring/carpet/red
 	name = "red carpet"
 	icon_base = "red"
-	build_type = /obj/item/stack/tile/carpetred
 
 /decl/flooring/linoleum
 	name = "linoleum"
@@ -265,7 +259,6 @@ var/list/flooring_types
 	icon = 'icons/turf/flooring/linoleum.dmi'
 	icon_base = "lino"
 	can_paint = 1
-	build_type = /obj/item/stack/tile/linoleum
 	footstep = FOOTSTEP_CARPET
 	barefootstep = FOOTSTEP_CARPET_BAREFOOT
 	clawfootstep = FOOTSTEP_CARPET_BAREFOOT
@@ -279,7 +272,6 @@ var/list/flooring_types
 	color = COLOR_DARK_GUNMETAL
 	has_damage_range = 4
 	damage_temperature = T0C+1400
-	build_type = /obj/item/stack/tile/floor
 	can_paint = 1
 	footstep = FOOTSTEP_FLOOR
 	barefootstep = FOOTSTEP_HARD_BAREFOOT
@@ -288,27 +280,22 @@ var/list/flooring_types
 
 /decl/flooring/tiling/mono
 	icon_base = "monotile"
-	build_type = /obj/item/stack/tile/mono
 
 /decl/flooring/tiling/mono/dark
 	color = COLOR_BLACK
-	build_type = /obj/item/stack/tile/mono/dark
 
 /decl/flooring/tiling/mono/white
 	icon_base = "monotile_light"
 	color = COLOR_OFF_WHITE
-	build_type = /obj/item/stack/tile/mono/white
 
 /decl/flooring/tiling/white
 	icon_base = "tiled_light"
 	desc = "How sterile."
 	color = COLOR_OFF_WHITE
-	build_type = /obj/item/stack/tile/floor_white
 
 /decl/flooring/tiling/dark
 	desc = "How ominous."
 	color = COLOR_DARK_GRAY
-	build_type = /obj/item/stack/tile/floor_dark
 
 /decl/flooring/tiling/dark/mono
 	icon_base = "monotile"
@@ -318,17 +305,14 @@ var/list/flooring_types
 	icon_base = "freezer"
 	color = null
 	has_damage_range = null
-	build_type = /obj/item/stack/tile/floor_freezer
 
 /decl/flooring/tiling/tech
 	icon = 'icons/turf/flooring/techfloor.dmi'
 	icon_base = "techfloor_gray"
-	build_type = /obj/item/stack/tile/techgrey
 	color = null
 
 /decl/flooring/tiling/tech/grid
 	icon_base = "techfloor_grid"
-	build_type = /obj/item/stack/tile/techgrid
 
 /decl/flooring/tiling/new_tile
 	icon_base = "tile_full"
@@ -342,7 +326,6 @@ var/list/flooring_types
 
 /decl/flooring/tiling/new_tile/techmaint
 	icon_base = "techmaint"
-	build_type = /obj/item/stack/tile/techmaint
 
 /decl/flooring/tiling/new_tile/monofloor
 	icon_base = "monofloor"
@@ -351,12 +334,10 @@ var/list/flooring_types
 /decl/flooring/tiling/new_tile/steel_grid
 	icon_base = "grid"
 	color = COLOR_GUNMETAL
-	build_type = /obj/item/stack/tile/grid
 
 /decl/flooring/tiling/new_tile/steel_ridged
 	icon_base = "ridged"
 	color = COLOR_GUNMETAL
-	build_type = /obj/item/stack/tile/ridge
 
 /decl/flooring/wood
 	name = "wooden floor"
