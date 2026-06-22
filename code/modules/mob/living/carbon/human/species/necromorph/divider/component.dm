@@ -20,7 +20,7 @@
 /mob/living/simple_animal/necromorph/divider_component
 	max_health = 35
 	icon = 'icons/mob/necromorph/divider/components_large.dmi'
-	var/leap_windup_time = 0.8 SECOND
+	var/leap_windup_time = 0.8 SECONDS
 	var/leap_range = 6
 	var/leap_cooldown = 10 SECONDS
 	speed = 3
@@ -30,7 +30,7 @@
 	default_pixel_x = -16
 	evasion = 40
 
-/mob/living/simple_animal/necromorph/divider_component/do_attack_animation(var/atom/target)
+/mob/living/simple_animal/necromorph/divider_component/do_attack_animation(atom/target)
 	flick(attack_state, src)
 	.=..()
 
@@ -51,11 +51,11 @@
 	AddComponent(/datum/component/clickbox, x_offset = -pixel_x, min_scale = 1.2)
 
 //Called when this atom starts charging at another, just before taking the first step
-/mob/living/simple_animal/necromorph/divider_component/charge_started(var/datum/extension/charge/charge)
+/mob/living/simple_animal/necromorph/divider_component/charge_started(datum/extension/charge/charge)
 	update_icon()
 
 //Called when this atom starts finishes a charge, called after everything, just before the cooldown timer starts
-/mob/living/simple_animal/necromorph/divider_component/charge_ended(var/datum/extension/charge/charge)
+/mob/living/simple_animal/necromorph/divider_component/charge_ended(datum/extension/charge/charge)
 	update_icon()
 
 
@@ -66,7 +66,7 @@
 	blur_filter_strength = 1
 
 
-/mob/living/simple_animal/necromorph/divider_component/proc/leap(var/atom/A)
+/mob/living/simple_animal/necromorph/divider_component/proc/leap(atom/A)
 	set name = "Leap Attack"
 	set category = "Abilities"
 

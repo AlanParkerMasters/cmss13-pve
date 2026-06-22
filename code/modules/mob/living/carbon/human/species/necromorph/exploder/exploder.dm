@@ -395,12 +395,12 @@ The last resort. The exploder screams and shakes violently for 3 seconds, before
 	base_miss_chance = 20	//Thin and hard target, trying to shoot this is a risky move
 
 //When severed, the arm is always cut cleanly, so that the pustule drops off without detonating
-/obj/item/organ/external/arm/simple/exploder/droplimb(var/clean, var/disintegrate = DROPLIMB_EDGE, var/ignore_children, var/silent, var/atom/cutter)
+/obj/item/organ/external/arm/simple/exploder/droplimb(clean, disintegrate = DROPLIMB_EDGE, ignore_children, silent, atom/cutter)
 	.=..(TRUE, DROPLIMB_EDGE, ignore_children, silent)	//We pass true to clean, and droplimb edge to make sure its cleanly cut
 
 
 //When severed, the arm is a seperate object with the pustule in its contents. We pass along events to it
-/obj/item/organ/external/arm/simple/exploder/throw_impact(atom/hit_atom, var/speed)
+/obj/item/organ/external/arm/simple/exploder/throw_impact(atom/hit_atom, speed)
 	for (var/obj/item/organ/external/exploder_pustule/EP in contents)
 		EP.throw_impact(hit_atom, speed)
 
@@ -408,7 +408,7 @@ The last resort. The exploder screams and shakes violently for 3 seconds, before
 
 
 
-/obj/item/organ/external/arm/simple/exploder/bullet_act(var/obj/item/projectile/P, var/def_zone)
+/obj/item/organ/external/arm/simple/exploder/bullet_act(obj/item/projectile/P, def_zone)
 	for (var/obj/item/organ/external/exploder_pustule/EP in contents)
 		EP.bullet_act(P, def_zone)
 
@@ -427,7 +427,7 @@ The last resort. The exploder screams and shakes violently for 3 seconds, before
 /*
 	Abilities
 */
-/atom/movable/proc/exploder_charge(var/mob/living/A)
+/atom/movable/proc/exploder_charge(mob/living/A)
 	set name = "Charge"
 	set category = "Abilities"
 

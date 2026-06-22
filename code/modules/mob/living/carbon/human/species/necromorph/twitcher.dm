@@ -143,7 +143,7 @@ All of these properties combined make Step Strike tricky and disorienting to use
 
 
 //Setup the twitch extension which handles a lot of the special behaviour
-/datum/species/necromorph/slasher/twitcher/add_inherent_verbs(var/mob/living/carbon/human/H)
+/datum/species/necromorph/slasher/twitcher/add_inherent_verbs(mob/living/carbon/human/H)
 	.=..()
 	set_extension(H, /datum/extension/twitch)
 
@@ -191,7 +191,7 @@ All of these properties combined make Step Strike tricky and disorienting to use
 	airlock_force_power = 3
 	armor_penetration = 10
 
-/datum/species/necromorph/slasher/twitcher/oracle/add_inherent_verbs(var/mob/living/carbon/human/H)
+/datum/species/necromorph/slasher/twitcher/oracle/add_inherent_verbs(mob/living/carbon/human/H)
 	.=..()
 	var/datum/extension/twitch/twitch = get_extension(H, /datum/extension/twitch)
 	twitch.defensive_displace_cooldown = 2 SECONDS
@@ -215,7 +215,7 @@ All of these properties combined make Step Strike tricky and disorienting to use
 
 //Twitcher charge
 //Aside from being faster moving, it also kicks off with a shortrange teleport, and has a much lower cooldown
-/mob/living/carbon/human/proc/twitcher_charge(var/mob/living/A)
+/mob/living/carbon/human/proc/twitcher_charge(mob/living/A)
 	set name = "Charge"
 	set category = "Abilities"
 
@@ -265,7 +265,7 @@ All of these properties combined make Step Strike tricky and disorienting to use
 
 
 
-/mob/living/carbon/human/proc/twitcher_step_strike(var/atom/A)
+/mob/living/carbon/human/proc/twitcher_step_strike(atom/A)
 	set name = "Step Strike"
 	set category = "Abilities"
 
@@ -274,7 +274,7 @@ All of these properties combined make Step Strike tricky and disorienting to use
 	if (.)
 		play_species_audio(src, SOUND_ATTACK, VOLUME_MID, 1, 3)
 
-/mob/living/carbon/human/proc/twitcher_step_strike_oracle(var/atom/A)
+/mob/living/carbon/human/proc/twitcher_step_strike_oracle(atom/A)
 	set name = "Step Strike"
 	set category = "Abilities"
 
@@ -285,7 +285,7 @@ All of these properties combined make Step Strike tricky and disorienting to use
 
 //Defensive blinking
 //The twitcher will dodge one attack every 5 secs or so, greatly reducing its damage and moving to a nearby tile
-/datum/species/necromorph/slasher/twitcher/handle_organ_external_damage(var/obj/item/organ/external/organ, brute, burn, damage_flags, used_weapon)
+/datum/species/necromorph/slasher/twitcher/handle_organ_external_damage(obj/item/organ/external/organ, brute, burn, damage_flags, used_weapon)
 	var/mob/living/L = organ.owner
 	var/datum/extension/twitch/T = get_extension(L, /datum/extension/twitch)
 	if (T && T.displace(TRUE))

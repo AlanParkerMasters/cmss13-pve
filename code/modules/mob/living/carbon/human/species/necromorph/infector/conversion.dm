@@ -2,7 +2,7 @@
 	Used for necrotoxin and reanimate, but not for parasite leap
 	The corpse starts shaking and twitching, notifying everyone nearby what's about to happen
 */
-/mob/living/proc/start_necromorph_conversion(var/duration = 12, enhanced_bonus = 0)
+/mob/living/proc/start_necromorph_conversion(duration = 12, enhanced_bonus = 0)
 	ADD_TRANSFORMATION_MOVEMENT_HANDLER(src)
 	var/intensity_step = 1 / duration
 	var/intensity = 0
@@ -29,7 +29,7 @@
 			var/list/adverbs	=	list("gruesomely", "uncontrollably", "violently", "awkwardly", "horribly", "pitifully", "painfully")
 			visible_message("[src] [prob(20)	?	"[pick(adverbs)] ":""][pick(verbs)] [prob(20)	?	"and [pick(verbs)], ":""][pick(adverbs)]")
 
-		sleep(1 SECOND)
+		sleep(1 SECONDS)
 
 	DEL_TRANSFORMATION_MOVEMENT_HANDLER(src)
 
@@ -40,7 +40,7 @@
 /*
 	The place where converting actually happens, this is instant, no sleeps here
 */
-/mob/living/proc/necromorph_conversion(var/compatibility = 1, enh_bonus = 0)
+/mob/living/proc/necromorph_conversion(compatibility = 1, enh_bonus = 0)
 
 
 	//Final
@@ -66,7 +66,7 @@
 
 //TODO: Fix necromorphs wearing rigs
 
-/mob/living/carbon/human/necromorph_conversion(var/compatibility = 1, enh_bonus = 0)
+/mob/living/carbon/human/necromorph_conversion(compatibility = 1, enh_bonus = 0)
 	var/biomass_before = biomass
 
 	//Final
@@ -95,7 +95,7 @@
 
 	//Lets do lots of audio of flesh cracking at randomly staggered intervals over a second
 	for (var/i in 1 to 5)
-		spawn(rand_between(0, 1 SECOND))
+		spawn(rand_between(0, 1 SECONDS))
 			playsound(src, "fracture", VOLUME_HIGH, TRUE)
 
 	//We do gib visual fx without actually destroying the mob
@@ -127,7 +127,7 @@
 
 	return options
 
-/mob/living/carbon/human/get_necromorph_conversion_possibilities(var/compatibility = 1)
+/mob/living/carbon/human/get_necromorph_conversion_possibilities(compatibility = 1)
 	//These options are always available
 	var/list/options = list(SPECIES_NECROMORPH_SLASHER = (9.5 / compatibility),
 	SPECIES_NECROMORPH_SLASHER_ENHANCED = (1 * compatibility))

@@ -33,7 +33,7 @@
 	.=..()
 	add_modclick_verb(KEY_CTRLALT, /mob/living/simple_animal/necromorph/divider_component/head/proc/takeover_verb)
 
-/mob/living/simple_animal/necromorph/divider_component/head/get_controlling_player(var/fetch = FALSE)
+/mob/living/simple_animal/necromorph/divider_component/head/get_controlling_player(fetch = FALSE)
 	if (!fetch)
 		return
 	.=..()
@@ -42,7 +42,7 @@
 
 //Inhabits the corpse of a headless human
 //This normal version is used on an already dead corpse on the ground
-/mob/living/simple_animal/necromorph/divider_component/head/proc/takeover_verb(var/mob/living/carbon/human/H)
+/mob/living/simple_animal/necromorph/divider_component/head/proc/takeover_verb(mob/living/carbon/human/H)
 	if (QDELETED(src) || !isturf(loc) || incapacitated(INCAPACITATION_FORCELYING))
 		return //Prevent some edge cases
 
@@ -77,7 +77,7 @@
 /*
 	Core Takeover Code
 */
-/mob/living/simple_animal/necromorph/divider_component/head/proc/takeover(var/mob/living/carbon/human/H)
+/mob/living/simple_animal/necromorph/divider_component/head/proc/takeover(mob/living/carbon/human/H)
 	//Safety checks done, we are past the point of no return
 
 
@@ -155,14 +155,14 @@
 	can_regrow = FALSE
 
 
-/obj/item/organ/external/head/simple/divider/New(var/mob/living/carbon/holder, var/datum/dna/given_dna)
+/obj/item/organ/external/head/simple/divider/New(mob/living/carbon/holder, datum/dna/given_dna)
 	.=..()
 	RegisterSignal(holder, COMSIG_LIVING_DEATH, .proc/holder_death)
 
 
 
 //It becomes a head mob again if severed
-/obj/item/organ/external/head/simple/divider/droplimb(var/clean, var/disintegrate = DROPLIMB_EDGE, var/ignore_children, var/silent, var/atom/cutter)
+/obj/item/organ/external/head/simple/divider/droplimb(clean, disintegrate = DROPLIMB_EDGE, ignore_children, silent, atom/cutter)
 	if (!QDELETED(src) && owner)
 		create_divider_component(owner, 0)
 		qdel(src)
@@ -183,7 +183,7 @@
 	Base Organ Code
 */
 //If the divider player is still connected, they transfer control to the head
-/obj/item/organ/external/head/create_divider_component(var/mob/living/carbon/human/H, var/deletion_delay)
+/obj/item/organ/external/head/create_divider_component(mob/living/carbon/human/H, deletion_delay)
 	.=..()
 	if (.)
 		var/mob/living/simple_animal/necromorph/divider_component/L = .
@@ -196,7 +196,7 @@
 
 		//Removing the head kills the divider's main body
 		//We do a spawn then some checks here to prevent infinite loops
-		spawn(1 SECOND)
+		spawn(1 SECONDS)
 			if (!QDELETED(H) && H.stat != DEAD)
 				H.death()
 
@@ -220,7 +220,7 @@
 	statmods = list(STATMOD_RANGED_ACCURACY = -20,
 	STATMOD_MOVESPEED_MULTIPLICATIVE = 0.70)
 
-/datum/extension/divider_puppet/New(var/mob/newholder)
+/datum/extension/divider_puppet/New(mob/newholder)
 	.=..()
 	H = newholder
 
@@ -234,7 +234,7 @@
 		H.visible_message("[H] lurches around awkwardly")
 		H.lurch()
 
-/datum/extension/divider_puppet/proc/holder_bump(var/mover, var/obstacle)
+/datum/extension/divider_puppet/proc/holder_bump(mover, obstacle)
 	SIGNAL_HANDLER
 	if (prob(10))
 		H.visible_message("[H] bumps into [obstacle] and staggers off")
@@ -243,7 +243,7 @@
 /*
 	Mounting
 */
-/mob/living/simple_animal/necromorph/divider_component/head/charge_impact(var/datum/extension/charge/leap/charge)
+/mob/living/simple_animal/necromorph/divider_component/head/charge_impact(datum/extension/charge/leap/charge)
 	shake_camera(charge.user,5,2)
 	.=TRUE
 	if (isliving(charge.last_obstacle))
@@ -369,7 +369,7 @@
 	Core checks. It is called as part of other check procs on initial tongue contact, and periodically while performing the execution.
 	If it returns false, the execution is denied or cancelled.
 */
-/proc/divider_head_safety(var/mob/living/simple_animal/necromorph/divider_component/head/user, var/mob/living/carbon/human/target)
+/proc/divider_head_safety(mob/living/simple_animal/necromorph/divider_component/head/user, mob/living/carbon/human/target)
 
 	//We only target humans
 	if (!istype(user) || !istype(target))
@@ -393,7 +393,7 @@
 /*
 	Start check, called to see if we can grab the mob
 */
-/proc/divider_head_start(var/mob/living/simple_animal/necromorph/divider_component/head/user, var/mob/living/carbon/human/target)
+/proc/divider_head_start(mob/living/simple_animal/necromorph/divider_component/head/user, mob/living/carbon/human/target)
 	//Core first
 	.=divider_head_safety(user, target)
 	if (. == EXECUTION_CANCEL)
@@ -422,7 +422,7 @@
 	1 = continue, keep going
 	2 = win, the execution ends successfully, the victim is killed and we skip to the final stage
 */
-/proc/divider_head_continue(var/mob/living/simple_animal/necromorph/divider_component/head/user, var/mob/living/carbon/human/target)
+/proc/divider_head_continue(mob/living/simple_animal/necromorph/divider_component/head/user, mob/living/carbon/human/target)
 	//Core first
 	.=divider_head_safety(user, target)
 	if (. == EXECUTION_CANCEL)

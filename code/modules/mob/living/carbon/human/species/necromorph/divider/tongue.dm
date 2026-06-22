@@ -18,7 +18,7 @@
 	set desc = "Launches out your tongue to grab a human and strangle them. HK: Ctrl+alt+click"
 
 	face_atom(A)
-	.= shoot_ability(/datum/extension/shoot/tongue, A , /obj/item/projectile/tongue, accuracy = 200, dispersion = 0, num = 1, windup_time = 0.5 SECONDS, fire_sound = null, nomove = 1 SECOND, cooldown = 10 SECONDS)
+	.= shoot_ability(/datum/extension/shoot/tongue, A , /obj/item/projectile/tongue, accuracy = 200, dispersion = 0, num = 1, windup_time = 0.5 SECONDS, fire_sound = null, nomove = 1 SECONDS, cooldown = 10 SECONDS)
 	if (.)
 		play_species_audio(src, SOUND_ATTACK, VOLUME_MID, 1, 3)
 
@@ -68,7 +68,7 @@
 		var/vector2/return_loc = firer.get_global_pixel_offset(src)
 		var/return_time = (return_loc.Magnitude() / WORLD_ICON_SIZE) * (step_delay*1.5)
 
-		sleep(1 SECOND)
+		sleep(1 SECONDS)
 		tongue.retract(return_time)
 		sleep(return_time)
 
@@ -152,7 +152,7 @@
 	mouse_opacity = TRUE
 
 //Tongue takes double damage from edged weapons
-/obj/effect/projectile/tether/tongue/take_damage(var/amount, var/damtype = BRUTE, var/user, var/used_weapon, var/bypass_resist = FALSE)
+/obj/effect/projectile/tether/tongue/take_damage(amount, damtype = BRUTE, user, used_weapon, bypass_resist = FALSE)
 	var/obj/item/I = used_weapon
 	if (I && istype(I) && I.edge)
 		amount *= 2
@@ -163,7 +163,7 @@
 /obj/effect/projectile/tether/tongue/zero_health()
 	retract()
 
-/obj/effect/projectile/tether/tongue/retract(var/time = 1 SECOND, var/delete_on_finish = TRUE, var/steps = 3)
+/obj/effect/projectile/tether/tongue/retract(time = 1 SECONDS, var/delete_on_finish = TRUE, var/steps = 3)
 	if (origin_atom)
 		var/datum/extension/shoot/tongue/T = get_extension(origin_atom, /datum/extension/shoot/tongue)
 		if (T && T.tongue == src)
@@ -204,7 +204,7 @@
 /*
 	Start check, called to see if we can grab the mob
 */
-/proc/divider_tongue_start(var/mob/living/carbon/human/user, var/mob/living/carbon/human/target)
+/proc/divider_tongue_start(mob/living/carbon/human/user, mob/living/carbon/human/target)
 	//Core first
 	.=divider_tongue_safety(user, target)
 	if (. == EXECUTION_CANCEL)
@@ -236,7 +236,7 @@
 	1 = continue, keep going
 	2 = win, the execution ends successfully, the victim is killed and we skip to the final stage
 */
-/proc/divider_tongue_continue(var/mob/living/carbon/human/user, var/mob/living/carbon/human/target)
+/proc/divider_tongue_continue(mob/living/carbon/human/user, mob/living/carbon/human/target)
 	//Core first
 	.=divider_tongue_safety(user, target)
 	if (. == EXECUTION_CANCEL)
@@ -309,7 +309,7 @@
 	user.play_species_audio(src, SOUND_PAIN, VOLUME_MID, 1, 2)
 	var/obj/effect/projectile/tether/T = weapon
 	if (istype(T))
-		T.retract(1 SECOND)
+		T.retract(1 SECONDS)
 
 /datum/extension/execution/divider_tongue/can_start()
 	if (divider_tongue_start(user, victim) != EXECUTION_CONTINUE)

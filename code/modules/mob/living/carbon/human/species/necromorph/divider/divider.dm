@@ -186,7 +186,7 @@ Reanimate can be used to take control of any already-headless corpse on the grou
 		if (istype(D))
 			D.divide(src)
 
-/datum/species/necromorph/divider/handle_amputated(var/mob/living/carbon/human/H, var/obj/item/organ/external/E, var/clean, var/disintegrate, var/ignore_children, var/silent)
+/datum/species/necromorph/divider/handle_amputated(mob/living/carbon/human/H, obj/item/organ/external/E, clean, disintegrate, ignore_children, silent)
 	//If the limb is cut uncleanly with an edge, then its gonna fly, so we'll give it a window to finish flying then create the mob where it lands
 	if (disintegrate == DROPLIMB_EDGE && !clean)
 		spawn(20)
@@ -198,19 +198,19 @@ Reanimate can be used to take control of any already-headless corpse on the grou
 		//If its a different type of cut, the limb is about to be deleted, we've got to get in there first, right now
 
 		//We create the limb right here
-		var/mob/living/L = E.create_divider_component(H, deletion_delay = 1 SECOND)
+		var/mob/living/L = E.create_divider_component(H, deletion_delay = 1 SECONDS)
 
 		//And then throw the newly created creature
 		L.throw_at(pick(RANGE_TURFS(H, 3)), speed = (BASE_THROW_SPEED / 2))
 
 
-/datum/species/necromorph/divider/handle_death(var/mob/living/carbon/human/H) //Handles any species-specific death events (such as dionaea nymph spawns).
+/datum/species/necromorph/divider/handle_death(mob/living/carbon/human/H) //Handles any species-specific death events (such as dionaea nymph spawns).
 	divide(H)
 	.=..()
 
 
 //Called on death or when using the ability manually. Disconnects all limbs
-/datum/species/necromorph/divider/proc/divide(var/mob/living/carbon/human/H)
+/datum/species/necromorph/divider/proc/divide(mob/living/carbon/human/H)
 	H.facedir(SOUTH)
 	for (var/limbtype in list(BP_HEAD, BP_L_ARM, BP_R_ARM, BP_L_LEG, BP_R_LEG))
 		var/obj/item/organ/external/E = H.get_organ(limbtype)
@@ -222,7 +222,7 @@ Reanimate can be used to take control of any already-headless corpse on the grou
 /*
 	Movement
 */
-/datum/species/necromorph/divider/setup_movement(var/mob/living/carbon/human/H)
+/datum/species/necromorph/divider/setup_movement(mob/living/carbon/human/H)
 	.=..()
 	set_extension(H, /datum/extension/cadence/divider)
 
@@ -243,7 +243,7 @@ Reanimate can be used to take control of any already-headless corpse on the grou
 	var/divider_component_type = /mob/living/simple_animal/necromorph/divider_component/arm
 
 
-/obj/item/organ/external/proc/create_divider_component(var/mob/living/carbon/human/H, var/deletion_delay = 0)
+/obj/item/organ/external/proc/create_divider_component(mob/living/carbon/human/H, deletion_delay = 0)
 	if (!divider_component_type)
 		return FALSE
 	var/mob/living/simple_animal/necromorph/divider_component/L = new divider_component_type(get_turf(src))
@@ -273,7 +273,7 @@ Reanimate can be used to take control of any already-headless corpse on the grou
 /*--------------------------------
 	Arm Swing
 --------------------------------*/
-/mob/living/carbon/human/proc/divider_arm_swing(var/atom/target)
+/mob/living/carbon/human/proc/divider_arm_swing(atom/target)
 	set name = "Swipe"
 	set desc = "Swings an arm in a moderate radius"
 	set category = "Abilities"
@@ -284,7 +284,7 @@ Reanimate can be used to take control of any already-headless corpse on the grou
 	target = target,
 	angle = 130,
 	range = 3,
-	duration = 0.75 SECOND,
+	duration = 0.75 SECONDS,
 	windup = 0.1 SECONDS,
 	cooldown = 3.5 SECONDS,
 	damage = 20,

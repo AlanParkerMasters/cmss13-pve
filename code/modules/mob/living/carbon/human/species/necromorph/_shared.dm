@@ -4,4 +4,4 @@ This necromorph is capable of crawling along walls, over the heads of other crea
 
 
 
-#define SHARED_COOLDOWN_SHOT	(1.5 SECOND)
+#define SHARED_COOLDOWN_SHOT	(1.5 SECONDS)

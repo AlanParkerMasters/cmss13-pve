@@ -746,7 +746,7 @@ If performed successfully on a live crewman, it yields a bonus of 50kg biomass f
 //Scream: Just calls shout_long, no stun to self
 //----------------------------------------------------
 /datum/execution_stage/tripod_scream
-	duration = 2 SECOND
+	duration = 2 SECONDS
 
 /datum/execution_stage/tripod_scream/enter()
 	.=..()
@@ -760,7 +760,7 @@ If performed successfully on a live crewman, it yields a bonus of 50kg biomass f
 //Animation makes the user go down and tilt forward
 //----------------------------------------------------
 /datum/execution_stage/tripod_tongue_force
-	duration = 5 SECOND
+	duration = 5 SECONDS
 
 /datum/execution_stage/tripod_tongue_force/enter()
 	.=..()
@@ -792,7 +792,7 @@ If performed successfully on a live crewman, it yields a bonus of 50kg biomass f
 //Animation makes the user go down and tilt forward
 //----------------------------------------------------
 /datum/execution_stage/finisher/tripod_tongue_pull
-	duration = 2 SECOND
+	duration = 2 SECONDS
 
 /datum/execution_stage/finisher/tripod_tongue_pull/enter()
 	.=..()
@@ -826,7 +826,7 @@ If performed successfully on a live crewman, it yields a bonus of 50kg biomass f
 //Animation makes the user go down and tilt forward
 //----------------------------------------------------
 /datum/execution_stage/tripod_bisect
-	duration = 5 SECOND
+	duration = 5 SECONDS
 
 /datum/execution_stage/tripod_bisect/enter()
 	.=..()

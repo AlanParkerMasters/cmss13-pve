@@ -142,7 +142,7 @@ Best used for harassment, skirmishing and initiating fights from afar against un
 	if (LS && (world.time - LS.started_at) < SHARED_COOLDOWN_SHOT)
 		return
 
-	.= shoot_ability(/datum/extension/shoot/snapshot, A , /obj/item/projectile/bullet/acid/spitter_snap, accuracy = 50, dispersion = 0, num = 1, windup_time = 0, fire_sound = null, nomove = 1 SECOND, cooldown = 4 SECONDS)
+	.= shoot_ability(/datum/extension/shoot/snapshot, A , /obj/item/projectile/bullet/acid/spitter_snap, accuracy = 50, dispersion = 0, num = 1, windup_time = 0, fire_sound = null, nomove = 1 SECONDS, cooldown = 4 SECONDS)
 	if (.)
 		play_species_audio(src, SOUND_ATTACK, VOLUME_MID, 1, 3)
 
@@ -163,7 +163,7 @@ Best used for harassment, skirmishing and initiating fights from afar against un
 	if (LS && (world.time - LS.started_at) < SHARED_COOLDOWN_SHOT)
 		return
 
-	.= shoot_ability(/datum/extension/shoot/longshot, A , /obj/item/projectile/bullet/acid/spitter_long, accuracy = 50, dispersion = 0, num = 1, windup_time = 0.5 SECONDS, fire_sound = null, nomove = 0.25 SECOND, cooldown = 1.5 SECONDS)
+	.= shoot_ability(/datum/extension/shoot/longshot, A , /obj/item/projectile/bullet/acid/spitter_long, accuracy = 50, dispersion = 0, num = 1, windup_time = 0.5 SECONDS, fire_sound = null, nomove = 0.25 SECONDS, cooldown = 1.5 SECONDS)
 	if (.)
 		play_species_audio(src, SOUND_ATTACK, VOLUME_MID, 1, 3)
 

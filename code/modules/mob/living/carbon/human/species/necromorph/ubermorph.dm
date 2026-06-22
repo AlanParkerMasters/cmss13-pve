@@ -158,7 +158,7 @@ Best used near the end, when all seems quiet, to help the necromorphs hunt down 
 /datum/species/necromorph/ubermorph/get_healthstring()
 	return "&#8734;"	//The ubermorph has infinite health, lets try to communicate that
 
-/datum/species/necromorph/ubermorph/handle_death_check(var/mob/living/carbon/human/H)
+/datum/species/necromorph/ubermorph/handle_death_check(mob/living/carbon/human/H)
 	//No
 	return FALSE
 
@@ -219,13 +219,13 @@ Best used near the end, when all seems quiet, to help the necromorphs hunt down 
 				L.take_overall_damage(15)
 
 		//Lets do some cool effects
-		var/obj/effect/effect/expanding_circle/EC = new /obj/effect/effect/expanding_circle(loc, 1.5, 1.5 SECOND,"#ff0000")
+		var/obj/effect/effect/expanding_circle/EC = new /obj/effect/effect/expanding_circle(loc, 1.5, 1.5 SECONDS,"#ff0000")
 		EC.pixel_y += 40	//Offset it so it appears to be at our mob's head
 		spawn(4)
-			EC = new /obj/effect/effect/expanding_circle(loc, 1.5, 1.5 SECOND,"#ff0000")
+			EC = new /obj/effect/effect/expanding_circle(loc, 1.5, 1.5 SECONDS,"#ff0000")
 			EC.pixel_y += 40	//Offset it so it appears to be at our mob's head
 			spawn(4)
-				EC = new /obj/effect/effect/expanding_circle(loc, 1.5, 1.5 SECOND,"#ff0000")
+				EC = new /obj/effect/effect/expanding_circle(loc, 1.5, 1.5 SECONDS,"#ff0000")
 				EC.pixel_y += 40	//Offset it so it appears to be at our mob's head
 
 /*
@@ -234,7 +234,7 @@ Best used near the end, when all seems quiet, to help the necromorphs hunt down 
 
 	We completely replace the charge_attack proc, as we have different safety checks
 */
-/mob/living/carbon/human/proc/ubermorph_lunge(var/atom/A)
+/mob/living/carbon/human/proc/ubermorph_lunge(atom/A)
 	set name = "Lunge"
 	set category = "Abilities"
 	set desc = "A shortrange charge which causes heavy internal damage to one victim. Often fatal. HK: Alt+Click:"
@@ -270,7 +270,7 @@ Best used near the end, when all seems quiet, to help the necromorphs hunt down 
 
 
 //The impale
-/datum/species/necromorph/ubermorph/charge_impact(var/datum/extension/charge/charge)
+/datum/species/necromorph/ubermorph/charge_impact(datum/extension/charge/charge)
 	var/mob/living/carbon/human/ubermorph = charge.user
 	if (isliving(charge.last_obstacle))
 		var/mob/living/L = charge.last_obstacle
