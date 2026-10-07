@@ -1,0 +1,1013 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"af" = (
+/mob/living/simple_animal/hostile/giant_spider/hunter,
+/turf/open/auto_turf/ice/layer1,
+/area/shiva/interior/caves/left_spiders)
+"aL" = (
+/obj/structure/prop/ice_colony/ground_wire,
+/turf/open/auto_turf/ice/layer1,
+/area/shiva/interior/caves/left_spiders)
+"bL" = (
+/obj/structure/prop/ice_colony/ground_wire{
+	dir = 1
+	},
+/turf/open/auto_turf/ice/layer2,
+/area/shiva/interior/caves/left_spiders)
+"bP" = (
+/obj/structure/prop/static_tank/fuel,
+/turf/open/floor/shiva/north,
+/area/shiva/interior/caves/left_spiders)
+"cf" = (
+/obj/item/lightstick/planted,
+/turf/open/auto_turf/snow/layer2,
+/area/shiva/exterior/valley)
+"cz" = (
+/obj/structure/prop/ice_colony/ground_wire,
+/turf/open/auto_turf/ice/layer2,
+/area/shiva/interior/caves/left_spiders)
+"dS" = (
+/obj/structure/platform/stone/strata/north,
+/obj/structure/platform/stone/strata/west,
+/turf/open/gm/river,
+/area/shiva/interior/caves/left_spiders)
+"fd" = (
+/obj/structure/prop/ice_colony/ground_wire{
+	dir = 1
+	},
+/turf/open/auto_turf/snow/layer2,
+/area/shiva/exterior/valley)
+"ff" = (
+/obj/structure/barricade/handrail/wire,
+/turf/open/auto_turf/ice/layer2,
+/area/shiva/interior/caves/left_spiders)
+"fj" = (
+/turf/template_noop,
+/area/template_noop)
+"gf" = (
+/obj/structure/ice/thin/single{
+	opacity = 1;
+	unacidable = 0
+	},
+/obj/structure/blocker/forcefield/multitile_vehicles,
+/turf/open/auto_turf/ice/layer2,
+/area/shiva/interior/caves/left_spiders)
+"hY" = (
+/obj/structure/tunnel{
+	id = "south_tcomms_tunnel"
+	},
+/turf/open/auto_turf/ice/layer1,
+/area/shiva/interior/caves/left_spiders)
+"hZ" = (
+/obj/structure/prop/ice_colony/ground_wire{
+	dir = 8
+	},
+/turf/open/auto_turf/snow/layer2,
+/area/shiva/exterior/valley)
+"ia" = (
+/obj/item/tool/pickaxe/diamond{
+	desc = "So we back in the mine, swinging pickaxe from side to side, side side, to side."
+	},
+/turf/open/auto_turf/ice/layer1,
+/area/shiva/interior/caves/left_spiders)
+"jt" = (
+/obj/structure/platform/stone/strata,
+/obj/structure/platform/stone/strata/west,
+/turf/open/gm/river,
+/area/shiva/interior/caves/left_spiders)
+"jP" = (
+/obj/item/device/flashlight/lamp/tripod/grey,
+/turf/open/auto_turf/ice/layer1,
+/area/shiva/interior/caves/left_spiders)
+"kW" = (
+/obj/effect/decal/cleanable/blood/drip,
+/turf/open/auto_turf/snow/layer2,
+/area/shiva/exterior/valley)
+"lz" = (
+/obj/structure/barricade/handrail/wire{
+	dir = 1
+	},
+/turf/open/auto_turf/ice/layer1,
+/area/shiva/interior/caves/left_spiders)
+"lP" = (
+/obj/effect/decal/cleanable/blood/writing{
+	dir = 10
+	},
+/turf/open/auto_turf/ice/layer2,
+/area/shiva/interior/caves/left_spiders)
+"lT" = (
+/obj/structure/barricade/handrail/wire{
+	dir = 1
+	},
+/obj/item/device/flashlight/lamp/tripod/grey,
+/turf/open/auto_turf/ice/layer2,
+/area/shiva/interior/caves/left_spiders)
+"mC" = (
+/obj/effect/spider/stickyweb,
+/turf/open/auto_turf/ice/layer2,
+/area/shiva/interior/caves/left_spiders)
+"oL" = (
+/obj/structure/prop/ice_colony/ground_wire{
+	dir = 1
+	},
+/turf/open/auto_turf/ice/layer1,
+/area/shiva/interior/caves/left_spiders)
+"pr" = (
+/obj/structure/surface/rack,
+/obj/item/weapon/ice_axe/red{
+	pixel_y = -4
+	},
+/obj/item/weapon/ice_axe,
+/obj/item/weapon/ice_axe/green{
+	pixel_y = 4
+	},
+/turf/open/floor/shiva/floor3,
+/area/shiva/interior/caves/left_spiders)
+"pO" = (
+/obj/structure/prop/ice_colony/ground_wire,
+/obj/item/device/flashlight/lamp/tripod/grey,
+/obj/structure/barricade/handrail/wire{
+	dir = 8
+	},
+/turf/open/auto_turf/ice/layer1,
+/area/shiva/interior/caves/left_spiders)
+"rh" = (
+/obj/structure/barricade/handrail/wire,
+/turf/open/auto_turf/ice/layer1,
+/area/shiva/interior/caves/left_spiders)
+"sA" = (
+/obj/effect/spider/stickyweb{
+	icon_state = "stickyweb2"
+	},
+/turf/open/auto_turf/ice/layer1,
+/area/shiva/interior/caves/left_spiders)
+"tr" = (
+/obj/structure/prop/ice_colony/ground_wire{
+	dir = 4
+	},
+/turf/open/auto_turf/ice/layer2,
+/area/shiva/interior/caves/left_spiders)
+"tF" = (
+/obj/effect/spider/cocoon{
+	icon_state = "cocoon_large2"
+	},
+/turf/open/auto_turf/ice/layer1,
+/area/shiva/interior/caves/left_spiders)
+"tR" = (
+/obj/effect/spider/cocoon{
+	icon_state = "cocoon_large1"
+	},
+/turf/open/auto_turf/ice/layer2,
+/area/shiva/interior/caves/left_spiders)
+"ug" = (
+/obj/effect/spider/cocoon,
+/obj/effect/spider/stickyweb,
+/turf/open/auto_turf/ice/layer1,
+/area/shiva/interior/caves/left_spiders)
+"vX" = (
+/obj/structure/prop/ice_colony/dense/planter_box/hydro{
+	density = 0;
+	pixel_x = -16;
+	pixel_y = 13
+	},
+/obj/structure/platform/stone/strata,
+/obj/structure/platform/stone/strata/east,
+/turf/open/gm/river,
+/area/shiva/interior/caves/left_spiders)
+"xx" = (
+/obj/structure/prop/ice_colony/ground_wire,
+/obj/structure/barricade/handrail/wire{
+	dir = 4
+	},
+/turf/open/auto_turf/ice/layer1,
+/area/shiva/interior/caves/left_spiders)
+"xy" = (
+/obj/structure/largecrate/random,
+/turf/open/auto_turf/ice/layer1,
+/area/shiva/interior/caves/left_spiders)
+"xE" = (
+/obj/item/lightstick/red/spoke/planted{
+	pixel_x = 16;
+	pixel_y = -3
+	},
+/turf/open/auto_turf/ice/layer1,
+/area/shiva/interior/caves/left_spiders)
+"xF" = (
+/turf/open/auto_turf/snow/layer2,
+/area/shiva/exterior/valley)
+"xG" = (
+/obj/structure/largecrate/random/case/double,
+/turf/open/floor/shiva/north,
+/area/shiva/interior/caves/left_spiders)
+"yu" = (
+/turf/closed/wall/shiva/prefabricated/pink,
+/area/shiva/interior/caves/left_spiders)
+"yS" = (
+/obj/structure/largecrate/random/barrel/blue,
+/turf/open/floor/shiva/north,
+/area/shiva/interior/caves/left_spiders)
+"Am" = (
+/obj/effect/spider/cocoon,
+/turf/open/auto_turf/ice/layer1,
+/area/shiva/interior/caves/left_spiders)
+"Ao" = (
+/obj/item/lightstick/planted,
+/obj/structure/barricade/handrail/wire,
+/turf/open/auto_turf/ice/layer1,
+/area/shiva/interior/caves/left_spiders)
+"Ar" = (
+/obj/structure/prop/static_tank,
+/turf/open/floor/shiva/north,
+/area/shiva/interior/caves/left_spiders)
+"AW" = (
+/obj/structure/barricade/handrail/wire{
+	dir = 1
+	},
+/obj/structure/prop/ice_colony/ground_wire{
+	dir = 4
+	},
+/turf/open/auto_turf/ice/layer1,
+/area/shiva/interior/caves/left_spiders)
+"Br" = (
+/obj/structure/prop/ice_colony/ground_wire,
+/obj/structure/barricade/handrail/wire{
+	dir = 8
+	},
+/turf/open/auto_turf/ice/layer1,
+/area/shiva/interior/caves/left_spiders)
+"By" = (
+/turf/closed/wall/shiva/ice,
+/area/shiva/interior/oob)
+"BH" = (
+/obj/effect/landmark/hunter_primary,
+/turf/open/auto_turf/ice/layer1,
+/area/shiva/interior/caves/left_spiders)
+"BI" = (
+/obj/effect/decal/cleanable/blood/writing{
+	dir = 5
+	},
+/turf/open/auto_turf/ice/layer2,
+/area/shiva/interior/caves/left_spiders)
+"FD" = (
+/obj/structure/prop/ice_colony/ground_wire,
+/turf/open/auto_turf/snow/layer2,
+/area/shiva/exterior/valley)
+"FF" = (
+/obj/effect/landmark/hunter_secondary,
+/turf/open/auto_turf/ice/layer1,
+/area/shiva/interior/caves/left_spiders)
+"FT" = (
+/turf/open/auto_turf/ice/layer2,
+/area/shiva/interior/caves/left_spiders)
+"Hm" = (
+/obj/structure/prop/ice_colony/surveying_device/measuring_device{
+	pixel_y = -5
+	},
+/turf/open/auto_turf/ice/layer1,
+/area/shiva/interior/caves/left_spiders)
+"Ie" = (
+/turf/open/auto_turf/snow/layer4,
+/area/shiva/exterior/valley)
+"IQ" = (
+/turf/open/auto_turf/ice/layer1,
+/area/shiva/interior/caves/left_spiders)
+"JM" = (
+/obj/structure/ice/thin/single{
+	opacity = 1;
+	unacidable = 0
+	},
+/turf/open/auto_turf/ice/layer2,
+/area/shiva/interior/caves/left_spiders)
+"Kd" = (
+/obj/effect/decal/cleanable/blood/writing,
+/turf/open/auto_turf/ice/layer2,
+/area/shiva/interior/caves/left_spiders)
+"Kh" = (
+/obj/structure/prop/ice_colony/surveying_device,
+/turf/open/auto_turf/ice/layer1,
+/area/shiva/interior/caves/left_spiders)
+"Kx" = (
+/obj/structure/platform/stone/strata/north,
+/obj/structure/platform/stone/strata/east,
+/turf/open/gm/river,
+/area/shiva/interior/caves/left_spiders)
+"MY" = (
+/obj/effect/spider/stickyweb{
+	icon_state = "stickyweb2"
+	},
+/turf/open/auto_turf/ice/layer2,
+/area/shiva/interior/caves/left_spiders)
+"NP" = (
+/mob/living/simple_animal/hostile/giant_spider/hunter,
+/turf/open/auto_turf/ice/layer2,
+/area/shiva/interior/caves/left_spiders)
+"NW" = (
+/obj/structure/ice/thin/single{
+	opacity = 1;
+	unacidable = 0
+	},
+/obj/structure/blocker/forcefield/multitile_vehicles,
+/turf/open/auto_turf/ice/layer1,
+/area/shiva/interior/caves/left_spiders)
+"On" = (
+/obj/structure/barricade/handrail/wire{
+	dir = 4
+	},
+/turf/open/auto_turf/ice/layer1,
+/area/shiva/interior/caves/left_spiders)
+"OD" = (
+/turf/open/auto_turf/snow/layer2,
+/area/shiva/interior/caves/left_spiders)
+"Qs" = (
+/obj/item/device/flashlight/lamp/tripod/grey,
+/turf/open/auto_turf/ice/layer2,
+/area/shiva/interior/caves/left_spiders)
+"RX" = (
+/turf/open/auto_turf/snow/layer1,
+/area/shiva/interior/caves/left_spiders)
+"SK" = (
+/turf/open/auto_turf/snow/layer1,
+/area/shiva/exterior/valley)
+"Un" = (
+/turf/open/auto_turf/ice/layer1,
+/area/shiva/exterior/valley)
+"Vc" = (
+/obj/item/lightstick/red/spoke/planted{
+	pixel_x = 16;
+	pixel_y = -3
+	},
+/turf/open/auto_turf/ice/layer2,
+/area/shiva/interior/caves/left_spiders)
+"Vm" = (
+/obj/item/lightstick/planted,
+/turf/open/auto_turf/ice/layer2,
+/area/shiva/interior/caves/left_spiders)
+"VT" = (
+/obj/structure/prop/ice_colony/ground_wire{
+	dir = 4
+	},
+/turf/open/auto_turf/ice/layer1,
+/area/shiva/interior/caves/left_spiders)
+"XG" = (
+/obj/structure/prop/ice_colony/ground_wire{
+	dir = 4
+	},
+/obj/item/lightstick/planted,
+/turf/open/auto_turf/snow/layer2,
+/area/shiva/exterior/valley)
+"Yi" = (
+/obj/item/lightstick/planted,
+/turf/open/auto_turf/ice/layer1,
+/area/shiva/interior/caves/left_spiders)
+"ZL" = (
+/obj/effect/spider/stickyweb,
+/turf/open/auto_turf/ice/layer1,
+/area/shiva/interior/caves/left_spiders)
+
+(1,1,1) = {"
+xF
+xF
+xF
+xF
+xF
+xF
+xF
+xF
+xF
+xF
+SK
+Un
+Un
+Un
+Un
+Un
+fj
+fj
+fj
+fj
+fj
+fj
+fj
+fj
+fj
+"}
+(2,1,1) = {"
+xF
+hZ
+cf
+xF
+SK
+xF
+xF
+kW
+xF
+By
+FT
+FT
+IQ
+By
+By
+By
+By
+By
+fj
+fj
+fj
+fj
+fj
+fj
+fj
+"}
+(3,1,1) = {"
+FD
+SK
+fd
+xF
+xF
+xF
+xF
+Ie
+By
+By
+IQ
+FT
+IQ
+IQ
+By
+By
+By
+By
+By
+By
+By
+By
+fj
+fj
+fj
+"}
+(4,1,1) = {"
+kW
+XG
+xF
+xF
+kW
+xF
+By
+By
+By
+By
+By
+tr
+oL
+VT
+By
+By
+By
+tF
+sA
+sA
+By
+By
+fj
+fj
+fj
+"}
+(5,1,1) = {"
+xF
+xF
+xF
+xF
+By
+By
+By
+By
+By
+By
+By
+FT
+oL
+IQ
+IQ
+IQ
+By
+tR
+MY
+FT
+mC
+By
+By
+By
+By
+"}
+(6,1,1) = {"
+xF
+Ie
+xF
+By
+By
+By
+By
+By
+By
+dS
+jt
+AW
+FT
+FF
+IQ
+IQ
+JM
+sA
+IQ
+MY
+NP
+MY
+IQ
+By
+By
+"}
+(7,1,1) = {"
+Ie
+xF
+SK
+By
+By
+By
+By
+By
+By
+Kx
+vX
+lz
+FT
+IQ
+IQ
+jP
+JM
+IQ
+sA
+IQ
+sA
+IQ
+sA
+IQ
+ug
+"}
+(8,1,1) = {"
+OD
+RX
+FT
+By
+By
+By
+By
+By
+By
+yu
+bP
+FT
+IQ
+IQ
+Yi
+IQ
+JM
+sA
+af
+sA
+IQ
+NW
+NW
+NW
+NW
+"}
+(9,1,1) = {"
+FT
+IQ
+IQ
+oL
+IQ
+By
+By
+dS
+jt
+yu
+Ar
+IQ
+IQ
+IQ
+IQ
+FT
+JM
+sA
+sA
+IQ
+sA
+NW
+fj
+fj
+fj
+"}
+(10,1,1) = {"
+IQ
+FT
+Yi
+oL
+IQ
+By
+By
+Kx
+vX
+lT
+IQ
+IQ
+IQ
+FT
+FT
+IQ
+JM
+FT
+FT
+MY
+IQ
+NW
+fj
+fj
+fj
+"}
+(11,1,1) = {"
+By
+IQ
+IQ
+oL
+IQ
+IQ
+By
+By
+pO
+IQ
+IQ
+IQ
+IQ
+IQ
+yu
+By
+By
+sA
+sA
+FT
+IQ
+By
+fj
+fj
+fj
+"}
+(12,1,1) = {"
+By
+IQ
+IQ
+IQ
+BH
+IQ
+IQ
+FT
+aL
+IQ
+IQ
+IQ
+FT
+Vc
+yu
+By
+By
+By
+By
+ZL
+ZL
+By
+fj
+fj
+fj
+"}
+(13,1,1) = {"
+By
+IQ
+FT
+bL
+Yi
+IQ
+IQ
+IQ
+IQ
+IQ
+IQ
+IQ
+FT
+ff
+dS
+jt
+By
+By
+By
+By
+By
+By
+fj
+fj
+fj
+"}
+(14,1,1) = {"
+By
+By
+FT
+bL
+IQ
+IQ
+IQ
+xE
+xx
+On
+IQ
+IQ
+FT
+rh
+Kx
+vX
+By
+By
+By
+By
+By
+By
+fj
+fj
+fj
+"}
+(15,1,1) = {"
+By
+By
+By
+IQ
+IQ
+FT
+IQ
+rh
+dS
+jt
+lz
+IQ
+IQ
+xy
+By
+By
+By
+By
+By
+By
+By
+By
+fj
+fj
+fj
+"}
+(16,1,1) = {"
+By
+By
+By
+By
+IQ
+IQ
+IQ
+Ao
+Kx
+vX
+By
+IQ
+FT
+xy
+By
+By
+By
+By
+By
+By
+By
+By
+fj
+fj
+fj
+"}
+(17,1,1) = {"
+By
+By
+By
+By
+By
+IQ
+FT
+IQ
+Br
+By
+By
+IQ
+IQ
+IQ
+IQ
+By
+By
+By
+By
+Am
+ug
+gf
+fj
+fj
+fj
+"}
+(18,1,1) = {"
+By
+By
+By
+By
+By
+By
+IQ
+lP
+aL
+IQ
+IQ
+Kh
+IQ
+Vm
+ia
+JM
+IQ
+sA
+IQ
+sA
+IQ
+gf
+fj
+fj
+fj
+"}
+(19,1,1) = {"
+By
+By
+By
+By
+By
+By
+IQ
+BI
+Kd
+IQ
+IQ
+IQ
+Hm
+IQ
+IQ
+JM
+IQ
+sA
+af
+sA
+IQ
+gf
+fj
+fj
+fj
+"}
+(20,1,1) = {"
+By
+By
+By
+By
+By
+By
+By
+FT
+cz
+IQ
+IQ
+Qs
+IQ
+By
+By
+By
+sA
+IQ
+sA
+IQ
+sA
+By
+By
+By
+fj
+"}
+(21,1,1) = {"
+By
+By
+By
+By
+By
+By
+By
+FT
+pr
+yS
+xG
+IQ
+hY
+By
+By
+By
+By
+By
+By
+By
+IQ
+By
+By
+By
+fj
+"}
+(22,1,1) = {"
+By
+By
+By
+By
+By
+By
+By
+By
+yu
+yu
+yu
+By
+By
+By
+By
+By
+By
+By
+By
+By
+By
+By
+By
+By
+fj
+"}
+(23,1,1) = {"
+fj
+By
+By
+By
+By
+By
+By
+By
+By
+By
+By
+By
+By
+By
+By
+By
+By
+By
+By
+By
+By
+By
+By
+By
+fj
+"}
+(24,1,1) = {"
+fj
+By
+By
+By
+By
+By
+By
+By
+By
+By
+By
+By
+By
+By
+By
+By
+By
+By
+By
+By
+By
+By
+By
+By
+fj
+"}

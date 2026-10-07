@@ -1,0 +1,312 @@
+/*
+ * Holds procs designed to change one type of value, into another.
+ * Contains:
+ * hex2num & num2hex
+ * file2list
+ * angle2dir
+ * angle2text
+ * worldtime2text
+ */
+
+//Returns an integer given a hex input
+/proc/hex2num(hex)
+	return text2num(hex, 16)
+
+//Returns the hex value of a number given a value assumed to be a base-ten value
+/proc/num2hex(num, placeholder)
+	return num2text(num, placeholder, 16)
+
+//Splits the text of a file at separator and returns them in a list.
+/proc/file2list(filename, separator="\n", trim = TRUE)
+	if (trim)
+		return splittext(trim(file2text(filename)),separator)
+	return splittext(file2text(filename),separator)
+
+
+//Turns a direction into text
+
+/proc/num2dir(direction)
+	switch(direction)
+		if(1.0)
+			return NORTH
+		if(2.0)
+			return SOUTH
+		if(4.0)
+			return EAST
+		if(8.0)
+			return WEST
+		else
+			world.log << "UNKNOWN DIRECTION: [direction]"
+
+
+
+//Turns a direction into text
+/proc/dir2text(direction)
+	switch(direction)
+		if(1.0)
+			return "north"
+		if(2.0)
+			return "south"
+		if(4.0)
+			return "east"
+		if(8.0)
+			return "west"
+		if(5.0)
+			return "northeast"
+		if(6.0)
+			return "southeast"
+		if(9.0)
+			return "northwest"
+		if(10.0)
+			return "southwest"
+
+
+//Turns a direction into text
+/proc/dir2text_short(direction)
+	switch(direction)
+		if(1)
+			return "N"
+		if(2)
+			return "S"
+		if(4)
+			return "E"
+		if(8)
+			return "W"
+		if(5)
+			return "NE"
+		if(6)
+			return "SE"
+		if(9)
+			return "NW"
+		if(10)
+			return "SW"
+
+
+
+//Turns text into proper directions
+/proc/text2dir(direction)
+	switch(uppertext(direction))
+		if("NORTH")
+			return 1
+		if("SOUTH")
+			return 2
+		if("EAST")
+			return 4
+		if("WEST")
+			return 8
+		if("NORTHEAST")
+			return 5
+		if("NORTHWEST")
+			return 9
+		if("SOUTHEAST")
+			return 6
+		if("SOUTHWEST")
+			return 10
+
+//Converts an angle (degrees) into an ss13 direction
+/proc/angle2dir(degree)
+	degree = ((degree % 360) + 382.5) % 360
+	if(degree < 45)
+		return NORTH
+	if(degree < 90)
+		return NORTHEAST
+	if(degree < 135)
+		return EAST
+	if(degree < 180)
+		return SOUTHEAST
+	if(degree < 225)
+		return SOUTH
+	if(degree < 270)
+		return SOUTHWEST
+	if(degree < 315)
+		return WEST
+	return NORTHWEST
+
+//returns the north-zero clockwise angle in degrees, given a direction
+
+/proc/dir2angle(D)
+	switch(D)
+		if(NORTH)
+			return 0
+		if(SOUTH)
+			return 180
+		if(EAST)
+			return 90
+		if(WEST)
+			return 270
+		if(NORTHEAST)
+			return 45
+		if(SOUTHEAST)
+			return 135
+		if(NORTHWEST)
+			return 315
+		if(SOUTHWEST)
+			return 225
+		else
+			return null
+
+//returns a number to be used to index lists; based off dmi direction ordering: 1:SOUTH(2) 2:NORTH(1) 3:EAST(4) 4:WEST(8) etc...
+
+/proc/dir2indexnum(D)
+	switch(D)
+		if(NORTH)
+			return 2
+		if(SOUTH)
+			return 1
+		if(EAST)
+			return 3
+		if(WEST)
+			return 4
+		if(NORTHEAST)
+			return 7
+		if(SOUTHEAST)
+			return 5
+		if(NORTHWEST)
+			return 8
+		if(SOUTHWEST)
+			return 6
+		else
+			return null
+
+//Converts a blend_mode constant to one acceptable to icon.Blend()
+/proc/blendMode2iconMode(blend_mode)
+	switch(blend_mode)
+		if(BLEND_MULTIPLY)
+			return ICON_MULTIPLY
+		if(BLEND_ADD)
+			return ICON_ADD
+		if(BLEND_SUBTRACT)
+			return ICON_SUBTRACT
+		else
+			return ICON_OVERLAY
+
+//Converts a rights bitfield into a string
+/proc/rights2text(rights,separator="")
+	if(rights & R_BUILDMODE)
+		. += "[separator]+BUILDMODE"
+	if(rights & R_ADMIN)
+		. += "[separator]+ADMIN"
+	if(rights & R_BAN)
+		. += "[separator]+BAN"
+	if(rights & R_SERVER)
+		. += "[separator]+SERVER"
+	if(rights & R_DEBUG)
+		. += "[separator]+DEBUG"
+	if(rights & R_POSSESS)
+		. += "[separator]+POSSESS"
+	if(rights & R_PERMISSIONS)
+		. += "[separator]+PERMISSIONS"
+	if(rights & R_STEALTH)
+		. += "[separator]+STEALTH"
+	if(rights & R_COLOR)
+		. += "[separator]+COLOR"
+	if(rights & R_VAREDIT)
+		. += "[separator]+VAREDIT"
+	if(rights & R_SOUNDS)
+		. += "[separator]+SOUND"
+	if(rights & R_SPAWN)
+		. += "[separator]+SPAWN"
+	if(rights & R_MOD)
+		. += "[separator]+MODERATOR"
+	if(rights & R_MENTOR)
+		. += "[separator]+MENTOR"
+	if(rights & R_NOLOCK)
+		. += "[separator]+NOLOCK"
+	return .
+
+/// Return html to load a url.
+/// for use inside of browse() calls to html assets that might be loaded on a cdn.
+/proc/url2htmlloader(url)
+	return {"<html><head><meta http-equiv="refresh" content="0;URL='[url]'"/></head><body onLoad="parent.location='[url]'"></body></html>"}
+
+/proc/type2parent(child)
+	var/string_type = "[child]"
+	var/last_slash = findlasttext(string_type, "/")
+	if(last_slash == 1)
+		switch(child)
+			if(/datum)
+				return null
+			if(/obj, /mob)
+				return /atom/movable
+			if(/area, /turf)
+				return /atom
+			else
+				return /datum
+	return text2path(copytext(string_type, 1, last_slash))
+
+//returns a string the last bit of a type, without the preceeding '/'
+/proc/type2top(the_type)
+	//handle the builtins manually
+	if(!ispath(the_type))
+		return
+	switch(the_type)
+		if(/datum)
+			return "datum"
+		if(/atom)
+			return "atom"
+		if(/obj)
+			return "obj"
+		if(/mob)
+			return "mob"
+		if(/area)
+			return "area"
+		if(/turf)
+			return "turf"
+		else //regex everything else (works for /proc too)
+			return lowertext(replacetext("[the_type]", "[type2parent(the_type)]/", ""))
+
+
+//This is a weird one:
+//It returns a list of all var names found in the string
+//These vars must be in the [var_name] format
+//It's only a proc because it's used in more than one place
+
+//Takes a string and a datum
+//The string is well, obviously the string being checked
+//The datum is used as a source for var names, to check validity
+//Otherwise every single word could technically be a variable!
+/proc/string2listofvars(t_string, datum/var_source)
+	if(!t_string || !var_source)
+		return list()
+
+	. = list()
+
+	var/var_found = findtext(t_string,"\[") //Not the actual variables, just a generic "should we even bother" check
+	if(var_found)
+		//Find var names
+
+		// "A dog said hi [name]!"
+		// splittext() --> list("A dog said hi ","name]!"
+		// jointext() --> "A dog said hi name]!"
+		// splittext() --> list("A","dog","said","hi","name]!")
+
+		t_string = replacetext(t_string,"\[","\[ ")//Necessary to resolve "word[var_name]" scenarios
+		var/list/list_value = splittext(t_string,"\[")
+		var/intermediate_stage = jointext(list_value, null)
+
+		list_value = splittext(intermediate_stage," ")
+		for(var/value in list_value)
+			if(findtext(value,"]"))
+				value = splittext(value,"]") //"name]!" --> list("name","!")
+				for(var/A in value)
+					if(var_source.vars.Find(A))
+						. += A
+
+/// Formats a larger number to correct textual representation without losing data
+/proc/big_number_to_text(number)
+	return num2text(number, INFINITY)
+
+/proc/text2list(text, delimiter="\n")
+	var/delim_len = length(delimiter)
+	if (delim_len < 1)
+		return list(text)
+
+	. = list()
+	var/last_found = 1
+	var/found
+
+	do
+		found       = findtext(text, delimiter, last_found, 0)
+		.          += copytext(text, last_found, found)
+		last_found  = found + delim_len
+	while (found)

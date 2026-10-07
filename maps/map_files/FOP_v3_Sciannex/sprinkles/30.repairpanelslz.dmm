@@ -1,0 +1,362 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"ae" = (
+/turf/open/floor/prison/floor_plate,
+/area/template_noop)
+"af" = (
+/obj/item/stack/sandbags_empty/half,
+/turf/open/floor/prison,
+/area/template_noop)
+"aj" = (
+/obj/item/stack/sandbags/large_stack,
+/turf/open/floor/plating/prison,
+/area/template_noop)
+"ak" = (
+/obj/structure/window/framed/prison/reinforced/hull,
+/turf/open/floor/plating/prison,
+/area/fiorina/oob)
+"ao" = (
+/turf/closed/wall/r_wall/prison_unmeltable,
+/area/fiorina/oob)
+"ap" = (
+/turf/open/floor/prison,
+/area/template_noop)
+"aq" = (
+/turf/open/floor/plating/prison,
+/area/template_noop)
+"ar" = (
+/obj/structure/platform_decoration/metal/kutjevo/west,
+/turf/open/space,
+/area/fiorina/oob)
+"ay" = (
+/obj/item/stack/sandbags_empty/half,
+/turf/open/floor/prison/darkyellow2/west,
+/area/template_noop)
+"aC" = (
+/obj/structure/platform/metal/kutjevo_smooth/north,
+/obj/structure/barricade/handrail{
+	dir = 1;
+	icon_state = "hr_kutjevo";
+	name = "solar lattice"
+	},
+/turf/open/space,
+/area/fiorina/oob)
+"aD" = (
+/obj/item/trash/used_stasis_bag{
+	desc = "Wow, instant sand. They really have everything in space.";
+	name = "Insta-Sand! bag"
+	},
+/turf/open/floor/plating/prison,
+/area/template_noop)
+"aE" = (
+/obj/item/trash/used_stasis_bag{
+	desc = "Wow, instant sand. They really have everything in space.";
+	name = "Insta-Sand! bag"
+	},
+/turf/open/floor/prison,
+/area/template_noop)
+"aG" = (
+/turf/open/floor/prison/darkyellow2/north,
+/area/template_noop)
+"aK" = (
+/obj/structure/platform_decoration/metal/kutjevo/east,
+/turf/open/space,
+/area/fiorina/oob)
+"aL" = (
+/turf/open/floor/prison/darkyellow2/west,
+/area/template_noop)
+"aQ" = (
+/turf/open/auto_turf/sand/layer1,
+/area/template_noop)
+"aT" = (
+/obj/item/stack/sandbags_empty/half,
+/turf/open/floor/prison/darkyellow2,
+/area/template_noop)
+"aX" = (
+/turf/open/floor/prison/darkyellow2/northwest,
+/area/template_noop)
+"ba" = (
+/obj/item/stock_parts/subspace/filter{
+	pixel_y = 6
+	},
+/turf/open/space,
+/area/fiorina/oob)
+"bb" = (
+/obj/structure/cargo_container/grant/left{
+	desc = "A huge industrial shipping container. This one is in space."
+	},
+/turf/open/space,
+/area/fiorina/oob)
+"bc" = (
+/obj/structure/cargo_container/grant/right{
+	desc = "A huge industrial shipping container. You're not sure how it got here."
+	},
+/turf/open/space,
+/area/fiorina/oob)
+"bd" = (
+/turf/open/space,
+/area/fiorina/oob)
+"be" = (
+/obj/structure/platform/metal/kutjevo_smooth/east,
+/turf/open/space,
+/area/fiorina/oob)
+"bf" = (
+/turf/open/floor/solarpanel,
+/area/fiorina/oob)
+"bg" = (
+/obj/structure/platform/metal/kutjevo_smooth/west,
+/obj/item/stack/sheet/metal,
+/turf/open/space,
+/area/fiorina/oob)
+"bh" = (
+/obj/item/stack/sheet/metal,
+/turf/open/space,
+/area/fiorina/oob)
+"bi" = (
+/obj/structure/platform/metal/kutjevo_smooth/north,
+/turf/open/space,
+/area/fiorina/oob)
+"bj" = (
+/obj/structure/platform/metal/kutjevo_smooth/north,
+/obj/structure/platform/metal/kutjevo_smooth/east,
+/obj/item/stack/sheet/metal,
+/turf/open/space,
+/area/fiorina/oob)
+"bk" = (
+/obj/structure/platform/metal/kutjevo_smooth/north,
+/obj/structure/platform/metal/kutjevo_smooth/west,
+/turf/open/space,
+/area/fiorina/oob)
+"bl" = (
+/obj/structure/platform/metal/kutjevo_smooth/north,
+/obj/item/clothing/head/cardborg,
+/turf/open/space,
+/area/fiorina/oob)
+"bm" = (
+/turf/open/floor/almayer_hull,
+/area/fiorina/oob)
+"bn" = (
+/obj/structure/platform/metal/kutjevo_smooth/east,
+/turf/open/floor/almayer_hull,
+/area/fiorina/oob)
+"bo" = (
+/obj/structure/bedsheetbin{
+	icon_state = "linenbin-empty";
+	name = "solar lattice";
+	pixel_y = 6
+	},
+/turf/open/floor/almayer_hull,
+/area/fiorina/oob)
+"bp" = (
+/obj/structure/platform/metal/kutjevo_smooth/west,
+/turf/open/floor/almayer_hull,
+/area/fiorina/oob)
+"bq" = (
+/obj/structure/platform/metal/kutjevo_smooth,
+/turf/open/space,
+/area/fiorina/oob)
+"br" = (
+/obj/structure/platform/metal/kutjevo_smooth,
+/obj/structure/platform/metal/kutjevo_smooth/east,
+/turf/open/space,
+/area/fiorina/oob)
+"bs" = (
+/obj/structure/platform/metal/kutjevo_smooth,
+/obj/structure/platform/metal/kutjevo_smooth/west,
+/turf/open/space,
+/area/fiorina/oob)
+"bt" = (
+/obj/structure/platform/metal/kutjevo_smooth,
+/obj/item/stack/sheet/metal,
+/turf/open/space,
+/area/fiorina/oob)
+"bu" = (
+/obj/structure/reagent_dispensers/tank/fuel/oxygentank,
+/turf/open/space,
+/area/fiorina/oob)
+"bv" = (
+/obj/structure/platform/metal/kutjevo_smooth/east,
+/obj/effect/spawner/random/tool{
+	pixel_x = -8;
+	pixel_y = 7
+	},
+/obj/effect/spawner/random/tool{
+	pixel_x = 9
+	},
+/turf/open/space,
+/area/fiorina/oob)
+"bw" = (
+/obj/structure/platform/metal/kutjevo_smooth/west,
+/obj/item/circuitboard/solar_tracker,
+/turf/open/space,
+/area/fiorina/oob)
+"bx" = (
+/turf/open/space/basic,
+/area/fiorina/oob)
+"by" = (
+/obj/structure/platform_decoration/metal/kutjevo,
+/turf/open/space/basic,
+/area/fiorina/oob)
+"bz" = (
+/obj/structure/platform/metal/kutjevo_smooth,
+/turf/open/space/basic,
+/area/fiorina/oob)
+"bA" = (
+/obj/structure/platform/metal/kutjevo_smooth,
+/obj/item/book/manual/engineering_construction,
+/turf/open/space/basic,
+/area/fiorina/oob)
+"bB" = (
+/obj/structure/platform_decoration/metal/kutjevo/north,
+/turf/open/space/basic,
+/area/fiorina/oob)
+"bC" = (
+/obj/item/clothing/head/helmet/space{
+	pixel_x = -7;
+	pixel_y = -8
+	},
+/turf/open/space/basic,
+/area/fiorina/oob)
+
+(1,1,1) = {"
+ao
+ak
+ak
+ak
+ak
+ak
+ak
+ak
+ap
+"}
+(2,1,1) = {"
+ak
+bx
+bu
+bq
+bm
+bi
+bd
+ao
+ak
+"}
+(3,1,1) = {"
+ak
+by
+bv
+br
+bn
+bj
+be
+ar
+ak
+"}
+(4,1,1) = {"
+ak
+bz
+bf
+bf
+bo
+bf
+bf
+aC
+ak
+"}
+(5,1,1) = {"
+ak
+bA
+bf
+bf
+bm
+bf
+bf
+aC
+ak
+"}
+(6,1,1) = {"
+ak
+bz
+bf
+bf
+bo
+bf
+bf
+aC
+ak
+"}
+(7,1,1) = {"
+ak
+bB
+bw
+bs
+bp
+bk
+bg
+aK
+ao
+"}
+(8,1,1) = {"
+ak
+bC
+bd
+bt
+bm
+bl
+bd
+ba
+ao
+"}
+(9,1,1) = {"
+ao
+ak
+ak
+ak
+ak
+ao
+bd
+bb
+ao
+"}
+(10,1,1) = {"
+ao
+aj
+aQ
+aQ
+aQ
+ak
+bd
+bc
+ak
+"}
+(11,1,1) = {"
+af
+aE
+aq
+aQ
+aQ
+ak
+bd
+bd
+ak
+"}
+(12,1,1) = {"
+aX
+ay
+aL
+aq
+aD
+ak
+bh
+bd
+ak
+"}
+(13,1,1) = {"
+aG
+ap
+ae
+aT
+ap
+ao
+ak
+ak
+ao
+"}

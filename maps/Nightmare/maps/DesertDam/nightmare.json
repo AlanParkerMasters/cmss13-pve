@@ -1,0 +1,63 @@
+[
+	{ "type": "map_sprinkle", "path": "sprinkles/" },
+    {
+		"type": "map_insert",
+		"landmark": "uppcrash",
+		"chance": 1.0,
+		"path": "standalone/crashlanding-upp-bar.dmm",
+		"when": { "lvevent": "uppcrash" }
+	},
+    {
+		"type": "map_insert",
+		"landmark": "uppcrash-supply",
+		"chance": 1.0,
+		"path": "standalone/crashlanding-upp-alt1.dmm",
+		"when": { "lvevent": "uppcrash" }
+	},
+	{
+		"type": "map_insert",
+		"landmark": "hvhupplz1",
+		"chance": 1.0,
+		"path": "standalone/landingzone_desertdam_upp_lz1.dmm",
+		"when": { "$gamemode": "Faction Clash UPP CM" }
+	},
+	{
+		"type": "map_insert",
+		"landmark": "hvhuscmlz1",
+		"chance": 1.0,
+		"path": "standalone/landingzone_desertdam_uscm_lz1.dmm",
+		"when": { "$gamemode": "Faction Clash UPP CM" }
+	},
+	{
+		"type": "map_insert",
+		"landmark": "hvhuscmlz2",
+		"chance": 1.0,
+		"path": "standalone/landingzone_desertdam_uscm_lz2.dmm",
+		"when": { "$gamemode": "Faction Clash UPP CM" }
+	},
+    {
+		"type": "map_insert",
+		"landmark": "barhold",
+		"chance": 0.4,
+		"path": "standalone/barhold.dmm",
+		"when": { "lvevent": "none" }
+	},
+    {
+		"type": "map_insert",
+		"landmark": "quarantine",
+		"chance": 0.4,
+		"path": "standalone/quarantine.dmm",
+		"when": { "lvevent": "none" }
+	},
+    {
+        "type": "map_insert",
+        "landmark": "clfpods",
+		"chance": 1.0,
+		"path": "standalone/clfpods.dmm",
+		"when": { "lvevent": "clfpods" }
+    },
+	{
+		"type": "include", "name": "Standalone variations",
+		"file": "mapgen_variations.json"
+	}
+]

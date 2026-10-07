@@ -1,0 +1,43 @@
+GLOBAL_LIST_INIT(ai_names, file2list("strings/ai.txt"))
+GLOBAL_LIST_INIT(first_names_male, file2list("strings/first_male.txt"))
+GLOBAL_LIST_INIT(first_names_female, file2list("strings/first_female.txt"))
+GLOBAL_LIST_INIT(last_names, file2list("strings/last.txt"))
+GLOBAL_LIST_INIT(clown_names, file2list("strings/clown.txt"))
+GLOBAL_LIST_INIT(operation_titles, file2list("strings/operation_title.txt"))
+GLOBAL_LIST_INIT(operation_prefixes, file2list("strings/operation_prefix.txt"))
+GLOBAL_LIST_INIT(operation_postfixes, file2list("strings/operation_postfix.txt"))
+
+GLOBAL_LIST_INIT(verbs, file2list("strings/verbs.txt"))
+//loaded on startup because of "
+//would include in rsc if ' was used
+
+
+GLOBAL_LIST_INIT(first_names_male_clf, list("Alan","Jack","Bil","Jonathan","John","Shiro","Gareth","Clark","Sam", "Lionel", "Aaron", "Charlie", "Scott", "Winston", "Aidan", "Ellis", "Mason", "Wesley", "Nicholas", "Calvin", "Nishikawa", "Hiroto", "Chiba", "Ouchi", "Furuse", "Takagi", "Oba", "Kishimoto"))
+GLOBAL_LIST_INIT(first_names_female_clf, list("Emma", "Adelynn", "Mary", "Halie", "Chelsea", "Lexie", "Arya", "Alicia", "Selah", "Amber", "Heather", "Myra", "Heidi", "Charlotte", "Oliva", "Lydia", "Tia", "Riko", "Ari", "Machida", "Ueki", "Mihara", "Noda"))
+GLOBAL_LIST_INIT(last_names_clf, list("Hawkins","Rickshaw","Elliot","Billard","Cooper","Fox", "Barlow", "Barrows", "Stewart", "Morgan", "Green", "Stone", "Burr", "Hunt", "Yuko", "Gesshin", "Takanibu", "Tetsuzan", "Tomomi", "Bokkai", "Takesi"))
+
+GLOBAL_LIST_INIT(first_names_male_colonist, list("Alan","Jack","Bil","Jonathan","John","Shiro","Gareth","Clark","Sam", "Lionel", "Aaron", "Charlie", "Scott", "Winston", "Aidan", "Ellis", "Mason", "Wesley", "Nicholas", "Calvin", "Nishikawa", "Hiroto", "Chiba", "Ouchi", "Furuse", "Takagi", "Oba", "Kishimoto"))
+GLOBAL_LIST_INIT(first_names_female_colonist, list("Emma", "Adelynn", "Mary", "Halie", "Chelsea", "Lexie", "Arya", "Alicia", "Selah", "Amber", "Heather", "Myra", "Heidi", "Charlotte", "Ashley", "Raven", "Tori", "Anne", "Madison", "Oliva", "Lydia", "Tia", "Riko", "Ari", "Machida", "Ueki", "Mihara", "Noda"))
+GLOBAL_LIST_INIT(last_names_colonist, list("Hawkins","Rickshaw","Elliot","Billard","Cooper","Fox", "Barlow", "Barrows", "Stewart", "Morgan", "Green", "Stone", "Titan", "Crowe", "Krantz", "Pathillo", "Driggers", "Burr", "Hunt", "Yuko", "Gesshin", "Takanibu", "Tetsuzan", "Tomomi", "Bokkai", "Takesi"))
+
+GLOBAL_LIST_INIT(first_names_male_upp, list("Badai","Mongkeemur","Alexei","Andrei","Artyom","Viktor","Xiangai","Ivan","Choban","Oleg", "Dayan", "Taghi", "Batu", "Arik", "Orda", "Ghazan", "Bala", "Gao", "Zhan", "Ren", "Hou", "Xue", "Serafim", "Luca", "Su", "Gyorgy", "Istvan", "Mihaly", "Vladimir", "Aleksandr", "Fyodor", "Bhodar", "Qazem", "Lukasz", "Milogost", "Radogost", "Uniegost", "Hostirad", "Hostimil", "Hostisvit", "Lubgost", "Goscislaw", "Vseslav", "Bohumer", "Bronislaw", "Cescimer", "Dobyslaw", "Horislaw", "Jaromer", "Miroslaw", "Mjecislaw", "Radomer", "Stanij", "Stanislaw", "Wjelemer", "Wojslaw"))
+GLOBAL_LIST_INIT(first_names_female_upp, list("Altani","Cirina","Anastasiya","Saran","Wei","Oksana","Ren","Svena","Tatyana","Yaroslava", "Izabella", "Kata", "Krisztina", "Miruna", "Flori", "Lucia", "Anica", "Li", "Yimu", "Alona", "Hsiau-Li", "Xiaoling", "Erhong", "Baska", "Angela", "Angelina", "Angja", "Ankica", "Biljana", "Bisera", "Bistra", "Blaga", "Blagica", "Blagorodna", "Verka", "Vladica", "Denica", "Zivka", "Zlata", "Jagoda", "Letka", "Ljupka", "Mila", "Mirjana", "Mirka", "Rada", "Radmila", "Slavica", "Slavka", "Snezana", "Stojna", "Ubavka", "Jaromir", "Mscewoj", "Subislow", "Swiatopolk", "Ji-Sun", "Chaeyong", "Chaewon", "Saerom", "Seoyeong", "Jiheon", "Hayoung"))
+GLOBAL_LIST_INIT(last_names_upp, list("Azarov","Bogdanov","Barsukov","Golovin","Davydov","Khan","Noica","Barbu","Zhukov","Ivanov","Mihai","Kasputin","Belov", "Belova","Melnikov", "Vasilevsky", "Aleksander", "Halkovich", "Stanislaw", "Proca", "Zaituc", "Arcos", "Kubat", "Kral", "Volf", "Xun", "Jia", "Bachon", "Wang", "Ji", "Xiang", "Zhang", "Mei", "Ma", "Kim", "Yi", "Ri", "Pak", "Chong", "Baek", "Kwon", "Hwang", "Roh", "Lee", "Song"))
+
+GLOBAL_LIST_INIT(first_names_male_pmc, list("Owen","Luka","Nelson","Branson", "Tyson", "Leo", "Bryant", "Kobe", "Rohan", "Riley", "Aidan", "Watase","Egawa", "Hisakawa", "Koide", "Remy", "Martial", "Magnus", "Heiko", "Lennard"))
+GLOBAL_LIST_INIT(first_names_female_pmc, list("Madison","Jessica","Anna","Juliet", "Olivia", "Lea", "Diane", "Kaori", "Beatrice", "Riley", "Amy", "Natsue","Yumi", "Aiko", "Fujiko", "Jennifer", "Ashley", "Mary", "Hitomi", "Lisa"))
+GLOBAL_LIST_INIT(last_names_pmc, list("Bates","Shaw","Hansen","Black", "Chambers", "Hall", "Gibson", "Weiss", "Waller", "Burton", "Bakin", "Rohan", "Naomichi", "Yakumo", "Yosai", "Gallagher", "Hiles", "Bourdon", "Strassman", "Palau"))
+
+GLOBAL_LIST_INIT(first_names_male_gladiator, list("Augustus", "Maximus", "Septimus", "Titus", "Julius", "Gaius", "Marcus", "Lucius", "Publius", "Hostus", "Octavius", "Quintus", "Sertor", "Tiberius", "Paullus", "Volesus"))
+GLOBAL_LIST_INIT(first_names_female_gladiator, list("Aelia", "Caecilia", "Camilla", "Claudia", "Flavia", "Martina", "Theodora", "Gaia", "Decima", "Lucia", "Maxima", "Octavia", "Prima", "Statia", "Tiberia", "Tulla", "Volusa", "Priscilla", "Julia"))
+GLOBAL_LIST_INIT(last_names_gladiator, list("Caesar", "Afer", "Aventus", "Brutus", "Corvus", "Gallicanus", "Hispanus", "Italicus", "Laurentius", "Sicilianus", "Crispus", "Catus", "Longinus", "Magus", "Scaevola", "Varus", "Aquila", "Lepidus", "Pisces", "Serpens", "Taurus", "Aemilius", "Aurelius", "Cassius", "Cornelius", "Julius", "Octavius", "Pompeius", "Valerius", "Regulus", "Drusus", "Urbanus", "Cicero", "Sulla"))
+
+GLOBAL_LIST_INIT(first_names_male_dutch, list("Raymond", "Jesse", "Jack", "John", "Sam", "Aaron", "Charlie", "Ellis", "Nick", "Francis", "Louis"))
+GLOBAL_LIST_INIT(first_names_female_dutch, list("Chelsea", "Mira", "Jessica", "Catherine", "Eliza", "Emma", "Ashley", "Annie", "Alicia", "Miranda", "Ellen"))
+
+GLOBAL_LIST_INIT(monkey_names, list("Abu", "Aldo", "Bear", "Bingo", "Clyde", "Crystal", "Gordo", "George", "Koko", "Marcel", "Nim", "Rafiki", "Spike", "Banana", "Boots", "Bubbles", "Smiley", "Winston"))
+
+GLOBAL_LIST_INIT(weapon_surnames, list("Arbalest", "Axe", "Bagh Nakha", "Ballista", "Bo", "Bola", "Bow", "Cannon", "Carbine", "Cestus", "Club", "Culverin", "Dagger", "Dao", "Derringer", "Dha", "Dussack", "Emeici", "Estoc", "Falchion", "Flyssa", "Garand", "Gauntlet", "Halberd", "Harquebus", "Hwando", "Katar", "Kampilan", "Knuckles", "Kukri", "Lance", "Larim", "Maduvu", "Mace", "Maru", "Maul", "Mauser", "Messer", "Mine", "Mubucae", "Nyepel", "Onager", "Pata", "Pike", "Poleaxe", "Saber", "Seax", "Shamsir", "Sickle", "Sling", "Spear", "Spears", "Staff", "Sword", "Tekko"))
+
+GLOBAL_LIST_INIT(pred_names, list("Nu'koir", "Za-ai'stba", "Au'stbep", "Gihn'thill", "Au'stbep", "Tud'tab", "Gehtu-a", "U-dan'dchu", "Bua'dtu", "A'ytein", "Yu-thwuahtou", "Yon'ta", "Pan'teiat", "Ban'ti", "Ve'thiad", "Ga-aiteith", "A'kah", "Dachande", "Bhua'tean", "Nahroirh", "Vateiann", "A'stbath", "I'ja", "Hai'dtath-Bha", "Zatailb", "Ca'tall", "A'staol", "Nago-Ill", "U'thath", "Ahn'tha", "Tocha", "Ba-A'ytall", "Mihn'tha"))
+GLOBAL_LIST_INIT(pred_last_names, list("Tha'jo", "Ba'ytui", "Thwa'dtei", "Vah'ka", "A'taar", "Zau'dqou", "Ma'kah", "Gahru"))

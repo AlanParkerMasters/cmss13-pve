@@ -1,0 +1,1095 @@
+//---------------------------------------------------
+
+//Generic parent object.
+/obj/item/weapon/gun/revolver
+	flags_equip_slot = SLOT_WAIST
+	w_class = SIZE_MEDIUM
+	item_icons = list(
+		WEAR_WAIST = 'icons/mob/humans/onmob/clothing/belts/guns.dmi',
+		WEAR_J_STORE = 'icons/mob/humans/onmob/clothing/suit_storage/guns_by_type/revolvers.dmi',
+		WEAR_L_HAND = 'icons/mob/humans/onmob/inhands/weapons/guns/revolvers_lefthand.dmi',
+		WEAR_R_HAND = 'icons/mob/humans/onmob/inhands/weapons/guns/revolvers_righthand.dmi'
+	)
+	mouse_pointer = 'icons/effects/mouse_pointer/pistol_mouse.dmi'
+
+	matter = list("metal" = 2000)
+	flags_gun_features = GUN_CAN_POINTBLANK|GUN_INTERNAL_MAG|GUN_ONE_HAND_WIELDED
+	gun_category = GUN_CATEGORY_HANDGUN
+	wield_delay = WEAPON_DELAY_VERY_FAST //If you modify your revolver to be two-handed, it will still be fast to aim
+	movement_onehanded_acc_penalty_mult = 3
+	has_empty_icon = FALSE
+	has_open_icon = TRUE
+	current_mag = /obj/item/ammo_magazine/internal/revolver
+
+	fire_sound = 'sound/weapons/gun_44mag_v4.ogg'
+	reload_sound = 'sound/weapons/gun_44mag_speed_loader.wav'
+	cocked_sound = 'sound/weapons/gun_revolver_spun.ogg'
+	unload_sound = 'sound/weapons/gun_44mag_open_chamber.wav'
+	var/chamber_close_sound = 'sound/weapons/gun_44mag_close_chamber.wav'
+	var/hand_reload_sound = 'sound/weapons/gun_revolver_load3.ogg'
+	var/spin_sound = 'sound/effects/spin.ogg'
+	var/thud_sound = 'sound/effects/thud.ogg'
+	var/list/cylinder_click = list('sound/weapons/gun_empty.ogg')
+
+	var/trick_delay = 4 SECONDS
+	var/recent_trick //So they're not spamming tricks.
+	var/russian_roulette = FALSE //God help you if you do this.
+
+/obj/item/weapon/gun/revolver/Initialize(mapload, spawn_empty)
+	. = ..()
+	if(current_mag)
+		replace_cylinder(current_mag.current_rounds)
+
+/obj/item/weapon/gun/revolver/set_gun_config_values()
+	..()
+	set_fire_delay(FIRE_DELAY_TIER_5)
+	accuracy_mult = BASE_ACCURACY_MULT
+	accuracy_mult_unwielded = BASE_ACCURACY_MULT - HIT_ACCURACY_MULT_TIER_3
+	scatter = SCATTER_AMOUNT_TIER_10
+	scatter_unwielded = SCATTER_AMOUNT_TIER_4
+	damage_mult = BASE_BULLET_DAMAGE_MULT
+	recoil = RECOIL_AMOUNT_TIER_5
+	recoil_unwielded = RECOIL_AMOUNT_TIER_3
+	movement_onehanded_acc_penalty_mult = 3
+
+/obj/item/weapon/gun/revolver/ammo_desc(mob/user)
+	var/dat = ""
+	if(current_mag)
+		if(current_mag.chamber_closed)
+			dat += SPAN_NOTICE("It's closed.<br>")
+		else
+			if(!user || !Adjacent(user))
+				dat += SPAN_NOTICE("It's open.<br>")
+			else
+				var/in_chamber_name
+				if(in_chamber)
+					in_chamber_name = in_chamber.name
+				else if(current_mag.current_rounds > 0)
+					var/ammo_path = current_mag.chamber_contents[current_mag.chamber_position]
+					if(ammo_path && ammo_path != "empty")
+						var/datum/ammo/bullet = GLOB.ammo_list[ammo_path]
+						if(bullet) in_chamber_name = bullet.name
+
+				dat += SPAN_NOTICE("It's open with [SPAN_BOLD(SPAN_ORANGE(current_mag.current_rounds))] round[current_mag.current_rounds == 1 ? "" : "s"] loaded[in_chamber_name ? " and has a [SPAN_HELPFUL(in_chamber_name)] ready to fire" : ""].<br>")
+				dat += "<a href='byond://?src=\ref[src];list_cylinder=1'>\[See cylinder contents]</a> <br>"
+
+	return dat
+
+/obj/item/weapon/gun/revolver/Topic(href, href_list)
+	. = ..()
+	if(.)
+		return
+
+	if(href_list["list_cylinder"])
+		if(!usr || !usr.is_holding(src) || !current_mag || current_mag.chamber_closed)
+			to_chat(usr, SPAN_WARNING("You can't see [src]'s cylinder from here!"))
+			return
+
+		var/description = "[src]'s cylinder contains:<br>"
+
+		for(var/i = 1 to current_mag.max_rounds)
+			var/ammo_path = current_mag.chamber_contents[i]
+			var/bullet_name
+			if(ammo_path && ammo_path != "empty")
+				var/datum/ammo/bullet = GLOB.ammo_list[ammo_path]
+				if(bullet) bullet_name = bullet.name
+
+			description += "[SPAN_BOLD("Chamber [i]")]: "
+
+			if(bullet_name)
+				if(i == current_mag.chamber_position)
+					description += "[SPAN_HELPFUL(bullet_name)]"
+				else
+					description += "[SPAN_ORANGE(bullet_name)]"
+			else if(i == current_mag.chamber_position)
+				description += "[SPAN_BOLD(SPAN_RED("nothing"))] <a href='byond://?src=\ref[src];load_chamber=[i]'>\[Load]</a>"
+			else
+				description += "[SPAN_DANGER("nothing")] <a href='byond://?src=\ref[src];load_chamber=[i]'>\[Load]</a>"
+			description += "<br>"
+
+		to_chat(usr, SPAN_NOTICE(description))
+		return TRUE
+
+	if(href_list["load_chamber"])
+		if(!usr || !usr.is_holding(src) || !current_mag || current_mag.chamber_closed)
+			to_chat(usr, SPAN_WARNING("You can't load [src]'s cylinder from here!"))
+			return
+
+		var/chamber_to_load = text2num(href_list["load_chamber"])
+		if(!chamber_to_load || chamber_to_load < 1 || chamber_to_load > current_mag.max_rounds)
+			return
+
+		if(current_mag.chamber_contents[chamber_to_load] != "empty")
+			to_chat(usr, SPAN_WARNING("That chamber is already loaded!"))
+			return
+
+		var/obj/item/ammo_magazine/handful/bullet = usr.get_active_hand()
+		if(!istype(bullet) || bullet.caliber != current_mag.caliber)
+			to_chat(usr, SPAN_WARNING("You need to be holding a compatible bullet in your active hand!"))
+			return
+
+		if(bullet.current_rounds > 0 && add_to_cylinder(usr, bullet.default_ammo, chamber_to_load))
+			bullet.current_rounds--
+			bullet.update_icon()
+			if(bullet.current_rounds <= 0)
+				qdel(bullet)
+			current_mag.current_rounds++
+
+			Topic(href, list("list_cylinder" = 1))
+		return TRUE
+
+/obj/item/weapon/gun/revolver/get_examine_text(mob/user)
+	. = ..()
+
+	if(russian_roulette)
+		. += SPAN_RED("You are now playing Russian Roulette with [src]!")
+		. += SPAN_INFO("To cancel Russian Roulette, simply toggle your chamber via <span class='corp_label_green'>help</span> intent.")
+	else
+		. += SPAN_INFO("To start playing Russian Roulette, spin the cylinder via <span class='corp_label_red'>harm</span> intent.")
+
+/obj/item/weapon/gun/revolver/display_ammo(mob/user) // revolvers don't *really* have a chamber, at least in a way that matters for ammo displaying
+	if(flags_gun_features & GUN_AMMO_COUNTER && !(flags_gun_features & GUN_BURST_FIRING) && current_mag)
+		to_chat(user, SPAN_DANGER("[current_mag.current_rounds] / [current_mag.max_rounds] ROUNDS REMAINING."))
+
+/obj/item/weapon/gun/revolver/proc/rotate_cylinder(mob/user, backwards = FALSE)
+	if(current_mag)
+		if(backwards) // theres not going to be any current implementations for this yet, since you already have to juggle ten thousand intents to use a goddamn revolver, so its here until someone can find a use for it, or if someone actually gives a damn about making an ability icon for rotating backwards, or toggling rotation type or w/e - nihi
+			current_mag.chamber_position = current_mag.chamber_position == 1 ? current_mag.max_rounds : current_mag.chamber_position - 1
+		else
+			current_mag.chamber_position = current_mag.chamber_position >= current_mag.max_rounds ? 1 : current_mag.chamber_position + 1
+
+/obj/item/weapon/gun/revolver/proc/spin_cylinder(mob/user)
+	if(current_mag && current_mag.chamber_closed) //We're not spinning while it's open. Could screw up reloading.
+		if(flags_item & WIELDED)
+			rotate_cylinder(user)
+			to_chat(user, SPAN_NOTICE("You rotate the cylinder of the [src]."))
+			playsound(user, hand_reload_sound, 25, 1)
+			if(!russian_roulette) // look, i know it doesnt make sense given that you have to open the cylinder to actually check the bullet type, but bear with me here... #balance....
+				var/ammo_path = current_mag.chamber_contents[current_mag.chamber_position]
+				var/bullet_name = "empty"
+				if(ammo_path && ammo_path != "empty")
+					var/datum/ammo/bullet = GLOB.ammo_list[ammo_path]
+					if(bullet)
+						bullet_name = bullet.name
+				user.balloon_alert(user, bullet_name) // this might be funny with some bullet names
+		else
+			current_mag.chamber_position = rand(1,current_mag.max_rounds)
+			to_chat(user, SPAN_NOTICE("You spin the cylinder of the [src]."))
+			playsound(user, cocked_sound, 25, 1)
+			russian_roulette = TRUE //Sets to play RR. Resets when the gun is emptied.
+
+/obj/item/weapon/gun/revolver/proc/perform_tricks(mob/user)
+	var/result = revolver_trick(user)
+	if(result)
+		to_chat(user, SPAN_NOTICE("Your badass trick inspires you. Your next few shots will be focused!"))
+		accuracy_mult = BASE_ACCURACY_MULT * 2
+		accuracy_mult_unwielded = BASE_ACCURACY_MULT * 2
+		addtimer(CALLBACK(src, PROC_REF(recalculate_attachment_bonuses)), 3 SECONDS)
+
+/obj/item/weapon/gun/revolver/proc/replace_cylinder(number_to_replace)
+	if(current_mag)
+		current_mag.chamber_contents = list()
+		current_mag.chamber_contents.len = current_mag.max_rounds
+		var/i
+		for(i = 1 to current_mag.max_rounds)
+			current_mag.chamber_contents[i] = i > number_to_replace ? "empty" : current_mag.default_ammo
+		current_mag.chamber_position = max(1,number_to_replace)
+
+/obj/item/weapon/gun/revolver/proc/empty_cylinder()
+	if(current_mag)
+		for(var/i = 1 to current_mag.max_rounds)
+			current_mag.chamber_contents[i] = "empty"
+		current_mag.current_rounds = 0
+
+//The cylinder is always emptied out before a reload takes place.
+/obj/item/weapon/gun/revolver/proc/add_to_cylinder(mob/user, ammo_type, specific_chamber) //Bullets are added forward.
+	if(!current_mag)
+		return
+
+	if(specific_chamber)
+		current_mag.chamber_contents[specific_chamber] = ammo_type
+		playsound(user, hand_reload_sound, 25, TRUE)
+		return TRUE
+	else
+		for(var/i = 0 to current_mag.max_rounds - 1)
+			var/check_pos = (current_mag.chamber_position + i - 1) % current_mag.max_rounds + 1
+			if(current_mag.chamber_contents[check_pos] == "empty")
+				current_mag.chamber_contents[check_pos] = ammo_type
+				playsound(user, hand_reload_sound, 25, TRUE)
+				return TRUE
+
+	return FALSE
+
+/obj/item/weapon/gun/revolver/reload(mob/user, obj/item/ammo_magazine/magazine)
+	if(flags_gun_features & GUN_BURST_FIRING)
+		return
+
+	if(!magazine || !istype(magazine))
+		to_chat(user, SPAN_WARNING("That's not gonna work!"))
+		return
+
+	if(magazine.current_rounds <= 0)
+		to_chat(user, SPAN_WARNING("That [magazine.name] is empty!"))
+		return
+
+	if(current_mag) // the notes are probably a bit misleading since i modified some of it for mixing bullet type logic - nihi
+		if(istype(magazine, /obj/item/ammo_magazine/handful)) //Looks like we're loading via handful.
+			if(current_mag.chamber_closed)
+				open_cylinder(user)
+
+			if(!current_mag.current_rounds && current_mag.caliber == magazine.caliber) //Make sure nothing's loaded and the calibers match.
+				replace_ammo(user, magazine) //We are going to replace the ammo just in case.
+				current_mag.match_ammo(magazine)
+				var/mag_caliber = magazine.default_ammo
+				if(current_mag.transfer_ammo(magazine,user,1)) //Handful can get deleted, so we can't check through it.
+					add_to_cylinder(user, mag_caliber)
+
+			//If bullets still remain in the gun, we want to check if the actual ammo matches.
+			else if(magazine.caliber == current_mag.caliber) //Ammo calibers match, let's see if they are compatible.
+				var/mag_caliber = magazine.default_ammo
+				if(current_mag.transfer_ammo(magazine,user,1))
+					add_to_cylinder(user, mag_caliber)//If the magazine is deleted, we're still fine.
+			else
+				to_chat(user, SPAN_WARNING("[src] is not compatible with that kind of caliber!")) //Not the right kind of ammo.
+
+		else //So if it's not a handful, it's an actual speedloader.
+			if(current_mag.gun_type == magazine.gun_type) //Has to be the same gun type.
+				if(current_mag.chamber_closed) // If the chamber is closed unload it
+					unload(user)
+				var/rounds_to_load = current_mag.max_rounds - current_mag.current_rounds
+
+				if(rounds_to_load > 0 && magazine.current_rounds > 0)
+					var/transferred = current_mag.transfer_ammo(magazine, user, min(rounds_to_load, magazine.current_rounds))
+					if(transferred > 0)
+						for(var/i = 1 to transferred)
+							add_to_cylinder(user, magazine.default_ammo)
+						playsound(user, reload_sound, 25, 1) // Reloading via speedloader.
+
+				if(!current_mag.chamber_closed) // If the chamber is open, we close it
+					unload(user)
+			else
+				to_chat(user, SPAN_WARNING("\The [magazine] doesn't fit!"))
+
+/obj/item/weapon/gun/revolver/unload(mob/user)
+	if(flags_gun_features & GUN_BURST_FIRING)
+		return
+
+	if(current_mag)
+		if(current_mag.chamber_closed) //If it's actually closed.
+			to_chat(user, SPAN_NOTICE("You clear the cylinder of [src]."))
+			current_mag.create_handful(user)
+			empty_cylinder()
+			current_mag.chamber_closed = FALSE
+			russian_roulette = FALSE //Resets the RR variable.
+			playsound(src, unload_sound, 25, 1)
+		else
+			current_mag.chamber_closed = TRUE
+			playsound(src, chamber_close_sound, 25, 1)
+		update_icon()
+	return
+
+/obj/item/weapon/gun/revolver/able_to_fire(mob/user)
+	. = ..()
+	if(. && istype(user) && current_mag && !current_mag.chamber_closed)
+		to_chat(user, SPAN_WARNING("Close the cylinder!"))
+		playsound(user, pick(cylinder_click), 25, 1, 5)
+		return 0
+
+/obj/item/weapon/gun/revolver/ready_in_chamber()
+	if(current_mag)
+		if(current_mag.current_rounds > 0)
+			var/ammo_path = current_mag.chamber_contents[current_mag.chamber_position]
+			if(ammo_path != "empty")
+				in_chamber = create_bullet(GLOB.ammo_list[ammo_path], initial(name))
+				apply_traits(in_chamber)
+				return in_chamber
+
+/obj/item/weapon/gun/revolver/load_into_chamber(mob/user)
+	if(ready_in_chamber())
+		return in_chamber
+	rotate_cylinder() //If we fail to return to chamber the round, we just move the firing pin some.
+
+/obj/item/weapon/gun/revolver/reload_into_chamber(mob/user)
+	in_chamber = null
+	if(current_mag)
+		if(current_mag.current_rounds > 0)
+			current_mag.current_rounds-- // Subtract the round from the mag only after firing is confirmed
+		current_mag.chamber_contents[current_mag.chamber_position] = "empty" //We shot the bullet.
+		rotate_cylinder()
+		return 1
+
+/obj/item/weapon/gun/revolver/delete_bullet(obj/projectile/projectile_to_fire, refund = 0)
+	qdel(projectile_to_fire)
+	if(refund && current_mag)
+		current_mag.current_rounds++
+	return TRUE
+
+// FLUFF kinda
+/obj/item/weapon/gun/revolver/proc/close_chamber(mob/user)
+	if(current_mag && !current_mag.chamber_closed)
+		current_mag.chamber_closed = TRUE
+		to_chat(user, SPAN_NOTICE("You close the cylinder of [src]."))
+		playsound(user, chamber_close_sound, 25, 1)
+		russian_roulette = FALSE
+		update_icon()
+
+/obj/item/weapon/gun/revolver/proc/open_cylinder(mob/user)
+	if(current_mag && current_mag.chamber_closed)
+		current_mag.chamber_closed = FALSE
+		to_chat(user, SPAN_NOTICE("You open the cylinder of [src]."))
+		playsound(user, unload_sound, 25, 1)
+		russian_roulette = FALSE
+		update_icon()
+
+/obj/item/weapon/gun/revolver/proc/toggle_cylinder(mob/user)
+	if(!current_mag)
+		return FALSE
+
+	if(current_mag.chamber_closed)
+		if(user.a_intent == INTENT_HELP)
+			open_cylinder(user)
+			return TRUE
+	else
+		close_chamber(user)
+		return TRUE
+
+/obj/item/weapon/gun/revolver/unique_action(mob/user) // even though its a flag now, im not inclined to moving this to the parent + the code needs updating, and im not touching this thing
+	if(toggle_cylinder(user))
+		return
+
+	if((flags_gun_features & GUN_TRICKSTER) && user.a_intent == INTENT_DISARM)
+		perform_tricks(user)
+		return
+	else
+		spin_cylinder(user)
+
+/obj/item/weapon/gun/revolver/proc/revolver_basic_spin(mob/living/carbon/human/user, direction = 1, obj/item/weapon/gun/revolver/double)
+	set waitfor = 0
+	playsound(user, spin_sound, 25, 1)
+	if(double)
+		user.visible_message("[user] deftly flicks and spins [src] and [double]!", SPAN_NOTICE("You flick and spin [src] and [double]!"),  null, 3)
+		animation_wrist_flick(double, 1)
+	else
+		user.visible_message("[user] deftly flicks and spins [src]!",SPAN_NOTICE("You flick and spin [src]!"),  null, 3)
+
+	animation_wrist_flick(src, direction)
+	sleep(3)
+	if(loc && user)
+		playsound(user, thud_sound, 25, 1)
+
+/obj/item/weapon/gun/revolver/proc/revolver_throw_catch(mob/living/carbon/human/user)
+	set waitfor = 0
+	user.visible_message("[user] deftly flicks [src] and tosses it into the air!", SPAN_NOTICE("You flick and toss [src] into the air!"), null, 3)
+	var/img_layer = MOB_LAYER+0.1
+	var/image/trick = image(icon,user,icon_state,img_layer)
+	switch(pick(1,2))
+		if(1)
+			animation_toss_snatch(trick)
+		if(2)
+			animation_toss_flick(trick, pick(1,-1))
+
+	invisibility = 100
+	var/list/client/displayed_for = list()
+	for(var/mob/M as anything in viewers(user))
+		var/client/C = M.client
+		if(C)
+			C.images += trick
+			displayed_for += C
+
+	sleep(6) // BOO
+
+	for(var/client/C in displayed_for)
+		C.images -= trick
+	trick = null
+	invisibility = 0
+
+	if(loc && user)
+		playsound(user, thud_sound, 25, 1)
+		if(user.get_inactive_hand())
+			user.visible_message("[user] catches [src] with the same hand!", SPAN_NOTICE("You catch [src] as it spins in to your hand!"), null, 3)
+		else
+			user.visible_message("[user] catches [src] with \his other hand!", SPAN_NOTICE("You snatch [src] with your other hand! Awesome!"), null, 3)
+			user.temp_drop_inv_item(src)
+			user.put_in_inactive_hand(src)
+			user.swap_hand()
+			user.update_inv_l_hand(0)
+			user.update_inv_r_hand()
+
+/obj/item/weapon/gun/revolver/proc/revolver_trick(mob/living/carbon/human/user)
+	if(world.time < (recent_trick + trick_delay) )
+		return //Don't spam it.
+	if(!istype(user))
+		return //Not human.
+	var/chance = -5
+	chance = user.health < 6 ? 0 : user.health - 5
+
+	//Pain is largely ignored, since it deals its own effects on the mob. We're just concerned with health.
+	//And this proc will only deal with humans for now.
+
+	recent_trick = world.time //Turn on the delay for the next trick.
+	var/obj/item/weapon/gun/revolver/double = user.get_inactive_hand()
+	if(prob(chance))
+		switch(rand(1,8))
+			if(1)
+				revolver_basic_spin(user, -1)
+			if(2)
+				revolver_basic_spin(user, 1)
+			if(3)
+				revolver_throw_catch(user)
+			if(4)
+				revolver_basic_spin(user, 1)
+			if(5)
+				revolver_basic_spin(user, 1)
+			if(6)
+				var/arguments[] = istype(double) ? list(user, 1, double) : list(user, -1)
+				revolver_basic_spin(arglist(arguments))
+			if(7)
+				var/arguments[] = istype(double) ? list(user, -1, double) : list(user, 1)
+				revolver_basic_spin(arglist(arguments))
+			if(8)
+				if(istype(double))
+					spawn(0)
+						double.revolver_throw_catch(user)
+					revolver_throw_catch(user)
+				else
+					revolver_throw_catch(user)
+		return TRUE
+	else
+		user.visible_message(SPAN_INFO("[SPAN_BOLD(user)] fumbles with [src] like a huge idiot!"), null, null, 3)
+		to_chat(user, SPAN_WARNING("You fumble with [src] like an idiot... Uncool."))
+		return FALSE
+
+
+//-------------------------------------------------------
+//M44 Revolver
+
+/obj/item/weapon/gun/revolver/m44
+	name = "\improper M44 combat revolver"
+	desc = "A bulky revolver, occasionally carried by assault troops and officers in the Colonial Marines, as well as civilian law enforcement. Fires .44 Magnum rounds."
+	icon = 'icons/obj/items/weapons/guns/guns_by_faction/USCM/revolvers.dmi'
+	icon_state = "m44r"
+	item_state = "m44r"
+	current_mag = /obj/item/ammo_magazine/internal/revolver/m44
+	force = 8
+	flags_gun_features = GUN_INTERNAL_MAG|GUN_CAN_POINTBLANK|GUN_ONE_HAND_WIELDED|GUN_AMMO_COUNTER
+	attachable_allowed = list(
+		/obj/item/attachable/bayonet,
+		/obj/item/attachable/bayonet/upp,
+		/obj/item/attachable/bayonet/wy,
+		/obj/item/attachable/bayonet/antique,
+		/obj/item/attachable/bayonet/custom,
+		/obj/item/attachable/bayonet/custom/red,
+		/obj/item/attachable/bayonet/custom/blue,
+		/obj/item/attachable/bayonet/custom/black,
+		/obj/item/attachable/bayonet/tanto,
+		/obj/item/attachable/bayonet/tanto/blue,
+		/obj/item/attachable/bayonet/rmc_replica,
+		/obj/item/attachable/bayonet/rmc,
+		/obj/item/attachable/reddot,
+		/obj/item/attachable/reddot/small,
+		/obj/item/attachable/reflex,
+		/obj/item/attachable/flashlight/under_barrel,
+		/obj/item/attachable/flashlight,
+		/obj/item/attachable/heavy_barrel,
+		/obj/item/attachable/extended_barrel,
+		/obj/item/attachable/extended_barrel/vented,
+		/obj/item/attachable/compensator,
+		/obj/item/attachable/stock/revolver,
+		/obj/item/attachable/scope,
+		/obj/item/attachable/lasersight,
+		/obj/item/attachable/scope/mini,
+		/obj/item/attachable/alt_iff_scope,
+	)
+
+/obj/item/weapon/gun/revolver/m44/Initialize()
+	. = ..()
+	AddElement(/datum/element/corp_label/armat)
+
+/obj/item/weapon/gun/revolver/m44/set_gun_attachment_offsets()
+	attachable_offset = list("muzzle_x" = 29, "muzzle_y" = 21, "rail_x" = 12, "rail_y" = 23, "under_x" = 21, "under_y" = 16, "stock_x" = 16, "stock_y" = 20)
+
+/obj/item/weapon/gun/revolver/m44/set_gun_config_values()
+	..()
+	set_fire_delay(FIRE_DELAY_TIER_7)
+	accuracy_mult = BASE_ACCURACY_MULT
+	scatter = SCATTER_AMOUNT_TIER_10
+	damage_mult = BASE_BULLET_DAMAGE_MULT
+	recoil = RECOIL_AMOUNT_TIER_5
+	recoil_unwielded = RECOIL_AMOUNT_TIER_3
+
+/obj/item/weapon/gun/revolver/m44/mp //No differences (yet) beside spawning with marksman ammo loaded
+	current_mag = /obj/item/ammo_magazine/internal/revolver/m44/marksman
+
+/obj/item/weapon/gun/revolver/m44/custom //loadout
+	name = "\improper M44 custom combat revolver"
+	desc = "A bulky combat revolver. The handle has been polished to a pearly perfection, and the body is silver plated. Fires .44 Magnum rounds."
+	current_mag = /obj/item/ammo_magazine/internal/revolver/m44
+	icon_state = "m44rc"
+	item_state = "m44rc"
+
+//----------------------------------------------
+// Blade Runner Blasters.
+/obj/item/weapon/gun/revolver/m44/custom/pkd_special
+	name = "\improper M2019 Blaster"
+	desc = "Properly known as the Pflager Katsumata Series-D Blaster, the M2019 is a relic of a handgun used by detectives and blade runners, having replaced the snub nose .38 detective special in 2019. Fires .44 custom packed sabot magnum rounds. Legally a revolver, the unconventional but robust internal design has made this model incredibly popular amongst collectors and enthusiasts."
+	icon = 'icons/obj/items/weapons/guns/guns_by_faction/colony/revolvers.dmi'
+	icon_state = "lapd_2019"
+	item_state = "highpower" //placeholder
+
+	fire_sound = "gun_pkd"
+	fire_rattle = 'sound/weapons/gun_pkd_fire01_rattle.ogg'
+	reload_sound = 'sound/weapons/handling/pkd_speed_load.ogg'
+	cocked_sound = 'sound/weapons/handling/pkd_cock.wav'
+	unload_sound = 'sound/weapons/handling/pkd_open_chamber.ogg'
+	chamber_close_sound = 'sound/weapons/handling/pkd_close_chamber.ogg'
+	hand_reload_sound = 'sound/weapons/gun_revolver_load3.ogg'
+	current_mag = /obj/item/ammo_magazine/internal/revolver/m44/pkd
+	accepted_ammo = list(
+		/obj/item/ammo_magazine/internal/revolver/m44/pkd,
+	)
+
+	attachable_allowed = list(
+		/obj/item/attachable/flashlight,
+		/obj/item/attachable/lasersight,
+		/obj/item/attachable/flashlight/under_barrel,
+	)
+
+	item_icons = list(
+		WEAR_WAIST = 'icons/mob/humans/onmob/clothing/belts/guns.dmi',
+		WEAR_J_STORE = 'icons/mob/humans/onmob/clothing/suit_storage/guns_by_type/pistols.dmi',
+		WEAR_L_HAND = 'icons/mob/humans/onmob/inhands/weapons/guns/pistols_lefthand.dmi',
+		WEAR_R_HAND = 'icons/mob/humans/onmob/inhands/weapons/guns/pistols_righthand.dmi'
+	)
+
+/obj/item/weapon/gun/revolver/m44/custom/pkd_special/set_gun_attachment_offsets()
+	attachable_offset = list("muzzle_x" = 29, "muzzle_y" = 22, "rail_x" = 11, "rail_y" = 25, "under_x" = 20, "under_y" = 18, "stock_x" = 20, "stock_y" = 18)
+
+/obj/item/weapon/gun/revolver/m44/custom/pkd_special/set_gun_config_values()
+	..()
+	accuracy_mult = BASE_ACCURACY_MULT + HIT_ACCURACY_MULT_TIER_4
+	damage_mult = BASE_BULLET_DAMAGE_MULT + BULLET_DAMAGE_MULT_TIER_2
+	set_fire_delay(FIRE_DELAY_TIER_11)
+
+/obj/item/weapon/gun/revolver/m44/custom/pkd_special/k2049
+	name = "\improper M2049 Blaster"
+	desc = "In service since 2049, the LAPD 2049 .44 special has been used to retire more replicants than there are colonists in the American Corridor. The top mounted attachment rail allows this revised version to mount a wide variety of optics for the aspiring detective. Although replicants aren't permitted past the outer core systems, this piece occasionally finds its way to the rim in the hand of defects, collectors, and thieves."
+	icon_state = "lapd_2049"
+	item_state = "m4a3c" //placeholder
+
+	attachable_allowed = list(
+		/obj/item/attachable/flashlight,
+		/obj/item/attachable/lasersight,
+		/obj/item/attachable/flashlight/under_barrel,
+		/obj/item/attachable/reddot,
+		/obj/item/attachable/reddot/small,
+		/obj/item/attachable/reflex,
+		/obj/item/attachable/scope,
+		/obj/item/attachable/scope/mini,
+		/obj/item/attachable/alt_iff_scope,
+	)
+
+/obj/item/weapon/gun/revolver/m44/custom/pkd_special/k2049/set_gun_attachment_offsets()
+	attachable_offset = list("muzzle_x" = 29, "muzzle_y" = 22, "rail_x" = 11, "rail_y" = 25, "under_x" = 20, "under_y" = 18, "stock_x" = 20, "stock_y" = 18)
+
+/obj/item/weapon/gun/revolver/m44/custom/pkd_special/l_series
+	name = "\improper PKL 'Double' Blaster"
+	desc = "Sold to civilians and private corporations, the Pflager Katsumata Series-L Blaster is a premium double barrel sidearm that can fire two rounds at the same time. Usually found in the hands of combat synths and replicants, this hand cannon is worth more than the combined price of three Emanators. Originally commissioned by the Wallace Corporation, it has since been released onto public market as a luxury firearm."
+	icon_state = "pkd_double"
+	item_state = "_88m4" //placeholder
+
+	attachable_allowed = list(
+		/obj/item/attachable/flashlight,
+		/obj/item/attachable/lasersight,
+		/obj/item/attachable/flashlight/under_barrel,
+	)
+
+/obj/item/weapon/gun/revolver/m44/custom/pkd_special/l_series/set_gun_attachment_offsets()
+	attachable_offset = list("muzzle_x" = 29, "muzzle_y" = 22, "rail_x" = 11, "rail_y" = 25, "under_x" = 20, "under_y" = 18, "stock_x" = 20, "stock_y" = 18)
+
+/obj/item/weapon/gun/revolver/m44/custom/pkd_special/l_series/set_gun_config_values()
+	..()
+	accuracy_mult = BASE_ACCURACY_MULT + HIT_ACCURACY_MULT_TIER_4
+	damage_mult = BASE_BULLET_DAMAGE_MULT + BULLET_DAMAGE_MULT_TIER_2
+	set_fire_delay(FIRE_DELAY_TIER_11)
+	set_burst_amount(BURST_AMOUNT_TIER_2)
+	set_burst_delay(FIRE_DELAY_TIER_12)
+
+
+/obj/item/weapon/gun/revolver/m44/custom/webley
+	name = "\improper Webley SRV-80"
+	desc = "A top-break revolver used by the Imperial Armed Space Force’s 24th Para Regiment, and sometimes seen in the hands of other TWE military forces. Fires .455 Magnum. Archaic, yes, but brutally effective. Vacuum-sealed internals, Bakelite-style grips, and a recoil like getting kicked by a mule. Still puts things down. Hard."
+	current_mag = /obj/item/ammo_magazine/internal/revolver/webley
+	icon = 'icons/obj/items/weapons/guns/guns_by_faction/TWE/revolvers.dmi'
+	icon_state = "webley"
+	item_state = "m44r"
+	attachable_allowed = list(
+		/obj/item/attachable/bayonet,
+		/obj/item/attachable/bayonet/upp,
+		/obj/item/attachable/bayonet/antique,
+		/obj/item/attachable/bayonet/custom,
+		/obj/item/attachable/bayonet/custom/red,
+		/obj/item/attachable/bayonet/custom/blue,
+		/obj/item/attachable/bayonet/custom/black,
+		/obj/item/attachable/bayonet/tanto,
+		/obj/item/attachable/bayonet/tanto/blue,
+		/obj/item/attachable/bayonet/rmc_replica,
+		/obj/item/attachable/bayonet/rmc,
+	)
+
+/obj/item/weapon/gun/revolver/m44/custom/webley/set_gun_config_values()
+	..()
+	accuracy_mult = BASE_ACCURACY_MULT + HIT_ACCURACY_MULT_TIER_4
+	damage_mult = BASE_BULLET_DAMAGE_MULT + BULLET_DAMAGE_MULT_TIER_2
+
+/obj/item/weapon/gun/revolver/m44/custom/webley/IASF_webley
+	icon_state = "webley_black"
+	item_state = "m44r"
+
+//-------------------------------------------------------
+//RUSSIAN REVOLVER //Based on the 7.62mm Russian revolvers.
+
+/obj/item/weapon/gun/revolver/upp
+	name = "\improper ZHNK-72 revolver"
+	desc = "The ZHNK-72 is a UPP designed revolver. The ZHNK-72 is used by the UPP armed forces in a policing role as well as limited numbers in the hands of SNCOs."
+	icon = 'icons/obj/items/weapons/guns/guns_by_faction/UPP/revolvers.dmi'
+	icon_state = "zhnk72"
+	item_state = "zhnk72"
+
+	fire_sound = "gun_pkd" //sounds stolen from bladerunner revolvers bc they aren't used and sound awesome
+	fire_rattle = 'sound/weapons/gun_pkd_fire01_rattle.ogg'
+	reload_sound = 'sound/weapons/handling/pkd_speed_load.ogg'
+	cocked_sound = 'sound/weapons/handling/pkd_cock.wav' // gotta change this to something else now that you can rotate the cylinder by a single position
+	unload_sound = 'sound/weapons/handling/pkd_open_chamber.ogg'
+	chamber_close_sound = 'sound/weapons/handling/pkd_close_chamber.ogg'
+	hand_reload_sound = 'sound/weapons/gun_revolver_load3.ogg'
+	current_mag = /obj/item/ammo_magazine/internal/revolver/upp
+	force = 8
+	attachable_allowed = list(
+		/obj/item/attachable/reddot, // Rail
+		/obj/item/attachable/reddot/small,
+		/obj/item/attachable/reflex,
+		/obj/item/attachable/flashlight,
+		/obj/item/attachable/scope,
+		/obj/item/attachable/scope/mini,
+		/obj/item/attachable/bayonet, // Muzzle
+		/obj/item/attachable/bayonet/upp,
+		/obj/item/attachable/heavy_barrel,
+		/obj/item/attachable/extended_barrel,
+		/obj/item/attachable/extended_barrel/vented,
+		/obj/item/attachable/lasersight, // Underbarrel
+		/obj/item/attachable/flashlight/under_barrel,
+		)
+
+/obj/item/weapon/gun/revolver/upp/Initialize()
+	. = ..()
+	AddElement(/datum/element/corp_label/norcomm)
+
+/obj/item/weapon/gun/revolver/upp/set_gun_attachment_offsets()
+	attachable_offset = list("muzzle_x" = 28, "muzzle_y" = 21, "rail_x" = 14, "rail_y" = 23, "under_x" = 19, "under_y" = 17, "stock_x" = 24, "stock_y" = 19)
+
+/obj/item/weapon/gun/revolver/upp/set_gun_config_values()
+	..()
+	set_fire_delay(FIRE_DELAY_TIER_9)
+	accuracy_mult = BASE_ACCURACY_MULT
+	scatter = SCATTER_AMOUNT_TIER_6
+	damage_mult = BASE_BULLET_DAMAGE_MULT + BULLET_DAMAGE_MULT_TIER_4
+	recoil = 0
+	recoil_unwielded = 0
+
+/obj/item/weapon/gun/revolver/upp/shrapnel
+	current_mag = /obj/item/ammo_magazine/internal/revolver/upp/shrapnel
+	random_spawn_chance = 100
+	random_under_chance = 100
+	random_spawn_under = list(
+		/obj/item/attachable/lasersight,
+	)
+
+//-------------------------------------------------------
+//357 REVOLVER //Based on the generic S&W 357.
+//a lean mean machine, pretty inaccurate unless you play its dance.
+
+/obj/item/weapon/gun/revolver/small
+	name = "\improper S&W .38 model 37 revolver"
+	desc = "A lean .38 made by Smith & Wesson. A timeless classic, from antiquity to the future. This specific model is known to be wildly inaccurate, yet extremely lethal."
+	icon = 'icons/obj/items/weapons/guns/guns_by_faction/colony/revolvers.dmi'
+	icon_state = "sw357"
+	item_state = "sw357"
+	fire_sound = 'sound/weapons/gun_44mag2.ogg'
+	current_mag = /obj/item/ammo_magazine/internal/revolver/small
+	force = 6
+	flags_gun_features = GUN_ANTIQUE|GUN_ONE_HAND_WIELDED|GUN_CAN_POINTBLANK|GUN_INTERNAL_MAG|GUN_TRICKSTER
+
+/obj/item/weapon/gun/revolver/small/set_gun_attachment_offsets()
+	attachable_offset = list("muzzle_x" = 30, "muzzle_y" = 19, "rail_x" = 12, "rail_y" = 21, "under_x" = 20, "under_y" = 15, "stock_x" = 20, "stock_y" = 15)
+
+/obj/item/weapon/gun/revolver/small/set_gun_config_values()
+	..()
+	set_fire_delay(FIRE_DELAY_TIER_6)
+	accuracy_mult = BASE_ACCURACY_MULT - HIT_ACCURACY_MULT_TIER_7
+	accuracy_mult_unwielded = BASE_ACCURACY_MULT - HIT_ACCURACY_MULT_TIER_7
+	scatter = SCATTER_AMOUNT_TIER_5
+	damage_mult = BASE_BULLET_DAMAGE_MULT * 2
+	recoil = 0
+	recoil_unwielded = 0
+
+/obj/item/weapon/gun/revolver/small/black
+	name = "\improper S&W .38 model 37 Custom revolver"
+	desc = "A Custom, lean .38 made by Smith & Wesson. A timeless classic, from antiquity to the future. This specific model, with its sleek black body and custom ivory grips, is known to be wildly inaccurate, yet extremely lethal."
+	icon_state = "black_sw357"
+	item_state = "black_sw357"
+
+//-------------------------------------------------------
+//BURST REVOLVER //Mateba(Unica) is pretty well known. The cylinder folds up instead of to the side.
+
+/obj/item/weapon/mateba_key
+	name = "Unica barrel key"
+	desc = "Used to swap the barrels of a unica revolver."
+	icon = 'icons/obj/items/tools.dmi'
+	icon_state = "matebakey"
+	flags_atom = FPRINT|QUICK_DRAWABLE|CONDUCT
+	force = 5
+	w_class = SIZE_TINY
+	throwforce = 5
+	throw_speed = SPEED_VERY_FAST
+	throw_range = 5
+	attack_verb = list("stabbed")
+
+/obj/item/weapon/gun/revolver/mateba
+	name = "\improper Spearhead Unica 6 autorevolver"
+	desc = "The Spearhead Unica is a powerful, fast-firing revolver that uses its own recoil to rotate the cylinders. It fires heavy .454 rounds."
+	desc_lore = "Originally an Italian design, during the middle 21st century, Mateba company had many severe financial issues as well as violation of local firearm laws. \
+	After numerous court cases, they went bankrupt and few years later, Spearhead Armaments acquired the rights to the Mateba designs, and re-introduced the Unica 6 as the 'Spearhead Unica', \
+	as well as many other Mateba revolvers. The new design featured a few changes, like rechambered variation for .454 rounds, attachment rail and other attachments support, but overall, design intentionally remained the same, \
+	due to the iconic status in pop culture and high demand for the authentic piece. The gun is produced in limited numbers and is considered a luxury firearm, often seen in the hands of high-ranking officers, mercenaries and wealthy collectors, \
+	usually comes with authentic wooden grips, engravings, or gold plating finish."
+	icon = 'icons/obj/items/weapons/guns/guns_by_faction/USCM/revolvers.dmi'
+	icon_state = "mateba"
+	item_state = "mateba"
+
+	fire_sound = 'sound/weapons/gun_mateba.ogg'
+	current_mag = /obj/item/ammo_magazine/internal/revolver/mateba
+	force = 15
+	attachable_allowed = list(
+		/obj/item/attachable/reddot,
+		/obj/item/attachable/reddot/small,
+		/obj/item/attachable/reflex,
+		/obj/item/attachable/flashlight,
+		/obj/item/attachable/flashlight/under_barrel,
+		/obj/item/attachable/heavy_barrel,
+		/obj/item/attachable/compensator,
+		/obj/item/attachable/mateba,
+		/obj/item/attachable/mateba/long,
+		/obj/item/attachable/mateba/short,
+	)
+	starting_attachment_types = list(/obj/item/attachable/mateba)
+	unacidable = TRUE
+	explo_proof = TRUE
+	black_market_value = 100
+	var/is_locked = TRUE
+	var/can_change_barrel = TRUE
+	flags_gun_features = GUN_CAN_POINTBLANK|GUN_INTERNAL_MAG|GUN_ONE_HAND_WIELDED|GUN_BATTLEFIELD_EXECUTION|GUN_CAN_WARNING_SHOT
+
+/obj/item/weapon/gun/revolver/mateba/Initialize()
+	. = ..()
+	AddElement(/datum/element/corp_label/spearhead)
+
+/obj/item/weapon/gun/revolver/mateba/attackby(obj/item/I, mob/user)
+	if(istype(I, /obj/item/weapon/mateba_key) && can_change_barrel)
+		if(attachments["special"])
+			var/obj/item/attachable/R = attachments["special"]
+			visible_message(SPAN_NOTICE("[user] begins stripping [R] from [src]."),
+			SPAN_NOTICE("You begin stripping [R] from [src]."), null, 4)
+
+			if(!do_after(usr, 35, INTERRUPT_ALL, BUSY_ICON_FRIENDLY))
+				return
+
+			if(!(R == attachments[R.slot]))
+				return
+
+			visible_message(SPAN_NOTICE("[user] unlocks and removes [R] from [src]."),
+			SPAN_NOTICE("You unlocks removes [R] from [src]."), null, 4)
+			R.Detach(user, src)
+			if(attachments["muzzle"])
+				var/obj/item/attachable/M = attachments["muzzle"]
+				M.Detach(user, src)
+			playsound(src, 'sound/handling/attachment_remove.ogg', 15, 1, 4)
+			update_icon()
+	else if(istype(I, /obj/item/attachable))
+		var/obj/item/attachable/A = I
+		if(A.slot == "muzzle" && !attachments["special"] && can_change_barrel)
+			to_chat(user, SPAN_WARNING("You need to attach a barrel first!"))
+			return
+	. = ..()
+
+/obj/item/weapon/gun/revolver/mateba/unique_action(mob/user)
+	if(fire_into_air(user))
+		return ..()
+
+/obj/item/weapon/gun/revolver/mateba/set_gun_attachment_offsets()
+	attachable_offset = list("muzzle_x" = 28, "muzzle_y" = 21, "rail_x" = 9, "rail_y" = 25, "under_x" = 19, "under_y" = 17, "stock_x" = 19, "stock_y" = 17, "special_x" = 23, "special_y" = 22)
+
+/obj/item/weapon/gun/revolver/mateba/set_gun_config_values()
+	..()
+	set_fire_delay(FIRE_DELAY_TIER_3)
+	set_burst_amount(BURST_AMOUNT_TIER_3)
+	set_burst_delay(FIRE_DELAY_TIER_8)
+	accuracy_mult = BASE_ACCURACY_MULT + HIT_ACCURACY_MULT_TIER_2
+	accuracy_mult_unwielded = BASE_ACCURACY_MULT - HIT_ACCURACY_MULT_TIER_5
+	scatter = SCATTER_AMOUNT_TIER_7
+	burst_scatter_mult = SCATTER_AMOUNT_TIER_6
+	scatter_unwielded = SCATTER_AMOUNT_TIER_2
+	damage_mult = BASE_BULLET_DAMAGE_MULT + BULLET_DAMAGE_MULT_TIER_10
+	recoil = RECOIL_AMOUNT_TIER_2
+	recoil_unwielded = RECOIL_AMOUNT_TIER_2
+
+/obj/item/weapon/gun/revolver/mateba/pmc
+	current_mag = /obj/item/ammo_magazine/internal/revolver/mateba/ap
+
+/obj/item/weapon/gun/revolver/mateba/impact
+	current_mag = /obj/item/ammo_magazine/internal/revolver/mateba/impact
+
+/obj/item/weapon/gun/revolver/mateba/general
+	name = "\improper golden Spearhead Unica-6 autorevolver custom"
+	desc = "Boasting a gold-plated frame and grips made of a critically-endangered rosewood tree, this heavily-customized Unica 6 autorevolver's pretentious design rivals only the power of its wielder. Fit for a king. Or a general."
+	icon_state = "amateba"
+	item_state = "amateba"
+	current_mag = /obj/item/ammo_magazine/internal/revolver/mateba/impact
+	attachable_allowed = list(
+		/obj/item/attachable/reddot,
+		/obj/item/attachable/reddot/small,
+		/obj/item/attachable/reflex,
+		/obj/item/attachable/flashlight,
+		/obj/item/attachable/flashlight/under_barrel,
+		/obj/item/attachable/heavy_barrel,
+		/obj/item/attachable/compensator,
+		/obj/item/attachable/mateba/gold,
+		/obj/item/attachable/mateba/long/gold,
+		/obj/item/attachable/mateba/short/gold,
+	)
+	starting_attachment_types = null
+
+/obj/item/weapon/gun/revolver/mateba/general/handle_starting_attachment()
+	..()
+	var/obj/item/attachable/mateba/long/gold/barrel = new(src)
+	barrel.flags_attach_features &= ~ATTACH_REMOVABLE
+	barrel.Attach(src)
+	update_attachables()
+
+/obj/item/weapon/gun/revolver/mateba/general/santa
+	name = "\improper Festeba"
+	desc = "The Unica used by SANTA himself. Rumoured to be loaded with explosive ammunition."
+	icon_state = "amateba"
+	item_state = "amateba"
+	current_mag = /obj/item/ammo_magazine/internal/revolver/mateba/explosive
+	color = "#FF0000"
+	fire_sound = null
+	fire_sounds = list('sound/voice/alien_queen_xmas.ogg', 'sound/voice/alien_queen_xmas_2.ogg')
+	starting_attachment_types = list(/obj/item/attachable/heavy_barrel)
+
+/obj/item/weapon/gun/revolver/mateba/engraved
+	name = "\improper engraved Spearhead Unica 6 autorevolver"
+	desc = "With a matte black chassis, ebony wooden grips, and gold-trimmed cylinder, this statement of a Unica is as much a work of art as it is a bringer of death."
+	icon_state = "aamateba"
+	item_state = "aamateba"
+	current_mag = /obj/item/ammo_magazine/internal/revolver/mateba/impact
+
+/obj/item/weapon/gun/revolver/mateba/silver
+	name = "\improper silver Spearhead Unica 6 autorevolver"
+	desc = "The .454 Spearhead Unica 6 autorevolver is a semi-automatic handcannon that uses its own recoil to rotate the cylinders. Extremely rare, prohibitively costly, and unyieldingly powerful, it's found in the hands of a select few high-ranking USCM officials. Stylish, sophisticated, and above all, extremely deadly. This one is finished in a beautiful polished silver."
+	icon_state = "smateba"
+	item_state = "smateba"
+	current_mag = /obj/item/ammo_magazine/internal/revolver/mateba/impact
+	attachable_allowed = list(
+		/obj/item/attachable/reddot,
+		/obj/item/attachable/reflex,
+		/obj/item/attachable/flashlight,
+		/obj/item/attachable/flashlight/under_barrel,
+		/obj/item/attachable/heavy_barrel,
+		/obj/item/attachable/compensator,
+		/obj/item/attachable/mateba/silver,
+		/obj/item/attachable/mateba/long/silver,
+		/obj/item/attachable/mateba/short/silver,
+	)
+
+	starting_attachment_types = list(/obj/item/attachable/mateba/silver)
+
+/obj/item/weapon/gun/revolver/mateba/golden
+	name = "\improper golden Spearhead Unica 6 autorevolver"
+	desc = "The .454 Spearhead Unica 6 autorevolver is a semi-automatic handcannon that uses its own recoil to rotate the cylinders. Extremely rare, prohibitively costly, and unyieldingly powerful, it's found in the hands of a select few high-ranking USCM officials. Stylish, sophisticated, and above all, extremely deadly. This one is finished in a beautiful polished silver."
+	icon_state = "amateba"
+	item_state = "amateba"
+	current_mag = /obj/item/ammo_magazine/internal/revolver/mateba/impact
+	attachable_allowed = list(
+		/obj/item/attachable/reddot,
+		/obj/item/attachable/reflex,
+		/obj/item/attachable/flashlight,
+		/obj/item/attachable/flashlight/under_barrel,
+		/obj/item/attachable/heavy_barrel,
+		/obj/item/attachable/compensator,
+		/obj/item/attachable/mateba/gold,
+		/obj/item/attachable/mateba/long/gold,
+		/obj/item/attachable/mateba/short/gold,
+	)
+
+	starting_attachment_types = list(/obj/item/attachable/mateba/gold)
+
+/obj/item/weapon/gun/revolver/mateba/engraved/tactical
+	current_mag = /obj/item/ammo_magazine/internal/revolver/mateba
+	starting_attachment_types = list(/obj/item/attachable/mateba, /obj/item/attachable/compensator, /obj/item/attachable/reflex)
+
+/obj/item/weapon/gun/revolver/mateba/cmateba
+	name = "custom Spearhead Unica 6 autorevolver"
+	desc = "The .454 Spearhead Unica 6 autorevolver is a semi-automatic handcannon that uses its own recoil to rotate the cylinders. Extremely rare, prohibitively costly, and unyieldingly powerful, it's found in the hands of a select few high-ranking USCM officials. Stylish, sophisticated, and above all, extremely deadly."
+	icon_state = "cmateba"
+	item_state = "cmateba"
+	current_mag = /obj/item/ammo_magazine/internal/revolver/mateba/impact
+	map_specific_decoration = TRUE
+
+/obj/item/weapon/gun/revolver/mateba/special
+	name = "special Spearhead Unica 6 autorevolver"
+	desc = "An old, heavily modified version of the Spearhead Unica 6 autorevolver. It sports a smooth wooden grip, and a much larger barrel to its unmodified counterpart. It's clear that this weapon has been cared for over a long period of time."
+	icon_state = "cmateba_special"
+	item_state = "cmateba_special"
+	current_mag = /obj/item/ammo_magazine/internal/revolver/mateba/impact
+	attachable_allowed = list(
+		/obj/item/attachable/reddot,
+		/obj/item/attachable/reddot/small,
+		/obj/item/attachable/reflex,
+		/obj/item/attachable/flashlight,
+		/obj/item/attachable/flashlight/under_barrel,
+		/obj/item/attachable/heavy_barrel,
+		/obj/item/attachable/compensator,
+	)
+	starting_attachment_types = list()
+	can_change_barrel = FALSE
+
+/obj/item/weapon/gun/revolver/mateba/special/set_gun_config_values()
+	..()
+	accuracy_mult = BASE_ACCURACY_MULT + HIT_ACCURACY_MULT_TIER_4
+
+/obj/item/weapon/gun/revolver/mateba/special/set_gun_attachment_offsets()
+	attachable_offset = list("muzzle_x" = 30, "muzzle_y" = 23, "rail_x" = 9, "rail_y" = 25, "under_x" = 19, "under_y" = 17, "stock_x" = 19, "stock_y" = 17, "special_x" = 23, "special_y" = 22)
+
+/obj/item/weapon/gun/revolver/mateba/mtr6m
+	name = "\improper Spearhead 2006M autorevolver"
+	desc = "The Spearhead 2006M is a powerful, fast-firing revolver that uses its own recoil to rotate the cylinders. It fires heavy .454 rounds. It is compatible with more commonly found Unica 6 speedloaders."
+	desc_lore = "Originally an Italian design, during the middle 21st century, Mateba company had many severe financial issues as well as violation of local firearm laws. \
+	After numerous court cases, they went bankrupt and few years later, Spearhead Armaments acquired the rights to the Mateba designs, and re-introduced the 2006M as the 'Spearhead 2006M', \
+	as well as many other Mateba revolvers. The new design featured a few changes, like rechambered variation for .454 rounds, attachment rail and other attachments support, but overall, design intentionally remained the same, \
+	due to the iconic status in pop culture and high demand for the authentic piece. The gun is produced in limited numbers and is considered a luxury firearm, often seen in the hands of high-ranking officers, mercenaries and wealthy collectors, \
+	usually comes with authentic wooden grips, engravings, or gold plating finish."
+	icon_state = "mateba_2006m"
+	item_state = "mateba_2006m"
+	current_mag = /obj/item/ammo_magazine/internal/revolver/mateba/impact
+	fire_sound = 'sound/weapons/gun_mateba_2006m.ogg'
+	chamber_close_sound = 'sound/weapons/gun_mateba_2006m_close_chamber.ogg'
+	unload_sound = 'sound/weapons/gun_mateba_2006m_open_chamber.ogg'
+	reload_sound = 'sound/weapons/gun_mateba_2006m_load.ogg'
+	attachable_allowed = list(
+		/obj/item/attachable/reddot,
+		/obj/item/attachable/reddot/small,
+		/obj/item/attachable/reflex,
+		/obj/item/attachable/flashlight,
+		/obj/item/attachable/flashlight/under_barrel,
+		/obj/item/attachable/heavy_barrel,
+		/obj/item/attachable/compensator,
+	)
+	starting_attachment_types = list()
+	can_change_barrel = FALSE
+	flags_gun_features = GUN_CAN_POINTBLANK|GUN_INTERNAL_MAG|GUN_ONE_HAND_WIELDED|GUN_BATTLEFIELD_EXECUTION||GUN_CAN_WARNING_SHOT|GUN_TRICKSTER
+
+/obj/item/weapon/gun/revolver/mateba/mtr6m/set_gun_attachment_offsets()
+	attachable_offset = list("muzzle_x" = 29, "muzzle_y" = 23, "rail_x" = 19, "rail_y" = 23, "under_x" = 19, "under_y" = 17, "stock_x" = 19, "stock_y" = 17, "special_x" = 23, "special_y" = 22)
+
+/obj/item/weapon/gun/revolver/mateba/mtr6m/golden
+	name = "\improper golden Spearhead 2006M autorevolver"
+	icon_state = "gmateba_2006m"
+	item_state = "gmateba_2006m"
+
+/obj/item/weapon/gun/revolver/mateba/mtr6m/golden/black_handle
+	icon_state = "bgmateba_2006m"
+	item_state = "bgmateba_2006m"
+
+/obj/item/weapon/gun/revolver/mateba/mtr6m/silver
+	name = "\improper silver Spearhead 2006M autorevolver"
+	icon_state = "smateba_2006m"
+	item_state = "smateba_2006m"
+
+
+//-------------------------------------------------------
+//MARSHALS REVOLVER //Spearhead exists in Alien cannon.
+
+/obj/item/weapon/gun/revolver/cmb
+	name = "\improper Spearhead Autorevolver"
+	desc = "An automatic revolver chambered in .357, often loaded with hollowpoint on spaceships to prevent hull damage. Commonly issued to Colonial Marshals."
+	icon = 'icons/obj/items/weapons/guns/guns_by_faction/colony/revolvers.dmi'
+	icon_state = "spearhead"
+	item_state = "spearhead"
+	fire_sound = null
+	fire_sounds = list('sound/weapons/gun_cmb_1.ogg', 'sound/weapons/gun_cmb_2.ogg')
+	fire_rattle = 'sound/weapons/gun_cmb_rattle.ogg'
+	cylinder_click = list('sound/weapons/handling/gun_cmb_click1.ogg', 'sound/weapons/handling/gun_cmb_click2.ogg')
+	current_mag = /obj/item/ammo_magazine/internal/revolver/cmb/hollowpoint
+	force = 12
+	attachable_allowed = list(
+		/obj/item/attachable/suppressor, // Muzzle
+		/obj/item/attachable/suppressor/sleek,
+		/obj/item/attachable/extended_barrel,
+		/obj/item/attachable/extended_barrel/vented,
+		/obj/item/attachable/heavy_barrel,
+		/obj/item/attachable/compensator,
+		/obj/item/attachable/reddot, // Rail
+		/obj/item/attachable/reddot/small,
+		/obj/item/attachable/reflex,
+		/obj/item/attachable/flashlight,
+		/obj/item/attachable/scope/mini,
+		/obj/item/attachable/gyro, // Under
+		/obj/item/attachable/lasersight,
+		/obj/item/attachable/flashlight/under_barrel,
+	)
+
+/obj/item/weapon/gun/revolver/cmb/Initialize(mapload)
+	. = ..()
+	AddElement(/datum/element/corp_label/spearhead)
+
+/obj/item/weapon/gun/revolver/cmb/click_empty(mob/user)
+	if(user)
+		to_chat(user, SPAN_WARNING(SPAN_BOLD("*click*")))
+		playsound(user, pick('sound/weapons/handling/gun_cmb_click1.ogg', 'sound/weapons/handling/gun_cmb_click2.ogg'), 25, 1, 5) //5 tile range
+	else
+		playsound(src, pick('sound/weapons/handling/gun_cmb_click1.ogg', 'sound/weapons/handling/gun_cmb_click2.ogg'), 25, 1, 5)
+
+/obj/item/weapon/gun/revolver/cmb/Fire(atom/target, mob/living/user, params, reflex = 0, dual_wield)
+	playsound('sound/weapons/gun_cmb_bass.ogg') // badass shooting bass
+	return ..()
+
+/obj/item/weapon/gun/revolver/cmb/set_gun_attachment_offsets()
+	attachable_offset = list("muzzle_x" = 29, "muzzle_y" = 19, "rail_x" = 11, "rail_y" = 23, "under_x" = 22, "under_y" = 16, "stock_x" = 20, "stock_y" = 18)
+
+/obj/item/weapon/gun/revolver/cmb/set_gun_config_values()
+	..()
+	set_fire_delay(FIRE_DELAY_TIER_6)
+	accuracy_mult = BASE_ACCURACY_MULT + HIT_ACCURACY_MULT_TIER_4
+	accuracy_mult_unwielded = BASE_ACCURACY_MULT - HIT_ACCURACY_MULT_TIER_4
+	scatter = SCATTER_AMOUNT_TIER_7
+	scatter_unwielded = SCATTER_AMOUNT_TIER_5
+	damage_mult = BASE_BULLET_DAMAGE_MULT + BULLET_DAMAGE_MULT_TIER_3
+	recoil = RECOIL_AMOUNT_TIER_5
+	recoil_unwielded = RECOIL_AMOUNT_TIER_3
+
+/obj/item/weapon/gun/revolver/cmb/tactical
+	starting_attachment_types = list(/obj/item/attachable/extended_barrel, /obj/item/attachable/lasersight, /obj/item/attachable/reflex)
+
+/obj/item/weapon/gun/revolver/cmb/normalpoint
+	current_mag = /obj/item/ammo_magazine/internal/revolver/cmb
+
+/obj/item/weapon/gun/revolver/cmb/custom
+	name = "\improper Spearhead custom autorevolver"
+	desc = "An automatic revolver chambered in .357, custom made of darker metal and with a wooden handle, clearly made for a person with taste in mind."
+	icon_state = "black_spearhead"
+	item_state = "black_spearhead"
+	current_mag = /obj/item/ammo_magazine/internal/revolver/cmb
+	flags_gun_features = GUN_ANTIQUE|GUN_ONE_HAND_WIELDED|GUN_CAN_POINTBLANK|GUN_INTERNAL_MAG|GUN_TRICKSTER
+
+/obj/item/weapon/gun/revolver/cmb/custom/tactical
+	starting_attachment_types = list(/obj/item/attachable/extended_barrel, /obj/item/attachable/lasersight, /obj/item/attachable/reflex)

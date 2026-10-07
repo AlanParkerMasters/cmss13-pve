@@ -1,0 +1,556 @@
+/atom/movable
+	layer = OBJ_LAYER
+	var/last_move_dir = null
+	var/anchored = FALSE
+	var/drag_delay = 3 //delay (in deciseconds) added to mob's move_delay when pulling it.
+	var/l_move_time = 1
+	var/throw_speed = SPEED_FAST // Speed that an atom will go when thrown by a carbon mob
+	var/throw_range = 7
+	var/cur_speed = MIN_SPEED // Current speed of an atom (account for speed when launched/thrown as well)
+	var/mob/pulledby = null
+	var/rebounds = FALSE
+	var/list/mob/living/buckled_mobs
+	var/mob/living/buckled_mob // mob buckled to this mob
+	/// Bed-like behaviour, forces mob.lying = buckle_lying if not set to [NO_BUCKLE_LYING].
+	var/buckle_lying = NO_BUCKLE_LYING
+	var/buckle_flags = NONE
+
+	var/acid_damage = 0 //Counter for stomach acid damage. At ~60 ticks, dissolved
+
+	var/move_intentionally = FALSE // this is for some deep stuff optimization. This means that it is regular movement that can only be NSWE and you don't need to perform checks on diagonals. ALWAYS reset it back to FALSE when done
+
+	/// How much this mob|object is worth when lowered into the ASRS pit while the black market is unlocked.
+	var/black_market_value = 0
+
+	var/datum/component/orbiter/orbiting
+
+	/// Either [EMISSIVE_BLOCK_NONE], [EMISSIVE_BLOCK_GENERIC], or [EMISSIVE_BLOCK_UNIQUE]
+	var/blocks_emissive = EMISSIVE_BLOCK_NONE
+	///Internal holder for emissive blocker object, do not use directly use blocks_emissive
+	var/atom/movable/emissive_blocker/em_block
+
+	///Lazylist to keep track on the sources of illumination.
+	var/list/affected_movable_lights
+	///Highest-intensity light affecting us, which determines our visibility.
+	var/affecting_dynamic_lumi = 0
+
+	/// Holds a reference to the emissive blocker overlay
+	var/emissive_overlay
+
+	/// A weakref to the mob currently interacting with us.
+	var/datum/weakref/interactor
+
+//===========================================================================
+/atom/movable/Destroy(force)
+	for(var/atom/movable/I in contents)
+		qdel(I)
+	if(pulledby)
+		pulledby.stop_pulling()
+	if(interactor)
+		var/mob/real_interactor = interactor.resolve()
+		if(istype(real_interactor))
+			real_interactor.unset_interaction(src) // unsets interactor
+	QDEL_NULL(launch_metadata)
+	QDEL_NULL(em_block)
+	QDEL_NULL(emissive_overlay)
+
+	buckled_mobs?.Cut()
+	buckled_mob = null
+
+	if(loc)
+		loc.on_stored_atom_del(src) //things that container need to do when a movable atom inside it is deleted
+	if(orbiting)
+		orbiting.end_orbit(src)
+		orbiting = null
+
+	vis_locs = null //clears this atom out of all viscontents
+	if(length(vis_contents))
+		vis_contents.Cut()
+	. = ..()
+	moveToNullspace() //so we move into null space. Must be after ..() b/c atom's Dispose handles deleting our lighting stuff
+
+	QDEL_NULL(light)
+	QDEL_NULL(static_light)
+
+//===========================================================================
+
+//Overlays
+/atom/movable/overlay
+	var/atom/master = null
+	anchored = TRUE
+
+/atom/movable/overlay/New()
+	..()
+	verbs.Cut()
+	return
+
+/atom/movable/overlay/attackby(a, b)
+	if (src.master)
+		return src.master.attackby(a, b)
+	return
+
+/atom/movable/overlay/attack_hand(a, b, c)
+	if (src.master)
+		return src.master.attack_hand(a, b, c)
+	return
+
+/mutable_appearance/emissive_blocker
+
+/mutable_appearance/emissive_blocker/New()
+	. = ..()
+	// Need to do this here because it's overridden by the parent call
+	// This is a microop which is the sole reason why this child exists, because its static this is a really cheap way to set color without setting or checking it every time we create an atom
+	color = EM_BLOCK_COLOR
+
+/atom/movable/Initialize(mapload, ...)
+	. = ..()
+
+#if EMISSIVE_BLOCK_GENERIC != 0
+	#error EMISSIVE_BLOCK_GENERIC is expected to be 0 to facilitate a weird optimization hack where we rely on it being the most common.
+	#error Read the comment in code/game/atoms_movable.dm for details.
+#endif
+
+	// This one is incredible.
+	// `if (x) else { /* code */ }` is surprisingly fast, and it's faster than a switch, which is seemingly not a jump table.
+	// From what I can tell, a switch case checks every single branch individually, although sane, is slow in a hot proc like this.
+	// So, we make the most common `blocks_emissive` value, EMISSIVE_BLOCK_GENERIC, 0, getting to the fast else branch quickly.
+	// If it fails, then we can check over every value it can be (here, EMISSIVE_BLOCK_UNIQUE is the only one that matters).
+	// This saves several hundred milliseconds of init time.
+	if (blocks_emissive)
+		if (blocks_emissive == EMISSIVE_BLOCK_UNIQUE)
+			render_target = ref(src)
+			em_block = new(null, src)
+			overlays += em_block
+	else
+		var/static/mutable_appearance/emissive_blocker/blocker = new()
+		blocker.icon = icon
+		blocker.icon_state = icon_state
+		blocker.dir = dir
+		blocker.appearance_flags = appearance_flags | EMISSIVE_APPEARANCE_FLAGS
+		blocker.plane = EMISSIVE_PLANE // Takes a light path through the normal macro for a microop
+		// Ok so this is really cursed, but I want to set with this blocker cheaply while
+		// Still allowing it to be removed from the overlays list later
+		// So I'm gonna flatten it, then insert the flattened overlay into overlays AND the managed overlays list, directly
+		// I'm sorry
+		var/mutable_appearance/flat = blocker.appearance
+		overlays += flat
+
+	if(opacity)
+		AddElement(/datum/element/light_blocking)
+	if(light_system == MOVABLE_LIGHT)
+		AddComponent(/datum/component/overlay_lighting)
+	if(light_system == DIRECTIONAL_LIGHT)
+		AddComponent(/datum/component/overlay_lighting, is_directional = TRUE)
+
+/atom/movable/proc/update_emissive_block()
+	// This one is incredible.
+	// `if (x) else { /* code */ }` is surprisingly fast, and it's faster than a switch, which is seemingly not a jump table.
+	// From what I can tell, a switch case checks every single branch individually, although sane, is slow in a hot proc like this.
+	// So, we make the most common `blocks_emissive` value, EMISSIVE_BLOCK_GENERIC, 0, getting to the fast else branch quickly.
+	// If it fails, then we can check over every value it can be (here, EMISSIVE_BLOCK_UNIQUE is the only one that matters).
+	// This saves several hundred milliseconds of init time.
+	if (blocks_emissive)
+		if (blocks_emissive == EMISSIVE_BLOCK_UNIQUE)
+			if(em_block)
+				em_block.plane = EMISSIVE_PLANE
+			else if(!QDELETED(src))
+				render_target = ref(src)
+				em_block = new(null, src)
+			return em_block
+		// Implied else if (blocks_emissive == EMISSIVE_BLOCK_NONE) -> return
+	// EMISSIVE_BLOCK_GENERIC == 0
+	else
+		return fast_emissive_blocker(src)
+
+/atom/movable/vv_get_dropdown()
+	. = ..()
+	VV_DROPDOWN_OPTION(VV_HK_EDIT_PARTICLES, "Edit Particles")
+
+/atom/movable/vv_do_topic(list/href_list)
+	. = ..()
+
+	if(!.)
+		return
+
+	if(href_list[VV_HK_EDIT_PARTICLES] && check_rights(R_VAREDIT))
+		var/client/C = usr.client
+		C?.open_particle_editor(src)
+
+/atom/movable/vv_edit_var(var_name, var_value)
+	var/static/list/banned_edits = list(NAMEOF_STATIC(src, step_x) = TRUE, NAMEOF_STATIC(src, step_y) = TRUE, NAMEOF_STATIC(src, step_size) = TRUE, NAMEOF_STATIC(src, bounds) = TRUE)
+	var/static/list/careful_edits = list(NAMEOF_STATIC(src, bound_x) = TRUE, NAMEOF_STATIC(src, bound_y) = TRUE, NAMEOF_STATIC(src, bound_width) = TRUE, NAMEOF_STATIC(src, bound_height) = TRUE)
+	var/static/list/not_falsey_edits = list(NAMEOF_STATIC(src, bound_width) = TRUE, NAMEOF_STATIC(src, bound_height) = TRUE)
+	if(banned_edits[var_name])
+		return FALSE //PLEASE no.
+	if(careful_edits[var_name] && (var_value % world.icon_size) != 0)
+		return FALSE
+	if(not_falsey_edits[var_name] && !var_value)
+		return FALSE
+
+	if(!isnull(.))
+		datum_flags |= DF_VAR_EDITED
+		return
+
+	return ..()
+
+//when a mob interact with something that gives them a special view,
+//check_eye() is called to verify that they're still eligible.
+//if they are not check_eye() usually reset the mob's view.
+/atom/proc/check_eye(mob/user)
+	return
+
+
+/mob/proc/set_interaction(atom/movable/AM)
+	if(interactee)
+		if(interactee == AM) //already set
+			return
+		else
+			unset_interaction()
+	interactee = AM
+	AM.interactor = WEAKREF(src)
+	if(istype(interactee)) //some stupid code is setting datums as interactee...
+		interactee.on_set_interaction(src)
+
+
+/mob/proc/unset_interaction()
+	if(interactee)
+		var/atom/movable/prev_interactee = interactee
+		interactee = null
+		if(istype(prev_interactee))
+			prev_interactee.on_unset_interaction(src)
+			prev_interactee.interactor = null
+
+
+//things the user's machine must do just after we set the user's machine.
+/atom/movable/proc/on_set_interaction(mob/user)
+	return
+
+
+/obj/on_set_interaction(mob/user)
+	..()
+	in_use = TRUE
+
+
+//things the user's machine must do just before we unset the user's machine.
+/atom/movable/proc/on_unset_interaction(mob/user)
+	return
+
+
+// Spin for a set amount of time at a set speed using directional states
+/atom/movable/proc/spin(duration, turn_delay = 1, clockwise = 0, cardinal_only = 1)
+	set waitfor = 0
+
+	if (turn_delay < 1)
+		return
+
+	var/spin_degree = 90
+
+	if (!cardinal_only)
+		spin_degree = 45
+
+	if (clockwise)
+		spin_degree *= -1
+
+	while (duration > turn_delay)
+		sleep(turn_delay)
+		setDir(turn(dir, spin_degree))
+		duration -= turn_delay
+
+/atom/movable/proc/spin_circle(num_circles = 1, turn_delay = 1, clockwise = 0, cardinal_only = 1)
+	set waitfor = 0
+
+	if (num_circles < 1 || turn_delay < 1)
+		return
+
+	var/spin_degree = 90
+	num_circles *= 4
+
+	if (!cardinal_only)
+		spin_degree = 45
+		num_circles *= 2
+
+	if (clockwise)
+		spin_degree *= -1
+
+	for (var/x in 0 to num_circles -1)
+		sleep(turn_delay)
+		setDir(turn(dir, spin_degree))
+
+
+/**
+ * meant for movement with zero side effects. only use for objects that are supposed to move "invisibly" (like camera mobs or ghosts)
+ * if you want something to move onto a tile with a beartrap or recycler or tripmine or mouse without that object knowing about it at all, use this
+ * most of the time you want forceMove()
+ */
+/atom/movable/proc/abstract_move(atom/new_loc)
+	var/atom/old_loc = loc
+	loc = new_loc
+	Moved(old_loc)
+
+//called when a mob tries to breathe while inside us.
+/atom/movable/proc/handle_internal_lifeform(mob/lifeform_inside_me)
+	. = return_air()
+
+//---CLONE---//
+
+/atom/movable/clone
+	var/atom/movable/mstr = null //Used by clones for referral
+	var/proj_x = 0
+	var/proj_y = 0
+	var/proj_z = 0
+	unacidable = TRUE
+
+	var/list/image/hud_list
+
+//REDIRECT TO MASTER//
+/atom/movable/clone/attack_remote(mob/user)
+	return src.mstr.attack_remote(user)
+
+/atom/movable/clone/attack_hand(mob/user)
+	return src.mstr.attack_hand(user)
+
+/atom/movable/clone/attack_alien(mob/living/carbon/xenomorph/M, dam_bonus)
+	return src.mstr.attack_alien(M, dam_bonus)
+
+/atom/movable/clone/attack_animal(mob/living/M as mob)
+	return src.mstr.attack_animal(M)
+
+/atom/movable/clone/attackby(obj/item/I, mob/living/user)
+	return src.mstr.attackby(I, user)
+
+/atom/movable/clone/get_examine_text(mob/user)
+	return src.mstr.get_examine_text(user)
+
+/atom/movable/clone/bullet_act(obj/projectile/P)
+	return src.mstr.bullet_act(P)
+/////////////////////
+
+/atom/movable/proc/create_clone_movable(shift_x, shift_y, shift_z)
+	var/atom/movable/clone/new_clone = new(loc)
+	new_clone.density = FALSE
+	new_clone.proj_x = shift_x
+	new_clone.proj_y = shift_y
+	new_clone.proj_z = shift_z
+
+	GLOB.clones.Add(new_clone)
+	new_clone.mstr = src //Link clone and master
+	clone = new_clone
+
+/atom/movable/proc/update_clone()
+	///---Var-Copy---////
+	clone.forceMove(locate(x + clone.proj_x, y + clone.proj_y, z + clone.proj_z))
+	//Translate clone position by projection factor
+	//This is done first to reduce movement latency
+
+	clone.anchored = anchored //Some of these may be suitable for Init
+	clone.appearance = appearance
+	clone.dir = dir
+	clone.flags_atom = flags_atom
+	clone.density = density
+	clone.layer = layer
+	clone.level = level
+	clone.name = name
+	clone.pixel_x = pixel_x
+	clone.pixel_y = pixel_y
+	clone.transform = transform
+	clone.invisibility = invisibility
+	////////////////////
+
+	if(light) //Clone lighting
+		if(!clone.light)
+			clone.set_light(luminosity) //Create clone light
+	else
+		if(clone.light)
+			clone.set_light(0) //Kill clone light
+
+/atom/movable/proc/destroy_clone()
+	GLOB.clones.Remove(src.clone)
+	qdel(src.clone)
+	src.clone = null
+
+/**
+* A wrapper for setDir that should only be able to fail by living mobs.
+*
+* Called from [/atom/movable/proc/keyLoop], this exists to be overwritten by living mobs with a check to see if we're actually alive enough to change directions
+*/
+/atom/movable/proc/keybind_face_direction(direction)
+	if(HAS_TRAIT(src, TRAIT_ABILITY_REFLECTIVE_PLATES))
+		if(!do_after(src, 3 DECISECONDS, INTERRUPT_INCAPACITATED, BUSY_ICON_GENERIC))
+			setDir(direction)
+	setDir(direction)
+
+/atom/movable/proc/onTransitZ(old_z,new_z)
+	SEND_SIGNAL(src, COMSIG_MOVABLE_Z_CHANGED, old_z, new_z)
+	for(var/item in src) // Notify contents of Z-transition. This can be overridden IF we know the items contents do not care.
+		var/atom/movable/AM = item
+		AM.onTransitZ(old_z,new_z)
+
+/atom/movable/proc/safe_throw_at(atom/target, range, speed, mob/thrower, spin = TRUE)
+	//if((force < (move_resist * MOVE_FORCE_THROW_RATIO)) || (move_resist == INFINITY))
+	// return
+	return throw_atom(target, range, speed, thrower, spin)
+
+///Keeps track of the sources of dynamic luminosity and updates our visibility with the highest.
+/atom/movable/proc/update_dynamic_luminosity()
+	var/highest = 0
+	for(var/i in affected_movable_lights)
+		if(affected_movable_lights[i] <= highest)
+			continue
+		highest = affected_movable_lights[i]
+	if(highest == affecting_dynamic_lumi)
+		return
+	luminosity -= affecting_dynamic_lumi
+	affecting_dynamic_lumi = highest
+	luminosity += affecting_dynamic_lumi
+
+
+///Helper to change several lighting overlay settings.
+/atom/movable/proc/set_light_range_power_color(range, power, color)
+	set_light_range(range)
+	set_light_power(power)
+	set_light_color(color)
+
+/atom/movable/proc/onZImpact(turf/impact_turf, height)
+	if(HAS_TRAIT(src, TRAIT_HAULED)) //we do not spin houled humans
+		return
+	INVOKE_ASYNC(src, PROC_REF(SpinAnimation), 5, 2)
+
+//trying to buckle a mob
+/atom/movable/proc/buckle_mob(mob/buckle_target, mob/user, ride_check_flags = null, force = FALSE, check_loc = TRUE, lying_buckle = FALSE, hands_needed = 0, target_hands_needed = 0, silent = FALSE)
+	if(!ismob(buckle_target) || (get_dist(src, user) > 1) || user.stat || buckled_mob || buckle_target.buckled || !isturf(user.loc))
+		return
+
+	if(user.is_mob_incapacitated() || HAS_TRAIT(user, TRAIT_IMMOBILIZED) || HAS_TRAIT(user, TRAIT_FLOORED))
+		to_chat(user, SPAN_WARNING("You can't do this right now."))
+		return
+
+	if(isxeno(user) && !HAS_TRAIT(user, TRAIT_OPPOSABLE_THUMBS))
+		to_chat(user, SPAN_WARNING("You don't have the dexterity to do that, try a nest."))
+		return
+	if(iszombie(user))
+		return
+
+	if(density)
+		density = FALSE
+		if(!step(buckle_target, get_dir(buckle_target, src)) && loc != buckle_target.loc)
+			density = TRUE
+			return
+		density = TRUE
+	else
+		if(buckle_target.loc != loc)
+			step_towards(buckle_target, src) //buckle if you're right next to it
+			if(buckle_target.loc != loc)
+				return
+			. = buckle_mob(buckle_target)
+	if(buckle_target.mob_size > MOB_SIZE_HUMAN)
+		if(buckle_target.stat != DEAD)
+			to_chat(user, SPAN_WARNING("[buckle_target] resists your attempt to buckle!"))
+			return
+	if(SEND_SIGNAL(src, COMSIG_MOVABLE_PREBUCKLE, buckle_target, user, ride_check_flags, force, check_loc, lying_buckle, hands_needed, target_hands_needed, silent) & COMPONENT_BLOCK_BUCKLE)
+		return
+	do_buckle(buckle_target, user)
+
+// the actual buckling proc
+// Yes I know this is not style but its unreadable otherwise
+/atom/movable/proc/do_buckle(mob/living/target, mob/user)
+	send_buckling_message(target, user)
+	if(src && loc)
+		target.throw_alert(ALERT_BUCKLED, /atom/movable/screen/alert/buckled)
+		target.set_buckled(src)
+		target.forceMove(loc)
+		target.setDir(dir)
+		buckled_mob = target
+		LAZYADD(buckled_mobs, target)
+		add_fingerprint(user)
+		afterbuckle(target)
+		return TRUE
+
+/atom/movable/proc/send_buckling_message(mob/buckle_target, mob/user)
+	if(buckle_target == user)
+		buckle_target.visible_message(
+			SPAN_NOTICE("[buckle_target] buckles in!"),
+			SPAN_NOTICE("You buckle yourself to [src]."),
+			SPAN_NOTICE("You hear metal clanking."))
+	else
+		buckle_target.visible_message(
+			SPAN_NOTICE("[buckle_target] is buckled in to [src] by [user]!"),
+			SPAN_NOTICE("You are buckled in to [src] by [user]."),
+			SPAN_NOTICE("You hear metal clanking."))
+
+/atom/movable/proc/send_unbuckling_message(mob/buckle_target, mob/user, atom/movable/unbuckle_from)
+	if(!unbuckle_from)
+		unbuckle_from = src
+
+	if(buckle_target == user)
+		buckle_target.visible_message(
+			SPAN_NOTICE("[buckle_target] unbuckled [buckle_target.p_them()]self!"),
+			SPAN_NOTICE("You unbuckle yourself from [unbuckle_from]."),
+			SPAN_NOTICE("You hear metal clanking."))
+	else
+		buckle_target.visible_message(
+			SPAN_NOTICE("[buckle_target] was unbuckled by [user.name]!"),
+			SPAN_NOTICE("You were unbuckled from [unbuckle_from] by [user]."),
+			SPAN_NOTICE("You hear metal clanking."))
+
+/// Called after somebody buckled / unbuckled
+/atom/movable/proc/afterbuckle(mob/buckle_target as mob)
+	handle_rotation() // To be removed when we have full dir support in set_buckled
+	SEND_SIGNAL(src, COMSIG_OBJ_AFTER_BUCKLE, buckled_mob)
+	if(!buckled_mob)
+		UnregisterSignal(buckle_target, COMSIG_PARENT_QDELETING)
+	else
+		RegisterSignal(buckled_mob, COMSIG_PARENT_QDELETING, PROC_REF(unbuckle))
+	return buckled_mob
+
+/atom/movable/proc/handle_rotation()
+	return
+
+/atom/movable/proc/unbuckle()
+	SIGNAL_HANDLER
+	if(buckled_mob && buckled_mob.buckled == src)
+		buckled_mob.clear_alert(ALERT_BUCKLED)
+		buckled_mob.set_buckled(null)
+		buckled_mob.anchored = initial(buckled_mob.anchored)
+
+		var/mob/living/mob = buckled_mob
+		buckled_mob = null
+		REMOVE_TRAITS_IN(mob, TRAIT_SOURCE_BUCKLE)
+		SEND_SIGNAL(src, COMSIG_MOVABLE_UNBUCKLE, mob)
+		LAZYREMOVE(buckled_mobs, mob)
+		afterbuckle(mob)
+
+/atom/movable/proc/manual_unbuckle(mob/user as mob)
+	if(buckled_mob)
+		if(buckled_mob.buckled == src)
+			send_unbuckling_message(buckled_mob, user)
+			unbuckle(buckled_mob)
+			add_fingerprint(user)
+			return TRUE
+
+	return FALSE
+
+/atom/movable/proc/handle_buckled_mob_movement(NewLoc, direct)
+	if(!buckled_mob.Move(NewLoc, direct))
+		forceMove(buckled_mob.loc)
+		last_move_dir = buckled_mob.last_move_dir
+		buckled_mob.inertia_dir = last_move_dir
+		return FALSE
+
+	// Even if the movement is entirely managed by the object, notify the buckled mob that it's moving for its handler.
+	//It won't be called otherwise because it's a function of client_move or pulled mob, neither of which accounts for this.
+	SEND_SIGNAL(buckled_mob, COMSIG_MOB_MOVE_OR_LOOK, TRUE, direct, direct)
+	return TRUE
+
+/atom/movable/BlockedPassDirs(atom/movable/mover, target_dir)
+	if(mover == buckled_mob) //can't collide with the thing you're buckled to
+		return NO_BLOCKED_MOVEMENT
+
+	return ..()
+
+/**
+ * Sends the COMSIG_MOVABLE_PRE_PICKUP signal and returns the bitfield result.
+ *
+ * Returns NONE if the pickup should be allowed, otherwise the bitfield canceled reason(s) (e.g. COMPONENT_PICKUP_CANCELED_ACID)
+ */
+/atom/movable/proc/check_pickup_blocked(mob/user)
+	return SEND_SIGNAL(src, COMSIG_MOVABLE_PRE_PICKUP, user)

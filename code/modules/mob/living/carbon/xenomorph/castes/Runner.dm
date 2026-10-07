@@ -1,0 +1,143 @@
+/datum/caste_datum/runner
+	caste_type = XENO_CASTE_RUNNER
+	caste_desc = "A fast, four-legged terror, but weak in sustained combat."
+	tier = 1
+	melee_damage_lower = XENO_DAMAGE_TIER_1
+	melee_damage_upper = XENO_DAMAGE_TIER_2
+	melee_vehicle_damage = 0
+	plasma_gain = XENO_PLASMA_GAIN_TIER_1
+	plasma_max = XENO_NO_PLASMA
+	xeno_explosion_resistance = XENO_EXPLOSIVE_ARMOR_TIER_1
+	armor_deflection = XENO_NO_ARMOR
+	max_health = XENO_HEALTH_RUNNER
+	evasion = XENO_EVASION_NONE
+	speed = XENO_SPEED_RUNNER
+	attack_delay = -4
+
+	available_strains = list(/datum/xeno_strain/acider)
+	behavior_delegate_type = /datum/behavior_delegate/runner_base
+	evolves_to = list(XENO_CASTE_LURKER)
+	deevolves_to = list(XENO_CASTE_LARVA)
+
+	tackle_min = 4
+	tackle_max = 5
+	tackle_chance = 40
+	tacklestrength_min = 4
+	tacklestrength_max = 4
+
+	heal_resting = 1.75
+
+	minimum_evolve_time = 5 MINUTES
+
+	organ_type = /obj/item/organ/xeno/runner
+
+	minimap_icon = "runner"
+
+/mob/living/carbon/xenomorph/runner
+	caste_type = XENO_CASTE_RUNNER
+	name = XENO_CASTE_RUNNER
+	desc = "A small red alien that looks like it could run fairly quickly..."
+	icon = 'icons/mob/xenos/castes/tier_1/runner.dmi'
+	icon_state = "Runner Walking"
+	icon_size = 64
+	buckle_flags = CAN_BUCKLE
+	layer = MOB_LAYER
+	tier = 1
+	pixel_x = -16  //Needed for 2x2
+	old_x = -16
+	base_pixel_x = 0
+	base_pixel_y = -20
+	pull_speed = -0.5
+	viewsize = 9
+
+	mob_size = MOB_SIZE_XENO_SMALL
+
+	base_actions = list(
+		/datum/action/xeno_action/onclick/toggle_seethrough,
+		/datum/action/xeno_action/onclick/xeno_resting,
+		/datum/action/xeno_action/onclick/release_haul,
+		/datum/action/xeno_action/watch_xeno,
+		/datum/action/xeno_action/activable/tail_stab,
+		/datum/action/xeno_action/onclick/xenohide,
+		/datum/action/xeno_action/activable/pounce/runner,
+		/datum/action/xeno_action/activable/runner_skillshot,
+		/datum/action/xeno_action/onclick/toggle_long_range/runner,
+	)
+	inherent_verbs = list(
+		/mob/living/carbon/xenomorph/proc/vent_crawl,
+	)
+
+	icon_xeno = 'icons/mob/xenos/castes/tier_1/runner.dmi'
+	icon_xenonid = 'icons/mob/xenonids/castes/tier_1/runner.dmi'
+
+	weed_food_icon = 'icons/mob/xenos/weeds_64x64.dmi'
+	weed_food_states = list("Runner_1","Runner_2","Runner_3")
+	weed_food_states_flipped = list("Runner_1","Runner_2","Runner_3")
+
+	skull = /obj/item/skull/runner
+	pelt = /obj/item/pelt/runner
+
+/obj/item/organ/xeno/runner
+	name = "runner heart"
+	icon_state = "heart_t1"
+	item_state = "heart_t1"
+	research_value = 500
+
+	xeno_organ_flags = XENO_ORGAN_WEAK|XENO_ORGAN_TACHYCARDIA
+
+
+/mob/living/carbon/xenomorph/runner/initialize_pass_flags(datum/pass_flags_container/pass_flags_container)
+	..()
+	if (pass_flags_container)
+		pass_flags_container.flags_pass |= PASS_FLAGS_CRAWLER
+
+/mob/living/carbon/xenomorph/runner/recalculate_actions()
+	. = ..()
+	pull_multiplier *= 0.85
+	if(is_zoomed)
+		zoom_out()
+
+/mob/living/carbon/xenomorph/runner/can_mount(mob/living/user, target_mounting = FALSE)
+	if(!target_mounting)
+		user = pulling
+	if(!ishuman(user))
+		return FALSE
+	var/mob/living/carbon/human/human_pulled = user
+	if(human_pulled.stat == DEAD)
+		return FALSE
+	if(!istype(back, /obj/item/storage/backpack/marine/saddle)) //cant ride without a saddle
+		return FALSE
+	return TRUE
+
+/datum/behavior_delegate/runner_base
+	name = "Base Runner Behavior Delegate"
+
+/datum/behavior_delegate/runner_base/melee_attack_additional_effects_self()
+	..()
+
+	var/datum/action/xeno_action/onclick/xenohide/hide = get_action(bound_xeno, /datum/action/xeno_action/onclick/xenohide)
+	if(hide)
+		hide.post_attack()
+
+/datum/action/xeno_action/activable/runner_skillshot/use_ability(atom/affected_atom)
+	var/mob/living/carbon/xenomorph/xeno = owner
+	if(!istype(xeno))
+		return
+
+	if(!affected_atom || affected_atom.layer >= FLY_LAYER || !isturf(xeno.loc))
+		return
+
+	XENO_ACTION_CHECK_USE_PLASMA(xeno)
+
+	xeno.visible_message(SPAN_XENOWARNING("[xeno] fires a burst of bone chips at [affected_atom]!"), SPAN_XENOWARNING("We fire a burst of bone chips at [affected_atom]!"))
+
+	var/turf/target = get_turf(affected_atom)
+	var/obj/projectile/projectile = new /obj/projectile(xeno.loc, create_cause_data(initial(xeno.caste_type), xeno))
+
+	var/datum/ammo/ammo_datum = GLOB.ammo_list[ammo_type]
+
+	projectile.generate_bullet(ammo_datum)
+	projectile.fire_at(target, xeno, xeno, ammo_datum.max_range, ammo_datum.shell_speed)
+
+	apply_cooldown()
+	return ..()
