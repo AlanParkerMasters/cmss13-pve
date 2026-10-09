@@ -2741,4 +2741,12 @@
 #include "interface\interface.dm"
 #include "interface\skin.dmf"
 #include "maps\_basemap.dm"
+#include "modular_pve\code\_DEFINES\sounds.dm"
+#include "modular_pve\code\game\area\golden_arrow.dm"
+#include "modular_pve\code\game\objects\items\toys\toys.dm"
+#include "modular_pve\code\game\turfs\floor_types.dm"
+#include "modular_pve\code\game\turfs\walls\wall_types.dm"
+#include "modular_pve\code\modules\almayer\machinery.dm"
+#include "modular_pve\code\modules\shuttle\shuttles\dropship.dm"
+#include "modular_pve\code\modules\shuttle\shuttles\shipmap_elevator.dm"
 // END_INCLUDE
