@@ -6,7 +6,7 @@
 	icon_state = "autocannon"
 	disp_icon = "arc"
 	disp_icon_state = "autocannon"
-	activation_sounds = list('sound/weapons/gun_smartgun1.ogg', 'sound/weapons/gun_smartgun2.ogg', 'sound/weapons/gun_smartgun3.ogg')
+	activation_sounds = list('modular_pve/sound/weapons/gun_smartgun1.ogg', 'modular_pve/sound/weapons/gun_smartgun2.ogg', 'modular_pve/sound/weapons/gun_smartgun3.ogg')
 
 	damage_multiplier = 0.15
 

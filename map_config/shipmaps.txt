@@ -13,5 +13,10 @@ Format:
 endmap
 
 map almayer
+	disabled
+endmap
+
+map golden_arrow
 	default
 endmap
+
