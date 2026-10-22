@@ -6444,7 +6444,7 @@
 /turf/open/floor/almayer/edge/east,
 /area/golden_arrow/platoonarmory)
 "avw" = (
-/obj/structure/machinery/cm_vending/clothing/synth/snowflake,
+/obj/structure/machinery/cm_vending/clothing/marine/snowflake,
 /turf/open/floor/almayer/test_floor5,
 /area/golden_arrow/synthcloset)
 "avA" = (

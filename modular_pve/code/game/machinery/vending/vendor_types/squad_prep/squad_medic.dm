@@ -25,6 +25,7 @@ GLOBAL_LIST_INIT(cm_vending_chemical_medic, list(
 /obj/structure/machinery/cm_vending/gear/medic_chemical
 	name = "\improper ColMarTech Squad Medical Chemical Rack"
 	desc = "An automated gear rack for specialized chemicals for the hospital corpsman."
+	icon = 'modular_pve/icons/obj/structures/machinery/vending.dmi'
 	icon_state = "med_chem"
 	show_points = TRUE
 	use_snowflake_points = TRUE
