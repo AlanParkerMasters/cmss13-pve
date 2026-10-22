@@ -3,7 +3,7 @@
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
 	},
-/obj/structure/machinery/landinglight/ds1{
+/obj/structure/machinery/landinglight{
 	dir = 8
 	},
 /turf/open/floor/almayer/plate,
@@ -37,7 +37,7 @@
 /turf/open/floor/almayer/test_floor4,
 /area/golden_arrow/lower_cargo)
 "aae" = (
-/obj/structure/machinery/landinglight/ds1/delaythree,
+/obj/structure/machinery/landinglight/delaythree,
 /turf/open/floor/almayer/plate,
 /area/golden_arrow/hangar)
 "aaf" = (
@@ -651,7 +651,7 @@
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
 	},
-/obj/structure/machinery/landinglight/ds1/delaythree{
+/obj/structure/machinery/landinglight/delaythree{
 	dir = 8
 	},
 /turf/open/floor/almayer/plate,
@@ -844,7 +844,7 @@
 /turf/open/floor/almayer/mono,
 /area/golden_arrow/motor_pool)
 "abT" = (
-/obj/structure/machinery/landinglight/ds1/delaytwo,
+/obj/structure/machinery/landinglight/delaytwo,
 /turf/open/floor/almayer/plate,
 /area/golden_arrow/hangar)
 "abV" = (
@@ -2407,13 +2407,13 @@
 /turf/open/floor/almayer/plate,
 /area/golden_arrow/platoonprep)
 "ahb" = (
-/obj/structure/machinery/landinglight/ds1{
+/obj/structure/machinery/landinglight{
 	dir = 4
 	},
 /turf/open/floor/almayer/plate,
 /area/golden_arrow/hangar)
 "ahc" = (
-/obj/structure/machinery/landinglight/ds1{
+/obj/structure/machinery/landinglight{
 	dir = 1
 	},
 /turf/open/floor/almayer/plate,
@@ -2771,7 +2771,7 @@
 /turf/open/floor/almayer/test_floor4,
 /area/golden_arrow/platoonprep)
 "air" = (
-/obj/structure/machinery/landinglight/ds1/delaytwo{
+/obj/structure/machinery/landinglight/delaytwo{
 	dir = 8
 	},
 /turf/open/floor/almayer/plate,
@@ -2984,7 +2984,7 @@
 /turf/open/floor/almayer/test_floor4,
 /area/golden_arrow/supply)
 "aiY" = (
-/obj/structure/machinery/landinglight/ds1{
+/obj/structure/machinery/landinglight{
 	dir = 8
 	},
 /obj/structure/machinery/floodlight/landing/floor{
@@ -3823,7 +3823,7 @@
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
 	},
-/obj/structure/machinery/landinglight/ds1/delayone,
+/obj/structure/machinery/landinglight/delayone,
 /turf/open/floor/almayer/plate,
 /area/golden_arrow/hangar)
 "amf" = (
@@ -4042,7 +4042,7 @@
 /turf/open/floor/almayer/edge/smooth/corner/west,
 /area/golden_arrow/lower_cargo)
 "amQ" = (
-/obj/structure/machinery/landinglight/ds1/delayone{
+/obj/structure/machinery/landinglight/delayone{
 	dir = 1
 	},
 /obj/structure/machinery/floodlight/landing/floor{
@@ -4267,7 +4267,7 @@
 /turf/open/floor/plating,
 /area/golden_arrow/hangar)
 "anx" = (
-/obj/structure/machinery/landinglight/ds1/delaytwo{
+/obj/structure/machinery/landinglight/delaytwo{
 	dir = 1
 	},
 /turf/open/floor/almayer/plate,
@@ -4581,7 +4581,7 @@
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
 	},
-/obj/structure/machinery/landinglight/ds1/delaythree,
+/obj/structure/machinery/landinglight/delaythree,
 /turf/open/floor/almayer/plate,
 /area/golden_arrow/hangar)
 "aoz" = (
@@ -5257,7 +5257,7 @@
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
 	},
-/obj/structure/machinery/landinglight/ds1/delayone{
+/obj/structure/machinery/landinglight/delayone{
 	dir = 8
 	},
 /turf/open/floor/almayer/plate,
@@ -6517,7 +6517,7 @@
 /turf/open/floor/almayer/dark_sterile,
 /area/golden_arrow/medical)
 "avL" = (
-/obj/structure/machinery/landinglight/ds1{
+/obj/structure/machinery/landinglight{
 	dir = 4
 	},
 /obj/structure/machinery/floodlight/landing/floor{
@@ -6842,7 +6842,7 @@
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
 	},
-/obj/structure/machinery/landinglight/ds1/delaytwo{
+/obj/structure/machinery/landinglight/delaytwo{
 	dir = 4
 	},
 /turf/open/floor/almayer/plate,
@@ -7081,7 +7081,7 @@
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
 	},
-/obj/structure/machinery/landinglight/ds1/delayone{
+/obj/structure/machinery/landinglight/delayone{
 	dir = 4
 	},
 /turf/open/floor/almayer/plate,
@@ -7456,7 +7456,7 @@
 /turf/open/floor/almayer/mono,
 /area/golden_arrow/cryo_cells)
 "ayA" = (
-/obj/structure/machinery/landinglight/ds1/delayone,
+/obj/structure/machinery/landinglight/delayone,
 /turf/open/floor/almayer/plate,
 /area/golden_arrow/hangar)
 "ayC" = (
@@ -7719,7 +7719,7 @@
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
 	},
-/obj/structure/machinery/landinglight/ds1{
+/obj/structure/machinery/landinglight{
 	dir = 4
 	},
 /turf/open/floor/almayer/plate,
@@ -7925,7 +7925,7 @@
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
 	},
-/obj/structure/machinery/landinglight/ds1/delaythree{
+/obj/structure/machinery/landinglight/delaythree{
 	dir = 4
 	},
 /turf/open/floor/almayer/plate,
@@ -8266,7 +8266,7 @@
 /turf/open/floor/almayer/plate,
 /area/golden_arrow/cryo_cells)
 "aAJ" = (
-/obj/structure/machinery/landinglight/ds1{
+/obj/structure/machinery/landinglight{
 	dir = 8
 	},
 /turf/open/floor/almayer/plate,
@@ -8408,7 +8408,7 @@
 /turf/open/floor/almayer/cargo_arrow/north,
 /area/golden_arrow/hangar)
 "aBi" = (
-/obj/structure/machinery/landinglight/ds1,
+/obj/structure/machinery/landinglight,
 /obj/structure/machinery/floodlight/landing/floor{
 	color = "#dae2ff";
 	light_color = "#dae2ff"
@@ -8582,7 +8582,7 @@
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
 	},
-/obj/structure/machinery/landinglight/ds1/delayone{
+/obj/structure/machinery/landinglight/delayone{
 	dir = 4
 	},
 /obj/structure/machinery/floodlight/landing/floor{
@@ -8771,7 +8771,7 @@
 	pixel_x = -3;
 	pixel_y = 6
 	},
-/obj/structure/machinery/landinglight/ds1{
+/obj/structure/machinery/landinglight{
 	dir = 8
 	},
 /turf/open/floor/almayer/plate,
@@ -9133,7 +9133,7 @@
 /turf/open/floor/almayer/edge/smooth/east,
 /area/golden_arrow/motor_pool)
 "aDy" = (
-/obj/structure/machinery/landinglight/ds1/delayone{
+/obj/structure/machinery/landinglight/delayone{
 	dir = 1
 	},
 /turf/open/floor/almayer/plate,
@@ -10095,7 +10095,7 @@
 /turf/open/floor/almayer/test_floor4,
 /area/golden_arrow/hangar)
 "aGF" = (
-/obj/structure/machinery/landinglight/ds1/delaythree{
+/obj/structure/machinery/landinglight/delaythree{
 	dir = 4
 	},
 /turf/open/floor/almayer/plate,
@@ -11645,7 +11645,7 @@
 /turf/open/floor/almayer,
 /area/golden_arrow/dorms)
 "aMi" = (
-/obj/structure/machinery/landinglight/ds1,
+/obj/structure/machinery/landinglight,
 /turf/open/floor/almayer/plate,
 /area/golden_arrow/hangar)
 "aMl" = (
@@ -12043,7 +12043,7 @@
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
 	},
-/obj/structure/machinery/landinglight/ds1/delaytwo{
+/obj/structure/machinery/landinglight/delaytwo{
 	dir = 8
 	},
 /turf/open/floor/almayer/plate,
@@ -12108,7 +12108,7 @@
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
 	},
-/obj/structure/machinery/landinglight/ds1,
+/obj/structure/machinery/landinglight,
 /turf/open/floor/almayer/plate,
 /area/golden_arrow/hangar)
 "aNY" = (
@@ -12263,7 +12263,7 @@
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
 	},
-/obj/structure/machinery/landinglight/ds1{
+/obj/structure/machinery/landinglight{
 	dir = 1
 	},
 /turf/open/floor/almayer/plate,
@@ -12427,7 +12427,7 @@
 /turf/open/floor/almayer/cargo_arrow/north,
 /area/golden_arrow/hangar)
 "aPl" = (
-/obj/structure/machinery/landinglight/ds1/delayone{
+/obj/structure/machinery/landinglight/delayone{
 	dir = 8
 	},
 /turf/open/floor/almayer/plate,
@@ -12563,7 +12563,7 @@
 /turf/open/floor/almayer/edge/north,
 /area/golden_arrow/lower_cargo)
 "aPA" = (
-/obj/structure/machinery/landinglight/ds1/delaytwo{
+/obj/structure/machinery/landinglight/delaytwo{
 	dir = 4
 	},
 /turf/open/floor/almayer/plate,
@@ -13263,7 +13263,7 @@
 /turf/open/floor/almayer/plate,
 /area/golden_arrow/hangar)
 "aSj" = (
-/obj/structure/machinery/landinglight/ds1/delayone{
+/obj/structure/machinery/landinglight/delayone{
 	dir = 4
 	},
 /turf/open/floor/almayer/plate,
@@ -13998,7 +13998,7 @@
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
 	},
-/obj/structure/machinery/landinglight/ds1/delaythree{
+/obj/structure/machinery/landinglight/delaythree{
 	dir = 1
 	},
 /turf/open/floor/almayer/plate,
@@ -14172,7 +14172,7 @@
 	pixel_x = 2;
 	pixel_y = -9
 	},
-/obj/structure/machinery/landinglight/ds1/delayone{
+/obj/structure/machinery/landinglight/delayone{
 	dir = 8
 	},
 /obj/structure/machinery/floodlight/landing/floor{
@@ -14403,7 +14403,7 @@
 /turf/open/floor/plating/plating_catwalk,
 /area/golden_arrow/hangar)
 "aWm" = (
-/obj/structure/machinery/landinglight/ds1/delaythree{
+/obj/structure/machinery/landinglight/delaythree{
 	dir = 8
 	},
 /turf/open/floor/almayer/plate,
@@ -15366,7 +15366,7 @@
 /turf/open/floor/almayer/cargo_arrow,
 /area/golden_arrow/hangar)
 "aZL" = (
-/obj/structure/machinery/landinglight/ds1/delaythree{
+/obj/structure/machinery/landinglight/delaythree{
 	dir = 1
 	},
 /turf/open/floor/almayer/plate,
@@ -16166,7 +16166,7 @@
 /turf/open/floor/almayer,
 /area/golden_arrow/engineering)
 "dGg" = (
-/obj/structure/machinery/landinglight/ds1/delaythree{
+/obj/structure/machinery/landinglight/delaythree{
 	dir = 8
 	},
 /obj/structure/machinery/floodlight/landing/floor{
@@ -16677,7 +16677,7 @@
 /turf/open/floor/almayer/edge/smooth/north,
 /area/golden_arrow/briefing)
 "ftY" = (
-/obj/structure/machinery/landinglight/ds1/delaythree{
+/obj/structure/machinery/landinglight/delaythree{
 	dir = 4
 	},
 /obj/structure/machinery/floodlight/landing/floor{
