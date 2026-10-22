@@ -5395,7 +5395,7 @@
 /turf/open/floor/almayer,
 /area/golden_arrow/hangar)
 "arr" = (
-/obj/structure/machinery/cm_vending/sorted/marine_food,
+/obj/structure/machinery/cm_vending/sorted/marine_food/modular_pve,
 /turf/open/floor/almayer/plate,
 /area/golden_arrow/cryo_cells)
 "ars" = (
@@ -8544,7 +8544,7 @@
 	pixel_x = 5;
 	pixel_y = 25
 	},
-/obj/structure/machinery/cm_vending/sorted/marine_food,
+/obj/structure/machinery/cm_vending/sorted/marine_food/modular_pve,
 /turf/open/floor/almayer/plate,
 /area/golden_arrow/cryo_cells)
 "aBE" = (
@@ -10687,7 +10687,7 @@
 /obj/structure/machinery/light/double/blue/golden_arrow{
 	pixel_y = 40
 	},
-/obj/structure/machinery/cm_vending/sorted/marine_food,
+/obj/structure/machinery/cm_vending/sorted/marine_food/modular_pve,
 /turf/open/floor/almayer/plate,
 /area/golden_arrow/cryo_cells)
 "aIR" = (
